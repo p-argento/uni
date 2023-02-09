@@ -1,3 +1,4 @@
+#coding 
 # Array
 - gli array (sia statici sia dinamici) sono sempre passati per riferimento (o meglio puntatore) alle funzioni
 	- quindi ogni modifica viene applicata anche all'array originario (salvo const)

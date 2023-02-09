@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "1474234e79bcb8e7",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ec225307c3f2729",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "141f3e555e44303d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ALGEBRA/Appunti Tamburelli.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e4a6c8fd25f8aa82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "083cdd8d20e28311",
+    "type": "split",
+    "children": [
+      {
+        "id": "889add7570c5cdd7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "201aba48a16d72ab",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "625f62248acd839f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#coding",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1c979163864fb985",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3004fb7e0dfb5678",
+    "type": "split",
+    "children": [
+      {
+        "id": "8790fb676b4ffc9d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1aa4e999ea550ffe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "511f1519fcce215c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8f1d32f94709b278",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "87613c105c6c3e07",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e4a6c8fd25f8aa82",
+  "lastOpenFiles": [
+    "FONDAMENTI/Cococcioni.md",
+    "README.md",
+    "ALGEBRA/Algebra Gobbino.md",
+    "ALGEBRA/Appunti Tamburelli.md",
+    "ALGEBRA/Programma Greg.md",
+    "FONDAMENTI/Pasted image 20230129104755.png"
+  ]
+}
