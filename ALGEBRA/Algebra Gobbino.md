@@ -111,6 +111,7 @@ Esempio.
 Una base sono i mattoncini di cui è formato lo spazio.
 Data la base, un polinomio può essere pensato come vettore, in cui ci sono i coefficienti dell'unica combinazione lineare che descrive il polinomio dato.
 
+---
 
 
 
