@@ -19,12 +19,14 @@
 
 # 3. definizioni
 1. problema di PL
-2. vertici
+2. vertici 
 
 
 
 # 4. teoremi
 1. teorema fondamentale PL
+2. ?
+3. caratterizzazione dei vertici
 
 # 5. algoritmi
 1. algoritmo risolutivo PL
