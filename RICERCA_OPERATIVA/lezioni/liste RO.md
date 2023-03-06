@@ -19,6 +19,7 @@
 
 # 3. definizioni
 1. problema di PL
+2. vertici
 
 
 
