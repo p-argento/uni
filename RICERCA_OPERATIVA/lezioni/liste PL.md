@@ -15,6 +15,7 @@
 # 2. problemi
 1. problema di produzione (27/2)
 2. problema di assegnamento cooperativo(1/3)
+3. problema di trasporto
 
 
 # 3. definizioni
@@ -25,8 +26,10 @@
 
 # 4. teoremi
 1. teorema fondamentale PL
-2. ?
+2. Weyl
 3. caratterizzazione dei vertici
+4. dualità
+5. simplesso
 
 # 5. algoritmi
 1. algoritmo risolutivo PL
