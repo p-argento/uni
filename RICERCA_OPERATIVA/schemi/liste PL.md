@@ -16,6 +16,9 @@
 1. problema di produzione (27/2)
 2. problema di assegnamento cooperativo(1/3)
 3. problema di trasporto
+4. problema di bin packing
+5. problema dello zaino (knapsack problem)
+6. problema del commesso viaggiatore (TSP)
 
 
 # 3. definizioni
