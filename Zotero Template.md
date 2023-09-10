@@ -4,6 +4,7 @@ tags: Source
 Authors: {{authors}}{{directors}}
 ---
 
+Directory: {{dir_path}}f
 Title:: {{title}}
 URL: {{url}}
 Zotero Link: {{pdfZoteroLink}}

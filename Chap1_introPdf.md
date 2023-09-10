@@ -4,6 +4,7 @@ tags: Source
 Authors: 
 ---
 
+Directory: f
 Title:: chap1_intro.pdf
 URL: 
 Zotero Link: [chap1_intro.pdf](zotero://select/library/items/SFBFGG4F)
@@ -27,4 +28,4 @@ This is a post.it in slide 3
  
 
 
-%% Import Date: 2023-09-09T19:35:12.482+02:00 %%
+%% Import Date: 2023-09-10T11:15:46.182+02:00 %%
