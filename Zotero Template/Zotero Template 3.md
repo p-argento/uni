@@ -11,9 +11,6 @@ aliases: ["
 title: "{{title}}"
 authors: {{authors}}
 tags: [literature-note, {% for t in tags %}{{t.tag}}{% if not loop.last %}, {% endif %}{% endfor %}]
-year: {{date | format("YYYY")}}
-publisher: "{{publicationTitle}}"
-doi: {{DOI}}
 ---
 
 # [{{title}}]({{desktopURI}})
@@ -86,8 +83,6 @@ $
 {% set annotations = annotations | filterby("date", "dateafter", lastImportDate) -%}
 {% if annotations.length > 0 %}
 *Imported on {{importDate | format("YYYY-MM-DD HH:mm")}}*
-
-{% for color, annotations in annotations | groupby("color") -%}
 
 ### {{heading(color)}} %% fold %%
 {% for annotation in annotations -%}
