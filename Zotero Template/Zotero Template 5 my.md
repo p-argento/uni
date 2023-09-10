@@ -1,7 +1,9 @@
 ---
-year: {{date | format ("YYYY")}}
-tags: research
-authors: {{authors}}
+year:
+  "{ date | format (\"YYYY\") }": 
+tags: []
+authors:
+  "{ authors }":
 ---
 
 ### {{title}}

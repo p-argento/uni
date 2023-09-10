@@ -47,7 +47,7 @@ doi:
 
 ## Reading notes
 %% begin annotations %%
-*Imported on 2023-09-10 11:43*
+*Imported on 2023-09-10 16:15*
 
 ### 💡 Main ideas and conclusions %% fold %%
 
@@ -66,4 +66,4 @@ doi:
 
 %% end annotations %%
 
-%% Import Date: 2023-09-10T11:44:05.841+02:00 %%
+%% Import Date: 2023-09-10T16:15:16.002+02:00 %%
