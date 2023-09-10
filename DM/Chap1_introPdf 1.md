@@ -9,6 +9,8 @@ URL:
 Zotero Link: [chap1_intro.pdf](zotero://select/library/items/SFBFGG4F)
 
 
+![[Media/image-1-x154-y270.png]] 
+ 
 This is a test 
  
 Expectations” Yellow Highlight [Page 1](zotero://open-pdf/library/items/SFBFGG4F?page=1&annotation=3TXGAB7H) 
@@ -19,8 +21,10 @@ this is a highlight
  
 this is a post-it 
  
+ 
+ 
 This is a post.it in slide 3 
  
 
 
-%% Import Date: 2023-09-09T19:27:55.175+02:00 %%
+%% Import Date: 2023-09-09T19:35:12.482+02:00 %%
