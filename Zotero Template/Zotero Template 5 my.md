@@ -10,7 +10,8 @@ authors:
 
 # Notes
 {% if annotations.length > 0 %}*Imported on {{importDate | format("YYYY-MM-DD HH:mm")}}*{% endif %}
-{% for annotation in annotations %}{% if annotation.imageRelativePath %}> [!cite]+ Image [(p. {{annotation.pageLabel}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.pageLabel}}&annotation={{annotation.id}})
+{% for annotation in annotations %}
+{% if annotation.imageRelativePath %}> [!cite]+ Image [(p. {{annotation.pageLabel}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.pageLabel}}&annotation={{annotation.id}})
 > ![[{{annotation.imageRelativePath}}]]
 > {{annotation.comment}}{% endif %}
 {% if annotation.annotatedText %}> [!cite]+ Text [(p.{{annotation.page}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}}&annotation={{annotation.id}}))

@@ -11,7 +11,7 @@ authors:
 # Notes
 *Imported on 2023-09-10 23:30*
 > [!cite]+ Image [(p. 1)](zotero://open-pdf/library/items/SFBFGG4F?page=1&annotation=GKQY5TMQ)
-> ![[Media/image-1-x154-y270.png]]
+> ![[image-1-x154-y270.png]]
 > This is the description of the image
 
 
