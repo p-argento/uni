@@ -1,10 +1,3 @@
----
-year:
-  "{ date | format (\"YYYY\") }": 
-tags: []
-authors:
-  "{ authors }":
----
 # [{{title}}]({{desktopURI}})
 # Key Points
 
