@@ -1,17 +1,8 @@
 ---
-year: {{date | format ("YYYY")}}
-tags: 
+year: {{date}}
 authors: {{authors}}
 ---
 
----
-{% if title %}Title: "{{title}}"{% endif %}
-Authors: {{authors}}{{directors}}
-{% if publicationTitle %}Publication: "{{publicationTitle}}"{% endif %}
-{% if date %}Date: {{date | format("YYYY-MM-DD")}}{% endif %}
-citekey: {{citekey}}
-tags: {{hashTags}}
----
 ## {{title}}
 
 {% for annotation in annotations -%}
