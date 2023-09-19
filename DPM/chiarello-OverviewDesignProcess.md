@@ -23,13 +23,13 @@
 >
 
 > [!cite|#ffd400]+ Image [(p. 9)](zotero://open-pdf/library/items/QDD2TZ34?page=9&annotation=PZ4R9XU3)
-> ![[0-Media/image-9-x384-y127.png]]
+> ![[image-9-x384-y127.png]]
 > Ways to transform knowledge with methods. Every method is a spectrum of the three vertices.
 
 >
 
 > [!cite|#ffd400]+ Image [(p. 12)](zotero://open-pdf/library/items/QDD2TZ34?page=12&annotation=ZD2C2QBN)
-> ![[0-Media/image-12-x51-y365.png]]
+> ![[image-12-x51-y365.png]]
 > 
 
 >
@@ -51,7 +51,7 @@
 >
 
 > [!cite|#ffd400]+ Image [(p. 20)](zotero://open-pdf/library/items/QDD2TZ34?page=20&annotation=UW9E5L4P)
-> ![[0-Media/image-20-x322-y109.png]]
+> ![[image-20-x322-y109.png]]
 > The Design Process
 
 >
