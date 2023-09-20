@@ -1,7 +1,6 @@
-# [{{title}}]({{desktopURI}})
-# Key Points
+[{{title}}]({{desktopURI}})
 
-# Notes
+NOTES
 {% if annotations.length > 0 %}*Imported on {{importDate | format("YYYY-MM-DD HH:mm")}}*{% endif %}
 {% for annotation in annotations %}
 {% if annotation.imageRelativePath %}> [!cite|{{annotation.color}}]+ Image [(p. {{annotation.pageLabel}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.pageLabel}}&annotation={{annotation.id}})
