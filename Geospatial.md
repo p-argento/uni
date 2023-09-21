@@ -1,1 +1,0 @@
-read the introduction chapters of books. See links in the slides.
