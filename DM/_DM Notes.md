@@ -1,4 +1,8 @@
 Study the book! Available online.
+Experiment with dataset online, trying to reproduce the output of notebooks.
+
+---
+
 *project*
 Groups due to next week. 3 is the magic number. Github repo and Overleaf shared project.
 Justify the choices.
