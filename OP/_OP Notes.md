@@ -7,6 +7,18 @@ First the report, then the code. Show that you understood what you did in the re
 
 ---
 
+2023-09-29
+*Multi-objective Optimization*
+No total order as in R.
+Pareto Frontier.
+Two solutions.
+First. We can use a parameter to add the function in the other. Like a risk-adjusted return for investment.
+Second. Decide the maximum risk.
+So we'll use a one-objective function with constraints.
+
+*Algebra*
+If the scalar product is >0 then the cos(a) is >a (because of the geometric interpretation) then the directions of vectors are on the same side.
+
 
 
 
