@@ -7,6 +7,7 @@ Experiment with dataset online, trying to reproduce the output of notebooks.
 Groups due to next week. 3 is the magic number. Github repo and Overleaf shared project.
 Justify the choices.
 Comment the figures.
+Use the training file. For classification you can use also the other one.
 
 *jupyter*
 Use a notebook on jupyter for each phase of the KDD Process.
