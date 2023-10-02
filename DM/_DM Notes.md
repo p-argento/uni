@@ -23,5 +23,8 @@ A single column is a series. (try the type() method).
 Be aware of the different between data frame and series. 
 Each one of them provides different functionalities.
 
+---
+
+
 
 
