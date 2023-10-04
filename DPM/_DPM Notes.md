@@ -14,4 +14,5 @@ Level of abstraction:  is the degree of generalization.
 Technological Push and Market (or Need) Pull.
 
 Is a niche too big or too small? Count the number of words to define the persona.
-Or (economically) 
+
+A divergence method is to negate one of the common attributes of the user.
