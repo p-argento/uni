@@ -9,8 +9,8 @@ Justify the choices.
 Comment the figures.
 Use the training file. For classification you can use also the other one.
 
-*jupyter*
-Use a notebook on jupyter for each phase of the KDD Process.
+*Jupyter*
+Use a notebook on Jupyter for each phase of the KDD Process.
 There's a notebook with all the details.
 
 3 basic types: int, float, str.
@@ -25,7 +25,5 @@ Be aware of the different between data frame and series.
 Each one of them provides different functionalities.
 
 ---
-
-
 
 
