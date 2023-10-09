@@ -28,6 +28,7 @@ Each one of them provides different functionalities.
 
  PCA - sostituisci slide DM con quelle nuove e sistema la parte precedente. In arancio i titoli.
 
+$$log_{10}(n)$$ means transforming the number n in his order of magnitude.
 
 
 
