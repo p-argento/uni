@@ -26,7 +26,8 @@ Each one of them provides different functionalities.
 
 ---
 
- 
+ PCA - sostituisci slide DM con quelle nuove e sistema la parte precedente. In arancio i titoli.
+
 
 
 
