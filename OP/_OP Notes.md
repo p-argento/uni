@@ -21,6 +21,11 @@ If the scalar product is >0 then the cos(a) is >a (because of the geometric inte
 
 ---
 
+E-6 for gradient norm as a stop criteria 
+What is alfa?
+The value of the function has to go down, but we don't know about the norm of the gradient .
+If the eigenvalues are 1 and 100 then it will take a lot of time to get to minimum using gradient algo.
+We are going towards the zero (E-6) of the norm of the gradient.
 
 
 
