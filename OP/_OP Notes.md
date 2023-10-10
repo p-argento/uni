@@ -19,6 +19,8 @@ So we'll use a one-objective function with constraints.
 *Algebra*
 If the scalar product is >0 then the cos(a) is >a (because of the geometric interpretation) then the directions of vectors are on the same side.
 
+---
+
 
 
 
