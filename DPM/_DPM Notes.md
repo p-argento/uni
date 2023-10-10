@@ -19,13 +19,5 @@ A divergence method is to negate one of the common attributes of the user.
 
 ---
 
-5 metodi
-1. interviews
-2. survey
-3. chatGPT
-
-Segmentation strategies
-
-
 
 
