@@ -1,5 +1,5 @@
 [PDF](zotero://select/library/items/U4B83MXD)
-*Imported on 2023-10-12 18:48*
+*Imported on 2023-10-12 19:00*
 
 ---
 
@@ -57,6 +57,34 @@
 
 
 # 3. Simple Functions, Univariate case [(p. 35)](zotero://open-pdf/library/items/37AHRR68?page=35&annotation=XP4Z7Y2U)
+> [!cite|#ffd400]+ [(p. 50)](zotero://open-pdf/library/items/37AHRR68?page=50&annotation=59MG537C)
+> ![[_Media/image-61-x7-y162.png]]
+> 
+
+
+
+> [!cite|#ffd400]+ [(p.66)](zotero://open-pdf/library/items/37AHRR68?page=66&annotation=2ES9T8VD)
+> *" Will generalise to “just use closed sets and be done with it” "*
+> 
+
+
+
+## Quadratic homogeneous univariate functions [(p. 56)](zotero://open-pdf/library/items/37AHRR68?page=56&annotation=GWDAZAYB)
+
+> [!cite|#ffd400]+ [(p.80)](zotero://open-pdf/library/items/37AHRR68?page=80&annotation=CAGH5YI4)
+> *" f ( x ) = ax2 (homogeneous quadratic), fixed a ∈ R "*
+> 
+
+
+> [!cite|#ffd400]+ [(p.80)](zotero://open-pdf/library/items/37AHRR68?page=80&annotation=IYHPKW3V)
+> *" a = quadratic coefficient = curvature: the larger | a |, the steeper the parabola "*
+> 
+
+> [!cite|#ffd400]+ [(p. 70)](zotero://open-pdf/library/items/37AHRR68?page=70&annotation=M9NFLHWS)
+> ![[_Media/image-81-x7-y172.png]]
+> 
+
+
 > [!cite|#ffd400]+ [(p. 46)](zotero://open-pdf/library/items/37AHRR68?page=46&annotation=D2DJSQRM)
 > ![[_Media/image-270-x45-y166.png]]
 > if ∥ g i ∥ > [ε >] 0, produce a xi+1 “better” than xi
@@ -98,4 +126,4 @@
 
 
 
-%% Import Date: 2023-10-12T18:48:29.451+02:00 %%
+%% Import Date: 2023-10-12T19:00:41.578+02:00 %%
