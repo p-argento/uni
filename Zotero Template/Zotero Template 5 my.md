@@ -4,11 +4,10 @@
 ---
 
 {% for annotation in annotations %}
-{% if annotation.imageRelativePath %}> [!cite|{{annotation.color}}]+ Image [(p. {{annotation.pageLabel}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.pageLabel}}&annotation={{annotation.id}})
+{% if annotation.imageRelativePath %}> [!cite|{{annotation.color}}]+ [(p. {{annotation.pageLabel}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.pageLabel}}&annotation={{annotation.id}})
 > ![[{{annotation.imageRelativePath}}]]
 > {{annotation.comment}}{% endif %}
-{% if annotation.annotatedText %}> [!cite|{{annotation.color}}]+ Highlight [(p.{{annotation.page}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}}&annotation={{annotation.id}}))
+{% if annotation.annotatedText %}> [!cite|{{annotation.color}}]+ [(p.{{annotation.page}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}}&annotation={{annotation.id}})
 > *" {{annotation.annotatedText}} "*
 > {{annotation.comment}}{% endif %}
-{% if annotation.comment and not annotation.annotatedText and not annotation.imageRelativePath %}>[!cite|{{annotation.color}}]+ Notes [(p. {{annotation.pageLabel}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.pageLabel}}&annotation={{annotation.id}}){{annotation.comment}}{% endif %}
-{% endfor %}
+{% if annotation.comment and not annotation.annotatedText and not annotation.imageRelativePath %}{{annotation.comment}} [(p. {{annotation.pageLabel}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.pageLabel}}&annotation={{annotation.id}}){% endif %}{% endfor %}
