@@ -1,12 +1,3 @@
-*Project*. No deadline. Send to professor each step, to check. Use whatever language you want (python, c++, matlab, ...) for the report.
-Half october to form groups. List of projects. Choose one.
-Use a private repo.
-Try to use clear functions and API.
-It is a plus to design it to be user-friendly, but not expected.
-First the report, then the code. Show that you understood what you did in the report.
-
----
-
 2023-09-29
 *Multi-objective Optimization*
 No total order as in R.
@@ -34,30 +25,4 @@ $$biggest \  eignvalue = max\frac{(d^T Q d)}
 {||d||^2}
 $$
 A(x1) is the error at the begging but then it decreases exponentially.
-The algo converges $$A(x^{i+1})<r^iA(x^1)$$ Where x^1 is the first known error.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The algo converges $$A(x^{i+1})<r^iA(x^1)$$ Where x^1 is the first known error..
