@@ -16,3 +16,7 @@ Fai in modo di mostrare tutte le pagine appo delle varie materie.
 [[_PROG Notes]]
 - guarda tutti i pacchetti di slide fino ad ora
 
+---
+# Approfondimenti
+- PCA
+- Neural Network 3b1b
