@@ -14,8 +14,12 @@ There's a notebook with all the details.
 *Python*
 3 basic types: int, float, str.
 // is the division by integer part.
-3 data types: list, set, tuple.
+3 data types: list[,], set{,}, tuple(,).
 Difference between list and set? In a set there are no duplicates. And both of them can be composed by mixed data types.
+
+Dictionaries{'str':int} or viceversa.
+dict.keys and dict-values.
+
 
 The data frame is the box excluding indexes (can be only one column).
 A single column is a series. (try the type() method).
