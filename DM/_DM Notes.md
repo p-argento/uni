@@ -14,7 +14,7 @@ There's a notebook with all the details.
 *Python*
 3 basic types: int, float, str.
 // is the division by integer part.
-3 data types: list[,], set{,}, tuple(,).
+4 data structures: list[,], set{,}, tuple(,).
 Difference between list and set? In a set there are no duplicates. And both of them can be composed by mixed data types.
 
 Dictionaries{'str':int} or viceversa.
