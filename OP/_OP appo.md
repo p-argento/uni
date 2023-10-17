@@ -21,3 +21,10 @@ $$biggest \  eignvalue = max\frac{(d^T Q d)}
 $$
 A(x1) is the error at the begging but then it decreases exponentially.
 The algo converges $$A(x^{i+1})<r^iA(x^1)$$ Where x^1 is the first known error..
+
+---
+
+
+
+
+
