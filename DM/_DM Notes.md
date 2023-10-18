@@ -32,6 +32,10 @@ Each one of them provides different functionalities.
 
 $$log_{10}(n)$$ means transforming the number n in his order of magnitude.
 
+---
+
+# K-means
+The idea is to divide the dataset in clusters so that the mean of each cluster has a meaning, represent something.
 
 
 
