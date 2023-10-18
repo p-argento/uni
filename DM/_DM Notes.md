@@ -50,6 +50,9 @@ They're greedy algo, simply optimising the next move.
 # Hierarchical Clustering
 Nested clusters organised as a hierarchical tree.
 It is alway a bidimensional tree.
+Limited scalability of the problem. So it is used in combination with other methods like k-means (with a large k).
+Bottom-up costruction, merging cluster, is the most efficient way.
+
 
 
 
