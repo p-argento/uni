@@ -36,6 +36,26 @@ $$log_{10}(n)$$ means transforming the number n in his order of magnitude.
 
 # K-means
 The idea is to divide the dataset in clusters so that the mean of each cluster has a meaning, represent something.
+We're studying convex shapes, since with concavities we get weird results, since the mean would be in the hole. But we could also increase the number of clusters to obtain smaller convex shapes.
+What is the best k? It is a post-processing choice, because you need to see the difference between the different results.
+
+# Bisecting K-means
+From a recursive algo to smaller sets. Starting from a unique cluster, split into 2.
+
+# X-means
+New idea for splitting. 
+The SSE is always meaningful, it will always be meaningful to split. While with the BIC we can decide how many split at each iteration.
+They're greedy algo, simply optimising the next move.
+
+# Hierarchical Clustering
+Nested clusters organised as a hierarchical tree.
+It is alway a bidimensional tree.
+
+
+
+
+
+
 
 
 
