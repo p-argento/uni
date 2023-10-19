@@ -15,8 +15,10 @@ Fai in modo di mostrare tutte le pagine appo delle varie materie.
 - prova a fare gli esercizi assegnati nei giorni scorsi
 [[_PROG Notes]]
 - guarda tutti i pacchetti di slide fino ad ora
+- esercizi di python su kaggle
 
 ---
 # Approfondimenti
 - PCA
 - Neural Network 3b1b
+- python kaggle
