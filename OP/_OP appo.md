@@ -39,6 +39,8 @@ Look at the convergence plot of algo.
 See the difference between gradient and conjugate.
 `hold on` to see the result on the same plot.
 
+Look at the `diagPrecond` algorithm.
+
 
 
 
