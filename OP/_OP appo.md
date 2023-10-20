@@ -24,6 +24,21 @@ The algo converges $$A(x^{i+1})<r^iA(x^1)$$ Where x^1 is the first known error..
 
 ---
 
+# conjugate gradient
+Start from anywhere and moves on directions that are orthogonal to one aanother in the spherical space (conjugate).
+At each iteration you optimize 
+You get the optimal value of the line.
+The optimum is the product of the two directoins?
+The first iteration is the same as the gradient method. Then it changes directions.
+
+In the matlab algo
+ecc->eccentricity->conditioning of the matrix?
+rank->do we want 0 eigenvalues?
+
+Look at the convergence plot of algo.
+See the difference between gradient and conjugate.
+`hold on` to see the result on the same plot.
+
 
 
 
