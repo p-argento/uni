@@ -16,6 +16,7 @@ Fai in modo di mostrare tutte le pagine appo delle varie materie.
 	- parti dagli ultimi esercizi con scadenza lunedi
 [[_PROG Notes]]
 - guarda tutti i pacchetti di slide fino ad ora
+- risolvi esercizi delle slide
 - esercizi di python su kaggle
 
 ---
