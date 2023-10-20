@@ -1,12 +1,15 @@
-2023-09-29
-*Multi-objective Optimization*
+*Todo*
+[[_UNI]]
 
-
-*Algebra*
-If the scalar product is >0 then the cos(a) is >a (because of the geometric interpretation) then the directions of vectors are on the same side.
+*Project*. No deadline. Send to professor each step, to check. Use whatever language you want (python, c++, matlab, ...) for the report.
+Half october to form groups. List of projects. Choose one.
+Use a private repo.
+Try to use clear functions and API.
+It is a plus to design it to be user-friendly, but not expected.
+First the report, then the code. Show that you understood what you did in the report.
 
 ---
-
+*appo*
 E-6 for gradient norm as a stop criteria 
 What is alfa?
 The value of the function has to go down, but we don't know about the norm of the gradient .
@@ -24,22 +27,33 @@ The algo converges $$A(x^{i+1})<r^iA(x^1)$$ Where x^1 is the first known error..
 
 ---
 
-# conjugate gradient
-Start from anywhere and moves on directions that are orthogonal to one aanother in the spherical space (conjugate).
-At each iteration you optimize 
-You get the optimal value of the line.
-The optimum is the product of the two directoins?
-The first iteration is the same as the gradient method. Then it changes directions.
 
-In the matlab algo
-ecc->eccentricity->conditioning of the matrix?
-rank->do we want 0 eigenvalues?
 
-Look at the convergence plot of algo.
-See the difference between gradient and conjugate.
-`hold on` to see the result on the same plot.
 
-Look at the `diagPrecond` algorithm.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
