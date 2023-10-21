@@ -16,3 +16,25 @@ The focus is on communication aspects and interoperability.
 > business process management includes concepts, methods, and techniques to support the design, administration, configuration, enactment, and analysis of business processes. 
 > - Weske
 
+
+
+---
+
+E-Start
+- Create CC
+	- CC creation request
+- Specification of Validity Period
+	- Validity Period Specified
+- Assignment to CC group
+	- CC Assigned to Group
+- assignment to hierarchy
+	- done
+- Determination of CC data
+	- done
+- Assigment of OU to CC
+	- done
+- Assign control indicators
+	- done
+- Save data
+	- done
+- Create CC
