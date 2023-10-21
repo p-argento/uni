@@ -1,6 +1,8 @@
-TODO Uni-related.
----
-Fai in modo di mostrare tutte le pagine appo delle varie materie.
+NOW
+- bpm
+- dpm
+- dm
+- op
 
 [[_OP Notes]]
 - sposta gli appunti del primo pacchetto di slide su quello aggiornato e prova a scaricare una bozza iniziale
@@ -14,6 +16,8 @@ Fai in modo di mostrare tutte le pagine appo delle varie materie.
 [[_BPM Notes]]
 - prova a fare gli esercizi assegnati nei giorni scorsi
 	- parti dagli ultimi esercizi con scadenza lunedi
+[[_DPM Notes]]
+- scrivi need
 [[_PROG Notes]]
 - guarda tutti i pacchetti di slide fino ad ora
 - risolvi esercizi delle slide
