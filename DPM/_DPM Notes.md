@@ -55,3 +55,4 @@ A divergence method is to negate one of the common attributes of the user.
 	So if we pretend to have an electric car available for moving across cities and collect reservations for using it.
 	
 	Then more than x% will use this green transport vehicle to travel across cities.
+
