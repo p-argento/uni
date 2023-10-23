@@ -58,3 +58,4 @@ A divergence method is to negate one of the common attributes of the user.
 
 ---
 
+How to be empathetic and use data?
