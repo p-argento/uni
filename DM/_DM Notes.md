@@ -53,6 +53,12 @@ It is alway a bidimensional tree.
 Limited scalability of the problem. So it is used in combination with other methods like k-means (with a large k).
 Bottom-up costruction, merging cluster, is the most efficient way.
 
+# Density-based clustering
+DBSCAN algorithm.
+Based on the notion of density.
+We should define the radius around a point. Then we can count the points.
+
+
 
 
 
