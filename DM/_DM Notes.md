@@ -59,6 +59,7 @@ Based on the notion of density.
 We should define the radius around a point. Then we can count the points.
 
 # Cluster validation
+How do we find good correlation? Use the law of large numbers, drawing the gaussian for random points and look for correlations far from the mean.
 
 
 
