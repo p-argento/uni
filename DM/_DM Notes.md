@@ -58,6 +58,8 @@ DBSCAN algorithm.
 Based on the notion of density.
 We should define the radius around a point. Then we can count the points.
 
+# Cluster validation
+
 
 
 
