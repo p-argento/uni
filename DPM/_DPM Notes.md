@@ -56,3 +56,5 @@ A divergence method is to negate one of the common attributes of the user.
 	
 	Then more than x% will use this green transport vehicle to travel across cities.
 
+---
+
