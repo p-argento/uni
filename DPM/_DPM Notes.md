@@ -59,3 +59,8 @@ A divergence method is to negate one of the common attributes of the user.
 ---
 
 How to be empathetic and use data?
+
+SDGs are useful evaluation methods.
+Design methods are hidden everywhere and are useful to look at reality differently.
+
+
