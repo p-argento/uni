@@ -70,7 +70,19 @@ Use MINMAX Normalisation for clustering.
 
 Add random_state parameter in KMeans to confront the results in a group, otherwise we get different results.
 
+Silhoutte. (slide) 
+A is average distance between points in the same class.
+B is minimum average distance ...
+It becomes negative if there's something wrong (->-1).
+Repeat the computation for all the points.
+We're looking for the 'knee'.
 
+How to calculate the centroids?
+With df.groupby.mean
+
+If you wnat to use categorical attributes for clustering you need to define a different distance (not euclidean).
+If you mix categorical and continuous attributes using euclidean distance is a mistake.
+You can use categorical attributes to explore.
 
 
 
