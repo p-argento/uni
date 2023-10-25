@@ -61,6 +61,15 @@ We should define the radius around a point. Then we can count the points.
 # Cluster validation
 How do we find good correlation? Use the law of large numbers, drawing the gaussian for random points and look for correlations far from the mean.
 
+---
+
+# Clustering lab
+It is mandatory to normalize data for clustering, since it is based on distances. It might be numbers expressed in different scales, and then the computation of the distance would be biased.
+Normalise all the columns in the same way.
+Use MINMAX Normalisation for clustering.
+
+Add random_state parameter in KMeans to confront the results in a group, otherwise we get different results.
+
 
 
 
