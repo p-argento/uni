@@ -64,3 +64,49 @@ SDGs are useful evaluation methods.
 Design methods are hidden everywhere and are useful to look at reality differently.
 
 
+---
+
+Methods to identify users and need. (divergence)
+
+IDENTIFY USERS
+Methods for users
+1. User Personas
+2. Online surveys
+3. Focus Groups
+4. Interviews
+5. Competitor analysis
+Others
+1. dictionary
+2. chatGPT
+3. Facebook (Social network analysis)
+
+IDENTIFY NEEDS
+Methods for needs.
+Goal: Users' need statement.
+1. Observation of behaviour of users. (like in Focus Group)
+2. Writing need hypothesis (we believe that the user...so, if we... then we will see...)
+3. self-reflection / brainstorming
+4. Reviews and feedback analysis
+5. 
+
+ANALYSIS OF NEEDS
+
+
+FAI-related methods
+Identify users and needs
+1. analyse website
+3. Social network analysis (facebook)
+	4. look at followers of FAI
+4. Observation of behaviour of users
+	1. at a FAI event/place
+5. Interview board, workers and volunteers of the company
+6. Ask workers and volunteers to fill a survey
+7. Ask visitors to scan a QR code to fill a survey
+		1. specifying users' data
+		2. maybe get a discount
+		3. where? QR code at the exit of events on  sheet of paper
+		4. also send it to facebook follower of the page
+8. Reviews and feedback analysis
+
+
+
