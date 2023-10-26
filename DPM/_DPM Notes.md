@@ -107,6 +107,36 @@ Identify users and needs
 		3. where? QR code at the exit of events on  sheet of paper
 		4. also send it to facebook follower of the page
 8. Reviews and feedback analysis
+potential users 
 
+BENCHMARK - competitors (other countries)
+- in uk they're great 
 
+---
 
+TIDYING THINGS UP
+Identifying users' needs.
+
+1. Analysing website of FAI
+	1. Reading informations, who they work with
+	2. Examples: board, volunteers, schools, donors, ...
+	3. **User Personas**: Create user personas based on the information gathered from the website. Develop profiles that represent the different types of users and stakeholders connected to FAI.
+
+2. Social Network analysis
+	1. Analyse follower and likes
+	2. Posts with more likes, comments (needs), ...
+	3. Facebook (likes), Instagram (customer profiles), X (B2B), Linkedin (workers)
+	4. Explore the various places managed by FAI and read the reviews (facebook)
+
+3. Benchmark
+	1. Explore the website of other nations which successfully managed their museums, etc. (like UK and France).
+	2. also to identify potential users not yet following FAI
+
+5. Observation of users participating at events
+	1. ask to fill a survey provided through a QR code
+
+6. Interviews to stakeholders
+	1. to workers, board (maybe), volunteers
+	2. what kind of customers do they look for?
+
+7. Writing need hypothesis (we believe that the user...so, if we... then we will see...) through self-reflection / brainstorming
