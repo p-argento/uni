@@ -229,3 +229,9 @@ Tasks:
 3. Use the feedback to refine FAI's offerings and strategies.
 
 These methods provide a comprehensive approach to understanding the diverse users and their needs related to the Fondo Ambiente Italiano. By combining data from different sources and engaging with stakeholders, FAI can tailor its offerings and communication to better serve its audience.
+
+---
+
+1. review slide
+2. read financial statement
+3. read past projects
