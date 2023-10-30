@@ -214,6 +214,18 @@ Tasks:
 
    1. **User-Centered Hypotheses**: Encourage self-reflection and brainstorming within the FAI team to generate need hypotheses. Develop statements like "We believe that the user visiting FAI's historic sites is seeking..." and then determine actions to validate these hypotheses. This can be a proactive way to guide user-centric improvements.
 
-  
+Tasks:
+1. Develop hypotheses based on observations, data, and insights.
+2. Design pilot projects or initiatives to test these hypotheses.
+3. Iterate based on the outcomes, refining the approach as needed.
+
+7. **Focus Groups**
+
+Goal: deeper understand of needs. In practice.
+
+Tasks:
+1. Organize sessions with a select group of users and stakeholders.
+2. Engage in deep-dive discussions on specific topics or challenges.
+3. Use the feedback to refine FAI's offerings and strategies.
 
 These methods provide a comprehensive approach to understanding the diverse users and their needs related to the Fondo Ambiente Italiano. By combining data from different sources and engaging with stakeholders, FAI can tailor its offerings and communication to better serve its audience.
