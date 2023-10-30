@@ -85,6 +85,40 @@ If you mix categorical and continuous attributes using euclidean distance is a m
 You can use categorical attributes to explore.
 
 
+---
+
+# Clustering Exercises
+*K-means*
+2 dimensions, look for 2 clusters.
+The initial centroids are provided.
+The idea is to calculate euclidean distance between points and centroid (don't need the distance between all the points).
+2. assign each point to the nearest centroid
+	1. solve it graphically
+		1. draw a line between centroids and an orthogonal line intersecting in the middle.
+		2. each side belongs to a different centroid.
+Before the next iteration, calculate new centroids.
+Calculate the mean of x and y of each cluster for the new centroids. The result is the coordinate for the new centroid. And same for the other centroid.
+
+*Didactic data mining on didawiki*
+
+*dbscan*
+Typically the default value od minPoints = 4, but we use 3.
+Place the yellow point into a dot.
+1. divide core point, border point and noise point.
+2. core point. in the eps distance there are minPoints (included the point) -> the area is dense enough
+3. border points are in the neighbourhood of a core point (but are not core points)
+4. noise, everything else.
+
+Labeling procedure.
+1. start from one core point and colour within the eps
+2. go further to find another core point (skip border points)
+3. 
+
+
+
+
+
+
 
 
 
