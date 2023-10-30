@@ -145,7 +145,7 @@ Identifying users' needs.
 
 *chatgpt*
 
-Certainly, here's an expanded list of methods to identify users and their needs for the Fondo Ambiente Italiano (FAI):
+Here's an expanded list of methods to identify users and their needs for the Fondo Ambiente Italiano (FAI):
 
   
 
