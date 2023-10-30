@@ -112,9 +112,33 @@ Place the yellow point into a dot.
 Labeling procedure.
 1. start from one core point and colour within the eps
 2. go further to find another core point (skip border points)
-3. 
 
+*hierarchical clustering*
+They provide the proximity matrix (pairwise).
+> If it's a distance matrix, you look for the MIN distance.
+> If it's a similarity matrix, you look for the MAX value.
 
+1. if the distance merge is all the same (starting from the min), merge the points.
+2. recalculate the distance matrix but using new clusters as columns
+	1. in case of single-linkage, take the MIN distance between clusters
+	2. in case of complete-linkage, take the MAX distance between clusters
+
+> *DO THE EXS and test using didactic website*
+
+---
+
+# project faq
+
+Remove outliers and draw the plot again. check the difference. Do it differently for each attribute. Work independently from feature to feature.
+K-means is very sensitive to outliers.
+Typically consider the IQR (Inter Quartile Range), between 25th and 75th percentile.
+
+Focus on the features more interesting to detect outliers.
+USE ALL THE FEATURES for clustering. This is the beauty of kdd algorithms.
+
+Do a PCA, for dimensionality reduction.
+If k=2, you can visualise in a scatterplot, loosing however information.
+But clustering comes before pca.
 
 
 
