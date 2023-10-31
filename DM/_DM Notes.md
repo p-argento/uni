@@ -34,6 +34,49 @@ $$log_{10}(n)$$ means transforming the number n in his order of magnitude.
 
 ---
 
+# CLUSTERING
+What is NOT clustering?
+The result of a query, class label information (supervised learning),..
+A clustering is a set of clusters.
+*Types of clustering set*
+- Partitional -> excllusive
+- Hierarchical -> nested clusters (dendrogram)
+*Types of clusters*
+- center-based -> centroid
+- contiguity-based -> nearest neighbour (trouble with noise)
+- density-based -> dense cluster (better for outliers)
+- objective function -> minimize or max the obj function
+*Cluster validity*
+To compare clustering algorithms results.
+Determine the correct number of clusters.
+Criteria:
+- external labels
+- internal measure (sse)
+- compare clusters.
+Measure correlation:
+- distance (or similarity) matrix (NOT good for contiguity or db)
+- ideal similarity matrix -> 1 belongs / 0 not
+Internal measure
+- cohesion -> SS within a cluster
+	- cluster cohesion is the sum of weights of all links within a cluster
+- separation -> SS between clusters 
+	- cluster separation is the sum of weights between nodes in the cluster and outside
+- silhouette coefficient
+	- given a point in a cluster, s = (minAvgExt – avgWithin) / max(avgs)
+Interpretation
+- statistics as a framework
+	- more atypical index value means more likely to represent data
+	- look at the position on the histogram
+
+
+
+
+
+
+
+
+
+
 # K-means
 The idea is to divide the dataset in clusters so that the mean of each cluster has a meaning, represent something.
 We're studying convex shapes, since with concavities we get weird results, since the mean would be in the hole. But we could also increase the number of clusters to obtain smaller convex shapes.
