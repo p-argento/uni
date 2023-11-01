@@ -1,5 +1,6 @@
 *Todo*
 [[_UNI]]
+[[MATLAB Tutorial]]
 
 *Project*. No deadline. Send to professor each step, to check. Use whatever language you want (python, c++, matlab, ...) for the report.
 Half october to form groups. List of projects. Choose one.
