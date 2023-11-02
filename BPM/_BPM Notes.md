@@ -21,7 +21,17 @@ The focus is on communication aspects and interoperability.
 ---
 
 
+Liveness = every transition can fire in the future.
+dead = it will never fire
 
+For places, a place is live if it can become unmarked.
+
+Transition-live and place-live. Similar but not the same.
+Transition-live implies place-live.
+It is possible to draw a net that is place-live but not transition live.
+If a transition does not appear in the coverability graph then it's dead.
+
+Deadlock ???
 
 
 
