@@ -183,6 +183,8 @@ Do a PCA, for dimensionality reduction.
 If k=2, you can visualise in a scatterplot, loosing however information.
 But clustering comes before pca.
 
+---
+
 
 
 
