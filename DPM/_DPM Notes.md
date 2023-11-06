@@ -236,15 +236,19 @@ These methods provide a comprehensive approach to understanding the diverse user
 2. read financial statement
 3. read past projects
 
+Don't stick to one level of abstraction.
+And measure it.
+
 ---
 
 
 Using brainstorming you should measure the number and quality of ideas.
-
 To converge, you have to measure.
+Measure is the connection between ideas and reality.
+In the divergent part you don't need the connection with the real world, but in the convergence you need expertise to measure how things are in reality.
+*Use chatGPT for converging saying if it's good or not*
 
-
-
+In ML, the prompt is called "one-shot learning".  
 
 
 
