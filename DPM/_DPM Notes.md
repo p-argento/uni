@@ -235,3 +235,16 @@ These methods provide a comprehensive approach to understanding the diverse user
 1. review slide
 2. read financial statement
 3. read past projects
+
+---
+
+
+Using brainstorming you should measure the number and quality of ideas.
+
+To converge, you have to measure.
+
+
+
+
+
+
