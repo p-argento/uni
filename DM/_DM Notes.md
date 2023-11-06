@@ -185,6 +185,41 @@ But clustering comes before pca.
 
 ---
 
+# KNN
+It is the Nearest Neighbour Classification.
+It is a instance-based classifier.
+You compare the target value with the set of ducks which is nearest. This set is what defines the attributes of "a duck".
+> If it walks like a duck, quacks like a duck, then it's probably a duck.
+
+How to choose k?
+If K is too small, it leads to overfitting (relying too much of a singular value).
+If K is too large, the neighbourhood might include points from other classes.
+Set $K=sqrt(N)$, as a general rule of thumb.
+
+How does the voting work?
+Weight the vote according to the distance ($w = 1/(d^2)$)
+
+Dimensionality and scaling issues.
+Curse of dimensionality -> normalize the vector to unit length
+..
+
+
+Memory-based learning.
+..
+
+To find the parameter, divide the train set in train' and validation. Apply the algorithm to find the parameter validated through the validation set. Now use parameter on the whole original train set.
+
+PEBLS.
+It is categorical KNN.
+Until now, since we rely on Euclidean distance, we can work onyl with continuous attributes.
+It uses a distance calculated on the target value.
+
+Lazy-learner means calculus made at prediction time.
+
+For classification you use the mode (majority voting).
+For regression you use the average of the set of ducks.
+
+
 
 
 
