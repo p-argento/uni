@@ -1,6 +1,10 @@
 Study the book! Available online.
 Experiment with dataset online, trying to reproduce the output of notebooks.
 
+[[my Project Notes]]
+
+[[DM Clustering]]
+
 ---
 
 *project*

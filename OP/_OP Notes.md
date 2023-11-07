@@ -30,6 +30,8 @@ The algo converges $$A(x^{i+1})<r^iA(x^1)$$ Where x^1 is the first known error..
 
 ADiGator (Automatic Differentiator) in MATLAB produces code to compute derivatives of a function.
 
+---
+
 
 
 
