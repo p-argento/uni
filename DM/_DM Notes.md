@@ -223,6 +223,9 @@ Lazy-learner means calculus made at prediction time.
 For classification you use the mode (majority voting).
 For regression you use the average of the set of ducks.
 
+---
+
+# KNN ex
 
 
 
