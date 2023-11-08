@@ -225,7 +225,11 @@ For regression you use the average of the set of ducks.
 
 ---
 
-# KNN ex
+# Naive Bayes
+> Why naive? Because it's assuming that the attributes are conditionally independent.
+
+In reality, they're not independent.
+
 
 
 
