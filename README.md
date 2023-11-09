@@ -1,1 +1,1 @@
-This is a Obsidian Vault.
+This is my university Obsidian Vault.

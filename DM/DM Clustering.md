@@ -1,3 +1,6 @@
+[[_DM Notes]]
+[[Lecture notes on clustering]]
+
 Unsupervised Learning.
 The goal is to partition the dataset into subgroups (clusters) so that the points within the same cluster are more similar than the ones in the others.
 
@@ -24,3 +27,9 @@ How
 - Jaccard Coefficients
 
 ### Correlation
+
+
+
+
+[[Plotting high dimensional clustering]]
+

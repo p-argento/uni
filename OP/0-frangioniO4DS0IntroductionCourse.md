@@ -48,7 +48,7 @@ NOTES
 >
 
 > [!cite|#ffd400]+ Image [(p. 8)](zotero://open-pdf/library/items/8DX7Y4LA?page=8&annotation=763W8D9K)
-> ![[_Media/image-21-x8-y89.png]]
+> ![[image-21-x8-y89.png]]
 > Finding the c is a very simple task. In Matlab is just c=y/X.
 > This is the Loss Function to minimize, so is the Linear Least Square. How much the model fails to capture reality. So we want to minimize this function.
 

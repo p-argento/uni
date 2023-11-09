@@ -21,12 +21,12 @@ We are looking for methodologies to extract information from data.
 # KDD Process
 
 > [!cite|#ffd400]+ Image [(p. 23)](zotero://open-pdf/library/items/XEQNLTWC?page=23&annotation=RLJTLUC2)
-> ![[_Media/image-23-x52-y13.png]]
+> ![[image-23-x52-y13.png]]
 > It is very unlikely to go straight. Try to apply different methods and algorithms.
 
 
 > [!cite|#ffd400]+ Image [(p. 24)](zotero://open-pdf/library/items/XEQNLTWC?page=24&annotation=EPXDIK4G)
-> ![[_Media/image-24-x142-y139.png]]
+> ![[image-24-x142-y139.png]]
 > In the first stage you talk with data engineer or computer scientist, technical people who manage date. In the end, there are stakeholders like manager, policy maker, who need to understand data.
 
 # Predictive and Descriptive Methods
@@ -57,7 +57,7 @@ We are looking for methodologies to extract information from data.
 >
 
 > [!cite|#ffd400]+ Image [(p. 39)](zotero://open-pdf/library/items/XEQNLTWC?page=39&annotation=LVZRT9J2)
-> ![[_Media/image-39-x211-y6.png]]
+> ![[image-39-x211-y6.png]]
 > Clustering
 
 >
