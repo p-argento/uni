@@ -1,6 +1,36 @@
 Study the book! Available online.
 Experiment with dataset online, trying to reproduce the output of notebooks.
 
+Module 1: Data Understanding 
+• KDD & CRISP 
+• Data Understanding 
+• Data Preparation 
+• Data Similarity 
+• Basic Statistics
+
+Module 2: Clustering 
+• Taxonomy & Problem Setting 
+• Centroid-based Clustering 
+• Hierarachical Clustering 
+• Density-based Clustering 
+• Advanced Approaches • 
+
+Module 3: Pattern Mining 
+• Frequent Pattern Mining 
+• Association Rules 
+• Sequential Pattern Mining 
+• Generalized Sequential Pattern 
+• Advanced Approaches • 
+
+Module 4: Classification & Regression 
+• Problem Setting 
+• K Nearest Neighbor 
+• Naive Bayes Classifier 
+• Decision Tree Classifier 
+• Linear Regression
+
+
+
 [[DM Project Notes]]
 
 [[DM Clustering]]
