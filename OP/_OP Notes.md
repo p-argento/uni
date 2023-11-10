@@ -69,6 +69,8 @@ Convex vs Unimodal.
 Typically is not quasi-convex.
 Construct convex, so that is easy to minimize.
 
+---
+
 
 
 
