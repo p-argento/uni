@@ -79,6 +79,18 @@ Then the function will be below the integral of the line L, and this function is
 And the derivative of that is 1/L.
 Where L is the Lipstich constant of the gradient (or function?)
 
+conditioning???
+
+L is the largest eigenvalue of the hessian, and when the fucntion is quadratic then it's easy to calculate.
+
+1/L is not optima, it works but not worst
+2/(L+tao) is better
+But the optimal is get from the minimum of the quadratic function from tomography (we looked at it).
+
+Fixed stepsize is possible then.
+
+
+
 
 
 
