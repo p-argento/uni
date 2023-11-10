@@ -71,6 +71,16 @@ Construct convex, so that is easy to minimize.
 
 ---
 
+when we optimize, we're in the space of weights of the NN.
+
+The derivative of the function cannot grow faster than the slope of L.
+So the derivative is below this line L (what?).
+Then the function will be below the integral of the line L, and this function is the quadratic function.
+And the derivative of that is 1/L.
+Where L is the Lipstich constant of the gradient (or function?)
+
+
+
 
 
 
