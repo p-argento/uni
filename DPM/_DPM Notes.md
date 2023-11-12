@@ -20,6 +20,8 @@ A divergence method is to negate one of the common attributes of the user.
 
 ---
 
+
+
 2. a student needs reliable transport in order to attend be on time in classes at school /uni
 	We believe that people commuting in italian public transport are not completely satisfied on the availability of the public transportation (not enough frequency, delays).
 	
@@ -82,7 +84,11 @@ Measure is the connection between ideas and reality.
 In the divergent part you don't need the connection with the real world, but in the convergence you need expertise to measure how things are in reality.
 *Use chatGPT for converging saying if it's good or not*
 
-In ML, the prompt is called "one-shot learning".  
+In ML, the prompt is called "one-shot learning". 
+
+---
+
+[[FAI my Notes]]
 
 
 
