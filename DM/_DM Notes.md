@@ -1,3 +1,11 @@
+
+
+[[DM Project Notes]]
+
+[[DM Clustering]]
+
+---
+
 Study the book! Available online.
 Experiment with dataset online, trying to reproduce the output of notebooks.
 
@@ -30,10 +38,6 @@ Module 4: Classification & Regression
 • Linear Regression
 
 
-
-[[DM Project Notes]]
-
-[[DM Clustering]]
 
 ---
 
