@@ -132,7 +132,11 @@ For regression you use the average of the set of ducks.
 
 In reality, they're not independent.
 
+---
 
+# Classification Model Evaluation
+
+  
 
 
 
