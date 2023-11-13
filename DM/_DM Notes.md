@@ -136,6 +136,7 @@ In reality, they're not independent.
 
 # Classification Model Evaluation
 
+  In the Iris dataset, you have 3 precision, one for each class.
   
 
 
