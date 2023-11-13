@@ -138,6 +138,7 @@ In reality, they're not independent.
 
   In the Iris dataset, you have 3 precision, one for each class.
   
+  
 
 
 
