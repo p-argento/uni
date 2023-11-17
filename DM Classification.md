@@ -44,9 +44,11 @@ Instance-based learning (sometimes called *memory-based learning*) is a family o
 - Adaptation -> for previously unseen data, it store a new instance or throw an old instance away.
 
 *Disadvantages*
-- "Lazy learners" -> computation is postponed until a new instance is observed, without building a model explicitly
+- "Lazy learners" -> computation is postponed until a new instance is observed, without building a model explicitly (model free)
 	- in contrast, "eager learners" spend time in building the model, but then the classification is faster
-- Expensive classification of unknown records -> given n training items, the complexity of classifying a single instance is O(n).
+- Expensive classification of unknown records -> given n training items, the complexity of classifying a single instance is O(n)
+	- we need to compute every time the proximity values between the test instance and the training examples
+- Suscetible to noise -> because it is based on local data
 
 *Examples*
 - KNN
@@ -76,9 +78,10 @@ Basic Idea:
 General practice ->  *$K=sqrt(N)$* where N is the number of samples in the training set.
 
 *How to determine the class*
-Take the majority vote of class labels among the k-nearest-neighours.
-Use the weight factor $w=1/d^2$ to weight the vote according to distance.
-Use the Euclidean distance.
+Majority Voting
+-> take the majority vote of class labels among the k-nearest-neighours
+Distance-weighted Voting (to reduce the impact of k)
+-> use the weight factor $w=1/d^2$ to weight the vote according to the euclidean distance.
 
 *Dimensionality issues*
 High dimensional data (curse of dimensionality) -> normalize vectors to unit length.
@@ -97,6 +100,32 @@ $n_j$ -> number of examples with attribute value $V_j$
 ![[Pasted image 20231117171143.png]]
 
 *Distance between Records*
+![[Pasted image 20231117181518.png]]
+
+
+# 2. Naïve Bayes Classifier
+It is a probabilistic framework for solving classification problems.
+
+*Bayes Theorem*
+The probability of getting the class variable $Y$,
+given the attribute sets $X={X_1,X_2,...,X_d}$, is
+![[Pasted image 20231117182459.png|350]]
+
+*Bayes for classification*
+By knowing the posterior probability P(Y|X) for every combination of X and Y, a test record X' can be classified by finding the class Y' that maximizes the posterior probability P(Y'|X').
+And for the Bayes Theorem, this is equivalent of choosing the value of Y' that maximizes P(X'|Y')P(Y').
+
+*Naive bayes classifier*
+
+
+*How to estimate probability from data*
+
+
+*M-estimate of Conditional Probability*
+
+
+
+
 
 
 
