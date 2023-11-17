@@ -4,6 +4,8 @@
 
 [[DM Clustering]]
 
+[[DM Classification]]
+
 ---
 
 Study the book! Available online.
