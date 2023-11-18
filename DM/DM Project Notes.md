@@ -28,6 +28,3 @@ Here's a more detailed explanation:
 In summary, the idea is to recognize and leverage the unique characteristics of numerical and binary features by applying clustering separately to each type. This approach can lead to more meaningful insights and a better understanding of the underlying structures in your data.
 
  
-
-
-# Hierarchical
