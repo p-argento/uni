@@ -76,3 +76,6 @@ Then locate the value of the target set and calculate the p-value.
 It needs to be small, since the p-value is the number of more extreme values divided by all the values.
 
 
+# Gradient Descent
+[video on GD](https://www.youtube.com/watch?v=sDv4f4s2SB8)
+
