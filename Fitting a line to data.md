@@ -65,7 +65,7 @@ For this reason, we are looking for an "adjusted" $R^2$ that scales by the numbe
 
 **p-value**
 We are looking for an "adjusted" $R^2$ that scales by the number of parameters.
-It determines how reliable the relationship $R^2$ is.
+The p-value determines how reliable the relationship $R^2$ is.
 The Degrees of Freedom (DF) are the extra parameters in the"fit". They turn the SS into variances.
 In 2D, the fit line has an extra parameter p (the slope) compared to the mean line, which is only an horizontal line with the y-intercept. The difference is then 2-1=1.
 Calculate F.
