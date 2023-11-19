@@ -80,3 +80,24 @@ It needs to be small, since the p-value is the number of more extreme values div
 # Gradient Descent
 [video on GD](https://www.youtube.com/watch?v=sDv4f4s2SB8)
 
+Process
+1. Take the Gradient of the Loss Function
+2. Pick random initial values for the parameters
+3. Plug the parameter values into the gradient
+4. Calculate Step Size = Slope x Learning Rate
+5. Calculate New Parameters = Old Parameters - Step Size
+
+Stopping criteria usually
+1. 1000 iterations
+2. step size < 0.001
+
+Loss function
+1. The Sum of the Squared residual is just one type of Loss Function
+2. Use the Gradient to descend to lowest point in the Loss Function, which, in this case, is the Sum of the Squared Residuals.
+
+The Chain Rule
+1. It is the rule to calculate the derivative.
+
+Each step gets smaller the closer we get to the bottom of the curve.
+
+If we were using *Least Squares* to solve for the optimal value for the Intercept, we would simply find where the slope of the curve is = 0.
