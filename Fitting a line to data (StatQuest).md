@@ -1,3 +1,4 @@
+> The only way around is through.
 # Least Squares
 [Statquest Video](https://www.youtube.com/watch?v=PaFPbb66DxQ)
 
