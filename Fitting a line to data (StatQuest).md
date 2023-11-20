@@ -100,4 +100,12 @@ The Chain Rule
 
 Each step gets smaller the closer we get to the bottom of the curve.
 
+**Why Gradient Descent**
 If we were using *Least Squares* to solve for the optimal value for the Intercept, we would simply find where the slope of the curve is = 0.
+In contrast, *Gradient Descend* finds the minimum value by taking steps from an initial guess until it reaches the best value.
+This makes GD very useful when it is not possible to solve for where the derivative = 0.
+And then, it can be used in so many different situations.
+
+> My Point
+>But this point might not be the best value, since the derivative is =0 for max, min and saddle.
+>And the best value might not be differentiable, so it would not be possible to find it using the derivative.
