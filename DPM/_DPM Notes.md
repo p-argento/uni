@@ -1,5 +1,7 @@
 tim brown - Design Thinkning
 
+[[Another desirability report review]]
+
 [[FAI methods]]
 ---
 
@@ -91,4 +93,5 @@ In ML, the prompt is called "one-shot learning".
 [[FAI my Notes]]
 
 
+---
 
