@@ -1,6 +1,5 @@
 [O4DS-0-Introduction to the course](zotero://select/library/items/TM2PVGZU)
 
-NOTES
 *Imported on 2023-09-20 11:31*
 
 # The model

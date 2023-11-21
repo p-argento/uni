@@ -1,4 +1,5 @@
 # Videos
+---
 
 MATLAB Tutorial
 
@@ -8,7 +9,15 @@ StatQuest.
 
 
 
+# Books
+---
+
+https://indrag49.github.io/Numerical-Optimization/line-search-descent-methods.html#selection-of-step-length
+
+
+
 # Datasets
+---
 
 [Optimization Test Problems](https://www.sfu.ca/~ssurjano/optimization.html) The functions listed below are some of the common functions and datasets used for testing optimization algorithms.
 
