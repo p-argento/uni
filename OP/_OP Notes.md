@@ -89,6 +89,9 @@ But the optimal is get from the minimum of the quadratic function from tomograph
 
 Fixed stepsize is possible then.
 
+---
+
+
 
 
 
