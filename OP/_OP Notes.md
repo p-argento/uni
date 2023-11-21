@@ -1,7 +1,6 @@
 *Todo*
 [[_UNI]]
-[[MATLAB Tutorial]]
-Start from the wrap-up of each set of slide and take schematic notes.
+Start from the wrap-up of each set of slide.
 
 
 
@@ -13,7 +12,9 @@ It is a plus to design it to be user-friendly, but not expected.
 First the report, then the code. Show that you understood what you did in the report.
 
 ---
-*appo*
+
+
+
 E-6 for gradient norm as a stop criteria 
 What is alfa?
 The value of the function has to go down, but we don't know about the norm of the gradient .
@@ -91,6 +92,31 @@ Fixed stepsize is possible then.
 
 ---
 
+
+
+# Newton
+[frangioni]
+It is too costly under many scenarios. We want something cheaper.
+We do not use pure newton. Not the Hessian, but something similar with good charactetristics (positive semidefinite, positive definite,..)
+
+# Quasi-newton
+
+**DFP**
+...
+
+**BFGS**
+[wiki](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm)
+Like the related Davidon–Fletcher–Powell method, BFGS determines the descent direction by preconditioning the gradient with curvature information. It does so by gradually improving an approximation to the Hessian matrix of the loss function, obtained only from gradient evaluations (or approximate gradient evaluations) via a generalized secant method.
+
+[frangioni]
+You're only using firs-order information (no Hessian and other second-order derivatives).
+Not really costly. It is $O(N^2)$.
+
+It does not stop in a local minimum like the newton-method.
+
+In line search, this is better than newton.
+Newton is assuming things are convex.
+The problem that needs to be solved may change.
 
 
 
