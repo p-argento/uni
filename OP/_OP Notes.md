@@ -1,5 +1,12 @@
 [[_UNI]]
 
+[[OP_0 Introduction To Course]]
+[[OP_1 Simple and Quadratic Optimization Problems]]
+[[OP_2 Univariate Optimization]]
+[[OP_3 Multivariate Unconstrained Non-Smooth Optimization]]
+[[OP_4 Multivariate Unconstrained Smooth Optimization]]
+
+
 **Project**
 No deadline. Send to professor each step, to check. Use whatever language you want (python, c++, matlab, ...) for the report.
 Half october to form groups. List of projects. Choose one.

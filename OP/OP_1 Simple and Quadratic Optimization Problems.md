@@ -17,5 +17,6 @@ Wrap up
 
 My Point
 1. Basically trying to optimize very simple problems, both univariate and multivariate
-2. Then specifically look at the multivariate, but quadratic case
+2. Then specifically look at the quadratic case, which is the simplest multivariate
 3. Next step will be with more complicated UNIVARIATE functions
+
