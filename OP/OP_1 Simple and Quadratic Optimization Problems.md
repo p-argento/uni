@@ -85,7 +85,7 @@ To avoid this case, we optimize functions that are
 
 # 4. Simple functions, Multivariate case
 ---
-> (THIS IS WHERE CHAOS ENTERS THE CHAT)
+> (HERE CHAOS ENTERS THE CHAT)
 > We use real functions with one-objective.
 > Multi-Objective Optimization.
 > Basic Algebra Review.
