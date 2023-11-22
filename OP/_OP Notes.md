@@ -1,15 +1,28 @@
-*Todo*
 [[_UNI]]
-Start from the wrap-up of each set of slide.
 
-
-
-*Project*. No deadline. Send to professor each step, to check. Use whatever language you want (python, c++, matlab, ...) for the report.
+**Project**
+No deadline. Send to professor each step, to check. Use whatever language you want (python, c++, matlab, ...) for the report.
 Half october to form groups. List of projects. Choose one.
 Use a private repo.
 Try to use clear functions and API.
 It is a plus to design it to be user-friendly, but not expected.
 First the report, then the code. Show that you understood what you did in the report.
+
+**Outline**
+Unconstrained and Continuous
+1. Simple Unconstrained Optimization Problems, univariate and multivariate
+2. Univariate Continuous Unconstrained Optimization
+3. Multivariate Continuous Unconstrained Non-Smooth Optimization
+4. Multivariate Continuous Unconstrained Smooth Optimization
+Constrained
+5. Constrained Continuous Optimization Theory
+6. Convexity and Duality (Lagrangian, linear, quadratic, conic,...)
+7. Constrained Continuous Optimization Methods
+8. Mixed-integer Optimization Models
+
+
+
+
 
 ---
 

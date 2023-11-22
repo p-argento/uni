@@ -41,17 +41,10 @@
 >
 
 
-> [!cite|#ffd400]+ Highlight [(p.21)](zotero://open-pdf/library/items/8DX7Y4LA?page=21&annotation=9KDBMP5B))
-> *" Polynomial interpolation "*
-> 
->
+# Polynomial Interpolation
 
 > [!cite|#ffd400]+ Image [(p. 8)](zotero://open-pdf/library/items/8DX7Y4LA?page=8&annotation=763W8D9K)
 > ![[image-21-x8-y89.png]]
 > Finding the c is a very simple task. In Matlab is just c=y/X.
 > This is the Loss Function to minimize, so is the Linear Least Square. How much the model fails to capture reality. So we want to minimize this function.
 
->
-
-
-%% Import Date: 2023-09-20T11:31:45.420+02:00 %%
