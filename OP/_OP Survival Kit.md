@@ -1,12 +1,13 @@
 # Videos
 ---
 
-MATLAB Tutorial
+[MATLAB Tutorial](https://www.youtube.com/watch?v=7f50sQYjNRA&t=6345s)
 
-StatQuest.
+[StatQuest](https://www.youtube.com/@statquest)
 
-[this playlist](https://youtube.com/playlist?list=PL10NOnsbP5Q7wNrYItE2GhKq05cVov97e&si=Rd85llfgFQAeddFU) on Descent Methods by Michel Bierblaire.
+[Michel Bierblaire](https://youtube.com/playlist?list=PL10NOnsbP5Q7wNrYItE2GhKq05cVov97e&si=Rd85llfgFQAeddFU) on Descent Methods
 
+[Visually Explained](https://www.youtube.com/@VisuallyExplained) with Visual explanations of algorithms.
 
 
 # Books
