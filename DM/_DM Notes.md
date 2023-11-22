@@ -1,16 +1,20 @@
 
 
 [[DM Project Notes]]
-
 [[DM Clustering]]
-
 [[DM Classification]]
 
+# TO-DO
 ---
+- [ ] Vedi appunti su slide dell'anno scorso per le prime lezioni
 
+
+**Professor's Advice**
 Study the book! Available online.
 Experiment with dataset online, trying to reproduce the output of notebooks.
 
+# Outline
+---
 Module 1: Data Understanding 
 • KDD & CRISP 
 • Data Understanding 
@@ -40,10 +44,8 @@ Module 4: Classification & Regression
 • Linear Regression
 
 
-
+# Project
 ---
-
-*project*
 Github repo and Overleaf shared project.
 Justify the choices.
 Comment the figures.
@@ -51,34 +53,7 @@ Use the training file. For classification you can use also the other one.
 Use a notebook on Jupyter for each phase of the KDD Process.
 There's a notebook with all the details.
 
-*Python*
-3 basic types: int, float, str.
-// is the division by integer part.
-4 data structures: list[,], set{,}, tuple(,).
-Difference between list and set? In a set there are no duplicates. And both of them can be composed by mixed data types.
-
-Dictionaries{'str':int} or viceversa.
-dict.keys and dict-values.
-
-
-The data frame is the box excluding indexes (can be only one column).
-A single column is a series. (try the type() method).
-Be aware of the different between data frame and series. 
-Each one of them provides different functionalities.
-
----
-
- PCA - sostituisci slide DM con quelle nuove e sistema la parte precedente. In arancio i titoli.
-
-$$log_{10}(n)$$ means transforming the number n in his order of magnitude.
-
----
-
-
-
----
-
-# project faq
+**project faq**
 
 Remove outliers and draw the plot again. check the difference. Do it differently for each attribute. Work independently from feature to feature.
 K-means is very sensitive to outliers.
@@ -91,61 +66,38 @@ Do a PCA, for dimensionality reduction.
 If k=2, you can visualise in a scatterplot, loosing however information.
 But clustering comes before pca.
 
+# Python
 ---
+3 basic types: int, float, str.
+// is the division by integer part.
+4 data structures: `list[,], set{,}, tuple(,)`
+Difference between list and set? In a set there are no duplicates. And both of them can be composed by mixed data types.
 
-# KNN
-It is the Nearest Neighbour Classification.
-It is a instance-based classifier.
-You compare the target value with the set of ducks which is nearest. This set is what defines the attributes of "a duck".
-> If it walks like a duck, quacks like a duck, then it's probably a duck.
+Dictionaries `{'str':int}` or viceversa.
+dict.keys and dict-values.
 
-How to choose k?
-If K is too small, it leads to overfitting (relying too much of a singular value).
-If K is too large, the neighbourhood might include points from other classes.
-Set $K=sqrt(N)$, as a general rule of thumb.
-
-How does the voting work?
-Weight the vote according to the distance ($w = 1/(d^2)$)
-
-Dimensionality and scaling issues.
-Curse of dimensionality -> normalize the vector to unit length
-..
+The data frame is the box excluding indexes (can be only one column).
+A single column is a series. (try the type() method).
+Be aware of the different between data frame and series. 
+Each one of them provides different functionalities.
 
 
-Memory-based learning.
-..
 
-To find the parameter, divide the train set in train' and validation. Apply the algorithm to find the parameter validated through the validation set. Now use parameter on the whole original train set.
-
-PEBLS.
-It is categorical KNN.
-Until now, since we rely on Euclidean distance, we can work onyl with continuous attributes.
-It uses a distance calculated on the target value.
-
-Lazy-learner means calculus made at prediction time.
-
-For classification you use the mode (majority voting).
-For regression you use the average of the set of ducks.
-
+# Decision Tree Classifiers
 ---
+Split until the splitting attributes directly leads to a specific class, in a sense that it does not need to be split again to find a specific class.
+For example, if 'home owner=yes' then the class is for sure 'no'.
 
-# Naive Bayes
-> Why naive? Because it's assuming that the attributes are conditionally independent.
+![[Pasted image 20231122113533.png|400]]
 
-In reality, they're not independent.
+When the slip is not binary, who tells me what is the right split?
+There could be more than one tree that fits the same data.
 
----
+**Comments**
+Applied typically for tabular data.
+Use greedy algorithm, but it is not possible to grasp the real optimum.
 
-# Classification Model Evaluation
-
-  In the Iris dataset, you have 3 precision, one for each class.
-  
-  ---
-# ROC
-
-
-
-
+**Hunt's Algorithm**
 
 
 
