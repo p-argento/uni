@@ -9,7 +9,7 @@ Tim brown - Design Thinking
 1. [Word Embedding and Word2Vec](https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa)
 2. Brainstorming types
 3. always insert the prompt when using chatGPT (and which AI)
-4. use chatGPT (and Gen-AI) in more innovative ways
+4. [[use AI in more innovative ways]]
 5. the form is REALLY important (font, highlighting, images, tables, ecc)
 
 # Lectures
