@@ -1,6 +1,13 @@
 tim brown - Design Thinkning
 
 [[FAI methods]]
+
+
+Professor's suggestions
+1. [Word Embedding and Word2Vec](https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa)
+2. Brainstorming types
+3. always insert the prompt when using chatGPT
+
 ---
 
 Desirability
