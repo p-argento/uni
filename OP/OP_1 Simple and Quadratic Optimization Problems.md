@@ -174,28 +174,56 @@ One of the eigenvectors is the steepest direction, the other is least steep.
 
 ... algebraic stuff
 
-**Optimizing a Homogeneous quadratic multivariate function**
+**Optimizing Homogeneous quadratic multivariate function**
 It depends on the sign of eigenvalues.
 Is the matrix Q positive definite, positive definite, indefinite, etc.?
 ![[Pasted image 20231124190008.png]]
 
 **Optimizing Non-Homogeneous quadratic multivariate function**
-
-
-
-
-
-
+...
+wip
+...
 
 
 # 7. Multivariate Quadratic Case: Gradient Method
 ---
+> Multivariate oprimization algorithms (in general, how do they work)
+> Gradient method (basic idea)
+> Gradient Method for Multivariate Quadratic Functions
+> Convergence of the Gradient Method
+> Complexity of the Gradient Method
+> Stopping criterion
+> Is it fast enough?
+> If $\lambda_n=0$ 
 
+**Algorithm idea**
+It is an iterative procedure.
+It start from an initial guess $x_0$ and after some process $x_i\leadsto x^{i+1}$ we get a sequence $\{x_i\}$ that should go towards an optimal solution.
+We cannot get to $f_*$ in finite time, but we can get as close as we want.
+Does a sequence always converge? If it is monotone, then yes.
+Monotone means that the function value at each iteration will be better.
+We generally assume minimization.
 
+**Gradient Method basic idea**
+Watch a video. There are a lot. This part is not clear at all.
 
 
 # 8. Multivariate Quadratic Case: Conjugate Gradient Method
 ---
+> Speeding up the gradient method for quadratic functions
+> The power of conjugate directions
+> The conjugate gradient method for quadratic functions
+> Efficiency of the Conjugate Gradient Method
+> Preconditioning the Conjugate Gradient Method
+
+**Speeding up the gradient method for quadratic functions**
+The Gradient Method only need one iteration when $Q=Identity$.
+What if we change the space to get it?
+In theory, it is simple if Q is non-singular, which mean non-null eigenvalues.
+$[ H\sqrt{\wedge}H^T ][ H\sqrt{\wedge}H^T ] = H\sqrt{\wedge}[H^T H ]\sqrt{\wedge}H^T = H\wedge H^T = Q$
+
+
+
 
 
 
@@ -203,4 +231,8 @@ Is the matrix Q positive definite, positive definite, indefinite, etc.?
 
 # 9. Multivariate Quadratic Case: Factorization
 ---
+> Using the big guns: direct methods
+> Backsolve
+> Cholescky Factorization
 
+If Q is dense, Choleski Factorization is the best thing you can do.
