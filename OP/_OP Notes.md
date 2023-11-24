@@ -4,8 +4,9 @@
 [[OP_0 Introduction To Course]]
 [[OP_1 Simple and Quadratic Optimization Problems]]
 [[OP_2 Univariate Optimization]]
-[[OP_3 Multivariate Unconstrained Non-Smooth Optimization]]
+[[OP_3 Multivariate Unconstrained Optimization (INTRO)]]
 [[OP_4 Multivariate Unconstrained Smooth Optimization]]
+[[OP_5 Multivariate Unconstrained Non-Smooth Optimization]]
 
 
 **Project**

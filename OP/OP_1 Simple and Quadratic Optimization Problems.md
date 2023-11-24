@@ -71,17 +71,42 @@ To avoid this case, we optimize functions that are
 1. continuous (to avoid jumps)
 2. Lipszitch-Continuous (to avoid also spikes)
 
-
-
-
-
 # 3. Simple functions, Univariate Case
 ---
 > Linear Univariate Function.
 > Quadratic Univariate Homogeneous functions.
 > Quadratic Univariate Non-Homogeneous functions.
 
+**Linear Univariate Optimality**
+In a linear function.
+![[Pasted image 20231124174544.png|200]]
+If $b>0$ -> $\max=+\inf , \min=-\inf$
+If $b=0$ -> $\min=\max=0$
+I
+t is more interesting to do box-constrained optimization within (P)
+$$(P)\ \min\{f(x):x\in [x_-,x_+]\}$$
+It is better to use closed interval $[x_-,x_+]$  instead of $(x_-,x_+)$ .
+In fact, if the interval is open then $inf\ \exists$ but $min\ \nexists$.
+We will just use closed sets and be done with it.
 
+**Quadratic Univariate Homogeneous Functions**
+$f(x)=ax^2$
+![[Pasted image 20231124174759.png|100]]
+Again, unconstrained is easy and depends only on the sign of $a$.
+If $a>0\Rightarrow min=0,max=+\inf$
+If $a<0\Rightarrow min=-\inf,max=0$
+And again closed box-constrained is more interesting.
+
+**Quadratic Univariate Homogeneous Functions**
+$f(x)=ax^2+bx$
+Basically a homogeneous quadratic + a linear.
+Zero is always a root but not the min.
+
+How to find the min? Make $f(x)$ simpler by changing the space of variables.
+It means changing the input space so that it becomes homogeneous.
+The idea is to use $\bar{x}=-b/2a$ and $z=x-\bar{x}$.
+We are translating by $\bar{x}$ horizontally and by $f(x)$ vertically to make $f(x)$ homogeneous. Then the min point is $x*=\bar{x}$.
+Remember how to find the vertex of the parabola in high school. There's nothing different.
 
 # 4. Simple functions, Multivariate case
 ---
@@ -97,6 +122,64 @@ To avoid this case, we optimize functions that are
 > Non-Homogeneous Non-Singular Quadratic Functions (optimization).
 > Non-Homogeneous Singular Quadratic Functions (optimization)
 
+
+**Multivariate Optimization**
+Now we take a big step, using $n$ variables in input. However we stick with real functions, that means we are still getting a real number as output. In formula $f:\mathbb{R}^n\rightarrow \mathbb{R}$.
+This assumptions is strong and useful: we can alway say which result we like more because $\mathbb{R}$ has total order.
+If we had more than one object, we would call it multi-objective optimization.
+
+**A quick glimpse on Multi-Objective Optimization**
+$\mathbb{R}^k$ has no total order, so there is nothing like the best solution.
+We can however use the Pareto frontier to define non-dominated ones.
+Two solutions.  
+1. Scalarization. We can use a parameter to add the function in the other. Like a risk-adjusted return for investment. $\Rightarrow\min\{f_1(x)+\alpha f_2(x)\}$
+2. Budgeting. Decide the maximum risk. So we'll use a one-objective function with constraints.  $\Rightarrow\min\{f_1(x):f_2(x)\leq \beta\}$
+This is done at modelling stage.
+
+> **Basic Algebra Review**
+> Watch 3b1b Linear Algebra playlist on youtube.
+> For the Italians, search Gobbino.
+
+**Picturing Multivariate functions**
+Not possible.
+We need to find the direction $d$ to represent what we need in two dimensions.
+
+**Linear Multivariate Functions**
+![[Pasted image 20231124182608.png|400]]
+Level sets are lines in $\mathbb{R}^2$ that represents parallel hyperplanes in $\mathbb{R}^n$.
+These lines basically are places where the function has the same value for all those point.
+$f(x)=f(z)\iff\langle b,x\rangle=\langle b,z\rangle=0\iff b\bot z$
+
+**Tomography**
+Think of $b$ as the gradient, which is the steepest way to get higher values of the function. Of course minus the gradient is the way the get the steepest way to descend. All the vectors in the middle give directions in between. This is the idea behind the Gradient Method.
+Just imagine the vectors on the 3D figure above and you will get the idea.
+
+**Separable (=sum of) Non-Homogeneous Quadratic Function.**
+Special case with $f(x_1,x_2)=ax_1^2+x_2^2$.
+It is exactly like the univariate case.
+
+**Non-Separable Homogeneous Quadratic Function**
+$f(x)=\frac1 2 x^TQx$
+$Q$ is symmetric.
+
+> **Advanced Algebra review**
+> This is required to work with the associated matrix of the Quadratic Function.
+
+$\varphi_{H_i}(\alpha)=\alpha^2\lambda_i$
+No idea of what that means.
+
+$H_1,H_2$ are the eigenvectors of the $Q$ matrix.
+Steepness change with the direction.
+One of the eigenvectors is the steepest direction, the other is least steep.
+
+... algebraic stuff
+
+**Optimizing a Homogeneous quadratic multivariate function**
+It depends on the sign of eigenvalues.
+Is the matrix Q positive definite, positive definite, indefinite, etc.?
+![[Pasted image 20231124190008.png]]
+
+**Optimizing Non-Homogeneous quadratic multivariate function**
 
 
 
