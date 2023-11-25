@@ -164,6 +164,7 @@ $Q$ is symmetric.
 
 > **Advanced Algebra review**
 > This is required to work with the associated matrix of the Quadratic Function.
+> [This part](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Diagonalization_and_the_eigendecomposition) is important.
 
 $\varphi_{H_i}(\alpha)=\alpha^2\lambda_i$
 No idea of what that means.
