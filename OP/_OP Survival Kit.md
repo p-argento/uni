@@ -16,7 +16,7 @@
 # Books
 ---
 
-[Book on github](https://indrag49.github.io/Numerical-Optimization/) with many interesting explanations like line search, conjugate gradient, quasi-newton, etc.
+[Book on github](https://indrag49.github.io/Numerical-Optimization/) with many interesting explanations like line search, conjugate gradient, quasi-newton, etc. (*THIS IS GOLD*)
 
 
 
