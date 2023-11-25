@@ -1,9 +1,9 @@
 # Videos
 ---
 
-[MATLAB Tutorial](https://www.youtube.com/watch?v=7f50sQYjNRA&t=6345s)
+[MATLAB Tutorial](https://www.youtube.com/watch?v=7f50sQYjNRA&t=6345s) the first half is a must to understand what the professor does during lectures
 
-[StatQuest](https://www.youtube.com/@statquest)
+[StatQuest](https://www.youtube.com/@statquest) useful also for data mining
 
 [Michel Bierblaire](https://youtube.com/playlist?list=PL10NOnsbP5Q7wNrYItE2GhKq05cVov97e&si=Rd85llfgFQAeddFU) on Descent Methods
 
@@ -13,7 +13,7 @@
 # Books
 ---
 
-https://indrag49.github.io/Numerical-Optimization/line-search-descent-methods.html#selection-of-step-length
+[Book on github](https://indrag49.github.io/Numerical-Optimization/) with many interesting explanations like line search, conjugate gradient, quasi-newton, etc.
 
 
 
