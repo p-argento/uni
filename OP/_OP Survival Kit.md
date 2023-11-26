@@ -15,8 +15,10 @@
 
 # Books
 ---
-(*THIS IS GOLD*)
-[Book on github](https://indrag49.github.io/Numerical-Optimization/) with many interesting explanations like line search, conjugate gradient, quasi-newton, etc. It is basically a summary of "J. Nocedal, S.J. Wright, Numerical Optimization" which is one the sources of the professor. And even the order of topics looks very similar.
+
+[THIS IS DEFINITELY THE BOOK OF THE COURSE](https://www.math.uci.edu/~qnie/Publications/NumericalOptimization.pdf) "J. Nocedal, S.J. Wright, Numerical Optimization". It is often cited by the professor in the slides. It is very clear. And the topics are the same of the professor. 
+
+[Book on github](https://indrag49.github.io/Numerical-Optimization/) with many interesting explanations like line search, conjugate gradient, quasi-newton, etc. It looks like a summary of "J. Nocedal, S.J. Wright, Numerical Optimization" which is one the sources of the professor.
 
 
 # Datasets
