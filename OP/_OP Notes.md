@@ -33,10 +33,8 @@ Constrained
 
 
 
-
+# Random Notes
 ---
-
-
 
 E-6 for gradient norm as a stop criteria 
 What is alfa?
