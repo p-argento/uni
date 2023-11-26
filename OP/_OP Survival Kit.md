@@ -18,14 +18,14 @@
 
 # Datasets
 ---
-[Optimization Test Problems](https://www.sfu.ca/~ssurjano/optimization.html) The functions listed below are some of the common functions and datasets used for testing optimization algorithms.
+[Optimization Test Problems](https://www.sfu.ca/~ssurjano/optimization.html) The functions listed below are some of the common functions and datasets used for testing optimization algorithms. The professor used this dataset many times to get strange functions.
 
 The [CIFAR-10 and CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html) are labeled subsets of the 80 million tiny images dataset. 
 
 
 # Looks interesting
 ---
-(this section is a draft with links I still need to check)
+*(this section is a draft with links I still need to check)*
 
 [3Blue1Brown Neural Networks](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&si=RIaILbg9pOXcWlFc)
 

@@ -1,2 +1,0 @@
-https://indrag49.github.io/Numerical-Optimization/
-
