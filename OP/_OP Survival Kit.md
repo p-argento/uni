@@ -1,3 +1,4 @@
+*If you have any suggestions, text me on telegram @pietroargento*
 # Videos
 ---
 
