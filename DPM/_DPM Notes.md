@@ -12,6 +12,24 @@ Tim brown - Design Thinking
 4. [[use AI in more innovative ways]]
 5. the form is REALLY important (font, highlighting, images, tables, ecc)
 
+**What do to**
+1. asteriscs, and highlighting/bold/italics
+2. cite and refer to tables and figures
+3. explain which brainstorming type (2.1,2.3)
+4. chatGPT prompt
+	1. rafa social network
+	2. tolgonai need identification ()
+5. describe better the methods for
+	1. user identification (chatGPT)
+	2. need identification, add social comment method and ai-generated images
+6. add more papers and references (give background to project)
+	1. non-profit organization
+	2. better method to define users?
+7. reduce meaningless sentences in the report, adding further explanations on why things are important
+8. use more mathematical formulas, maybe coming from papers
+9. ask chatGPT if the project is fine based on professor's assessment table (innovative use of AI)
+
+
 # Lectures
 ---
 ### Introduction

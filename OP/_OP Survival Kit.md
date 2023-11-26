@@ -12,7 +12,7 @@
 
 # Books
 ---
-[THIS IS DEFINITELY THE BOOK OF THE COURSE](https://www.math.uci.edu/~qnie/Publications/NumericalOptimization.pdf) "J. Nocedal, S.J. Wright, Numerical Optimization". It is often cited by the professor in the slides. It is very clear. And the topics are the same of the lectures. 
+[THIS IS DEFINITELY THE BEST BOOK OF THE COURSE](https://www.math.uci.edu/~qnie/Publications/NumericalOptimization.pdf) "J. Nocedal, S.J. Wright, Numerical Optimization". It is often cited by the professor in the slides. It is very clear. And the topics are the same of the lectures.
 
 [Book on github](https://indrag49.github.io/Numerical-Optimization/) It looks like a summary of "J. Nocedal, S.J. Wright, Numerical Optimization".
 
@@ -25,7 +25,7 @@ The [CIFAR-10 and CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html) are la
 
 # Looks interesting
 ---
-*(this section is a draft with links I still need to check)*
+*(this section is a draft with links I still need to have a look at them)*
 
 [3Blue1Brown Neural Networks](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&si=RIaILbg9pOXcWlFc)
 
