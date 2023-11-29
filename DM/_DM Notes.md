@@ -104,6 +104,8 @@ Use greedy algorithm, but it is not possible to grasp the real optimum.
 ---
 
 
+# Decision Trees Lab
+
 
 
 
