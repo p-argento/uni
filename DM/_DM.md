@@ -1,5 +1,4 @@
 
-
 [[DM Project Notes]]
 [[DM Clustering]]
 [[DM Classification]]
@@ -82,29 +81,9 @@ Be aware of the different between data frame and series.
 Each one of them provides different functionalities.
 
 
-
-# Decision Tree Classifiers
----
-Split until the splitting attributes directly leads to a specific class, in a sense that it does not need to be split again to find a specific class.
-For example, if 'home owner=yes' then the class is for sure 'no'.
-
-![[Pasted image 20231122113533.png|400]]
-
-When the slip is not binary, who tells me what is the right split?
-There could be more than one tree that fits the same data.
-
-**Comments**
-Applied typically for tabular data.
-Use greedy algorithm, but it is not possible to grasp the real optimum.
-
-**Hunt's Algorithm**
-
-
-
+# Appo
 ---
 
-
-# Decision Trees Lab
 
 
 

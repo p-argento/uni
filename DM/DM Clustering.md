@@ -1,4 +1,5 @@
-[[_DM Notes]]
+[[_DM]]
+
 [[Lecture notes on clustering]]
 [[Plotting high dimensional clustering]]
 [[Normalization]]

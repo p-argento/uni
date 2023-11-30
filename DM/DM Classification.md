@@ -1,6 +1,9 @@
+[[_DM]]
+
 [[9. Instance-based classifiers]]
 [[10. Naïve Bayes Classifier]]
 [[11.  Classification Model Evaluation]]
+[[12. Decision Trees]]
 # 8. Intro
 
 Supervised learning refers to problem where the value of a target should be predicted based on the values of other attributes.
