@@ -49,7 +49,9 @@ The Polynomial Kernel of a Support Vector Classifier looks like this $$(a\times 
 $a,b$ are two different observations in the dataset
 $r$ determines the coefficient of the polynomial
 $d$ sets the degree of the polynomial
+$\Rightarrow r,d$ are determined using cross-validation
 
+The Polynomial Kernel computes relationship between pair of observations. 
 
 
 
