@@ -45,13 +45,34 @@ This reduces the computation required.
 
 # 2. Polynomial Kernel
 ---
+The Polynomial Kernel computes relationship between pair of observations. 
 The Polynomial Kernel of a Support Vector Classifier looks like this $$(a\times b+r)^d$$
 $a,b$ are two different observations in the dataset
 $r$ determines the coefficient of the polynomial
 $d$ sets the degree of the polynomial
 $\Rightarrow r,d$ are determined using cross-validation
 
-The Polynomial Kernel computes relationship between pair of observations. 
+...
+
+If $r=0$, the points get scaled, but they do not change dimension.
+For example, if $d=2$, we get $(a\times b)^2=(a^2)\cdot(b^2)$
+
+
+
+
+
+# 3. Radial Kernel
+---
+One way to deal with overlapping data is to use a Support Vector Machine with a Radial Kernel.
+$$e^{-\gamma(a-b)^2}$$
+$\gamma$ scales the squared distance and thus it scales the influence. It is determined using Cross Validation.
+
+It's not possible to visualize it, because the Radial Kernel finds SVC in infinte dimensions.
+
+It behaves like weighted nearest neighbor.
+The further two observations are from each other, the less influence they have on each other. If they are really far, we get a number very close to zero.
+When we plug values into the Radial Kernel, we get the high-dimensional relationship.
+
 
 
 
