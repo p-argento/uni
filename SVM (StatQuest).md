@@ -1,5 +1,7 @@
 [StatQuest 1/3](https://www.youtube.com/watch?v=efR1C6CvhmE)
-
+[StatQuest 2/3](https://www.youtube.com/watch?v=Toet3EiSFcM)
+# 1. Support Vector Machines
+---
 Different steps (increasingly complex classifiers)
 1. Maximal Margin Classifiers
 2. Support Vector Classifier (or Soft Margin Classifier)
@@ -36,8 +38,19 @@ It finds SVC in infinite dimensions.
 It behaves like a Weighted Nearest Neighbor Model.
 Basically the closest observations have more influence.
 
-How does the Kernel calculates the relationships?
+How does the Kernel function calculates the relationships?
 Using the Kernel Trick.
-Basically 
+Basically Kernel function only calculates the relationship between every pair of points without actually transforming the data to the higher dimension.
+This reduces the computation required.
+
+# 2. Polynomial Kernel
+---
+The Polynomial Kernel of a Support Vector Classifier looks like this $$(a\times b+r)^d$$
+$a,b$ are two different observations in the dataset
+$r$ determines the coefficient of the polynomial
+$d$ sets the degree of the polynomial
+
+
+
 
 
