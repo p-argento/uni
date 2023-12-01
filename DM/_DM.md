@@ -3,6 +3,8 @@
 [[DM Clustering]]
 [[DM Classification]]
 
+> Think of how stupid the average person is, and realize half of them are stupider than that. (the median is cool)
+
 # TO-DO
 ---
 - [ ] Vedi appunti su slide dell'anno scorso per le prime lezioni
