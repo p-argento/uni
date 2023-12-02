@@ -73,6 +73,12 @@ It behaves like weighted nearest neighbor.
 The further two observations are from each other, the less influence they have on each other. If they are really far, we get a number very close to zero.
 When we plug values into the Radial Kernel, we get the high-dimensional relationship.
 
+The proof uses the Taylor Series Expansions.
+...
+
+The Radial Kernel is equal to a Dot Product that has coordinates for an infinite number of dimensions.
+
+
 
 
 
