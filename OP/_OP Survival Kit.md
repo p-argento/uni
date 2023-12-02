@@ -22,6 +22,8 @@
 
 The [CIFAR-10 and CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html) are labeled subsets of the 80 million tiny images dataset. 
 
+The [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/). We currently maintain 653 datasets as a service to the machine learning community. Here, you can donate and find datasets used by millions of people all around the world!
+
 
 # Looks interesting
 ---
