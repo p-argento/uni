@@ -79,6 +79,11 @@ The proof uses the Taylor Series Expansions.
 The Radial Kernel is equal to a Dot Product that has coordinates for an infinite number of dimensions.
 
 
+# Additional Math
+---
+From [ritvikmath](https://www.youtube.com/watch?v=bM4_AstaBZo)
+
+![[Pasted image 20231202183407.png]]
 
 
 
