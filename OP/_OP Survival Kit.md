@@ -8,8 +8,6 @@
 
 [Visually Explained](https://www.youtube.com/@VisuallyExplained/playlists) with Visual explanations of algorithms.
 
-[3Blue1Brown Linear Algebra](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&si=FnSUx1zAzgiZF1yS) must watch to review linear algebra.
-
 [ritvikmath](https://youtube.com/playlist?list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&si=LEUI2PVXL5K2jY6k) has some interesting videos on the math behind data science concepts.
 
 # Books
@@ -27,6 +25,14 @@
 The [CIFAR-10 and CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html) are labeled subsets of the 80 million tiny images dataset. 
 
 The [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/). We currently maintain 653 datasets as a service to the machine learning community. Here, you can donate and find datasets used by millions of people all around the world!
+
+
+# Math Review
+---
+[3Blue1Brown Linear Algebra](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&si=FnSUx1zAzgiZF1yS) must watch to review linear algebra.
+
+[Multivariable Calculus](https://www.youtube.com/playlist?list=PLSQl0a2vh4HC5feHa6Rc5c0wbRTx56nF7) for things like gradient, lagrangian and so on.
+
 
 
 # Looks interesting

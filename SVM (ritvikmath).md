@@ -23,3 +23,4 @@ PRIMAL $$\displaylines{\min_{w,b}\frac 1 2||\omega||^2\\y_i(\omega^Tx_i-b)\geq 1
 [video](https://www.youtube.com/watch?v=OKFMZQyDROI&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=57)
 
 ![[Pasted image 20231203173850.png]]
+

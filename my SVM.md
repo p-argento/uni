@@ -11,4 +11,21 @@ Key steps in the theory.
 
 Practice
 1. Scikit Learn Implementation with GridSearch
-2. 
+
+
+# Math Background
+---
+[[_OP Survival Kit]]
+[[Lagrangian]]
+[[SVM (ritvikmath)]]
+
+maybe watch [lagrange multipliers](https://www.youtube.com/watch?v=6oZT72-nnyI)
+
+
+# Coding
+---
+[[SVM in Python (StatQuest)]]
+
+
+
+
