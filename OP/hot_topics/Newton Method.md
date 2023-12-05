@@ -44,3 +44,19 @@ With 10 variables is fine. But what about 10k?
 Quasi-Newton Methods avoid to compute the Hessian and its matrix.
 
 
+# From Wikipedia
+---
+from [wikipedia](https://en.wikipedia.org/wiki/Newton%27s_method_in_optimization)
+
+
+Given
+$${\displaystyle \min _{x\in \mathbb {R} }f(x)}$$
+And using a sequence of second-order Taylor approximations of $f$ around the iterates.
+$${\displaystyle f(x_{k}+t)\approx f(x_{k})+f'(x_{k})t+{\frac {1}{2}}f''(x_{k})t^{2}}$$
+The next iterate is defined as to minimize the quadratic approximation in t. If the second derivative is positive, the quadratic approximation is a convex function of t, and its minimum can be found by etting the derivative to zero.
+$${\displaystyle \displaystyle 0={\frac {\rm {d}}{{\rm {d}}t}}\left(f(x_{k})+f'(x_{k})t+{\frac {1}{2}}f''(x_{k})t^{2}\right)=f'(x_{k})+f''(x_{k})t}$$
+The minimum is achieved for
+$${\displaystyle t=-{\frac {f'(x_{k})}{f''(x_{k})}}}$$
+Putting everything together, the iteration performed by Newton is
+$${\displaystyle x_{k+1}=x_{k}+t=x_{k}-{\frac {f'(x_{k})}{f''(x_{k})}}}$$
+
