@@ -4,3 +4,4 @@ My [[SVM on Medium]] about these articles on **Medium** on SVM Talking maths:
 3. [Using Interior Point Methods for SVM Training](https://towardsdatascience.com/svm-talking-algos-using-interior-point-methods-for-svm-training-d705cdf78c94)
 
 
+![[Pasted image 20231205124446.png]]
