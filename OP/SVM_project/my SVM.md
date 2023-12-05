@@ -8,17 +8,15 @@
 ---
 [[_OP Survival Kit]]
 [[Lagrangian]]
-[[SVM (ritvikmath)]]
 
 Key steps in the theory from [[SVM (ritvikmath)]]
-1. Lagrange Multipliers
-2. The math
-3. Hard margin
-4. Soft margin
-5. The Polynomial Kernel
-6. The RBF Kernel
-7. The Dual Problem
-8. The Kernels
+1. [Lagrange Multipliers](https://www.youtube.com/watch?v=6oZT72-nnyI)
+2. [The math](https://www.youtube.com/watch?v=bM4_AstaBZo)
+3. [Soft margin](https://www.youtube.com/watch?v=IjSfa7Q8ngs&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=70)
+4. The Polynomial Kernel
+5. [The RBF Kernel](https://www.youtube.com/watch?v=Q0ExqOphnW0&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=59)
+6. [The Dual Problem]((https://www.youtube.com/watch?v=6-ntMIaJpm0&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=59)
+7. [The Kernels](https://www.youtube.com/watch?v=OKFMZQyDROI&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=57)
 
 
 My [[SVM on Medium]] about these articles on **Medium** on SVM Talking maths:
@@ -27,11 +25,12 @@ My [[SVM on Medium]] about these articles on **Medium** on SVM Talking maths:
 3. [Using Interior Point Methods for SVM Training](https://towardsdatascience.com/svm-talking-algos-using-interior-point-methods-for-svm-training-d705cdf78c94)
 
 
-
 # Coding
 ---
 [[SVM in Python (StatQuest)]]
 
+Scikit Learn Implementation with GridSearch
 
-Practice
-1. Scikit Learn Implementation with GridSearch
+[This Repository](https://github.com/MariaLavrovskaya/Nowearetalking) by [MariaLavrovskaya](https://github.com/MariaLavrovskaya) explained in the Medium article.
+
+
