@@ -26,6 +26,7 @@ The [CIFAR-10 and CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html) are la
 
 The [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/). We currently maintain 653 datasets as a service to the machine learning community. Here, you can donate and find datasets used by millions of people all around the world!
 
+[Italian Public Datasets](https://github.com/italia/awesome-italian-public-datasets) shared by Geospatial Analytics professor.
 
 # Math Review
 ---
