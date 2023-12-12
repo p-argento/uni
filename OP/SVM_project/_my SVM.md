@@ -38,3 +38,9 @@ Scikit Learn Implementation with GridSearch
 
 [creating-one-vs-rest-and-one-vs-one-svm-classifiers-with-scikit-learn.md](https://github.com/christianversloot/machine-learning-articles/blob/main/creating-one-vs-rest-and-one-vs-one-svm-classifiers-with-scikit-learn.md)
 
+https://www.sciencedirect.com/science/article/pii/S0925231208003007
+
+https://www.cs.cmu.edu/~ggordon/10725-F12/scribes/10725_Lecture22.pdf
+
+https://webgol.dinfo.unifi.it/wp-content/uploads/2018/03/survey_piccialli_sciandrone4OR.pdf
+
