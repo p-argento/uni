@@ -1,5 +1,8 @@
 # Outline
 ---
+![[Screenshot 2023-12-12 at 16.08.31.png]]
+
+https://epubs.siam.org/doi/abs/10.1137/S1052623400374379?journalCode=sjope8
 
 
 
