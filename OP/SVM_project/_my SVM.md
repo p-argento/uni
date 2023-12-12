@@ -44,3 +44,8 @@ https://www.cs.cmu.edu/~ggordon/10725-F12/scribes/10725_Lecture22.pdf
 
 https://webgol.dinfo.unifi.it/wp-content/uploads/2018/03/survey_piccialli_sciandrone4OR.pdf
 
+(maybe crazy) https://cienciasbasicas.udp.cl/cms/wp-content/uploads/2019/06/52.pdf
+
+https://www.youtube.com/watch?v=YChPxoJ-Sh4
+
+https://www.geeksforgeeks.org/one-vs-rest-strategy-for-multi-class-classification/
