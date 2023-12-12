@@ -36,4 +36,5 @@ Scikit Learn Implementation with GridSearch
 
 [This Repository](https://github.com/MariaLavrovskaya/Nowearetalking) by [MariaLavrovskaya](https://github.com/MariaLavrovskaya) explained in the Medium article.
 
+[creating-one-vs-rest-and-one-vs-one-svm-classifiers-with-scikit-learn.md](https://github.com/christianversloot/machine-learning-articles/blob/main/creating-one-vs-rest-and-one-vs-one-svm-classifiers-with-scikit-learn.md)
 
