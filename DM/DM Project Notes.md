@@ -28,3 +28,22 @@ Here's a more detailed explanation:
 In summary, the idea is to recognize and leverage the unique characteristics of numerical and binary features by applying clustering separately to each type. This approach can lead to more meaningful insights and a better understanding of the underlying structures in your data.
 
  
+# Classification
+## Pre-processing
+Basics steps
+1. explore (EDA)
+	1. head(),info(), describe()
+2. partitioning
+	1. train_test_split
+3. encoding
+	1. OneHotEncoding
+4. normalization
+	1. MinMax, Zscore,
+
+Carefully distinguish
+1. numerical features
+2. categorical features
+3. binary features
+
+## KNN
+
