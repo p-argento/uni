@@ -38,12 +38,51 @@ Basics steps
 3. encoding
 	1. OneHotEncoding
 4. normalization
-	1. MinMax, Zscore,
+	1. MinMax, Zscore, StandardScaler
 
 Carefully distinguish
 1. numerical features
 2. categorical features
 3. binary features
 
+**Converting Dataframe to NumPy Array**: `X = df.values` converts the features DataFrame into a NumPy array. This is a common practice because scikit-learn's models generally work with NumPy arrays, although they also accept DataFrames.
+Preparing Target Variable: `y = np.array(frame['target'])` takes the target variable ('target' column) and converts it into a NumPy array.
 ## KNN
 
+```
+clf = KNeighborsClassifier(n_neighbors=5, metric="euclidean", weights="uniform")
+clf.fit(X_train_norm, y_train)
+y_test_pred = clf.predict(X_test_norm)
+```
+
+### KNN Evaluation
+Evaluate
+1. accuracy
+2. score
+3. classification report
+	1. precision, recall, f1-score
+4. confusion matrix
+5. roc curve
+6. precision recall curve
+
+```
+print("Accuracy:", accuracy_score(y_test, y_test_pred))
+
+# score: Return the mean accuracy on the given test data and labels.
+# KNeighborsClassifier.score is doing (y_test_pred == y_test).sum() / len(y_test)
+clf.score(X_test_norm, y_test)
+
+```
+
+```
+print(classification_report(y_test, y_test_pred))
+```
+
+### Repeated Holdout
+
+
+###  Cross-Validation
+
+
+### Hyperparameters tuning
+Grid search
