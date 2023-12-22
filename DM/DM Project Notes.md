@@ -49,13 +49,14 @@ Carefully distinguish
 Preparing Target Variable: `y = np.array(frame['target'])` takes the target variable ('target' column) and converts it into a NumPy array.
 ## KNN
 
+### Model fit
 ```
 clf = KNeighborsClassifier(n_neighbors=5, metric="euclidean", weights="uniform")
 clf.fit(X_train_norm, y_train)
 y_test_pred = clf.predict(X_test_norm)
 ```
 
-### KNN Evaluation
+### Performance Evaluation
 Evaluate
 1. accuracy
 2. score
@@ -78,11 +79,11 @@ clf.score(X_test_norm, y_test)
 print(classification_report(y_test, y_test_pred))
 ```
 
-### Repeated Holdout
-
-
-###  Cross-Validation
-
-
+### Advanced Performance Evaluation
+These methods provide an estimate of the model's performance metrics (like accuracy, precision, recall) based on multiple rounds of training and validation.
+For example
+1. Repeated Holdout
+2. Cross-Validation
 ### Hyperparameters tuning
-Grid search
+1. Grid search.
+Systematically build and evaluate a model for each combination of algorithm parameters specified in a grid. Provides the best set of hyperparameters for a model.
