@@ -1,5 +1,5 @@
 
-[[DM Project Classification]]
+[[DM Project]]
 [[DM Clustering]]
 [[DM Classification]]
 
