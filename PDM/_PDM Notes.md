@@ -3,7 +3,6 @@ Tim brown - Design Thinking
 ---
 **Project Notes**
 [[FAI methods]]
-[[FAI my Notes]]
 
 **Professor's suggestions**
 1. [Word Embedding and Word2Vec](https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa)
