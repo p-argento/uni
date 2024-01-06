@@ -14,6 +14,11 @@
 Study the book! Available online.
 Experiment with dataset online, trying to reproduce the output of notebooks.
 
+# Slides
+---
+
+
+
 # Outline
 ---
 Module 1: Data Understanding 

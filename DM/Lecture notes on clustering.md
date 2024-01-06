@@ -3,7 +3,7 @@ What is NOT clustering?
 The result of a query, class label information (supervised learning),..
 A clustering is a set of clusters.
 *Types of clustering set*
-- Partitional -> excllusive
+- Partitional -> exclusive
 - Hierarchical -> nested clusters (dendrogram)
 *Types of clusters*
 - center-based -> centroid
