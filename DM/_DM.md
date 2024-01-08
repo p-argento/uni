@@ -6,6 +6,7 @@
 [[DM Classification]]
 [[DM Pattern Mining]]
 
+[[DM Formulas]]
 
 
 # TO-DO
