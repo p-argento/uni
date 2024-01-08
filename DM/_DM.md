@@ -1,9 +1,12 @@
 
 [[DM Project]]
+
+[[DM Data Analysis]]
 [[DM Clustering]]
 [[DM Classification]]
+[[DM Pattern Mining]]
 
-> Think of how stupid the average person is, and realize half of them are stupider than that. (referring to the median of course) 
+
 
 # TO-DO
 ---
@@ -16,7 +19,25 @@ Experiment with dataset online, trying to reproduce the output of notebooks.
 
 # Slides
 ---
-
+0. Introduction
+Exploratory Data Analysis
+1. Data Understanding
+2. Data Preparation
+3. Data Similarity
+Clustering
+1. Clustering
+2. K-Means
+3. Hierarchical Clustering
+4. Density-Based Clustering
+Classification
+1. Classification Intro
+2. KNN
+3. Naive Bayes
+4. Classification Evaluation
+5. Decision Trees
+Regression and Pattern Mining
+1. Linear Regression
+2. Pattern Mining
 
 
 # Outline
