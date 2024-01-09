@@ -22,14 +22,14 @@ Experiment with dataset online, trying to reproduce the output of notebooks.
 ---
 0. Introduction
 Exploratory Data Analysis
-1. Data Understanding
-2. Data Preparation
-3. Data Similarity
+[[1. Data Understanding]]
+[[2. Data Preparation]]
+[[3. Data Similarity]]
 Clustering
-1. Clustering
-2. K-Means
-3. Hierarchical Clustering
-4. Density-Based Clustering
+[[4. Clustering Introduction]]
+[[5. K-Means]]
+[[6.Hierarchical Clustering]]
+[[7. Density-Based Clustering]]
 Classification
 1. Classification Intro
 2. KNN
