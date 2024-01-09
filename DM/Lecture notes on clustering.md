@@ -1,17 +1,6 @@
 
 
-# K-means
-The idea is to divide the dataset in clusters so that the mean of each cluster has a meaning, represent something.
-We're studying convex shapes, since with concavities we get weird results, since the mean would be in the hole. But we could also increase the number of clusters to obtain smaller convex shapes.
-What is the best k? It is a post-processing choice, because you need to see the difference between the different results.
 
-# Bisecting K-means
-From a recursive algo to smaller sets. Starting from a unique cluster, split into 2.
-
-# X-means
-New idea for splitting. 
-The SSE is always meaningful, it will always be meaningful to split. While with the BIC we can decide how many split at each iteration.
-They're greedy algo, simply optimising the next move.
 
 # Hierarchical Clustering
 Nested clusters organised as a hierarchical tree.
@@ -54,16 +43,7 @@ You can use categorical attributes to explore.
 ---
 
 # Clustering Exercises
-*K-means*
-2 dimensions, look for 2 clusters.
-The initial centroids are provided.
-The idea is to calculate euclidean distance between points and centroid (don't need the distance between all the points).
-2. assign each point to the nearest centroid
-	1. solve it graphically
-		1. draw a line between centroids and an orthogonal line intersecting in the middle.
-		2. each side belongs to a different centroid.
-Before the next iteration, calculate new centroids.
-Calculate the mean of x and y of each cluster for the new centroids. The result is the coordinate for the new centroid. And same for the other centroid.
+
 
 *Didactic data mining on didawiki*
 

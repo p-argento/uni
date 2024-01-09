@@ -27,7 +27,7 @@ Exploratory Data Analysis
 [[3. Data Similarity]]
 Clustering
 [[4. Clustering Introduction]]
-[[5. K-Means]]
+[[5. K-Means Clustering]]
 [[6.Hierarchical Clustering]]
 [[7. Density-Based Clustering]]
 Classification
