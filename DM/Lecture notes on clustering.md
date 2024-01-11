@@ -2,12 +2,6 @@
 
 
 
-# Hierarchical Clustering
-Nested clusters organised as a hierarchical tree.
-It is alway a bidimensional tree.
-Limited scalability of the problem. So it is used in combination with other methods like k-means (with a large k).
-Bottom-up costruction, merging cluster, is the most efficient way.
-
 # Density-based clustering
 DBSCAN algorithm.
 Based on the notion of density.
@@ -59,14 +53,6 @@ Labeling procedure.
 1. start from one core point and colour within the eps
 2. go further to find another core point (skip border points)
 
-*hierarchical clustering*
-They provide the proximity matrix (pairwise).
-> If it's a distance matrix, you look for the MIN distance.
-> If it's a similarity matrix, you look for the MAX value.
 
-1. if the distance merge is all the same (starting from the min), merge the points.
-2. recalculate the distance matrix but using new clusters as columns
-	1. in case of single-linkage, take the MIN distance between clusters
-	2. in case of complete-linkage, take the MAX distance between clusters
 
 > *DO THE EXS and test using didactic website*
