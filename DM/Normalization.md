@@ -15,6 +15,7 @@ Downside? Outliers. They can ruin everything, setting a very bad max or min.
 ![[Pasted image 20231112221611.png]]
 
 # Z-score Normalization
+(also called standardisation)
 The mean is zero and all the data points are around the zero.
 
 ![[Pasted image 20231112221123.png|200]]

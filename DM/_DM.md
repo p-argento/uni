@@ -1,17 +1,10 @@
 
 [[DM Project]]
 
-[[DM Data Analysis]]
 [[DM Clustering]]
-[[DM Classification]]
-[[DM Pattern Mining]]
+[[13. Pattern Mining]]
 
 [[DM Formulas]]
-
-
-# TO-DO
----
-- [ ] Vedi appunti su slide dell'anno scorso per le prime lezioni
 
 
 **Professor's Advice**
@@ -28,17 +21,17 @@ Exploratory Data Analysis
 Clustering
 [[4. Clustering Introduction]]
 [[5. K-Means Clustering]]
-[[6.Hierarchical Clustering]]
+[[6. Hierarchical Clustering]]
 [[7. Density-Based Clustering]]
 Classification
-1. Classification Intro
-2. KNN
-3. Naive Bayes
-4. Classification Evaluation
-5. Decision Trees
+[[8. Classification Introduction]]
+[[9. Instance-based classifiers]]
+[[10. Naïve Bayes Classifier]]
+[[11.  Classification Model Evaluation]]
+[[12. Decision Trees]]
 Regression and Pattern Mining
-1. Linear Regression
-2. Pattern Mining
+[[13. Pattern Mining]]
+[[14. Linear Regression]]
 
 
 # Outline

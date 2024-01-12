@@ -1,9 +1,5 @@
 [[_DM]]
 
-4. Clustering Introduction
-5. 
-
-[[Lecture notes on clustering]]
 [[Plotting high dimensional clustering]]
 [[Normalization]]
 

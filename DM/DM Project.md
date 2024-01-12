@@ -1,7 +1,6 @@
 [[Data Pre-Processing]]
 [[KNN Code]]
 
-[[DM Pattern Mining]]
 
 
 There is an orange cluster characterized by high values of explicit and spechiness.
