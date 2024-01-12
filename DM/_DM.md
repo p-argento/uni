@@ -1,9 +1,6 @@
 
 [[DM Project]]
-
 [[DM Clustering]]
-[[13. Pattern Mining]]
-
 [[DM Formulas]]
 
 
