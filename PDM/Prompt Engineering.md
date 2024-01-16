@@ -13,6 +13,10 @@ this knowledge refers to the understanding of the fundamental concepts and princ
 this skill refers to the ability to evaluate and analyse the effectiveness and efﬁciency of the AI model in achieving a given goal and objective. This involves outlining appropriate metrics or indicators to measure performance and comparing the model results against predetermined targets or benchmarks.
 
 ## CLASSES OF CHATGPT TASKS
+1. Generate
+2. Measure
+3. Translate
+
 
 - Generate Knowledge
 This class involves tasks that require the creation or synthesis of new ideas, concepts, or content. It primarily focuses on producing original work or innovative solutions, often drawing from existing knowledge or information. Examples include writing poems, developing business ideas, creating marketing strategies, and designing lesson plans. These tasks often necessitate creative thinking and problem-solving skills, as well as an understanding of various domains and contexts.
