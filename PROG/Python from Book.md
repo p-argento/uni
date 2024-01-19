@@ -1,0 +1,31 @@
+## Program
+Day 19
+1. Introduction
+2. Using Python
+3. Expressions
+4. Variables
+5. Simple Functions
+6. Conditions
+7. Iterations
+8. Functions
+9. Recursion
+10. Strings
+Day 20
+11. Tuples
+12. Lists
+13. Dictionaries
+14. Sets
+15. Operating System
+16. Text Files
+17. Exceptions
+18. Binary Files
+19. Bitwise Operators
+Day 21
+20. Object Orientation
+21. Operator Overloading
+22. Inheritance
+23. Iterators and Generators
+24. Command Line Processing
+25. Regular Expressions
+26. File Formats
+27. Various Useful Modules
