@@ -8,19 +8,19 @@ Day 19
 6. Conditions
 7. Iterations
 8. Functions
+Until now
 9. Recursion
 10. Strings
-Day 20
 11. Tuples
 12. Lists
 13. Dictionaries
 14. Sets
+Day 21
 15. Operating System
 16. Text Files
 17. Exceptions
 18. Binary Files
 19. Bitwise Operators
-Day 21
 20. Object Orientation
 21. Operator Overloading
 22. Inheritance
