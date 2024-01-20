@@ -29,3 +29,7 @@ Day 21
 25. Regular Expressions
 26. File Formats
 27. Various Useful Modules
+
+
+![[Pasted image 20240120170659.png]]
+
