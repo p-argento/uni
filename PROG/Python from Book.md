@@ -39,3 +39,6 @@ Extra
 ![[Pasted image 20240122132628.png]]
 
 ![[Pasted image 20240122164805.png]]
+
+![[Pasted image 20240122171223.png]]
+
