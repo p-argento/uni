@@ -37,3 +37,5 @@ Extra
 [[list methods]]
 
 ![[Pasted image 20240122132628.png]]
+
+Do not modify a list while iterating over it.
