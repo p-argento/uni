@@ -38,4 +38,4 @@ Extra
 
 ![[Pasted image 20240122132628.png]]
 
-Do not modify a list while iterating over it.
+![[Pasted image 20240122164805.png]]
