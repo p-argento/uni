@@ -34,3 +34,4 @@ Extra
 
 ![[Pasted image 20240120170659.png]]
 
+[[list methods]]
