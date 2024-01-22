@@ -42,3 +42,6 @@ Extra
 
 ![[Pasted image 20240122171223.png]]
 
+**When iterating through a list where you need to remove items,
+BETTER USE `while i < len(list) ` and NOT a for loop .**
+
