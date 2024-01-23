@@ -84,6 +84,9 @@ Dictionaries `dict{"apple":3} ` and Sets {1,5,9} are
 
 Mixing types?
 
+
+Lists and dictionaries are the two most-used data structures in Python.
+
 ## Dictionaries
 Description
 
@@ -92,6 +95,7 @@ Special things
 - `fruitbasket3 = fruitbasket1 | fruitbasket2` is the pipeline to merge two dictionaries, but the value for a key which is in both these dictionaries is taken from fruitbasket2, as that dictionary is to the right of the pipeline.
 - `x:dict[str,int]` is a type hint
 - With the introduction of Python 3.7, the ordering that you see when dictionaries are displayed is guaranteed: it is the order in which the items were added to the dictionary. the order of addition is simply stored in a separate data structure next to the dictionary, which is used when you display the dictionary. Dictionaries cannot be sorted or reversed, as they are unordered by deﬁnition.
+- any immutable data type can be a key. This means: int, float, strings, tuples.
 Methods
 - copy()
 	- `fruitbasketalias = fruitbasket
