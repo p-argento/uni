@@ -46,6 +46,7 @@ Extra
 BETTER USE `while i < len(list) ` and NOT a for loop .**
 
 ## Built-in Types from documentation
+[Here](https://docs.python.org/3/library/stdtypes.html)
 1. Truth Value Testing
 2. Boolean Operations — and, or, not
 3. Comparisons
@@ -62,7 +63,7 @@ BETTER USE `while i < len(list) ` and NOT a for loop .**
 14. Other Built-in Types
 
 
-## Data containers comparison
+## Data types comparison
 | DATA STRUCTURE | ORDERED | MUTABLE |
 | ---- | ---- | ---- |
 | string | y |  |
@@ -87,9 +88,18 @@ Mixing types?
 
 Lists and dictionaries are the two most-used data structures in Python.
 
+## Strings
+
+
+
+
+
+
+
+
+
 ## Dictionaries
 Description
-
 
 Special things
 - `fruitbasket3 = fruitbasket1 | fruitbasket2` is the pipeline to merge two dictionaries, but the value for a key which is in both these dictionaries is taken from fruitbasket2, as that dictionary is to the right of the pipeline.
