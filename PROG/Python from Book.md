@@ -8,14 +8,12 @@ Day 19
 6. Conditions
 7. Iterations
 8. Functions
-Until now
 9. Recursion
 10. Strings
 11. Tuples
 12. Lists
 13. Dictionaries
 14. Sets
-Day 21
 15. Operating System
 16. Text Files
 17. Exceptions
@@ -38,23 +36,14 @@ Except for
 - ClassNames
 - ExceptionNames
 
-## Mixed
+## Formatting strings
 
 ![[Pasted image 20240120170659.png]]
 ![[Pasted image 20240123182923.png]]
-
-[[list methods]]
-
 ![[Pasted image 20240122132628.png]]
 
-![[Pasted image 20240122164805.png]]
 
-![[Pasted image 20240122171223.png]]
-
-**When iterating through a list where you need to remove items,
-BETTER USE `while i < len(list) ` and NOT a for loop .**
-
-## Built-in Types from documentation
+## Built-in Types
 [Here](https://docs.python.org/3/library/stdtypes.html)
 1. Truth Value Testing
 2. Boolean Operations — and, or, not
@@ -71,8 +60,6 @@ BETTER USE `while i < len(list) ` and NOT a for loop .**
 13. Type Annotation Types — Generic Alias, Union
 14. Other Built-in Types
 
-
-## Data types comparison
 | DATA STRUCTURE | ORDERED | MUTABLE |
 | ---- | ---- | ---- |
 | string | y |  |
@@ -80,6 +67,10 @@ BETTER USE `while i < len(list) ` and NOT a for loop .**
 | list | y | y |
 | dictionaries |  | y |
 | set |  | y |
+
+| strings | list | dictionary | set |
+| ---- | ---- | ---- | ---- |
+| - strip()<br>- upper()<br>- lower()<br>- find()<br>- replace()<br>- split()<br>- join() | - copy()<br>- append()<br>- extend()<br>- insert()<br>- remove()<br>- pop()<br>- index()<br>- count()<br>- sort()<br>- reverse() | - copy()<br>- keys()<br>- values()<br>- items()<br>- get() | - add()<br>- update()<br>- remove()<br>- discard()<br>- clear()<br>- pop()<br>- copy()<br>- union()<br>- intersection()<br>- difference()<br>- isdisjoint()<br>- issubset()<br>- issuperset() |
 
 To remember it:
 Tuples `(1,5,9)` and Strings `"hi"` and Lists `[1,5,9]` are
@@ -109,9 +100,26 @@ Methods
 - join()
 
 
+## Lists
+Description
 
 
+![[Pasted image 20240122164805.png]]
+![[Pasted image 20240122171223.png]]
+**When iterating through a list where you need to remove items,
+BETTER USE `while i < len(list) ` and NOT a for loop .**
 
+Methods
+- copy()
+- append()
+- extend()
+- insert()
+- remove()
+- pop()
+- index()
+- count()
+- sort()
+- reverse()
 
 
 
@@ -173,11 +181,4 @@ Methods
 - issubset()
 - issuperset()
 
-
-
-## Data types methods
-
-| strings | list | dictionary | set |
-| ---- | ---- | ---- | ---- |
-| - strip()<br>- upper()<br>- lower()<br>- find()<br>- replace()<br>- split()<br>- join() | - copy()<br>- append()<br>- extend()<br>- insert()<br>- remove()<br>- pop()<br>- index()<br>- count()<br>- sort()<br>- reverse() | - copy()<br>- keys()<br>- values()<br>- items()<br>- get() | - add()<br>- update()<br>- remove()<br>- discard()<br>- clear()<br>- pop()<br>- copy()<br>- union()<br>- intersection()<br>- difference()<br>- isdisjoint()<br>- issubset()<br>- issuperset() |
-
+## Text Files
