@@ -91,6 +91,14 @@ Lists and dictionaries are the two most-used data structures in Python.
 
 ## Strings
 
+Methods
+- strip(),
+- upper(), 
+- lower(), 
+- find(), 
+- replace(), 
+- split(),
+- join()
 
 
 
