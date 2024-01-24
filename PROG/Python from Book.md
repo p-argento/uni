@@ -31,6 +31,14 @@ Extra
 26. File Formats
 27. Various Useful Modules
 
+## Naming Conventions
+Always use snake_case.
+Except for
+- GLOBAL_VARIABLES
+- ClassNames
+- ExceptionNames
+
+## Mixed
 
 ![[Pasted image 20240120170659.png]]
 ![[Pasted image 20240123182923.png]]
@@ -127,6 +135,37 @@ Methods
 		- If you wonder why Python seems to prefer iterators instead of lists: the answer is that iterators are more general and use much less memory. They are “lazy” methods, as they only provide an item when it is requested.
 - get()
 	- The get() method can be used to get a value from a dictionary even when you do not know if the key for which you seek the value exists.
+
+## Sets
+They are built using dictionary.keys().
+It means that they the items in a set are unique and immutable.
+However the set itself is mutable.
+
+Methods
+- add()
+	- a single item
+	- repeated items are ignored
+- update()
+	- adding single sequence elements of a list, a tuple, a string
+- remove()
+	- runtime error if absent
+- discard()
+	- ignore errors
+- clear()
+- pop()
+	- no argument, pop randomly
+- copy()
+- union()
+	- or |
+	- set1.union(set2)
+- intersection()
+	- or &
+- difference()
+	- or -
+- isdisjoint()
+- issubset()
+- issuperset()
+
 
 
 ## Data types methods
