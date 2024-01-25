@@ -70,7 +70,7 @@ Except for
 
 | strings | list | dictionary | set |
 | ---- | ---- | ---- | ---- |
-| - strip()<br>- upper()<br>- lower()<br>- find()<br>- replace()<br>- split()<br>- join() | - copy()<br>- append()<br>- extend()<br>- insert()<br>- remove()<br>- pop()<br>- index()<br>- count()<br>- sort()<br>- reverse() | - copy()<br>- keys()<br>- values()<br>- items()<br>- get() | - add()<br>- update()<br>- remove()<br>- discard()<br>- clear()<br>- pop()<br>- copy()<br>- union()<br>- intersection()<br>- difference()<br>- isdisjoint()<br>- issubset()<br>- issuperset() |
+| - strip()<br>- upper()<br>- lower()<br>- find()<br>- replace()<br>- split()<br>- join() | - append()<br>- extend()<br>- insert()<br>- remove()<br>- pop()<br>- index()<br>- count()<br>- sort()<br>- reverse() | - copy()<br>- keys()<br>- values()<br>- items()<br>- get() | - add()<br>- update()<br>- remove()<br>- discard()<br>- clear()<br>- pop()<br>- copy()<br>- union()<br>- intersection()<br>- difference()<br>- isdisjoint()<br>- issubset()<br>- issuperset() |
 
 To remember it:
 Tuples `(1,5,9)` and Strings `"hi"` and Lists `[1,5,9]` are
@@ -91,7 +91,8 @@ Lists and dictionaries are the two most-used data structures in Python.
 ## Strings
 
 Methods
-- strip(),
+- strip()
+	- ?
 - upper(), 
 - lower(), 
 - find(), 
@@ -102,25 +103,62 @@ Methods
 
 ## Lists
 Description
+Ordered collection of mixed elements. Index access of elements.
+Like a tuple, but MUTABLE.
 
+Notation
+- `list1 = list2` creates an alias, while `list1 = list2[:]` creates a shallow copy
+	- **Remember** in a function, a list is passed by reference and therefore the original list is changed
+- replace elements using `list[3]` or slices using `list[1:3]`
+- insert elements or lists using `list[3:3]`
+
+**What is the best way to iterate through a list to modify it?**
 
 ![[Pasted image 20240122164805.png]]
 ![[Pasted image 20240122171223.png]]
-**When iterating through a list where you need to remove items,
-BETTER USE `while i < len(list) ` and NOT a for loop .**
 
-Methods
-- copy()
-- append()
-- extend()
-- insert()
-- remove()
-- pop()
-- index()
+Special operators
+- +
+	- concatenate two lists (remember to assign the result)
+	- to append an element, made it looks like a list ->  +\[element]
+- *
+	- multiply a list by an integer to create quickly a list with equal numbers
+- in
+	- test existence of element in a list
+- del (is actually a keyword)
+	- delete an element by index
+	- similar to pop() but no return value
+	- can be used also to remove a slice
+- is
+	- check if the id() of two element is the same
+
+
+Methods (usually no return value because they change the list)
+- append(element) or `list[len(list):]= [element]` or `list += [element]`
+	- append an element
+- extend(list)
+	- append a list
+- insert(index, element) or `list[3:3]`
+	- easy
+- remove(element)
+	- remove the first occurrence
+	- if not in the list -> runtime error
+- pop(index=len(list))
+	- RETURNS the element
+	- removes by index, if not specified it is the last one
+- index(element)
+	- returns the first occurrence of an element
+	- if not found -> runtime error
 - count()
-- sort()
+	- RETURNS integer
+- sort(reverse=False, key=function)
+	- change the order of the list
+	- the key function is applied to each item of the list and can also return tuples, for example to handle mixed types lists
+	- key function is without parenthesis and can it is better to use an anonymous function
 - reverse()
 
+List comprehensions
+![[Pasted image 20240125001726.png]]
 
 
 ## Dictionaries
@@ -181,4 +219,5 @@ Methods
 - issubset()
 - issuperset()
 
-## Text Files
+
+
