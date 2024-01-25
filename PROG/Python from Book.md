@@ -151,6 +151,7 @@ Methods (usually no return value because they change the list)
 	- if not found -> runtime error
 - count()
 	- RETURNS integer
+	- argument is the element
 - sort(reverse=False, key=function)
 	- change the order of the list
 	- the key function is applied to each item of the list and can also return tuples, for example to handle mixed types lists
