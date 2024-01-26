@@ -264,6 +264,9 @@ Note on naming the methods with prefixes
 Objects can be used as parameters for other objects.
 However, all object instances are passed to methods and functions *by reference*, exactly like lists, dictionaries, sets. If you want, create a copy().
 
+**NOTE**
+Python determines the type of a variable at runtime, rather than at compile time. As a result, you can pass instances of different classes to a method, and within that method, you can use the properties and methods of that class.
+
 ## Operator Overloading
 Polymorphism is a concept that allows a function to have different results depending of the type of its arguments.
 Remember to check the type of a variable using `isinstance(variable, type)` that returns True or False.
