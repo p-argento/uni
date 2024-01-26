@@ -277,6 +277,9 @@ Remember to check the type of a variable using `isinstance(variable, type)` that
 Additionally
 - `__bool__` when an object is treated as a condition
 
+**NOTE**
+There is no need to implement `__ne__(), __lt__(), __le__(),` as they are automatically changed into calls to the methods `__eq__(), __gt__(), __ge__()`.
+
 **Calculations Overloading**
 ![[Pasted image 20240125185937.png|400]]
 
@@ -295,3 +298,9 @@ The main characteristic is that elements can be accessed by index or keys.
 ![[Pasted image 20240125190756.png]]
 ![[Pasted image 20240125190808.png]]
 
+
+# More interesting functions
+
+- `isinstance()` function in Python is used to check if an object is an instance of a specified class or a tuple of classes. Its primary purpose is to determine the type of an object and check if it matches a given class or classes.
+	- `result = isinstance(x, int)`
+	- `y = 3.14; result = isinstance(y, (int, float))`
