@@ -242,13 +242,18 @@ The keyword `pass` is used to replace a statement, but instead doing nothing.
 - initialisation method `__init__()`
 	- It is good practice to create all the attributes in the init, however it is possible to create them also later in the code. Better use inheritance to add extra attributes.
 	- it is possible to add default values
+	- parameters with default values, must be after the others in the declaration
+		- or use =None for parameters without defaults
 - `__repr()__`
-		- should return a string that contains every information needed to recreate the object
-		- always define it
-- `__str__()`
-		- return a nicely formatted string that explains the most important information on the class
-		- it is optional
-		- *what is the relationship with print?*
+	- should return a string that contains every information needed to recreate the object
+	- always define it
+	- goal is to be unambiguous
+	- used typically for debugging
+- `__str__()` is the output of print()
+	- return a nicely formatted string that explains the most important information on the class
+	- it is optional
+	- goal is to be readable since it is the output of `print(class)`
+		- if str is absent, repr is used
 
 **Methods**
 Note on naming the methods with prefixes
