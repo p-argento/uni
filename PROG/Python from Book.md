@@ -315,9 +315,14 @@ The main characteristic is that elements can be accessed by index or keys.
 # Notes on Slides
 
 
+- `print()`
+	- Two special parameters
+		- `sep` indicates what should be printed between each of the parameters, and by default is a space
+		- `end` indicates what print() should put after all the parameters have been displayed, and by default is a newline
+![[Pasted image 20240127163131.png|300]]
 
-
-
+- `format()`
+	- 
 
 
 
