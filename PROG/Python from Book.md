@@ -189,8 +189,10 @@ Methods
 	- items() provides an iterator that lists all the key-value pairs of a dictionary as tuples.
 	- NOTE that iterators can be used into `for` loops or with `max(),min(),sum()` otherwise they must be casted to a list
 		- If you wonder why Python seems to prefer iterators instead of lists: the answer is that iterators are more general and use much less memory. They are “lazy” methods, as they only provide an item when it is requested.
-- get()
-	- The get() method can be used to get a value from a dictionary even when you do not know if the key for which you seek the value exists.
+- get(key)
+	- The get() method can be used to get a value from a dictionary even when you do not know if the key for which you seek the value exists
+	- add a second argument to replace the return of None if the key does not exist, for example 0.
+	- useful because you do not need to check if an item exist (you can simply return 0)
 
 ## Sets
 They are built using dictionary.keys().
@@ -308,3 +310,19 @@ The main characteristic is that elements can be accessed by index or keys.
 - `isinstance()` function in Python is used to check if an object is an instance of a specified class or a tuple of classes. Its primary purpose is to determine the type of an object and check if it matches a given class or classes.
 	- `result = isinstance(x, int)`
 	- `y = 3.14; result = isinstance(y, (int, float))`
+
+
+# Notes on Slides
+
+
+
+
+
+
+
+
+
+
+
+
+
