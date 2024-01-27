@@ -94,15 +94,33 @@ Lists and dictionaries are the two most-used data structures in Python.
 
 ## Strings
 
-Methods
+Methods (most of them return a new string)
 - strip()
-	- ?
-- upper(), 
-- lower(), 
-- find(), 
-- replace(), 
-- split(),
-- join()
+	- return a new string with removed leading and trailing whitespaces
+- upper() and lower()
+	- returns a version with al capitals/lower case
+- find(substring, index) -index is optional
+	- returns the lowest index where substring start
+	- if not found return -1
+	- the optional parameter index is the starting point of the search
+- replace(lookFor, substituteWith)
+	- returns a new string with all occurrences replaced
+- split(sep) -sep default is a white space
+	- returns a list of strings from the original string split by sep
+- join(list)
+	- returns a string
+	- list must(?) be a list of strings
+	- the class object is the string representing the separator
+		- typically `" ".join(list)`
+
+## Tuples
+They are separated by commas, with or without parenthesis.
+It is possible to mix data types.
+Access tuple's values by its index.
+
+
+
+
 
 
 ## Lists
@@ -335,7 +353,27 @@ The main characteristic is that elements can be accessed by index or keys.
 	- you may want to check values before using them
 
 - scope
-	- 
+	- var is defined also outside a loop
+	- var outside a function is not defined
+	- global var is defined inside a function
+		- but modifies a local copy
+		- any variable create is local
+
+- Bool
+	- False = None, 0, "", empty dict
+
+- `from sys import exit`
+	- python raises a `SystemExit` exception and the program terminate
+
+- break and continue
+	- break exits the loop
+	- continue skips to the next iteration
+
+- loop-and-a-half
+	- is a while loop with several if conditions that break (or continue) the loop
+
+- how to modify a string? concatenate (or create a new one)
+
 
 
 
