@@ -1,3 +1,4 @@
+> divide et impera
 ## Program
 Intro
 1. Introduction
@@ -322,6 +323,18 @@ The main characteristic is that elements can be accessed by index or keys.
 ![[Pasted image 20240127163131.png|300]]
 
 - `format()`
+	- returns a new string which is the formatted version of the input string
+
+- `main()`
+	- Before executing the program, the interpreter deﬁnes few special variables If the ﬁle is executed as a whole program, __name__ is set to the value __main__ and main() executed Otherwise main() is ignored
+	- `if __name__ == '__main__': main()`
+	- it can be used for testing purposes
+	- if the file is loaded as a module, main is ignored
+
+- isinstance(var, type)
+	- you may want to check values before using them
+
+- scope
 	- 
 
 
