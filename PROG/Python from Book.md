@@ -287,6 +287,9 @@ There is no need to implement `__ne__(), __lt__(), __le__(),` as they are automa
 Additionally
 - `def __radd__( self, n ): return self.__add__( n )`
 	- add the prefix `r` to methods if you want to use a different order than usual, meaning that the class whose method you are calling is on the right of the operator (while usually is on the left)
+- `__add__()` vs `__iadd__`  (+ vs +=)
+	- the main difference is that, when dealing with lists, dict and sets, we should create a deepcopy for + because we probably do not want to modify the original object (with = we are using an alias)
+	- with += on the other hand we are changing the original, so its fine
 
 **Unary Operators Overloading**
 ![[Pasted image 20240125190405.png]]
