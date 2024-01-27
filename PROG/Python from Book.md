@@ -172,6 +172,7 @@ They are unordered, which means no indexing available.
 The indexes are the keys, which are of course unique and immutable.
 For this reason, any immutable data type can be a key: int, float, strings, tuples.
 
+- `fruitbasket["mango"] = 1` will create a new element if the key does not exist, otherwise it will overwrite the existing value of the key. 
 
 Special things
 - `fruitbasket3 = fruitbasket1 | fruitbasket2` is the pipeline to merge two dictionaries, but the value for a key which is in both these dictionaries is taken from fruitbasket2, as that dictionary is to the right of the pipeline.
