@@ -332,17 +332,20 @@ The main characteristic is that elements can be accessed by index or keys.
 
 ![[Pasted image 20240125190756.png]]
 ![[Pasted image 20240125190808.png]]
+ 
+## Inheritance
+ To consider whether the relationship between two classes is an inheritance relation- ship, ask yourself whether subclass “is a” superclass.
+ For example a car is a vehicle, but a molecule is NOT an atom.
 
 
-# More interesting functions
 
-- `isinstance()` function in Python is used to check if an object is an instance of a specified class or a tuple of classes. Its primary purpose is to determine the type of an object and check if it matches a given class or classes.
-	- `result = isinstance(x, int)`
-	- `y = 3.14; result = isinstance(y, (int, float))`
 
 
 # Notes on Slides
 
+- `isinstance()` function in Python is used to check if an object is an instance of a specified class or a tuple of classes. Its primary purpose is to determine the type of an object and check if it matches a given class or classes.
+	- `result = isinstance(x, int)`
+	- `y = 3.14; result = isinstance(y, (int, float))`
 
 - `print()`
 	- Two special parameters
