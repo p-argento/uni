@@ -337,8 +337,14 @@ The main characteristic is that elements can be accessed by index or keys.
  To consider whether the relationship between two classes is an inheritance relation- ship, ask yourself whether subclass “is a” superclass.
  For example a car is a vehicle, but a molecule is NOT an atom.
 
+```
+class Square(Rectangle):  
+    def __init__(self, x, y, w):  
+        super().__init__(x, y, w, w)
+```
 
-
+Initializing a rectangle with the square parameters and inheriting all the methods. If necessary, add more parameters and initialize below.
+Remember to add the parent class in the definition of the child.
 
 
 # Notes on Slides
