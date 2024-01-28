@@ -117,6 +117,8 @@ Methods (most of them return a new string)
 They are separated by commas, with or without parenthesis.
 It is possible to mix data types.
 Access tuple's values by its index.
+Comparing tuples means checking each element at once.
+They cannot be changed.
 
 
 
@@ -125,7 +127,8 @@ Access tuple's values by its index.
 
 ## Lists
 Description
-Ordered collection of mixed elements. Index access of elements.
+Ordered collection of mixed elements.
+Index access of elements.
 Like a tuple, but MUTABLE.
 
 Notation
@@ -133,6 +136,8 @@ Notation
 	- **Remember** in a function, a list is passed by reference and therefore the original list is changed
 - replace elements using `list[3]` or slices using `list[1:3]`
 - insert elements or lists using `list[3:3]`
+- `list1 + list2` merges two lists
+	- to add an element in this way, you need to add a single-element list
 
 **What is the best way to iterate through a list to modify it?**
 
@@ -217,7 +222,9 @@ Methods
 They are built using dictionary.keys().
 It means that they the items in a set are unique and immutable.
 However the set itself is mutable.
-Create an empty set by assigning a call to the function `set()` to a variable.
+Items are not accessible by index nor by keys. Use for loops.
+Initialize with { } but without keys.
+But for an empty set by assigning a call to the function `set()` to a variable, otherwise it is a dictionary.
 When creating a set, it can be immutable using `frozenset()`.
 
 Methods
@@ -226,11 +233,13 @@ Methods
 	- repeated items are ignored
 - update()
 	- adding single sequence elements of a list, a tuple, a string
+	- means that `update("hi")` will add `"h","i"`
 - remove()
 	- runtime error if absent
 - discard()
 	- ignore errors
 - clear()
+	- removes all element from the set
 - pop()
 	- no argument, pop randomly
 - copy()
@@ -369,12 +378,14 @@ The main characteristic is that elements can be accessed by index or keys.
 	- break exits the loop
 	- continue skips to the next iteration
 
-- loop-and-a-half
+- **loop-and-a-half**
 	- is a while loop with several if conditions that break (or continue) the loop
 
 - how to modify a string? concatenate (or create a new one)
 
+- When a mutable data structure is passed as a parameter to a function, it is **passed by reference**!
 
+- 
 
 
 
