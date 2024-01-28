@@ -284,7 +284,8 @@ The keyword `pass` is used to replace a statement, but instead doing nothing.
 	- return a nicely formatted string that explains the most important information on the class
 	- it is optional
 	- goal is to be readable since it is the output of `print(class)`
-		- if str is absent, repr is used
+		- If both are deﬁned, then __str__() is used with a print()
+		- If __str__() is not deﬁned, by default it is the same as __repr__()
 
 **Methods**
 Note on naming the methods with prefixes
@@ -292,10 +293,10 @@ Note on naming the methods with prefixes
 - `get` prefix to get a value from an object
 - `set` prefix to set a value for an object
 
+**Note on classes as parameters**
 Objects can be used as parameters for other objects.
-However, all object instances are passed to methods and functions *by reference*, exactly like lists, dictionaries, sets. If you want, create a copy().
+However, all object instances are passed to methods and functions *by reference*, exactly like lists, dictionaries, sets. If you want, create a copy() or deepcopy().
 
-**NOTE**
 Python determines the type of a variable at runtime, rather than at compile time. As a result, you can pass instances of different classes to a method, and within that method, you can use the properties and methods of that class.
 
 ## Operator Overloading
