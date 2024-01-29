@@ -143,6 +143,9 @@ Notation
 
 ![[Pasted image 20240122164805.png]]
 ![[Pasted image 20240122171223.png]]
+*What then?*
+Based on experience, I think the best idea is to create a new empty list and add there the elements we need while iterating the first list (which remains unmodified)
+
 
 Special operators
 - +
