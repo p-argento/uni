@@ -344,105 +344,6 @@ Initializing a rectangle with the square parameters and inheriting all the metho
 Remember to add the parent class in the definition of the child.
 
 
-# More Topics
-## Exceptions
-There are two check when running a program and they lead respectively to:
-1. "Syntax Error"
-2. "Runtime Error"
-
-When an exception is raised (like `ZeroDivisionError`), if it is not handled the program is stopped and the error displayed. However, an exception can be handled and the program can continue running.
-
-**Exception handling**
-```
-try:
-	print(3/0)
-except:
-	print("Division by zero!")
-```
-If the statement after `Try` raises an exception, python executes the "exception handling" after `except` and the program continues. Otherwise, the `except` is just skipped.
-
-To differentiate each `try...except` to understand (and display) errors there are two options
-1. Code each `try...except` separately
-2. Use `expect` like an if
-Here's an example
-```
-try:
-	print( 3 / int(input("Number: ")))
-except ZeroDivisionError:
-	print("Divided by zero)
-except ValueError:
-	print("Not an integer")
-except:
-	print("There is something wrong)
-```
-The final except is generic.
-
-**Most common exceptions** are
-1. `ZeroDivisionError`
-	1. division by zero
-2. `IndexError`
-	1. accessing a list or tuple with an index out of bound
-3. `KeyError`
-	1. accessing a dictionary element with unknown key
-4. `IOError`
-	1. any error while accessing a file
-5. `FileNotFound`
-	1. opening a file that does not exist
-6. `ValueError`
-	1. error while casting to another value
-7. `TypeError`
-	1. using a value not supported by that operator
-
-There are two **additional clauses** that can be used
-1. *else*
-	1. contains the code that it is executed if no exceptions are raised
-	2. it is better just to continue the normal coding
-2. *finally*
-	1. contains the code that is always executed, with or without exceptions
-	2. it is used for example to make sure that the file is closed
-
-**Accessing exception information**
-1. *as*
-	1. it is used to fill the variable after `as` with a tuple of arguments provided when the exeption is raised
-	2. to access the tuple use `<variable>.args`
-```
-try:  
-    print(int("Not an integer"))  
-except ValueError as ve:  
-    print(ve.args)
-```
-
-> Remember that all exceptions should be either handled responsabily or should just make the program crash
-
-**File handling exceptions** in the `errno` module
-Any problem with files leads to an `IOError` Exception.
-The error numbers in the tuple of information of the error are defined in the `errno` module, which can be imported. The module offers constant to use instead of actual numbers.
-The most common are
-1. `errno.ENOENT`
-	1. No such file or directory
-2. `errno.EACCES`
-	1. Permission denied
-	2. also reading from a closed file
-3. `errno.ENOSPC`
-	1. No more space left on device
-
-**Raising exceptions**
-There are two possibilities
-1. use `raise` with known exceptions replacing the tuple of arguments
-2. create a new exception with classes (how?)
-An example of replacing the arguments
-```
-def getStringLenMax10(prompt):
-	s = input(prompt)
-	if len(s) > 10:
-		raise ValueError("Length exceeds 10", len(s))
-	return s
-
-print( getStringLenMax10("Use 10 characters or less: "))
-```
-
-
-
 # Files
 ## Text Files
 A text file consists of lines of text.
@@ -624,6 +525,121 @@ If it starts from the end, negative numbers are expected.
 
 
 
+# More Topics
+## Exceptions
+There are two check when running a program and they lead respectively to:
+1. "Syntax Error"
+2. "Runtime Error"
+
+When an exception is raised (like `ZeroDivisionError`), if it is not handled the program is stopped and the error displayed. However, an exception can be handled and the program can continue running.
+
+**Exception handling**
+```
+try:
+	print(3/0)
+except:
+	print("Division by zero!")
+```
+If the statement after `Try` raises an exception, python executes the "exception handling" after `except` and the program continues. Otherwise, the `except` is just skipped.
+
+To differentiate each `try...except` to understand (and display) errors there are two options
+1. Code each `try...except` separately
+2. Use `expect` like an if
+Here's an example
+```
+try:
+	print( 3 / int(input("Number: ")))
+except ZeroDivisionError:
+	print("Divided by zero)
+except ValueError:
+	print("Not an integer")
+except:
+	print("There is something wrong)
+```
+The final except is generic.
+
+**Most common exceptions** are
+1. `ZeroDivisionError`
+	1. division by zero
+2. `IndexError`
+	1. accessing a list or tuple with an index out of bound
+3. `KeyError`
+	1. accessing a dictionary element with unknown key
+4. `IOError`
+	1. any error while accessing a file
+5. `FileNotFound`
+	1. opening a file that does not exist
+6. `ValueError`
+	1. error while casting to another value
+7. `TypeError`
+	1. using a value not supported by that operator
+
+There are two **additional clauses** that can be used
+1. *else*
+	1. contains the code that it is executed if no exceptions are raised
+	2. it is better just to continue the normal coding
+2. *finally*
+	1. contains the code that is always executed, with or without exceptions
+	2. it is used for example to make sure that the file is closed
+
+**Accessing exception information**
+1. *as*
+	1. it is used to fill the variable after `as` with a tuple of arguments provided when the exeption is raised
+	2. to access the tuple use `<variable>.args`
+```
+try:  
+    print(int("Not an integer"))  
+except ValueError as ve:  
+    print(ve.args)
+```
+
+> Remember that all exceptions should be either handled responsabily or should just make the program crash
+
+**File handling exceptions** in the `errno` module
+Any problem with files leads to an `IOError` Exception.
+The error numbers in the tuple of information of the error are defined in the `errno` module, which can be imported. The module offers constant to use instead of actual numbers.
+The most common are
+1. `errno.ENOENT`
+	1. No such file or directory
+2. `errno.EACCES`
+	1. Permission denied
+	2. also reading from a closed file
+3. `errno.ENOSPC`
+	1. No more space left on device
+
+**Raising exceptions**
+There are two possibilities
+1. use `raise` with known exceptions replacing the tuple of arguments
+2. create a new exception with classes (how?)
+An example of replacing the arguments
+```
+def getStringLenMax10(prompt):
+	s = input(prompt)
+	if len(s) > 10:
+		raise ValueError("Length exceeds 10", len(s))
+	return s
+
+print( getStringLenMax10("Use 10 characters or less: "))
+```
+
+
+## Bitwise Operators
+Python is based on Unicode encoding, specifically UTF-8.
+A byte is decoded as follows:
+1. if the leftmost bit is 0
+	1. is an ASCII character
+2. if the leftmost is 1
+	1. is the start of a sequence of multiple bytes that represents a sequence
+For multibyte sequences...
+
+UTF-8 is restricted to at most 4-byte sequences.
+
+
+**Manipulating bits**
+![[Pasted image 20240130231555.png]]
+
+
+## Iterators
 
 
 
@@ -647,7 +663,23 @@ If it starts from the end, negative numbers are expected.
 
 
 
-# Notes on Slides
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Additional Notes from Slides
 
 - Naming Conventions
 	- Always use snake_case
