@@ -22,29 +22,16 @@ Files and Binary
 17. Exceptions
 18. Binary Files
 19. Bitwise Operators
-Objects
+Classes
 20. Object Orientation
 21. Operator Overloading
 22. Inheritance
-23. Iterators and Generators
 Extra
+23. Iterators and Generators
 24. Command Line Processing
 25. Regular Expressions
 26. File Formats
 27. Various Useful Modules
-
-## Naming Conventions
-Always use snake_case.
-Except for
-- GLOBAL_VARIABLES
-- ClassNames
-- ExceptionNames
-
-## Formatting strings
-
-![[Pasted image 20240120170659.png]]
-![[Pasted image 20240123182923.png]]
-![[Pasted image 20240122132628.png]]
 
 
 # Built-in Types
@@ -113,6 +100,13 @@ Methods (most of them return a new string)
 	- the class object is the string representing the separator
 		- typically `" ".join(list)`
 
+**Formatting strings**
+
+![[Pasted image 20240120170659.png]]
+![[Pasted image 20240123182923.png]]
+![[Pasted image 20240122132628.png]]
+
+
 ## Tuples
 They are separated by commas, with or without parenthesis.
 It is possible to mix data types.
@@ -144,10 +138,10 @@ Notation
 ![[Pasted image 20240122164805.png]]
 ![[Pasted image 20240122171223.png]]
 *What then?*
-Based on experience, I think the best idea is to create a new empty list and add there the elements we need while iterating the first list (which remains unmodified)
+Based on experience, I think the best idea is to create a new empty list and add there the elements we need while iterating the first list (which remains unmodified). If needed, replace the old list with the new one.
 
 
-Special operators
+**Special operators**
 - +
 	- concatenate two lists (remember to assign the result)
 	- to append an element, made it looks like a list ->  +\[element]
@@ -163,7 +157,7 @@ Special operators
 	- check if the id() of two element is the same
 
 
-Methods (usually no return value because they change the list)
+**Methods** (usually no return value because they change the list)
 - append(element) or `list[len(list):]= [element]` or `list += [element]`
 	- append an element
 - extend(list)
@@ -188,7 +182,7 @@ Methods (usually no return value because they change the list)
 	- key function is without parenthesis and can it is better to use an anonymous function
 - reverse()
 
-List comprehensions
+**List comprehensions**
 ![[Pasted image 20240125001726.png]]
 
 
@@ -432,7 +426,7 @@ The most common are
 3. `errno.ENOSPC`
 	1. No more space left on device
 
-**Creating exceptions**
+**Raising exceptions**
 There are two possibilities
 1. use `raise` with known exceptions replacing the tuple of arguments
 2. create a new exception with classes (how?)
@@ -449,6 +443,155 @@ print( getStringLenMax10("Use 10 characters or less: "))
 
 
 
+# Files
+## Text Files
+A text file consists of lines of text.
+At the end of each line, there's a newline symbol. In python is automatically converted in `\n`.
+Word processor document are not text files, they are binary files.
+
+**File Handle**
+Opening a file creates a "file handle", it is the only access point to the file.
+It starts from different point based on how you open the file, basically at the beginning except for appending.
+All methods performed on the file are actually performed on the file handle.
+The file pointer is moved automatically. Usually it is moved manually only for binary files.
+
+**Buffering and Flushing**
+There are two steps for making changes:
+1. buffering
+	1. changes are temporary stored in memory
+2. flushing
+	1. sending the buffer to the actual file
+	2. it is forced when closing a file
+	3. if the file crashes, buffer might not be flushed
+
+**Reading text files**
+When accessing a file, if it is not in the same directory, the complete path must be used.
+
+Methods
+1. `open()`
+	1. two alternative ways
+		1. `<handle> = open(<filename>)`
+		2. `open(<filename>) as <handle>`
+	2. there are two arguments, the second is optional (read only by default)
+	3. 
+2. `read()`
+	1. it is a method of the handle: `<variable> = fp.read()`
+	2. moves the pointer to the end of the file (to be moved for reading again)
+3. `close()`
+	1. it is a method of the handle: `fp.close()`
+	2. after, the handle is no longer associated with the file
+
+Example
+```
+fp = open("text.txt")  # or `open("text.txt") as fp`
+print( fp.read())
+fp.close()
+```
+Or in alternative
+```
+with open("text.txt") as fp:
+	print( fp.read())
+	# more statements nested
+# fp.close() is automatic
+```
+
+Additional methods
+1. `readline()`
+	1. reads characters up to the newline character (included)
+	2. returns a string
+	3. this is the best for reading large files because handle each line at once
+2. `readlines()`
+	1. reads all lines
+	2. returns a list of strings, which are the lines (including `\n`)
+	3. for printing might want to use `print(line, end=""`
+
+
+**Writing text files**
+To open for writing, just use `"w"` as the second argument of `open()`.
+Important
+1. If it does not exists, it is created.
+2. If it does exist, it is replaced (DELETING OLD CONTENT)
+	1. therefore *always check if the file already exists*
+
+Methods
+1. `open(<filename>, w)`
+	1. as already said
+2. `write()`
+	1. it is a method of the handle `fp.write(<string>)`
+	2. the argument is the string you want to add in the file
+3. `writelines()`
+	1. add a list of strings (taken as argument) in the text files
+	2. each string MUST end with the newline.
+	3. it is the opposite of readlines()
+Note that `writeline()` does not exists since it is the same of `write`
+
+
+**Appending to text files**
+When a file is opened for appending, the file handles is placed at the end of the file. Just use `"a"` as a second argument of `open()`.
+Rememember
+1. to use `+` to concate strings
+2. to add `\n` when needed
+
+It is good practice to create
+1. functions for reading (open, read, close)
+2. variable for file name
+
+**os.path methods**
+In the `os.path` module there are useful functions to handle files.
+`"path"` refers to the file or the pathname.
+
+Methods
+1. `exists()`
+	1. true if path exists
+2. `isfile()`
+	1. true if path is a file
+3. `isdir()`
+	1. true if path is a directory
+4. `join()`
+	1. concatenates more parts of a path (*how*?)
+5. `basename()`
+	1. returns file name from a path
+6. `dirname()`
+	1. returns directory name from a path
+7. `getsize()`
+	1. returns an integer representing the number of bytes
+
+
+**File encoding**
+Text files use an encoding to define how characters are supposed to be interpreted. It differs based on OS.
+To see your encoding use
+```
+from sys import getfilesystemencoding
+print(getfilesystemencoding())
+```
+If the text file encoding is different from the OS one, a `UnicodeDecodeError` is displayed. The solution is to add an extra parameter to `open("file.txt", encoding=<encodingname>)`, which is string.
+The typical values are
+1. `ascii`
+2. `latin-1`
+	1. includes `ascii`
+3. `mbcs`
+	1. deprecated
+4. `utf-8`
+	1. default from python 3.6
+
+## Binary Files
+
+Refers to all files that are not text files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -461,6 +604,13 @@ print( getStringLenMax10("Use 10 characters or less: "))
 
 # Notes on Slides
 
+- Naming Conventions
+	- Always use snake_case
+	- Except for
+		- GLOBAL_VARIABLES
+		- ClassNames
+		- ExceptionNames
+
 - `isinstance()` function in Python is used to check if an object is an instance of a specified class or a tuple of classes. Its primary purpose is to determine the type of an object and check if it matches a given class or classes.
 	- `result = isinstance(x, int)`
 	- `y = 3.14; result = isinstance(y, (int, float))`
@@ -469,10 +619,12 @@ print( getStringLenMax10("Use 10 characters or less: "))
 	- Two special parameters
 		- `sep` indicates what should be printed between each of the parameters, and by default is a space
 		- `end` indicates what print() should put after all the parameters have been displayed, and by default is a newline
-![[Pasted image 20240127163131.png|300]]
+		- ![[Pasted image 20240127163131.png|300]]
 
 - `format()`
 	- returns a new string which is the formatted version of the input string
+
+- how to modify a string? concatenate (or create a new one)
 
 - `main()`
 	- Before executing the program, the interpreter deﬁnes few special variables If the ﬁle is executed as a whole program, __name__ is set to the value __main__ and main() executed Otherwise main() is ignored
@@ -503,11 +655,11 @@ print( getStringLenMax10("Use 10 characters or less: "))
 - **loop-and-a-half**
 	- is a while loop with several if conditions that break (or continue) the loop
 
-- how to modify a string? concatenate (or create a new one)
+
 
 - When a mutable data structure is passed as a parameter to a function, it is **passed by reference**!
 
-- 
+
 
 
 
