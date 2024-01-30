@@ -384,8 +384,20 @@ except:
 The final except is generic.
 
 **Most common exceptions** are
-
-![[Pasted image 20240130120239.png]]
+1. `ZeroDivisionError`
+	1. division by zero
+2. `IndexError`
+	1. accessing a list or tuple with an index out of bound
+3. `KeyError`
+	1. accessing a dictionary element with unknown key
+4. `IOError`
+	1. any error while accessing a file
+5. `FileNotFound`
+	1. opening a file that does not exist
+6. `ValueError`
+	1. error while casting to another value
+7. `TypeError`
+	1. using a value not supported by that operator
 
 There are two **additional clauses** that can be used
 1. *else*
