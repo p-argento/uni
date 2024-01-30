@@ -579,6 +579,49 @@ The typical values are
 ## Binary Files
 
 Refers to all files that are not text files.
+When opening a file, to do it in binary mode add `"b"` as argument of `open()`.
+In addition
+1. "rb" for binary read
+2. "r+b" for reading and writing in binary
+	1. note that "r+" is reading and writing
+3. "wb" for writing binary
+4. "w+b" for reading and writing in binary DELETES OLD CONTENT
+
+**Reading a binary file**
+Any file can be opened in binary. However there's no conversion of newline. The concept of lines does not exist. As a consequence, ONLY `read()` can be used.
+1. `read()`
+	1. an integer argument can be used to select the number of bytes read from file
+		1. remember that each character is a byte (also in strings)
+	2. returns a byte string
+		1. for example `b"Hello"`
+
+What is a *byte string*?
+Control codecs are displayed as they are, and not converted.
+Remember that illegal characters where ignored in normal strings.
+It is possible to use indexing as with normal strings. However, instead of the character, it is returned the codec for that letter. Like with ord().
+Bytes are numbers between 0 and 255.
+It is possible to `bytes()` cast a list. Even a one-element list.
+It used to convert the code of a character into that character.
+However, it is not possible to convert the byte string obtained into a regular string using `str()`.
+It must be used `.decode("utf-8")`. With the appropriate encoding. `.encode()` does the opposite.
+
+**Writing a binary file**
+Of course you must supply a binary string.
+
+**Positioning the file pointer**
+Use the `seek()` method. There are two arguments.
+1. the first is a relative byte position
+2. the second (optional) is the starting position for counting of the first argument, it can be (with corresponding constants in the OS module)
+	1. 0 -> beginning of file (SEEK_SET)
+	2. 1 -> current file pointer position (SEEK_CUR)
+	3. 2 -> end of file (SEEK_END)
+For example fp.seek(5) == fp.seek(5,0).
+If it starts from the end, negative numbers are expected.
+
+`tell()` is used to know the current position of the pointer.
+
+
+
 
 
 
