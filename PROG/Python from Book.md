@@ -525,7 +525,6 @@ Methods
 	3. it is the opposite of readlines()
 Note that `writeline()` does not exists since it is the same of `write`
 
-
 **Appending to text files**
 When a file is opened for appending, the file handles is placed at the end of the file. Just use `"a"` as a second argument of `open()`.
 Rememember
@@ -535,6 +534,9 @@ Rememember
 It is good practice to create
 1. functions for reading (open, read, close)
 2. variable for file name
+
+This is good form
+![[Pasted image 20240130184522.png]]
 
 **os.path methods**
 In the `os.path` module there are useful functions to handle files.
