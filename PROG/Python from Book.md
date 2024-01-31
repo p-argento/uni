@@ -522,6 +522,14 @@ If it starts from the end, negative numbers are expected.
 `tell()` is used to know the current position of the pointer.
 
 
+## Command Line Processing
+You can start a Python program with a list of arguments:
+`python <program_name>.py <argument_1> <argument_n>`
+The argument are separated from each other by spaces and can be anything. 
+Import the `sys` module in ordere to process command line arguments, otherwise nothing happens.
+You get access to the command line arguments supplied via a pre-defined list called `sys.argv` and it is a list of strings, each string being one of the command line arguments supplied.
+It contains at least one element `sys.argv[0]` which is the name of the file.
+
 
 
 
