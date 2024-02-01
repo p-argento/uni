@@ -1,4 +1,7 @@
-> divide et impera
+> divide et impera:
+> 1. add functions
+> 2. add variables (maybe temporary)
+> 3. create class (if really needed)
 ## Program
 Intro
 1. Introduction
