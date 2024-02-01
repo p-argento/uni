@@ -316,7 +316,7 @@ Additionally
 - `def __radd__( self, n ): return self.__add__( n )`
 	- add the prefix `r` to methods if you want to use a different order than usual, meaning that the class whose method you are calling is on the right of the operator (while usually is on the left)
 - `__add__()` vs `__iadd__`  (+ vs +=)
-	- the main difference is that, when dealing with lists, dict and sets, we should create a deepcopy for + because we probably do not want to modify the original object (with = we are using an alias)
+	- the main difference is that, when dealing with lists, dict and sets, we *should create a `deepcopy()` for + because we probably do not want to modify the original object* (with = we are using an alias)
 	- with += on the other hand we are changing the original, so its fine
 
 **Unary Operators Overloading**
@@ -735,42 +735,6 @@ Numbers
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Additional Notes from Slides
 
 - Naming Conventions
@@ -829,7 +793,26 @@ Numbers
 - When a mutable data structure is passed as a parameter to a function, it is **passed by reference**!
 
 
+# Interesting Exercices
 
+**Overloading operator for CustomList**
+```python
+class customList(list):
+    def __init__(self, *args):
+        super().__init__(*args)
+    def __sub__(self, sub_list):
+        new_list = []
+        for elem in self:
+            if elem not in sub_list:
+                new_list.append(elem)
+        return new_list
+
+color1 = customList(["red", "orange", "green", "blue", "white"])
+color2 = customList(["black", "yellow", "green", "blue"])
+
+print(color1-color2)
+print(color2-color1)
+```
 
 
 
