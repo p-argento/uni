@@ -334,7 +334,7 @@ The main characteristic is that elements can be accessed by index or keys.
  To consider whether the relationship between two classes is an inheritance relation- ship, ask yourself whether subclass “is a” superclass.
  For example a car is a vehicle, but a molecule is NOT an atom.
 
-```
+```python
 class Square(Rectangle):  
     def __init__(self, x, y, w):  
         super().__init__(x, y, w, w)
@@ -385,13 +385,13 @@ Methods
 	3. releases the handle
 
 Example
-```
+```python
 fp = open("text.txt")  # or `open("text.txt") as fp`
 print( fp.read())
 fp.close()
 ```
 Or in alternative
-```
+```python
 with open("text.txt") as fp:
 	print( fp.read())
 	# more statements nested
@@ -478,7 +478,7 @@ More useful functions in the `os` module are (use `os.<function>`):
 **File encoding**
 Text files use an encoding to define how characters are supposed to be interpreted. It differs based on OS.
 To see your encoding use
-```
+```python
 from sys import getfilesystemencoding
 print(getfilesystemencoding())
 ```
@@ -495,14 +495,47 @@ The typical values are
 
 ## Binary Files
 
-Refers to all files that are not text files.
-When opening a file, to do it in binary mode add `"b"` as argument of `open()`.
+**Byte string**
+First, what is a *byte string*?
+- Each character is a byte. Bytes are numbers between 0 and 255.
+- Control codecs are displayed as they are, and not converted.
+- Remember that illegal characters where ignored in normal strings.
+- It is possible to use indexing as with normal strings. However, instead of the character, it is returned the codec for that letter. Like with ord(). It is the int corresponding to the character in the encoding.
+
+Methods
+- `bytes(<list_of_bytes>)`
+	- It is possible to `bytes()` cast a list of integers. Even a one-element list. It used to convert the code of a character into that character.
+```python
+bs = bytes([72, 101, 108, 108, 111]) print (bs)
+```
+
+- However, it is not possible to convert the byte string obtained into a regular string using `str()`. 
+- It must be used `.decode("utf-8")`. With the appropriate encoding. `.encode()` does the opposite.
+
+An example
+```python
+s1 = b"Hello World!"
+print(s1) # b"Hello World!"
+for c in s1:
+    print (c, end = " ") # 72 101 108 108 111 32 87 111 114 108 100 33 
+```
+
+When to use byte strings?
+If the file has Unicode characters that cannot be read with normal strings.
+
+**Opening binary files**
+Binary refers to all files that are not text files.
+
+- `open("file.txt","b)`
+	-  when opening a file, to do it in binary mode add `"b"` as argument of `open()`.
+
 In addition
 1. "rb" for binary read
 2. "r+b" for reading and writing in binary
 	1. note that "r+" is reading and writing
 3. "wb" for writing binary
 4. "w+b" for reading and writing in binary DELETES OLD CONTENT
+![[Pasted image 20240201162744.png]]
 
 **Reading a binary file**
 Any file can be opened in binary. However there's no conversion of newline. The concept of lines does not exist. As a consequence, ONLY `read()` can be used.
@@ -512,31 +545,30 @@ Any file can be opened in binary. However there's no conversion of newline. The 
 	2. returns a byte string
 		1. for example `b"Hello"`
 
-What is a *byte string*?
-Control codecs are displayed as they are, and not converted.
-Remember that illegal characters where ignored in normal strings.
-It is possible to use indexing as with normal strings. However, instead of the character, it is returned the codec for that letter. Like with ord().
-Bytes are numbers between 0 and 255.
-It is possible to `bytes()` cast a list. Even a one-element list.
-It used to convert the code of a character into that character.
-However, it is not possible to convert the byte string obtained into a regular string using `str()`.
-It must be used `.decode("utf-8")`. With the appropriate encoding. `.encode()` does the opposite.
+
 
 **Writing a binary file**
 Of course you must supply a binary string.
 
 **Positioning the file pointer**
-Use the `seek()` method. There are two arguments.
-1. the first is a relative byte position
-2. the second (optional) is the starting position for counting of the first argument, it can be (with corresponding constants in the OS module)
-	1. 0 -> beginning of file (SEEK_SET)
-	2. 1 -> current file pointer position (SEEK_CUR)
-	3. 2 -> end of file (SEEK_END)
-For example fp.seek(5) == fp.seek(5,0).
-If it starts from the end, negative numbers are expected.
+Method
+1. `seek(<byte_pos>, [opt])` 
+	1. the first is a relative byte position
+	2. the second (optional) is the starting position for counting of the first argument, it can be (with corresponding constants in the OS module)
+		1. 0 -> beginning of file (SEEK_SET)
+		2. 1 -> current file pointer position (SEEK_CUR)
+		3. 2 -> end of file (SEEK_END)
+	3. For example fp.seek(5) == fp.seek(5,0). 
+	4. If it starts from the end, negative numbers are expected.
 
-`tell()` is used to know the current position of the pointer.
+2. `tell()` is used to know the current position of the pointer.
 
+```python
+h = open(“pippo.txt”,“rb”)
+h.seek(5, os.SEEK_CUR)
+print(“Current: ”, h.tell())
+h.close()
+```
 
 ## Command Line Processing
 You can start a Python program with a list of arguments:
@@ -558,7 +590,7 @@ There are two check when running a program and they lead respectively to:
 When an exception is raised (like `ZeroDivisionError`), if it is not handled the program is stopped and the error displayed. However, an exception can be handled and the program can continue running.
 
 **Exception handling**
-```
+```python
 try:
 	print(3/0)
 except:
@@ -570,7 +602,7 @@ To differentiate each `try...except` to understand (and display) errors there ar
 1. Code each `try...except` separately
 2. Use `expect` like an if
 Here's an example
-```
+```python
 try:
 	print( 3 / int(input("Number: ")))
 except ZeroDivisionError:
@@ -589,14 +621,15 @@ The final except is generic.
 	1. accessing a list or tuple with an index out of bound
 3. `KeyError`
 	1. accessing a dictionary element with unknown key
-4. `IOError`
-	1. any error while accessing a file
-5. `FileNotFound`
-	1. opening a file that does not exist
-6. `ValueError`
+4. `ValueError`
 	1. error while casting to another value
-7. `TypeError`
+5. `TypeError`
 	1. using a value not supported by that operator
+6. `FileNotFound`
+	1. opening a file that does not exist
+7. `IOError`
+	1. any error while accessing a file
+	2. see File Handling Exceptions of `errno` module
 
 There are two **additional clauses** that can be used
 1. *else*
@@ -610,7 +643,7 @@ There are two **additional clauses** that can be used
 1. *as*
 	1. it is used to fill the variable after `as` with a tuple of arguments provided when the exeption is raised
 	2. to access the tuple use `<variable>.args`
-```
+```python
 try:  
     print(int("Not an integer"))  
 except ValueError as ve:  
@@ -619,9 +652,10 @@ except ValueError as ve:
 
 > Remember that all exceptions should be either handled responsabily or should just make the program crash
 
-**File handling exceptions** in the `errno` module
+**File handling exceptions** 
 Any problem with files leads to an `IOError` Exception.
-The error numbers in the tuple of information of the error are defined in the `errno` module, which can be imported. The module offers constant to use instead of actual numbers.
+The first element of args contains a number to understand exactly what's wrong.
+These error numbers in the tuple of information of the error are defined in the `errno` module, which can be imported. The module offers constant to use instead of actual numbers.
 The most common are
 1. `errno.ENOENT`
 	1. No such file or directory
@@ -631,6 +665,21 @@ The most common are
 3. `errno.ENOSPC`
 	1. No more space left on device
 
+An example from ChatGPT
+```python
+try:
+    fp = open(file_path)
+except IOError as e:
+    if e.errno == errno.ENOENT:
+        print(f"Error: No such file or directory - {file_path}")
+    elif e.errno == errno.EACCES:
+        print(f"Error: Permission denied - {file_path}")
+    elif e.errno == errno.ENOSPC:
+        print(f"Error: No more space left on the device - {file_path}")
+    else:
+        print(f"Error: {e}")
+```
+
 **Raising exceptions**
 There are two possibilities
 1. use `raise` with known exceptions replacing the tuple of arguments
@@ -638,7 +687,7 @@ There are two possibilities
 	2. the second element can still be accessed with `.args`
 2. create a new exception with classes (how?)
 An example of replacing the arguments
-```
+```python
 def getStringLenMax10(prompt):
 	s = input(prompt)
 	if len(s) > 10:
@@ -658,8 +707,25 @@ A byte is decoded as follows:
 	1. is the start of a sequence of multiple bytes that represents a sequence
 For multibyte sequences...
 
-UTF-8 is restricted to at most 4-byte sequences.
 
+
+**Characters Encoding**
+A byte is made of 8 bit. Therefore the range of numbers that can be represented is 0->255, because 255=(2^8)-1
+1. ASCII has 7 bits because the leftmost is fixed to 0
+	1. also other encodings use ASCII in the range 0->127
+2. Other encodings use 8 bits
+	1. they assign different characters in the range 128->255
+
+Python uses UTF-8
+1. it is restricted to at most 4-byte sequences
+2. when a bit sequence does not express a legal UTF-8 encoding, you get a `UnicodeDecodeErrors`
+
+![[Pasted image 20240201165522.png]]
+
+Numbers
+1. integers are represented with two complement method
+2. floating points are represented with the scientific notation
+	1. mantissa + exponent
 
 **Manipulating bits**
 ![[Pasted image 20240130231555.png]]
