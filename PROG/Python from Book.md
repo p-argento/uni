@@ -735,7 +735,7 @@ Numbers
 
 
 ## Iterators
-
+...
 
 
 # Additional Notes from Slides
@@ -799,6 +799,7 @@ Numbers
 # Interesting Exercices
 
 **Overloading operator for CustomList**
+Better not to overload built-in classes.
 ```python
 class customList(list):
     def __init__(self, *args):
@@ -818,6 +819,9 @@ print(color2-color1)
 ```
 
 **Creating docstring for function**
+Get it with
+- `help(<function>)`
+- `<function>.__doc__`
 ```python
 def my_function():
 	'''Demonstrates triple double quotes
@@ -833,5 +837,19 @@ help(my_function)
 
 ```
 
+**Use of `*args` and `**kwargs`**
+These constructs allow functions to be more flexible and accept different numbers of arguments without explicitly defining them in the function signature.
+- `*args` stands for "arguments" and is used to pass a variable number of non-keyword arguments to a function. It collects these arguments into a tuple.
+- `**kwargs` stands for "keyword arguments" and is used to pass a variable number of keyword arguments to a function. It collects these arguments into a dictionary.
+```python
+def example_function(arg1, *args, kwarg1="default_value", **kwargs):
+    print(f"arg1: {arg1}")
+    print(f"args: {args}")
+    print(f"kwarg1: {kwarg1}")
+    print(f"kwargs: {kwargs}")
 
+# Example usage:
+example_function(1, 2, 3, kwarg1="custom_value", name="Alice", age=25)
+
+```
 
