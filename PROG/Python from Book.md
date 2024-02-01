@@ -374,13 +374,15 @@ Methods
 		1. `<handle> = open(<filename>)`
 		2. `open(<filename>) as <handle>`
 	2. there are two arguments, the second is optional (read only by default)
-	3. 
+	3. returns the file handle
 2. `read()`
 	1. it is a method of the handle: `<variable> = fp.read()`
 	2. moves the pointer to the end of the file (to be moved for reading again)
+	3. returns the complete content of the file as a string
 3. `close()`
 	1. it is a method of the handle: `fp.close()`
 	2. after, the handle is no longer associated with the file
+	3. releases the handle
 
 Example
 ```
@@ -408,21 +410,21 @@ Additional methods
 
 
 **Writing text files**
-To open for writing, just use `"w"` as the second argument of `open()`.
-Important
-1. If it does not exists, it is created.
-2. If it does exist, it is replaced (DELETING OLD CONTENT)
-	1. therefore *always check if the file already exists*
 
 Methods
 1. `open(<filename>, w)`
-	1. as already said
-2. `write()`
+	1. to open for writing, just use `"w"` as the second argument of `open()
+	2. important
+		1. If file does not exists, it is created.
+		2. If it does exist, it is replaced (DELETING OLD CONTENT)
+			1. therefore *always check if the file already exists*
+2. `write(<string>)`
 	1. it is a method of the handle `fp.write(<string>)`
 	2. the argument is the string you want to add in the file
-3. `writelines()`
+	3. no newline added
+3. `writelines(<list of strings>)`
 	1. add a list of strings (taken as argument) in the text files
-	2. each string MUST end with the newline.
+	2. each string MUST end with the newline (not added automatically).
 	3. it is the opposite of readlines()
 Note that `writeline()` does not exists since it is the same of `write`
 
@@ -440,10 +442,10 @@ This is good form
 ![[Pasted image 20240130184522.png]]
 
 **os.path methods**
-In the `os.path` module there are useful functions to handle files.
+
 `"path"` refers to the file or the pathname.
 
-Methods
+Methods in the `os.path` module there are useful functions to handle files.
 1. `exists()`
 	1. true if path exists
 2. `isfile()`
@@ -459,6 +461,19 @@ Methods
 7. `getsize()`
 	1. returns an integer representing the number of bytes
 
+More useful functions in the `os` module are (use `os.<function>`):
+- `getcwd()`
+	- current working directory
+- `chdir()`
+	- changes directory
+- `listdir()`
+	- returns a list of all files and dirs in dir
+- `system(<command>)`
+	- executes a command (must be supported by OS)
+
+
+
+
 
 **File encoding**
 Text files use an encoding to define how characters are supposed to be interpreted. It differs based on OS.
@@ -467,6 +482,7 @@ To see your encoding use
 from sys import getfilesystemencoding
 print(getfilesystemencoding())
 ```
+
 If the text file encoding is different from the OS one, a `UnicodeDecodeError` is displayed. The solution is to add an extra parameter to `open("file.txt", encoding=<encodingname>)`, which is string.
 The typical values are
 1. `ascii`
@@ -618,6 +634,8 @@ The most common are
 **Raising exceptions**
 There are two possibilities
 1. use `raise` with known exceptions replacing the tuple of arguments
+	1. the first element is printed
+	2. the second element can still be accessed with `.args`
 2. create a new exception with classes (how?)
 An example of replacing the arguments
 ```
