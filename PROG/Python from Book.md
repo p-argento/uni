@@ -72,9 +72,9 @@ Tuples `(1,5,9)` and Strings `"hi"` and Lists `[1,5,9]` are
 - fast index access
 - repeatable values
 - IMMUTABLE (except lists)
-Dictionaries `dict{"apple":3} ` and Sets {1,5,9} are
+Dictionaries `dict{"apple":3} ` and `sets {1,5,9}` are
 - not ordered
-- fast key access
+- fat key access
 - unique keys
 
 Mixing types?
@@ -223,8 +223,7 @@ They are built using dictionary.keys().
 It means that they the items in a set are unique and immutable.
 However the set itself is mutable.
 Items are not accessible by index nor by keys. Use for loops.
-Initialize with { } but without keys.
-But for an empty set by assigning a call to the function `set()` to a variable, otherwise it is a dictionary.
+Initialize with {key1, key2,... }. But for an empty set by assigning a call to the function `set()` to a variable, otherwise it is a dictionary.
 When creating a set, it can be immutable using `frozenset()`.
 
 Methods
@@ -529,7 +528,7 @@ If the file has Unicode characters that cannot be read with normal strings.
 **Opening binary files**
 Binary refers to all files that are not text files.
 
-- `open("file.txt","b)`
+- `open("file.txt","b")`
 	-  when opening a file, to do it in binary mode add `"b"` as argument of `open()`.
 
 In addition
@@ -603,7 +602,7 @@ If the statement after `Try` raises an exception, python executes the "exception
 
 To differentiate each `try...except` to understand (and display) errors there are two options
 1. Code each `try...except` separately
-2. Use `expect` like an if
+2. Use `except` like an if
 Here's an example
 ```python
 try:
@@ -853,3 +852,11 @@ example_function(1, 2, 3, kwarg1="custom_value", name="Alice", age=25)
 
 ```
 
+**Default Values in class definition**
+I think in python is better to alway use default parameters for class. It is also useful to define the types, instead of using type hints.
+```python
+class Person:
+	def __init__(self, name="", age=0):
+		self.name = name
+		self.age = age
+```
