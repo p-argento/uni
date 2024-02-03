@@ -6,11 +6,13 @@ https://www.youtube.com/watch?v=42iQKuQodW4
 - `/BIN` contains Binaries
 	- which are essential executables for the OS
 	- the command `ls` is here for example
+	- also `python3` command is here
 - `/SBIN` contains System Binaries
 	- which should be executed only by the super user (sudo?)
 	- like mount or delete user
 - `/LIB` contains Libraries
 	- shared code between binaries
+	- for example the Framework folder with the python version
 - `/USR` is the user
 	- contains its own 
 		- `USR/BIN` with non-essential binaries installed
@@ -18,6 +20,7 @@ https://www.youtube.com/watch?v=42iQKuQodW4
 		- `USR/LOCAL/BIN` with locally compiled binaries
 			- binaries you compile manually 
 			- provide a safe place that won't conflict with any software installed by a system package manager
+			- they are safe to delete, it is only third-party software
 - `$PATH`
 	- 
 
