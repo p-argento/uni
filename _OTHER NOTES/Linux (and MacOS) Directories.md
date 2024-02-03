@@ -7,20 +7,22 @@ https://www.youtube.com/watch?v=42iQKuQodW4
 	- which are essential executables for the OS
 	- the command `ls` is here for example
 	- also `python3` command is here
+		- but the one i am using is in the lib
 - `/SBIN` contains System Binaries
 	- which should be executed only by the super user (sudo?)
 	- like mount or delete user
 - `/LIB` contains Libraries
 	- shared code between binaries
 	- for example the Framework folder with the python version
+		- it contains the actual python3 bin used
 - `/USR` is the user
-	- contains its own 
-		- `USR/BIN` with non-essential binaries installed
-			- intended for end user
-		- `USR/LOCAL/BIN` with locally compiled binaries
-			- binaries you compile manually 
-			- provide a safe place that won't conflict with any software installed by a system package manager
-			- they are safe to delete, it is only third-party software
+	- `USR/BIN`
+		- with non-essential binaries installed
+		- intended for end user
+	- `USR/LOCAL/BIN` 
+		- common location for user-installed binaries, often contains executables installed by software that you've manually installed
+		- provide a safe place that won't conflict with any software installed by a system package manager
+		- they are safe to delete, it is only third-party software
 - `$PATH`
 	- it is an environment variable that contains binaries that can be executed from any folder in the terminal
 		- they are basically column separated paths
