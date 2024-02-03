@@ -22,7 +22,13 @@ https://www.youtube.com/watch?v=42iQKuQodW4
 			- provide a safe place that won't conflict with any software installed by a system package manager
 			- they are safe to delete, it is only third-party software
 - `$PATH`
-	- 
+	- it is an environment variable that contains binaries that can be executed from any folder in the terminal
+		- they are basically column separated paths
+	- the order of binaries paths in the PATH variable is relevant if there are bins with the same name, for example different versions of python
+		- for example in my mac running the bin  `python3` look for bin in lib/frameworks or in usr/bin.
+	- run `which <bin_name>` to see the full path of a bin in PATH
+	- remember that you can always run a program with the full path, using `usr/bin/python3 or `cd /usr/bin` and then `./`
+- 
 
 
 
@@ -43,7 +49,7 @@ Many of these binaries may share common libraries which are stored in the *lib d
 
 Now we also have a *usr directory* with its own bin and s-bin directories. The binaries or applications here are non-essential to the operating system itself and intended for the end user. You'll also notice a *local directory under user* it contains any binaries that you compile manually to provide a safe place that won't conflict with any software installed by a system package manager.
 
-All these binaries get mapped together with the *path environment variable* and that's why you can execute them from any directory in the terminal. If you ever want to know where a binary lives run which followed by the binary name to view its full path in the file system now at some point you may want to customize the behavior of the software on your system the etc directory stands for.
+All these binaries get mapped together with the *path environment variable* and that's why you can execute them from any directory in the terminal. If you ever want to know where a binary lives run *which* followed by the binary name to view its full path in the file system now at some point you may want to customize the behavior of the software on your system the etc directory stands for.
 
 *etc* (or editable text configuration) many of these files end in conf and they're typically just text-based config files that you can modify in your editor as an operating system. Linux can support multiple users in the home directory. You'll find a folder named after each user registered on the system it contains the files configuration and software for that user and you need to be logged in as that user or as a root user to modify it.
 
