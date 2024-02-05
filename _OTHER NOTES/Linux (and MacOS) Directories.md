@@ -119,3 +119,7 @@ The *opt directory* contains optional or add-on software and you'll rarely inter
 *var directory* contains variable files that will change as the operating system is being used things like logs and cache files temp, is for temporary files that won't be persisted between reboots.
 
 And finally we have the weirdest one of all, the *proc directory* is an illusionary file system that doesn't actually exist on the disk, but is created in memory on the fly by the linux kernel to keep track of running processes this has been the linux file system.
+
+
+# Bash
+
