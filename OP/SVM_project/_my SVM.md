@@ -2,8 +2,19 @@
 ---
 ![[Screenshot 2023-12-12 at 16.08.31.png]]
 
-https://epubs.siam.org/doi/abs/10.1137/S1052623400374379?journalCode=sjope8
+Project Guideline: [[Guidelines_4_Projects_ODS23.pdf]]
 
+**Project 25**
+
+(M) is a Support Vector Machine-type approach of your choice (in particular, with one or more kernels of your choice) for multi-class classification, e.g. using the standard One-to-Rest approach.
+
+(A1) is an algorithm of the class of interior-point methods, applied to either the primal or the dual(or both) formulation of the SVR.
+
+(A2) is a general-purpose solver applied to an appropriate formulation of the problem.
+
+No off-the-shelf solver is allowed, save of course for (A2). Specific discussion should be provided about if and how solving one training problem in the One-to-Rest approach (if it is used) may provide useful solution that may help in solving the others.
+
+(Reference to article: [[FRANGIONI_interior-point-article.pdf]] (online [here](https://epubs.siam.org/doi/abs/10.1137/S1052623400374379?journalCode=sjope8)))
 
 
 
@@ -11,6 +22,9 @@ https://epubs.siam.org/doi/abs/10.1137/S1052623400374379?journalCode=sjope8
 ---
 [[_OP Survival Kit]]
 [[Lagrangian]]
+
+The book:
+- "J. Nocedal, S.J. Wright, Numerical Optimization"
 
 Key steps in the theory from [[SVM (ritvikmath)]]
 1. [Lagrange Multipliers](https://www.youtube.com/watch?v=6oZT72-nnyI)
@@ -30,22 +44,36 @@ My [[SVM on Medium]] about these articles on **Medium** on SVM Talking maths:
 
 # Coding
 ---
-[[SVM in Python (StatQuest)]]
+SVM with sklearn:
+- [[SVM in Python (StatQuest)]]
 
-Scikit Learn Implementation with GridSearch
+SVM from Scratch:
+- sentdex lessons 20-33 of this [playlist](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v)
+	- in particular [25](https://www.youtube.com/watch?v=AbVtcUBlBok)-28
+- Also Patrick Loeber looks interesting
+	- [here](https://www.youtube.com/watch?v=T9UcK-TxQGw) 
+	- and a few years before [here](https://www.youtube.com/watch?v=UX0f9BNBcsY) 
 
-[This Repository](https://github.com/MariaLavrovskaya/Nowearetalking) by [MariaLavrovskaya](https://github.com/MariaLavrovskaya) explained in the Medium article.
+Examples on Github:
+- [This Repository](https://github.com/MariaLavrovskaya/Nowearetalking) by [MariaLavrovskaya](https://github.com/MariaLavrovskaya) explained in the Medium article.
 
-[creating-one-vs-rest-and-one-vs-one-svm-classifiers-with-scikit-learn.md](https://github.com/christianversloot/machine-learning-articles/blob/main/creating-one-vs-rest-and-one-vs-one-svm-classifiers-with-scikit-learn.md)
+SVM with One-to-Rest Approach:
+- [creating-one-vs-rest-and-one-vs-one-svm-classifiers-with-scikit-learn.md](https://github.com/christianversloot/machine-learning-articles/blob/main/creating-one-vs-rest-and-one-vs-one-svm-classifiers-with-scikit-learn.md)
+	- an introduction to multiclass classification with one-vs-rest 
+- https://www.geeksforgeeks.org/one-vs-rest-strategy-for-multi-class-classification/
+	- another introduction
+- [[svm-ovr-cancer.pdf]]
+	- looks like a super interesting example especially for (A2)
+-  https://www.youtube.com/watch?v=YChPxoJ-Sh4
+	- 5 minutes on OneVsRest Approach (maybe useless)
 
-https://www.sciencedirect.com/science/article/pii/S0925231208003007
+SVM and Interior Points:
+- https://www.cs.cmu.edu/~ggordon/10725-F12/scribes/10725_Lecture22.pdf
+	- an explanation
 
-https://www.cs.cmu.edu/~ggordon/10725-F12/scribes/10725_Lecture22.pdf
+New approaches:
+- https://cienciasbasicas.udp.cl/cms/wp-content/uploads/2019/06/52.pdf
+	- it is a new approach to svm, but maybe it's too much
 
-https://webgol.dinfo.unifi.it/wp-content/uploads/2018/03/survey_piccialli_sciandrone4OR.pdf
 
-(maybe crazy) https://cienciasbasicas.udp.cl/cms/wp-content/uploads/2019/06/52.pdf
 
-https://www.youtube.com/watch?v=YChPxoJ-Sh4
-
-https://www.geeksforgeeks.org/one-vs-rest-strategy-for-multi-class-classification/
