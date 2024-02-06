@@ -6,11 +6,11 @@ Project Guideline: [[Guidelines_4_Projects_ODS23.pdf]]
 
 **Project 25**
 
-(M) is a Support Vector Machine-type approach of your choice (in particular, with one or more kernels of your choice) for multi-class classification, e.g. using the standard One-to-Rest approach.
+The ML Model is a Support Vector Machine-type approach of your choice (in particular, with one or more kernels of your choice) for multi-class classification, e.g. using the standard One-to-Rest approach.
 
-(A1) is an algorithm of the class of interior-point methods, applied to either the primal or the dual(or both) formulation of the SVR.
+The first Optimization Algorithm is an algorithm of the class of interior-point methods, applied to either the primal or the dual(or both) formulation of the SVR.
 
-(A2) is a general-purpose solver applied to an appropriate formulation of the problem.
+The second optimization algorithm is a general-purpose solver applied to an appropriate formulation of the problem.
 
 No off-the-shelf solver is allowed, save of course for (A2). Specific discussion should be provided about if and how solving one training problem in the One-to-Rest approach (if it is used) may provide useful solution that may help in solving the others.
 
