@@ -50,9 +50,9 @@ SVM with sklearn:
 SVM from Scratch:
 - sentdex lessons 20-33 of this [playlist](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v)
 	- in particular [25](https://www.youtube.com/watch?v=AbVtcUBlBok)-28
-- Also Patrick Loeber looks interesting
-	- [here](https://www.youtube.com/watch?v=T9UcK-TxQGw) 
-	- and a few years before [here](https://www.youtube.com/watch?v=UX0f9BNBcsY) 
+- Also Patrick Loeber
+	- [here](https://www.youtube.com/watch?v=T9UcK-TxQGw)  and a few years before [here](https://www.youtube.com/watch?v=UX0f9BNBcsY) 
+	- it can be used for comparison with Gradient Descent
 
 Examples on Github:
 - [This Repository](https://github.com/MariaLavrovskaya/Nowearetalking) by [MariaLavrovskaya](https://github.com/MariaLavrovskaya) explained in the Medium article.
