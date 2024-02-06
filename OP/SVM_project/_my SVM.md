@@ -53,6 +53,7 @@ SVM from Scratch:
 - Also Patrick Loeber
 	- [here](https://www.youtube.com/watch?v=T9UcK-TxQGw)  and a few years before [here](https://www.youtube.com/watch?v=UX0f9BNBcsY) 
 	- it can be used for comparison with Gradient Descent
+	- theory [here](https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47)
 
 Examples on Github:
 - [This Repository](https://github.com/MariaLavrovskaya/Nowearetalking) by [MariaLavrovskaya](https://github.com/MariaLavrovskaya) explained in the Medium article.
@@ -70,10 +71,12 @@ SVM with One-to-Rest Approach:
 SVM and Interior Points:
 - https://www.cs.cmu.edu/~ggordon/10725-F12/scribes/10725_Lecture22.pdf
 	- an explanation
+- nocedal, wright
 
 New approaches:
 - https://cienciasbasicas.udp.cl/cms/wp-content/uploads/2019/06/52.pdf
 	- it is a new approach to svm, but maybe it's too much
-
+- https://github.com/gilbertgede/PyIntropt/tree/master
+	- implementation of interior point
 
 
