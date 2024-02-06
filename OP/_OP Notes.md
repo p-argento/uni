@@ -24,7 +24,6 @@ Unconstrained and Continuous
 2. Univariate Continuous Unconstrained Optimization
 3. Multivariate Continuous Unconstrained Non-Smooth Optimization
 4. Multivariate Continuous Unconstrained Smooth Optimization
-Constrained
 5. Constrained Continuous Optimization Theory
 6. Convexity and Duality (Lagrangian, linear, quadratic, conic,...)
 7. Constrained Continuous Optimization Methods

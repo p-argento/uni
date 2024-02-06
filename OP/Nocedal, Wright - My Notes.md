@@ -26,7 +26,8 @@ We consider *deterministic* optimization problems, when the model is completely 
 
 ## Convexity
 Many practical problems posses this property.
-... it's important but I'll skip it for now...
+> ... it's important but I'll skip it for now...
+
 There are convex sets and convex functions.
 Simple instances of convex sets are the unit ball and the polyhedron.
 If the objective function and the feasible region are both convex, then any local solution is a global solution.
