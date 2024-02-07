@@ -40,3 +40,9 @@ Typically
 - $R\in R^{m\times k}$ 
 
 The convex problem is $$min$$
+Its dual form is $$dual$$
+Once the dual problem are solved, the hyperplane in the primal problem can be recovered as follows: $$w=A^TDx\qquad\gamma\ is \ the \ multiplier\ on \ e^TDx=0$$
+
+There are many other formulations of the problem reported, each one with its own dual. However, the interior-point method can be applied to any of them, because the duals are in the class of problems considered.
+
+#
