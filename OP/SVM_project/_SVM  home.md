@@ -1,7 +1,7 @@
 # Outline
 ---
-![[Screenshot 2023-12-12 at 16.08.31.png]]
 
+![](_myMedia/Screenshot%202023-12-12%20at%2016.08.31.png)
 Project Guideline: [[Guidelines_4_Projects_ODS23.pdf]]
 
 **Project 25**
