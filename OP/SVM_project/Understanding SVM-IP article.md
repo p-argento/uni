@@ -45,4 +45,7 @@ Once the dual problem are solved, the hyperplane in the primal problem can be re
 
 There are many other formulations of the problem reported, each one with its own dual. However, the interior-point method can be applied to any of them, because the duals are in the class of problems considered.
 
-#
+# 2. Huber regression
+skipped
+
+# 3. Interior Point
