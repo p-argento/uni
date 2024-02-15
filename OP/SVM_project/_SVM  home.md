@@ -20,7 +20,7 @@ No off-the-shelf solver is allowed, save of course for (A2). Specific discussion
 
 # Math Background
 ---
-[[_OP Survival Kit]]
+[[OP/OPTIMIZATION Survival Kit]]
 [[Lagrangian]]
 
 The book:
@@ -36,7 +36,7 @@ Key steps in the theory from [[SVM (ritvikmath)]]
 7. [The Kernels](https://www.youtube.com/watch?v=OKFMZQyDROI&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=57)
 
 
-My [[SVM on Medium]] about these articles on **Medium** on SVM Talking maths:
+My [[OP/SVM_project/SVM on Medium]] about these articles on **Medium** on SVM Talking maths:
 1. [Quadratic Programming and Cholesky factorisation](https://medium.com/@marialavrovskaya/svm-talking-maths-quadratic-programming-and-cholesky-factorisation-968a493db10b)
 2. [Formulating Support Vector Machine as a Quadratic Programming problem](https://towardsdatascience.com/svm-talking-maths-formulating-support-vector-machine-as-a-quadratic-programming-problem-ab5d30a8d73e)
 3. [Using Interior Point Methods for SVM Training](https://towardsdatascience.com/svm-talking-algos-using-interior-point-methods-for-svm-training-d705cdf78c94)

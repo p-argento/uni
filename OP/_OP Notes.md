@@ -1,5 +1,5 @@
 [[_UNI]]
-[[_OP Survival Kit]]
+[[OP/OPTIMIZATION Survival Kit]]
 __
 
 [[OP_0 Introduction To Course]]
@@ -129,7 +129,7 @@ We do not use pure newton. Not the Hessian, but something similar with good char
 Like the related Davidon–Fletcher–Powell method, BFGS determines the descent direction by preconditioning the gradient with curvature information. It does so by gradually improving an approximation to the Hessian matrix of the loss function, obtained only from gradient evaluations (or approximate gradient evaluations) via a generalized secant method.
 
 [frangioni]
-You're only using firs-order information (no Hessian and other second-order derivatives).
+You're only using first-order information (no Hessian and other second-order derivatives).
 Not really costly. It is $O(N^2)$.
 
 It does not stop in a local minimum like the newton-method.
