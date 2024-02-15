@@ -109,6 +109,8 @@ u g(x)=0 &\text{complementary slackness}
 
 The KKT conditions are necessary conditions for optimality. This means that an optimal point will satisfy these conditions, but a point satisfying these conditions might not always be a guaranteed optimum (especially in non-convex problems).
 
+When the primal problem is convex, the KKT conditions are also suﬃcient for the points to be primal and dual optimal. (Boyd, Vandenberghe)
+
 It reduces solving an optimization problem to solving a bunch of equations and inequalities and as you can imagine this is extremely useful for designing general purpose optimization solvers.
 
 ### Interior Point Method
