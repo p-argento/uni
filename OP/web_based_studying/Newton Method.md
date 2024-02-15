@@ -20,7 +20,8 @@ The derivative is the slope of the tangent line, so we could minimize this linea
 For how much? Let's use the stepsize $\alpha$ (not too big and not too small)
 $$x_{k+1}=x_k-\alpha \ f'(x_k)$$
 But far away from $x_k$ the linear function is not the function.
-Newton method is based on using also the second derivativein $x_k$, like taylor series, optimizing this quadratic function.
+Newton method is based on using also the second derivative in $x_k$, like taylor series, optimizing this quadratic function.
+Meaning that the stepsize $\alpha=\frac1 {f''(x_k)}$.
 
 **From one variable to multi-variable**
 So from one variable
