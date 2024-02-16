@@ -2,7 +2,7 @@
 ---
 
 ![](_myMedia/Screenshot%202023-12-12%20at%2016.08.31.png)
-Project Guideline: [[Guidelines_4_Projects_ODS23.pdf]]
+Project Guideline: [[OP/docs/Guidelines_4_Projects_ODS23.pdf]]
 
 **Project 25**
 
@@ -14,7 +14,7 @@ The second optimization algorithm is a general-purpose solver applied to an appr
 
 No off-the-shelf solver is allowed, save of course for (A2). Specific discussion should be provided about if and how solving one training problem in the One-to-Rest approach (if it is used) may provide useful solution that may help in solving the others.
 
-(Reference to article: [[FRANGIONI_interior-point-article.pdf]] (online [here](https://epubs.siam.org/doi/abs/10.1137/S1052623400374379?journalCode=sjope8)))
+(Reference to article: [[OP/docs/FRANGIONI_interior-point-article.pdf]] (online [here](https://epubs.siam.org/doi/abs/10.1137/S1052623400374379?journalCode=sjope8)))
 
 
 

@@ -11,6 +11,10 @@ From [ritvikmath](https://www.youtube.com/watch?v=bM4_AstaBZo)
 
 ![[Pasted image 20231202183407.png]]
 
+# Soft Margin
+[video](https://www.youtube.com/watch?v=IjSfa7Q8ngs&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=72)
+![](_myMedia/Pasted%20image%2020240216120840.png)
+
 
 # Dual
 ---
