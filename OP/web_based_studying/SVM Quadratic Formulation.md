@@ -15,15 +15,23 @@ $$||\omega||=\frac1 M$$ and the margin M can be expressed as $$M = \frac2{||\ome
 ## Formulating Optimization Problem
 Since we are trying to find the vector $\beta$ defining the hyperplane that maximizes the margin M. For convenience, we will express it with the minimum formulation $$\max_{\omega,b}\frac2 {||\omega||}\longrightarrow \min_{\omega,b}||\omega||$$ In real-world problems, the classes are not separated by a hard margin, meaning a clear distinction made by the hyperplane, but a soft margin must be used.
 The soft margin will include in the problem formulation a misclassification error.
-We add slack variables $\epsilon_i\geq0$ and 
+We add slack variables $\epsilon_i$ associated to each data point $x_i$ $$\min_{\omega}||\omega||+C\sum_{i=1}^N\epsilon_i$$ Subject to  $$
+\begin{align}
+&\epsilon_i\geq0 \\
+&y_i(x_i^T\omega_i+b)\geq1-\epsilon_i \\
+\end{align}$$The idea behind this last constraint is the following.
+Let's start with $\epsilon_i=0$.
+$y_i=\pm1$ as stated above, so if the left part of the equation is positive, it means that the two terms have the same sign and therefore the point is classified correctly. The higher the value, the higher the confidence. However, if the point falls within the margin, meaning that $u_i(x_i^T\omega_i+b)\leq1$ , we have a problem.
+At this point, we add the $\epsilon\geq0$ to relax the constraint.
+Now, a point that is misclassified (within the threshold $\geq1-\epsilon_i$) will lead to an a higher $\epsilon_i$ depending on the distance from the margin. The $\epsilon_i$ will then influence the minimization of the objective function by increasing the penalty term, together with the $C$ value, that is defined as $\sum_{i=1}^N\leq C$.
 
-$$\min_{\omega}||\omega||+C\sum\epsilon_i$$ This i
- 
-
-What are the constraints?
-
-...
+Until now, the SVM problem with soft margin can be written as $$\begin{align}
+&\min_{\omega}||\omega||+C\sum_{i=1}^N\epsilon_i \\
+\text{subject to }&\\
+&\epsilon_i\geq0 \\
+&y_i(x_i^T\omega_i+b)\geq1-\epsilon_i \quad\forall i\\
+\end{align}$$
 
 ## Writing the Lagrangian
-
+From the constrained optimization problem just defined, we write the Langragian to express it as an unconstrained problem. $$\mathcal{L}_p(\omega,b,\epsilon,\alpha,\lambda)=$$
 
