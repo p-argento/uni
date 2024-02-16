@@ -12,7 +12,6 @@ If we consider two data points on opposite margins (called support vectors) one 
 
 $$||\omega||=\frac1 M$$ and the margin M can be expressed as $$M = \frac2{||\omega||}$$
 
-
 ## Formulating Optimization Problem
 Since we are trying to find the vector $\beta$ defining the hyperplane that maximizes the margin M. For convenience, we will express it with the minimum formulation $$\max_{\omega,b}\frac2 {||\omega||}\longrightarrow \min_{\omega,b}||\omega||$$ In real-world problems, the classes are not separated by a hard margin, meaning a clear distinction made by the hyperplane, but a soft margin must be used.
 The soft margin will include in the problem formulation a misclassification error.
