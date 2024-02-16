@@ -104,12 +104,16 @@ u g(x)=0 &\text{complementary slackness}
 1. stationarity: the gradient of the Lagrangian with respect to optimization variable must be zero at an optimal point (necessary condition)
 2. primal feasibility: all the original problem constraints must be satisfied by the solution
 3. dual feasibility: Lagrange multipliers corresponding to inequality constraint must be non-negative
-4. complementary slackness: for each inequality constraint, either the Lagrange multiplier is zero (inactive constraint) or the constraint itself is active (holds as equality)
-	1. The penalty term (u * g) should be zero - essentially this means that with a properly chosen 'x' and 'u', this penalty term will not interfere with finding the optimal value of our minimization problem.
+4. complementary slackness:
+	1. If g(x) < 0 (the constraint is inactive), then u must equal 0. In this case, the constraint doesn't directly impact the optimal solution.
+	2. If g(x) = 0 (the constraint is active), then λ may be non-zero. The constraint is actively shaping the optimal solution.
+	3. It is significant for identifying active constraints and simplifying calculations (allows to eliminate Lagrange multipliers corresponding to inactive constraints, reducing the complexity of the calculations needed to find the optimal solution)
+	4. it is a necessary condition, but not sufficient
 
 The KKT conditions are necessary conditions for optimality. This means that an optimal point will satisfy these conditions, but a point satisfying these conditions might not always be a guaranteed optimum (especially in non-convex problems).
 
 When the primal problem is convex, the KKT conditions are also suﬃcient for the points to be primal and dual optimal. (Boyd, Vandenberghe)
+There are other problems when KKT conditions are sufficient.
 
 It reduces solving an optimization problem to solving a bunch of equations and inequalities and as you can imagine this is extremely useful for designing general purpose optimization solvers.
 
