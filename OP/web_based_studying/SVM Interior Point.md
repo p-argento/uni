@@ -42,7 +42,8 @@ A different formulation, found in INTERIOR-POINT METHODS FOR MASSIVE SUPPORT VEC
 \min_{\omega,\gamma,y}\quad&\frac1 2 ||\omega||^2_2+\nu e^Ty \\
 \text{subject to}\quad &D(A\omega-e\gamma)+y\geq e \\
 &y\geq0
-\end{align}$$ The idea is to minimize a 
+\end{align}$$ The idea is to minimize the 2-norm (called Euclidean Distance) of $\omega$, the normal of the hypoerplane
+
 
 ## Writing the Lagrangian
 From the constrained optimization problem just defined, we write the Langragian to express it as an unconstrained problem. $$\mathcal{L}_p(\omega,b,\epsilon,\alpha,\lambda)=$$
