@@ -1,4 +1,5 @@
-(using formulas from https://towardsdatascience.com/svm-talking-maths-formulating-support-vector-machine-as-a-quadratic-programming-problem-ab5d30a8d73e)
+# SVM as a Quadratic Programming Problem
+(mainly from https://towardsdatascience.com/svm-talking-maths-formulating-support-vector-machine-as-a-quadratic-programming-problem-ab5d30a8d73e)
 
 The goal of this section is to define the SVM as a Quadratic Programming Problem through its dual. Then, the Interior Point method will be used to solve the KKT conditions. In particular, Newton's Method will be used to iteratively go through KKT modified conditions.
 
@@ -13,7 +14,13 @@ If we consider two data points on opposite margins (called support vectors) one 
 $$||\omega||=\frac1 M$$ and the margin M can be expressed as $$M = \frac2{||\omega||}$$
 
 ## Formulating Optimization Problem
-Since we are trying to find the vector $\beta$ defining the hyperplane that maximizes the margin M. For convenience, we will express it with the minimum formulation $$\max_{\omega,b}\frac2 {||\omega||}\longrightarrow \min_{\omega,b}||\omega||$$ In real-world problems, the classes are not separated by a hard margin, meaning a clear distinction made by the hyperplane, but a soft margin must be used.
+Since we are trying to find the vector $\beta$ defining the hyperplane that maximizes the margin M. For convenience, we will express it with the minimum formulation $$\max(margin\ M)\longrightarrow\max_{\omega,b}\frac2 {||\omega||}\longrightarrow \min_{\omega,b}||\omega||^2$$
+Subject to $$\begin{cases}
+& (\omega^T x_i + b)\geq1\qquad i:y_i=+1 \\
+& (\omega^T x_i + b)\leq-1\qquad i:y_i=-1
+\end{cases}$$Meaning that no point can be inside the margin. Remember that the closest point to the margin are the support vectors $$w^T x_1 + b = 1\qquad w^T x_2 + b = -1$$
+## Soft Margin
+In real-world problems, the classes are not separated by a hard margin, meaning a clear distinction made by the hyperplane, but a soft margin must be used.
 The soft margin will include in the problem formulation a misclassification error.
 We add slack variables $\epsilon_i$ associated to each data point $x_i$ $$\min_{\omega}||\omega||+C\sum_{i=1}^N\epsilon_i$$ Subject to  $$
 \begin{align}
@@ -35,3 +42,4 @@ Until now, the SVM problem with soft margin can be written as $$\begin{align}
 ## Writing the Lagrangian
 From the constrained optimization problem just defined, we write the Langragian to express it as an unconstrained problem. $$\mathcal{L}_p(\omega,b,\epsilon,\alpha,\lambda)=$$
 
+$$\min_{\omega,\gamma,y}\frac1 2 ||\omega||^2_2+\nu e^Ty$$
