@@ -136,7 +136,7 @@ In fact, we get $u$ from the last equation $$u=\frac{-t}{g(x)}$$ Then the first 
 1. gradient is zero because is the necessary condition
 2. if g were positive $log(-g(x))$ would be +inf (or it does not exist?), so $g(x)\leq0$ is satisfied
 3. $u\geq0$ because of 2) and 4)
-We are back in unconstrained optimization, where we can use methods like [Newton Method](OP/web_based_studying/Newton%20Method.md).
+We are back in unconstrained optimization, where we can use methods like [Newton Method](Newton%20Method.md).
 
 *Geometric interpretation*
 The scalar t controls the degree of penalty given by the logaritmic function.
