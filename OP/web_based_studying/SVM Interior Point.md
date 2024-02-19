@@ -33,13 +33,18 @@ At this point, we add the $\epsilon\geq0$ to relax the constraint.
 Now, a point that is misclassified (within the threshold $\geq1-\epsilon_i$) will lead to an a higher $\epsilon_i$ depending on the distance from the margin. The $\epsilon_i$ will then influence the minimization of the objective function by increasing the penalty term, together with the $C$ value, that is defined as $\sum_{i=1}^N\leq C$.
 
 Until now, the SVM problem with soft margin can be written as $$\begin{align}
-&\min_{\omega}||\omega||+C\sum_{i=1}^N\epsilon_i \\
-\text{subject to }&\\
-&\epsilon_i\geq0 \\
-&y_i(x_i^T\omega_i+b)\geq1-\epsilon_i \quad\forall i\\
+\min_{\omega}\quad &||\omega||+C\sum_{i=1}^N\xi_i \\
+\text{subject to}\quad &\xi_i\geq0 \\
+&y_i(x_i^T\omega_i+b)\geq1-\xi_i \quad\forall i\\
 \end{align}$$
+*Different formulations*
+A different formulation, found in INTERIOR-POINT METHODS FOR MASSIVE SUPPORT VECTOR MACHINES - MICHAEL C. FERRIS AND TODD S. MUNSON is $$\begin{align}
+\min_{\omega,\gamma,y}\quad&\frac1 2 ||\omega||^2_2+\nu e^Ty \\
+\text{subject to}\quad &D(A\omega-e\gamma)+y\geq e \\
+&y\geq0
+\end{align}$$ The idea is to minimize a 
 
 ## Writing the Lagrangian
 From the constrained optimization problem just defined, we write the Langragian to express it as an unconstrained problem. $$\mathcal{L}_p(\omega,b,\epsilon,\alpha,\lambda)=$$
 
-$$\min_{\omega,\gamma,y}\frac1 2 ||\omega||^2_2+\nu e^Ty$$
+
