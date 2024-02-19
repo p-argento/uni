@@ -1,16 +1,9 @@
-
-[[DM Project]]
-[[DM Clustering]]
-[[DM Formulas]]
-
-
 **Professor's Advice**
 Study the book! Available online.
 Experiment with dataset online, trying to reproduce the output of notebooks.
 
 # Slides
 ---
-0. Introduction
 Exploratory Data Analysis
 [[1. Data Understanding]]
 [[2. Data Preparation]]
@@ -84,25 +77,12 @@ Do a PCA, for dimensionality reduction.
 If k=2, you can visualise in a scatterplot, loosing however information.
 But clustering comes before pca.
 
-# Python
----
-3 basic types: int, float, str.
-// is the division by integer part.
-4 data structures: `list[,], set{,}, tuple(,)`
-Difference between list and set? In a set there are no duplicates. And both of them can be composed by mixed data types.
-
-Dictionaries `{'str':int}` or viceversa.
-dict.keys and dict-values.
-
-The data frame is the box excluding indexes (can be only one column).
-A single column is a series. (try the type() method).
-Be aware of the different between data frame and series. 
-Each one of them provides different functionalities.
-
-
 # Appo
 ---
-
+[[Plotting high dimensional clustering]]
+[[Normalization]]
+[[Data Pre-Processing]]
+[[KNN Code]]
 
 
 

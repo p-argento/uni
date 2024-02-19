@@ -1,6 +1,14 @@
 [J. Nocedal, S.J. Wright, Numerical Optimization](https://www.math.uci.edu/~qnie/Publications/NumericalOptimization.pdf)
 
 > People optimize. Nature Optimize.
+
+# Outline
+---
+
+
+
+
+
 # 1. Introduction
 ---
 > What kind of problems are we studying?

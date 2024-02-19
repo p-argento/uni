@@ -1,6 +1,4 @@
 
----
-
 Methods to identify users and need. (divergence)
 
 IDENTIFY USERS

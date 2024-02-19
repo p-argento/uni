@@ -1,5 +1,7 @@
-Tim brown - Design Thinking
+Project Design and Management by Chiarello
+Based on "Tim brown - Design Thinking"
 
+Interesting stuff in
 [[Prompt Engineering]]
 [[Market Failure]]
 
@@ -12,7 +14,7 @@ Tim brown - Design Thinking
 1. [Word Embedding and Word2Vec](https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa)
 2. Brainstorming types
 3. always insert the prompt when using chatGPT (and which AI)
-4. [[use AI in more innovative ways]]
+4. use AI in more innovative ways
 5. the form is REALLY important (font, highlighting, images, tables, ecc)
 
 **What do to**
@@ -32,9 +34,20 @@ Tim brown - Design Thinking
 8. use more mathematical formulas, maybe coming from papers
 9. ask chatGPT if the project is fine based on professor's assessment table (innovative use of AI)
 
+# Personal Report
+---
+Outline
+1. Introduction
+2. Background literature
+3. Description
+4. Application
+5. Quantitative Improvements
+6. (References)
+
 
 # Lectures
 ---
+Introduction in [[Overview of the Design Process]]
 ### Introduction
 
 Desirability
@@ -53,13 +66,10 @@ Is a niche too big or too small? Count the number of words to define the persona
 A divergence method is to negate one of the common attributes of the user.
 
 
-### Random Stuff
-
-SDGs are useful evaluation methods.
-Don't stick to one level of abstraction.
-And measure it.
-
 **Importance of Measuring**
+SDGs are useful evaluation methods.
+Don't stick to one level of abstraction. And measure it.
+
 Using brainstorming you should measure the number and quality of ideas.
 To converge, you have to measure.
 Measure is the connection between ideas and reality.

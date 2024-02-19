@@ -10,7 +10,7 @@ Remember that *CPython* is the reference implementation of the Python Programmin
 
 *Pip* (or pip3) is a package-management system written in Python, used to install and manage software packages. It connects to an online repository of public packages, called the Python Package Index, or PyPI. (do not confuse PyPI with PyPy, an alternative implementation of Python).
 
-*Conda* is an alternative to pip, is the package management tool for Anaconda. It allows for easy installation of different versions of python, libraries and tools into virtual environments. See also [[Understanding Conda]].
+*Conda* is an alternative to pip, is the package management tool for Anaconda. It allows for easy installation of different versions of python, libraries and tools into virtual environments. See also [[Understanding Conda]]. See also [[conda-cheatsheet.pdf]]
 
 (from VSCode docs)
 A *Python Environment* is a Python Interpreter (of a specific version) and an associated location for Python Packages). A Python Environment installed on a system can be used as a kernel to execute code.
@@ -35,4 +35,4 @@ It contains ```
 
 *TensorFlow* is a tool for building deep neural networks with high-level Python code. It provides APIs to train, analyze and deploy ML models. See [[Understanding TensorFlow]]
 
-*Pythonic* is referred to Python Style while Programming. See [[Python Style]]
+*Pythonic* is referred to Python Style while Programming. See [[Organizing Python Code]]

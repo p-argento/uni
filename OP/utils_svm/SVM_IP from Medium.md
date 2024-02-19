@@ -1,4 +1,10 @@
-# SVM as a Quadratic Programming Problem
+# Outline
+From Medium
+1. [Quadratic Programming and Cholesky factorisation](https://medium.com/@marialavrovskaya/svm-talking-maths-quadratic-programming-and-cholesky-factorisation-968a493db10b)
+2. [Formulating Support Vector Machine as a Quadratic Programming problem](https://towardsdatascience.com/svm-talking-maths-formulating-support-vector-machine-as-a-quadratic-programming-problem-ab5d30a8d73e)
+3. [Using Interior Point Methods for SVM Training](https://towardsdatascience.com/svm-talking-algos-using-interior-point-methods-for-svm-training-d705cdf78c94)
+
+# 1. SVM as a Quadratic Programming Problem
 (mainly from https://towardsdatascience.com/svm-talking-maths-formulating-support-vector-machine-as-a-quadratic-programming-problem-ab5d30a8d73e)
 
 The goal of this section is to define the SVM as a Quadratic Programming Problem through its dual. Then, the Interior Point method will be used to solve the KKT conditions. In particular, Newton's Method will be used to iteratively go through KKT modified conditions.
@@ -10,7 +16,7 @@ The distance of any point $x$ of the dataset from the hyperplane $L$ (called mar
 
 For the data points on the margins, this distance is equal to 1 (since they are exactly on the margin).
 If we consider two data points on opposite margins (called support vectors) one with label +1 and the other with label -1, then their distances from the hyperplane must be $$w^T x_1 + \gamma = 1\qquad w^T x_2 + \gamma = -1$$
-
+Set
 $$||\omega||=\frac1 M$$ and the margin M can be expressed as $$M = \frac2{||\omega||}$$
 
 ## Formulating Optimization Problem
@@ -49,7 +55,7 @@ The 2-norm is the Euclidean Distance, calculate as the square root of the sum of
 The $\infty$-norm is the maximum absolute value among vector's components.
 More in [[Norms Definitions]].
 
-A more detailed explanation of the SVM formulation in [[SVM Formulation]]
+A more detailed explanation of the SVM formulation in [[SVM_MATH Formulation]]
 
 
 ## Writing the Lagrangian

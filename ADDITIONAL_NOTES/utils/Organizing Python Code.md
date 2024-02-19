@@ -1,4 +1,3 @@
-# Organizing Python Code
 
 1. Use Modules and Packages
 	1. what makes a folder a package is the `__init__.py` file inside it

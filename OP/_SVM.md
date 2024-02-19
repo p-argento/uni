@@ -1,11 +1,11 @@
 # Outline
 ---
 
-![](_myMedia/Screenshot%202023-12-12%20at%2016.08.31.png)
+![](Screenshot%202023-12-12%20at%2016.08.31.png)
 Project Guideline: [[OP/docs/Guidelines_4_Projects_ODS23.pdf]]
+Article linked:  [[FRANGIONI_svm_interior-point-article.pdf]] (online [here](https://epubs.siam.org/doi/abs/10.1137/S1052623400374379?journalCode=sjope8))
 
 **Project 25**
-
 The ML Model is a Support Vector Machine-type approach of your choice (in particular, with one or more kernels of your choice) for multi-class classification, e.g. using the standard One-to-Rest approach.
 
 The first Optimization Algorithm is an algorithm of the class of interior-point methods, applied to either the primal or the dual(or both) formulation of the SVR.
@@ -14,35 +14,23 @@ The second optimization algorithm is a general-purpose solver applied to an appr
 
 No off-the-shelf solver is allowed, save of course for (A2). Specific discussion should be provided about if and how solving one training problem in the One-to-Rest approach (if it is used) may provide useful solution that may help in solving the others.
 
-(Reference to article: [[OP/docs/FRANGIONI_interior-point-article.pdf]] (online [here](https://epubs.siam.org/doi/abs/10.1137/S1052623400374379?journalCode=sjope8)))
 
-
-
-# Math Background
+# Main Sources
 ---
 [[OP/OPTIMIZATION Survival Kit]]
-[[Lagrangian]]
 
 The book:
 - "J. Nocedal, S.J. Wright, Numerical Optimization"
+	- [[Nocedal, Wright -My Notes]]
 
-Key steps in the theory from [[SVM (ritvikmath)]]
-1. [Lagrange Multipliers](https://www.youtube.com/watch?v=6oZT72-nnyI)
-2. [The math](https://www.youtube.com/watch?v=bM4_AstaBZo)
-3. [Soft margin](https://www.youtube.com/watch?v=IjSfa7Q8ngs&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=70)
-4. The Polynomial Kernel
-5. [The RBF Kernel](https://www.youtube.com/watch?v=Q0ExqOphnW0&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=59)
-6. [The Dual Problem]((https://www.youtube.com/watch?v=6-ntMIaJpm0&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=59)
-7. [The Kernels](https://www.youtube.com/watch?v=OKFMZQyDROI&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=57)
+In [[SVM_MATH from ritvikmat]], find key steps in the theory from youtube.
 
+In [[SVM_IP from Medium]], notes from articles on Medium on SVM with Interior Points.
 
-My [[OP/SVM_project/SVM on Medium]] about these articles on **Medium** on SVM Talking maths:
-1. [Quadratic Programming and Cholesky factorisation](https://medium.com/@marialavrovskaya/svm-talking-maths-quadratic-programming-and-cholesky-factorisation-968a493db10b)
-2. [Formulating Support Vector Machine as a Quadratic Programming problem](https://towardsdatascience.com/svm-talking-maths-formulating-support-vector-machine-as-a-quadratic-programming-problem-ab5d30a8d73e)
-3. [Using Interior Point Methods for SVM Training](https://towardsdatascience.com/svm-talking-algos-using-interior-point-methods-for-svm-training-d705cdf78c94)
+In [[SVM_CODE from youtube]]
+- 
 
-
-# Coding
+# More resources
 ---
 SVM with sklearn:
 - [[SVM in Python (StatQuest)]]

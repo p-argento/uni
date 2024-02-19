@@ -1,4 +1,4 @@
-[FRANGIONI_interior-point-article](OP/docs/FRANGIONI_interior-point-article.pdf)
+Understanding [FRANGIONI_interior-point-article](FRANGIONI_svm_interior-point-article.pdf)
 
 # 1. Introduction
 

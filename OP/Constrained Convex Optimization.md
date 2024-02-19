@@ -126,7 +126,7 @@ There are two techniques behind IP.
 We solve a modified version of KKT conditions, called KKT(t) where $t\geq0$ is a parameter that controls the degree of perturbation.
 We keep all the equations the same, except for the last one, that becomes $$u\ g(x)=-t$$ Hopefully, when t is small, $x(t)\approx x^*$ , meaning that when $t\rightarrow0 \Rightarrow x(t)\rightarrow x^*$ .
 
-![](_myMedia/Pasted%20image%2020240215181203.png)
+![](Pasted%20image%2020240215181203.png)
 
 The modified KKT are much easier to solve.
 In fact, we get $u$ from the last equation $$u=\frac{-t}{g(x)}$$ Then the first equation with gradient becomes $$\begin{align}
