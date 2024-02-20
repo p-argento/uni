@@ -34,6 +34,8 @@ Have a look at the [[Guidelines_4_Projects_ODS23.pdf]]
 
 ## Lectures
 [[Random Notes from Frangioni]]
+[[Introduction To Course from Frangioni]]
+[[Simple and Quadratic Optimization Problems from Frangioni]]
 
 ## Relevant Notes
 [[Nocedal, Wright -My Notes]]
