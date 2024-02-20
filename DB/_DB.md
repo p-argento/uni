@@ -35,4 +35,4 @@ There's an extra oral appello for those that pass both mid-terms.
 From september, mid-terms are not valid anymore, and the whole exam must be done.
 
 ## Lectures
-[[DB_1]]
+[[1_DB]]
