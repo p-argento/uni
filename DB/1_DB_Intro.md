@@ -92,4 +92,40 @@ It is not easy to implement atomicity and durability at the same time. Should I 
 A transaction is usually defined as an ACID Transaction if it respects Atomicity, Consistency, Isolation, Durability.
 
 
+## Essential Features of a good DBMS engine
+Features
+1. efficiency
+2. transaction support
+	1. failure resilience, concurrency control
+		1. the dbms gives software tools in order to be resilient, but the hardware must be set up (like a second computer somewhere else in case the first one fails because of a fire)
+		2. "no free lunch"
+3. data distribution
+	1. and data replication (not our matter)
+
+## Advantages of DBMS
+Advantages
+1. physical and logical independence
+	1. code should not depends on the structure of the DB
+	2. in DBMS, the SQL code would still work if we change organization and indexes
+	3. in the future, if you want to modify the logic, just modify the schema mapping the view, but not the actual sql code
+2. automatic optimization of declarative code
+	1. sql code is declarative, meaning that is faster to code than low-level programming
+### Levels of data definition
+A DBMS supports three-levels of schemas
+1. View level (or external)
+	1. limited views offered to the user
+2. logical level (or conceptual)
+3. physical level (or internal)
+
+## Problems of DBMS
+Problems
+1. useful only for structured data
+	1. if you manage documents, which are not structured, then use a document system
+2. defining a schema is difficult and slow
+	1. need skills and time, but maybe I want something fast
+	2. a data lake or AI tool can be faster to implement
+3. expensive and difficult to manage
+	1. need to pay the salary of a DBA
+4. usually optimized for OLTP load and not for OLAP load
+	1. if the goal is analysis, then consider DSS, not DBMS
 
