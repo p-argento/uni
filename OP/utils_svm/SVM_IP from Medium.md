@@ -180,3 +180,4 @@ e=\text{N-dimensional vector of 1 (equivalent of} \sum)
 \end{align}$$
 
 *Different formulation in the article*
+..
