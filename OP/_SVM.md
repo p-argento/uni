@@ -23,18 +23,18 @@ The book:
 - "J. Nocedal, S.J. Wright, Numerical Optimization"
 	- [[Nocedal, Wright -My Notes]]
 
+In [[Constrained Convex Optimization]] some theory.
+
 In [[SVM_MATH from ritvikmat]], find key steps in the theory from youtube.
 
 In [[SVM_IP from Medium]], notes from articles on Medium on SVM with Interior Points.
 
 In [[SVM_CODE from youtube]]
-- 
+
+
 
 # More resources
 ---
-SVM with sklearn:
-- [[SVM in Python (StatQuest)]]
-
 SVM from Scratch:
 - sentdex lessons 20-33 of this [playlist](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v)
 	- in particular [25](https://www.youtube.com/watch?v=AbVtcUBlBok)-28

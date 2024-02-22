@@ -109,7 +109,6 @@ u g(x)=0 &\text{complementary slackness}
 	1. If g(x) < 0 (the constraint is inactive), then u must equal 0. In this case, the constraint doesn't directly impact the optimal solution.
 	2. If g(x) = 0 (the constraint is active), then λ may be non-zero. The constraint is actively shaping the optimal solution.
 	3. It is significant for identifying active constraints and simplifying calculations (allows to eliminate Lagrange multipliers corresponding to inactive constraints, reducing the complexity of the calculations needed to find the optimal solution)
-	4. it is a necessary condition, but not sufficient
 
 The KKT conditions are necessary conditions for optimality. This means that an optimal point will satisfy these conditions, but a point satisfying these conditions might not always be a guaranteed optimum (especially in non-convex problems).
 

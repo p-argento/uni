@@ -10,9 +10,9 @@ From Medium
 The goal of this section is to define the SVM as a Quadratic Programming Problem through its dual. Then, the Interior Point method will be used to solve the KKT conditions. In particular, Newton's Method will be used to iteratively go through KKT modified conditions.
 
 ## Defining Hyperplane
-We define the separating hyperplane as $$f(x)=\gamma+\omega_1x_1+\omega_2x_2+...+\omega_px_p=0$$Some important notes are the following.
-The the vector $\beta^T$ is the normal vector, perpendicular to the surface at a given point.
-The distance of any point $x$ of the dataset from the hyperplane $L$ (called margin) is $$M=\frac{\omega^Tx+\gamma}{||\omega||}=\frac{f(x)}{||f'(x)||}$$The denominator can be expressed in this way because taking the derivative of $f$ will leave all the betas.
+We define the separating hyperplane as $$L=f(x)=\gamma+\omega_1x_1+\omega_2x_2+...+\omega_px_p=0$$Some important notes are the following.
+The the vector $\omega^T$ is the normal vector, perpendicular to the surface at a given point.
+The distance of any point $x$ of the dataset from the hyperplane $L$ (called margin M) is $$M=\frac{\omega^Tx+\gamma}{||\omega||}=\frac{f(x)}{||f'(x)||}$$The denominator can be expressed in this way because taking the derivative of $f$ will leave all the betas.
 
 For the data points on the margins, this distance is equal to 1 (since they are exactly on the margin).
 If we consider two data points on opposite margins (called support vectors) one with label +1 and the other with label -1, then their distances from the hyperplane must be $$w^T x_1 + \gamma = 1\qquad w^T x_2 + \gamma = -1$$
@@ -28,18 +28,18 @@ Subject to $$\begin{cases}
 ## Soft Margin
 In real-world problems, the classes are not separated by a hard margin, meaning a clear distinction made by the hyperplane, but a soft margin must be used.
 The soft margin will include in the problem formulation a misclassification error.
-We add slack variables $\epsilon_i$ associated to each data point $x_i$ $$\min_{\omega}||\omega||+C\sum_{i=1}^N\epsilon_i$$ Subject to  $$
+We add slack variables $\xi_i$ associated to each data point $x_i$ $$\min_{\omega}||\omega||+C\sum_{i=1}^N\xi_i$$ Subject to  $$
 \begin{align}
-&\epsilon_i\geq0 \\
-&y_i(x_i^T\omega_i+\gamma)\geq1-\epsilon_i \\
+&\xi_i\geq0 \\
+&y_i(x_i^T\omega_i+\gamma)\geq1-\xi_i \\
 \end{align}$$The idea behind this last constraint is the following.
-Let's start with $\epsilon_i=0$.
+Let's start with $\xi_i=0$.
 $y_i=\pm1$ as stated above, so if the left part of the equation is positive, it means that the two terms have the same sign and therefore the point is classified correctly. The higher the value, the higher the confidence. However, if the point falls within the margin, meaning that $u_i(x_i^T\omega_i+\gamma)\leq1$ , we have a problem.
-At this point, we add the $\epsilon\geq0$ to relax the constraint.
-Now, a point that is misclassified (within the threshold $\geq1-\epsilon_i$) will lead to an a higher $\epsilon_i$ depending on the distance from the margin. The $\epsilon_i$ will then influence the minimization of the objective function by increasing the penalty term, together with the $C$ value, that is defined as $\sum_{i=1}^N\leq C$.
+At this point, we add the $\xi_i\geq0$ to relax the constraint.
+Now, a point that is misclassified (within the threshold $\geq1-\epsilon_i$) will lead to an a higher $\xi_i$ depending on the distance from the margin. The $\xi_i$ will then influence the minimization of the objective function by increasing the penalty term, together with the $C$ value, that is defined as $\sum_{i=1}^N\leq C$.
 
-Until now, the SVM problem with soft margin can be written as $$\begin{align}
-\min_{\omega}\quad &||\omega||+C\sum_{i=1}^N\xi_i \\
+Until now, the **SVM problem with soft margin** can be written as $$\begin{align}
+\min_{\omega}\quad &||\omega||^2+C\sum_{i=1}^N\xi_i \\
 \text{subject to}\quad &\xi_i\geq0 \\
 &y_i(x_i^T\omega_i+\gamma)\geq1-\xi_i \quad\forall i\\
 \end{align}$$
@@ -60,8 +60,13 @@ A more detailed explanation of the SVM formulation in [[SVM_MATH Formulation]]
 
 ## Writing the Lagrangian
 From the constrained optimization problem just defined, we write the Langragian to express it as an unconstrained problem. $\alpha,\lambda$ are Lagrange multipliers. 
-$$\mathcal{L}_p(\omega,\gamma,\xi,\alpha,\lambda)=\frac1 2||\omega||^2+C\sum_i^N\xi_i-\sum_{i=1}^N\alpha_i[y_i^T\omega+\gamma)-(1-\xi_i)])$$
-
+$$\mathcal{L}_p(\omega,\gamma,\xi,\alpha,\lambda)=
+\frac1 2||\omega||^2
++C\sum_i^N\xi_i
+-\sum_{i=1}^N\alpha_i[y_i^T(x_i^T\omega+\gamma)-(1-\xi_i)])
+-\sum_{i=1}^N\lambda_i\xi_i$$
+The goal is to minimize the vector of $(\omega,\gamma,\xi)$.
+> What about the lagrange multipliers $\alpha,\lambda$? 
 
 Now, we apply the KKT conditions, which are first-order derivative tests. And since the problem is convex, the conditions are not only necessary, but also sufficient for finding the optimum.
 See [[Constrained Convex Optimization### What is a dual problem in general?]]
@@ -72,10 +77,77 @@ KKT conditions can be divided in
 3. Dual Feasibility (or Multipliers Conditions)
 4. Complementary Slackness
 
+*1. Stationarity Conditions*
+It is the same as determining a point where the derivative of function is zero.
+Let's go through the stationarity constraints.
+They are the partial derivates using $(\omega,\gamma,\xi)$
+$$\displaylines{
+\text{Stationarity conditions:} \\
+\begin{cases}
+\frac{\partial\mathcal{L}}{\partial\omega}=0\implies\omega-\sum_{i=1}^N\alpha_iy_ix_i=0\implies\omega=\sum_{i=1}^N\alpha_iy_ix_i \\
+\frac{\partial\mathcal{L}}{\partial\gamma}=0 \implies\sum_{i=1}^N\alpha_i y_i=0 \\
+\frac{\partial\mathcal{L}}{\partial\xi_i}=0\implies C-\alpha_i-\lambda_i=0 \implies\alpha_i=C-\lambda_i\quad\forall i
+\end{cases}}$$
+> In the first condition, why $||\omega||$ became $\omega$?
+
+*2. Primal Feasibility*
+It means that the optimal point lies in the region defined by the constraints.
+$$\displaylines{
+\text{Primal Feasibility Conditions}:\\
+\begin{cases}
+\quad &\xi_i\geq0 \\
+&y_i(x_i^T\omega_i+\gamma)\geq1-\xi_i \quad\forall i\\
+\end{cases}}$$
+Which are now the conditions for Primal feasibility
+
+*3. Multipliers Conditions*
+We have both multipliers from equality constraints and from inequality constraints.
+$$\displaylines{
+\text{Multipliers Conditions}:\\
+\begin{cases}
+\alpha_i\geq0 \\
+\lambda_i\geq0\\
+\end{cases}}$$
+> Which one is for equality constraints? They are both used for adding the inequality constraints of the initial problem.
+
+*4. Complementary Slackness Conditions*
+When constrains are inactive (meaning = 0), then calculating lagrange multipliers makes no sense.
+$$\displaylines{
+\text{Complementary Slackness Conditions}:\\
+\begin{cases}
+\alpha_i[y_i^T(x_i^T\omega+\gamma)-(1-\xi_i)])=0 \\
+\lambda_i\xi_i=0\\
+\end{cases}}$$
+*All KKT Conditions*
+We have 9 constrains.
+$$\displaylines{
+\text{Stationarity conditions:} \\
+\begin{cases}
+\omega=\sum_{i=1}^N\alpha_iy_ix_i \\
+\sum_{i=1}^N\alpha_i y_i=0 \\
+\alpha_i=C-\lambda_i\quad\forall i
+\end{cases}}$$
+$$\displaylines{
+\text{Primal Feasibility Conditions}:\\
+\begin{cases}
+\quad &\xi_i\geq0 \\
+&y_i(x_i^T\omega_i+\gamma)\geq1-\xi_i \quad\forall i\\
+\end{cases}}$$
+$$\displaylines{
+\text{Primal Feasibility Conditions}:\\
+\begin{cases}
+\alpha_i\geq0 \\
+\lambda_i\geq0\\
+\end{cases}}$$
+$$\displaylines{
+\text{Primal Feasibility Conditions}:\\
+\begin{cases}
+\alpha_i[y_i^T(x_i^T\omega+\gamma)-(1-\xi_i)])=0 \\
+\lambda_i\xi_i=0\\
+\end{cases}}$$
+## Writing the dual
+Using the stationarity constrains into the Lagrangian, we obtain.
+$$\displaylines{
 
 
-
-
-
-
-
+}$$
