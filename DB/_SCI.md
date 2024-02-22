@@ -1,42 +1,8 @@
 Strategic and Competitive Intelligence
 Filippo Chiarello
 
-## Intelligence
-Competitive Intelligence (or Corporate Intelligence or CI) involves gathering and analyzing information about your competitors, target customers and market.
-Data enables to make contextual, data-led decisions.
-The ultimate goal is to establish or enhance *competitive advantage*.
-
-What is competitive advantage?
-As students, a competitive advantage can be related to getting better positions than other students.
-Needs are getting more complex.
-
-Today, the amount of information is too much.
-But we have tools.
-
-## Intelligence Types
-Types
-1. HUM-INT (Human Intelligence)
-	1. having a good network is the best way to avoid undercover operations
-	2. go to the bar where employees of your dream company go
-2. SIG-INT (Signal Intelligence)
-	1. intercept calls, emails,..
-3. GEO-INT (Geospatial Intelligence)
-	1. satellite images, ...
-4. MAS-INT (Measurement and Signature Intelligence)
-5. OS-INT (*Open Source Intelligence*)
-	1. sources that are not protected and can be accessed in a legal way
-	2. it is a recent practice
-
-### Open Source Intelligence
-1. Definition: Intelligence collected from publicly available sources.
-2. Sources: Newspapers, journals, radio, television, websites, and social media platforms.
-3. Applications: Gathering information that is available in the public domain, often used for research, situation analysis, and decision-making support.
-
-The goal is to collect knowledge to make decision, not to get more knowledge like researchers.
-
-![[Pasted image 20240222095750.png]]
-
-
+## Lectures
+[[SCI_1]]
 
 ## Course Structure
 Steps
@@ -68,3 +34,39 @@ If a problem is not solvable, probably there is something wrong in the plan, in 
 ## DataCamp
 We have access to courses on Datacamp.
 Each course is 4h.
+
+## Project
+Choose one subfield
+1. education
+2. design
+3. hr
+4. coding
+5. creative arts
+
+Must use real data.
+You can use professor's Twitter Dataset.
+Use more Data.
+
+Assignment date 4 April.
+
+PROJECT WORK ASSIGNEMENT
+■ TEAM PROJECT ASSIGNEMENT
+	■ Real datasets
+	■ Teams of 3-4 students
+	■ Assignement date: April 04
+■ PROJECT PRESENTATION & DISCUSSION
+	■ Plenary Session (18/05)
+	■ Possibile to present to any valid appello
+
+70-30 weighting rule for grading
+■ 70 for PROJECT WORK (deliverables + group discussion)
+■ 30 for INDIVIDUAL discussion (questions starting from the project)
+
+![[Pasted image 20240222105824.png]]
+
+NO REPORT
+■ This year, there will be no report as output.
+■ Each group will deliver a Shiny app.
+
+![[Pasted image 20240222105936.png]]
+

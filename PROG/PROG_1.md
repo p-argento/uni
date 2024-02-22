@@ -56,5 +56,5 @@ Necessary and sufficient condition.
 “p if and only if q”
 ![[Pasted image 20240221150930.png|400]]
 
-
+[[PROG_2]]
 
