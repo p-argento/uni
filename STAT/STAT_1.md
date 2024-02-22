@@ -119,3 +119,46 @@ The fact that we can reason thinking with different cases is due to the multipli
 The events are disjoint and cover all the sample space.
 
 ![[Pasted image 20240220174908.png]]
+
+
+## Independence of Events
+
+![[Pasted image 20240222141351.png]]
+
+Intuition: the fact that an event occurs doesn't change the probability of another event.
+The event B must be possible (otherwise makes no sense).
+The a-priori probability is P(A) so without the "given B".
+For example, a second coin toss in independent from the first one.
+
+*Properties*
+Properties:
+1. A independent of B iff $P(A∩B)=P(A)·P(B)$
+2. A independent of B iff B independent of A (symmetry)
+3. A independent of B iff Ac independent of B
+
+> Prove these statements
+
+## Conditional Independence
+It combines conditional probability and independence of events.
+
+![[Pasted image 20240222142618.png]]
+
+Removing B does not change the probability.
+
+*Properties*:
+1. A conditionally independent of B iff $P(A ∩ B|C) = P(A|C) · P(B|C)$
+2.  A conditionally independent of B iff B conditionally independent of A
+
+![[Pasted image 20240222142817.png]]
+> The question is: independence implies or not conditional independence?
+
+*How does independence generalize to two or more events?*
+![[Pasted image 20240222142933.png]]
+An alternative definition is
+![[Pasted image 20240222142948.png]]
+Note that in the alternative definition we use the product of subsets.
+
+> Show that the two definitions are equivalent.
+
+*It is stronger than pairwise independence.*
+

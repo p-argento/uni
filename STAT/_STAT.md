@@ -1,6 +1,7 @@
 
 ## Lectures
 [[STAT_1]]
+[[STAT_2_Introduction_to_R]]
 
 ## Resources
 DidaWiki
