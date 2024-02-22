@@ -62,4 +62,9 @@ Groups up to 3-4 people.
 
 ![[Pasted image 20240222100103.png|300]]
 
-If a problem is not solvable, probably there is something wrong in the plan, in framing the problem.
+If a problem is not solvable, probably there is something wrong in the plan, in framing the problem
+
+
+## DataCamp
+We have access to courses on Datacamp.
+Each course is 4h.
