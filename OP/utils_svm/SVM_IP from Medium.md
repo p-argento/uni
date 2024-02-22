@@ -134,13 +134,13 @@ $$\displaylines{
 &y_i(x_i^T\omega_i+\gamma)\geq1-\xi_i \quad\forall i\\
 \end{cases}}$$
 $$\displaylines{
-\text{Primal Feasibility Conditions}:\\
+\text{Multipliers Conditions}:\\
 \begin{cases}
 \alpha_i\geq0 \\
 \lambda_i\geq0\\
 \end{cases}}$$
 $$\displaylines{
-\text{Primal Feasibility Conditions}:\\
+\text{Complementary Slackness Conditions}:\\
 \begin{cases}
 \alpha_i[y_i^T(x_i^T\omega+\gamma)-(1-\xi_i)])=0 \\
 \lambda_i\xi_i=0\\
@@ -158,8 +158,25 @@ s.t. \quad&\begin{cases}
 \sum_{i=1}^ny_i\alpha_i = 0
 \end{cases}
 \end{align}$$
-> Why those constraints?
+> Why those constraints? Why is a max now?
 
 This is now in the form of a quadratic program.
 ![[Pasted image 20240222180959.png]]
 
+Better formulating the problem:
+$$
+\begin{align}
+\text{maximize}_{\alpha}\quad  & g(\alpha)=\alpha^Te-\frac1 2\alpha^TD\alpha \\
+\text{subject to}\quad&\alpha^Ty=0 \\
+                      &\alpha\geq0 \\
+                      &\alpha\leq Ce
+\end{align}
+$$
+Where
+$$\begin{align}
+y=(y_1,y_2,...,y_N)^T=?=(\pm1,\pm1,...) \\
+D=N\times N\ \text{matrix with entries } y_iy_jx_i^Tx_j \\
+e=\text{N-dimensional vector of 1 (equivalent of} \sum)
+\end{align}$$
+
+*Different formulation in the article*
