@@ -146,8 +146,20 @@ $$\displaylines{
 \lambda_i\xi_i=0\\
 \end{cases}}$$
 ## Writing the dual
-Using the stationarity constrains into the Lagrangian, we obtain.
-$$\displaylines{
+Using the stationarity constrains into the Lagrangian, we obtain a better formulation of the Lagrangian.
+See the steps in the handwritten doc.
+> In the last step there is a $C-\alpha=0$? Why?
 
+The problem now is
+$$\begin{align}
+\max \quad&\sum_{i=1}^N\alpha_i-\frac 12 \sum_{i=1}^N\sum_{j=1}^N\alpha_i\alpha_jy_iy_jx_i^Tx_j \\
+s.t. \quad&\begin{cases}
+0\leq\alpha_i\leq C \\
+\sum_{i=1}^ny_i\alpha_i = 0
+\end{cases}
+\end{align}$$
+> Why those constraints?
 
-}$$
+This is now in the form of a quadratic program.
+![[Pasted image 20240222180959.png]]
+
