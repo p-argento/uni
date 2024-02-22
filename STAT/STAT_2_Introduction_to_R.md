@@ -34,3 +34,29 @@ In `[4:10]` he end position is included.
 ```
 
 
+`LETTERS[1:3] `# letters is a predefined vector, here it is used to name rows
+And rows can be accessed using letters
+```R
+> x= matrix(1:12,nrow=3,byrow=T)
+> x
+     [,1] [,2] [,3] [,4]
+[1,]    1    2    3    4
+[2,]    5    6    7    8
+[3,]    9   10   11   12
+> rownames(x) <- LETTERS[1:3]
+> x
+  [,1] [,2] [,3] [,4]
+A    1    2    3    4
+B    5    6    7    8
+C    9   10   11   12
+```
+
+*factor* is a vector of categories.
+What is the difference with a vector of strings, in the factor only those items can be used, meaning that categories are fixed.
+
+```R
+> cut( 1:10, breaks = c(0, 3, 10)) # discretization into intervals
+ [1] (0,3]  (0,3]  (0,3]  (3,10] (3,10] (3,10] (3,10] (3,10] (3,10] (3,10]
+Levels: (0,3] (3,10]
+```
+
