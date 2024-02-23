@@ -38,7 +38,7 @@ We add slack variables $\xi_i$ associated to each data point $x_i$ $$\min_{\omeg
 Let's start with $\xi_i=0$.
 $y_i=\pm1$ as stated above, so if the left part of the equation is positive, it means that the two terms have the same sign and therefore the point is classified correctly. The higher the value, the higher the confidence. However, if the point falls within the margin, meaning that $u_i(x_i^T\omega_i+\gamma)\leq1$ , we have a problem.
 At this point, we add the $\xi_i\geq0$ to relax the constraint.
-Now, a point that is misclassified (within the threshold $\geq1-\epsilon_i$) will lead to an a higher $\xi_i$ depending on the distance from the margin. The $\xi_i$ will then influence the minimization of the objective function by increasing the penalty term, together with the $C$ value, that is defined as $\sum_{i=1}^N\leq C$.
+Now, a point that is misclassified (within the threshold $\geq1-\epsilon_i$) will lead to an a higher $\xi_i$ depending on the distance from the margin. The $\xi_i$ will then influence the minimization of the objective function by increasing the penalty term, together with the $C$ value, that is defined as $\sum_{i=1}^N\xi_i\leq C$.
 
 Until now, the **SVM problem with soft margin** can be written as $$\begin{align}
 \min_{\omega}\quad &||\omega||^2+C\sum_{i=1}^N\xi_i \\
@@ -90,7 +90,7 @@ $$\displaylines{
 \frac{\partial\mathcal{L}}{\partial\gamma}=0 \implies\sum_{i=1}^N\alpha_i y_i=0 \\
 \frac{\partial\mathcal{L}}{\partial\xi_i}=0\implies C-\alpha_i-\lambda_i=0 \implies\alpha_i=C-\lambda_i\quad\forall i
 \end{cases}}$$
-> In the first condition, why $||\omega||$ became $\omega$?
+> In the first condition, why $||\omega||$ became $\omega$? It is the gradient
 
 *2. Primal Feasibility*
 It means that the optimal point lies in the region defined by the constraints.
@@ -111,6 +111,7 @@ $$\displaylines{
 \lambda_i\geq0\\
 \end{cases}}$$
 > Which one is for equality constraints? They are both used for adding the inequality constraints of the initial problem.
+> Because they can all be expressed as inequalities
 
 *4. Complementary Slackness Conditions*
 When constrains are inactive (meaning = 0), then calculating lagrange multipliers makes no sense.
