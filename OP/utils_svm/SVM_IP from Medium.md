@@ -24,7 +24,9 @@ Since we are trying to find the vector $\beta$ defining the hyperplane that maxi
 Subject to $$\begin{cases}
 & (\omega^T x_i + \gamma)\geq1\qquad i:y_i=+1 \\
 & (\omega^T x_i + \gamma)\leq-1\qquad i:y_i=-1
-\end{cases}$$Meaning that no point can be inside the margin. Remember that the closest point to the margin are the support vectors $$\omega^T x_1 + \gamma = 1\qquad w^T x_2 + \gamma = -1$$
+\end{cases}$$Meaning that no point can be inside the margin. Remember that the closest point to the margin are the support vectors (the support vector can be just one, and the other one does not need to exist)$$
+\omega^T x_1 + \gamma = 1\qquad w^T x_2 + \gamma = -1
+$$Now, since 
 ## Soft Margin
 In real-world problems, the classes are not separated by a hard margin, meaning a clear distinction made by the hyperplane, but a soft margin must be used.
 The soft margin will include in the problem formulation a misclassification error.
