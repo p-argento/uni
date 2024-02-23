@@ -96,6 +96,7 @@ The probability of an event can be higher or lower after conditioning.
 ![[Pasted image 20240220173135.png]]
 
 Within C, what is the probability that A holds.
+It is just the definition of conditional probability, but P(C) is not a denominator.
 Why? Because sometimes it is easier to calculate the conditional probability than the intersection.
 
 ![[Pasted image 20240220173154.png]]
