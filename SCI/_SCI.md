@@ -2,8 +2,8 @@ Strategic and Competitive Intelligence
 Filippo Chiarello
 
 ## Lectures
-[[SCI_1]]
-
+[[1. Competitive Intelligence Definition]]
+[[2. Design of a DS Project]]
 ## Course Structure
 Steps
 1. Plan
@@ -33,7 +33,7 @@ If a problem is not solvable, probably there is something wrong in the plan, in 
 
 ## DataCamp
 We have access to courses on Datacamp.
-Each course is 4h.
+6 courses. Each course is 4h.
 
 ## Project
 Choose one subfield

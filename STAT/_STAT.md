@@ -1,8 +1,11 @@
 
-## Lectures
-[[STAT_1]]
-[[STAT_2_R_Basics]]
+## Homework
+1. Try R exercises in the slides
 
+## Lectures
+[[1. Statistics Basics]]
+[[2. R Basics]]
+[[3. Bayes' Rule and applications]]
 ## Resources
 DidaWiki
 http://didawiki.di.unipi.it/doku.php/mds/sds/start
