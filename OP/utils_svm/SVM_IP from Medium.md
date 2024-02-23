@@ -179,5 +179,29 @@ D=N\times N\ \text{matrix with entries } y_iy_jx_i^Tx_j \\
 e=\text{N-dimensional vector of 1 (equivalent of} \sum)
 \end{align}$$
 
-*Different formulation in the article*
+*Different formulation in the paper*
 ..
+
+
+
+## Coding steps
+
+1. svm-setup
+	1. define D matrix, objective function, equalities, inequalities
+	2. also define gradient and hessian of each one ?
+	3. setting up the problem?
+2. svm-params
+	1. set default parameters for the algo
+3. svm-direction
+	1. find the direction
+4. svm-linesearch
+	1. determine step length
+	2. backtracking line search until constraints are met
+5. svm-call
+	1. call the function created
+6. svm-plot
+	1. plot the decision boundary
+
+
+
+
