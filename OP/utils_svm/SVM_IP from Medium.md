@@ -5,7 +5,6 @@ From Medium
 3. [Using Interior Point Methods for SVM Training](https://towardsdatascience.com/svm-talking-algos-using-interior-point-methods-for-svm-training-d705cdf78c94)
 
 # 1. SVM as a Quadratic Programming Problem
-(mainly from https://towardsdatascience.com/svm-talking-maths-formulating-support-vector-machine-as-a-quadratic-programming-problem-ab5d30a8d73e)
 
 The goal of this section is to define the SVM as a Quadratic Programming Problem through its dual. Then, the Interior Point method will be used to solve the KKT conditions. In particular, Newton's Method will be used to iteratively go through KKT modified conditions.
 
@@ -42,8 +41,8 @@ Now, a point that is misclassified (within the threshold $\geq1-\epsilon_i$) wil
 
 Until now, the **SVM problem with soft margin** can be written as $$\begin{align}
 \min_{\omega}\quad &||\omega||^2+C\sum_{i=1}^N\xi_i \\
-\text{subject to}\quad &\xi_i\geq0 \\
-&y_i(x_i^T\omega_i+\gamma)\geq1-\xi_i \quad\forall i\\
+\text{subject to}\quad &y_i(x_i^T\omega_i+\gamma)\geq1-\xi_i \quad\forall i\\
+\quad &\xi_i\geq0 \\
 \end{align}$$
 *Different formulations*
 A different formulation, found in INTERIOR-POINT METHODS FOR MASSIVE SUPPORT VECTOR MACHINES - MICHAEL C. FERRIS AND TODD S. MUNSON is $$\begin{align}
