@@ -1,5 +1,5 @@
 ## Lectures
-[[PROG_1]]
+[[Logic]]
 
 
 ## Outline

@@ -2,7 +2,7 @@ Strategic and Competitive Intelligence
 Filippo Chiarello
 
 ## Lectures
-[[1. Competitive Intelligence Definition]]
+[[SCI Lectures]]
 [[2. Design of a DS Project]]
 ## Course Structure
 Steps
