@@ -245,5 +245,20 @@ As with attributes and
 > 5. state
 > 6. 
 
+--27.02--
+> Cardinality is what students always get wrong.
+> When in doubt, choose 0 to many.
+
+What if one class in structured as a tree? For example in the subjects of the library we have science, that includes math, that includes geometry, calculus, ...
+They are sentences, basically a set of pairs.
+Called ciclic association, or recursive association.
+
+Using more subjects is wrong.
+It is redundant.
+It is different than the mind of the customer.
+
+Every loan is for one book.
+
+
 
 
