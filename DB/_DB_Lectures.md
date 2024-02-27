@@ -258,7 +258,24 @@ It is redundant.
 It is different than the mind of the customer.
 
 Every loan is for one book.
+Be aware of the fact that the librarian might use the same word "book" meaning both the blueprint and a physical copy of the book.
+But you cannot be ambiguous.
+And never use the name of an attribute for a class.
+"The book is not the title"
 
+## Subclass
+Whenever you have a subset of a class for which we plan to collect more information.
+Then you specify extra information.
+"A student is a person".
+"A copy is NOT a book". (the book is the blueprint, while the copy is a physical entity)
+The subclass is a subset relationship with extra attributes.
+Define a subclass only when you have extra attributes.
 
+Use cases for subclasses
+1. overlapping subsets $\rightarrow$
+2. non-overlapping subsets
+3. overlapping cover $\Rightarrow$
+4. non overlapping cover (called partition)
+*Note the different notation.*
 
-
+> Do exercises published
