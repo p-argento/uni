@@ -279,3 +279,45 @@ Use cases for subclasses
 *Note the different notation.*
 
 > Do exercises published
+
+
+## Telephone calls example
+[[Telephone call example text]]
+
+What about corner case?
+Ask the manager. Because everything should be there from the initial design.
+But be prepared, because the client will call you saying that the system is shit, if it doesn't allow that specific marginal case.
+In these cases, use a name in the relationship.
+
+Unless you have a constraint, allow freedom.
+Basically, when you do not know, do not use limitations.
+
+If the customer want to choose the offer from an apriori list, this is enough to choose the representation of offers as a class.
+
+Should we use a subclass "Presented Offers"? NO.
+It is not a feature of the offer, it is a relational feature between offers and calls.
+In addition, we do not have extra attributes.
+An offer presentation is not an offer, because an offer is a blueprint, an offer presentation is an event.
+"Offer presentation" from being a relational features, becomes a class with the degree of interest as an attribute.
+It is interesting to note that the relations becomes unary going out from "offer_presentation", but to-many entering the "offer_presentation"
+
+> When in doubt in using an attribute or a relation, use a relation.
+
+The call is done by the employee, not the name of the employee.
+Never use a value to represent an entity.
+
+
+# Logical Design
+
+A table is a set of lines (or records).
+A table contains a schema.
+There can be constraints. Like the key constraint, where every line of an attribute must be unique. There could many key constraint.
+A foreign key constraint is also called
+
+
+
+
+
+
+
+
