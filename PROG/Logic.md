@@ -137,5 +137,13 @@ Example.
 
 An example where the NF is useful is programming, where you cannot use implication, but you must use only and, or, negations. So we need to find equivalent formulae for implications.
 
+--28.02--
 # Predicates and Quantifiers
+Predicate Logic is also called "first order logic".
+Example.
+
+
+
+
+
 
