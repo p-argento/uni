@@ -34,7 +34,7 @@ Theory is written in 45 min and oral afterwards, in the same day.
 
 Written Exam Exercises
 1. simulation of one of the algorithms seen in class (if done it's 18)
-2. visit of a tree
+2. visit of a tree (with RECURSION)
 3. non-trivial modification of some of the algorithms seen
 
 Each week, there's a jupyter notebook with exercises.

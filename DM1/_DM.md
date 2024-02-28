@@ -1,7 +1,6 @@
 **Professor's Advice**
 Study the book! Available online.
 Experiment with dataset online, trying to reproduce the output of notebooks.
-
 # Slides
 ---
 Exploratory Data Analysis

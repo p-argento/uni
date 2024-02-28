@@ -9,8 +9,14 @@
 - [timetable](https://didattica.di.unipi.it/en/master-programme-in-data-science-and-business-informatics/timetable-master-in-data-science-business-informatics/)
 - [academic calendar](https://didattica.di.unipi.it/en/master-programme-in-data-science-and-business-informatics/academic-calendar-2023-2024/)
 
-## Courses
-Mandatory for all
+# Courses
+Courses are divided in
+1. mandatory
+2. coming from economics
+3. coming from non-economics
+4. elective
+
+## Mandatory for everyone
 - Data Mining - Guidotti, Pedreschi (12CFU, ANNUAL)
 	- [didawiki](http://didawiki.di.unipi.it/doku.php/dm/start)
 - Statistics
@@ -24,10 +30,9 @@ From non-economics
 Elective
 
 
+### Data Mining
 
 
-Annual - 12 CFU
-- Data Mining - Guidotti, Pedreschi
 - Programming for DS - Semini, Trani
 
 First Semester - 12 CFU
