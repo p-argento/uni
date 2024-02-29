@@ -1,5 +1,5 @@
 ## Lectures
-[[Logic]]
+[[1. Logic]]
 
 
 ## Outline
