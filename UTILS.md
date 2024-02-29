@@ -20,6 +20,8 @@ Courses are divided in
 4. elective
 And then sorted in alphabetical order
 
+> Use ai to transpose the table vertically and add new rows like official page, student docs, student comment
+
 *Mandatory for everyone*
 ## Data Mining - Guidotti, Pedreschi
 (12CFU, ANNUAL)
@@ -30,6 +32,7 @@ And then sorted in alphabetical order
 | Codice | Insegnamento                                                                                                                      | Docente/i         | CFU | Periodo        |
 | ------ | --------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --- | -------------- |
 | 784AA  | [OPTIMIZATION FOR DATA SCIENCE](https://esami.unipi.it/esami2/programma.php?noframe=1&c=61298&amp;aa=2023&amp;cid=361&amp;did=13) | FRANGIONI ANTONIO | 6   | Primo semestre |
+
 Official Resources
 - e-learning
 Students' Contribution

@@ -44,7 +44,7 @@ When the policemen is not able to distinguish AI painted images from web images,
 
 # 2. Design of a DS Project
 
-![[Pasted image 20240223143023.png]]
+![[Pasted image 20240229170157.png]]
 
 Transform questions framed with framing tools into a project with project management tools.
 Using these tools appropriately decreases the complexity of a project.
@@ -105,7 +105,39 @@ Before asking questions, think about feasibility.
 
 --29.02--
 
-The question should be feasible.
+![[Pasted image 20240229170157.png]]
+
+Why 80/20? Because you need to concentrate more on the questions, because it is where the real value is.
+
+![[Pasted image 20240229171229.png]]
+
+## THE PROCESS OF BRAINSTORMING
+1. THE ENVIRONMENT
+	1. outside of a class is more creatively
+	2. preferably peers
+	3. one moderator
+2. SETTING THE SCENE
+3. RULES FOR THE SESSION
+	1. do not filter, do not think about feasibility
+4. RUNNING THE BRAINSTORMING SESSION
+	1. stick the idea so it is visible to everyone
+	2. 4-6 people
+5. AFFINITY ANALYSIS
+	1. find a structure (a priori or a posteriori)
+
+activities to answer to that the question
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
