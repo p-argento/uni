@@ -101,3 +101,15 @@ Is it a standalone project or is it part of a bigger project?
 What is the model for evaluating students.
 
 Before asking questions, think about feasibility.
+
+
+--29.02--
+
+The question should be feasible.
+
+
+
+
+
+
+
