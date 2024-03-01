@@ -109,7 +109,7 @@ Before asking questions, think about feasibility.
 
 Why 80/20? Because you need to concentrate more on the questions, because it is where the real value is.
 
-![[Pasted image 20240229171229.png]]
+![[Pasted image 20240229171229 1.png]]
 
 ## THE PROCESS OF BRAINSTORMING
 1. THE ENVIRONMENT
