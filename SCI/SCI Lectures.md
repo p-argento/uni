@@ -130,6 +130,13 @@ activities to answer to that the question
 
 
 
+## Bottom-up and top-down
+Both strategies of information processing.
+Clustering is bottom-up.
+
+Planning, Collecting, Analyzing, Communicating.
+Add more subclasses if necessary. Like the specific tasks.
+Top-down starts from the classes and define the activities going down.
 
 
 
