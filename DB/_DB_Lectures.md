@@ -310,8 +310,10 @@ Never use a value to represent an entity.
 # Logical Design
 
 A table is a set of lines (or records).
-A table contains a schema.
-There can be constraints. Like the key constraint, where every line of an attribute must be unique. There could many key constraint.
+It has a name and a set of column names (or fields or attributes).
+A type is also defined for each attributes.
+There can be constraints. Like a salary must be positive.
+Like the key constraint, where every line of an attribute must be unique. There could many key constraint.
 A foreign key constraint is also called
 
 
