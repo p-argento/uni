@@ -4,4 +4,5 @@ For any *visit* they want to know the appointment, the actual starting and endin
 For each *drug* we record the active ingredients and the commercial name. 
 For each *patient* we record name, address, and those drugs which the patient is allergic to. 
 For each *doctor* we record name, address and specialization. 
-Prepare a graphical conceptual schema, listing the attributes of each class (in the schema or separately). Try and translate the schema into a graphical relational schema
+Prepare a graphical conceptual schema, listing the attributes of each class (in the schema or separately). Try and translate the schema into a graphical relational schema.
+
