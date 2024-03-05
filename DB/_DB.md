@@ -10,6 +10,13 @@ Office hours:
 - monday 11-13
 - friday 14-16
 
+## Slides
+[[1. DB Intro]]
+[[2. DB Conceptual Design]]
+[[3. DB Logical Schema]]
+4. Relational Algebra
+5. 
+
 ## Outline
 Part 1.
 • Functionalities of Database Management Systems - DBMSs
@@ -35,5 +42,5 @@ There's an extra oral appello for those that pass both mid-terms.
 From september, mid-terms are not valid anymore, and the whole exam must be done.
 
 ## Lectures
-[[_DB_Lectures]]
+[[1. DB Intro]]
 [[2. Database_Design]]
