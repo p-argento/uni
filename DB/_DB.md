@@ -14,7 +14,7 @@ Office hours:
 [[1. DB Intro]]
 [[2. DB Conceptual Design]]
 [[3. DB Logical Schema]]
-4. Relational Algebra
+[[4. Relational Algebra]]
 5. 
 
 ## Outline
