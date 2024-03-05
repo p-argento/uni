@@ -30,7 +30,7 @@ It is a plus to design it to be user-friendly, but not expected.
 First the report, then the code. Show that you understood what you did in the report.
 Have a look at the [[Guidelines_4_Projects_ODS23.pdf]]
 
-> More about my project regarding SVM with Interior Point Method is in [[_SVM]]
+> More about my project regarding SVM with Interior Point Method is in [[SVM]]
 
 ## Lectures
 [[Random Notes from Frangioni]]

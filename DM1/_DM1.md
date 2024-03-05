@@ -1,8 +1,4 @@
-**Professor's Advice**
-Study the book! Available online.
-Experiment with dataset online, trying to reproduce the output of notebooks.
-# Slides
----
+## Slides
 Exploratory Data Analysis
 [[1. Data Understanding]]
 [[2. Data Preparation]]
@@ -22,9 +18,7 @@ Regression and Pattern Mining
 [[13. Pattern Mining]]
 [[14. Linear Regression]]
 
-
-# Outline
----
+## Outline
 Module 1: Data Understanding 
 • KDD & CRISP 
 • Data Understanding 
@@ -53,9 +47,11 @@ Module 4: Classification & Regression
 • Decision Tree Classifier 
 • Linear Regression
 
+## Professor's Advice
+Study the book! Available online.
+Experiment with dataset online, trying to reproduce the output of notebooks.
 
-# Project
----
+## Project
 Github repo and Overleaf shared project.
 Justify the choices.
 Comment the figures.
@@ -76,8 +72,8 @@ Do a PCA, for dimensionality reduction.
 If k=2, you can visualise in a scatterplot, loosing however information.
 But clustering comes before pca.
 
-# Appo
----
+## More Notes
+
 [[Plotting high dimensional clustering]]
 [[Normalization]]
 [[Data Pre-Processing]]

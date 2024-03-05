@@ -3,7 +3,8 @@ Filippo Chiarello
 
 ## Lectures
 [[SCI Lectures]]
-[[2. Design of a DS Project]]
+
+
 ## Course Structure
 Steps
 1. Plan
