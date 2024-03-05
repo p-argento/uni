@@ -38,7 +38,7 @@ Written Exam Exercises
 3. non-trivial modification of some of the algorithms seen
 
 Each week, there's a jupyter notebook with exercises.
-Then, few days before the exam, they should be submitted.
+Then, few days before the exam, they should be *submitted*.
 
 ## Some notes from lectures
 *Programming Priorities*
