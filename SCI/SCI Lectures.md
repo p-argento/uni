@@ -140,6 +140,10 @@ Top-down starts from the classes and define the activities going down.
 
 
 
+# 3. Query Design
+
+
+
 
 
 
