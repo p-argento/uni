@@ -142,6 +142,11 @@ Top-down starts from the classes and define the activities going down.
 
 # 3. Query Design
 
+> Do not use exclusion in queries, it is very dangerous.
+
+ChatGPT is very good in making queries.
+
+
 
 
 
