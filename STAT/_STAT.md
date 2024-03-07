@@ -1,9 +1,14 @@
-## Lectures
+## Slides
 [[1. Statistics Basics]]
 [[2. R Basics]]
 [[3. Bayes' Rule and applications]]
-
-
+4. Discrete Random Variables
+5. Recall on calculus
+6. Continuous Random Variables
+7. Expectation and Variance
+8. Moments. Functions of Random Variables
+9. Simulation
+10. 
 
 ## Resources
 [DidaWiki](http://didawiki.di.unipi.it/doku.php/mds/sds/start)
