@@ -152,9 +152,8 @@ ChatGPT is very good in making queries.
 
 
 
-
-
-
+[try](zotero://open-pdf/library/items/8DX7Y4LA)
+[try2](zotero://open-pdf/library/items/TRWCFXAY?page=10)
 
 
 
