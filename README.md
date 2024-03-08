@@ -6,7 +6,7 @@ If you have any suggestions, text me on telegram @pietroargento
 [[_PDM]]
 [[_PROGRAMMING]]
 [[_BPM]]
-[[_OPTIMIZATION]]
+[[_OPTI]]
 *Second Semester*
 [[_DM2]]
 [[_STAT]]
