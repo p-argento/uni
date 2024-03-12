@@ -46,6 +46,3 @@ There's an extra oral appello for those that pass both mid-terms.
 
 From september, mid-terms are not valid anymore, and the whole exam must be done.
 
-## Lectures
-[[1. DB Intro]]
-[[2. Database_Design]]
