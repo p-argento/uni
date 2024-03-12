@@ -15,7 +15,12 @@ Office hours:
 [[2. DB Conceptual Design]]
 [[3. DB Logical Schema]]
 [[4. Relational Algebra]]
-5. 
+5. SQL as Query Language
+6. SQL data definition
+7. Programming with SQL
+8. Normalization
+9. Query Execution
+10. Transactions
 
 ## Outline
 Part 1.
