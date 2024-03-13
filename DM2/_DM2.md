@@ -26,6 +26,9 @@ Module 4: Advanced ML & XAI
 5. Gradient Boosting
 6. Rule-based Classifiers
 
+## Project
+Do not report a point to point matrix comparing 2 time series.
+Do not use simple distance calculations, they MUST be used to do something useful like clustering.
 
 
 
