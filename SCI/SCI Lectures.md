@@ -157,6 +157,9 @@ break
 20 min
 
 
+When in doubt, run a single query.
+
+
 
 
 
