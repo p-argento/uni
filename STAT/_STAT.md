@@ -1,14 +1,21 @@
 ## Slides
-[[1. Statistics Basics]]
-[[2. R Basics]]
+[[1. Probabilities and Independence]]
+[[2. R Introduction]]
 [[3. Bayes' Rule and applications]]
 4. Discrete Random Variables
 5. Recall on calculus
 6. Continuous Random Variables
 7. Expectation and Variance
 8. Moments. Functions of Random Variables
-9. Simulation
-10. 
+9. Distance between distributions
+10. Simulation
+11. Power Law's and Zipf's Law
+12. Law of large numbers. The central limit theorem.
+13. Graphical summaries. Kernel Density Estimation.
+14. Numerical summaries
+15. Unbiased estimators. Efficiency and MSE
+16. Maximum likelihood estimation.
+17. 
 
 ## Resources
 [DidaWiki](http://didawiki.di.unipi.it/doku.php/mds/sds/start)
