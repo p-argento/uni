@@ -162,5 +162,17 @@ When in doubt, run a single query.
 
 
 
+**Core Search Terms:**
 
+"Generative AI" OR "GenAI"
+OR ("GANs" OR "Generative Adversarial Networks")
+OR ("VAEs" OR "Variational Autoencoders")
+OR ("Diffusion Models" AND "Generative AI") OR "Diffusion Probabilistic Models"
+"Autoregressive Models"
+("Transformers" AND "Text Generation") OR ("Transformers" AND "Image Generation)
+OR
+(("Image Generation" OR "Image Synthesis") AND AI)
+OR (("Text Generation" OR "Natural Language Generation") AND (AI OR "deep learning" OR "neural networks"))
+OR
+("Unsupervised Learning" OR "Semi-supervised learning") AND ("GANs" OR "VAEs" OR "Diffusion Models")
 
