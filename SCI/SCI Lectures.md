@@ -176,3 +176,38 @@ OR (("Text Generation" OR "Natural Language Generation") AND (AI OR "deep learni
 OR
 ("Unsupervised Learning" OR "Semi-supervised learning") AND ("GANs" OR "VAEs" OR "Diffusion Models")
 
+
+
+TITLE-ABS-KEY(
+
+    Generative AND (AI OR "Artificial Intelligence") AND (
+
+        "Generative Adversarial Network" OR 
+
+        "Variational Autoencoder" OR  
+
+        ("Diffusion Models" AND (AI OR "Artificial Intelligence")) OR 
+
+        ("Transformers" AND (AI OR "Artificial Intelligence")) OR 
+
+        "Image Generation" OR 
+
+        "Text Generation" OR 
+
+        "3D Model Generation" OR 
+
+        "Video Generation" OR 
+
+        "Audio Generation" OR 
+
+        "Data Augmentation" OR 
+
+        ("Drug Discovery" AND (AI OR "Artificial Intelligence")) OR
+
+        ("Material Design" AND (AI OR "Artificial Intelligence")) OR
+
+        Gemini AND Google OR OpenAI
+
+    )
+
+)
