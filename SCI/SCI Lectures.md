@@ -146,16 +146,15 @@ Top-down starts from the classes and define the activities going down.
 
 ChatGPT is very good in making queries.
 
+> QUERY -> C1 + C2 + ..
 
-
-
-
-
-
-[try](zotero://open-pdf/library/items/8DX7Y4LA)
-[try2](zotero://open-pdf/library/items/TRWCFXAY?page=10)
-
-
+40 min
+I want a string, a digitally written query working on scopus.
+20 min
+Evaluate each other queries in terms of precision and recall.
+10 min
+break
+20 min
 
 
 
