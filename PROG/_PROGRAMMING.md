@@ -1,6 +1,8 @@
 ## Lectures
 [[1. Logic]]
 
+## Python
+[[0. Pythonbook]]
 
 ## Outline
 
