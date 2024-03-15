@@ -4,7 +4,7 @@ Filippo Chiarello
 ## Lectures
 [[SCI Lectures]]
 [[DATACAMP]]
-
+[[extra exercise]]
 ## Course Structure
 Steps
 1. Plan
