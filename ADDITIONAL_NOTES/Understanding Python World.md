@@ -36,3 +36,4 @@ It contains ```
 *TensorFlow* is a tool for building deep neural networks with high-level Python code. It provides APIs to train, analyze and deploy ML models. See [[Understanding TensorFlow]]
 
 *Pythonic* is referred to Python Style while Programming. See [[Organizing Python Code]]
+
