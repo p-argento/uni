@@ -7,6 +7,16 @@ Rossano Venturini
 ## Lectures
 [[1. Sorting]]
 
+
+
+## Notebooks
+[my nb 1](file:///Users/pietro/_DS/ALGO/adsds/Lab_copy/Lecture_01/L01_Basic_Sorting_no_sols.ipynb)
+
+
+
+
+
+
 ## Resources
 Github
 https://github.com/rossanoventurini/adsds?tab=readme-ov-file
