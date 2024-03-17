@@ -34,6 +34,7 @@ There are 2 datasets for this project:
 	2. • 10k time series (500 for each of the 20-genre considered) 
 	3. • File naming: trackid_genre
 
+[[DM2 Description of Variables]]
 ## Module 1: Data Understanding and Preparation 
 Guidelines
 1. Explore and prepare the tabular dataset
@@ -41,6 +42,8 @@ Guidelines
 2. Explore and prepare the time-series dataset
 	1. Pre-process the dataset to be able to run time series clustering; motif/anomaly discovery and classification. If the dataset is too big for these tasks, you can use approximations (e.g. SAX, PAA etc)
 
+My Notes
+1. see [[My Data Understanding Cheatsheet]]
 
 ## Module 2: Time Series Analysis 
 ### Motifs/Discords
