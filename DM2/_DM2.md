@@ -4,11 +4,20 @@
 ## Project
 [[DM2 Project]]
 
+## Slides
+14. dm2 intro
+[[15. Rule-based Classifiers]]
+[[16. Sequential Pattern Mining]]
+[[17. Transactional Clustering]]
+[[18. Time Series - Similarities and Distances]]
+19. Time Series - Clustering
+
 ## Topics
 Module 1: Rule-based Classifiers & Transactional Data
-[[1. Rule-based Classifiers]]
-[[2. Sequential Pattern Mining]]
-[[3. Transactional Clustering]]
+[[15. Rule-based Classifiers]]
+[[16. Sequential Pattern Mining]]
+[[17. Transactional Clustering]]
+
 
 Module 2: Time Series Analysis
 1. Time Series Similarity
