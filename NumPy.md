@@ -12,3 +12,6 @@ Made for data analysis.
 Capability comes at a cost. But there are Cyhton function that are good.
 
 
+## NumPy tutorial
+
+Functions applied to array are usually element wise.
