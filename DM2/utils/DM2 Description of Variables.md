@@ -1,4 +1,14 @@
-Column description tracks.csv
+## Column description tracks.csv
+
+
+| unique | binary | categorical | continuous |
+| ------ | ------ | ----------- | ---------- |
+| id     |        |             |            |
+|        |        |             |            |
+|        |        |             |            |
+|        |        |             |            |
+
+
 
 - id: 				The Spotify ID for the track
 - name: 			Name of the track
@@ -61,7 +71,7 @@ Column description tracks.csv
 - n_beats: 			The total number of time intervals of beats throughout the track. A beat is the basic time unit of a piece of music; for example, each tick of a metronome.
 - n_bars: 			The total number of time intervals of the bars throughout the track. A bar (or measure) is a segment of time defined as a given number of beats.
 
-Column description artists.csv
+## Column description artists.csv
 
 - id:  			The Spotify ID for the artist.
 - name: 		The name of the artist.
