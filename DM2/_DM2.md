@@ -1,7 +1,10 @@
-
+## Resources
 [didawiki](http://didawiki.di.unipi.it/doku.php/dm/start)
 
-# Topics
+## Project
+[[DM2 Project]]
+
+## Topics
 Module 1: Rule-based Classifiers & Transactional Data
 [[1. Rule-based Classifiers]]
 [[2. Sequential Pattern Mining]]
