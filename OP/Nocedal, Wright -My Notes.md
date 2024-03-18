@@ -106,6 +106,25 @@ By smooth functions, we generally mean functions whose second derivatives exists
 It is possible to find the minimizer of non-smooth funtions by minimizing each smooth piece individually.
 
 ## Overview of algorithms
+In this section, we describe the main properties of algorithms for unconstrained optimization of smooth functions.
+
+First. All of these algorithms requires a *starting point* $x_0$.
+It can be either chosen by the user, for example using domain knowledge, or by the algorithm.
+
+Second. After a series of iterations, the algorithm must *stop* when no progress can be made OR a solution point has been found with sufficient accuracy.
+
+Third. How to move *from one iteration to the other*? The algorithm uses information about the function $f$ at the iteration $x_k$, together, in some algorithms, with information from previous iterates.
+There are two fundamentals strategies to move from one iteration to the other:
+1. line search
+2. trust region
+
+Note that "monotone" algorithms find a new iterate $x_{k+1}$ with a lower value of the function $f$. However, some algorithms are "non-monotone", meaning that they do not decrease at every step, but only after a prescribed number of $m$ iterations.
+
+## Line search vs Trust Region
+
+
+
+
 
 
 
