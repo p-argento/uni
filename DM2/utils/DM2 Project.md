@@ -1,8 +1,3 @@
-Timeseries.
-You 
-
-
-
 ## Outline
 There are 4 Modules
 - Module 1: Data Understanding & Preparation

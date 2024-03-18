@@ -14,9 +14,9 @@
 
 ## Topics
 Module 1: Rule-based Classifiers & Transactional Data
-[[15. Rule-based Classifiers]]
-[[16. Sequential Pattern Mining]]
-[[17. Transactional Clustering]]
+1. Rule-based Classifiers
+2. Sequential Pattern Mining
+3. Transactional Clustering
 
 
 Module 2: Time Series Analysis
@@ -40,7 +40,7 @@ Module 4: Advanced ML & XAI
 
 ## Project
 Do not report a point to point matrix comparing 2 time series.
-Do not use simple distance calculations, they MUST be used to do something useful like clustering.
+Do not report simple distance calculations, they MUST be used to do something useful like clustering.
 
 
 
