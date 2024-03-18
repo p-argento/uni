@@ -39,6 +39,7 @@ Part 4
 Textbook
 A. Albano, Database essentials, 2021 [here](http://fondamentidibasididati.it/)
 
+Useful [website](https://dbdiagram.io/d) for relational schema
 ## Exam
 Mid-terms are independent.
 You can even skip the first one and do the second. You'll do only half of the exam.
