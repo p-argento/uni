@@ -122,6 +122,113 @@ Note that "monotone" algorithms find a new iterate $x_{k+1}$ with a lower value 
 
 ## Line search vs Trust Region
 
+There are two approaches for solving an unconstrained minimization optimization problem. [S](https://indrag49.github.io/Numerical-Optimization/introduction-to-unconstrained-optimization.html#algorithms-for-solving-unconstrained-minimization-tasks)
+1. **Line Search Descent Method**
+2. **Trust Region Method**
+Trust-region methods are in some sense dual to line-search methods: trust-region methods first choose a step size (the size of the trust region) and then a step direction, while line-search methods first choose a step direction and then a step size. 
+
+> Wikipedia [trust region](https://en.wikipedia.org/wiki/Trust_region) & [line search](https://en.wikipedia.org/wiki/Line_search)
+
+In *line search*, the algo chooses a direction $p_k$ and searches along this direction from the current iterate $x_k$ for a new iterate with a lower function value.
+Given the direction $p_k$, how much should we move along this direction? To find the step length $\alpha$ we should solve the following one-dimensional minimization problem
+$$\min_{\alpha>0}f(x_k+\alpha p_k)$$
+We would like to derive the maximum benefit from the direction $p_k$
+> HOW??
+
+However, an exact minimization may be expensive and usually it is not necessary.
+Instead, the line search generates a limited number of trial step lengths until found one that loosely approximate the minimum.
+At the new point, new search direction and new step length are computed.
+
+(Do no confuse linear search with line search)
+In optimization, the line search strategy is one of the two basic iterative approaches to find a local minimum of the objective function $f:\mathbb{R}^n\rightarrow\mathbb{R}$. 
+The line search approach first finds a descent direction along which the objective function $f$ will be reduced and then computes a step-size that determines how far $x$ should move along that direction. 
+The descent direction can be computed can be computed by various methods, such as gradient descent or quasi-newton methods. 
+The step-size can be determined either exactly or inexactly.
+
+The second strategy is *trust region*.
+Here, the information gathered about $f$ is used to construct a model function $m_k$ whose behaviour near the current point $x_k$ is similar to that of the actual objective function. Basically, we restrict the search for the minimizer of $m_k$ to some region around $x_k$. It means solving the subproblem:
+$$\min_p m_k(x_k+p)\quad\text{where $x_k+p$ lies inside the trust region}$$
+Note that $m_k$ is a function (called model function).
+
+If the candidate solution does not produce a sufficient decrease in f, we conclude that the trust region is too large, so we shrink and re-solve.
+Usually, the trust region is a ball defined by $||p||_2\leq\Delta$ where the scalar $\Delta>0$ is called trust-region radius.
+
+The model function $m_k$ is usually defined to be a quadratic function of the form: $$m_k(x_k+p)=f_k+p^T\nabla f_k+\frac 1 2 p^TB_kp$$ where
+- $f_k$ is a scalar, is the function at the point $x_k$
+- $\nabla f_k$ is a vector, is the gradient of the function at the point $x_k$
+- $B_k$ is a matrix, is the Hessian $\nabla^2 f_k$ or some approximation
+Note that $m_k$ looks like Taylor approximation.
+
+The main difference between line search and trust region is the following.
+Line search
+- starts by fixing the direction $p_k$ and then identifying an appropriate distance (the step length $\alpha$). 
+- major issue: choice of the search direction $p_k$
+Trust-region
+- first choose a max distance (the radius $\Delta_k$) and then seek a direction and a step, looking for the best possible improvement given the distance constraint.
+- major issue: choice of the Hessian $B_k$
+
+## Line search
+Line search directions that will be discussed in this section give rise to the following line search methods:
+1. steepest descent method
+2. Newton method
+3. quasi-newton method
+4. conjugate gradient
+
+Note that, in general, nonlinear conjugate gradients directions are much more effective that the steepest descent direction, and almost as simple to compute. Comparing with Newton or quasi-newton, the convergence rate is not so fast, but the advantage is that it is not required to store matrices.
+
+### 1. Steepest descent direction
+It is the most obvious choice for search direction for a line search method.
+It is $-\nabla f_k$.
+It is the direction along which f decreases most rapidly.
+It can be verified using Taylor.
+The direction of most rapid decrease is $$\min_p p^T\nabla f_k$$ which is $p_k=-\nabla f_k$
+
+Note that other descent directions can be used. And it is guaranteed to produce a decrease in f provided that the step length is sufficiently small.
+
+### 2. Newton direction
+The most important one.
+It is derived from the second-order Taylor series approximation to $f(x_k+p)$.
+$$f(x_k+p)\approx f_k+p^T\nabla f_k+\frac 1 2p^T\nabla^2 f_k p = m_k(p)$$
+Assuming $\nabla^2 f_k$ positive definite, we simply set the derivative of $m_k$ to zero (which is the model approximating the function).
+We obtain the formula $$p_k=-(\nabla^2 f_k)^{-1}\ \nabla f_k$$The Newton direction is reliable when the difference between the true function $f(x_k+p)$ and its quadratic model $m_k$(p) is not too large.
+
+Note that, with respect to Taylor approximation, we are simplifying some terms, but the perturbation is small and can be ignored.
+
+Step length.
+Most line search implementations of Newton's method use the natual step length of 1, and adjust $\alpha$ only when the reduction in the value of f is not satisfactory.
+
+Problems
+1. when $\nabla^2 f_k$ is not positive definite, the direction may not be defined
+2. the descent property $\nabla f_k^Tp_k<0$ may not be satisfied and therefore the search direction is unfeasible
+
+Convergence.
+Typically, the convergence rate is quadratic. Often few iterations.
+
+More in detail in [[Newton Method]]
+
+### 3. Quasi-Newton direction
+These search directions are alternatives to Newton method.
+They do not require the computation of the Hessian.
+However, they still attain superlinear rate of convergence.
+In place of the true Hessian, an approximation $B_k$ is used.
+
+...
+
+
+### 4. Non-linear conjugate gradient direction
+
+
+
+
+
+## Trust-region
+Same directions of line search, but after choosing a radius.
+
+
+
+
+
+
 
 
 

@@ -45,7 +45,7 @@ With 10 variables is fine. But what about 10k?
 Quasi-Newton Methods avoid to compute the Hessian and its matrix.
 
 
-# From Wikipedia
+## From Wikipedia
 ---
 from [wikipedia](https://en.wikipedia.org/wiki/Newton%27s_method_in_optimization)
 
@@ -60,4 +60,12 @@ The minimum is achieved for
 $${\displaystyle t=-{\frac {f'(x_{k})}{f''(x_{k})}}}$$
 Putting everything together, the iteration performed by Newton is
 $${\displaystyle x_{k+1}=x_{k}+t=x_{k}-{\frac {f'(x_{k})}{f''(x_{k})}}}$$
+
+## Example 
+
+![[Pasted image 20240318144325.png]]
+
+Basically, at every step we approximate the function with a parabola, then find the minimum of that parabola. We iterate again using the minimum found to build the second-order taylor approximation, that is again a parabola with a minimum.
+
+![[Pasted image 20240318144712.png]]
 

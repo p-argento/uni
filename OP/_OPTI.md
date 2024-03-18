@@ -39,7 +39,7 @@ Have a look at the [[Guidelines_4_Projects_ODS23.pdf]]
 [[Simple and Quadratic Optimization Problems from Frangioni]]
 
 ## Relevant Notes
-[[Nocedal, Wright -My Notes]]
+[[Nocedal, Wright - My Notes]]
 [[Constrained Convex Optimization]]
 
 

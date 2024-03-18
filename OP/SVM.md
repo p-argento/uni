@@ -21,7 +21,7 @@ No off-the-shelf solver is allowed, save of course for (A2). Specific discussion
 
 The book:
 - "J. Nocedal, S.J. Wright, Numerical Optimization"
-	- [[Nocedal, Wright -My Notes]]
+	- [[Nocedal, Wright - My Notes]]
 
 In [[Constrained Convex Optimization]] some theory.
 
