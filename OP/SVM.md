@@ -31,7 +31,7 @@ In [[SVM_IP from Medium]], notes from articles on Medium on SVM with Interior Po
 
 In [[SVM_CODE from youtube]]
 
-
+See [paper](/Users/pietro/_DS/OP/SVM_project/articles/survey_piccialli_sciandrone4OR.pdf)
 
 # More resources
 ---
