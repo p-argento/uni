@@ -43,8 +43,9 @@ WHERE s.Surname=t.Surname
 4. For each student that passed at least one exam, return the SId, the name, the number of exams passed, the average grade
 
 ```SQL
-SELECT DISTINCT s.Sid, s.Name, e.count, e.avg
+SELECT s.Sid, s.Name, COUNT(e.*), AVG(e.Grade)
 FROM Students s JOIN Exams e ON s.Sid=e.Sid
-WHERE e.grade >= 18
-GROUP BY 
+WHERE 
+GROUP BY s.Sid
+HAVING 
 ```
