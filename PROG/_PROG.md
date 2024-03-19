@@ -1,6 +1,6 @@
 ## Lectures
 [[1. Logic]]
-
+[[2. Functions]]
 ## Python
 [[0. Pythonbook]]
 

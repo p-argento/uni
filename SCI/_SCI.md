@@ -1,4 +1,4 @@
-Strategic and Competitive Intelligence
+*Strategic* and Competitive Intelligence
 Filippo Chiarello
 
 ## Lectures

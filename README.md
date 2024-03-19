@@ -4,7 +4,7 @@ If you have any suggestions, text me on telegram @pietroargento
 *First Semester*
 [[_DM1]]
 [[_PDM]]
-[[_PROGRAMMING]]
+[[_PROG]]
 [[_BPM]]
 [[_OPTI]]
 *Second Semester*
@@ -13,5 +13,5 @@ If you have any suggestions, text me on telegram @pietroargento
 [[_SCI]]
 [[_ALGO]]
 [[_DB]]
-[[_PROGRAMMING]]
+[[_PROG]]
 
