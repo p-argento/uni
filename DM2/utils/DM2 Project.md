@@ -80,7 +80,21 @@ Try to use one or more explanation methods (e.g., TREPAN, LIME, LORE, SHAP, Coun
 
 ## Time Series
 
-1. Trasformation
-	1. 
+DM2 project ideas
+
+TS subset per genre (vedi split nome file) -> 20 subset (20 genres)
+
+selezioniamo tracks di generi simili -> similarità fra i due generi -> shape interessanti fra generi (tipo classic che ha stessa struttura di generi moderni)
+
+scegli generi su cui fare il confronto  
+1st step: approximation -> SAX or PAA? Or DFT without time? -> se vogliamo mantenere la forma per studio sopra meglio DFT.
+
+se consideriamo shapes -> trasformazioni per preservare shape (offset, amplitude scaling)
+
+Trasformazioni da applicare:
+
+noise smoothing -> ci permette di avere shape smooth da confrontare
+
+data values nel grafico (asse y) come vengono calcolati?
 
 
