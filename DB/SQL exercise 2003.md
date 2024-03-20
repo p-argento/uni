@@ -39,10 +39,131 @@ WHERE NOT EXISTS (SELECT t.Surname
 
 ```sql
 SELECT t.Name, t.Surname
-FROM Teachers t JOIN Exams e ON t.Tid=e.Tid
+FROM Teachers t 
 WHERE NOT EXIST (SELECT e.grade
-				FROM Exams e
+				FROM Exams e JOIN Exams e ON t.Tid=e.Tid
 				WHERE e.Grade > 25)
+
+```
+
+## Prof Solutions
+
+1. Return the Name and Surname of all students who only passed exams where the Surname of the Teacher is 'Ghelli'
+$$\begin{align}
+&(Name,Surname)|s\in Students\ \forall e \in exams, t\in Teachers \\ &e.Sid=t.Sid\ \wedge\ e.Tid=t.Tid,\ t.Name='Ghelli'
+\end{align}$$
+Unfortunately, in sql, we do not have forall, so we use NOT EXISTS and NOT the condition.
+
+```sql
+SELECT s.Name, s.Surname
+FROM Students s
+WHERE NOT EXISTS (SELECT *
+					 FROM Exams e JOIN Teachers t ON e.Tid=t.Tid
+					 WHERE e.Sid=s.Sid AND NOT t.Name='Ghelli')
+```
+This is a universal query, returning also students with no exams.
+If we wanted only students with at least one exam is
+```sql
+SELECT s.Name, s.Surname
+FROM Students s JOIN Exams e1 ON s.Sid=e1.Sid
+WHERE NOT EXISTS (SELECT *
+					 FROM Exams e2 JOIN Teachers t ON e2.Tid=t.Tid
+					 WHERE e2.Sid=s.Sid AND NOT t.Name='Ghelli')
+```
+NEVER reuse the same alias in different nested parts. It means distinguish e1 and e2.
+
+If you want to quantify the exams, the condition must be INSIDE the NOT EXISTS, and not only outside. This is the MAIN error you make during mid-term.
+
+
+
+2. Return the Name and Surname of all teachers who are only related to exams with a grade greater than 25
+
+```sql
+SELECT t.Name, t.Surname
+FROM Teachers t 
+WHERE NOT EXIST (SELECT *
+				FROM Exams e
+				WHERE NOT (e.Grade > 25)
+```
+
+To add subject=db.
+```sql
+SELECT t.Name, t.Surname
+FROM Teachers t 
+WHERE NOT EXIST (SELECT *
+				FROM Exams e
+				WHERE e.Tid=t.Tid AND 
+					NOT (e.Grade > 25 AND 
+						e.Subject='Database')
+```
+
+Let's see some alternatives.
+But remember that for more complicated queries it is better to use NOT EXISTS
+```sql
+SELECT t.Name, t.Surname
+FROM Teachers t 
+WHERE 25 <ALL (SELECT e.grade
+				FROM Exams e
+				WHERE e.Tid=t.Tid
+```
+Also (maybe compact but not readable). I suggest you not to use it.
+```sql
+SELECT t.Name, t.Surname
+FROM Teachers t 
+WHERE t.Tid NOT IN (SELECT e.Tid
+				FROM Exams e
+				WHERE NOT (e.Grade>25)
+```
+Another way is EXCEPT, like in the algebric way. But it is horrible.
+
+
+
+
+## TESTING QUERIES
+On https://onecompiler.com/mysql/427ufrn4q
+
+```mysql
+-- create
+CREATE TABLE Students (
+  Sid INTEGER PRIMARY KEY,
+  Name TEXT,
+  Surname TEXT
+);
+
+CREATE TABLE Teachers (
+  Tid INTEGER PRIMARY KEY,
+  Name TEXT,
+  Surname TEXT
+);
+
+CREATE TABLE Exams (
+  Eid INTEGER PRIMARY KEY,
+  Date TEXT,
+  Year TEXT,
+  Subject TEXT,
+  Grade INTEGER,
+  Sid INTEGER,
+  FOREIGN KEY (Sid) REFERENCES Students(Sid),
+  Tid INTEGER,
+  FOREIGN KEY (Tid) REFERENCES Teachers(Tid)
+);
+
+-- insert
+INSERT INTO Students VALUES (0001, 'Mario', 'Rossi');
+INSERT INTO Students VALUES (0002, 'Guido', 'Guidi');
+INSERT INTO Students VALUES (0003, 'Maria', 'Bianchi');
+
+INSERT INTO Teachers VALUES (1001, 'Giorgio', 'Ghelli');
+INSERT INTO Teachers VALUES (1002, 'Riccardo', 'Guidotti');
+INSERT INTO Teachers VALUES (1003, 'Salvatore', 'Ruggieri');
+
+INSERT INTO Exams VALUES (11,'0303' ,'2024' ,'DB',30, 0001,1001);
+INSERT INTO Exams VALUES (11,'0303' ,'2024' ,'DM',28, 0001,1001);
+INSERT INTO Exams VALUES (11,'0303' ,'2024' ,'ST',27, 0001,1001);
+
+-- fetch 
+SELECT * FROM Exams;
+
 
 ```
 
