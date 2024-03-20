@@ -26,6 +26,7 @@ Textbook: A. Albano, Database essentials, 2021 [here](http://fondamentidibasidid
 
 My resources:
 Useful [website](https://dbdiagram.io/d) for relational schema
+See [[Testing SQL Queries]]
 [PostgreSQL docs](https://www.postgresql.org/docs/current/)
 
 ## Outline
