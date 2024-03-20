@@ -22,6 +22,10 @@ Office hours:
 9. Query Execution
 10. Transactions
 
+## PostgreSQL
+[PostgreSQL Documentation](https://www.postgresql.org/docs/current/)
+
+
 ## Outline
 Part 1.
 • Functionalities of Database Management Systems - DBMSs
