@@ -96,5 +96,3 @@ Trasformazioni da applicare:
 noise smoothing -> ci permette di avere shape smooth da confrontare
 
 data values nel grafico (asse y) come vengono calcolati?
-
-
