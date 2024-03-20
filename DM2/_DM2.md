@@ -11,13 +11,16 @@
 [[17. Transactional Clustering]]
 [[18. Time Series - Similarities and Distances]]
 19. Time Series - Clustering
+20. Time Series - Matrix Profile, Motifs & Discords
+21. Time Series - Classification
+
+
 
 ## Topics
 Module 1: Rule-based Classifiers & Transactional Data
 1. Rule-based Classifiers
 2. Sequential Pattern Mining
 3. Transactional Clustering
-
 
 Module 2: Time Series Analysis
 1. Time Series Similarity
