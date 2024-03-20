@@ -3,7 +3,6 @@ Giorgio Ghelli
 
 ## General Information
 All lessons are streamed and recorded on teams.
-Team
 Password for moodle: DB2024student
 
 Office hours:
@@ -22,9 +21,12 @@ Office hours:
 9. Query Execution
 10. Transactions
 
-## PostgreSQL
-[PostgreSQL Documentation](https://www.postgresql.org/docs/current/)
+## Resources
+Textbook: A. Albano, Database essentials, 2021 [here](http://fondamentidibasididati.it/)
 
+My resources:
+Useful [website](https://dbdiagram.io/d) for relational schema
+[PostgreSQL docs](https://www.postgresql.org/docs/current/)
 
 ## Outline
 Part 1.
@@ -39,11 +41,6 @@ Part 3
 Part 4
 • Notes on DBMS architecture
 
-## Resources
-Textbook
-A. Albano, Database essentials, 2021 [here](http://fondamentidibasididati.it/)
-
-Useful [website](https://dbdiagram.io/d) for relational schema
 ## Exam
 Mid-terms are independent.
 You can even skip the first one and do the second. You'll do only half of the exam.
