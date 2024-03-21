@@ -3,6 +3,7 @@ Filippo Chiarello
 
 ## Lectures
 [[1. SCI Plan]]
+[[Patents]]
 
 [[extra exercise]]
 ## Datacamp

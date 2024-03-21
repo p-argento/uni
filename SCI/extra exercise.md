@@ -4,6 +4,8 @@ For an extra point.
 maybe a query on scopus looking for papers
 OR maybe scrape policies.
 
+If related to education. Scrape MOOCs
+
 *DEADLINE*
 Send an email writing a proposal within 22/3.
 This will be agreed and fixed.
