@@ -54,7 +54,6 @@ They are identified with a dot.
 Note the difference between .class1.class2 which select elements with both classes
 and .class1 , .classe2 which selects elements with class1 OR class2.
 
-
 ### IDs
 Identified with a #
 There should be only one unique ID, but if you add also the class, it enhance the readibility of the selector.
@@ -68,6 +67,21 @@ Structure: `h2#someid {space|>|+|~} .someclass`
 
 space : Descendant combinator
 \> : Child combinator : for DIRECT descendant
-\+ : Adjacent sibling combinator : returns only the sibling
-~ : General sibling combinator : ?
+\+ : Adjacent sibling combinator : returns only the next sibling
+~ : General sibling combinator : ??
+
+
+
+## XPATH
+
+XML Path Language.
+Select nodes on properties of other nodes.
+
+Syntax: axes, steps, and predicates 
+Axes: / or // 
+Steps: HTML types like span and a 
+Predicates: `[...] ` to select only nodes with certain properties
+Example: `//span/a[@class = "external"] (CSS: span > a.external )`
+Example: `//*[@id = "special"]//div (CSS: #special div or *#special div )`
+
 
