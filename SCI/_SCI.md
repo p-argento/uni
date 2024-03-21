@@ -8,7 +8,8 @@ Filippo Chiarello
 [[extra exercise]]
 ## Datacamp
 [[ggplot]]
-
+[[Webscraping in R]]
+BE PREPARED WITH TEXT MINING FOR THURSDAY
 
 
 ## Course Structure
