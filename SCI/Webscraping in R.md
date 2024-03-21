@@ -68,6 +68,6 @@ Structure: `h2#someid {space|>|+|~} .someclass`
 
 space : Descendant combinator
 \> : Child combinator : for DIRECT descendant
-\+ : Adjacent sibling combinator 
-~ : General sibling combinator
+\+ : Adjacent sibling combinator : returns only the sibling
+~ : General sibling combinator : ?
 
