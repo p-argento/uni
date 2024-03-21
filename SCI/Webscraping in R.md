@@ -85,3 +85,4 @@ Example: `//span/a[@class = "external"] (CSS: span > a.external )`
 Example: `//*[@id = "special"]//div (CSS: #special div or *#special div )`
 
 
+With `..` you select the parents of the previously selcted nodes.
