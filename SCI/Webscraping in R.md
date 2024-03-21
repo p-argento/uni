@@ -61,3 +61,13 @@ There should be only one unique ID, but if you add also the class, it enhance th
 
 ### Pseudo-classes
 
+
+
+### CSS Combinators
+Structure: `h2#someid {space|>|+|~} .someclass`
+
+space : Descendant combinator
+\> : Child combinator : for DIRECT descendant
+\+ : Adjacent sibling combinator 
+~ : General sibling combinator
+
