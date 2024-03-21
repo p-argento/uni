@@ -5,11 +5,13 @@ Filippo Chiarello
 [[1. SCI Plan]]
 [[Patents]]
 
-[[extra exercise]]
+[[Web scraping exercise]]
 ## Datacamp
 [[ggplot]]
 [[Webscraping in R]]
 BE PREPARED WITH TEXT MINING FOR THURSDAY
+
+
 
 
 ## Course Structure

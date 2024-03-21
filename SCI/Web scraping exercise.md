@@ -6,6 +6,16 @@ OR maybe scrape policies.
 
 If related to education. Scrape MOOCs
 
+## Useful dataset
+
+[Italian Public Datasets](https://github.com/italia/awesome-italian-public-datasets) 
+
+https://dati.toscana.it/dataset/movimenti-turistici-e-consistenza-delle-strutture-ricettive-2022-citta-metropolitana-di-firenze
+
+
+
+## Guidelines
+
 *DEADLINE*
 Send an email writing a proposal within 22/3.
 This will be agreed and fixed.
@@ -27,3 +37,4 @@ Revise an R API from existing library.
 OUTPUT: R script + doc with description
 
 The output must be useful for SCI.
+
