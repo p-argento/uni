@@ -29,7 +29,7 @@ Remember, the reason you want to use `position=position_dodge(width=0.1)` (and
 
 ![[Pasted image 20240306223841.png]]
 
-# Modifying whitespace
+## Modifying whitespace
 
 **Whitespace** means all the non-visible margins and spacing in the plot.
 
@@ -40,3 +40,4 @@ Borders require you to set 4 positions, so use [`margin(top, right, bottom, lef
 The default unit is `"pt"` (points), which scales well with text. Other options include "cm", "in" (inches) and "lines" (of text).
 
 Outside of `ggplot2`, another source of built-in themes is the `ggthemes` package. The workspace already contains the `plt_prop_unemployed_over_time`, the line plot from before. Let's explore some of the ready-made `ggthemes` themes.
+

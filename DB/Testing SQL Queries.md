@@ -36,11 +36,18 @@ INSERT INTO Teachers VALUES (1002, 'Riccardo', 'Guidotti');
 INSERT INTO Teachers VALUES (1003, 'Salvatore', 'Ruggieri');
 
 INSERT INTO Exams VALUES (11,'0303' ,'2024' ,'DB',30, 0001,1001);
-INSERT INTO Exams VALUES (11,'0303' ,'2024' ,'DM',28, 0001,1001);
-INSERT INTO Exams VALUES (11,'0303' ,'2024' ,'ST',27, 0001,1001);
+INSERT INTO Exams VALUES (22,'0303' ,'2024' ,'DM',28, 0001,1001);
+INSERT INTO Exams VALUES (33,'0303' ,'2024' ,'ST',27, 0001,1001);
 
 -- fetch 
-SELECT * FROM Exams;
+SELECT t.Name, t.Surname
+FROM Teachers t 
+WHERE NOT EXISTS (SELECT *
+				FROM Exams e
+				WHERE e.Tid=t.Tid AND 
+					NOT e.Grade <= 25)
+						
+						
 
 
 ```

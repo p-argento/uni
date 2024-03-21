@@ -2,9 +2,14 @@
 Filippo Chiarello
 
 ## Lectures
-[[SCI Lectures]]
-[[DATACAMP]]
+[[1. SCI Plan]]
+
 [[extra exercise]]
+## Datacamp
+[[ggplot]]
+
+
+
 ## Course Structure
 Steps
 1. Plan
@@ -32,10 +37,6 @@ Groups up to 3-4 people.
 If a problem is not solvable, probably there is something wrong in the plan, in framing the problem
 
 
-## DataCamp
-We have access to courses on Datacamp.
-6 courses. Each course is 4h.
-
 ## Project
 Choose one subfield
 1. education
@@ -49,6 +50,9 @@ You can use professor's Twitter Dataset.
 Use more Data.
 
 Assignment date 4 April.
+
+We have access to courses on Datacamp.
+6 courses. Each course is 4h.
 
 PROJECT WORK ASSIGNEMENT
 ■ TEAM PROJECT ASSIGNEMENT
