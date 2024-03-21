@@ -97,3 +97,6 @@ rvest package makes use of httr package internally.
 
 `read_html()` actually issues an HTTP GET request if provided with a URL,
 _Note: Usually `rvest` does the job, but if you want to customize requests like you'll be shown later in this chapter, you'll need to know the `httr` way._
+
+Useful website for testing HTTP requests: https://httpbin.org/
+
