@@ -86,3 +86,11 @@ Example: `//*[@id = "special"]//div (CSS: #special div or *#special div )`
 
 
 With `..` you select the parents of the previously selcted nodes.
+
+
+## HTTP
+Hypertext Transfer Protocol.
+
+Mozilla developer network.
+
+rvest package makes use of httr package internally.
