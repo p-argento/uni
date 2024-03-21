@@ -1,6 +1,9 @@
 For an extra point.
 ![[Screenshot 2024-03-15 alle 16.54.12.png]]
 
+maybe a query on scopus looking for papers
+OR maybe scrape policies.
+
 *DEADLINE*
 Send an email writing a proposal within 22/3.
 This will be agreed and fixed.
