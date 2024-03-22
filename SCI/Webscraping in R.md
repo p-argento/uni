@@ -100,3 +100,7 @@ _Note: Usually `rvest` does the job, but if you want to customize requests lik
 
 Useful website for testing HTTP requests: https://httpbin.org/
 
+
+## MY NOTES
+The downloaded binary packages of tidyverse are in `/var/folders/3k/8_9b7n156w55yzjwnnnzvlj80000gn/T//Rtmpi5sCHG/downloaded_packages`
+
