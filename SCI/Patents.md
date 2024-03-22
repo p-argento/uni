@@ -34,6 +34,9 @@ A patent is a CONTRACT between the inventor and the state.
 
 How is an AI patented.
 
+You can find the same patent many times, because there could patents in different countries. It is called a patent familiy.
+
+
 
 
 
