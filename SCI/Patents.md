@@ -21,6 +21,19 @@ The biases are REALLY important.
 And being aware of theme and communicating them is crucial.
 
 
+## Patents actually
+
+80% of the information contained in patents is not available elsewhere (Terragno 1979, Kütt et al. 1998)
+
+But they are free to access and a goldmine of information.
+
+Patents are very powerful data to map content.
+
+A patent is a CONTRACT between the inventor and the state.
+![[Pasted image 20240322142912.png]]
+
+How is an AI patented.
+
 
 
 
