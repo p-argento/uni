@@ -6,7 +6,7 @@ Rossano Venturini
 
 ## Lectures
 [[1. Sorting]]
-2. Best Practices in Python
+2. [[Best Practices in Python]]
 
 
 ## Notebooks
