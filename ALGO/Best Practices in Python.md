@@ -46,3 +46,14 @@ print(rest)
 - Immutable objects are good Dictionary keys and Set elements. Have you ever ask yourself why a list cannot be a key in a dictionary?
 
 **Immutability can have a performance cost**, since when an object cannot be mutated we need to copy it if we want to write to it.
+
+## Strings
+Create a text of strings.
+Be aware of the difference in terms of efficiency between two methods.
+First, the append way is quadratic because it
+Second, the join way is linear because first sele
+
+```python
+
+text = "\n".join(strings)
+```
