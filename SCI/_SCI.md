@@ -1,17 +1,16 @@
 *Strategic* and Competitive Intelligence
 Filippo Chiarello
 
+BE PREPARED WITH TEXT MINING FOR THURSDAY
 ## Lectures
 [[1. SCI Plan]]
 [[Patents]]
-
 [[Web scraping exercise]]
 ## Datacamp
 [[ggplot]]
 [[Webscraping in R]]
-BE PREPARED WITH TEXT MINING FOR THURSDAY
 
-
+Useful cheatsheets [here](https://posit.co/resources/cheatsheets/?type=posit-cheatsheets/)
 
 
 ## Course Structure
