@@ -14,7 +14,7 @@
 [[16. Sequential Pattern Mining]]
 [[17. Transactional Clustering]]
 [[18. Time Series - Similarities and Distances]]
-19. Time Series - Clustering
+[[19. Time Series - Clustering]]
 20. Time Series - Matrix Profile, Motifs & Discords
 21. Time Series - Classification
 
