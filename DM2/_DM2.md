@@ -30,7 +30,7 @@ Module 2: Time Series Analysis
 
 Module 3: Advanced Data-Preprocessing
 1. Imbalanced Learning
-2. Dimensionalty Reduction
+2. Dimensionality Reduction
 3. Anomaly Detection
 
 Module 4: Advanced ML & XAI

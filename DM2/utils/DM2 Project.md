@@ -50,11 +50,19 @@ My Notes
 Analyze the dataset for finding motifs and/or anomalies. Visualize and discuss them and their relationship with shapelets. 
 
 ### Clustering
-• Use at least two clustering algorithm on time series using an appropriate distance. • Analyze the clusters and highlight similarities and differences and visualize the clusters using at least 2 dimensionality reduction techniques.
+• Use at least two clustering algorithm on time series using an appropriate distance. 
+• Analyze the clusters and highlight similarities and differences and visualize the clusters using at least 2 dimensionality reduction techniques.
 
 ### Classification 
-Define one (or more) classification task and solve it using: • KNN with at least two distances • Euclidean/Manhattan • DTW • Shapelets: Analyze the shapelets retrieved • At least one other method (rocket, muse, cnn, rnn etc) 
-Sequential Pattern Mining (optional) Discretize the time-series to run sequential pattern mining (e.g., identify frequent pattern or trends within the time series).
+Define one (or more) classification task and solve it using: 
+• KNN with at least two distances 
+• Euclidean/Manhattan 
+• DTW 
+• Shapelets: Analyze the shapelets retrieved 
+• At least one other method (rocket, muse, cnn, rnn etc) 
+
+### Sequential Pattern Mining (optional)
+Discretize the time-series to run sequential pattern mining (e.g., identify frequent pattern or trends within the time series).
 
 ## Module 3: Advanced Data-Preprocessing  
 
