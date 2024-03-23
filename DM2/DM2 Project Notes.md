@@ -48,11 +48,9 @@ My Notes
 ## Module 2: Time Series Analysis 
 ### Motifs/Discords
 Analyze the dataset for finding motifs and/or anomalies. Visualize and discuss them and their relationship with shapelets. 
-
 ### Clustering
 • Use at least two clustering algorithm on time series using an appropriate distance. 
 • Analyze the clusters and highlight similarities and differences and visualize the clusters using at least 2 dimensionality reduction techniques.
-
 ### Classification 
 Define one (or more) classification task and solve it using: 
 • KNN with at least two distances 
@@ -60,9 +58,14 @@ Define one (or more) classification task and solve it using:
 • DTW 
 • Shapelets: Analyze the shapelets retrieved 
 • At least one other method (rocket, muse, cnn, rnn etc) 
-
 ### Sequential Pattern Mining (optional)
 Discretize the time-series to run sequential pattern mining (e.g., identify frequent pattern or trends within the time series).
+
+---mynotes---
+The time series are [Spectral Centroids](https://librosa.org/doc/main/generated/librosa.feature.spectral_centroid.html) and therefore it is impossible to get back the wav files.
+
+
+
 
 ## Module 3: Advanced Data-Preprocessing  
 

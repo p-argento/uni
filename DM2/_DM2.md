@@ -2,7 +2,11 @@
 [didawiki](http://didawiki.di.unipi.it/doku.php/dm/start)
 
 ## Project
-[[DM2 Project]]
+> Do not report a point to point matrix comparing 2 time series.
+> Do not report simple distance calculations, they MUST be used to do something useful like clustering.
+
+[[DM2 Official Guidelines]]
+[[DM2 Project Notes]]
 
 ## Slides
 14. dm2 intro
@@ -41,9 +45,7 @@ Module 4: Advanced ML & XAI
 5. Gradient Boosting
 6. Rule-based Classifiers
 
-## Project
-Do not report a point to point matrix comparing 2 time series.
-Do not report simple distance calculations, they MUST be used to do something useful like clustering.
+
 
 
 
