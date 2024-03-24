@@ -16,7 +16,7 @@
 [[18. Time Series - Similarities and Distances]]
 [[19. Time Series - Approximation and Clustering]]
 [[20. Time Series - Matrix Profile, Motifs & Discords]]
-21. Time Series - Classification
+[[21. Time Series - Classification]]
 
 
 
