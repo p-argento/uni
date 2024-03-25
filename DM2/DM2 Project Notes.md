@@ -64,6 +64,30 @@ Discretize the time-series to run sequential pattern mining (e.g., identify freq
 ---mynotes---
 The time series are [Spectral Centroids](https://librosa.org/doc/main/generated/librosa.feature.spectral_centroid.html) and therefore it is impossible to get back the wav files.
 
+1. trasformations
+	1. offset
+	2. amplitude scaling
+	3. linear trend
+	4. noise
+2. (distance measures between two ts)
+	1. ed
+	2. dtw
+	3. dtw with constraints
+3. approximation
+	1. DFT with ed
+	2. PAA
+	3. SAX
+4. clustering
+	1. hierarchical 
+	2. partitional
+5. motif and discords
+	1. motif discovery using MP
+	2. anomaly detection
+	3. top-k?
+6. classification
+	1. knn
+	2. shapelet-based
+
 
 
 
