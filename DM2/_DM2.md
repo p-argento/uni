@@ -17,7 +17,7 @@
 [[19. Time Series - Approximation and Clustering]]
 [[20. Time Series - Matrix Profile, Motifs & Discords]]
 [[21. Time Series - Classification]]
-
+[[22. Imbalanced Training]]
 
 
 ## Topics
