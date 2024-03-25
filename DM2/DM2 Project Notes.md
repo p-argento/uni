@@ -74,7 +74,7 @@ The time series are [Spectral Centroids](https://librosa.org/doc/main/generated/
 	2. dtw
 	3. dtw with constraints
 3. approximation
-	1. DFT with ed
+	1. DFT with ed ???
 	2. PAA
 	3. SAX
 4. clustering
