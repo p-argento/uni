@@ -63,7 +63,7 @@ ok
 
 c) For each pair of pathologies that are different and have some drug in common, return the NamePt of the first and the NamePt of the second (362 or maybe 410 or 205)
 
-
+WRONG
 ```sql
 select pt1.NamePt, pt2.NamePt
 from PathologiesDrugs pd
@@ -72,7 +72,10 @@ from PathologiesDrugs pd
 where pt1.IdD=pt2.IdD
 
 ```
-  wrong
+
+```sql
+
+```
 
 d) For each pair of pathologies that are different and have some drug in common, return the NamePt of the first and the NamePt of the second, and the number of drugs in common (362 rows)
 
