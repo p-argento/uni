@@ -81,7 +81,7 @@ If you want to quantify the exams, the condition must be INSIDE the NOT EXISTS, 
 ```sql
 SELECT t.Name, t.Surname
 FROM Teachers t 
-WHERE NOT EXIST (SELECT *
+WHERE NOT EXISTS (SELECT *
 				FROM Exams e
 				WHERE NOT (e.Grade > 25)
 ```
@@ -90,7 +90,7 @@ To add subject=db.
 ```sql
 SELECT t.Name, t.Surname
 FROM Teachers t 
-WHERE NOT EXIST (SELECT *
+WHERE NOT EXISTS (SELECT *
 				FROM Exams e
 				WHERE e.Tid=t.Tid AND 
 					NOT (e.Grade > 25 AND 
