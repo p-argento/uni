@@ -115,6 +115,11 @@ WHERE NOT EXISTS (SELECT *
 )
 ```
 
+Do not talk about joins and tables. Speak to the final user.
+If it was without `and d.Dose> 10`,
+
+
+
   
 
 ```sql
