@@ -136,3 +136,13 @@ WHERE NOT EXISTS (SELECT *
 )
 ```
 
+
+**
+
+f3) Return the name of patients who are only affected by pathologies for which every drug costs strictly less than 50 (5 lines)
+
+  
+
+h) For each CategoryD, return the CategoryD and the IdD and the NameD of the drug that is the less expensive drug in that category (3 lines)
+
+**
