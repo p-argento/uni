@@ -23,6 +23,9 @@ where CategoryP='autoimmune'
 
 a2) For all patients who are only associated with pathologies with CategoryP = ‘autoimmune’, return IdPz NamePz and Surname (10 rows)
 
+The quantification goes only between pp and pz.
+Between pt and pp there is a unique id so it is not neede
+
 WRONG
 ```sql
 select pz.IdPz, pz.NamePz, pz.Surname, pt.CategoryP
@@ -34,13 +37,24 @@ where not exists(
 		join Pathologies pt on pt.IdPt=pp.IdPt
 	where not (pt.CategoryP='autoimmune'))
 ```
-  ??
+
+CORRECT
+```sql
+select *
+from Patients pz
+where not exists(
+	select *
+	from PathologiesPatients pp
+		join Pathologies pt on pp.IdPt=pt.IdPt
+	where pz.IdPz=pp.IdPz and not (pt.CategoryP='autoimmune'))
+```
 
 b) For each CategoryD (drug category), return the number of all the pathologies that are associated with some drug of that category (3 rows)
 
 ```sql
 select d.CategoryD, count (pt.IdPt)
-from PathologiesDrugs pd join Drugs d on pd.IdD=d.IdD
+from PathologiesDrugs pd
+	join Drugs d on pd.IdD=d.IdD
 	join Pathologies pt on pt.IdPt=pd.IdPt
 group by d.CategoryD
 ```
@@ -51,10 +65,14 @@ c) For each pair of pathologies that are different and have some drug in common,
 
 
 ```sql
-
+select pt1.NamePt, pt2.NamePt
+from PathologiesDrugs pd
+	join Pathologies pt1 on pt1.IdPt=pd.IdPt
+	join Pathologies pt2 on pt2.IdPt=pd.IdPt
+where pt1.IdD=pt2.IdD
 
 ```
-  
+  wrong
 
 d) For each pair of pathologies that are different and have some drug in common, return the NamePt of the first and the NamePt of the second, and the number of drugs in common (362 rows)
 

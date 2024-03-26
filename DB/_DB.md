@@ -29,6 +29,8 @@ Useful [website](https://dbdiagram.io/d) for relational schema
 See [[Testing SQL Queries]]
 [PostgreSQL docs](https://www.postgresql.org/docs/current/)
 
+[[postgresql]]
+
 ## Outline
 Part 1.
 • Functionalities of Database Management Systems - DBMSs
