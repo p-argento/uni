@@ -1,14 +1,5 @@
 Databases
 Giorgio Ghelli
-
-## General Information
-All lessons are streamed and recorded on teams.
-Password for moodle: DB2024student
-
-Office hours:
-- monday 11-13
-- friday 14-16
-
 ## Slides
 [[1. DB Intro]]
 [[2. DB Conceptual Design]]
@@ -31,6 +22,13 @@ See [[Testing SQL Queries]]
 
 [[postgresql]]
 
+## General Information
+All lessons are streamed and recorded on teams.
+Password for moodle: DB2024student
+
+Office hours:
+- monday 11-13
+- friday 14-16
 ## Outline
 Part 1.
 • Functionalities of Database Management Systems - DBMSs
