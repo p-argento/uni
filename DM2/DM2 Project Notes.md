@@ -64,6 +64,24 @@ Discretize the time-series to run sequential pattern mining (e.g., identify freq
 ---mynotes---
 The time series are [Spectral Centroids](https://librosa.org/doc/main/generated/librosa.feature.spectral_centroid.html) and therefore it is impossible to get back the wav files.
 
+Use numpy.save for saving matrices that took days to run like dtw.
+And then reload using numpy.load
+Do not recompute the distance if it was already computed once.
+
+How to judge clusters? use silhoutte, but also centroids and other features (included genre) and motifs. Also matrix profile and ...
+
+Or try a different method based on motifs.
+For example, extract top-3 motifs. And use them for clustering.
+It is not needed the dtw, since they are very small (use ed).
+Use k-means with elbow and evaluate.
+You can also extract the centroids.
+And check what's in the cluster using external variables coming from the ts from which the motif was extracted.
+And then say something like "this motif shape is typical of rock songs".
+You will not get pure clusters, but still the percentages are a result.
+For example, "this shape is common to all genres".
+If it is highly representative, the motif can be used as a shapelet in classification.
+
+
 1. trasformations
 	1. offset
 	2. amplitude scaling
