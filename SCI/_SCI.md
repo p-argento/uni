@@ -9,6 +9,7 @@ BE PREPARED WITH TEXT MINING FOR THURSDAY
 ## Datacamp
 [[ggplot]]
 [[Webscraping in R]]
+[[text mining in R]]
 
 Useful cheatsheets [here](https://posit.co/resources/cheatsheets/?type=posit-cheatsheets/)
 
