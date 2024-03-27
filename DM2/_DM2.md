@@ -18,6 +18,7 @@
 [[20. Time Series - Matrix Profile, Motifs & Discords]]
 [[21. Time Series - Classification]]
 [[22. Imbalanced Training]]
+23. Dimensionality Reduction
 
 
 ## Topics
