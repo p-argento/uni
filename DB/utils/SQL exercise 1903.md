@@ -1,8 +1,8 @@
-## Exercise for Tuesday 19.3
+## Exercise for Tuesday 19.03
 Consider the following schema:
  
 Students(Sid, Name, Surname)
-Exams(Date,Year,Subject,Grade,Sid*,Tid*)
+Exams(Date,Year,Subject,Grade,Sid\*,Tid\*)
 Teachers(Tid,Name,Surname)
  
 Write some SQL code for the following queries.
