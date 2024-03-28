@@ -6,6 +6,7 @@ BE PREPARED WITH TEXT MINING FOR THURSDAY
 [[1. SCI Plan]]
 [[Patents]]
 [[Web scraping exercise]]
+[[Text Mining Lecture]]
 ## Datacamp
 [[ggplot]]
 [[Webscraping in R]]

@@ -19,7 +19,7 @@ https://dati.toscana.it/dataset/movimenti-turistici-e-consistenza-delle-struttur
 *DEADLINE*
 Send an email writing a proposal within 22/3.
 This will be agreed and fixed.
-10th of april is the deadline for deliver and presenting on 11th.
+18th of april is the deadline for deliver and presenting but no date.
 
 *First*.
 Write a R script to query data from a website.
