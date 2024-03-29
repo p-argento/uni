@@ -1,3 +1,9 @@
+Useful notes about
+[[Jupyter]]
+[[NumPy]]
+[[MatplotLib]]
+
+
 *Jupyter* (formerly known as IPython Notebook) is an open-source code that combines Markdown text and executable Python source code in a notebook.
 IPython means Interactive Computing with Python.
 
