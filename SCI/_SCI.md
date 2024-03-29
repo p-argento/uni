@@ -9,10 +9,11 @@ BE PREPARED WITH TEXT MINING FOR THURSDAY
 [[Text Mining Lecture]]
 ## Datacamp
 [[ggplot]]
-[[Webscraping in R]]
-[[text mining in R]]
+[[webscraping using rvest]]
+[[text mining using texttidy]]
 
 Useful cheatsheets [here](https://posit.co/resources/cheatsheets/?type=posit-cheatsheets/)
+What is this? https://datasciencebox.org/
 
 
 ## Course Structure
