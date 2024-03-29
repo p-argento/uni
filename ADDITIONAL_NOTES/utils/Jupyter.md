@@ -27,5 +27,6 @@ It means that
 - A notebook should be executable from top to bottom without any errors.
 Exactly like RProjects.
 
+This might be interesting https://github.com/nteract/papermill
 ## Continuous integration
 Continuous integration is a software development practice that requires developers to integrate code into a shared repository. Each check-in is verified by an automated build system, allowing teams to detect problems at early stages. Each change to a Jupyter notebook should be validated by a continuous integration system before being checked in; this can be done using different setups (non-master remote branch, remote execution in local branch, etc)
