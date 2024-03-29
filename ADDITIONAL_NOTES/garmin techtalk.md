@@ -7,12 +7,11 @@ Time to market è cruciale.
 Nessun vincolo di linguaggio.
 
 Mysql, nosql, postgres. Differenze?
-
 come far comunicare microservizi? API
 protocollo http.
-oauth
-
+oauth ?
 git gerrit?
+Agile(scrum)?
 
 **What you'll need:**  
   
