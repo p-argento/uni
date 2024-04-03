@@ -114,6 +114,10 @@ List comprehensions allow to filter out from a list.
 **The rule** is easy: The variable is a cell that contains the value or a reference to the object. We copy the content of the variable. Variables of most of types contain a reference (a pointer) to the object, which is stored somewhere else in memory.
 **Ratio for the rule**: avoid expensive copies as much as possible.
 
+The last element of the list is `l[-1]` because it is like `l[len(l) - 1]`.
+And so on with `-2,-3` and so on.
+
+
 
 
 
