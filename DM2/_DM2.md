@@ -19,6 +19,7 @@
 [[21. Time Series - Classification]]
 [[22. Imbalanced Training]]
 23. Dimensionality Reduction
+24. Anomaly Detection
 
 
 ## Topics

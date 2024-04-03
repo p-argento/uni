@@ -16,9 +16,6 @@ Rossano Venturini
 
 
 
-
-
-
 ## Resources
 Github
 https://github.com/rossanoventurini/adsds?tab=readme-ov-file
