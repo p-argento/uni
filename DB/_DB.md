@@ -20,8 +20,6 @@ Useful [website](https://dbdiagram.io/d) for relational schema
 See [[Testing SQL Queries]]
 [PostgreSQL docs](https://www.postgresql.org/docs/current/)
 
-[[postgresql]]
-
 ## General Information
 All lessons are streamed and recorded on teams.
 Password for moodle: DB2024student
