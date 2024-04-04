@@ -15,3 +15,4 @@ If you have any suggestions, text me on telegram @pietroargento
 [[_DB]]
 [[_PROG]]
 
+![[Pasted image 20240404144302.png]]
