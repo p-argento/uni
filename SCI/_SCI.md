@@ -10,9 +10,10 @@ Filippo Chiarello
 [[webscraping using rvest]]
 [[text mining using texttidy]]
 
+## Utilities
 Useful cheatsheets [here](https://posit.co/resources/cheatsheets/?type=posit-cheatsheets/)
 What is this? https://datasciencebox.org/
-
+Strongly advised to 
 
 ## Course Structure
 Steps
