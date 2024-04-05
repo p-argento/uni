@@ -133,4 +133,12 @@ for _ in tqdm(range(10000)):
 	l.sort()
 ```
 
+## Dictionaries
+Note that JSON files use a dictionary-like structure and syntax.
+They are descriptions.
+
+Ways of iterating over the dictionaries...
+
+
+
 
