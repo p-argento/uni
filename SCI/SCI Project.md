@@ -34,5 +34,8 @@ output.
 
 
 ## Resources
+Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview)
+Paper on CrunchBase startups in Tourism and AI [here](https://www.emerald.com/insight/content/doi/10.1108/IJCHM-02-2021-0220/full/html)
 
-https://www.emerald.com/insight/content/doi/10.1108/IJCHM-02-2021-0220/full/html
+
+
