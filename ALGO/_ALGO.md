@@ -6,8 +6,8 @@ Rossano Venturini
 
 ## Lectures
 [[1. Sorting]]
-2. [[Best Practices in Python]]
-
+2. [[Data Structure in Python]]
+[[Advanced Python]]
 
 ## Notebooks
 [my nb 1](file:///Users/pietro/_DS/ALGO/adsds/Lab_copy/Lecture_01/L01_Basic_Sorting_no_sols.ipynb)

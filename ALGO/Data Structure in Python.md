@@ -187,7 +187,11 @@ The current implementation of sets maintain the order, but do not assume it is o
 
 > Sometimes you keep the same time data in two different collections at the same time, for choosing the best one in terms of performance each time.
 
+> Before implementing, ask yourself what is the best data structure for your task.
+> The first question is: list or dictionary?
 
 ## List comprehensions
 > Please force yourself to use list comprehensions
 
+They work for dictionaries as well.
+Of course using curly brackets.
