@@ -9,3 +9,30 @@ QUESTIONS
 	2. oppure possibili destinazioni
 
 output.
+
+## Questions
+1. BUSINESS
+- interesse nelle non-OTA??
+- OTA più rilevanti
+- OTA più rilevanti in campo AI (quanto investono)
+
+- impatto economico delle TA e alberghi vari sulle OTA (causa AI)
+(statalizzare OTA)
+ 
+- perception of ai in accomodation businesses (and impact of AI-powered OTA)
+
+-  possibilities of expoiting AI for marketing ? DMO in particular
+
+2. COUNTRIES
+- come investono nel turismo?
+- investimenti per genAI nel turismo?
+- utilizzo AI per country
+
+3. TOURISTS
+-  use of AI based on type of travel (business travel, leisure luxury travel, cheaper travel)
+- ONLY accomododation or also food and drink?
+
+
+## Resources
+
+https://www.emerald.com/insight/content/doi/10.1108/IJCHM-02-2021-0220/full/html
