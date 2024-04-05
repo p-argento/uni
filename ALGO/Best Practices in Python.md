@@ -139,6 +139,55 @@ They are descriptions.
 
 Ways of iterating over the dictionaries...
 
+`Defaultdict` is used to return a default value from default dictionary.
+Use `from collections import defaultdict`.
+And before using the dict in the loop, assign to it default values of the default dictionary.
+
+### Counter
+From the `collections` modules.
 
 
+## Sets
+They are special dictionaries with no values, just keys.
+The current implementation of sets maintain the order, but do not assume it is ordered.
+
+## IMPORTANT
+
+### Lists and tuples are 
+
+*Useful for*
+- storing sequences of values
+- allowing use of sequences as keys for dictionaries (tuple only)
+- returning multiple values from a function (tuple only)
+
+*Best at*
+- Random access
+- Scanning from left-to-right or right-to-left
+- Preserving time ordering
+- Inserting and removing elments form the tail
+
+*Bad at* 
+- Searching for a key (in operator)
+- Inserting and removing elements "in the middle"
+
+### Dictionaries and sets are
+
+*Useful for*
+- Storing key-value associations
+- Counting things
+
+*Best at*
+- Searching for a key (in operator)
+- Accessing by key
+- Scanning elements in arbitrary order
+- Inserting and removing elements 
+
+*Bad at* 
+- Storing ordered sequences
+
+> Sometimes you keep the same time data in two different collections at the same time, for choosing the best one in terms of performance each time.
+
+
+## List comprehensions
+> Please force yourself to use list comprehensions
 
