@@ -66,3 +66,4 @@ sorted(tuples, key=lambda x: x[1])
 The idea is that you can forget the function after using it.
 Exactly like the `_` in the loops.
 
+
