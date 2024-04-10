@@ -8,7 +8,7 @@ Rossano Venturini
 [[1. Sorting]]
 2. [[Data Structure in Python]]
 [[Advanced Python]]
-
+[[Hashing]]
 ## Notebooks
 [my nb 1](file:///Users/pietro/_DS/ALGO/adsds/Lab_copy/Lecture_01/L01_Basic_Sorting_no_sols.ipynb)
 [nb folder 1](folder:///Users/pietro/_DS/ALGO/adsds/Lab_copy/Lecture_01/)
