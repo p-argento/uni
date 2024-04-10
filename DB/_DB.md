@@ -7,8 +7,8 @@ Giorgio Ghelli
 [[4. Relational Algebra]]
 [[5. SQL as Query Language]]
 6. SQL data definition
-7. Programming with SQL
-8. Normalization
+[[7. Programming with SQL]]
+[[8. Normalization]]
 9. Query Execution
 10. Transactions
 
