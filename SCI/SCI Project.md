@@ -12,6 +12,11 @@ output.
 
 ## Questions
 1. BUSINESS
+
+TA
+OTA
+DMO?
+
 - interesse nelle non-OTA??
 - OTA più rilevanti
 - OTA più rilevanti in campo AI (quanto investono)
