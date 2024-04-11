@@ -37,6 +37,25 @@ DMO?
 -  use of AI based on type of travel (business travel, leisure luxury travel, cheaper travel)
 - ONLY accomododation or also food and drink?
 
+1. Business
+
+
+
+| area                     | questions                                                                                                              | ideas                                                                                                              |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| travel agencies          | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant?  | read financial reports of OTA, statista                                                                            |
+| accommodation businesses | What is the impact of GenAI on accommodation businesses? How accommodations are found using GenAI prompts?             | opendormire and booking, ota's fees, how AI decide what to propose to user,                                        |
+| public                   | Can Destination Management Organizations (DMO) use Generative AI to improve efficacy in attracting tourists?           | genAI for marketing, enit reports                                                                                  |
+| countries                | Are other countries in the EU investing in GenAI? How and how much?                                                    | statista, countries report                                                                                         |
+| tourist                  | Phases of customer journey in travel planning where GenAI is relevant? Will the planning and booking behaviour change? | article, different customer journey based on customer/travel type (ie luxury), twitter to know how chatgpt is used |
+
+Additional questions
+
+| area   | questions                                                                                                      | ideas                                                                                                                 |
+| ------ | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| safety | How can we be sure that the GenAI are safe and reliable? Will the customer be scammed with fake accomodations? | [here](https://news.booking.com/it/bookingcom-e-polizia-postale-5-raccomandazioni-per-prenotare-online-in-sicurezza/) |
+
+
 
 ## Resources
 Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview)
@@ -46,10 +65,12 @@ https://www.sciencedirect.com/science/article/pii/S1447677023001158
 
 https://www.sciencedirect.com/science/article/pii/S2666957924000065
 
+[ENIT](https://www.enit.it/it/dmo-italiane)
 
+## Idee
+Incrocio db di opendormire con booking per vedere quante strutture sono presenti sullle ota, anche con distinzione per regioni.
 
-
-
+Vedi quali paper hanno fatto riferimento all'articolo.
 
 
 
