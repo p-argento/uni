@@ -1,3 +1,5 @@
+FREE TEXT https://www.tidytextmining.com/
+
 ## chapter 1
 
 ```r
@@ -49,4 +51,5 @@ count(word, tweet_id) %>%
 # Use the word counts by tweet to create a DTM
 cast_dtm(tweet_id, word, n)
 ```
+
 
