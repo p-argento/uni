@@ -42,5 +42,17 @@ DMO?
 Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview)
 Paper on CrunchBase startups in Tourism and AI [here](https://www.emerald.com/insight/content/doi/10.1108/IJCHM-02-2021-0220/full/html)
 
+https://www.sciencedirect.com/science/article/pii/S1447677023001158
+
+https://www.sciencedirect.com/science/article/pii/S2666957924000065
+
+
+
+
+
+
+
+
+
 
 
