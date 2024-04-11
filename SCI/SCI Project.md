@@ -67,6 +67,8 @@ https://www.sciencedirect.com/science/article/pii/S2666957924000065
 
 [ENIT](https://www.enit.it/it/dmo-italiane)
 
+[database strutture toscana ](https://dati.toscana.it/dataset/movimento-dei-clienti-e-struttura-dell-offerta-ricettiva-toscana-anno-2023)
+
 ## Idee
 Incrocio db di opendormire con booking per vedere quante strutture sono presenti sullle ota, anche con distinzione per regioni.
 
