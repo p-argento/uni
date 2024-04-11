@@ -39,3 +39,14 @@ coord_flip()
 ## chapter 4
 
 LDA -> Latent Dirichlet Allocation
+
+### Document Term Matrix
+```r
+# Start with the tidied Twitter data
+tidy_twitter %>%
+# Count each word used in each tweet
+count(word, tweet_id) %>%
+# Use the word counts by tweet to create a DTM
+cast_dtm(tweet_id, word, n)
+```
+
