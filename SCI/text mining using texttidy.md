@@ -18,6 +18,24 @@ In `facet_wrap(~ sentiment, scales = "free")`
 ### fct_reorder
 In the provided code snippet, the `fct_reorder()` function from the `forcats` package is used to reorder the levels of the "word" variable based on the counts of each word. This function is typically used to reorder factor levels based on some summary statistic, such as counts, means, or medians.
 
+Here's an example
+```r
+word_probs <- lda_topics %>%
+# Keep the top 10 highest word probabilities by topic
+group_by(topic) %>%
+slice_max(beta, n=10) %>%
+ungroup() %>%
+
+# Create term2, a factor ordered by word probability
+mutate(term2 = fct_reorder(term, beta))
+# Plot term2 and the word probabilities
+ggplot(word_probs, aes(x=term2, y=beta, fill=topic)) +
+geom_col() +
+# Facet the bar plot by topic
+facet_wrap(~ topic, scales = "free") +
+coord_flip()
+```
+
 ## chapter 4
 
 LDA -> Latent Dirichlet Allocation
