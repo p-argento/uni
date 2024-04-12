@@ -49,6 +49,9 @@ Written Exam Exercises
 Each week, there's a jupyter notebook with exercises.
 Then, few days before the exam, they should be *submitted*.
 
+For the PRE-APPELLO.
+Send an email with the notebooks the date before the exam.
+
 ## Some notes from lectures
 *Programming Priorities*
 1. Correctness
