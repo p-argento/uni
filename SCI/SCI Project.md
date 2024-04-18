@@ -52,19 +52,12 @@ DMO?
 | area                     | questions                                                                                                                                                                                   |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | travel agencies          | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant?                                                                       |
-| accommodation businesses | What is the (financial) impact of GenAI on accommodation businesses? Will OTAs choices impact them considerably?                                                                            |
+| accommodation businesses | What is the impact of GenAI on accommodation businesses? Will OTAs choices impact them considerably?                                                                                        |
 | public                   | Can Destination Management Organizations (DMO) use Generative AI to improve efficiency in attracting tourists?                                                                              |
 | countries                | Are other countries in the EU investing in GenAI? How and how much?                                                                                                                         |
 | tourist                  | What are the phases of the customer journey in travel planning where GenAI is relevant? Will the planning and booking behaviour change?                                                     |
 | safety                   | How does the GenAI select the accommodations to be recommended? How can we be sure that the GenAI are safe and reliable and that the customer will not be scammed with fake accommodations? |
-
-
-
-
-
-
-
-
+| rights                   | Should accommodation businesses and consumers rights                                                                                                                                        |
 
 
 
@@ -82,6 +75,8 @@ https://www.sciencedirect.com/science/article/pii/S2666957924000065
 
 
 [safety article](https://news.booking.com/it/bookingcom-e-polizia-postale-5-raccomandazioni-per-prenotare-online-in-sicurezza/)
+
+Eurostat
 
 
 ## Idee
