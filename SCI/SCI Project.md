@@ -30,35 +30,16 @@ DMO?
 
 
 
-| area                     | questions                                                                                                                                                                                   | ideas                                                                                                              |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| travel agencies          | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant?                                                                       | read financial reports of OTA, statista                                                                            |
-| accommodation businesses | What is the (financial) impact of GenAI on accommodation businesses?                                                                                                                        | opendormire and booking, ota's fees                                                                                |
-| public                   | Can Destination Management Organizations (DMO) use Generative AI to improve efficacy in attracting tourists?                                                                                | genAI for marketing, enit reports                                                                                  |
-| countries                | Are other countries in the EU investing in GenAI? How and how much?                                                                                                                         | statista, countries reports                                                                                        |
-| tourist                  | Phases of customer journey in travel planning where GenAI is relevant? Will the planning and booking behaviour change?                                                                      | article, different customer journey based on customer/travel type (ie luxury), twitter to know how chatgpt is used |
-| safety                   | How does the GenAI select the accommodations to be recommended? How can we be sure that the GenAI are safe and reliable and that the customer will not be scammed with fake accommodations? | polizia postale, Booking commitment                                                                                |
+| area                     | questions                                                                                                              | ideas                                                                                                              |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| travel agencies          | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant?  | read financial reports of OTA, look for startups, statista                                                         |
+| accommodation businesses | What is the impact of GenAI on accommodation businesses? Will OTAs choices impact them considerably?                   | opendormire and booking, ota's fees                                                                                |
+| countries                | Are other countries in the EU investing in GenAI? How and how much?                                                    | statista, countries reports                                                                                        |
+| public                   | Can Destination Management Organizations (DMO) use Generative AI to improve efficacy in attracting tourists?           | genAI for marketing, enit reports                                                                                  |
+| tourist                  | Phases of customer journey in travel planning where GenAI is relevant? Will the planning and booking behaviour change? | article, different customer journey based on customer/travel type (ie luxury), twitter to know how chatgpt is used |
+| rights                   | Are accommodation businesses and consumers rights threatened? Are there new policies required?                         |                                                                                                                    |
 
-
-
-
-
-
-
-
-
-## Tourism Questions
-
-| area                     | questions                                                                                                                               |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| travel agencies          | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant?                   |
-| accommodation businesses | What is the impact of GenAI on accommodation businesses? Will OTAs choices impact them considerably?                                    |
-| public                   | Can Destination Management Organizations (DMO) use Generative AI to improve efficiency in attracting tourists?                          |
-| countries                | Are other countries in the EU investing in GenAI? How and how much?                                                                     |
-| tourist                  | What are the phases of the customer journey in travel planning where GenAI is relevant? Will the planning and booking behaviour change? |
-| rights                   | Are accommodation businesses and consumers rights threatened? Are there new policies required?                                          |
-
-safety.
+safety. [safety article](https://news.booking.com/it/bookingcom-e-polizia-postale-5-raccomandazioni-per-prenotare-online-in-sicurezza/)
 How does the GenAI select the accommodations to be recommended? How can we be sure that the GenAI are safe and reliable and that the customer will not be scammed with fake accommodations?
 
 
@@ -75,7 +56,7 @@ https://www.sciencedirect.com/science/article/pii/S2666957924000065
 [database strutture toscana ](https://dati.toscana.it/dataset/movimento-dei-clienti-e-struttura-dell-offerta-ricettiva-toscana-anno-2023)
 
 
-[safety article](https://news.booking.com/it/bookingcom-e-polizia-postale-5-raccomandazioni-per-prenotare-online-in-sicurezza/)
+
 
 Eurostat
 
@@ -86,6 +67,14 @@ Incrocio db di opendormire con booking per vedere quante strutture sono presenti
 Vedi quali paper hanno fatto riferimento all'articolo.
 
 
+
+## Planning
+
+The phases are
+1. plan
+2. gather
+3. analyse
+4. communicate
 
 
 
