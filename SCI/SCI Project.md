@@ -47,15 +47,14 @@ How does the GenAI select the accommodations to be recommended? How can we be su
 Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview)
 Paper on CrunchBase startups in Tourism and AI [here](https://www.emerald.com/insight/content/doi/10.1108/IJCHM-02-2021-0220/full/html)
 
-https://www.sciencedirect.com/science/article/pii/S1447677023001158
-
-https://www.sciencedirect.com/science/article/pii/S2666957924000065
+[Autonomous travel decision-making: An early glimpse into ChatGPT and generative AI](https://www.sciencedirect.com/science/article/pii/S1447677023001158)
+[Co-creating with ChatGPT for tourism marketing materials](https://www.sciencedirect.com/science/article/pii/S2666957924000065)
 
 [ENIT](https://www.enit.it/it/dmo-italiane)
 
 [database strutture toscana ](https://dati.toscana.it/dataset/movimento-dei-clienti-e-struttura-dell-offerta-ricettiva-toscana-anno-2023)
 
-
+[istat viaggi](https://www.istat.it/it/archivio/295812)
 
 
 Eurostat
