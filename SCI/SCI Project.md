@@ -57,7 +57,7 @@ DMO?
 | countries                | Are other countries in the EU investing in GenAI? How and how much?                                                                                                                         |
 | tourist                  | What are the phases of the customer journey in travel planning where GenAI is relevant? Will the planning and booking behaviour change?                                                     |
 | safety                   | How does the GenAI select the accommodations to be recommended? How can we be sure that the GenAI are safe and reliable and that the customer will not be scammed with fake accommodations? |
-| rights                   | Should accommodation businesses and consumers rights                                                                                                                                        |
+| rights                   | Are accommodation businesses and consumers rights threathned? Are there necessary policies required?                                                                                        |
 
 
 
