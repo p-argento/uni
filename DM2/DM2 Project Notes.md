@@ -68,7 +68,7 @@ Use numpy.save for saving matrices that took days to run like dtw.
 And then reload using numpy.load
 Do not recompute the distance if it was already computed once.
 
-How to judge clusters? use silhoutte, but also centroids and other features (included genre) and motifs. Also matrix profile and ...
+How to judge clusters? use silhouette, but also centroids and other features (included genre) and motifs. Also matrix profile and ...
 
 Or try a different method based on motifs.
 For example, extract top-3 motifs. And use them for clustering.
