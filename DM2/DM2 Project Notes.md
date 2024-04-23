@@ -81,6 +81,16 @@ You will not get pure clusters, but still the percentages are a result.
 For example, "this shape is common to all genres".
 If it is highly representative, the motif can be used as a shapelet in classification.
 
+use https://dtaidistance.readthedocs.io/en/latest/usage/dtw.html
+
+also useful?
+```python
+# KMeans distance params 
+# https://www.sktime.net/en/stable/api_reference/auto_generated/sktime.dists_kernels.dtw.DtwDist.html
+distance_params = {'itakura_max_slope': 0.5, 'window': 3, 'weighted': True}
+clusterer = TimeSeriesKMeans(n_clusters=2, metric="dtw", distance_params=distance_params)
+```
+
 
 1. trasformations
 	1. offset
