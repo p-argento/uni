@@ -68,28 +68,6 @@ Use numpy.save for saving matrices that took days to run like dtw.
 And then reload using numpy.load
 Do not recompute the distance if it was already computed once.
 
-How to judge clusters? use silhouette, but also centroids and other features (included genre) and motifs. Also matrix profile and ...
-
-Or try a different method based on motifs.
-For example, extract top-3 motifs. And use them for clustering.
-It is not needed the dtw, since they are very small (use ed).
-Use k-means with elbow and evaluate.
-You can also extract the centroids.
-And check what's in the cluster using external variables coming from the ts from which the motif was extracted.
-And then say something like "this motif shape is typical of rock songs".
-You will not get pure clusters, but still the percentages are a result.
-For example, "this shape is common to all genres".
-If it is highly representative, the motif can be used as a shapelet in classification.
-
-use https://dtaidistance.readthedocs.io/en/latest/usage/dtw.html
-
-also useful?
-```python
-# KMeans distance params 
-# https://www.sktime.net/en/stable/api_reference/auto_generated/sktime.dists_kernels.dtw.DtwDist.html
-distance_params = {'itakura_max_slope': 0.5, 'window': 3, 'weighted': True}
-clusterer = TimeSeriesKMeans(n_clusters=2, metric="dtw", distance_params=distance_params)
-```
 
 
 1. trasformations
@@ -116,6 +94,8 @@ clusterer = TimeSeriesKMeans(n_clusters=2, metric="dtw", distance_params=distanc
 	1. knn
 	2. shapelet-based
 
+
+In [[time series clustering]].
 
 
 
