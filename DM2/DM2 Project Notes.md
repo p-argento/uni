@@ -47,7 +47,8 @@ My Notes
 
 ## Module 2: Time Series Analysis 
 ### Motifs/Discords
-Analyze the dataset for finding motifs and/or anomalies. Visualize and discuss them and their relationship with shapelets. 
+Analyze the dataset for finding motifs and/or anomalies.
+Visualize and discuss them and their relationship with shapelets. 
 ### Clustering
 • Use at least two clustering algorithm on time series using an appropriate distance. 
 • Analyze the clusters and highlight similarities and differences and visualize the clusters using at least 2 dimensionality reduction techniques.
