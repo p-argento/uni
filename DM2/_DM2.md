@@ -8,6 +8,8 @@
 [[DM2 Official Guidelines]]
 [[DM2 Project Notes]]
 
+> minmax for clustering
+> standard scaler for classification
 ## Slides
 14. dm2 intro
 [[15. Rule-based Classifiers]]
