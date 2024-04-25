@@ -9,7 +9,7 @@ Filippo Chiarello
 [[ggplot]]
 [[webscraping using rvest]]
 [[text mining using texttidy]]
-
+[[shiny R]]
 ## Utilities
 Useful cheatsheets [here](https://posit.co/resources/cheatsheets/?type=posit-cheatsheets/)
 What is this? https://datasciencebox.org/
