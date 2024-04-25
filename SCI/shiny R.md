@@ -33,3 +33,26 @@ Building Shiny apps: 4 steps
 3. Update layout (UI) 
 4. Update outputs (Server)
 
+```r
+ui <- fluidPage(
+  titlePanel('Most Popular Names'),
+  sidebarLayout(
+      sidebarPanel(
+          selectInput('sex', 'Select Sex', selected='F', choices=c('M','F')),
+          sliderInput('year', 'Select Year', value=1880, min=1880, max=2017)
+      ),
+      mainPanel(
+          plotOutput('plot')
+      )    
+  )
+)
+
+server <- function(input, output, session) {
+    output$plot <- renderPlot({
+        ggplot(get_top_names(input$year, input$sex),aes(x=name,y=prop))+
+            geom_col()
+    })
+}
+
+shinyApp(ui = ui, server = server)
+```
