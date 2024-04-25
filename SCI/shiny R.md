@@ -27,3 +27,9 @@ server <- function(input, output, session){
 shinyApp(ui = ui, server = server)
 ```
 
+Building Shiny apps: 4 steps 
+1. Add inputs (UI) 
+2. Add outputs (UI/Server) 
+3. Update layout (UI) 
+4. Update outputs (Server)
+
