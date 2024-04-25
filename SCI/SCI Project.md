@@ -56,8 +56,12 @@ Paper on CrunchBase startups in Tourism and AI [here](https://www.emerald.com/in
 
 [istat viaggi](https://www.istat.it/it/archivio/295812)
 
-
 Eurostat
+
+
+[nearform travel agent](https://www.nearform.com/digital-community/augmenting-user-experiences-using-llms-an-analysis-of-our-travel-ai-agent-application/)
+
+
 
 
 ## Idee
