@@ -97,3 +97,6 @@ server <- function(input, output, session) {
 shinyApp(ui = ui, server = server)
 ```
 
+Add an observer to display notifications.
+Recall that an observer is used for side effects, like displaying a plot, table, or text in the browser. By default an observer triggers an action, whenever one of its underlying dependencies change.
+As we are triggering an action using an observer, we do NOT need to use a `render***()` function or assign the results to an `output`.
