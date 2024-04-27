@@ -3,7 +3,9 @@
 
 [tsfresh](https://tsfresh.readthedocs.io/en/latest/) is a python package. It automatically calculates a large number of time series characteristics, the so called features. Further the package contains methods to evaluate the explaining power and importance of such characteristics for regression or classification tasks.
 
-[sklearn](https://scikit-learn.org/stable/index.html)
+[sktime](https://www.sktime.net/en/stable/) is a unified framework for machine learning with time series.
+
+[sklearn](https://scikit-learn.org/stable/index.html) 
 
 [matrixprofile-ts](https://github.com/target/matrixprofile-ts/) is a Python 2 and 3 library for evaluating time series data using the Matrix Profile algorithms developed by the [Keogh](https://www.cs.ucr.edu/~eamonn/MatrixProfile.html) and [Mueen](https://www.cs.unm.edu/~mueen/) research groups at UC-Riverside and the University of New Mexico.
 
@@ -11,7 +13,22 @@
 
 ## Clustering
 
-1. k-means
+### K-Means (using sktime)
+from sktime docs
+```python
+from sklearn.model_selection import train_test_split
+from sktime.clustering.k_means import TimeSeriesKMeans
+from sktime.clustering.utils.plotting._plot_partitions import plot_cluster_algorithm
+from sktime.datasets import load_arrow_head
+
+X, y = load_arrow_head()
+X_train, X_test, y_train, y_test = train_test_split(X, y)
+
+k_means = TimeSeriesKMeans(n_clusters=5, init_algorithm="forgy", metric="dtw")
+k_means.fit(X_train)
+plot_cluster_algorithm(k_means, X_test, k_means.n_clusters)
+```
+
 You could try K-Means based on _**Dynamic Time Warping**_ metric which is much more relevant for time series (see [`tslearn` tuto](https://tslearn.readthedocs.io/en/stable/user_guide/clustering.html)). Saying that, there is an interesting discussion about [Dynamic Time Warping Clustering](https://stats.stackexchange.com/questions/131281/dynamic-time-warping-clustering) that you could read with a [lot of references](https://stats.stackexchange.com/a/131284/242848) that give time series clustering code examples.
 Another common approach would be to extract relevant features from your time series and apply clustering techniques to them (see [`sklearn` clustering page](https://scikit-learn.org/stable/modules/clustering.html)). You could extract a lot of [common features for time series](https://tsfresh.readthedocs.io/en/latest/text/list_of_features.html) using [`tsfresh`](https://tsfresh.readthedocs.io/en/latest/index.html) python package.
 
@@ -39,3 +56,41 @@ also useful?
 distance_params = {'itakura_max_slope': 0.5, 'window': 3, 'weighted': True}
 clusterer = TimeSeriesKMeans(n_clusters=2, metric="dtw", distance_params=distance_params)
 ```
+
+### K-Means (using tslearn)
+but guidotti used sktime
+```python
+from tslearn.clustering import TimeSeriesKMeans
+
+model = TimeSeriesKMeans(n_clusters=3, metric="dtw",
+                         max_iter=10, random_state=seed)
+model.fit(X_train)
+```
+
+
+### Feature-based Clustering (using tsfresh)
+```python
+from sktime.transformations.panel.tsfresh import TSFreshFeatureExtractor
+
+ts_eff = TSFreshFeatureExtractor(default_fc_parameters="comprehensive", show_warnings=False, disable_progressbar=True) 
+
+X_transform1 = ts_eff.fit_transform(X_train)
+
+```
+
+After the trasformation, on the new array we can apply whatever we want, like DBSCAN.
+
+### Additional experiments using motifs
+
+
+## Motifs
+
+### Matrixprofile using
+```python
+from matrixprofile import *
+
+mo, mod  = motifs.motifs(ts.values, (mp, mpi), max_motifs=5)
+
+
+```
+
