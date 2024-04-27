@@ -1,3 +1,15 @@
+## Libraries
+[tslearn](https://tslearn.readthedocs.io/en/stable/index.html) is a Python package that provides machine learning tools for the analysis of time series. This package builds on (and hence depends on) `scikit-learn`, `numpy` and `scipy` libraries.
+
+[tsfresh](https://tsfresh.readthedocs.io/en/latest/) is a python package. It automatically calculates a large number of time series characteristics, the so called features. Further the package contains methods to evaluate the explaining power and importance of such characteristics for regression or classification tasks.
+
+[sklearn](https://scikit-learn.org/stable/index.html)
+
+[matrixprofile-ts](https://github.com/target/matrixprofile-ts/) is a Python 2 and 3 library for evaluating time series data using the Matrix Profile algorithms developed by the [Keogh](https://www.cs.ucr.edu/~eamonn/MatrixProfile.html) and [Mueen](https://www.cs.unm.edu/~mueen/) research groups at UC-Riverside and the University of New Mexico.
+
+
+
+## Clustering
 
 1. k-means
 You could try K-Means based on _**Dynamic Time Warping**_ metric which is much more relevant for time series (see [`tslearn` tuto](https://tslearn.readthedocs.io/en/stable/user_guide/clustering.html)). Saying that, there is an interesting discussion about [Dynamic Time Warping Clustering](https://stats.stackexchange.com/questions/131281/dynamic-time-warping-clustering) that you could read with a [lot of references](https://stats.stackexchange.com/a/131284/242848) that give time series clustering code examples.

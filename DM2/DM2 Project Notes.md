@@ -96,7 +96,7 @@ Do not recompute the distance if it was already computed once.
 	2. shapelet-based
 
 
-In [[time series clustering]].
+In [[time series notebook]].
 
 
 
