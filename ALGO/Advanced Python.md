@@ -155,3 +155,8 @@ f'{name} ha {age} ed è alto {height:.2f}'
 ```
 
 This is the right way in the last version of python.
+
+
+## Using zip()
+![[Pasted image 20240427190242.png]]
+
