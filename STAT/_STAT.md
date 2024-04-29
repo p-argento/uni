@@ -28,13 +28,15 @@ Professor's OneNote on Teams [SDS Notes](https://teams.microsoft.com/l/entity/0d
 Books
 - **[T]** F.M. Dekking C. Kraaikamp, H.P. Lopuha, L.E. Meester. **A Modern Introduction to Probability and Statistics**. Springer, 2005.
 - **[R]** P. Dalgaard. **Introductory Statistics with R**. 2nd edition, Springer, 2008.
+
+## Project
+Up to 3 students.
+Consist of replicating the results of a scientific paper.
+[[Statistics Project]]
 ## Coding
 The scripts are named according to lessons, not sequentially.
 ## Exam
 Written and oral exam.
 The project (and discussion) replace the written exam.
-## Project
-Up to 3 students.
-Consist of replicating the results of a scientific paper.
 ## Outline
 The program covers the basic methodologies, techniques and tools of statistical analysis. This includes basic knowledge of probability theory, random variables, convergence theorems, statistical models, estimation theory, hypothesis testing, bayesian inference, causal reasoning. Other topics covered include bootstrap, expectation-maximization, and applications to data science problems. Finally the program covers the use of the language R for statistical analysis.
