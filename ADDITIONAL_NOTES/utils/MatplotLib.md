@@ -23,3 +23,70 @@ Plotting functions expect [`numpy.array`](https://numpy.org/doc/stable/referenc
 ## PyPlot Tutorial
 https://matplotlib.org/stable/tutorials/pyplot.html#sphx-glr-tutorials-pyplot-py
 
+### axis function
+The [`axis`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axis.html#matplotlib.pyplot.axis "matplotlib.pyplot.axis") function in the example above takes a list of `[xmin, xmax, ymin, ymax]` and specifies the viewport of the axes.
+```python
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16], 'ro')
+plt.axis((0, 6, 0, 20))
+plt.show()
+```
+
+### Plot multiple lines
+ In fact, all sequences are converted to numpy arrays internally. 
+ The example below illustrates plotting several lines with different format styles in one function call using arrays.
+```python
+# evenly sampled time at 200ms intervals
+t = np.arange(0., 5., 0.2)
+
+# red dashes, blue squares and green triangles
+plt.plot(t, t, 'r--', t, t**2, 'bs', t, t**3, 'g^')
+plt.show()
+```
+
+![[Pasted image 20240429163630.png]]
+
+### Plot multiple axes
+
+```python
+def f(t):
+    return np.exp(-t) * np.cos(2*np.pi*t)
+
+t1 = np.arange(0.0, 5.0, 0.1)
+t2 = np.arange(0.0, 5.0, 0.02)
+
+plt.figure()
+plt.subplot(211)
+plt.plot(t1, f(t1), 'bo', t2, f(t2), 'k')
+
+plt.subplot(212)
+plt.plot(t2, np.cos(2*np.pi*t2), 'r--')
+plt.show()
+```
+![[Pasted image 20240429164317.png]]
+The [`figure`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure "matplotlib.pyplot.figure") call here is optional because a figure will be created if none exists, just as an Axes will be created (equivalent to an explicit `subplot()` call) if none exists. The [`subplot`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html#matplotlib.pyplot.subplot "matplotlib.pyplot.subplot") call specifies `numrows, numcols, plot_number` where `plot_number` ranges from 1 to `numrows*numcols`. The commas in the `subplot` call are optional if `numrows*numcols<10`. So `subplot(211)` is identical to `subplot(2, 1, 1)`.
+
+You can create an arbitrary number of subplots and axes. If you want to place an Axes manually, i.e., not on a rectangular grid, use [`axes`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axes.html#matplotlib.pyplot.axes "matplotlib.pyplot.axes"), which allows you to specify the location as `axes([left, bottom, width, height])` where all values are in fractional (0 to 1) coordinates. See [Axes Demo](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/axes_demo.html) for an example of placing axes manually and [Multiple subplots](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplot.html) for an example with lots of subplots.
+
+### Multiple figures
+
+You can create multiple figures by using multiple [`figure`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure "matplotlib.pyplot.figure") calls with an increasing figure number. Of course, each figure can contain as many axes and subplots as your heart desires:
+```python
+import matplotlib.pyplot as plt
+plt.figure(1)                # the first figure
+plt.subplot(211)             # the first subplot in the first figure
+plt.plot([1, 2, 3])
+plt.subplot(212)             # the second subplot in the first figure
+plt.plot([4, 5, 6])
+
+
+plt.figure(2)                # a second figure
+plt.plot([4, 5, 6])          # creates a subplot() by default
+
+plt.figure(1)                # first figure current;
+                             # subplot(212) still current
+plt.subplot(211)             # make subplot(211) in the first figure
+                             # current
+plt.title('Easy as 1, 2, 3') # subplot 211 title
+```
+
+![[Pasted image 20240429164822.png]]
