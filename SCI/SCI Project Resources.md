@@ -17,7 +17,35 @@
 
 *MAIN SOURCES*
 - Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview)
+- read 
 
+
+## About accommodation businesses
+
+| accommodation businesses | What is the impact of GenAI on accommodation businesses? Will OTAs choices impact them considerably?                   | opendormire and booking, ota's fees                                                                                |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+
+- statista
+- count how many italian accomodation businesses are present in the top 3 OTA (booking, expedia, airbnb)
+	- compare number of acc.bss. on operdormire with the number on ota
+- understand OTA's fees
+
+
+
+## About countries
+
+| countries                | Are other countries in the EU investing in GenAI? How and how much?                                                    | statista, countries reports                                                                                        |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+1. https://aiindex.stanford.edu/report/
+	1. https://drive.google.com/drive/folders/15JTCpcQ8R_Vl36qEjcitiYDssYnSg4oF
+		1. 4.3.6
+		2. 4.3.17 for new ai companies worldwide (source?)
+2. [eu genAI investments](https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/760392/EPRS_ATA(2024)760392_EN.pdf)
+3. 
+
+
+
+## Various
 
 *Ideas*
 1. read financial reports of OTA
@@ -29,22 +57,27 @@
 - Eurostat
 - Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview)
 	- and related like [this](https://www.statista.com/topics/7589/digitalization-of-the-travel-industry/#topicOverview)
-	- and [this](https://www.statista.com/statistics/934995/revenue-of-leading-otas-worldwide/)
-
-*Articles*
+	- and [this](https://www.statista.com/statistics/934995/revenue-of-leading-otas-worldwide/) about best otas
 - [OliverWyman-GENERATIVE AI’S INFLUENCE ON LEISURE TRAVELER BEHAVIORS](https://www.oliverwyman.com/our-expertise/insights/2023/oct/generative-ai-leisure-traveler-trends.html)
 	- with interesting survey
+- [database strutture toscana ](https://dati.toscana.it/dataset/movimento-dei-clienti-e-struttura-dell-offerta-ricettiva-toscana-anno-2023)
+
+
+*Articles*
+
+- [investimenti ai in italia](https://www.ansa.it/canale_tecnologia/notizie/future_tech/2024/03/25/ia-nel-2024-in-italia-investimenti-in-crescita-del-68_a82e2b94-01af-423d-ab91-650fb14c1ede.html)
+- [Autonomous travel decision-making: An early glimpse into ChatGPT and generative AI](https://www.sciencedirect.com/science/article/pii/S1447677023001158)
+- [Co-creating with ChatGPT for tourism marketing materials](https://www.sciencedirect.com/science/article/pii/S2666957924000065)
 - 
 
 *Papers*
 - Paper on CrunchBase startups in Tourism and AI [here](https://www.emerald.com/insight/content/doi/10.1108/IJCHM-02-2021-0220/full/html)
 
-[Autonomous travel decision-making: An early glimpse into ChatGPT and generative AI](https://www.sciencedirect.com/science/article/pii/S1447677023001158)
-[Co-creating with ChatGPT for tourism marketing materials](https://www.sciencedirect.com/science/article/pii/S2666957924000065)
+
+
 
 [ENIT](https://www.enit.it/it/dmo-italiane)
 
-[database strutture toscana ](https://dati.toscana.it/dataset/movimento-dei-clienti-e-struttura-dell-offerta-ricettiva-toscana-anno-2023)
 
 
 

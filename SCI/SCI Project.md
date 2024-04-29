@@ -54,6 +54,15 @@ Vedi quali paper hanno fatto riferimento all'articolo.
 
 
 
+>Base di dati contenente le principali informazioni sulle Guide Turistiche abilitate d’Italia.
+>Si è constatato che la competenza su tale tipologia di dati a livello locale è piuttosto disomegenea e dipende da regione e regione. Il dato è in generale di competenza delle province. Con il riordino delle stesse, la competenza è passata in taluni casi alle città metropolitane (che però non fanno parte della Task Force #DatiPubblici), in altri casi alle regioni stesse (e.g., regione Liguria). In generale si nota che i dati non sono spesso disponibili in modo strutturato, non sono in open data e quando lo sono, non risultano sempre aggiornati. Il dataset era stato discusso insieme al Ministero dei Beni e delle Attività Culturali e del Turismo (settore turismo) che poteva essere la giusta leva centrale per la raccolta e apertura di questa tipologia di dati. Tuttavia i colloqui non hanno più avuto seguito.
+>[source](https://docs.italia.it/italia/daf/pianotri-elencobasidatichiave/it/stabile/monitoraggio.html#strutture-ricettive)
+
+Se ci fossero delle guide turistiche "istituzionali di riferimento", in che modo chatgpt potrebbe essere influenzato. Darebbe autorevolezza? E un chatbot ufficiale italiano?
+
+
+
+
 ## Planning
 
 The phases are
