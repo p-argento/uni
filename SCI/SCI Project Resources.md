@@ -41,7 +41,7 @@
 		1. 4.3.6
 		2. 4.3.17 for new ai companies worldwide (source?)
 2. [eu genAI investments](https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/760392/EPRS_ATA(2024)760392_EN.pdf)
-3. 
+3. analizza dataset di startup italiane
 
 
 
@@ -68,18 +68,35 @@
 - [investimenti ai in italia](https://www.ansa.it/canale_tecnologia/notizie/future_tech/2024/03/25/ia-nel-2024-in-italia-investimenti-in-crescita-del-68_a82e2b94-01af-423d-ab91-650fb14c1ede.html)
 - [Autonomous travel decision-making: An early glimpse into ChatGPT and generative AI](https://www.sciencedirect.com/science/article/pii/S1447677023001158)
 - [Co-creating with ChatGPT for tourism marketing materials](https://www.sciencedirect.com/science/article/pii/S2666957924000065)
-- 
+- https://epthinktank.eu/2024/01/18/united-states-approach-to-artificial-intelligence/
+- [travel OTA genAI](https://econsultancy.com/travel-ota-generative-ai/)
+- [eu approach to ai](https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence)
 
 *Papers*
 - Paper on CrunchBase startups in Tourism and AI [here](https://www.emerald.com/insight/content/doi/10.1108/IJCHM-02-2021-0220/full/html)
+	- indaga paper che lo citano
 
-
-
-
-[ENIT](https://www.enit.it/it/dmo-italiane)
-
-
+[ENIT per dmo](https://www.enit.it/it/dmo-italiane)
 
 
 *Companies*
 - [nearform travel agent](https://www.nearform.com/digital-community/augmenting-user-experiences-using-llms-an-analysis-of-our-travel-ai-agent-application/)
+- [tourism innovation companies in italy](https://www.ministeroturismo.gov.it/wp-content/uploads/2023/06/DVPT_STP_Decreto-di-approvazione-graduatoria-startup_signed_1206823.pdf)
+- https://www.leewayhertz.com/chatgpt-for-tourism/
+
+
+
+## OSINT and Strategic-Related
+
+[Italian Public Datasets](https://github.com/italia/awesome-italian-public-datasets) shared by Geospatial Analytics professor.
+
+[Registro Startup Italiane](https://startup.registroimprese.it/isin/home)
+
+statista.com
+
+[Docs Italia](https://docs.italia.it/italia/daf/pianotri-elencobasidatichiave/it/stabile/index.html)
+
+[Open source code and developers community of the Italian government](https://github.com/italia/)
+
+https://www.dati.gov.it/
+
