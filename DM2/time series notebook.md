@@ -231,7 +231,7 @@ plt.show()
 ```
 
 
-## Feature-based (using tslearn)
+## shapelet-based (using tslearn)
 
 [ts learn shapelets](https://tslearn.readthedocs.io/en/stable/auto_examples/classification/plot_shapelet_locations.html#sphx-glr-auto-examples-classification-plot-shapelet-locations-py)
 
@@ -250,3 +250,5 @@ from tslearn.datasets import CachedDatasets
 from tslearn.preprocessing import TimeSeriesScalerMinMax
 ```
 
+## more?
+feature-based using tsfresh?
