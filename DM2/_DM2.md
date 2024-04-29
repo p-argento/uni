@@ -10,6 +10,11 @@
 
 > minmax for clustering
 > standard scaler for classification
+
+NN.
+Use sklearn. But try also PyTorch and Keras.
+Relu for hidden layers and tanh or sigmoid for output layer.
+
 ## Slides
 14. dm2 intro
 [[15. Rule-based Classifiers]]
