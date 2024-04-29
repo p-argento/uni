@@ -1,4 +1,4 @@
-*Strategic* and Competitive Intelligence
+*Strategic and Competitive Intelligence*
 Filippo Chiarello
 ## Lectures
 [[1. SCI Plan]]
@@ -13,7 +13,6 @@ Filippo Chiarello
 ## Utilities
 Useful cheatsheets [here](https://posit.co/resources/cheatsheets/?type=posit-cheatsheets/)
 What is this? https://datasciencebox.org/
-Strongly advised to 
 
 ## Project
 [[SCI Project]]

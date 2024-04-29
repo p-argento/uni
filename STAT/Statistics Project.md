@@ -17,17 +17,3 @@ model calibration 13
 | A unifying view on dataset shift in classification                                                              |       | 27   | 27    |        |
 | POWER-LAW DISTRIBUTIONS IN BINNED EMPIRICAL DATA                                                                |       | 29   | 29    |        |
 
-*aldo*
-
-1
-11
-20
-21
-27
-29
-*marco*
-20
-29
-27
-19
-23
