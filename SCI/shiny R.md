@@ -208,3 +208,65 @@ Presently, Shiny has one class of objects that act as reactive sources, one clas
 - **Observers** are an implementation of Reactive endpoints. They can access reactive sources and reactive expressions, and they don’t return a value; they are used for their side effects.
 
 ![[Pasted image 20240430144750.png]]
+
+
+## Shiny app
+```r
+ui <- fluidPage(
+  titlePanel("UFO Sightings"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("state", "Choose a U.S. state:", choices = unique(usa_ufo_sightings$state)),
+      dateRangeInput("dates", "Choose a date range:",
+                     start = "1920-01-01",
+                     end = "1950-01-01")
+    ),
+    mainPanel(
+      tabsetPanel(
+        tabPanel(
+          # Add plot output named 'shapes'
+          "Plot",
+          plotOutput("shapes")
+        ),
+        tabPanel(
+          # Add table output named 'duration_table'
+          "Table",
+          tableOutput("duration_table")
+        )
+      )
+    )
+  )
+)
+
+server <- function(input, output) {
+  # CODE BELOW: Create a plot output of sightings by shape,
+  # For the selected inputs
+  output$shapes <- renderPlot({
+    usa_ufo_sightings %>%
+      filter(state == input$state) %>%
+      filter(date_sighted >= input$dates[1] & date_sighted <= input$dates[2]) %>%
+      ggplot(aes(shape))+
+        geom_bar()
+  })
+  
+  
+  # CODE BELOW: Create a table output named 'duration_table', by shape,
+  # of # sighted, plus mean, median, max, and min duration of sightings
+  # for the selected inputs
+  output$duration_table <- renderTable({
+    usa_ufo_sightings %>%
+      filter(state == input$state) %>%
+      filter(date_sighted >= input$dates[1] & date_sighted <= input$dates[2]) %>%
+      group_by(shape) %>%
+      summarise(avg=mean(n()), median=median(n()), min=min(date_sighted),max=max(date_sighted))
+  })
+  
+  
+}
+
+shinyApp(ui, server)
+```
+
+## ShinyWidgets
+`shinyWidgetsGallery()`
+Let's look at all the different input options that are already built for you by exploring the `shinyWidgets` package. It comes with a neat built-in function, `shinyWidgetsGallery()` that opens a pre-built Shiny app that allows you to explore these pre-built inputs **and** gives you the code for implementing them.
