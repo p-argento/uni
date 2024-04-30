@@ -17,3 +17,4 @@ model calibration 13
 | A unifying view on dataset shift in classification                                                              |       | 27   | 27    |        |
 | POWER-LAW DISTRIBUTIONS IN BINNED EMPIRICAL DATA                                                                |       | 29   | 29    |        |
 
+![[17.PDPandICE.pdf]]
