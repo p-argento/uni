@@ -3,6 +3,15 @@
 
 ![[Pasted image 20240306164941.png]]
 
+https://ggplot2.tidyverse.org/reference/geom_bar.html
+There are two types of bar charts: `geom_bar()` and `geom_col()`. 
+`geom_bar()` makes the height of the bar proportional to the number of cases in each group (or if the `weight` aesthetic is supplied, the sum of the weights). If you want the heights of the bars to represent values in the data, use `geom_col()` instead. `geom_bar()` uses `stat_count()` by default: it counts the number of cases at each x position. `geom_col()` uses [stat_identity()](https://ggplot2.tidyverse.org/reference/stat_identity.html): it leaves the data as is.
+```r
+g <- ggplot(mpg, aes(class))
+g + geom_bar()
+```
+
+
 Notice that `jitter` can be a geom itself (i.e. `geom_jitter()`), an argument in `geom_point()` (i.e. `position = "jitter"`), or a position function, (i.e. `position_jitter()`).
 
 Shape attribute values.
@@ -40,4 +49,5 @@ Borders require you to set 4 positions, so use [`margin(top, right, bottom, lef
 The default unit is `"pt"` (points), which scales well with text. Other options include "cm", "in" (inches) and "lines" (of text).
 
 Outside of `ggplot2`, another source of built-in themes is the `ggthemes` package. The workspace already contains the `plt_prop_unemployed_over_time`, the line plot from before. Let's explore some of the ready-made `ggthemes` themes.
+
 
