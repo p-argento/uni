@@ -270,3 +270,33 @@ shinyApp(ui, server)
 ## ShinyWidgets
 `shinyWidgetsGallery()`
 Let's look at all the different input options that are already built for you by exploring the `shinyWidgets` package. It comes with a neat built-in function, `shinyWidgetsGallery()` that opens a pre-built Shiny app that allows you to explore these pre-built inputs **and** gives you the code for implementing them.
+
+
+
+
+
+
+# IreneSpada Lecture
+
+## Principles of DataViz
+
+> The purpose of DataViz is insight, not pictures.
+
+Two principles
+1. Design for ensuring clarity, precision, efficiency
+2. Maximize ideas, minimize ink.
+
+Emphasize the message you want to convey. Using colors and arrows, for example.
+
+Animation vs interaction.
+
+In a interaction, keep in mind your user
+1. provide instructions
+2. limit overwhelming interactions
+	1. similar to minimize ink (loose the why)
+
+
+Check responsiveness!!
+
+
+
