@@ -19,6 +19,17 @@
 - Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview)
 - read 
 
+Show
+
+| topic | PLOT                                                   | source                  |
+| ----- | ------------------------------------------------------ | ----------------------- |
+|       | 10 biggest otas                                        | statista                |
+|       | ota investments in ai (how many projects and how much) | financial report of ota |
+|       | where are ota located?                                 |                         |
+|       | how many travel agencies in italy                      |                         |
+|       | compare revenue of ota vs tta in italy                 |                         |
+
+
 
 ## About accommodation businesses
 
@@ -29,6 +40,13 @@
 - count how many italian accomodation businesses are present in the top 3 OTA (booking, expedia, airbnb)
 	- compare number of acc.bss. on operdormire with the number on ota
 - understand OTA's fees
+
+
+| topic | PLOT                                                                                                   | source                |
+| ----- | ------------------------------------------------------------------------------------------------------ | --------------------- |
+|       | how many acc.bus. have a website?                                                                      |                       |
+|       | count how many italian accomodation businesses are present in the top 3 OTA (booking, expedia, airbnb) | compare dataset with? |
+|       | how much are the fees in ota?                                                                          |                       |
 
 
 
@@ -42,6 +60,13 @@
 		2. 4.3.17 for new ai companies worldwide (source?)
 2. [eu genAI investments](https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/760392/EPRS_ATA(2024)760392_EN.pdf)
 3. analizza dataset di startup italiane
+
+
+| topic | PLOT                               | source          |
+| ----- | ---------------------------------- | --------------- |
+|       | major investments in ai by country | aiindex         |
+|       | in eu?                             |                 |
+|       | startup italiane di gen AI         | dataset startup |
 
 
 
@@ -66,18 +91,22 @@
 *Articles*
 
 - [investimenti ai in italia](https://www.ansa.it/canale_tecnologia/notizie/future_tech/2024/03/25/ia-nel-2024-in-italia-investimenti-in-crescita-del-68_a82e2b94-01af-423d-ab91-650fb14c1ede.html)
-- [Autonomous travel decision-making: An early glimpse into ChatGPT and generative AI](https://www.sciencedirect.com/science/article/pii/S1447677023001158)
-- [Co-creating with ChatGPT for tourism marketing materials](https://www.sciencedirect.com/science/article/pii/S2666957924000065)
-- https://epthinktank.eu/2024/01/18/united-states-approach-to-artificial-intelligence/
 - [travel OTA genAI](https://econsultancy.com/travel-ota-generative-ai/)
 - [eu approach to ai](https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence)
+- 
+
+
 
 *Papers*
-- Paper on CrunchBase startups in Tourism and AI [here](https://www.emerald.com/insight/content/doi/10.1108/IJCHM-02-2021-0220/full/html)
+- Paper on CrunchBase startups in Tourism and AI [here](https://www.emerald.com/insight/content/doi/10.1108/IJCHM-02-2021-0220/full/html) (PDF)
 	- indaga paper che lo citano
+- [Autonomous travel decision-making: An early glimpse into ChatGPT and generative AI](https://www.sciencedirect.com/science/article/pii/S1447677023001158) (PDF)
 
-[ENIT per dmo](https://www.enit.it/it/dmo-italiane)
 
+`TITLE-ABS-KEY ( travel AND hospitality AND tourism AND ( chatgpt OR ( generative AND ai ) OR llm OR "Large Language Model" ) )`
+
+maybe better
+`TITLE-ABS-KEY ( travel AND tourism AND ( chatgpt OR ( generative AND ai ) OR llm OR "Large Language Model" ) )`
 
 *Companies*
 - [nearform travel agent](https://www.nearform.com/digital-community/augmenting-user-experiences-using-llms-an-analysis-of-our-travel-ai-agent-application/)
@@ -85,6 +114,9 @@
 - https://www.leewayhertz.com/chatgpt-for-tourism/
 
 
+*Marketing-related*
+- [ENIT per dmo](https://www.enit.it/it/dmo-italiane)
+- [Co-creating with ChatGPT for tourism marketing materials](https://www.sciencedirect.com/science/article/pii/S2666957924000065)
 
 ## OSINT and Strategic-Related
 
