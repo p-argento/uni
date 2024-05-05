@@ -16,8 +16,8 @@
 | travel agencies | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant? |
 
 *MAIN SOURCES*
-- Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview)
-- read 
+- Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview) and [here](https://www.statista.com/topics/2704/online-travel-market/#topicOverview)
+- [OliverWyman-GENERATIVE AI’S INFLUENCE ON LEISURE TRAVELER BEHAVIORS](https://www.oliverwyman.com/our-expertise/insights/2023/oct/generative-ai-leisure-traveler-trends.html)
 
 Show
 
@@ -117,6 +117,10 @@ maybe better
 *Marketing-related*
 - [ENIT per dmo](https://www.enit.it/it/dmo-italiane)
 - [Co-creating with ChatGPT for tourism marketing materials](https://www.sciencedirect.com/science/article/pii/S2666957924000065)
+
+*might be useful in the future*
+- https://ieeexplore.ieee.org/document/10468915
+- https://www.tandfonline.com/doi/full/10.1080/13683500.2023.2300032?scroll=top&needAccess=true
 
 ## OSINT and Strategic-Related
 
