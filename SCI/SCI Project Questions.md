@@ -44,7 +44,7 @@ How does the GenAI select the accommodations to be recommended? How can we be su
 
 
 ## Resources
-[[SCI Project Resources]]
+[[SCI Project MAIN]]
 
 
 ## Idee

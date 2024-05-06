@@ -15,7 +15,8 @@ Useful cheatsheets [here](https://posit.co/resources/cheatsheets/?type=posit-che
 What is this? https://datasciencebox.org/
 
 ## Project
-[[SCI Project]]
+[[SCI Project Questions]]
+[[SCI Project MAIN]]
 
 ## Course Structure
 Steps
