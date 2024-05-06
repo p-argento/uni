@@ -115,6 +115,10 @@ Variables
 |       | startup italiane di gen AI         | dataset startup |
 
 
+## Note qualitative sul turismo in italia
+[PNRR e hub del turismo](https://www.italiadomani.gov.it/content/sogei-ng/it/it/Interventi/investimenti/hub-del-turismo-digitale.html)
+
+
 
 
 
