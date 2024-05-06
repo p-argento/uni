@@ -82,9 +82,11 @@ Variables
 	1. https://drive.google.com/drive/folders/15JTCpcQ8R_Vl36qEjcitiYDssYnSg4oF
 		1. 4.3.6
 		2. 4.3.17 for new ai companies worldwide (source?)
-2. [eu genAI investments](https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/760392/EPRS_ATA(2024)760392_EN.pdf)
-3. https://epthinktank.eu/2024/04/04/ai-investment-eu-and-global-indicators/#:~:text=The%20EU%20and%20the%20United,billion%20in%20US%20AI%20companies.
-4. https://www.euronews.com/business/2024/04/29/who-in-europe-is-investing-the-most-in-artificial-intelligence
+2. https://ourworldindata.org/artificial-intelligence
+
+3. [eu genAI investments](https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/760392/EPRS_ATA(2024)760392_EN.pdf)
+4. https://epthinktank.eu/2024/04/04/ai-investment-eu-and-global-indicators/#:~:text=The%20EU%20and%20the%20United,billion%20in%20US%20AI%20companies.
+5. https://www.euronews.com/business/2024/04/29/who-in-europe-is-investing-the-most-in-artificial-intelligence
 
 *dataset*
 List of all countries in the world. (use default with gdp > t or gdp/pop > t).
@@ -168,6 +170,7 @@ maybe better
 - https://www.tandfonline.com/doi/full/10.1080/13683500.2023.2300032?scroll=top&needAccess=true
 
 ## OSINT and Strategic-Related
+found more in [[Dataset]]
 
 [Italian Public Datasets](https://github.com/italia/awesome-italian-public-datasets) shared by Geospatial Analytics professor.
 
