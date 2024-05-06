@@ -10,7 +10,7 @@
 | rights                   | Are accommodation businesses and consumers rights threatened? Are there new policies required?                         |                                                                                                                    |
 
 
-## About OTA
+## 1. About OTA
 | area            | questions                                                                                                             |
 | --------------- | --------------------------------------------------------------------------------------------------------------------- |
 | travel agencies | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant? |
@@ -18,6 +18,7 @@
 *sources*
 - Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview) and [here](https://www.statista.com/topics/2704/online-travel-market/#topicOverview)
 - [OliverWyman-GENERATIVE AI’S INFLUENCE ON LEISURE TRAVELER BEHAVIORS](https://www.oliverwyman.com/our-expertise/insights/2023/oct/generative-ai-leisure-traveler-trends.html)
+- AIDA?
 
 *dataset*
 List all the biggest Travel Agencies in italy.
@@ -41,7 +42,7 @@ Variables
 
 
 
-## About accommodation businesses
+## 2. About accommodation businesses
 
 | accommodation businesses | What is the impact of GenAI on accommodation businesses? Will OTAs choices impact them considerably?                   | opendormire and booking, ota's fees                                                                                |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -50,6 +51,7 @@ Variables
 - count how many italian accomodation businesses are present in the top 3 OTA (booking, expedia, airbnb)
 	- compare number of acc.bss. on operdormire with the number on ota
 - understand OTA's fees
+- AIDA?
 
 *dataset*
 List all the accommodation businesses in italy.
@@ -72,7 +74,7 @@ Variables
 
 
 
-## About countries
+## 3. About countries
 
 | countries                | Are other countries in the EU investing in GenAI? How and how much?                                                    | statista, countries reports                                                                                        |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -97,11 +99,9 @@ Variables
 - continent
 - population
 - gdp
-- investment in AI in 2020
-- ...in 2021
-- ..in 2022
-- ..in 2023
-- ..budget?
+- pernottamenti [here](https://www.enit.it/storage/202402/20240219122646_il%20posizionamento%20dellitalia%20i%20trend%20in%20atto%20-%20maria%20elena%20rossi%20-%205%20febbraio%202024%20-%20bit%202024.pdf)
+- strategy for ai ([here](https://ourworldindata.org/artificial-intelligence))
+- investment in AI by year?
 
 (Maybe add a list of italian startups of genAI?)
 
@@ -113,11 +113,6 @@ Variables
 |       | major investments in ai by country | aiindex         |
 |       | in eu?                             |                 |
 |       | startup italiane di gen AI         | dataset startup |
-
-
-## Note qualitative sul turismo in italia
-[PNRR e hub del turismo](https://www.italiadomani.gov.it/content/sogei-ng/it/it/Interventi/investimenti/hub-del-turismo-digitale.html)
-
 
 
 
@@ -139,6 +134,7 @@ Variables
 - [OliverWyman-GENERATIVE AI’S INFLUENCE ON LEISURE TRAVELER BEHAVIORS](https://www.oliverwyman.com/our-expertise/insights/2023/oct/generative-ai-leisure-traveler-trends.html)
 	- with interesting survey
 - [database strutture toscana ](https://dati.toscana.it/dataset/movimento-dei-clienti-e-struttura-dell-offerta-ricettiva-toscana-anno-2023)
+- [enit](https://www.enit.it/it/research-library)
 
 
 *Articles*
@@ -146,14 +142,15 @@ Variables
 - [investimenti ai in italia](https://www.ansa.it/canale_tecnologia/notizie/future_tech/2024/03/25/ia-nel-2024-in-italia-investimenti-in-crescita-del-68_a82e2b94-01af-423d-ab91-650fb14c1ede.html)
 - [travel OTA genAI](https://econsultancy.com/travel-ota-generative-ai/)
 - [eu approach to ai](https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence)
-- 
+- [accenture](https://www.accenture.com/us-en/insights/travel/travel-ai-maturity)
+- [time](https://time.com/6290940/ai-travel-industry/)
+- [OliverWyman](https://www.oliverwyman.com/our-expertise/insights/2023/oct/generative-ai-leisure-traveler-trends.html)
+- [PNRR e hub del turismo](https://www.italiadomani.gov.it/content/sogei-ng/it/it/Interventi/investimenti/hub-del-turismo-digitale.html)
 
 
 
 *Papers*
 - Paper on CrunchBase startups in Tourism and AI [here](https://www.emerald.com/insight/content/doi/10.1108/IJCHM-02-2021-0220/full/html) (PDF)
-	- indaga paper che lo citano
-- [Autonomous travel decision-making: An early glimpse into ChatGPT and generative AI](https://www.sciencedirect.com/science/article/pii/S1447677023001158) (PDF)
 
 
 `TITLE-ABS-KEY ( travel AND hospitality AND tourism AND ( chatgpt OR ( generative AND ai ) OR llm OR "Large Language Model" ) )`
@@ -175,18 +172,6 @@ maybe better
 - https://ieeexplore.ieee.org/document/10468915
 - https://www.tandfonline.com/doi/full/10.1080/13683500.2023.2300032?scroll=top&needAccess=true
 
-## OSINT and Strategic-Related
-found more in [[Dataset]]
+## Other datasets
 
-[Italian Public Datasets](https://github.com/italia/awesome-italian-public-datasets) shared by Geospatial Analytics professor.
-
-[Registro Startup Italiane](https://startup.registroimprese.it/isin/home)
-
-statista.com
-
-[Docs Italia](https://docs.italia.it/italia/daf/pianotri-elencobasidatichiave/it/stabile/index.html)
-
-[Open source code and developers community of the Italian government](https://github.com/italia/)
-
-https://www.dati.gov.it/
-
+![[Dataset]]
