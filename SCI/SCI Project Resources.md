@@ -15,11 +15,21 @@
 | --------------- | --------------------------------------------------------------------------------------------------------------------- |
 | travel agencies | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant? |
 
-*MAIN SOURCES*
+*sources*
 - Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview) and [here](https://www.statista.com/topics/2704/online-travel-market/#topicOverview)
 - [OliverWyman-GENERATIVE AI’S INFLUENCE ON LEISURE TRAVELER BEHAVIORS](https://www.oliverwyman.com/our-expertise/insights/2023/oct/generative-ai-leisure-traveler-trends.html)
 
-Show
+*dataset*
+List all the biggest Travel Agencies in italy.
+Variables
+- name
+- online/traditional
+- revenue
+- country
+- investment in ai
+
+
+*Show*
 
 | topic | PLOT                                                   | source                  |
 | ----- | ------------------------------------------------------ | ----------------------- |
@@ -35,12 +45,24 @@ Show
 
 | accommodation businesses | What is the impact of GenAI on accommodation businesses? Will OTAs choices impact them considerably?                   | opendormire and booking, ota's fees                                                                                |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-
+*ideas*
 - statista
 - count how many italian accomodation businesses are present in the top 3 OTA (booking, expedia, airbnb)
 	- compare number of acc.bss. on operdormire with the number on ota
 - understand OTA's fees
 
+*dataset*
+List all the accommodation businesses in italy.
+Variables
+- name
+- provincia
+- regione
+- website y/n
+- fees on booking
+- fees on expedia
+- fees on airbnb
+
+(add a button to increase in percentage the fees based on statista estimations)
 
 | topic | PLOT                                                                                                   | source                |
 | ----- | ------------------------------------------------------------------------------------------------------ | --------------------- |
@@ -54,13 +76,33 @@ Show
 
 | countries                | Are other countries in the EU investing in GenAI? How and how much?                                                    | statista, countries reports                                                                                        |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+
+*sources*
 1. https://aiindex.stanford.edu/report/
 	1. https://drive.google.com/drive/folders/15JTCpcQ8R_Vl36qEjcitiYDssYnSg4oF
 		1. 4.3.6
 		2. 4.3.17 for new ai companies worldwide (source?)
 2. [eu genAI investments](https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/760392/EPRS_ATA(2024)760392_EN.pdf)
-3. analizza dataset di startup italiane
+3. https://epthinktank.eu/2024/04/04/ai-investment-eu-and-global-indicators/#:~:text=The%20EU%20and%20the%20United,billion%20in%20US%20AI%20companies.
+4. https://www.euronews.com/business/2024/04/29/who-in-europe-is-investing-the-most-in-artificial-intelligence
 
+*dataset*
+List of all countries in the world. (use default with gdp > t or gdp/pop > t).
+Variables
+- name
+- continent
+- population
+- gdp
+- investment in AI in 2020
+- ...in 2021
+- ..in 2022
+- ..in 2023
+- ..budget?
+
+(Maybe add a list of italian startups of genAI?)
+
+
+*show*
 
 | topic | PLOT                               | source          |
 | ----- | ---------------------------------- | --------------- |
@@ -70,12 +112,15 @@ Show
 
 
 
-## Various
+
+
+## Additional Notes
 
 *Ideas*
 1. read financial reports of OTA
 2. look for startups about genAI and Hospitality
 3. statista
+4. dataset di startup italiane?
 
 *Data*
 - [istat viaggi](https://www.istat.it/it/archivio/295812)
