@@ -83,10 +83,12 @@ Variables
 		1. 4.3.6
 		2. 4.3.17 for new ai companies worldwide (source?)
 2. https://ourworldindata.org/artificial-intelligence
+3. https://cat.eto.tech/?expanded=Summary-metrics
 
-3. [eu genAI investments](https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/760392/EPRS_ATA(2024)760392_EN.pdf)
-4. https://epthinktank.eu/2024/04/04/ai-investment-eu-and-global-indicators/#:~:text=The%20EU%20and%20the%20United,billion%20in%20US%20AI%20companies.
-5. https://www.euronews.com/business/2024/04/29/who-in-europe-is-investing-the-most-in-artificial-intelligence
+4. [eu genAI investments](https://www.europarl.europa.eu/RegData/etudes/ATAG/2024/760392/EPRS_ATA(2024)760392_EN.pdf)
+5. https://epthinktank.eu/2024/04/04/ai-investment-eu-and-global-indicators/#:~:text=The%20EU%20and%20the%20United,billion%20in%20US%20AI%20companies.
+6. https://www.euronews.com/business/2024/04/29/who-in-europe-is-investing-the-most-in-artificial-intelligence
+7. https://ai-watch.ec.europa.eu/index_en
 
 *dataset*
 List of all countries in the world. (use default with gdp > t or gdp/pop > t).
