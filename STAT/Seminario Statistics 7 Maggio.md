@@ -72,3 +72,10 @@ How do we infere using this method?
 1. back-door criterium
 2. front-door (more complex)
 
+# References
+
+https://en.wikipedia.org/wiki/Graphical_model
+
+pc causal discovery algorithms - Judea Perl book
+
+brady neal is a youtuber. 10 hrs course on causal inference.
