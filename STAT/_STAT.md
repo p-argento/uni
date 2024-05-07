@@ -18,6 +18,8 @@
 17. Data preprocessing in R. Estimators.
 18. Unbiased estimators. Efficiency and MSE
 
+[[Seminario Statistics 7 Maggio]]
+
 ## Resources
 [DidaWiki](http://didawiki.di.unipi.it/doku.php/mds/sds/start)
 Teams
