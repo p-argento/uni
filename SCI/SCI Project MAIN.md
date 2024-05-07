@@ -29,6 +29,11 @@ Variables
 - country
 - investment in ai
 
+Ho scaricato da AIDA le aziende con codice ateco 7911 (Attività delle agenzie di viaggio). Contenuti del database Aida - Informazioni anagrafiche e finanziarie dettagliate su circa 980.000 imprese aggiornate all’ultimo anno disponibile; - Serie Storica di bilanci contenuti fino a 10 anni;
+![[Pasted image 20240507185445.png]]
+
+
+
 
 *Show*
 
@@ -65,6 +70,9 @@ Variables
 - fees on airbnb
 
 (add a button to increase in percentage the fees based on statista estimations)
+
+Ho scaricato da AIDA la lista con codice ateco 55 - ALBERGHI E STRUTTURE SIMILI
+soltanto aziende attive.
 
 | topic | PLOT                                                                                                   | source                |
 | ----- | ------------------------------------------------------------------------------------------------------ | --------------------- |
