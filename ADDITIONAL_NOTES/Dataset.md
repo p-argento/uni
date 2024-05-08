@@ -27,3 +27,5 @@ https://ourworldindata.org/
 
 https://www.sba.unipi.it/it/resources/databases
 
+[booking.com dataset](https://github.com/bookingcom/ml-dataset-mdt)
+

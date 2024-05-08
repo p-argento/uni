@@ -154,6 +154,7 @@ Variables
 - [time](https://time.com/6290940/ai-travel-industry/)
 - [OliverWyman](https://www.oliverwyman.com/our-expertise/insights/2023/oct/generative-ai-leisure-traveler-trends.html)
 - [PNRR e hub del turismo](https://www.italiadomani.gov.it/content/sogei-ng/it/it/Interventi/investimenti/hub-del-turismo-digitale.html)
+- [booking.com on AI](https://business.booking.com/resource-hub/articles/business-travel-and-ai/?aid=2139500%3Blabel%3DORG_Z29vZ2xlX19PUyBYX0Nocm9tZV8xNzE1MTc2MjY0X3Jlc291cmNlLWh1Yi9hcnRpY2xlcy9idXNpbmVzcy10cmF2ZWwtYW5kLWFpX0J1c2luZXNzIHRyYXZlbCByZXNvdXJjZXMgfCBCb29raW5nLmNvbSBmb3IgQnVzaW5lc3NfaXQtaXRfSVQ%3D)
 
 
 
