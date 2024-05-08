@@ -16,7 +16,7 @@
 | travel agencies | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant? |
 
 *sources*
-- Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview) and [here](https://www.statista.com/topics/2704/online-travel-market/#topicOverview)
+- Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview) and [here](https://www.statista.com/topics/2704/online-travel-market/#topicOverview) and [here](https://www.statista.com/outlook/mmo/travel-tourism/italy?currency=EUR#revenue)
 - [OliverWyman-GENERATIVE AI’S INFLUENCE ON LEISURE TRAVELER BEHAVIORS](https://www.oliverwyman.com/our-expertise/insights/2023/oct/generative-ai-leisure-traveler-trends.html)
 - AIDA?
 
