@@ -29,3 +29,7 @@ https://www.sba.unipi.it/it/resources/databases
 
 [booking.com dataset](https://github.com/bookingcom/ml-dataset-mdt)
 
+
+## Tools
+[Web Scraping Using R](https://github.com/yusuzech/r-web-scraping-cheat-sheet#223-simulating-scrolls-clicks-text-inputs-logins-and-other-actions)
+

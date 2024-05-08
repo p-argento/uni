@@ -32,7 +32,7 @@ Variables
 Ho scaricato da AIDA le aziende con codice ateco 7911 (Attività delle agenzie di viaggio). Contenuti del database Aida - Informazioni anagrafiche e finanziarie dettagliate su circa 980.000 imprese aggiornate all’ultimo anno disponibile; - Serie Storica di bilanci contenuti fino a 10 anni;
 ![[Pasted image 20240507185445.png]]
 
-
+Su Statista ci sono le più grandi OTA. Ci vorrebbe un menù a tendina per selezionare uno dei due dataset oppure quello completo per confronto.
 
 
 *Show*
@@ -74,6 +74,10 @@ Variables
 
 Ho scaricato da AIDA la lista con codice ateco 55 - ALBERGHI E STRUTTURE SIMILI
 soltanto aziende attive.
+
+Forse le aziende non sono una buona idea.
+Meglio provare con le strutture ricettive delle grandi città (Roma, Milano, Bologna).
+E verificare se sono su airbnb, booking e ? stimando quanto pagano di fees in media.
 
 | topic | PLOT                                                                                                   | source                |
 | ----- | ------------------------------------------------------------------------------------------------------ | --------------------- |
@@ -123,6 +127,8 @@ Variables
 |       | in eu?                             |                 |
 |       | startup italiane di gen AI         | dataset startup |
 
+## Bonus Dataset
+Startup innovative in italia.
 
 
 

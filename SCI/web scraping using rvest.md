@@ -1,5 +1,6 @@
 With rvest.
 
+also [Web Scraping Using R](https://github.com/yusuzech/r-web-scraping-cheat-sheet#223-simulating-scrolls-clicks-text-inputs-logins-and-other-actions)
 ## HTML
 ![[Pasted image 20240321134131.png|300]]
 First, we assign the document to a variable

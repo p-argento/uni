@@ -7,7 +7,7 @@ Filippo Chiarello
 [[Text Mining Lecture]]
 ## Datacamp
 [[ggplot]]
-[[webscraping using rvest]]
+[[web scraping using rvest]]
 [[text mining using texttidy]]
 [[shiny R]]
 ## Utilities
