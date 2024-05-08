@@ -9,7 +9,7 @@ Giorgio Ghelli
 6. SQL data definition
 [[7. Programming with SQL]]
 [[8. Normalization]]
-9. Query Execution
+[[9. Query Execution]]
 10. Transactions
 
 ## Resources
