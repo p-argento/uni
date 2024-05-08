@@ -10,7 +10,7 @@ Giorgio Ghelli
 [[7. Programming with SQL]]
 [[8. Normalization]]
 [[9. Query Execution]]
-10. Transactions
+[[10. Transactions]]
 
 ## Resources
 Textbook: A. Albano, Database essentials, 2021 [here](http://fondamentidibasididati.it/)

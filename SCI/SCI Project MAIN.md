@@ -56,7 +56,8 @@ Ho scaricato da AIDA le aziende con codice ateco 7911 (Attività delle agenzie d
 - count how many italian accomodation businesses are present in the top 3 OTA (booking, expedia, airbnb)
 	- compare number of acc.bss. on operdormire with the number on ota
 - understand OTA's fees
-- AIDA?
+- AIDA
+- airbnb data [here](https://insideairbnb.com/get-the-data)
 
 *dataset*
 List all the accommodation businesses in italy.
@@ -143,7 +144,7 @@ Variables
 	- with interesting survey
 - [database strutture toscana ](https://dati.toscana.it/dataset/movimento-dei-clienti-e-struttura-dell-offerta-ricettiva-toscana-anno-2023)
 - [enit](https://www.enit.it/it/research-library)
-
+- [airbnb statista](https://www.statista.com/statistics/1084927/number-of-airbnb-listings-in-selected-italian-cities/)
 
 *Articles*
 
