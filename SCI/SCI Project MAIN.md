@@ -83,7 +83,7 @@ Ho scaricato da AIDA la lista con codice ateco 55 - ALBERGHI E STRUTTURE SIMILI
 soltanto aziende attive.
 
 Forse le aziende non sono una buona idea.
-Meglio provare con le strutture ricettive delle grandi città (Roma, Milano, Bologna).
+Meglio provare con le strutture ricettive delle grandi città (Roma, Milano, Firenze).
 E verificare se sono su airbnb, booking e ? stimando quanto pagano di fees in media.
 
 | topic | PLOT                                                                                                   | source                |
@@ -146,7 +146,7 @@ https://shiny.posit.co/r/gallery/life-sciences/hospital-data-antimicrobial/
 https://shiny.posit.co/r/gallery/life-sciences/biodiversity-national-parks/
 https://shiny.posit.co/r/gallery/government-public-sector/brazil-voter-profile/
 
-
+[LLM HuggingFace](https://huggingface.co/papers/2402.01622)
 
 
 
