@@ -143,6 +143,7 @@ In February 2023, [Trip.com](https://www.statista.com/topics/8804/tripcom-group
 
 ## Examples of Shiny App
 https://shiny.posit.co/r/gallery/
+https://r-graph-gallery.com/
 
 https://shiny.posit.co/r/gallery/life-sciences/hospital-data-antimicrobial/
 https://shiny.posit.co/r/gallery/life-sciences/biodiversity-national-parks/
