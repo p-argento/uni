@@ -14,6 +14,13 @@
 | area            | questions                                                                                                             |
 | --------------- | --------------------------------------------------------------------------------------------------------------------- |
 | travel agencies | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant? |
+*presentation*
+2. [Share of travelers who used a mobile device to plan or research travel with an AI chatbot](https://www.statista.com/statistics/1421734/mobile-travel-planning-with-ai-chatbot-worldwide-by-country/)
+3. oliverwyman
+	1. [Forecast impact of generative artificial intelligence (AI) investments by travel suppliers on online travel agency (OTA)](https://www.statista.com/statistics/1428649/impact-ai-investments-ota-booking-share-us/)
+	2. [Share of leisure travelers who recently used generative artificial intelligence (AI) for travel inspiration, planning, or booking](https://www.statista.com/statistics/1427995/generative-ai-use-leisure-travel-planning-us-canada/)
+	3. 
+
 
 *sources*
 - Statista - AI on tourism [here](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/#topicOverview) and [here](https://www.statista.com/topics/2704/online-travel-market/#topicOverview) and [here](https://www.statista.com/outlook/mmo/travel-tourism/italy?currency=EUR#revenue)
@@ -127,8 +134,13 @@ Variables
 |       | in eu?                             |                 |
 |       | startup italiane di gen AI         | dataset startup |
 
-## Bonus Dataset
-Startup innovative in italia.
+## GENERATIVE AI
+
+### Which travel and tourism companies have adopted generative AI tools?
+[statista](https://www.statista.com/topics/10887/artificial-intelligence-ai-use-in-travel-and-tourism/)
+In February 2023, [Trip.com](https://www.statista.com/topics/8804/tripcom-group/#topicOverview) launched TripGen, a chatbot powered by OpenAI that allows the company’s mobile app users to get recommendations on flights, hotels, and other travel services. Soon after that, Kayak (owned by [Booking Holdings](https://www.statista.com/topics/9469/booking-holdings-inc/#topicOverview)) and Expedia (leading brand of the [Expedia Group](https://www.statista.com/topics/3363/expedia-inc/#topicOverview)) announced the introduction of ChatGPT plugins, while eDreams ODIGEO cooperated with Google’s Bard. Meanwhile, [Airbnb](https://www.statista.com/topics/2273/airbnb/#topicOverview) acquired GamePlanner.AI in November 2023, intending to integrate AI to its platform. The rapid implementation of these tools by major OTAs shows the interest in using generative AI for trip planning, one of the travel aspects that could be most impacted by this technology.
+
+
 
 
 
