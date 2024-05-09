@@ -141,6 +141,13 @@ Variables
 In February 2023, [Trip.com](https://www.statista.com/topics/8804/tripcom-group/#topicOverview) launched TripGen, a chatbot powered by OpenAI that allows the company’s mobile app users to get recommendations on flights, hotels, and other travel services. Soon after that, Kayak (owned by [Booking Holdings](https://www.statista.com/topics/9469/booking-holdings-inc/#topicOverview)) and Expedia (leading brand of the [Expedia Group](https://www.statista.com/topics/3363/expedia-inc/#topicOverview)) announced the introduction of ChatGPT plugins, while eDreams ODIGEO cooperated with Google’s Bard. Meanwhile, [Airbnb](https://www.statista.com/topics/2273/airbnb/#topicOverview) acquired GamePlanner.AI in November 2023, intending to integrate AI to its platform. The rapid implementation of these tools by major OTAs shows the interest in using generative AI for trip planning, one of the travel aspects that could be most impacted by this technology.
 
 
+## Examples of Shiny App
+https://shiny.posit.co/r/gallery/life-sciences/hospital-data-antimicrobial/
+https://shiny.posit.co/r/gallery/life-sciences/biodiversity-national-parks/
+https://shiny.posit.co/r/gallery/government-public-sector/brazil-voter-profile/
+
+
+
 
 
 
