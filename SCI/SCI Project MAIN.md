@@ -39,6 +39,16 @@ However, building trust in search queries on ChatGPT-integrated platforms would 
 *openai competitors*
 There is also a threat to the relevance of ChatGPT if sector-speciﬁc generative AI tools like QuadGPT (a travel service by QuadLabs Technologies) and Magpie (a product optimization tool for travel companies) (Table 2) become popular among users. Users in the travel and tourism industry would be more interested in travel-speciﬁc generative AI platforms like QuadGPT, which provide them with speciﬁc services tailored to the travel and tourism sector, rather than a platform catering to all services. There is a growing preference among customers for platforms that offer specialized services instead of general ones (Dwivedi et al., 2023b; Ramasundaram et al., 2023). Therefore, OpenAI may consider developing sector-speciﬁc variants of ChatGPT in the near future to counter the popularity of specialized generative AI platforms.
 
+[Personalizing guest experience with generative AI in the hotel industry: there's more to it than meets a Kiwi’s eye Pola Q. Wang]()
+
+![[Pasted image 20240513154352.png]]
+
+[Technological evolution in tourism: a Horizon 2050 perspective]()
+
+[TravelPlanner: A Benchmark for Real-World Planning with Language Agents]()
+
+[What drives tourists’ continuance intention to use ChatGPT for travel services? A stimulus-organism-response perspective]()
+
 
 
 ## 1. About OTA
