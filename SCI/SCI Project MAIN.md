@@ -8,6 +8,37 @@
 | public                   | Can Destination Management Organizations (DMO) use Generative AI to improve efficacy in attracting tourists?           | genAI for marketing, enit reports                                                                                  |
 | tourist                  | Phases of customer journey in travel planning where GenAI is relevant? Will the planning and booking behaviour change? | article, different customer journey based on customer/travel type (ie luxury), twitter to know how chatgpt is used |
 | rights                   | Are accommodation businesses and consumers rights threatened? Are there new policies required?                         |                                                                                                                    |
+## Notes on papers
+Wong,Lian,Sun-[Autonomous travel decision-making: An early glimpse into ChatGPT and generative AI](https://linkinghub.elsevier.com/retrieve/pii/S1447677023001158) 
+*plugin*
+Furthermore, ChatGPT has plugins that allow for integration with other travel applications (Liang et al., 2023). This means that tourists no longer need to visit multiple travel apps repeatedly to plan their trips. Instead, ChatGPT can help tourists in booking attraction admission tickets, making hotel reservations, checking air flight schedules, and even selecting meals that tourists prefer. It is important to note that users of the app can request ChatGPT to refrain from specific itineraries, or to further refine details of each specific recommendation.
+*saving time*
+The advantages of GPT in the pre-trip phase have disruptive impacts to the traditional information acquisition process. It expedites information filtering and evolution by reducing the amount of irreverent information. It thus helps save tourists’ valuable time, effort, and money, while increasing the efficiency of their decision-making. 
+This function greatly alleviates tourists’ effort in searching for information and improves their travel experience and satisfaction. 
+*customization*
+Moreover, ChatGPT generates responses that are tailored to specific user inputs, thus providing personalized recommendations to each tourist (Gursoy et al., 2023). The use of ChatGPT represents a significant step towards delivering more personalized and targeted recommendations to tourists.
+*different roles*
+More importantly, unlike previous algorithmic AI, ChatGPT can assume a variety of roles (Chatterjee & Deth- lefs, 2023; Va¨rtinen et al., 2022), such as a tour guide, a local resident, or a travel blogger, all depending on personal needs.
+For example, the perspective of a resident can allow the tourist to grasp a more authentic and immersive travel experience in a local community (Chen & Rahman, 2018).
+*in-site decisions*
+Tourists are increasingly more reliant on in-destination decisions not only because they are empowered by smartphones, but such a decision-making process can help them to better respond to emergencies and unexpected events in an unfamiliar environment, such as overcrowding and congestion (Papadopoulou et al., 2023), poor weather, and health issues.
+*communication gap*
+ChatGPT, however, can help to ease the language and cultural barriers, while fostering greater cultural understanding in a new environment. A promising solution for bridging the communication gap between tourists and residents.
+*guided tours*
+Tour guiding and interpretation are valueadded services that can facilitate a memorable travel experience (Huang et al., 2015).
+
+Carvalho,Ivanov-[ChatGPT for tourism: applications, beneﬁts and risks](https://doi.org/10.1108/TR-02-2023-0088)
+
+Dwivedi,Pandeiy,Currie,Micu-[Leveraging ChatGPT and other generative artiﬁcial intelligence (AI)-based applications in the hospitality and tourism industry: practices, challenges and research agenda](https://doi.org/10.1108/IJCHM-05-2023-0686)
+
+*use cases*
+![[Pasted image 20240513152346.png]]
+
+*building trust*
+However, building trust in search queries on ChatGPT-integrated platforms would be a challenge. Prospective customers are accustomed to traditional search engine ranking page results from platforms like Google, Yahoo and Bing. Nonetheless, trust is a vital component in decision-making, especially for high-involvement services such as foreign trips, international hotel bookings and bulk bookings for sightseeing.
+*openai competitors*
+There is also a threat to the relevance of ChatGPT if sector-speciﬁc generative AI tools like QuadGPT (a travel service by QuadLabs Technologies) and Magpie (a product optimization tool for travel companies) (Table 2) become popular among users. Users in the travel and tourism industry would be more interested in travel-speciﬁc generative AI platforms like QuadGPT, which provide them with speciﬁc services tailored to the travel and tourism sector, rather than a platform catering to all services. There is a growing preference among customers for platforms that offer specialized services instead of general ones (Dwivedi et al., 2023b; Ramasundaram et al., 2023). Therefore, OpenAI may consider developing sector-speciﬁc variants of ChatGPT in the near future to counter the popularity of specialized generative AI platforms.
+
 
 
 ## 1. About OTA
