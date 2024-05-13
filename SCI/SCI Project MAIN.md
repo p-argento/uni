@@ -20,7 +20,7 @@ Moreover, ChatGPT generates responses that are tailored to specific user inputs,
 *different roles*
 More importantly, unlike previous algorithmic AI, ChatGPT can assume a variety of roles (Chatterjee & Deth- lefs, 2023; Va¨rtinen et al., 2022), such as a tour guide, a local resident, or a travel blogger, all depending on personal needs.
 For example, the perspective of a resident can allow the tourist to grasp a more authentic and immersive travel experience in a local community (Chen & Rahman, 2018).
-*in-site decisions*
+*last-minute decisions*
 Tourists are increasingly more reliant on in-destination decisions not only because they are empowered by smartphones, but such a decision-making process can help them to better respond to emergencies and unexpected events in an unfamiliar environment, such as overcrowding and congestion (Papadopoulou et al., 2023), poor weather, and health issues.
 *communication gap*
 ChatGPT, however, can help to ease the language and cultural barriers, while fostering greater cultural understanding in a new environment. A promising solution for bridging the communication gap between tourists and residents.
@@ -49,6 +49,10 @@ There is also a threat to the relevance of ChatGPT if sector-speciﬁc generativ
 
 [What drives tourists’ continuance intention to use ChatGPT for travel services? A stimulus-organism-response perspective]()
 
+*plugins*
+Additionally, ChatGPT can offer plugin enabling integration with various travel applications, therefore negates the need for tourists to repeatedly switch between multiple travel apps during trip planning since ChatGPT can assist in tasks, such as securing attraction tickets, hotel reservation, flight schedule checks, and even meal preferences (Wong et al., 2023).
+*acquisition*
+This heightened degree of tourist engagement and experience contributes significantly to both tourist acquisitions and retention efforts (Carvalho & Ivanov, 2023). Thus, with ChatGPT-type platforms readily offering detailed and accurate information, tourists are empowered to make bookings confidently without the need for delay (Dwivedi et al., 2023).
 
 
 ## 1. About OTA
