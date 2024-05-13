@@ -1,4 +1,14 @@
+## Tidy Data
+The goal of tidyr is to help you create **tidy data**. Tidy data is data where:
 
+1. Each variable is a column; each column is a variable.
+2. Each observation is a row; each row is an observation.
+3. Each value is a cell; each cell is a single value.
+
+https://tidyr.tidyverse.org/
+
+
+## Code
 
 ```r
 ui <- fluidPage(
