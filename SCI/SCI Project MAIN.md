@@ -54,6 +54,8 @@ Additionally, ChatGPT can offer plugin enabling integration with various travel 
 *acquisition*
 This heightened degree of tourist engagement and experience contributes significantly to both tourist acquisitions and retention efforts (Carvalho & Ivanov, 2023). Thus, with ChatGPT-type platforms readily offering detailed and accurate information, tourists are empowered to make bookings confidently without the need for delay (Dwivedi et al., 2023).
 
+![[Pasted image 20240513180726.png]]
+
 
 ## 1. About OTA
 | area            | questions                                                                                                             |
