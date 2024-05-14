@@ -189,6 +189,11 @@ In February 2023, [Trip.com](https://www.statista.com/topics/8804/tripcom-group
 
 [edreams AI](https://www.googlecloudpresscorner.com/2023-05-04-eDreams-ODIGEO-to-pioneer-generative-AI-in-ecommerce-with-Google-Cloud)
 [airbnb gameplanner](https://news.airbnb.com/airbnb-has-acquired-gameplanner-ai/)
+[tripgenie](https://www.trip.com/newsroom/introducing-tripgenie-groundbreaking-ai-travel-assistant/)
+[tripgen](https://www.trip.com/newsroom/trip-com-launches-tripgen-your-real-time-travel-guide/)
+[expedia app](https://www.expedia.com/newsroom/expedia-launched-chatgpt/)
+
+ota's have a lot of cash [source](https://skift.com/2023/02/27/booking-and-airbnb-have-a-22-billion-wad-of-cash-how-will-they-spend-it/)
 
 
 ## Examples of Shiny App
