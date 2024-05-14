@@ -196,6 +196,10 @@ In February 2023, [Trip.com](https://www.statista.com/topics/8804/tripcom-group
 ota's have a lot of cash [source](https://skift.com/2023/02/27/booking-and-airbnb-have-a-22-billion-wad-of-cash-how-will-they-spend-it/)
 [asklayla](https://www.nytimes.com/2024/05/08/technology/personaltech/ai-vacation-planning-travel-agent.html)
 
+[[comment on otas investments]]
+
+[[global travel startup fundraising]]
+
 ## Examples of Shiny App
 https://shiny.posit.co/r/gallery/
 https://r-graph-gallery.com/
