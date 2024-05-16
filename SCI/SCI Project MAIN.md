@@ -62,6 +62,12 @@
 | description | Annual increase / (decrease) vs. status quo ($MN) in Hotels<br><br>(Based on Americas/U.S. room revenue projections for Marriott/IHG/Hilton/Hyatt/Choice, 12% average OTA commission rate, 55% online booking penetration) |
 | source      | 1. [OliverWyman](https://www.oliverwyman.com/our-expertise/insights/2023/oct/generative-ai-leisure-traveler-trends.html)                                                                                                   |
 | observation |                                                                                                                                                                                                                            |
+| 7           |                                                                                                                                                                                                                            |
+| name        | Online travel market size worldwide 2017-2028                                                                                                                                                                              |
+| description | Online travel market size worldwide from 2017 to 2023, with a forecast until 2028 (in billion U.S. dollars)                                                                                                                |
+| source      | https://www.statista.com/statistics/1179020/online-travel-agent-market-size-worldwide/                                                                                                                                     |
+| observation |                                                                                                                                                                                                                            |
+|             |                                                                                                                                                                                                                            |
 
 
 
