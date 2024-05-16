@@ -8,6 +8,22 @@
 | public                   | Can Destination Management Organizations (DMO) use Generative AI to improve efficacy in attracting tourists?           | genAI for marketing, enit reports                                                                                  |
 | tourist                  | Phases of customer journey in travel planning where GenAI is relevant? Will the planning and booking behaviour change? | article, different customer journey based on customer/travel type (ie luxury), twitter to know how chatgpt is used |
 | rights                   | Are accommodation businesses and consumers rights threatened? Are there new policies required?                         |                                                                                                                    |
+
+## Official Sources
+
+## 1_ota
+
+| id    | plot | source | observations |
+| ----- | ---- | ------ | ------------ |
+| ota_1 |      |        |              |
+
+
+
+
+
+
+
+
 ## Notes on papers
 Wong,Lian,Sun-[Autonomous travel decision-making: An early glimpse into ChatGPT and generative AI](https://linkinghub.elsevier.com/retrieve/pii/S1447677023001158) 
 *plugin*
