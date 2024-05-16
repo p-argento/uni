@@ -76,6 +76,21 @@
 |             |                                                                                                                                                                                                                            |
 
 
+### rights
+
+
+| 1             |                                                                                                                                                                                     |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name          | Recently used Generative AI for travel inspiration, planning, or booking                                                                                                            |
+| description   | Share of leisure travelers who recently used generative artificial intelligence (AI) for travel inspiration, planning, or booking in the United States and Canada as of August 2023 |
+| source        | https://www.statista.com/statistics/1427995/generative-ai-use-leisure-travel-planning-us-canada/                                                                                    |
+| observations  |                                                                                                                                                                                     |
+| 2             |                                                                                                                                                                                     |
+| name          | Satisfaction with genAI recommendation quality                                                                                                                                      |
+| description   | Satisfaction with generative artificial intelligence's (AI) recommendation quality among leisure travelers in the United States and Canada as of August 2023                        |
+| source        | https://www.statista.com/statistics/1428019/ai-travel-recommendations-satisfaction-united-states-canada/                                                                            |
+| observatioons |                                                                                                                                                                                     |
+
 
 
 
