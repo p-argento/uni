@@ -2,12 +2,12 @@
 
 | area                     | questions                                                                                                              | ideas                                                                                                              |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| travel agencies          | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant?  | read financial reports of OTA, look for startups, statista                                                         |
-| accommodation businesses | What is the financial impact of GenAI on accommodation businesses? Will OTAs choices impact them considerably?         | opendormire and booking, ota's fees                                                                                |
-| countries                | Are other countries in the EU investing in GenAI? How and how much?                                                    | statista, countries reports, patents of different countries                                                        |
-| public                   | Can Destination Management Organizations (DMO) use Generative AI to improve efficacy in attracting tourists?           | genAI for marketing, enit reports                                                                                  |
 | tourist                  | Phases of customer journey in travel planning where GenAI is relevant? Will the planning and booking behaviour change? | article, different customer journey based on customer/travel type (ie luxury), twitter to know how chatgpt is used |
 | rights                   | Are accommodation businesses and consumers rights threatened? Are there new policies required?                         |                                                                                                                    |
+| travel agencies          | How the biggest Online Travel Agencies are investing in Generative AI? Can smaller Travel Agencies still be relevant?  | read financial reports of OTA, look for startups, statista                                                         |
+| accommodation businesses | What is the financial impact of GenAI on accommodation businesses? Will OTAs choices impact them considerably?         | opendormire and booking, ota's fees                                                                                |
+| countries                | Are other countries in the EU investing in GenAI? How and how much?                                                    | statista, countries reports, patents of different countries (and papers)                                           |
+| public                   | Can Destination Management Organizations (DMO) use Generative AI to improve efficacy in attracting tourists?           | genAI for marketing, enit reports                                                                                  |
 
 ## Official Sources
 
