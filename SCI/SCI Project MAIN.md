@@ -66,7 +66,11 @@ This heightened degree of tourist engagement and experience contributes signific
 3. oliverwyman
 	1. [Forecast impact of generative artificial intelligence (AI) investments by travel suppliers on online travel agency (OTA)](https://www.statista.com/statistics/1428649/impact-ai-investments-ota-booking-share-us/)
 	2. [Share of leisure travelers who recently used generative artificial intelligence (AI) for travel inspiration, planning, or booking](https://www.statista.com/statistics/1427995/generative-ai-use-leisure-travel-planning-us-canada/)
-	3. 
+
+istat
+quanto fatturano le ta italiane? quante persone ci lavorano?
+
+
 
 
 *sources*
