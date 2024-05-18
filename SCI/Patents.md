@@ -30,6 +30,7 @@ But they are free to access and a goldmine of information.
 Patents are very powerful data to map content.
 
 A patent is a CONTRACT between the inventor and the state.
+
 ![[Pasted image 20240322142912.png]]
 
 How is an AI patented.
