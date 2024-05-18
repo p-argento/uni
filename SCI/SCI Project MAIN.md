@@ -11,6 +11,20 @@
 
 ## Official Sources
 
+While TravelPlanner is designed to  we also setup a simplified mode solely evaluating agents’ planning skills (sole-planning mode). In this setting, we utilize human-annotated plans to pre-determine the destination cities, and provide detailed and necessary information directly to agents, such as restaurants in the provided cities. This eliminates the need for tool calling as agents don’t need to .
+
+- "Two stage mode": agents collect information from scratch via tools and then plan.
+- "Planning": using human-annotated plans to pre-determine the destination cities, and other details, such as restaurants 
+
+- "Pass Rate": ratio of passed constraints to the total number of constraints.
+
+- Delivery Rate: successfully deliver a final plan within a limited number of steps.
+- Commonsense Constraint Pass Rate: agent can incorporate commonsense into their plan without explicit instructions, such as not repeating places.
+- Hard Constraint Pass Rate: whether a plan satisfies all explicitly given hard constraints in the query, such as budget constraints.
+- Final Pass Rate: meet all aforementioned constraints among all tested plans.
+
+
+
 
 ### rights
 
