@@ -47,3 +47,17 @@ There's an extra oral appello for those that pass both mid-terms.
 
 From september, mid-terms are not valid anymore, and the whole exam must be done.
 
+## Lectures Recovery
+
+DB
+10-04
+16-04
+17-04
+(22-04) correzione db1
+23-04
+24-04
+30-04
+07-05
+08-05
+14-05
+15-05
