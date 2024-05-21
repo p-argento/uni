@@ -49,15 +49,22 @@ From september, mid-terms are not valid anymore, and the whole exam must be done
 
 ## Lectures Recovery
 
-DB
-10-04
-16-04
-17-04
+data manipulation 
+27-03 (da guardare)
+
+normalization
+10-04 x
+16-04 x
+17-04 x
 (22-04) correzione db1
-23-04
-24-04
-30-04
+23-04 x
+
+dbms
+24-04 reached 1 h 17
+30-04 started from 50 min
 07-05
 08-05
+
+exercises
 14-05
 15-05
