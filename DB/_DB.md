@@ -1,9 +1,5 @@
 Databases
 Giorgio Ghelli
-
-## Notes
-[[DB Normalization]]
-
 ## Slides
 [[1. DB Intro]]
 [[2. DB Conceptual Design]]
