@@ -74,6 +74,6 @@ If you want to contribute, please contact the mainteiners.
 
 ## Maintainers and Credits
 *Maintainers*
-Pietro Argento (rep.) [telegram](https://t.me/pietroargento)
+Pietro Argento [contact me](https://t.me/pietroargento)
 
 *Credits*
