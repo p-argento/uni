@@ -2,7 +2,7 @@
 This repo is built and maintained by students.
 It is intended only for helping students.
 It can contain errors or not be updated.
-If you want to contribute, please contact the mainteiners.
+If you want to contribute, please contact the maintainers.
 
 ## Groups
 - [official course website](https://didattica.di.unipi.it/en/master-programme-in-data-science-and-business-informatics/)

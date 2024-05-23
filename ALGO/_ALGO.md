@@ -5,20 +5,15 @@ Rossano Venturini
 > I am joking, but not too much.
 
 ## Lectures
-[[1. Sorting]]
-2. [[Data Structure in Python]]
+[[Sorting]]
+[[Data Structures in Python]]
 [[Advanced Python]]
-[[Hashing]]
-## Notebooks
-[my nb 1](file:///Users/pietro/_DS/ALGO/adsds/Lab_copy/Lecture_01/L01_Basic_Sorting_no_sols.ipynb)
-[nb folder 1](folder:///Users/pietro/_DS/ALGO/adsds/Lab_copy/Lecture_01/)
-
 
 
 
 ## Resources
 Github
-https://github.com/rossanoventurini/adsds?tab=readme-ov-file
+https://github.com/rossanoventurini/adsds
 Classroom
 https://classroom.google.com/u/1/c/NjYxNTg1NzIyODc1
 Visualization of algorithms (step-by-step)
@@ -44,12 +39,11 @@ Theory is written in 45 min and oral afterwards, in the same day.
 Written Exam Exercises
 1. simulation of one of the algorithms seen in class (if done it's 18)
 2. visit of a tree (with RECURSION)
-3. non-trivial modification of some of the algorithms seen
+3. short theory questions
+	1. (before 2024: non-trivial modification of some of the algorithms seen)
 
 Each week, there's a jupyter notebook with exercises.
 Then, few days before the exam, they should be *submitted*.
-
-For the PRE-APPELLO.
 Send an email with the notebooks the date before the exam.
 
 ## Some notes from lectures
