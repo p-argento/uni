@@ -8,7 +8,7 @@ Rossano Venturini
 [[Sorting]]
 [[Data Structures in Python]]
 [[Advanced Python]]
-
+[[Hashing]]
 
 
 ## Resources
