@@ -615,7 +615,7 @@ Let's analyze a stupid binary search.
 ![[Pasted image 20240306102534.png]]
 
 
-# Quick Sort
+c# Quick Sort
 
 > Cormen 7.1, 7.2, 7.3
 
