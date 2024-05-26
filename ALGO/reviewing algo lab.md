@@ -54,6 +54,10 @@ Do it recursively on left and right, leaving alone the pivot, which is already i
 
 MergeSort.
 It is the opposite logic of quicksort.
+After the split, merge the two subarrays using a simple merge of sorted lists that keeps the sorting.
+Do it recursively.
+
+
 
 
 
