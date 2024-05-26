@@ -10,6 +10,7 @@ Rossano Venturini
 [[Advanced Python]]
 [[Hashing]]
 
+[[reviewing algo lab]]
 
 ## Resources
 Github
