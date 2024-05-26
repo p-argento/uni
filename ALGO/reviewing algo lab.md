@@ -58,6 +58,47 @@ After the split, merge the two subarrays using a simple merge of sorted lists th
 Do it recursively.
 
 
+*check search engine*
 
 
+
+2. lab_2
+	1. binary vector
+	2. quicksort
+	3. mergesort
+ok
+
+
+1. lab_3
+	1. activity selection
+	2. fractional knapsack problem
+
+ok
+
+1. lab_4
+	1. k-largest elements with sorting
+	2. k-largest elements with quickselect
+	3. k-largest elements with heap
+	4. distinct elements
+	5. pareto frontier
+
+
+
+1. lab_5
+	1. open addressing with linear probing
+	2. hashing with chain
+	3. dictionary
+
+
+1. lab_6
+	1. groupBy
+
+
+1. lab_7
+	1. static sorted map
+	2. binary search tree
+
+
+1. lab_8
+	1. strongly connected components (kosaraju)
 
