@@ -45,5 +45,15 @@ For every element, it iterates on the remaining array updating the min, then swa
 Insertion Sort. $\Theta(n^2)$
 For every element, it iterates over the previous elements to find correct position of the element, then swap with the element in that position.
 
+QuickSort.
+For every iteration
+1. choose a pivot randomly and place it in the end of the subarray
+2. scan the subarray once and if element is smaller than the pivot, swap with the last element in position m and increase m
+3. swap pivot with element in position m
+Do it recursively on left and right, leaving alone the pivot, which is already in its correct position. No merge is needed.
+
+MergeSort.
+It is the opposite logic of quicksort.
+
 
 
