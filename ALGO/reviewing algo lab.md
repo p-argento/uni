@@ -94,11 +94,12 @@ ok
 1. lab_6
 	1. groupBy
 
-
+maybe a list comprehension can improve it, but looks fine
 
 1. lab_7
 	1. static sorted map
 	2. binary search tree
+
 
 
 1. lab_8
