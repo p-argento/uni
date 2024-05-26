@@ -89,10 +89,11 @@ ok
 	2. hashing with chain
 	3. dictionary
 
-
+ok
 
 1. lab_6
 	1. groupBy
+
 
 
 1. lab_7
