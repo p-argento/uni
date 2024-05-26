@@ -82,12 +82,13 @@ ok
 	4. distinct elements
 	5. pareto frontier
 
-
+*just check quickselect*
 
 1. lab_5
 	1. open addressing with linear probing
 	2. hashing with chain
 	3. dictionary
+
 
 
 1. lab_6
