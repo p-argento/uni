@@ -100,7 +100,7 @@ maybe a list comprehension can improve it, but looks fine
 	1. static sorted map
 	2. binary search tree
 
-
+ok
 
 1. lab_8
 	1. strongly connected components (kosaraju)
