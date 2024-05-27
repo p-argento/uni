@@ -82,7 +82,7 @@ ok
 	4. distinct elements
 	5. pareto frontier
 
-*just check quickselect*
+
 
 1. lab_5
 	1. open addressing with linear probing
