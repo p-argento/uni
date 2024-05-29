@@ -6,11 +6,12 @@ Rossano Venturini
 
 ## Lectures
 [[Sorting]]
+[[Hashing]]
+[[Algo final review]]
+## Lab
 [[Data Structures in Python]]
 [[Advanced Python]]
-[[Hashing]]
-
-[[reviewing algo lab]]
+[[Reviewing algo lab]]
 
 ## Resources
 Github
