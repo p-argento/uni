@@ -21,6 +21,7 @@ Another approach is place each number in its correct position. Start with a one-
 The complexity of an algorithm is the number of steps required in order to find a solution.
 
 ## Properties of Algorithms
+### In-place
 It is an "in-place sort", meaning that modifies the original array.
 It doesn't need extra space for creating a new array.
 We process the array and when the i-th term is not sorted, it will be moved backwards to its correct position, comparing with each antecedent until we found the smaller or equal.
