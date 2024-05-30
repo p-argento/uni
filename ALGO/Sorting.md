@@ -1,7 +1,6 @@
 ## The Sorting Problem
 Input: sequence `A[1,n]` of n elements
-Goal: permutation `A'[1,n]` of A (without creating a new element) such that $$A'[i]\leq A'[i+1]\qquad\forall i\in[1,n-1]$$All the books about algorithms are 1-based (NOT 0-based like python).
-Keep this in mind when turning pseudo-code into real-code.
+Goal: permutation `A'[1,n]` of A (without creating a new element) such that $$A'[i]\leq A'[i+1]\qquad\forall i\in[1,n-1]$$All the books about algorithms are 1-based (NOT 0-based like python). Keep this in mind when turning pseudo-code into real-code.
 
 What is the idea for ordering a vector?
 Never use an external number to replace a number which was supposed to be removed. It is a patch and it is wrong.
@@ -14,19 +13,14 @@ This algorithm is called *selection sort*.
 
 Iterating the array n times and swapping each time the consecutive element if smaller. It is called *bubble sort*. Never use this, it is one of the worst.
 
-Another approach is place each number in its correct position. Start with a one-number array and increasingly add items in the right position.
-This is 
-
-Which one is the best?
-> Try to implement this in python.
-
+Another approach is place each number in its correct position. Start with a one-number array and increasingly add items in the right position. This is *insertion sort*.
 
 --21.02.24--
 
 The complexity of an algorithm is the number of steps required in order to find a solution.
 
 # Insertion Sort
-It is an "inplace sort", meaning that modifies the original array.
+It is an "in-place sort", meaning that modifies the original array.
 It doesn't need extra space for creating a new array.
 We process the array and when the i-th term is not sorted, it will be moved backwards to its correct position, comparing with each antecedent until we found the smaller or equal.
 
@@ -44,8 +38,7 @@ InsertionSort(A)
 		A[i+1] = key
 ```
 
-> Always simulate. Design an example and run the algorithm step by step.
-> I strongly encourage you to try more examples.
+> Always simulate. Design an example and run the algorithm step by step. I strongly encourage you to try more examples.
 
 Running Example.
 > Do not believe in comments. You must simulate.
@@ -83,8 +76,8 @@ We need to agree on a *computer model* that should be
 There a lot of computational models, each one analysing a different aspect like memory. We focus on the easiest, which is called RAM Model.
 It allows to remove algorithms that are very inefficient. But to compare two algorithms that looks efficient, the only way is testing.
 
-*Ram Model*
-CPU takes data from a memory. Afterwards the result will be stored again in mamory.
+*RAM Model*
+CPU takes data from a memory. Afterwards the result will be stored again in memory.
 In our model, all the operations have the same cost (like sum and square root) and access from memory has always the same cost. But in real life this is far from being true.
 Then, there are registers (increasingly bigger):
 1. CPU registers of memory
@@ -113,9 +106,8 @@ But cost is constant, meaning that depends on the computer.
 > try to calculate the f(x) of insertion sort for some arrays.
 > What is the best case? What is the worst case?
 
-+++23.02.24+++
 
-Being a single line doesn't mean costant operation.
+Being a single line doesn't mean constant operation.
 For example, `if 10 in array` costs the length of array.
 
 *What is the running time?*
