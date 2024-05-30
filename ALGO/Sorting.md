@@ -1,3 +1,4 @@
+# Introduction
 ## The Sorting Problem
 Input: sequence `A[1,n]` of n elements
 Goal: permutation `A'[1,n]` of A (without creating a new element) such that $$A'[i]\leq A'[i+1]\qquad\forall i\in[1,n-1]$$All the books about algorithms are 1-based (NOT 0-based like python). Keep this in mind when turning pseudo-code into real-code.
@@ -19,7 +20,7 @@ Another approach is place each number in its correct position. Start with a one-
 
 The complexity of an algorithm is the number of steps required in order to find a solution.
 
-# Insertion Sort
+## Properties of Algorithms
 It is an "in-place sort", meaning that modifies the original array.
 It doesn't need extra space for creating a new array.
 We process the array and when the i-th term is not sorted, it will be moved backwards to its correct position, comparing with each antecedent until we found the smaller or equal.
@@ -49,7 +50,7 @@ There are no automatic tools to check correctness,  we must use a proof.
 "unit testing" means defining some examples, especially with marginal cases like empty array.
 The larger the set for testing is, the better is the confidence in the correctness of the algorithm.
 
-## Loop invariant
+### Loop invariant
 Idea
 1. find a property which is valid for every iteration of the algorithm.
 2. using this property you should be able to check correctness.
@@ -63,7 +64,7 @@ Definitions
 *Loop invariant for Insertion Sort*
 At iteration j, `A[1,...,j-1]` is sorted.
 
-## Stability
+### Stability
 Idea
 1. if we look at the array before and after being sorted, and we focus on different occurrences of the same values, then those occurrences *preserve their relative order*
 	1. $...n_1...n_2...n_3... \rightarrow ...n_1n_2n_3...$
@@ -239,7 +240,7 @@ $n^2$ is really slow already at 100,000
 $n^3$ usually unfeasible, unless very efficient for most of the inputs.
 
 
-# Selection Sort 
+## Analyzing Selection Sort 
 
 The idea is check for the smallest and move it in front of the array.
 Now the prefix of the array contains the sorted array.
