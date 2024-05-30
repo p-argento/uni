@@ -1,4 +1,4 @@
-# Introduction
+# Analysis of algorithms
 ## The Sorting Problem
 Input: sequence `A[1,n]` of n elements
 Goal: permutation `A'[1,n]` of A (without creating a new element) such that $$A'[i]\leq A'[i+1]\qquad\forall i\in[1,n-1]$$All the books about algorithms are 1-based (NOT 0-based like python). Keep this in mind when turning pseudo-code into real-code.
@@ -21,7 +21,12 @@ Another approach is place each number in its correct position. Start with a one-
 The complexity of an algorithm is the number of steps required in order to find a solution.
 
 ## Properties of Algorithms
-### In-place
+Properties
+1. in-place
+2. correctness
+3. stability
+
+*In-place.*
 It is an "in-place sort", meaning that modifies the original array.
 It doesn't need extra space for creating a new array.
 We process the array and when the i-th term is not sorted, it will be moved backwards to its correct position, comparing with each antecedent until we found the smaller or equal.
@@ -48,11 +53,9 @@ Running Example.
 
 Let's prove the *correctness of this algorithm*.
 There are no automatic tools to check correctness,  we must use a proof.
-"unit testing" means defining some examples, especially with marginal cases like empty array.
-The larger the set for testing is, the better is the confidence in the correctness of the algorithm.
+"unit testing" means defining some examples, especially with marginal cases like empty array. The larger the set for testing is, the better is the confidence in the correctness of the algorithm.
 
-### Loop invariant
-Idea
+We can use a "loop invariant".
 1. find a property which is valid for every iteration of the algorithm.
 2. using this property you should be able to check correctness.
 3. the goal is to prove that after the loop the array is sorted.
@@ -62,15 +65,14 @@ Definitions
 3. maintenance: the property holds after every iteration
 4. termination: the property holds after the loop terminates
 
-*Loop invariant for Insertion Sort*
+Loop invariant for Insertion Sort.
 At iteration j, `A[1,...,j-1]` is sorted.
 
-### Stability
-Idea
-1. if we look at the array before and after being sorted, and we focus on different occurrences of the same values, then those occurrences *preserve their relative order*
+Idea of *stability*.
+1. if we look at the array before and after being sorted, and we focus on different occurrences of the same values, then those occurrences preserve their relative order
 	1. $...n_1...n_2...n_3... \rightarrow ...n_1n_2n_3...$
 
-## Analysis of Algorithms
+## RAM Model
 What does it mean? It means finding a mathematical formula which is able to tell us how many steps the algorithm requires. What does a step mean?
 We need to agree on a *computer model* that should be
 1. simple enough to make analysis possible
@@ -325,12 +327,15 @@ It is enough to check the last element of B because B is sorted.
 Now, the running time is linear.
 But append does not always cost constant time. It is not fully correct.
 
---28.02--
+
+
+# Merge Sort
+
 ## Recursion
 It solves a problem on calling itself for smaller functions.
 ```pseudocode
 f(n)
-if n<=1 return 1 // best case
+if n<=1 return 1 // base case
 return n*f(n-1) // call the function on a smaller problem
 ```
 "Smaller problem" is required for termination, meaning reaching the best case.
@@ -363,11 +368,11 @@ Three main steps
 	2. in Fib is just the call `Fib()`
 	3. most of the time is just calling the function
 3. combine
-	1. combine the solutions of the subinstances to tget the solution of the original instances
+	1. combine the solutions of the subinstances to get the solution of the original instances
 	2. in Fib is the sum `+`
 	3. difficult to define
 
-# Merge Sort
+## MergeSort Algorithm
 An optimal sorting algorithm, meaning that you cannot do better.
 It use the Divide and Conquer paradigm. Many useful algos follow this approach..
 It runs in $\Theta(nlogn)$ time.
@@ -383,7 +388,7 @@ Divide and conquer steps.
 	1. each recursive call get just two results
 	2. merge the two now sorted sub-arrays
 	3. how to merge? just compare each time the first elements of the sub-arrays and add the min to the final array (use i and j)
-		1. if equal, take to first to guarantee stability
+		1. if equal, take the first to guarantee stability
 
 Example of merge with `A=[2,4,5,7]` and `B=[1,2,3,6]`.
 In the pseudocode, we use sentinels, meaning that when we reach the end of one of the two arrays, we set the sentinel of that array as $+\infty$ and keep comparing.
@@ -424,14 +429,10 @@ In the second loop, we do not need -1 because q is the last element of the first
 > On friday, lab about insertion and selection sort.
 > Next week we analyze algos
 
-
-### Sorting LAB
+## MergeSort in LAB
 
 `assert test_sortedness( SelectionSort(my_list) ), "Must be increasing!"`  
-check an assertion that must be true.
-It is useful because it tells you what's wrong.
-It check the condition, if false the program terminates and print the error.
-Use reasonable assertions is a best practice.
+It is useful because it tells you what's wrong. It checks the condition, if false the program terminates and print the error. Use reasonable assertions is a best practice.
 
 > Always write more tests, at least 3,4
 
@@ -459,11 +460,7 @@ print( sorted(list(range(10)), key=functools.cmp_to_key(my_cmp)) )
 ```
 Remember this. It does the magic. Allows to compare keys using your comparator.
 
-dog is the term. 0,1,2 is the 
-The lists are sorted because in this way the complexity is linear and not quadratic.
-
---5.3.24--
-## Continuation of MergeSort
+## More on MergeSort
 The cost of merge is $\Theta(n1+n2)$.
 The next part of the algo is the following.
 We only care about the part from p(included) to r(not included).
@@ -483,7 +480,7 @@ Everything is a side effect on the array itself. It in not copying or creating a
 
 > Be prepared to simulate MergeSort in the exam.
 
-When you go down recursively, we are actually comparing two first two elements and sorting them, go the the third and forth, and so on.
+When you go down recursively, we are actually comparing the first two elements and sorting them, go the the third and forth, and so on.
 Next, we deal we pairs, and sort the couples of pairs.
 Each time the pairs are doubled.
 How many layers are needed?
@@ -491,8 +488,9 @@ $$2^L=n\rightarrow L=log_2n$$
 The number of elements is $log_2n$
 
 Is MergeSort stable? Yes
-Is MergeSort inline? No, because Merge copy the two parts before merging.
+Is MergeSort in-place? No, because Merge copy the two parts before merging.
 
+![[Pasted image 20240530181823.png]]
 ## Analysis of Mergesort
 Let's analyse mergesort.
 No difference in input: $$worst case = best case$$
@@ -532,13 +530,13 @@ But this is not satisfactory. We want an easy way to compare algorithms.
 Solve recurrences with recursion tree.
 I am replacing T(n/2) with the definition.
 
-> PASTE THE TREE
+![[Pasted image 20240530181922.png]]
 
 The cost is the sum of all nodes.
 In the case of MergeSort, just draw the tree with logn layers and sum all the nodes.
 However, we observe that every level costs $C(n)$.
 And then the overall cost is $$\Theta(n\cdot log\ n)$$
-# Binary Search
+## Binary Search
 The algo finds the position of a target value within a sorted array.
 It is a good principle to divide the largest problem into balanced subproblems
 It is the problem of indexing elements to answer queries.
@@ -802,14 +800,13 @@ It is sufficient a counterproof.
 For example a quicksort with a fixed pivot.
 
 
-# Counting Sort
-This is the building block of Radix Sort, that we will se next time.
-
-## Sorting in linear time
+# Sorting in linear time
  This is NOT possible of course with comparison-based algo.
  But we will see an algorithm (Radix Sort) that can sort in linear time.
 
 ## Unstable Counting Sort
+This is the building block of Radix Sort, that we will se next time.
+
 Sort in linear time an array A with n integers, meaning `|A|=n`.
 We are leaving comparison-based world and we are forced to sort integers.
 If `max(A)=k=O(n)`, meaning that it is not too large.
@@ -823,7 +820,7 @@ $\Theta$ means that there is exactly a worst case with this time.
 This is the only case where Cormen uses zero-based indexes.
 Remember that we are sorting integers.
 
-> k.19.1
+![[Pasted image 20240530180128.png]]
 
 Is it inplace? NO
 Is it stable? NO, but Eradic Sort needs stability in the building block.
@@ -873,13 +870,12 @@ In position i we are storing values smaller or equal to i.
 But i is also equal to the index of the last occurence of i.
 For this reason, we process the array C backwards.
 
+![[Pasted image 20240530180153.png]]
 
-> k.19.2
 
-
-# Radix Sort
+## Radix Sort
 Last lecture about sorting.
-## Idea
+
 We said that Counting Sort runs in $\Theta(n)=\Theta(n+k)$ if $k\in O(n)$, because $c\cdot n$ with constant $c$.
 
 You cannot increase the largest value too much, otherwise it will be slower.
@@ -889,15 +885,15 @@ If for example c =4, it means that we can run in linear time for example for n=1
 
 We are essentially using Counting Sort more times.
 
-## Algorithm
+*Algorithm*
 
-> k.20.1
+![[Pasted image 20240530180210.png]]
 
 We actually need to start from the least significant digit.
 
-> k.20.2
+![[Pasted image 20240530180225.png]]
 
-## Proof of correctness
+*Proof of correctness*
 There are 3 possible cases
 
 |        | case 1 | case 2 | case 3  |
@@ -911,7 +907,6 @@ The third case is because of stability.
 It is so powerful because just sort the digits, without caring about anything else.
 In the previous algo, the grouping was necessary to keep track of the previous iterations.
 
-## Pseudocode
 
 ```pseudocode
 RadixSort(A,d)
@@ -932,7 +927,7 @@ And this means the largest digit which is 9, with decimal representation of numb
 So, with decimal representation of numbers, the running time is $\Theta(d(n+10))$ time.
 If $d=11$, meaning billions, we have $\Theta(11(n+10))$ time.
 
-## Cool intuition
+*Cool intuition*
 Note that there are two costs, one depending on n and the other depending on number of digits. So, we can increase the max number k to do less iterations d. 
 In the example, $\Theta(11(n+10))\rightarrow\Theta(6(n+100))\rightarrow \Theta(3(n+10,000))$
 
@@ -942,8 +937,8 @@ It depends on n.
 Let's formalize it.
 > This is the second most difficult thing after the lower bound.
 
-> k.20.3
+![[Pasted image 20240530180241.png]]
 
-> k.20.4
+![[Pasted image 20240530180253.png]]
 
 
