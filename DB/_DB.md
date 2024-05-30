@@ -60,10 +60,10 @@ normalization
 23-04 x
 
 dbms
-24-04 reached 1 h 17
-30-04 started from 50 min
-07-05
-08-05
+24-04 x
+30-04 x
+07-05 x
+08-05 x
 
 exercises
 14-05
