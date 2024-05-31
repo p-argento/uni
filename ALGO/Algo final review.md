@@ -104,7 +104,9 @@ The main property is the (Max) Heap Property, meaning that $\forall node\ i, A[p
 
 The consequence is that the max is at the root, so `Max(A): return A[1]`
 
-How to maintain the property? We use the function `MaxHeapify(A,i)`. Calling it on node i means that we assume that both children of i are the roots of valid MaxHeaps. This assumption is VERY IMPORTANT: in MaxHeapify, we only want to fix i, making sure that its two children respect the property of being not bigger than the parent. In the code, MaxHeapify stops when `largest=i`, otherwise swap and call recursively on largest, checking if now the position of the value inserted is okay. The time in the worst case is the height of the tree, which is logn.
+How to maintain the property? We use the function `MaxHeapify(A,i)`. Calling it on node i means that we assume that both children of i are the roots of valid MaxHeaps. This assumption is VERY IMPORTANT: in MaxHeapify, we only want to fix i, making sure that its two children respect the property of being not bigger than the parent. 
+
+In the code, MaxHeapify stops when `largest=i`, otherwise swap and call recursively on largest, checking if now the position of the value inserted is okay. The time in the worst case is the height of the tree, which is logn.
 
 How to build a heap? Just apply MaxHeapify to an unordered array. A sorted array is already a valid heap, but we can do better than sorting in nlogn.
 ```
