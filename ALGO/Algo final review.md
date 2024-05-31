@@ -35,4 +35,43 @@ Use a loop invariant, that is a property that is valid for each iteration of the
 
 Stability of an algo means that equal values maintein their relative order.
 
+...
 
+## 5. Hashing
+It solves the dictionary problem.
+We want to implement the following operations:
+1. insert(s,k) -> adds key k to set s
+2. delete(s,k) -> removes key k from set s
+3. lookup(s,k) -> true if k in S
+
+There are 3 solutions
+1. (trivial) direct access table
+	1. constant time operations, but $\Theta(|U|)$ space
+2. hash table with chaining
+3. hash table with open addressing
+
+A good hash function is one that spread the keys on the table.
+A reasonable class of functions is:
+$h(k)=(ak+b\%prime)\%|T|)$ where $a,b$ chosen at random at the beginning and stored to reuse the function.
+
+The load factor is $\alpha=\frac{|S|}{|T|}$.
+It is the expected number of keys per slot.
+Lookup and delete takes $O(1+\alpha)$ in expectation.
+
+Values in open addressing can be
+1. a key of s
+2. none
+3. `deleted`
+
+Open addressing uses probe sequences.
+1. linear probing
+	1. $h(k,i)=(h'(k)+i)\%|T|$
+	2. very cache friendly
+	3. however clusters might merge creating long runs of entries
+2. quadratic probing (used by python dict)
+	1. $h(k,i)=(h'(k)+c_1i+c_2i^2)\%|T|$
+	2. $c_1i$ is to be cache friendly by staying local
+	3. while $c_2i^2$ is to move away avoiding merging of clusters
+3. double hashing
+	1. $h(k,i)=(h'(k)+ih_2(k))\%|T|$
+	2. no local anymore
