@@ -122,8 +122,97 @@ Extract-Max(A) consists of
 The complexity is logn.
 
 IncreaseKey(A, i, key).
-1. first 
+1. check that key is really increasing
+2. update the key
+3. *not sure*
+
+InsertKey(A,key).
+1. append the lowest key to the heap
+2. use IncreaseKey() to update using the actual value of the key
+
+DecreaseKey()
+(if assumptions are respected)
+1. update value
+2. MaxHeapify on the key
+
+Delete(A,i)
+(like ExtractMax, NOT DecreaseKey)
+1. swap with last node
+2. pop
+3. maxHeapify
+
+## 8. Binary Search Tree
+It is the main solution for the "Predecessor Problem".
+The operations we want to support all the following
+1. dictionary problem
+	1. insert
+	2. delete
+	3. lookup
+2. priority queue problem
+	1. min
+	2. max
+3. predecessor problem
+	1. predecessor
+	2. successor
+
+There are 2 solutions
+1. (static) Binary Sort
+	1. no insert or delete
+2. (dynamic) Binary Search Tree
+	1. also called Ordered Map or Ordered Dictionary
+	2. store keys sorted
+
+BST property.
+Let x be any node,
+1. if y is on the x's left subtree, then y.key $\leq$ k.key
+2. if y is on the x's right subtree, then y.key > x.key
+Note that the convention is equal keys on the left.
+
+Min (or Max) just go always left (or right)
+
+There are many possible BSTs
+1. (best case) balanced tree with logn levels
+2. (worst case) in-line tree with n levels
+The number of levels is the time required to search. In general, most operations' complexity depend on the height of the tree. For this reason, there are more advanced balancing strategies to keep the heigh logarithmic.
+
+![[Pasted image 20240531183337.png]]
+
+The visits of a tree can be different depending on the position of the print
+1. pre-order visit
+2. in-order visit
+	1. gives the array sorted
+3. post-order
+	1. standard divide and conquer
+	2. most useful for algos
+The cost is 3n, because we touch each node 3 times.
+
+![[Pasted image 20240531182837.png]]
+
+The operations on BSTs are
+1. Search
+2. Min and Max
+3. Insert
+4. Delete
+5. Predecessor and Successor
+6. Visits (custom)
+
+Remember sanity checks.
+1. store the results coming from the children
+2. return the same object in the base case and the other
+
+Exercises on visits
+1. top-down
+	1. pass as a parameter in the recursive function the value about the root-to-u path
+	2. in other words, use the parameter of the function to pass the information instead of returning the value
+2. bottom-up
+	1. return the value and u's subtree
+	2. steps
+		1. set base case
+		2. return left and right subtree
+		3. combine
+3. both
 
 
 
-## 8. BST
+
+
