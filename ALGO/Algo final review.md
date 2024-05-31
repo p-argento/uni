@@ -196,6 +196,8 @@ The operations on BSTs are
 5. Predecessor and Successor
 6. Visits (custom)
 
+## 9. Trees
+
 Remember sanity checks.
 1. store the results coming from the children
 2. return the same object in the base case and the other
@@ -211,6 +213,12 @@ Exercises on visits
 		2. return left and right subtree
 		3. combine
 3. both
+
+
+
+
+
+## 10. Graphs
 
 
 
