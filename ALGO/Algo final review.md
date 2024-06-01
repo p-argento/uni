@@ -175,7 +175,7 @@ Min (or Max) just go always left (or right)
 There are many possible BSTs
 1. (best case) balanced tree with logn levels
 2. (worst case) in-line tree with n levels
-The number of levels is the time required to search. In general, most operations' complexity depend on the height of the tree. For this reason, there are more advanced balancing strategies to keep the heigh logarithmic.
+The number of levels is the time required to search. In general, most operations' complexity depend on the height of the tree. For this reason, there are more advanced balancing strategies to keep the height logarithmic.
 
 ![[Pasted image 20240531183337.png]]
 
