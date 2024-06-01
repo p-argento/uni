@@ -823,7 +823,7 @@ Remember that we are sorting integers.
 ![[Pasted image 20240530180128.png]]
 
 Is it inplace? NO
-Is it stable? NO, but Eradic Sort needs stability in the building block.
+Is it stable? NO, but Radix Sort needs stability in the building block.
 
 Let's write the pseudocode.
 Then we will design a stable variant of counting sort.
