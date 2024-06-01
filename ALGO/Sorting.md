@@ -827,7 +827,7 @@ Is it stable? NO, but Radix Sort needs stability in the building block.
 
 Let's write the pseudocode.
 Then we will design a stable variant of counting sort.
-
+2
 ```pseudocode
 CountingSortUnstable(A,k)
 	let C[0,...k] be a new array
