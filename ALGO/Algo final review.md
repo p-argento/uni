@@ -37,6 +37,45 @@ Stability of an algo means that equal values maintein their relative order.
 
 ...
 
+
+
+## 5. Sorting in linear time
+The goal is to sort an array of non-negative integers in linear time.
+Set n=|A| and k=max(A), the target time complexity is $\Theta(n+k)$
+
+*Unstable Counting Sort*
+Just counts the occurrences of each integers and store it in a 
+
+
+
+
+*Stable Counting Sort*
+
+
+
+
+
+*Radix Sort*
+This is just the idea to sort the numbers starting from the least significant digit, but we can choose which algo to choose. The best algo to sort based on only one digit is counting sort.
+
+```
+for i=1 to d
+	use a stable algo to sort A on digit i
+```
+
+If counting sorts has time complexity $\Theta(n)$ if $k=O(n)$,
+then radix sort is $\Theta(n)$ if $k=O(n^k)$.
+Remember that counting sort is $T(n)=n+k$
+and radix sort is $T(n)=d(n+k)$, which is cs on every digit meaning that k is the max value for a digit.
+
+
+
+
+
+
+
+
+
 ## 6. Hashing
 It solves the dictionary problem.
 
