@@ -654,7 +654,7 @@ $$T(n)=\begin{cases}
 O(1)\quad if\ n\leq1\\
 2T(n/2)+\Theta(n)
 \end{cases}$$
-Meaning nlogn
+Meaning nlogn, since it is the same as MergeSort.
 
 *Worst case*
 If the pivot is the first or last element.
@@ -724,8 +724,6 @@ In particular, the probability of being nlogn is $1-\frac1 n$ meaning that with 
 
 ![[Pasted image 20240317164156.png]]
 
-
-
 If you want a formal proof, read it on the Cormen.
 
 
@@ -741,19 +739,12 @@ Chapter 8 of Cormen
 
 ![[Pasted image 20240317164232.png]]
 
-
-
-
 ## Lower Bound Proof for Sorting (with comparisons)
 The algo is based on comparisons.
 
 What is an alternative approach? Think about the cars, we can use ordered placeholders with cards numbers and using the value of the card to place it in the correct place. 
 
 ![[Pasted image 20240317164248.png]]
-
-
-
-
 ## Proof of lower bound
 
 ![[Pasted image 20240317164304.png]]
