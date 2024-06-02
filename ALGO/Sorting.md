@@ -210,7 +210,7 @@ If you have quadratic, it might take years if n is bigger than one million.
 If you have a cubic, it will work only for small n.
 
 
-> Try to analyze insertion sort by yourself
+> Try to analyze selection sort by yourself
 
 
 
