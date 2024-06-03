@@ -869,7 +869,7 @@ For this reason, we process the array C backwards.
 
 ![[Pasted image 20240530180153.png]]
 
-
+![[Pasted image 20240603224933.png]]
 ## Radix Sort
 Last lecture about sorting.
 
