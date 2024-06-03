@@ -261,12 +261,12 @@ Exercises on visits
 
 ## 10. Graphs
 
-from cormen.
+(from cormen)
 It may seem arbitrary that breadth-first search is limited to only one source whereas depth-first search may search from multiple sources. Although conceptually, breadth-first search could proceed from multiple sources and depth-first search could be limited to one source, our approach reflects how the results of these searches are typically used. Breadth-first search usually serves to find shortest- path distances (and the associated predecessor subgraph) from a given source. Depth-first search is often a subroutine in another algorithm, as we shall see later in this chapter.
 
+all vertices adjacent to black vertices have been discovered. Gray vertices may have some adjacent white vertices; they represent the frontier between discovered and undiscovered vertices, gray vertices are discovered vertices that have not yet had their adjacency lists fully examined.
 
-
-
+Breadth-first search constructs a breadth-first tree, initially containing only its root, which is the source vertex s. Whenever the search discovers a white vertex  in the course of scanning the adjacency list of an already discovered vertex u, the vertex  and the edge .u; / are added to the tree. We say that u is the predecessor or parent of  in the breadth-first tree.
 
 
 
