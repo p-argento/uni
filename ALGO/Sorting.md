@@ -777,8 +777,11 @@ Proof
 - inductive step
 	- if true for h, prove it for $h+1$
 At $h+1$ we have two nodes for each previous node, so $2^h\cdot h=2^{h+1}$
+
 $2^h \geq n! \Rightarrow h \geq log_2n! \Rightarrow h=\Omega(nlogn)$
 we used the Stirling approx for n!
+![[Pasted image 20240603165704.png]]
+
 
 *Main steps of this proof*
 1. The main observation is that you can represent even non-existing algo based on comparison into decision tree. And this means changing the question. The height of the tree is the greatest running time.
@@ -844,6 +847,8 @@ CountingSort(A,k)
 		C[i] = 0
 	for i = 1 to A.len
 		C[A[i]] += 1                  // theta(n)
+	for i = 1 to k
+		C[i] += C[i-1]
 	for i = A.len down to 1           // theta()
 		B[C[A[i]]] = A[i]
 		C[A[i]] -= 1
