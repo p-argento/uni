@@ -243,7 +243,7 @@ $n^2$ is really slow already at 100,000
 $n^3$ usually unfeasible, unless very efficient for most of the inputs.
 
 
-## Analyzing Selection Sort 
+## Analysis of Selection Sort 
 
 The idea is check for the smallest and move it in front of the array.
 Now the prefix of the array contains the sorted array.
