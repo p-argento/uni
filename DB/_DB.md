@@ -27,6 +27,7 @@ Password for moodle: DB2024student
 Office hours:
 - monday 11-13
 - friday 14-16
+
 ## Outline
 Part 1.
 • Functionalities of Database Management Systems - DBMSs
