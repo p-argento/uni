@@ -73,9 +73,6 @@ where pt1.IdD=pt2.IdD
 
 ```
 
-```sql
-
-```
 
 d) For each pair of pathologies that are different and have some drug in common, return the NamePt of the first and the NamePt of the second, and the number of drugs in common (362 rows)
 
@@ -91,7 +88,7 @@ f1) Return the name of patients who are affected by some pathology for which som
 
   
 
-f2) (Diificult) Return the name of patients who are only affected by pathologies for which some drug exists that costs strictly less than 50 (29 rows)
+f2) (Difficult) Return the name of patients who are only affected by pathologies for which some drug exists that costs strictly less than 50 (29 rows)
 
   
 
@@ -119,8 +116,6 @@ Do not talk about joins and tables. Speak to the final user.
 If it was without `and d.Dose> 10`,
 
 
-
-  
 
 ```sql
 SELECT pt.NamePt
