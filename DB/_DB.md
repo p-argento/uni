@@ -17,7 +17,6 @@ Textbook: A. Albano, Database essentials, 2021 [here](http://fondamentidibasidid
 
 My resources:
 Useful [website](https://dbdiagram.io/d) for relational schema
-See [[Testing SQL Queries]]
 [PostgreSQL docs](https://www.postgresql.org/docs/current/)
 
 ## General Information
@@ -52,20 +51,3 @@ From september, mid-terms are not valid anymore, and the whole exam must be done
 
 data manipulation 
 27-03 (da guardare)
-
-normalization
-10-04 x
-16-04 x
-17-04 x
-(22-04) correzione db1
-23-04 x
-
-dbms
-24-04 x
-30-04 x
-07-05 x
-08-05 x
-
-exercises
-14-05
-15-05 x
