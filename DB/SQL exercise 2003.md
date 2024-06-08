@@ -44,7 +44,8 @@ SELECT t.Name, t.Surname
 FROM Teachers t 
 WHERE NOT EXISTS (SELECT *
 				FROM Exams e
-				WHERE NOT (e.Grade > 25)
+				WHERE e.Tid=t.Tid AND 
+					NOT (e.Grade > 25)
 ```
 
 To add subject=db.
