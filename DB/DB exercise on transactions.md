@@ -1,5 +1,3 @@
-[[DB-ex-transactions.pdf]]
-
 Questions
 1. A,B,C before log (PS)
 2. A,B,C crash time (BUFFER and PS)
@@ -33,4 +31,11 @@ Also called "Force Protocol".
 Here, nothing is pinned. Every transaction is force-flushed before commit to avoid the need of Redo of committed transactions. 
 This gives more space for the buffer manager.
 It is very convenient for a fast restart, but if there are many updates during runtime, continuously flushing might slow down the system.
+
+![[DB-ex-transactions.pdf#page=1]]
+![[DB-ex-transactions.pdf#page=2]]
+![[DB-ex-transactions.pdf#page=3]]
+![[DB-ex-transactions.pdf#page=4]]
+
+
 
