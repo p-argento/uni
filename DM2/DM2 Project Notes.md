@@ -103,18 +103,26 @@ In [[time series notebook]].
 ## Module 3: Advanced Data-Preprocessing  
 
 ### Outliers 
-• Identify the top 1% outliers: adopt at least three different methods from different families (i.e., density-based, angle-based…) and compare the results. • Visualize the outliers in a 2 or 3d scatter plot using at least one dimensionality reduction technique. • Deal with the outliers in a way you see fit, e.g. by removing them from the dataset or by treating the anomalous variables as missing values and employing replacement techniques. In this second case, you should check that the outliers are not outliers anymore. Justify your choices in every step.
+• Identify the top 1% outliers: adopt at least three different methods from different families (i.e., density-based, angle-based…) and compare the results. 
+• Visualize the outliers in a 2 or 3d scatter plot using at least one dimensionality reduction technique. 
+• Deal with the outliers in a way you see fit, e.g. by removing them from the dataset or by treating the anomalous variables as missing values and employing replacement techniques. In this second case, you should check that the outliers are not outliers anymore. Justify your choices in every step.
 
 ### Imbalanced Learning
-• Define one simple unbalanced classification tasks and solve it with Decision Tree or KNN. • If the dataset is already unbalanced leave it as it is, otherwise turns the dataset into an imbalanced version (e.g., 96% - 4%, for binary classification). • Then solve the classification task using the Decision Tree or KNN by adopting at least 2 techniques of imbalanced learning (Undersampling, Oversampling).
+• Define one simple unbalanced classification tasks and solve it with Decision Tree or KNN. 
+• If the dataset is already unbalanced leave it as it is, otherwise turns the dataset into an imbalanced version (e.g., 96% - 4%, for binary classification). 
+• Then solve the classification task using the Decision Tree or KNN by adopting at least 2 techniques of imbalanced learning (Undersampling, Oversampling).
 
 ## Module 4: Advanced ML & XAI
 
 ### Advanced Classification
-• Solve the classification task defined in Module 3 (or define new ones) with the other classification methods analyzed during the course: Logistic Regression, Support Vector Machines, Neural Networks, Ensemble Methods, Gradient Boosting Machines. • Always perform hyper-parameter tuning phases and justify your choices (which are the best parameters? which parameters did you test and why?). • Evaluate each classifier with the techniques presented in DM1: accuracy (or precision, recall, F1-score etc), ROC curve (or lift, precision-recall etc). • Besides the numerical evaluation draw your conclusions about the various classifiers (e.g. for Neural Networks: what are the parameter sets or the convergence criteria which avoid overfitting? For Ensemble classifiers how the number of base models impact the classification performance? What is revealing the feature importance of Random Forests?)
+• Solve the classification task defined in Module 3 (or define new ones) with the other classification methods analyzed during the course: Logistic Regression, Support Vector Machines, Neural Networks, Ensemble Methods, Gradient Boosting Machines.
+• Always perform hyper-parameter tuning phases and justify your choices (which are the best parameters? which parameters did you test and why?). 
+• Evaluate each classifier with the techniques presented in DM1: accuracy (or precision, recall, F1-score etc), ROC curve (or lift, precision-recall etc). 
+• Besides the numerical evaluation draw your conclusions about the various classifiers (e.g. for Neural Networks: what are the parameter sets or the convergence criteria which avoid overfitting? For Ensemble classifiers how the number of base models impact the classification performance? What is revealing the feature importance of Random Forests?)
 
 ### Advanced Regression
-• Define a multiple regression task, i.e., using more than one input feature, and solve it using 2 advanced regression approaches (not linear). • Compare and evaluate the approaches using appropriate metrics. 
+• Define a multiple regression task, i.e., using more than one input feature, and solve it using 2 advanced regression approaches (not linear). 
+• Compare and evaluate the approaches using appropriate metrics. 
 
 ### Explainability
 Try to use one or more explanation methods (e.g., TREPAN, LIME, LORE, SHAP, Counterfactual Explainers, etc.) to illustrate the reasons for the classification in one of the steps of the previous tasks.
