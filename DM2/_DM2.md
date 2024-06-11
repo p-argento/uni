@@ -45,14 +45,14 @@ Relu for hidden layers and tanh or sigmoid for output layer.
 
 ## Planning
 
-| 10               | 11           | 12      | 13       | 14                     | 15      | 16  |
-| ---------------- | ------------ | ------- | -------- | ---------------------- | ------- | --- |
-| -                | imb-learning | dim-red | anom-det | grad-desc + MLE + odds | log-reg | svm |
-| 17               | 18           | 19      | 20       | 21                     | 22      | 23  |
-| perceptron + dnn |              |         |          |                        |         |     |
-| 24               | 25           | 26      | 27       | 28                     | 29      | 30  |
-| DEADLINE         |              |         |          |                        |         |     |
-|                  |              |         |          |                        |         |     |
+| 10               | 11           | 12             | 13       | 14                     | 15      | 16  |
+| ---------------- | ------------ | -------------- | -------- | ---------------------- | ------- | --- |
+| -                | imb-learning | dim-red        | anom-det | grad-desc + MLE + odds | log-reg | svm |
+| 17               | 18           | 19             | 20       | 21                     | 22      | 23  |
+| perceptron + dnn | ensembles    | gradient boost | xai      |                        |         |     |
+| 24               | 25           | 26             | 27       | 28                     | 29      | 30  |
+| DEADLINE         |              |                |          |                        |         |     |
+|                  |              |                |          |                        |         |     |
 
 
 
