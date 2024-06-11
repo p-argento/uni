@@ -20,17 +20,20 @@ Relu for hidden layers and tanh or sigmoid for output layer.
 [[15. Rule-based Classifiers]]
 [[16. Sequential Pattern Mining]]
 [[17. Transactional Clustering]]
+
 [[18. Time Series - Similarities and Distances]]
 [[19. Time Series - Approximation and Clustering]]
 [[20. Time Series - Matrix Profile, Motifs & Discords]]
 [[21. Time Series - Classification]]
 
 [[22. Imbalanced Training]]
-23. Dimensionality Reduction
-24. Anomaly Detection
+[[23. Dimensionality Reduction]]
+[[24. Anomaly Detection]]
+
 25. Gradient Descend
 26. Maximum Likelihood Estimation
 27. Odds and Log Odds
+
 28. Logistic Regression
 29. Support Vector Machines
 30. Perceptron
