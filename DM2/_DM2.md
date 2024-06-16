@@ -1,6 +1,6 @@
 ## Resources
 [didawiki](http://didawiki.di.unipi.it/doku.php/dm/start)
-
+[book slides](https://www-users.cse.umn.edu/~kumar001/dmbook/index.php)
 ## Project
 > Do not report a point to point matrix comparing 2 time series.
 > Do not report simple distance calculations, they MUST be used to do something useful like clustering.
