@@ -8,6 +8,8 @@
 [[DM2 Official Guidelines]]
 [[DM2 Project Notes]]
 
+[[Data Pre-Processing]]
+
 > minmax for clustering
 > standard scaler for classification
 

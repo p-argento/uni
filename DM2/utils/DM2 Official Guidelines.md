@@ -41,7 +41,7 @@ Guidelines
 	1. Pre-process the dataset to be able to run time series clustering; motif/anomaly discovery and classification. If the dataset is too big for these tasks, you can use approximations (e.g. SAX, PAA etc)
 
 My Notes
-1. see [[My Data Understanding Cheatsheet]]
+1. see [[My EDA Cheatsheet]]
 
 ## Module 2: Time Series Analysis 
 ### Motifs/Discords
