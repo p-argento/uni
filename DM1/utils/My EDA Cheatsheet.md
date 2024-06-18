@@ -188,9 +188,24 @@ df['time_signature'] = df['time_signature'].astype('category')
 
 ### 5. convert categorical data to numeric
 Convert categorical variables to numeric using techniques like one-hot encoding.
+
+Isnt' it better to use OneHotEncoding from sklearn.
+In particular, it is better for ML tasks because it learn the encoding and then we can be sure it is replicated also in the test set.
+
 ```python
 df = pd.get_dummies(df, columns=['album_type', 'genre'])
 ```
+
+```python
+from sklearn.preprocessing import OneHotEncoder
+
+X = [['male', 'from US', 'uses Safari'], ['female', 'from Europe', 'uses Firefox']]
+enc = preprocessing.OneHotEncoder()
+enc.fit(X)
+enc.transform([['female', 'from US', 'uses Safari'],
+               ['male', 'from Europe', 'uses Safari']]).toarray()
+```
+
 
 How to deal with dates?
 you can extract various useful components from this date and include them as features in your analysis.
