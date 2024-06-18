@@ -104,6 +104,10 @@ Preprocessing your dataset for machine learning (ML) algorithms involves several
 
 ### 1. load the data
 ```python
+import os
+os.chdir('/Users/pietro/_DS/DM2')
+os.getcwd()
+
 import pandas as pd
 df = pd.read_csv('your_dataset.csv') 
 ```
@@ -113,6 +117,47 @@ df = pd.read_csv('your_dataset.csv')
 print(df.info())
 print(df.describe())
 print(df.head())
+
+print(df.shape)
+print(df['name'].unique())
+print(df['genre'].unique().shape)
+print(df['genre'].unique())
+print(df['genre'].unique().shape)
+```
+maybe also visualizations like scatterplots
+
+I created this useful script to better understand features.
+```python
+eda = pd.DataFrame(index=df.columns, columns=['nunique', 'unique'])
+
+for column in df.columns:
+    # Calculate the number of unique values
+    unique_count = df[column].nunique()
+    eda.at[column, 'nunique'] = unique_count
+    
+    # If the number of unique values is less than 20, store the unique values
+    if unique_count < 20:
+        eda.at[column, 'unique'] = df[column].unique()
+    else:
+        eda.at[column, 'unique'] = df[column].head(10)
+
+	# check data type
+	eda.at[column, 'dtype'] = df[column].dtype
+
+print(eda)
+```
+
+and classify each feature if it is
+1. numerical (int or float)
+2. categorical 
+3. bool
+
+
+
+```python
+print(df['time_signature'].dtype())
+df['time_signature'] = df['time_signature'].astype('category')
+
 ```
 
 ### 3. handle missing values
@@ -128,14 +173,35 @@ df = df.dropna()
 First, understand correlations and dependencies.
 Identify and drop columns that are not useful for your ML models.
 ```python
-columns_to_drop = ['id', 'name', 'artists', 'album_name', 'album_release_date', 'album_release_date_precision']
+columns_to_drop = ['id', 'name', 'artists', 'album_name', 'album_release_date_precision']
 df = df.drop(columns=columns_to_drop)
+```
+
+how to deal with dates?
+
+
+
+```python
+df['time_signature'] = df['time_signature'].astype('category')
+
 ```
 
 ### 5. convert categorical data to numeric
 Convert categorical variables to numeric using techniques like one-hot encoding.
 ```python
 df = pd.get_dummies(df, columns=['album_type', 'genre'])
+```
+
+How to deal with dates?
+you can extract various useful components from this date and include them as features in your analysis.
+```python
+df['album_release_date'] = pd.to_datetime(df['album_release_date'], errors='coerce')
+df['release_year'] = df['album_release_date'].dt.year
+df['release_month'] = df['album_release_date'].dt.month
+df['release_day'] = df['album_release_date'].dt.day
+df['release_day_of_week'] = df['album_release_date'].dt.dayofweek  # Monday=0, Sunday=6
+df['release_is_weekend'] = df['release_day_of_week'].apply(lambda x: 1 if x >= 5 else 0)
+
 ```
 
 ### 6. normalize numerical features
@@ -157,13 +223,18 @@ df['explicit'] = df['explicit'].astype(int)
 df = df.drop_duplicates()
 ```
 
-### remove
-### 9. feature engineering
+
+### 9. remove outliers
+Should I repeat normalization?
+
+
+### 10. feature engineering
 ```python
 # Example: create a new feature 'track_duration_min'
 df['track_duration_min'] = df['duration_ms'] / 60000
 df = df.drop(columns=['duration_ms'])
 ```
+
 
 ### 10. split features X and target y
 ```python
