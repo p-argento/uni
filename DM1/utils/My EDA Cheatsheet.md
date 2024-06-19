@@ -219,6 +219,12 @@ df['release_is_weekend'] = df['release_day_of_week'].apply(lambda x: 1 if x >= 5
 
 ```
 
+Also target enconding can be used. [See this article](https://towardsdatascience.com/encoding-categorical-variables-a-deep-dive-into-target-encoding-2862217c2753).
+Target encoding works by converting each category of a categorical feature into its corresponding expected value. The approach to calculating the expected value will depend on the value you are trying to predict.
+For Regression problems, the expected value is simply the average value for that category.
+For Classification problems, the expected value is the conditional probability given that category.
+
+
 ### 6. normalize numerical features
 ```python
 from sklearn.preprocessing import StandardScaler
