@@ -152,13 +152,14 @@ and classify each feature if it is
 2. categorical 
 3. bool
 
-
-
 ```python
 print(df['time_signature'].dtype())
 df['time_signature'] = df['time_signature'].astype('category')
 
 ```
+
+or you can just use an automated EDA like [ydata-profiling](https://github.com/ydataai/ydata-profiling).
+
 
 ### 3. handle missing values
 ```python
