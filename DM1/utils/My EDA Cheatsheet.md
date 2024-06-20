@@ -128,6 +128,11 @@ print(df['genre'].unique())
 print(df['genre'].unique().shape)
 ```
 maybe also visualizations like scatterplots
+```python
+pd.options.display.max_columns = 100
+pd.options.display.max_rows = 100
+```
+
 
 I created this useful script to better understand features.
 ```python
