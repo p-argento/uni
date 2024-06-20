@@ -100,6 +100,9 @@ Preparing Target Variable: `y = np.array(frame['target'])` takes the target vari
 
 # from chatgpt
 (using full spotify dataset as input)
+
+also inspired by [this mooc](https://inria.github.io/scikit-learn-mooc/)
+
 Preprocessing your dataset for machine learning (ML) algorithms involves several steps to ensure the data is clean, consistent, and ready for modeling. Here is a step-by-step guide to help you through the process:
 
 ### 1. load the data
