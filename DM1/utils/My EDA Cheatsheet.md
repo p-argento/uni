@@ -228,10 +228,26 @@ df['release_is_weekend'] = df['release_day_of_week'].apply(lambda x: 1 if x >= 5
 
 ```
 
-Also target enconding can be used. [See this article](https://towardsdatascience.com/encoding-categorical-variables-a-deep-dive-into-target-encoding-2862217c2753).
+Also target encoding can be used. [See this article](https://towardsdatascience.com/encoding-categorical-variables-a-deep-dive-into-target-encoding-2862217c2753).
 Target encoding works by converting each category of a categorical feature into its corresponding expected value. The approach to calculating the expected value will depend on the value you are trying to predict.
 For Regression problems, the expected value is simply the average value for that category.
 For Classification problems, the expected value is the conditional probability given that category.
+
+*from kaggle*
+For large datasets with many rows, one-hot encoding can greatly expand the size of the dataset. For this reason, we typically will only one-hot encode columns with relatively low cardinality. Then, high cardinality columns can either be dropped from the dataset, or we can use label encoding.
+As an example, consider a dataset with 10,000 rows, and containing one categorical column with 100 unique entries.
+```python
+# Columns that will be one-hot encoded
+low_cardinality_cols = [col for col in object_cols if X_train[col].nunique() < 10]
+
+# Columns that will be dropped from the dataset
+high_cardinality_cols = list(set(object_cols)-set(low_cardinality_cols))
+
+print('Categorical columns that will be one-hot encoded:', low_cardinality_cols)
+print('\nCategorical columns that will be dropped from the dataset:', high_cardinality_cols)
+```
+
+
 
 
 ### 6. normalize numerical features
