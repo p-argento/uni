@@ -33,7 +33,7 @@ Relu for hidden layers and tanh or sigmoid for output layer.
 [[24. Anomaly Detection]]
 
 [[25. Gradient Descend]]
-26. Maximum Likelihood Estimation
+[[26. Maximum Likelihood Estimation]]
 27. Odds and Log Odds
 
 28. Logistic Regression (statquest)
