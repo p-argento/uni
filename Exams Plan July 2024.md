@@ -17,6 +17,9 @@
 | sab 29 | BICI?                                                                                                  |                      |                  |
 | dom 30 | - concludi ensembles                                                                                   | - counting           | - Function Stack |
 comment week 1:
+- mer
+	- devo almeno finire logit e ripetere
+	- non ho ancora iniziato math e C
 
 
 ## Week 2
