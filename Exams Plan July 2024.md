@@ -7,15 +7,15 @@
 
 ## Week 1
 
-| giorno | dm2 plan                                                                                               | math plan            | C plan           |
-| ------ | ------------------------------------------------------------------------------------------------------ | -------------------- | ---------------- |
-| lun 24 | planning                                                                                               | planning             | planning         |
-| mar 25 | - Gradient Descend<br>- Maximum Likelihood Estimation<br>- Odds and Log Odds<br>(come? usando kindle?) | -propositional logic | - intro unix     |
-| mer 26 | - logit (statquest)<br>- svm (statquest)                                                               | - sets and functions | - introC         |
-| gio 27 | - NN                                                                                                   | - number theory      | - DataTypesC     |
-| ven 28 | - concludi NN<br>- inizia ensembles                                                                    | -induction recursion | - IteratesC      |
-| sab 29 | BICI?                                                                                                  |                      |                  |
-| dom 30 | - concludi ensembles                                                                                   | - counting           | - Function Stack |
+| giorno | dm2 plan                                                                     | math plan            | C plan           |
+| ------ | ---------------------------------------------------------------------------- | -------------------- | ---------------- |
+| lun 24 | planning                                                                     | planning             | planning         |
+| mar 25 | - Gradient Descend<br>- Maximum Likelihood Estimation<br>- Odds and Log Odds | -propositional logic | - intro unix     |
+| mer 26 | - logit (statquest)<br>- svm (statquest)                                     | - sets and functions | - introC         |
+| gio 27 | - NN                                                                         | - number theory      | - DataTypesC     |
+| ven 28 | - concludi NN<br>- inizia ensembles                                          | -induction recursion | - IteratesC      |
+| sab 29 | BICI?                                                                        |                      |                  |
+| dom 30 | - concludi ensembles                                                         | - counting           | - Function Stack |
 comment week 1:
 - mer
 	- devo almeno finire logit e ripetere
