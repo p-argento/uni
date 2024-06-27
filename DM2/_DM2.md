@@ -38,7 +38,7 @@ Relu for hidden layers and tanh or sigmoid for output layer.
 
 28. Logistic Regression (statquest)
 29. Support Vector Machines (statquest)
-30. Perceptron
+[[30. Perceptron]]
 31. Deep Neural Networks
 32. Ensemble Methods
 33. Gradient Boost (statquest)
