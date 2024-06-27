@@ -36,10 +36,10 @@ Relu for hidden layers and tanh or sigmoid for output layer.
 [[26. Maximum Likelihood Estimation]]
 [[27. Odds and Log Odds]]
 
-28. Logistic Regression (statquest)
+[[28. Logistic Regression (statquest)]]
 29. Support Vector Machines (statquest)
 [[30. Perceptron]]
-31. Deep Neural Networks
+[[31. Deep Neural Networks]]
 32. Ensemble Methods
 33. Gradient Boost (statquest)
 34. Explainability
