@@ -18,8 +18,12 @@
 | dom 30 | - concludi ensembles                                                         | - counting           | - Function Stack |
 comment week 1:
 - mer
-	- devo almeno finire logit e ripetere
+	- devo almeno finire logistic e ripetere
 	- non ho ancora iniziato math e C
+- gio
+	- finalmente capito la logistic regression
+	- adesso però inizio le NN
+	- poi stasera guardo C e math
 
 
 ## Week 2
