@@ -8,6 +8,8 @@
 [[DM2 Official Guidelines]]
 [[DM2 Project Notes]]
 
+[[DM2 Power Project]]
+
 [[Data Pre-Processing]]
 
 > minmax for clustering
