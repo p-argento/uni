@@ -38,6 +38,10 @@ comment week 1:
 | sab 6  |                  |                        |                         |
 | dom 7  |                  |                        |                         |
 comment week 2:
+1. lun
+	1. cominciato a guardare il dataset. Mi sono bloccato sul formato delle ts
+2. mar
+	1. comincio finalmente a guardare C
 
 ## Week 3
 
