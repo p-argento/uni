@@ -7,7 +7,7 @@
 |       | 1b     | matrices                 |       |          |
 |       | 1c     | matrices                 |       |          |
 |       | 1d     | exercise                 |       |          |
-|       | 1e     | sets                     |       |          |
+|       | 1e     | sets                     | ok    |          |
 |       | 2a     | propositional            |       |          |
 |       | 2b     | prop proofs              |       |          |
 |       | 3&4    | predicates and quant     |       |          |
@@ -24,7 +24,7 @@
 |       | 11     | lab on relational table  |       |          |
 
 
-# Sets
+
 
 
 
