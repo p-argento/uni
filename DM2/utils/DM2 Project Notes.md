@@ -62,7 +62,7 @@ Define one (or more) classification task and solve it using:
 ### Sequential Pattern Mining (optional)
 Discretize the time-series to run sequential pattern mining (e.g., identify frequent pattern or trends within the time series).
 
----mynotes---
+## ---mynotes---
 The time series are [Spectral Centroids](https://librosa.org/doc/main/generated/librosa.feature.spectral_centroid.html) and therefore it is impossible to get back the wav files.
 
 Use numpy.save for saving matrices that took days to run like dtw.

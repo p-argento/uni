@@ -42,6 +42,11 @@ comment week 2:
 	1. cominciato a guardare il dataset. Mi sono bloccato sul formato delle ts
 2. mar
 	1. comincio finalmente a guardare C
+		1. devo capire meglio malloc, calloc etc, il resto dovrei saperlo
+3. mer
+	1. C, entro stasera dovrei finire le slide, così domani comincio con le simulazioni
+	2. math, facile e noioso. Provo ad andare veloce vedi [[Semini Slides]]
+	3. dm, oggi devo finire la parte di ts e tirare fuori una bozza di dataset
 
 ## Week 3
 
