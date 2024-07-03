@@ -18,6 +18,7 @@
 8. software engineering
 9. linear algebra
 
+see more in [[Semini Slides]]
 ## Trani C
 
 1. IntroUnix
