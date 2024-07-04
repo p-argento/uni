@@ -28,6 +28,13 @@ The five problems we form are summarised in the following table.
 ```
 
 
+## Ideas
+
+1. after the best classification possible, I could try motifs and discords again
+
+
+
+## To do
 
 today
 1. ts notebook
