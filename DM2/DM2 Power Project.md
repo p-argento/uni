@@ -31,6 +31,11 @@ The five problems we form are summarised in the following table.
 ## Ideas
 
 1. after the best classification possible, I could try motifs and discords again
+2. many types of problems to be solved
+	1. 2 types of usage: similar (non-kitchen) vs dissimilar (kitchen) usage patterns
+	2. 5 problems
+	3. 14 class labels
+	4. 7 class numbers
 
 
 
