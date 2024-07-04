@@ -1,6 +1,17 @@
 
 ![[_PROG#Semini Slides]]
 
+Book Chapters
+1_Propositional Logic
+2_Sets and Functions
+...
+4_Number Theory
+5_Induction and Recursion
+6_Counting
+...
+9_Relations
+X_Engineering
+
 | topic | numero | slide                    | letto | esercizi |
 | ----- | ------ | ------------------------ | ----- | -------- |
 |       | 1a     | vectors                  |       |          |
