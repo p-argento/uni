@@ -90,22 +90,17 @@ Using derivation from already known laws
 ## 1. Divisibility and modular arithmetic (c4.1)
 
 1. Division
-	1. Division
-	2. Properties of divisibility
-	3. Div and mod
-2. Congruence Relation
-	1. a $\equiv$ b (mod m)
-	2. theorem on congruences
+2. Properties of divisibility
+3. Div and mod
+4. Congruence Relation a $\equiv$ b (mod m)
+5. theorem on congruences
 
 ## 2. Primes and Greatest Common Divisors (c4.2)
 
 1. Primes
-	1. primes
-	3. sieve of erastothenes
-	4. fundamental Theorem of Arithmetic
-	5. 
-2. Greatest Common Divisor
-	1. 
+2. sieve of erastothenes
+3. fundamental Theorem of Arithmetic
+4. Greatest Common Divisor
 
 ## 3. Applications of congruences (c4.5)
 
