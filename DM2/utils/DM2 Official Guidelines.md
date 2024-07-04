@@ -36,20 +36,23 @@ There are 2 datasets for this project:
 ## Module 1: Data Understanding and Preparation 
 Guidelines
 1. Explore and prepare the tabular dataset
-	1. Pre-process the dataset and create new variables, if you consider it interesting. You are allowed to take inspiration from existing notebooks and figure out your personal research perspective (e.g., choosing a subset of variables for the class to predict).
+	1. Pre-process the dataset and create new variables, if you consider it interesting.
+	2. You are allowed to take inspiration from existing notebooks and figure out your personal research perspective (e.g., choosing a subset of variables for the class to predict).
 2. Explore and prepare the time-series dataset
-	1. Pre-process the dataset to be able to run time series clustering; motif/anomaly discovery and classification. If the dataset is too big for these tasks, you can use approximations (e.g. SAX, PAA etc)
+	1. Pre-process the dataset to be able to run time series clustering; motif/anomaly discovery and classification.
+	2. If the dataset is too big for these tasks, you can use approximations (e.g. SAX, PAA etc)
 
 My Notes
 1. see [[My EDA Cheatsheet]]
 
 ## Module 2: Time Series Analysis 
 ### Motifs/Discords
-Analyze the dataset for finding motifs and/or anomalies. Visualize and discuss them and their relationship with shapelets. 
+1. Analyze the dataset for finding motifs and/or anomalies.
+2. Visualize and discuss them and their relationship with shapelets. 
 
 ### Clustering
-• Use at least two clustering algorithm on time series using an appropriate distance. 
-• Analyze the clusters and highlight similarities and differences and visualize the clusters using at least 2 dimensionality reduction techniques.
+1. Use at least two clustering algorithm on time series using an appropriate distance. 
+2. Analyze the clusters and highlight similarities and differences and visualize the clusters using at least 2 dimensionality reduction techniques.
 
 ### Classification 
 Define one (or more) classification task and solve it using: 
@@ -65,40 +68,32 @@ Discretize the time-series to run sequential pattern mining (e.g., identify freq
 ## Module 3: Advanced Data-Preprocessing  
 
 ### Outliers 
-• Identify the top 1% outliers: adopt at least three different methods from different families (i.e., density-based, angle-based…) and compare the results. • Visualize the outliers in a 2 or 3d scatter plot using at least one dimensionality reduction technique. • Deal with the outliers in a way you see fit, e.g. by removing them from the dataset or by treating the anomalous variables as missing values and employing replacement techniques. In this second case, you should check that the outliers are not outliers anymore. Justify your choices in every step.
+1. Identify the top 1% outliers: adopt at least three different methods from different families (i.e., density-based, angle-based…) and compare the results. 
+2. Visualize the outliers in a 2 or 3d scatter plot using at least one dimensionality reduction technique. 
+3. Deal with the outliers in a way you see fit, e.g. by removing them from the dataset or by treating the anomalous variables as missing values and employing replacement techniques. In this second case, you should check that the outliers are not outliers anymore. Justify your choices in every step.
 
 ### Imbalanced Learning
-• Define one simple unbalanced classification tasks and solve it with Decision Tree or KNN. • If the dataset is already unbalanced leave it as it is, otherwise turns the dataset into an imbalanced version (e.g., 96% - 4%, for binary classification). • Then solve the classification task using the Decision Tree or KNN by adopting at least 2 techniques of imbalanced learning (Undersampling, Oversampling).
+1. Define one simple unbalanced classification tasks and solve it with Decision Tree or KNN. 
+2. If the dataset is already unbalanced leave it as it is, otherwise turns the dataset into an imbalanced version (e.g., 96% - 4%, for binary classification). 
+3. Then solve the classification task using the Decision Tree or KNN by adopting at least 2 techniques of imbalanced learning (Undersampling, Oversampling).
 
 ## Module 4: Advanced ML & XAI
 
 ### Advanced Classification
-• Solve the classification task defined in Module 3 (or define new ones) with the other classification methods analyzed during the course: Logistic Regression, Support Vector Machines, Neural Networks, Ensemble Methods, Gradient Boosting Machines. • Always perform hyper-parameter tuning phases and justify your choices (which are the best parameters? which parameters did you test and why?). • Evaluate each classifier with the techniques presented in DM1: accuracy (or precision, recall, F1-score etc), ROC curve (or lift, precision-recall etc). • Besides the numerical evaluation draw your conclusions about the various classifiers (e.g. for Neural Networks: what are the parameter sets or the convergence criteria which avoid overfitting? For Ensemble classifiers how the number of base models impact the classification performance? What is revealing the feature importance of Random Forests?)
+1. Solve the classification task defined in Module 3 (or define new ones) with the other classification methods analyzed during the course:
+	1. Logistic Regression, Support Vector Machines, Neural Networks, Ensemble Methods, Gradient Boosting Machines. 
+2. Always perform hyper-parameter tuning phases and justify your choices (which are the best parameters? which parameters did you test and why?). 
+3. Evaluate each classifier with the techniques presented in DM1: accuracy (or precision, recall, F1-score etc), ROC curve (or lift, precision-recall etc). 
+4. Besides the numerical evaluation draw your conclusions about the various classifiers
+	1. for Neural Networks: what are the parameter sets or the convergence criteria which avoid overfitting?
+	2. for Ensemble classifiers how the number of base models impact the classification performance? What is revealing the feature importance of Random Forests?
+	3. ...
 
 ### Advanced Regression
-• Define a multiple regression task, i.e., using more than one input feature, and solve it using 2 advanced regression approaches (not linear). • Compare and evaluate the approaches using appropriate metrics. 
+1. Define a multiple regression task, i.e., using more than one input feature, and solve it using 2 advanced regression approaches (not linear). 
+2. Compare and evaluate the approaches using appropriate metrics. 
 
 ### Explainability
-Try to use one or more explanation methods (e.g., TREPAN, LIME, LORE, SHAP, Counterfactual Explainers, etc.) to illustrate the reasons for the classification in one of the steps of the previous tasks.
+1. Try to use one or more explanation methods (e.g., TREPAN, LIME, LORE, SHAP, Counterfactual Explainers, etc.) to illustrate the reasons for the classification in one of the steps of the previous tasks.
 
 
-# Our Plan
-
-## Time Series
-
-DM2 project ideas
-
-TS subset per genre (vedi split nome file) -> 20 subset (20 genres)
-
-selezioniamo tracks di generi simili -> similarità fra i due generi -> shape interessanti fra generi (tipo classic che ha stessa struttura di generi moderni)
-
-scegli generi su cui fare il confronto  
-1st step: approximation -> SAX or PAA? Or DFT without time? -> se vogliamo mantenere la forma per studio sopra meglio DFT.
-
-se consideriamo shapes -> trasformazioni per preservare shape (offset, amplitude scaling)
-
-Trasformazioni da applicare:
-
-noise smoothing -> ci permette di avere shape smooth da confrontare
-
-data values nel grafico (asse y) come vengono calcolati?

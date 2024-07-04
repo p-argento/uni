@@ -47,6 +47,10 @@ comment week 2:
 	1. C, entro stasera dovrei finire le slide, così domani comincio con le simulazioni
 	2. math, facile e noioso. Provo ad andare veloce vedi [[Semini Slides]]
 	3. dm, oggi devo finire la parte di ts e tirare fuori una bozza di dataset
+4. gio
+	1. C, ieri ho finito di leggere le slide, oggi provo con la prima simulazione
+	2. math, stamattina ho fatto lo schema di tutto, domani provo ad andare più nel dettaglio per tutta la seconda parte 6-10 (escluso 9)
+	3. dm, 
 
 ## Week 3
 
