@@ -90,9 +90,26 @@ For
 
 
 *tabular*
+(old)
 I created a tabular version of the time series using TSFreshFeatureExtractor.
 I got 777 variables. I need to better understand what they are and decide if it is worth to keep them all. Is 'efficient' the correct value for the parameter?
 Maybe with tree-based classifiers it is fine to keep them all, while with other distance-based I need to use dimensionality reduction techniques.
+
+(new)
+I created two tabular dataset, both starting from X_long
+1. using feature_extractor, then manually cleaning
+	1. removing rows with +inf, -inf, nan values
+	2. removing duplicates
+	3. the result is df_cleaned of shape (8841, 562)
+3. using extract_relevant_features
+	1. it already includes the target variable
+	2. the result is df_filtered of shape (8799, 477)
+
+For now, I am using the df_filtered, since the target variable is only the class y.
+I tried
+1. DecisionTreeClassifier, the accuracy is 0.85
+2. RandomForestClassifiers(n=100), the accuracy is 0.91
+However, keep in mind that the classes are imbalanced.
 
 
 
