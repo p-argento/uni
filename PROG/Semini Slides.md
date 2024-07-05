@@ -113,7 +113,12 @@ Using derivation from already known laws
 ## 3. Applications of congruences (c4.5)
 
 1. Hash Table
-2. Pseudorandom numbers
+2. hash functions
+3. linear probing
+4. double hashing
+5. Pseudorandom numbers
+6. linear congruential method
+7. pure multiplicative generator
 
 ## 4. Integer Representations and Algorithms (c4.2)
 
