@@ -101,7 +101,14 @@ Using derivation from already known laws
 1. Primes
 2. sieve of erastothenes
 3. fundamental Theorem of Arithmetic
-4. Greatest Common Divisor
+4. infinte primes
+5. prime number theorem (distribution of primes)
+6. twin primes
+7. Greatest Common Divisor
+8. find gcd with prime factorization
+9. least common multiple
+10. theorem of gcd and lcm (ab=gcd\*lcm)
+11. euclidean algo
 
 ## 3. Applications of congruences (c4.5)
 
