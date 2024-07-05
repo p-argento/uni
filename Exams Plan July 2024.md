@@ -50,6 +50,10 @@ comment week 2:
 4. gio
 	1. C, ieri ho finito di leggere le slide, oggi provo con la prima simulazione
 	2. math, stamattina ho fatto lo schema di tutto, domani provo ad andare più nel dettaglio per tutta la seconda parte 6-10 (escluso 9)
+	3. dm, troppo lento
+5. ven
+	1. C, ieri troppa gente, oggi simulazione per forza
+	2. math, vado nel dettaglio su 6-10
 	3. dm, 
 
 ## Week 3
