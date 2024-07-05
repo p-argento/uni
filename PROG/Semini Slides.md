@@ -94,6 +94,7 @@ Using derivation from already known laws
 3. Div and mod
 4. Congruence Relation a $\equiv$ b (mod m)
 5. theorem on congruences
+6. casting out nines
 
 ## 2. Primes and Greatest Common Divisors (c4.2)
 
