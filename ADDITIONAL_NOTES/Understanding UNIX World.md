@@ -117,6 +117,33 @@ The *opt directory* contains optional or add-on software and you'll rarely inter
 
 And finally we have the weirdest one of all, the *proc directory* is an illusionary file system that doesn't actually exist on the disk, but is created in memory on the fly by the linux kernel to keep track of running processes this has been the linux file system.
 
+# File Permissions
+
+	•	Numerical (Octal) Notation:
+	•	Each digit represents a combination of read (4), write (2), and execute (1) permissions.
+	•	The three digits represent the owner, group, and others, respectively.
+
+```
+chmod -R 755 /path/to/directory
+```
+
+Breakdown of Permissions:
+
+	•	4 (r): Read
+	•	2 (w): Write
+	•	1 (x): Execute
+
+Combine these values to set the desired permissions:
+
+	•	7 (rwx): 4 + 2 + 1
+	•	6 (rw-): 4 + 2
+	•	5 (r-x): 4 + 1
+	•	4 (r–): 4
+	•	3 (-wx): 2 + 1
+	•	2 (-w-): 2
+	•	1 (–x): 1
+	•	0 (—): 0
+
 
 # Bash (and zsh)
 https://www.youtube.com/watch?v=I4EWvMFj37g
