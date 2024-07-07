@@ -68,13 +68,10 @@ monday
 1. 
 
 
-## 1. EDA
-
-![[DM2 Official Guidelines#Module 1 Data Understanding and Preparation]]
+## Diario
 
 Start with ts eda.
 Try approximations PAA and SAX.
-
 
 *ts*
 - `"pd-multiindex"` - a `pandas.DataFrame`, with row multi-index (instances, time), cols = variables
@@ -111,11 +108,30 @@ I tried
 2. RandomForestClassifiers(n=100), the accuracy is 0.91
 However, keep in mind that the classes are imbalanced.
 
+*7/7*
+I should create another dataset with less and more interpretable features.
+Say max 20.
+Dataset ideas
+1. df_cleaned
+2. df_filtered
+3. df_interpretable
+
+In addition, I should define more problems to be solved.
+In particular a regression task.
+1. class (already there)
+2. the result of the best clustering algorithm?
+	1. this label can be obtained only from unsupervised learning
+	2. could represent the 5 problems
+3. 
 
 
 
 
 
+
+## 1. EDA
+
+![[DM2 Official Guidelines#Module 1 Data Understanding and Preparation]]
 
 
 ### REPORT
