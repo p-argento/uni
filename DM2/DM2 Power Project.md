@@ -124,6 +124,16 @@ In particular a regression task.
 	2. could represent the 5 problems
 3. 
 
+Now, let's try logistic regression and then all the ensembles.
+The target is still the 'class' variable.
+Steps
+1. create balanced datasets
+	1. with undersampling -> df_undersampling
+	2. with oversampling -> df_oversampling
+2. try logistic regression
+	1. 
+	2. evaluate
+4. try
 
 
 
