@@ -135,6 +135,21 @@ Steps
 	2. evaluate
 4. try
 
+I lost a lot of time trying to balance the dataset with SMOTE to use logistic regression and evaluate it using a multiclass ROC ([not in sklearn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#roc-curve-using-micro-averaged-ovr))
+
+It is of crucial importance to better understand how to deal with features and outliers. I discovered using PCA and KMeans that there is something wrong, maybe 4 points (or more) are distorting everything.
+I am trying to improve the dataset using the task3 algorithms of advanced preprocessing
+1. visualizing features
+2. outlier detection
+3. imbalance learning
+In particular, I need to understand how to
+1. visualize
+2. remove useless (collinearity) features with RFE and more
+3. remove outliers
+
+Found that the 3 crucial outliers clearly visible from PCA and t-SNE are the same. They are {5965, 5789, 6367}.
+Now, I will try to understand why using the Isolation Forest.
+
 
 
 
