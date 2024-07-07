@@ -172,7 +172,10 @@ Steps
 ## 3.  Advanced Data Pre-Processing
 ![[DM2 Official Guidelines#Module 3 Advanced Data-Preprocessing]]
 
-
+the notebooks are
+1. dimensionality reduction
+2. outlier detection
+3. imbalanced learning
 
 
 
