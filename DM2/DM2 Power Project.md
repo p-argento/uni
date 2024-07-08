@@ -155,6 +155,14 @@ Now, I will try to understand why using the Isolation Forest.
 Too many problems with sktime.
 Switching to tslearn for ml tasks.
 
+I created a function to visualize centroid clusters on top of samples of ts.
+The DTW Kmeans with K=5 is just great.
+Next step is to compare it with class labels.
+
+Oh and evaluate with silhouette ofc.
+
+
+
 
 
 
