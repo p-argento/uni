@@ -151,6 +151,11 @@ Found that the 3 crucial outliers clearly visible from PCA and t-SNE are the sam
 Now, I will try to understand why using the Isolation Forest.
 
 
+*8/7*
+Too many problems with sktime.
+Switching to tslearn for ml tasks.
+
+
 
 
 
