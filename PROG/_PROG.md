@@ -30,6 +30,7 @@ see more in [[Semini Slides]]
 7. UserDefinedTypes
 8. LibrariesAndString
 
+![[Pasted image 20240709135344.png]]
 
 ## Outline
 
