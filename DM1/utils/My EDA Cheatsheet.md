@@ -169,7 +169,7 @@ df['time_signature'] = df['time_signature'].astype('category')
 or you can just use an automated EDA like [ydata-profiling](https://github.com/ydataai/ydata-profiling).
 
 
-### 3. handle missing values
+### 3. handle missing values (or inf)
 ```python
 df.isnull().sum()
 # Drop rows with missing values

@@ -162,7 +162,13 @@ Next step is to compare it with class labels.
 Oh and evaluate with silhouette ofc.
 
 
-
+*10/7*
+Still triggered by the dataset.
+Pre-processing once and for all.
+Time series dataset.
+1. Handling rows
+	1. handle missing (or inf) values
+	2. handle duplicates
 
 
 
