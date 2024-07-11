@@ -170,7 +170,8 @@ Time series dataset.
 	1. handle missing (or inf) values
 	2. handle duplicates
 
-
+*11/7*
+[[Consumption Patterns]]
 
 
 ## 1. EDA
