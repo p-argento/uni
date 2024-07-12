@@ -173,6 +173,10 @@ Time series dataset.
 *11/7*
 [[Consumption Patterns]]
 
+*12/7*
+[[Interesting comment about Normalization of Time Series]]
+
+
 
 ## 1. EDA
 
