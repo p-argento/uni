@@ -176,27 +176,33 @@ Time series dataset.
 *12/7*
 [[Interesting comment about Normalization of Time Series]]
 
+*13/7*
+ADVANCED PRE-PROCESSING for df_refined
+
+Anomaly detection
+1. ABOD, because the dataset is high dimensional
+2. LODA, as an ensemble of HBOS
+3. ISOLATION FOREST, because it is the sota
+(how to select the 1%?, how to choose method? merge them?)
+
+Feature Selection (not in the guidelines)
+1. just use selectFromModel for df_refined
+2. what about df_simpler
+
+Imbalance Learning
+1. try dt on df_cleaned
+2. use dt on df_imbalanced (one class vs the others?)
+3. sota for undersampling and try again
+4. SMOTE (or ADASYN) for oversampling and try again
+5. best oversampling for df_refined
+
+I need a page to store all the results.
+
 
 
 ## 1. EDA
 
 ![[DM2 Official Guidelines#Module 1 Data Understanding and Preparation]]
-
-
-### REPORT
-
-The time series dataset is made of 8926 records, each one has 96 timepoints and 1 class label.
-There are no null points
-
-class
-5    2406
-2    2231
-4    1474
-3     851
-7     728
-1     727
-6     509
-
 
 
 ## 2. Time Series Analysis
