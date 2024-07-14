@@ -198,6 +198,30 @@ Imbalance Learning
 
 I need a page to store all the results.
 
+*14/7*
+I decided to present the results of test.csv only.
+
+An idea to detect the difference between similar and dissimilar pattern could be anomaly detection (isolation forest).
+
+
+Before testing TS, proper SCALING.
+Then, the experiments are
+1. motifs
+2. clustering
+3. classification
+
+Let's list all the things to do before testing TABULAR.
+1. NO data cleaning
+	1. consider this real-world scenario, no luxury of data cleaning
+2. manual feature selection
+3. IF DONE, proper scaling
+
+Advanced Pre-Processing
+1. 
+
+
+
+
 
 
 ## 1. EDA
