@@ -219,7 +219,9 @@ Let's list all the things to do before testing TABULAR.
 Advanced Pre-Processing
 1. 
 
-
+*15/7*
+- report also AUC for dt together with accuracy
+- se riuscissi a far funzionare adasyn su df_refined_imbalanced sarebbe pazzesco
 
 
 
