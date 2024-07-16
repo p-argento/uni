@@ -223,7 +223,7 @@ Let's list all the things to do before testing TABULAR.
 *16/7*
 1. there is no pytorch in dm2 env, but keras yes, for now I use only keras
 2. IMPORTANT -> I should try the outlier detection and the imblearn also on the test set
-3. 
+3. add libraries used for each section
 
 
 
