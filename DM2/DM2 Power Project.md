@@ -183,7 +183,6 @@ Anomaly detection
 1. ABOD, because the dataset is high dimensional
 2. LODA, as an ensemble of HBOS
 3. ISOLATION FOREST, because it is the sota
-(how to select the 1%?, how to choose method? merge them?)
 
 Feature Selection (not in the guidelines)
 1. just use selectFromModel for df_refined
@@ -216,13 +215,15 @@ Let's list all the things to do before testing TABULAR.
 2. manual feature selection
 3. IF DONE, proper scaling
 
-Advanced Pre-Processing
-1. 
 
 *15/7*
-- report also AUC for dt together with accuracy
-- se riuscissi a far funzionare adasyn su df_refined_imbalanced sarebbe pazzesco
+- IMPORTANT -> report also AUC for dt together with accuracy
 - com'è possibile che gli approcci di imblearn siano peggiori del default???
+
+*16/7*
+1. there is no pytorch in dm2 env, but keras yes, for now I use only keras
+2. IMPORTANT -> I should try the outlier detection and the imblearn also on the test set
+3. 
 
 
 
