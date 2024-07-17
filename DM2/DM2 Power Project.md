@@ -225,6 +225,8 @@ Let's list all the things to do before testing TABULAR.
 2. IMPORTANT -> I should try the outlier detection and the imblearn also on the test set
 3. add libraries used for each section
 
+> For instance many elements used in the objective function of a learning algorithm (such as the RBF kernel of Support Vector Machines or the L1 and L2 regularizers of linear models) assume that all features are centered around 0 and have variance in the same order. If a feature has a variance that is orders of magnitude larger than others, it might dominate the objective function and make the estimator unable to learn from other features correctly as expected.
+
 
 
 
