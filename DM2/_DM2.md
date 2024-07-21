@@ -7,9 +7,7 @@
 
 [[DM2 Official Guidelines]]
 [[DM2 Project Notes]]
-
 [[DM2 Power Project]]
-
 [[Data Pre-Processing]]
 
 > minmax for clustering
@@ -18,6 +16,10 @@
 NN.
 Use sklearn. But try also PyTorch and Keras.
 Relu for hidden layers and tanh or sigmoid for output layer.
+
+## Review
+[[DM2 Algorithms Review]]
+
 
 ## Slides
 14. dm2 intro
