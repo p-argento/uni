@@ -1,4 +1,4 @@
-## Slides
+## Topics
 [[1. Probabilities and Independence]]
 [[2. R Introduction]]
 [[3. Bayes' Rule and applications]]
