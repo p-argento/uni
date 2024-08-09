@@ -1,3 +1,9 @@
+## Lectures
+
+
+
+
+
 ## Topics
 [[1. Probabilities and Independence]]
 [[2. R Introduction]]
