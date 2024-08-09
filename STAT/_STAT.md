@@ -1,6 +1,42 @@
 ## Lectures
 
+You're right; I missed including all the rows. Here's the full table with all the rows in markdown format:
 
+| #   | Topic                                                                                                             | Recordings | PDFs         | Scripts                      | Book                                            |
+| --- | ----------------------------------------------------------------------------------------------------------------- | ---------- | ------------ | ---------------------------- | ----------------------------------------------- |
+| 01  | Introduction. Probability and independence.                                                                       | rec01.mp4  | slides01.pdf |                              | **[T]** Chpts. 1-3                              |
+| 02  | R basics.                                                                                                         | rec02.mp4  | slides02.pdf | script02.R                   | **[R]** Chpts. 1,2.1-2.3                        |
+| 03  | Bayes' rule and applications.                                                                                     | rec03.mp4  | slides03.pdf | script03.R                   | **[T]** Chpt. 3                                 |
+| 04  | Discrete random variables.                                                                                        | rec04.mp4  | slides04.pdf | script04.R                   | **[T]** Chpts. 4, 9.1, 9.2, 9.4 **[R]** Chpt. 3 |
+| 05  | Discrete random variables (continued).                                                                            | rec05.mp4  |              |                              |                                                 |
+| 06  | Recalls: derivatives and integrals.                                                                               | rec06.mp4  | slides06.pdf | script06.R                   | **[P]** Chpt. 1-8                               |
+| 07  | R data access and programming.                                                                                    | rec07.mp4  |              | script07.zip                 | **[R]** Chpt. 2.3, 2.4                          |
+| 08  | Continuous random variables.                                                                                      | rec08.mp4  | slides08.pdf | script08.R                   | **[T]** Chpts. 5, 9.2-9.4 **[R]** Chpt. 3       |
+| 09  | Expectation and variance. Computations with random variables.                                                     | rec09.mp4  | slides09.pdf | script09.R                   | **[T]** Chpts. 7, 8                             |
+| 10  | Expectation and variance. Computations with random variables (continued). Moments. Functions of random variables. | rec10.mp4  | slides10.pdf | script10.zip                 | **[T]** Chpts. 9-11                             |
+| 11  | Functions of random variables (continued). Distances between distributions.                                       | rec11.mp4  | slides11.pdf | script11.R                   | Murphy's book Chpt. 6                           |
+| 12  | Simulation.                                                                                                       | rec12.mp4  | slides12.pdf | script12.R, script12_sol07.R | **[T]** Chpts. 6.1-6.2                          |
+| 13  | Power laws and Zipf's law.                                                                                        | rec13.mp4  | slides13.pdf | script13.R                   | Newman's paper Sect I, II, III(A,B,E,F)         |
+| 14  | Law of large numbers. The central limit theorem.                                                                  | rec14.mp4  | slides14.pdf | script14.R                   | **[T]** Chpts. 13-14                            |
+| 15  | Graphical summaries. Kernel Density Estimation.                                                                   | rec15.mp4  | slides15.pdf | script15.R                   | **[T]** Chpt. 15, **[R]** Chpt. 4               |
+| 16  | Numerical summaries.                                                                                              | rec16.mp4  | slides16.pdf | script16.R                   | **[T]** Chpt. 16, **[R]** Chpt. 4               |
+| 17  | Data preprocessing in R. Estimators.                                                                              | rec17.mp4  |              | script17.R                   |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
+|     |                                                                                                                   |            |              |                              |                                                 |
 
 
 
