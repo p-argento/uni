@@ -1,7 +1,5 @@
 ## Lectures
 
-You're right; I missed including all the rows. Here's the full table with all the rows in markdown format:
-
 | #   | Topic                                                                                                             | Recordings | PDFs         | Scripts                      | Book                                            |
 | --- | ----------------------------------------------------------------------------------------------------------------- | ---------- | ------------ | ---------------------------- | ----------------------------------------------- |
 | 01  | Introduction. Probability and independence.                                                                       | rec01.mp4  | slides01.pdf |                              | **[T]** Chpts. 1-3                              |
