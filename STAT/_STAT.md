@@ -77,6 +77,7 @@ Consist of replicating the results of a scientific paper.
 [[Statistics Project]]
 ## Coding
 The scripts are named according to lessons, not sequentially.
+[[Statistics R utils]]
 ## Exam
 Written and oral exam.
 The project (and discussion) replace the written exam.
