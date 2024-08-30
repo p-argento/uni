@@ -176,7 +176,7 @@ $$
 $$
 Where
 $$\begin{align}
-y=(y_1,y_2,...,y_N)^T=?=(\pm1,\pm1,...) \\
+y=(y_1,y_2,...,y_N)^T=(\pm1,\pm1,...) \\
 D=N\times N\ \text{matrix with entries } y_iy_jx_i^Tx_j \\
 e=\text{N-dimensional vector of 1 (equivalent of} \sum)
 \end{align}$$
