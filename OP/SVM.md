@@ -1,11 +1,12 @@
+
+[[svm project NEW]]
+
 # Outline
 ---
 
 ![](Screenshot%202023-12-12%20at%2016.08.31.png)
 Project Guideline: [[OP/docs/Guidelines_4_Projects_ODS23.pdf]]
 Article linked:  [[FRANGIONI_svm_interior-point-article.pdf]] (online [here](https://epubs.siam.org/doi/abs/10.1137/S1052623400374379?journalCode=sjope8))
-
-[[svm project NEW]]
 
 **Project 25**
 The ML Model is a Support Vector Machine-type approach of your choice (in particular, with one or more kernels of your choice) for multi-class classification, e.g. using the standard One-to-Rest approach.
