@@ -13,7 +13,14 @@ To do so, we need to formulate the SVM problem as a quadratic programming proble
 I am investigating if the formulation of [libsvm](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) can be used, or if I need to do it from scratch. Following this [guide](https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf)
 This [article](https://www.csie.ntu.edu.tw/~cjlin/papers/libsvm.pdf) , which I believe is the main paper of LIBSVM, mentions the use of a decomposition method for solving the dual problem of the svm, because Q may be too big to be stored. Not our task though, but the definition of the problem is the same.
 
-Maybe I can use [scipy](https://docs.scipy.org/doc/scipy/reference/optimize.html) as mentioned [here](https://stackoverflow.com/questions/17009774/quadratic-program-qp-solver-that-only-depends-on-numpy-scipy)
+Among CVXPY solvers, I think OSQP is the best. It is also described in this [page](https://osqp.org/docs/solver/index.html) of oxford.
+
+
+
+
+
+
+(Maybe I can try also [scipy](https://docs.scipy.org/doc/scipy/reference/optimize.html) as mentioned [here](https://stackoverflow.com/questions/17009774/quadratic-program-qp-solver-that-only-depends-on-numpy-scipy))
 
 
 
