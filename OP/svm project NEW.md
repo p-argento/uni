@@ -1,6 +1,13 @@
 # Utils
 [Overleaf](https://www.overleaf.com/project/65dc61340f4e3e332b7dacc7)
 
+```latex
+•	Scalars: Denoted by lowercase letters, e.g.,  w ,  b ,  x_1 . These represent single numbers.
+•	Vectors: Denoted by boldface lowercase letters, e.g.,  \mathbf{w} ,  \mathbf{x} ,  \mathbf{y} . Vectors represent a sequence of numbers.
+•	Matrices: Denoted by boldface uppercase letters, e.g.,  \mathbf{X} ,  \mathbf{D} . Matrices represent a table of numbers (or vectors stacked together).
+```
+
+
 
 # News
 - 1/09/24: call with Duc, we are fixing the draft of the report so that tomorrow we can send it to frangioni. We decided to split the work for now, duc will do the barrier method and I will do the general purpose solver. We set 20/9 as the deadline to meet again and send everything to frangioni.
