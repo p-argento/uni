@@ -128,10 +128,7 @@ We keep all the equations the same, except for the last one, that becomes $$u\ g
 ![](Pasted%20image%2020240215181203.png)
 
 The modified KKT are much easier to solve.
-In fact, we get $u$ from the last equation $$u=\frac{-t}{g(x)}$$ Then the first equation with gradient becomes $$\begin{align}
-&\nabla f(x) + \frac{-t}{g(x)} \nabla g(x)=0 \\
-&\nabla\bigg(f(x)-t\ log(-g(x))\bigg)=0 \\
-\end{align}$$ To solve this gradient, just need to minimize the function $$\min_{x\in\mathbb{R^n}}f(x)-t\ log(-g(x))$$ In the optimum point obtained, all the KKT conditions are satisfied:
+In fact, we get $u$ from the last equation $$u=\frac{-t}{g(x)}$$ Then the first equation with gradient becomes $$\nabla f(x) + \frac{-t}{g(x)} \nabla g(x)=0$$ Recall that $$-\frac{1}{g(x)} \nabla g(x) = \nabla \log(-g(x))$$ To change the first equation into $$\nabla\bigg(f(x)-t\ log(-g(x))\bigg)=0$$ To solve this gradient, just need to minimize the function $$\min_{x\in\mathbb{R^n}}f(x)-t\ log(-g(x))$$ In the optimum point obtained, all the KKT conditions are satisfied:
 1. gradient is zero because is the necessary condition
 2. if g were positive $log(-g(x))$ would be +inf (or it does not exist?), so $g(x)\leq0$ is satisfied
 3. $u\geq0$ because of 2) and 4)
