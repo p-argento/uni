@@ -1,3 +1,5 @@
+[[STATISTICS REVIEW]]
+
 ## Lectures
 
 | #   | Topic                                                                                                             | Recordings | PDFs         | Scripts                      | Book                                            |
