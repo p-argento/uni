@@ -16,8 +16,8 @@
 14. Law of large numbers. The central limit theorem.
 15. Graphical summaries. Kernel Density Estimation.
 16. Numerical summaries
+17. (null) Data preprocessing in R. Estimators.
 
-17. Data preprocessing in R. Estimators.
 18. Unbiased estimators. Efficiency and MSE
 19. Maximum Likelihood Estimation
 20. Linear Regression. Least Squares Estimation.
