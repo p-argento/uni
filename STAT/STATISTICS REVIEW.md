@@ -44,30 +44,4 @@
 
 
 
-# 23. Statistical Decision Theory
-(or Probabilistic Classifiers)
-
-> Which hypothesis is the most probable given the observed data?
-1. use MLE
-2. use MAP (Maximum A Posteriori)
-
-A probabilistic classifier is a function that returns the probability of having a class c given some predictive features w. It means $f_{\theta}(c|w)=P(C=c|W=w, \theta)$.
-
-Params theta of the probabilistic classifier are found using ML maximization, that is asymptoptically minimizing the KL Divergence.
-
-
-> Which is the most probable class value given w and $\theta$?
-
-Bayes Decision Rule is optimal
-
-
-> Which is the most probable class value given w only (ie without fixing the params?)
-
-
-
-
-
-
-
-
 
