@@ -14,6 +14,10 @@ Greg Milner (book on gps).
 The evolution of science is made by tools, like the microscope or phones.
 Higher dimensional data are more sensitive to privacy.
 
+Provide feedback on the book that they are writing.
+
+
+
 
 
 
