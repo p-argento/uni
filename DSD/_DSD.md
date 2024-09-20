@@ -7,3 +7,6 @@ Study the book!
 
 ## Slides
 [[dsd02_Introduction to Data Warehouse]]
+[[dsd03]]
+
+
