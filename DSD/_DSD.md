@@ -5,8 +5,11 @@ Prof. Salvatore Ruggieri
 ## Material
 Study the book!
 
+## Exam
+To do LDS, first you must pass DSD.
+
 ## Slides
 [[dsd02_Introduction to Data Warehouse]]
 [[dsd03]]
-
+[[dsd04]]
 
