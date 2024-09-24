@@ -113,6 +113,7 @@ Attribute hierarchies is a natural way to support interactive exploration of fac
 Users understand them intuitively, because they are used to look at a summarized report and then to decide to look at a more detailed one.
 
 
+*ASSIGNMENT AT HOME*: university exams
 
 
 
