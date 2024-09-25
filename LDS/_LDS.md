@@ -17,6 +17,8 @@ Be prepared to download a VM of 60GB to use MS on Mac.
 You can use spyder, pycharm (I suggest you NOT to use jupyter, because it is better to be efficient, using functions and cleaning data once).
 DO NOT use duplicated code for each code. Use functions to reduce the number of lines of code. Image that the professor is another developer that wants to run your code.
 
+Do the exercises in the slides about python. You will be evaluated in the efficiency of the code.
+
 
 
 
