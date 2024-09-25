@@ -1,7 +1,10 @@
 Prof. Pansanella
 
-Classical computation.
-If you have only one cpu, the only paradigm available is sequential computation.
+
+if you want, on sobigdata academy there is an interactive part with quizzes.
+
+
+
 
 
 
