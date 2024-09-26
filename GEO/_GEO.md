@@ -38,6 +38,24 @@ Be aware of the order used by the library.
 Is it (lat,long) or (long, lat)?
 
 
+## Code fundamentals
+See the github.
+
+Main libraries
+1. shapely
+2. geopandas
+3. scikit-mobility
+
+> You might encounter problems of compatibility. Try to use the yml file on github.
+
+*Shapely*
+
+`POINT` is typical of shapely and it means that you created an object.
+
+
+
+
+
 
 
 
