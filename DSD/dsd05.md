@@ -9,7 +9,7 @@ SELECT Grade,
 		END
 ```
 
-
+Everything that is available in the operational database should be added, even if not present in the business questions. They will be asked later, so better to add the dimensions at the beginning.
 
 
 
