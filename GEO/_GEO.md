@@ -50,8 +50,7 @@ Main libraries
 
 ## Spatial Data Analysis
 
-
-
+Try QGIS software, it is opensource.
 
 
 
