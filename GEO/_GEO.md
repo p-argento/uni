@@ -48,9 +48,7 @@ Main libraries
 
 > You might encounter problems of compatibility. Try to use the yml file on github.
 
-*Shapely*
-
-`POINT` is typical of shapely and it means that you created an object.
+## Spatial Data Analysis
 
 
 
