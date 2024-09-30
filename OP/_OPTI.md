@@ -2,7 +2,7 @@
 
 [[OP/OPTIMIZATION Survival Kit]]
 
-__
+__________________________
 ## Slides
 [[Introduction To Course from Frangioni]]
 [[Simple and Quadratic Optimization Problems from Frangioni]]
