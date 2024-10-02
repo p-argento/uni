@@ -4,10 +4,12 @@ Prof. Pansanella
 if you want, on sobigdata academy there is an interactive part with quizzes.
 
 *Interactive lesson next time*
-Install pyspark!!!
+Do sobigdata quizzes.
 Do exercises with lambda functions.
+Try all the exercises in the notebook.
+Read pyspark docs.
 
-
+on Friday start at 9.30
 
 
 
