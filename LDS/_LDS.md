@@ -23,7 +23,7 @@ Do the exercises in the slides about python. You will be evaluated in the effici
 
 *DO ALL THE EXERCISES FOR NEXT WEDNESDAY*
 
-
+Use exceptions !! and handle them.
 
 
 
