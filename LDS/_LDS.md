@@ -25,6 +25,9 @@ Do the exercises in the slides about python. You will be evaluated in the effici
 
 Use exceptions !! and handle them.
 
+Do all exercises.
+Try the VPN.
+Install management studio
 
 
 
