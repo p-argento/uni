@@ -164,3 +164,11 @@ Transcript:
 (02:17) you can run them in parallel in the background by adding an ampersand after the command this has been bash the born-again shell in 100 seconds if you want to see more short videos like this make sure to hit the like button and subscribe thanks for watching and i will see you in the next one
 
 
+
+## Interesting things on ZSH and PATH variable
+https://mac.install.guide/terminal/path
+
+
+
+
+
