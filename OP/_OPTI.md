@@ -3,13 +3,6 @@
 [[OP/OPTIMIZATION Survival Kit]]
 
 __________________________
-## Slides
-[[Introduction To Course from Frangioni]]
-[[Simple and Quadratic Optimization Problems from Frangioni]]
-[[OP_2 Univariate Optimization]]
-[[OP_3 Multivariate Unconstrained Optimization (INTRO)]]
-[[OP_4 Multivariate Unconstrained Smooth Optimization]]
-[[OP_5 Multivariate Unconstrained Non-Smooth Optimization]]
 
 ## Outline
 Unconstrained and Continuous
@@ -33,7 +26,7 @@ Have a look at the [[Guidelines_4_Projects_ODS23.pdf]]
 
 > More about my project regarding SVM with Interior Point Method is in [[SVM]]
 
-## Lectures
+## Lectures (useless)
 [[Random Notes from Frangioni]]
 [[Introduction To Course from Frangioni]]
 [[Simple and Quadratic Optimization Problems from Frangioni]]
