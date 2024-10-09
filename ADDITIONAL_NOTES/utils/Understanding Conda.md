@@ -35,3 +35,35 @@ And to remove (-n stands for -name)
 `conda env remove -n <env_name>`
 
 
+## Conda and Pip best practices
+https://www.anaconda.com/blog/using-pip-in-a-conda-environment/
+
+**Use pip only after conda**
+
+- install as many requirements as possible with conda, then use pip
+- pip should be run with –upgrade-strategy only-if-needed (the default)
+- Do not use pip with the –user argument, avoid all “users” installs
+
+**Use conda environments for isolation**
+
+- create a conda environment to isolate any changes pip makes
+- environments take up little space thanks to hard links
+- care should be taken to avoid running pip in the “root” environment
+
+**Recreate the environment if changes are needed**
+
+- once pip has been used conda will be unaware of the changes
+- to install additional conda packages it is best to recreate the environment
+
+**Store conda and pip requirements in text files**
+
+- package requirements can be passed to conda via the –file argument
+- pip accepts a list of Python packages with -r or –requirements
+- conda env will export or create environments based on a file with conda and pip requirements
+
+
+
+
+
+
+
