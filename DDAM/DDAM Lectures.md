@@ -25,6 +25,16 @@ First part:
 6. Limitations of Hadoop
 7. The main difference between Hadoop and Spark
 
+The 3 issues of Distributed Computing are
+1. Communication
+	1. process of exchanging data between different parts of a system
+2. Synchronization
+	1. meaning coordination of processes
+3. Fault Tolerance
+	1. ability of a system to continue operating correctly in the event of failure of one or more of its components, preventing complete system failure
+
+Hadoop
+
 
 
 
