@@ -18,8 +18,6 @@ Provide feedback on the book that they are writing.
 
 ## GIS
 
-
-
 Fundamentals concpets
 1. Geographic coordinate system
 	1. to locate points on Earth

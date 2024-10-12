@@ -9,7 +9,7 @@ Do exercises with lambda functions.
 Try all the exercises in the notebook.
 Read pyspark docs.
 
-on Friday start at 9.30
+
 
 
 

@@ -19,15 +19,15 @@ DO NOT use duplicated code for each code, I DO NOT want to see copy and paste. U
 
 Do the exercises in the slides about python. You will be evaluated in the efficiency of the code.
 
--------------------
-
 *DO ALL THE EXERCISES FOR NEXT WEDNESDAY*
 
 Use exceptions !! and handle them.
 
 Do all exercises.
 Try the VPN.
-Install management studio
+Install management studio.
+
+
 
 
 
