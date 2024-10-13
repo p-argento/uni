@@ -121,22 +121,52 @@ Basics concepts
 		2. store the actual data blocks and are resposible for serving read and write requests from clients
 		3. DataNodes periodically report the status of the block they store the NameNode
 
+![[Pasted image 20241013170544.png|400]]
+
+For the user, HDFS appears to be the same filesystem as the one in your personal computer, but behind the scenes, the operations of READ and WRITE a file trigger the following sequences of actions.
+
+![[Pasted image 20241013171214.png]]
+
 *HDFS: write*
-
-
+1. client request to NameNode
+	1. the client begins the write process by contacting the NameNode to create a new file in the HDFS namespace
+	2. the HDFS sends a list of locations where to write, including the replicas, to be safe in case of a disk fault
+3. client initiates Data Writing
+	1. the client splits the file into blocks
+	2. begins writing these packets sequentially
+4. Data Acknowledgement (ie "riconoscimento o conferma")
+	1. the DataNodes acknowledge the correct writing of the block
+	2. the NameNode updates the metadata with the location of the blocks
 
 *HDFS: read*
+1. client request to NameNode
+	1.  the client initiates the read request by contacting the NameNode
+	2. the client asks for the metadata of the file it wants to read, it includes information about the blocks that make up the file and the DataNodes that store these blocks
+2. client contacts DataNode
+	1. using the information received from the NameNode, the client directly contacts the first DataNode
+	2. the client then reads the block of data from this DataNode
+	3. if the DataNode does not answer (eg fault), it will use one of the replicas
+3. sequential reading
+	1. the clients continues to read each subsequent block from the appropriate DataNode until the end of the file
 
-
-
-
+Note that the actual WRITE and READ are done directly between the Client and the NameNodes without passing through the NameNode to avoid bottlenecks.
 
 
 ## More on Hadoop
 Some facts on Hadoop
-1. not all problems are suitable for Hadoop
+
+Not all problems are suitable for Hadoop.
+The reasons are
+1. latency and real-time processing
+2. complexity of the programming model
+3. fixed data flow
+4. limited support for interactive and ad-hoc queries
+
+Hadoop vs Spark
+1. Hadoop
 
 
+![[Pasted image 20241013172615.png]]
 
 
 
