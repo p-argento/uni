@@ -152,8 +152,7 @@ For the user, HDFS appears to be the same filesystem as the one in your personal
 Note that the actual WRITE and READ are done directly between the Client and the NameNodes without passing through the NameNode to avoid bottlenecks.
 
 
-## More on Hadoop
-Some facts on Hadoop
+## The Pitfalls of Hadoop
 
 Not all problems are suitable for Hadoop.
 The reasons are
@@ -163,17 +162,44 @@ The reasons are
 4. limited support for interactive and ad-hoc queries
 
 Hadoop vs Spark
-1. Hadoop
+...
 
 
 ![[Pasted image 20241013172615.png]]
 
+Problems
+1. cumbersome setup and management
+2. steep learning curve
+3. declining relevance in the cloud era
 
+Summary of limitations
+1. security problem
+2. ease of use
+3. no iterative processing
+4. no real time processing
+5. slow processing speed
+6. small file concerns
 
+Alternative solutions.
+One of the most promising alternatives to Hadoop is Databricks, a unified analytics platform built on top of Apache Spark. It provides a fully managed, cloud-based platform for big data processing and analytics, eliminating the need for complex setup and management.
+
+Key benefits of Databricks and Apache Spark include
+1. faster processing
+2. easier development
+3. unified platform
 
 
 # 2. Spark RDD Basics
 27/09/24
+
+Apache Spark is an open-source distributed computing system.
+In python, it is imported as a library and content is generated to give users access to its primitives.
+
+![[Pasted image 20241013183043.png|350]]
+
+## Iterative algorithm
+
+
 
 
 
