@@ -197,10 +197,121 @@ In python, it is imported as a library and content is generated to give users ac
 
 ![[Pasted image 20241013183043.png|350]]
 
-## Iterative algorithm
+## Iterative algorithms
+There is an important class of applications, including K-Means, that reuse intermediate results. It is common in iterative machinel learning algorithms and interactive data mining. In MapReduce, the only way to reuse data is to write it to an external stable storage system, eg a distributed file system.
+
+We need a new data structure that is suitable for in-memory computation, but still ensuring fault tolerance without the data replication we have in Hadoop. Spark developers proposed the Resilient Distributed Dataset (RDD).
+
+## Resilient Distributed Dataset (RDD)
+
+A RDD is a fundamental data structure in Apache Spark. It is
+1. fault-tolerant
+2. distributed/parallel
+3. let users explicitly persist intermediate results in memory
+4. let users control their partitioning to optimize data placement and manipulate them using a rich set of operators
+
+RDDs 
+1. represents an immutable distributed collection of objects
+2. is the result of the work done by HDFS to distribute the data across the nodes
+3. can be seen as a special kind of list where each item can be of any type or structure we need.
+
+*Characteristics of RDDs*
+1. IMMUTABILITY
+	1. RDDs are read only, once created they cannot be modified
+	2. if you want to change an RDD, you create a new one based on the on the original one with something modified
+	3. this allows to reconstruct data in case of a node failure
+2. LINEAGE INFORMATION
+	1. RDDs keep track of the sequence of information that were used to build them
+	2. it is recorded as a directed acyclic graph for each RDD
+	3. when a partition of a RDD is lost due to a node failure, Spark can recompute that partition by following the lineage from the original data source, enabling data recovery
+3. DATA REPLICATION
+	1. for certain types of RDDs, like those created from HDFS data, Spark can leverage the redundant copies available on other nothes
+4. CHECKPOINTING
+	1. users can explicitly request checkpointing of RDDs
+	2. it involves saving the RDDs data to a reliable distributed file system (like HDFS or Amazon S3)
+	3. this provides an additional level of fault tolerance by reducing the amount of data that needs to be computed in case of node failures
+	4. note that checkpointing is a costly operation in terms of performance and storage, so it should be used judiciously
+
+![[Pasted image 20241015143310.png]]
+
+*Transformations and actions*
+
+Transformations
+1. are primitives that create a new RDD from an existing one
+2. they are evaluated lazily
+	1. meaning that first a sequence of primitives is planned, and not executed immediatly
+	2. it will postpone the evaluation until it is absolutely needed
+3. new RDDs are produced, since RDDs are immutable
+
+Actions
+1. are primitives that trigger the execution of the transformations required to compute the result
+2. produce a value back to the user or write data to an external storage system
+
+![[Pasted image 20241015151159.png]]
+
+## PySpark
+
+We usually work in a notebook.
+
+First we create a context to be used for the creation of RDD, Transformations and Actions. `SparkContext` is the primitive to be used, it takes as input the name of the application and where the master machine is using all the possible cores. 
+Only one SparkContext should be active per JVM. You must stop() the active SparkContext before creating a new one.
+
+```python
+from pyspark import SparkContext
+sc = SparkContext(appName="MY-APP-NAME", master="local[*]")
+print("done")
+```
+
+*Creating an RDD*
+To create an RDD, use the primitive `parallelize`.
+1. it moves data from the local memory to the distributed storage
+2. it triggers the HDFS operations of distributions
+3. the data we move must be a list
+4. the RDD does NOT contain the actual data, but a reference to the RDD because data is distributed
+
+```python
+numbers = [1,2,3,4,5]
+rdd_numbers = sc.parallelize(numbers) 
+print(numbers)
+print(rdd_numbers)
+```
+
+The RDD is designed to be very long (bilion of positions), but with small data on each item, it will be optimized by Spark over the nodes.
+
+## Actions
+Actions
+1. are primitives that trigger the execution of the transformations required to compute the result
+2. produce a value back to the user or write data to an external storage system
+
+They are
+1. collect
+2. reduce
+3. first
+4. take
+5. TakeOrdered
+6. TakeSample
+7. Distinct
 
 
 
+## Trasformations
+Transformations
+1. are primitives that create a new RDD from an existing one
+2. they are evaluated lazily
+	1. meaning that first a sequence of primitives is planned, and not executed immediatly
+	2. it will postpone the evaluation until it is absolutely needed
+3. new RDDs are produced, since RDDs are immutable
+
+1. filter
+2. map
+3. flatMap
+4. sortBy
+5. union
+6. intersection
+7. keyBy
+8. groupByKey
+9. reduceByKey
+10. Join
 
 
 
