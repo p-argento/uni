@@ -336,6 +336,30 @@ Some transformations are
 10. Join
 
 
+*example of most frequent words USING RDD*
+to compute the 10 most frequent words in a text, stored in comedies.txt, we have to: 
+1. read the file as an RDD using SparkContext.textFile()
+2. split the text into single words by any non-word character
+3. filtering out empty words
+4. create key, value pairs of (word,1)
+5. sum by key
+6. sort by value
+7. take the first 10 words
+
+```python
+import re from pyspark 
+import SparkContext 
+sc = SparkContext(appName="MY-APP-NAME", master="local[*]") 
+rdd = sc.textFile('/content/sample_data/comedies.txt') 
+split = rdd.flatMap(lambda line: re.split('\W+', line)) 
+split_nonempty = split.filter(lambda word: word != "") 
+words = split_nonempty.map(lambda word: (word, 1)) 
+word_count = words.reduceByKey(lambda a, b: a + b) 
+top_words = word_count.takeOrdered(10, key=lambda x: -x[1]) 
+print(top_words)
+```
+
+
 
 
 # 3. (LAB)
@@ -357,7 +381,126 @@ This lesson is about
 
 ## Spark DataFrames
 
-A dataframe is a 
+A dataframe is a distribution of data organized into named columns, It is a powerful abstraction for distributed and structured data.
+It is similar
+1. to a pandas dataframe in python, but is distributed in the cluster
+2. to a SQL table
+
+Key advantages
+1. easier to understand
+2. optimized for complicated operations
+
+Advantages of DFs over RDDs
+1. optimization
+	1. schema information enables query optimization and predicate pushdown
+2. ease of use
+	1. high level of abstraction similar to pandas
+3. interoperability
+	1. easily interoperate with various data sources and converted to Pandas dataframes
+4. integration
+	1. integrated with spark ecosystem, eg spark sql or spark MLlib
+
+*example of most frequent words USING DF*
+
+You can transform an RDD into a dataframe using the function `.toDF()` if the RDD is an `RDD[Row]`.
+
+1. map each line of text to be a Row object
+2. create a dataframe with a single column "line"
+3. split each line into words based on any non-word character and explode the resulting list into separate rows renaming the col "word"
+4. filter out empty words
+5. group by the word columns and count occurrences
+6. order by the count column in descending order
+7. limit the result to the 10 most frequent words
+
+```python
+from pyspark.sql import SparkSession 
+from pyspark.sql import Row 
+from pyspark.sql.functions import explode, split, col 
+spark = SparkSession.builder.appName("WordCount").getOrCreate() 
+rdd_rows = rdd.map(lambda line: Row(line)) 
+df = rdd_rows.toDF(('line',)) 
+words_df = df.select(explode(split(col("line"), r"\W+")).alias("word")) 
+words_df = words_df.filter(words_df.word != "") 
+word_count_df = words_df.groupBy("word").count() 
+top_words_df = word_count_df.orderBy(col("count").desc()).limit(10) top_words_df.show()
+```
+
+
+## Spark Context vs Spark Session
+
+What is SparkContext
+1. Core Entry Point
+	1. SparkContext is the original entry point for Spark functionality
+	2. it allows interaction with Spark's cluster, RDDs and low-level APIs
+2. RDD focused
+	1. primarly used for creating and managing RDDs, which are distributed collections of objects
+
+What is SparkSession?
+1. Unified Entry Point
+	1. introduced in Spark 2.0
+	2. provides a single point of entry to all Spark functionalities, incuding working with dataframes and sql (it was previously split across multiple contexts)
+2. Higher-level APIs
+	1. emphasizes Dataframe and Dataset APIs, which are optimized and easier to use than RDDs
+
+When we use the DataFrame API, we use SparkSession!
+
+![[Pasted image 20241015181827.png]]
+
+## RDDs vs DataFrames
+
+![[Pasted image 20241015183046.png]]
+
+## Creating a DataFrame
+
+Many different ways
+1. `toDF()`
+2. from RDDs
+	1. using `pyspark.sql.SparkSession.createDataFrame(data,schema,samplingRatio,verifySchema)`
+	2. the schema can be inferred or specified
+3. from iterables
+	1. using `pyspark.sql.SparkSession.createDataFrame(data,schema,samplingRatio,verifySchema)`
+4. from Spark Data Sources
+
+*2a. Creating a DF from RDDs inferring the schema*
+
+
+
+
+
+## DataFrame basic operations tutorial
+
+1. select
+2. filter
+3. groupby
+4. aggregations (sum, avg, ...)
+5. sort
+6. alias
+7. distinct
+8. drop
+9. withcolumn
+10. join
+
+
+## Machine Learning with Spark
+
+Important things...
+
+
+ML Pipeline with classification
+
+1. load (create a dataframe)
+2. train-test split
+3. training (.fit())
+4. prediction (.transform())
+5. evaluation
+
+Clustering
+(no train-test split)
+
+
+
+
+
 
 
 
