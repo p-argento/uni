@@ -453,18 +453,69 @@ When we use the DataFrame API, we use SparkSession!
 ## Creating a DataFrame
 
 Many different ways
-1. `toDF()`
-2. from RDDs
+1. from RDDs (more common?)
+	1. using `.toDF()`
+	2. eg `df = rdd_rows.toDF(('line',))`
+2. from RDDs (alternative)
 	1. using `pyspark.sql.SparkSession.createDataFrame(data,schema,samplingRatio,verifySchema)`
 	2. the schema can be inferred or specified
 3. from iterables
 	1. using `pyspark.sql.SparkSession.createDataFrame(data,schema,samplingRatio,verifySchema)`
 4. from Spark Data Sources
 
+*1. Creating a DF from RDDs using .toDF()*
+See example of most frequent words
+
 *2a. Creating a DF from RDDs inferring the schema*
+The RDD has to be of any kind of SQL data representation (row, tuple, int, boolean)
+1. create suitable RDD
+	1. skipping the first row of the file (header)
+2. pass the RDD as it is to the createDataFrame function
 
 
+```python
+lines = sc.textFile(‘people.csv’)
+header = lines.first() 
+lines_without_header = lines.filter(lambda line: line != header) 
+parts = lines_without_header.map(lambda l: l.split(','))
+people = parts.map(lambda p: Row(p[0], p[1])) 
+peopledf = spark.createDataFrame(people)
+peopledf.show()
+peopledf.printSchema()
+```
 
+How to print?
+Use the function `df.printSchema()` to obtain information about the inferred schema.
+> will it be printed correctly??
+
+To sum up
+1. have an `RDD[Row]`
+	1. if you want the schema to be correct, assign a name to each element of the Row and cast the elements to the correct data type
+2. use createDataFrame(RDD) to create the DataFrame
+
+
+*2b. Creating a DF from RDDs specifying the schema*
+We can define a schema using StructType() which consists of a list of StructField. Each StructField specifies
+1. name of the field
+2. data type
+3. whether the field can be none or not
+
+[Comprehensive list of all types](https://spark.apache.org/docs/late st/sql-ref-datatypes.html)
+
+```python
+from pyspark.sql.types import *
+schema = StructType(
+					[StructField("name", StringType(), True), 
+					StructField("age", IntegerType(), True)])
+```
+
+A schema can also be defined as a DDL formatted string `"column_name: data_type"`
+1. eg `schema = “name: string, age: int”`
+
+Once the schema has been defined, the DataFrame can be created passing the schema with `createDataFrame(rdd, schema)`
+
+
+*3. Creating a DF from RDDs inferring the schema*
 
 
 ## DataFrame basic operations tutorial
