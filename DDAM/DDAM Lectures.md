@@ -278,19 +278,39 @@ print(rdd_numbers)
 
 The RDD is designed to be very long (bilion of positions), but with small data on each item, it will be optimized by Spark over the nodes.
 
+There is a primitive called `TextFile` that we can invoke over the spark context sc, it reads a local file and creates an RDD by putting in each position of the list a line of text automatically.
+
+```python
+shakespeare_rdd = sc.textFile("comedies.txt") 
+print(shakespeare_rdd)
+```
+
 ## Actions
 Actions
 1. are primitives that trigger the execution of the transformations required to compute the result
 2. produce a value back to the user or write data to an external storage system
 
 They are
-1. collect
+1. `rdd.collect()`
+	1. the opposite of parallelize
+	2. it gets the data back from the distributed store
+	3. WARNING! you can kill the machine if you collect big data
 2. reduce
+	1. one of the most important actions
+	2. it aggregates the elements of an RDD by applying a binary function f(a,b)
+	3. the function f(a,b) is usually a lambda function that should be both commutative and associative, because spark decides the order of the elements according to availability of data
+	4. for example `numbers.reduce(lambda x, y: x + y)`
 3. first
-4. take
+	1. returns the first element of the rdd
+	2. used to understand the format and content
+4. take (n)
+	1. retrieves the first n elements from the rdd
 5. TakeOrdered
+	1. returns the smallest or largest elements in sorted order
 6. TakeSample
+	1. returns a random sample, with or without replacement
 7. Distinct
+	1. returns a new rdd with the distinct values
 
 
 
@@ -302,7 +322,9 @@ Transformations
 	2. it will postpone the evaluation until it is absolutely needed
 3. new RDDs are produced, since RDDs are immutable
 
+Some transformations are
 1. filter
+	1. returns a new rdd that contains only those elements that satisfy the specified condition
 2. map
 3. flatMap
 4. sortBy
@@ -323,6 +345,21 @@ Transformations
 
 # 4. Dataframes
 04/10/24
+
+This lesson is about
+1. spark dataframes
+2. basic operations on data frames
+	1. data cleaning, preparation and exploration, pipeline with examples
+3. machine learning with pyspark
+	1. with MLib dataframe-based
+4. machine learning pipeline
+	1. with unsupervised and supervised learning
+
+## Spark DataFrames
+
+A dataframe is a 
+
+
 
 
 
