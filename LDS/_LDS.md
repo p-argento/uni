@@ -19,14 +19,25 @@ DO NOT use duplicated code for each code, I DO NOT want to see copy and paste. U
 
 Do the exercises in the slides about python. You will be evaluated in the efficiency of the code.
 
-*DO ALL THE EXERCISES FOR NEXT WEDNESDAY*
-
 Use exceptions !! and handle them.
 
 Do all exercises.
 Try the VPN.
 Install management studio.
 
+## Notes from recording of past year
+14/10/24
+*is it the same this year?*
+
+install version 17 of odbc driver for sql
+active vpn
+
+lds.di.unipi.it
+-> autenticazione sql tramide id
+id: lds
+psswrd: pisa
+
+select default database "lbi"
 
 
 
