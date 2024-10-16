@@ -3,6 +3,7 @@ Prof. Pappalardo
 [Didawiki Geo](http://didawiki.di.unipi.it/doku.php/geospatialanalytics/gsa/start)
 [Github Geo](https://github.com/jonpappalord/geospatial_analytics)
 
+[[Geospatial Analytics Lectures]]
 ## Introduction
 Mobility data and spatial phenomena.
 
