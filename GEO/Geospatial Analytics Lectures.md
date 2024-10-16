@@ -39,10 +39,18 @@ MODULE 4: Applications
 # 2. Fundamental Concepts
 
 Concepts
-1. Geographic Coordinate System (GIS)
-	1. 
+1. Geographic Coordinate System (GCS)
+	1. reference system for locating points on the Earth's surface
 2. Vector Data Model
-	1. 
+	1. representation of spatial features in GIS
+3. Trajectory
+	1. sequence of points that describe an individual movements
+4. Spatial Tessellation
+	1. division of space into non-overlapping tiles
+5. Flows
+	1. movements of groups of people between places
+
+
 
 
 
@@ -53,6 +61,17 @@ Concepts
 
 # 3. Spatial Data Analysis
 
+Content
+1. terminology
+2. basic spatial data types
+	1. raster vs vectorial
+3. basic spatial operations
+	1. intersection, union, difference
+	2. buffering
+	3. spatial join
+4. simple spatial patters and concentration measures
+	1. Moran's I(ndex)
+	2. Geary's C
 
 
 
