@@ -59,7 +59,7 @@ Concepts
 
 
 
-# 3. Spatial Data Analysis
+# 3a. Spatial Data Analysis (1)
 
 Content
 1. terminology
@@ -72,6 +72,20 @@ Content
 4. simple spatial patters and concentration measures
 	1. Moran's I(ndex)
 	2. Geary's C
+
+
+# 3b. Spatial Data Analysis (2)
+
+Content
+1. Spatial Interpolation
+	1. Thiessen polygons
+	2. IDW
+	3. Kriging
+2. Spatial Regression
+3. Spatial Associations: co-location patterns
+4. Spatial Trends
+
+
 
 
 
