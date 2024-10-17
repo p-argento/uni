@@ -73,6 +73,66 @@ Content
 	1. Moran's I(ndex)
 	2. Geary's C
 
+...
+
+Actually chapter 4 is
+4. point spatial patterns and spatial correlation
+	1. density
+	2. Nearest Neighbors (NN)
+	3. Moran's I
+	4. Geary's C
+
+## Point spatial patterns
+The general objective is understand how object are distributed in space.
+
+In spatial point pattern analysis, spatial distribution patterns are typically categorized into three types
+1. uniform (discrete) distribution
+2. random distribution
+3. clustered distribution
+
+![[Pasted image 20241017114922.png]]
+
+As in statistics, we can define
+1. a center around which all objects are distributed
+2. various dispersion indexes to measure how much they are dispersed around
+
+![[Pasted image 20241017115059.png]]
+
+## 1. Density estimation
+How many points (or objects) are in the same place?
+Based on the different interpretation of "place", we distinguish
+1. global density
+	1. computed over all geographical area
+	2. eg. number of restaurants per m2
+2. local density
+	1. computed over all the geographical area
+	2. eg. number of restaurants per m2 for each municipality
+3. kernel density
+	1. density of one cell is computed considering its neighborhood
+	2. eg. restaurans in and around municipality
+
+![[Pasted image 20241017115434.png]]
+
+To compute the kernel density
+1. define a neighborhood Nc for each cell C
+	1. typically the 8 adjacent cells
+2. density of C = density of $C\cup N_c$
+	1. there is a smoothing effect similar to the "moving average in time series"
+
+![[Pasted image 20241017115710.png|400]]
+
+An alternative is the "weighted kernel density".
+The points in the neighborhood have a weight dependent on the distance from C's center.
+
+![[Pasted image 20241017115845.png]]
+
+## 2. (NNs) Random vs Pattern
+
+Two types of analysis
+1. Average Nearest Neighbor (ANN)
+2. 
+
+
 
 # 3b. Spatial Data Analysis (2)
 
