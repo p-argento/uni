@@ -130,8 +130,18 @@ The points in the neighborhood have a weight dependent on the distance from C's 
 
 Two types of analysis
 1. Average Nearest Neighbor (ANN)
-2. 
+2. L function (aka standardized Ripley's K-function)
 
+## 3. Spatial Autocorrelation
+
+Autocorrelations is the correlation between values of the same variable (eg temperature) measured in different times or places.
+We distinguish
+1. different times -> time series -> temporal autocorrelation
+2. different places -> geospatial data -> spatial autocorrelation
+
+Tobler's first law of geography.
+
+...
 
 
 # 3b. Spatial Data Analysis (2)
@@ -151,6 +161,14 @@ Content
 
 
 # 4. Spatial and mobility data
+
+
+
+
+
+
+
+
 
 
 
