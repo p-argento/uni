@@ -162,6 +162,14 @@ Content
 
 # 4. Spatial and mobility data
 
+Sources of data
+1. GPS
+2. Mobile Phone Records
+3. Location-based social networks
+4. Road Networks and POIs
+
+
+
 
 
 
