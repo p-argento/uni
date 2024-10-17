@@ -162,11 +162,17 @@ Content
 
 # 4. Spatial and mobility data
 
-Sources of data
+Sources of mobility data
 1. GPS
 2. Mobile Phone Records
-3. Location-based social networks
+3. Location-based social networks (LBS)
 4. Road Networks and POIs
+
+![[Pasted image 20241017153457.png]]
+
+
+*TOMORROW*
+Try to solve homeworks in the slide.
 
 
 
