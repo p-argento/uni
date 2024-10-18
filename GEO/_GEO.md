@@ -55,5 +55,9 @@ Try QGIS software, it is opensource.
 
 bounding box ?
 
+*homework*
+eliminate duplicate rows
+
+
 
 
