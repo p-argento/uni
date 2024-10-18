@@ -18,6 +18,15 @@ Read pyspark docs.
 5. Machine learning with PySpark
 
 
+## ML with pyspark
+
+We use pipelines, that are concatenation of tranformers and estimators.
+
+
+
+
+
+
 
 
 
