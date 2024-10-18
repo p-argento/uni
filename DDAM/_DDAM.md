@@ -22,7 +22,14 @@ Read pyspark docs.
 
 We use pipelines, that are concatenation of tranformers and estimators.
 
+The imputer is the transformer handled by spark.
+We use the class `Imputer` making an instance with inputCols and outputCols. Then `imputer.fit(df)`, meaning that it will take data from the cols in the instance defined (the default for the imputer is the average). Then `model.tranform(df)`, that will do the work and generate the output.
 
+The advantage is that it can be used with pipelines.
+
+Practically all the algos in spark work with numbers, so when you have strings you need to use indexes that maintain the information. Use `stringIndexer`.
+
+A sparse vector is used to save space. Only non-zero positions are stored, the other are zero by default. It is a dict od `{pos:value}`. The one-hot encoding is stored as a sparse vector.
 
 
 
