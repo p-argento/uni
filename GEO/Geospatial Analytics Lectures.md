@@ -171,10 +171,6 @@ Sources of mobility data
 ![[Pasted image 20241017153457.png]]
 
 
-*TOMORROW*
-Try to solve homeworks in the slide.
-
-
 
 
 

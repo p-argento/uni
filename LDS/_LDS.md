@@ -1,5 +1,11 @@
 [LDS Didawiki](http://didawiki.di.unipi.it/doku.php/mds/lbi/start)
 
+## Important Notes
+
+*23-10-24*
+
+
+
 
 ## Exam
 Ruggieri first. Then Monreale. Write it in the notes on valutami.
