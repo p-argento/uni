@@ -9,8 +9,19 @@ It is better to do most of the operations locally (even rounding numbers), becau
 Remember. The cursor is a pointer to the resources that must be reset (or re-execute the query).
 
 --project
+In the report, 5 pages max for each part. We want to see your implementation choices. How you treat null values.
+You should try to design the fastest solution for the assignment, but you can describe alternatives in the report.
+It should contain the things that it is not possible to understand from the code.
+We expect comments on the process on the data.
+Describe also if you integrate more data.
+A brief summary of the code.
+You can use images.
 
+Better modularization means better code.
 
+exercise for next time.
+stratified subsampling.
+NEXT TIME YOU WILL DO A LOT OF EXERCISES.
 
 
 *23-10-24*
