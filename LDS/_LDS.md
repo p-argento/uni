@@ -2,6 +2,17 @@
 
 ## Important Notes
 
+*24-10*
+
+It is better to do most of the operations locally (even rounding numbers), because we do not know the power of the server. Just get the data from the server.
+
+Remember. The cursor is a pointer to the resources that must be reset (or re-execute the query).
+
+--project
+
+
+
+
 *23-10-24*
 > Microsoft sucks
 
