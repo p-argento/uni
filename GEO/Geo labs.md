@@ -25,6 +25,8 @@ def speed
 ```
 
 
+To visualize a trajectory, use scikit-mobility using a trajectory dataframe.
+
 
 
 
