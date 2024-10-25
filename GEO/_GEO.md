@@ -6,6 +6,11 @@ Prof. Pappalardo
 [[Geospatial Analytics Lectures]]
 
 [[Geo labs]]
+
+## News
+Try the compression exercise.
+
+
 ## Introduction
 Mobility data and spatial phenomena.
 
