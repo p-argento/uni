@@ -4,6 +4,8 @@ Prof. Pappalardo
 [Github Geo](https://github.com/jonpappalord/geospatial_analytics)
 
 [[Geospatial Analytics Lectures]]
+
+[[Geo labs]]
 ## Introduction
 Mobility data and spatial phenomena.
 
