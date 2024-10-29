@@ -2,6 +2,18 @@
 
 ## Important Notes
 
+*29-10*
+Remember, the sql tool is called "odbc origini dati 64bit".
+
+
+
+
+
+
+
+
+
+
 *24-10*
 
 It is better to do most of the operations locally (even rounding numbers), because we do not know the power of the server. Just get the data from the server.
