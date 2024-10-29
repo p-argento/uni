@@ -2,9 +2,35 @@
 
 ## Important Notes
 
+Tomorrow we use Integration Service and Visual Studio.
+Do the stratified sampling ex.
+
+
+
 *29-10*
 Remember, the sql tool is called "odbc origini dati 64bit".
 
+Pandas is allowed only for the first part of the project.
+> Try the exercise of customers also without using pandas!
+
+When opening files, use `open("filename.csv",mode='r', encoding='utf-8-sig')`
+Use the csv package for `csv.DictReader`. It will create a list of dictionaries. It means that every row is a dictionary!
+> Be sure to understand how a dictionary works.
+
+Remember that when you read a file everthing is a file, but we might need to convert it into a int. Pandas do this for you.
+
+Remember that when working on data, you need to keep only the data you need, and use less loops as possible. But, before knowing the business questions, during cleaning and transformation, you keep all the data. 
+
+> EXAM QUESTION: Can you implement a join in python (using dictionaries)? 
+
+> Look at dictionary comprehehnsion
+
+REMEMBER WHEN WRITING CODE
+1. use functions for modularity
+2. think about exceptions
+	1. to avoid problem before production
+
+When scanning tables, use `break` if you find what you looked for, in order to speed up the code.
 
 
 
@@ -123,19 +149,6 @@ Do all exercises.
 Try the VPN.
 Install management studio.
 
-## Notes from recording of past year
-14/10/24
-*is it the same this year?*
-
-install version 17 of odbc driver for sql
-active vpn
-
-lds.di.unipi.it
--> autenticazione sql tramide id
-id: lds
-psswrd: pisa
-
-select default database "lbi"
 
 
 
