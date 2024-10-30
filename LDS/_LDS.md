@@ -27,6 +27,31 @@ In `Server Objects->Linked Server` there are linked servers, see slide 07.12; us
 
 
 
+In SSIS, open a new project and on the right go to "SSIS Packages" to build an ETL process. Is the .dtsx file, it is like a 
+Only one project containing different packages?
+Each .dtsx is a dataflow (?).
+> How many packages do we need to create for the project?
+
+If you open the file of the professor, you get an error because you cannot open it, but you can still read it. 
+
+You can create nodes, and then use the toolbox on the left to add tools.
+Double click on the node if there is a problem, for example in OLEDB node you need to configure the connection.
+
+Use the blue arrow to link the nodes.
+
+Remember to change the path. NOT the computer, but the connection to the server. Use "English (USA)" local settings.
+
+Configurate both the connection manager and the mappings.
+Check that all the inputs are associated with an output.
+Drag&Drop if needed.
+
+> In the project.
+> In assignment 1, you can use pandas and whatever you want but you CANNOT modify the file.
+> From Assignment 2 on, you can modify the data, but you CANNOT use pandas.
+
+
+Use "encription: optional" in the login Management Studio.
+
 
 
 
