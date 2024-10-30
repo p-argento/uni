@@ -2,8 +2,18 @@
 
 ## Important Notes
 
-Tomorrow we use Integration Service and Visual Studio.
-Do the stratified sampling ex.
+*30-10*
+Showing the solution of the stratified sampling.
+There are 2 solutions, but avoid the one server-side.
+
+> What is a cursor? What type of object?
+
+You can use the `csv` library for the project.
+
+
+
+
+
 
 
 
