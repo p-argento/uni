@@ -10,6 +10,21 @@ There are 2 solutions, but avoid the one server-side.
 
 You can use the `csv` library for the project.
 
+"ORDER BY newid()" can be used to add randomness in the data.
+
+Showing slides 07
+
+What is a snowflake schema?
+
+
+In SQL Management Studio (SSMS), we can create a new diagram with a subset of tables. Just right click on the folder "FoodMart"->"Database Diagram"->"New Database Diagram"
+
+To write a query, select "New Query" from right click. Remember to change the schema in the top left.
+
+Use `FROM [FoodMart].[dbo].[customer]` to specify the complete path for the table starting from the database.
+
+In `Server Objects->Linked Server` there are linked servers, see slide 07.12; usually the folder is empty. This means that we can simulate a distributed query.
+
 
 
 
