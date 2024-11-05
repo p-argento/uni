@@ -33,7 +33,7 @@ Each .dtsx is a dataflow (?).
 > How many packages do we need to create for the project?
 
 If you open the file of the professor, you get an error because you cannot open it, but you can still read it. 
-
+...
 You can create nodes, and then use the toolbox on the left to add tools.
 Double click on the node if there is a problem, for example in OLEDB node you need to configure the connection.
 
