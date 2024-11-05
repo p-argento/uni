@@ -11,6 +11,10 @@ Prof. Pappalardo
 Try the compression exercise.
 
 
+
+
+
+
 ## Introduction
 Mobility data and spatial phenomena.
 

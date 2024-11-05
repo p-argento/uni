@@ -174,6 +174,19 @@ Sources of mobility data
 
 
 
+# 5. Preprocessing Mobility Data
+
+*Content*
+Preprocessing trajectories
+1. trajectory filtering
+2. point map matching
+3. route reconstruction
+4. trajectory compression
+5. semantic enrichment
+	1. stop detection / trajectory segmentation
+	2. home location detection (GPS & MobPhones)
+	3. activity recognition (POI-based)
+
 
 
 
