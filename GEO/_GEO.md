@@ -3,14 +3,18 @@ Prof. Pappalardo
 [Didawiki Geo](http://didawiki.di.unipi.it/doku.php/geospatialanalytics/gsa/start)
 [Github Geo](https://github.com/jonpappalord/geospatial_analytics)
 
-[[Geospatial Analytics Lectures]]
-
 [[Geo labs]]
 
 ## News
 Try the compression exercise.
 
 
+
+## Notes from slides
+
+[[Geospatial Analytics - Module 1]]
+
+[[Geospatial - Module 2,3,4]]
 
 
 
