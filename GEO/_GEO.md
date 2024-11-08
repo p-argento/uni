@@ -125,6 +125,22 @@ Let's sum up.
 6. join of $SJ$ and $D$ to get $J$
 7. scatterplot
 
+Let's see the skmob implementation.
+
+When we look at the data, we immediately notice the null island.
+Always clean data, remember also the speed filter.
+We will focus our analysis only on the us, doing a spatial join with the shape of the us.
+geojson.io is a website where you can draw a rectangle on the map and get the coordinates. The alternative is to use google map and manually see the coordinates of the rectangle you want.
+
+
+
+
+
+
+
+
+
+
 
 
 
