@@ -91,7 +91,7 @@ What is the home? We need a Home Detection Algorithm (HDA)
 For calls, it is the antenna you use mostly, especially at night.
 For gps, we can assume the night.
 
-If we do not have a precise geometry for cities, we can use bounding boxes, meaning that we need to build a geometry of the rectangle.
+If we do not have a precise geometry for cities, we can use bounding boxes (bbox), meaning that we need to build a geometry of the rectangle.
 
 To compute the amount of walking for each individual, we can use the radius of gyration (rog). However, remember that if the time is too short, it can be unstable (recall the plot in the slides).
 
@@ -132,8 +132,10 @@ Always clean data, remember also the speed filter.
 We will focus our analysis only on the us, doing a spatial join with the shape of the us.
 geojson.io is a website where you can draw a rectangle on the map and get the coordinates. The alternative is to use google map and manually see the coordinates of the rectangle you want.
 
+To build a geopandas df, you need do actually build a new object, adding the geometry column is not enough.
+Remember always to specify the CRS (Coordinates Reference System), because every file uses a different one.
 
-
+Geoapify is a website where you can find useful datasets, for example the one that we need for the population.
 
 
 
