@@ -1,6 +1,8 @@
 # News
 - 1/09/24: call with Duc, we are fixing the draft of the report so that tomorrow we can send it to frangioni. We decided to split the work for now, duc will do the barrier method and I will do the general purpose solver. We set 20/9 as the deadline to meet again and send everything to frangioni.
 
+- 11/11: trying to find a direction [[Basics of Numerical Linear Algebra]]
+
 # Outline
 ---
 
