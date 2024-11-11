@@ -2,6 +2,7 @@
 
 
 Calculations that can be proven not to magnify approximation errors are called _numerically stable_.
+> Numerical linear algebra's central concern with developing algorithms that do not introduce errors when applied to real data on a finite precision computer is often achieved by [iterative](https://en.wikipedia.org/wiki/Iterative "Iterative") methods rather than direct ones.
 
 In the [mathematical](https://en.wikipedia.org/wiki/Mathematics) discipline of [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), a **matrix decomposition** or **matrix factorization** is a [factorization](https://en.wikipedia.org/wiki/Factorization) of a [matrix](https://en.wikipedia.org/wiki/Matrix_(mathematics)) into a product of matrices. There are many different matrix decompositions; each finds use among a particular class of problems.
 
@@ -27,6 +28,8 @@ ${\displaystyle {\mathbf {x}}^{(k+1)}=D^{-1}({\mathbf {b}}-(L+U){\mathbf {x}}^{(
 When the difference between guesses x(k)![{\displaystyle {\mathbf {x}}^{(k)}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/690e84b53186e51bc6432fb1024e0c3a3b6e5041) and x(k+1)![{\displaystyle {\mathbf {x}}^{(k+1)}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/832f466e73981a249e41975aa77919734cfedd9d) is sufficiently small, the algorithm is said to have _converged_ on the solution.[[11]](https://en.wikipedia.org/wiki/System_of_linear_equations#cite_note-11)
 
 > So there are two main approaches to solve large linear systems
-> 1. decompositions (LU and Cholesky mainly)
+> 1. direct methods - aka decompostions? (LU and Cholesky mainly)
 > 2. iterative methods (Gradient and Conjugate Gradient)
+
+
 
