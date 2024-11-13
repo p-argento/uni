@@ -2,6 +2,77 @@
 
 ## Important Notes
 
+*13/11*
+If a question in the project gives a result that is empty or it is nonsense, it still may be correct. The process is what should be correct.
+For any question, look at the data and understand if you are really capturing what data is telling. Look at the data and the relations between data, if you miss something there, the problem may be incorrect.
+You can try with Pandas and simple SQL the queries you are doing with SSIS to verify if they are correct.
+
+First test in a smaller database, where you can check correctness. Then, go into production.
+
+You are optimizing the data to be explored by a human, not to train a model.
+
+HINT:
+To create the schema, do not confuse "damage to user" and "people".
+Look at the keys, for understanding the relationship. Capture the dependecies.
+The key is not jusst one value, you have to process this data.
+The simplest way is to look at feature names that are similar or the same.
+Please, check again the relationship, I am sure you are missing something.
+
+LET'S MOVE TO SSIS.
+We create a package for the stratified sampling.
+We want to maintain the proportion of the gender attribute.
+
+> Do not use Views, do all work in SSIS
+
+Start from lbi database, do a stratified sampling of 30%.
+
+Use the data flow task node.
+1. The first node is OLEDB Source, it should be configurated. 
+2. Second, split the data by gender ("suddivisione condizionale").
+3. "Campionamento percentuale"
+	1. select the output (there is always a default)
+	2. you can rename nodes
+	3. change the percentage of rows
+4. we need to write the result in a file
+	1. we have two branches (each one representing an SQL query)
+	2. we use "Unione input multipli" to create the final result
+		1. no need to sort (differently from "Unione")
+5. in the end, we create a file "sampling.txt"
+	1. change the language to english
+	2. remember to check if the mapping is correct
+
+
+WHAT IS A SURROGATE KEY?
+When you have a snowflake schema, like in foodmart.
+Every time a new customer do a purchase, a record is created.
+What if the customer change the address, but I want to keep the history? If I change it, I will loose the old information. 
+A surrogate key will be valid for every new values. We need an ETL process. We are reading every night from the operational database. What if there is a change? We need to capture the change in the operational database. Do I need a completely new customer with a new city or keep the historical changes with the same customer?
+
+Let's create a workflow with the creation of a surrogate key.
+
+We simulate the scenario where we simulate a new surrogate key for every customer.
+(it is the lab exercise in slide 31)
+Remember that first you prepare the tables, then update.
+When you read a record, you check that the customer exists in the dimensional table (NOT the customer table in foodmart, because it will be there for sure).
+We should generate a table to understand distinct customers, let's call it customer_dim, use the tool.
+Where do I need to create a table? Go in lbi>Tables>Create New Table.
+How is the table composed? Customer_name, surrogate_key.
+When creating the table, be sure that the size is compatible
+In the Views>Design, you can see the query and the dimensions.
+So, we set the size of 100+50+1 for the customer name and surname (do not forget the +1 for the space).
+The second attribute is the surrogate_key, of type int.
+
+If we have two different clients running in parallel, the counter that generates the keys can generate the same key at the same time for different values.
+Generating the key on the client side is dangerous, so we set up the auto-increment of the key on the server side.
+In the new table > increment key (button somewhere).
+
+
+
+
+*6/11*
+WATCH LECTURE
+
+
 *30-10*
 Showing the solution of the stratified sampling.
 There are 2 solutions, but avoid the one server-side.
