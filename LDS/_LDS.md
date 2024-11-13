@@ -73,6 +73,9 @@ In the new table > increment key (button somewhere).
 WATCH LECTURE
 
 
+
+
+
 *30-10*
 Showing the solution of the stratified sampling.
 There are 2 solutions, but avoid the one server-side.
