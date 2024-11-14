@@ -14,7 +14,7 @@ You are optimizing the data to be explored by a human, not to train a model.
 HINT:
 To create the schema, do not confuse "damage to user" and "people".
 Look at the keys, for understanding the relationship. Capture the dependecies.
-The key is not jusst one value, you have to process this data.
+The key is not just one value, you have to process this data.
 The simplest way is to look at feature names that are similar or the same.
 Please, check again the relationship, I am sure you are missing something.
 
