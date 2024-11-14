@@ -2,6 +2,10 @@
 
 ## Important Notes
 *14/11*
+Open
+- SQL Server Management Studio
+- Visual Studio with SSIS
+
 Exercise
 1. search for "oledb source" in toolbox.
 	1. select the connection
@@ -9,7 +13,10 @@ Exercise
 2. populate the table
 	1. we want the distinct names from the source
 		1. to obtain it, we use the node "sort", selecting the tick "remove rows with duplicates"
-3. 
+3. we want a workflow that adds a customer only when it is not present
+	1. we need the node "lookup" to update when there is no match
+	2. how? we connect to lbi and select 2024_customer
+	3. 
 
 
 
