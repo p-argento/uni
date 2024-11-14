@@ -1,6 +1,20 @@
 [LDS Didawiki](http://didawiki.di.unipi.it/doku.php/mds/lbi/start)
 
 ## Important Notes
+*14/11*
+Exercise
+1. search for "oledb source" in toolbox.
+	1. select the connection
+	2. create the empty temporary table with only the name
+2. populate the table
+	1. we want the distinct names from the source
+		1. to obtain it, we use the node "sort", selecting the tick "remove rows with duplicates"
+3. 
+
+
+
+
+
 
 *13/11*
 If a question in the project gives a result that is empty or it is nonsense, it still may be correct. The process is what should be correct.
