@@ -1,5 +1,7 @@
 [LDS Didawiki](http://didawiki.di.unipi.it/doku.php/mds/lbi/start)
 
+[[My LDS Project Notes]]
+
 ## Important Notes
 *14/11*
 Open
