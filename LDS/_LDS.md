@@ -16,7 +16,57 @@ Exercise
 3. we want a workflow that adds a customer only when it is not present
 	1. we need the node "lookup" to update when there is no match
 	2. how? we connect to lbi and select 2024_customer
-	3. 
+
+What happens if we change one value and run the workflow?
+```
+update[dbo].[2024_customer]
+set customer='Anna'
+where surrogate_key=1
+```
+
+When we want to a new task, we go in control flow.
+> Is data flow the more detailed sequence of tasks for the bigger tasks?
+
+What do we need to do?
+The final result should be a table with distinct customer (?)
+Steps
+1. read table sales_description
+	1. sales_description is a view and cannot be updated
+	2. connect oledb in foodmart
+2. do lookup in the new table with surrogate key
+	1. we want to capture the matching
+	2. lookup ("ricerca in italiano") on 2024_customer in lbi
+		1. in "columns" connect the customer left-to-right
+		2. in "general" specify behavior if no matching error
+			1. reason on that, it is a failure, so we select error
+3. construct the file
+	1. node "destination file flat"
+		1. select "output corrispondenza ricerca"
+	2. we create a file "SK_table_customer"
+	3. we can select only the columns that we want
+		1. "ricerca.customer" has no mapping, but we do not need it, so we can eliminate it
+
+We run the entire control flow.
+
+Exercise.
+REPLICATE THE SAME PROCESS ALSO FOR PRODUCT NAME.
+
+1. create product table update
+2. same surrogate key
+	1. remember the auto-incremement in the surrogate key
+3. change the first column with instead of nvarchar, go into product table and see the size and type of product name
+	1. go in table dbo.product
+	2. see that it is nvarchar(255)
+
+
+
+
+
+
+
+
+
+
 
 
 
