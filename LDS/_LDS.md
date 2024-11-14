@@ -58,7 +58,7 @@ REPLICATE THE SAME PROCESS ALSO FOR PRODUCT NAME.
 	1. go in table dbo.product
 	2. see that it is nvarchar(255)
 
-
+Try to produce a single workflow with everuything
 
 
 
