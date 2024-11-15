@@ -265,6 +265,7 @@ It might happen that I have some flows towards states that are not defined in th
 There is a particular gravity model, called single constraint gravity model, where you fix the number of outflow you observe from...
 What do you expect from the params?
 
+Be aware that geopandas wants a string for the tessellation, while skmobility uses a number.
 
 
 
