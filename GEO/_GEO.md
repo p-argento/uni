@@ -258,6 +258,12 @@ Does this hypothesis hold.
 
 What do I need to fit the model?
 
+If we have flows of migration within the same state, we have a problem in the gravity model, because are dividing by the distance that is zero.
+
+It might happen that I have some flows towards states that are not defined in the tessellation (like San Marino)' ???
+
+There is a particular gravity model, called single constraint gravity model, where you fix the number of outflow you observe from...
+What do you expect from the params?
 
 
 
