@@ -254,6 +254,15 @@ Try to perform your own analysis going deeper.
 Does this hypothesis hold.
 
 
+## Lab on trajectory generation
+
+What do I need to fit the model?
+
+
+
+
+
+
 
 
 
