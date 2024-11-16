@@ -27,8 +27,112 @@ This in particular, may be the reason for the duplicates in people.
 However, the column REPORT_TYPE in Crashes contains only ON SCENE and NOT ON SCENE (DESK REPORT), meaning that the amended have been removed. There is something strange here.
 
 
+*16/11*
+
+- Prefixes
+Discovered that the prefix P in people is for passengers, while O is for all other PEOPLE_TYPEs.
+The prefixes in crashes look random.
+The vehicle id are just floats.
+
+Trying to understand better the use of IDs in the 3 tables.
+```
+Table crash_data {
+  rd_no string [pk]
+  crash_date string
+  
+  posted_speed_limit integer
+  traffic_control_device string
+  device_condition string
+  weather_condition string
+  lighting_condition string
+  first_crash_type string
+  trafficway_type string
+  alignment string
+  
+  roadway_surface_cond string
+  road_defect string
+  
+  report_type string
+  crash_type string
+  
+  date_police_notified string
+  
+  prim_contributory_cause string
+  sec_contributory_cause string
+  
+  street_no integer
+  street_direction string
+  street_name string
+  beat_of_occurrence float
+  
+  num_units float
+  
+  most_severe_injury string
+  injuries_total float
+  injuries_fatal float
+  injuries_incapacitating float
+  injuries_non_incapacitating float
+  injuries_reported_not_evident float
+  injuries_no_indication float
+  injuries_unknown float
+  
+  crash_hour integer
+  crash_day_of_week integer
+  crash_month integer
+  
+  latitude float
+  longitude float
+  location string
+}
+```
 
 
+```
+Table person_data {
+  person_id string [pk]
+  
+  person_type string
+  rd_no string [ref: > crash_data.rd_no]
+  vehicle_id float
+  crash_date string
+  city string
+  state string
+  sex string
+  age float
+  safety_equipment string
+  airbag_deployed string
+  ejection string
+  injury_classification string
+  driver_action string
+  driver_vision string
+  physical_condition string
+  bac_result string
+  damage_category string
+  damage float
+}
+```
+
+```
+Table vehicle_data {
+  crash_unit_id integer [pk]
+  rd_no string [ref: > crash_data.rd_no]
+  crash_date string
+  unit_no integer
+  unit_type string
+  vehicle_id float
+  make string
+  model string
+  lic_plate_state string
+  vehicle_year float
+  vehicle_defect string
+  vehicle_type string
+  vehicle_use string
+  travel_direction string
+  maneuver string
+  occupant_cnt float
+  first_contact_point string
+}
+```
 
 
 
