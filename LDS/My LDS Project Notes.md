@@ -28,18 +28,34 @@ However, the column REPORT_TYPE in Crashes contains only ON SCENE and NOT ON SCE
 
 
 *16/11*
+To do
+1. damage_id
+	1. temporary solution, but looks the best for now
+2. join people and vehicles
+	1. fix the PERSON_ID and CRASH_UNIT_ID
+
+
 
 - Prefixes
-Discovered that the prefix P in people is for passengers, while O is for all other PEOPLE_TYPEs.
 The prefixes in crashes look random.
+Discovered that the prefix P in people is for passengers, while O is for all other PEOPLE_TYPEs.
 The vehicle id are just floats.
+
+- IDs
+In vehicles
+1. no vehicle_id -> pedestrian, bycicle, non-motor vehicle
+2. with vehicle_id -> driver (6 nan), parked, driverless
+3. ambiguous -> NON-CONTACT VEHICLE(42 nan over 102)
+
+
+
+
 
 Trying to understand better the use of IDs in the 3 tables.
 ```
 Table crash_data {
   rd_no string [pk]
   crash_date string
-  
   posted_speed_limit integer
   traffic_control_device string
   device_condition string
@@ -48,25 +64,18 @@ Table crash_data {
   first_crash_type string
   trafficway_type string
   alignment string
-  
   roadway_surface_cond string
   road_defect string
-  
   report_type string
   crash_type string
-  
   date_police_notified string
-  
   prim_contributory_cause string
   sec_contributory_cause string
-  
   street_no integer
   street_direction string
   street_name string
   beat_of_occurrence float
-  
   num_units float
-  
   most_severe_injury string
   injuries_total float
   injuries_fatal float
@@ -75,11 +84,9 @@ Table crash_data {
   injuries_reported_not_evident float
   injuries_no_indication float
   injuries_unknown float
-  
   crash_hour integer
   crash_day_of_week integer
   crash_month integer
-  
   latitude float
   longitude float
   location string
