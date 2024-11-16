@@ -90,7 +90,6 @@ Table crash_data {
 ```
 Table person_data {
   person_id string [pk]
-  
   person_type string
   rd_no string [ref: > crash_data.rd_no]
   vehicle_id float
