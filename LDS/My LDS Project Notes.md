@@ -47,7 +47,7 @@ In vehicles
 2. with vehicle_id -> driver (6 nan), parked, driverless
 3. ambiguous -> NON-CONTACT VEHICLE(42 nan over 102)
 
-
+![[Pasted image 20241116181838.png|300]]
 
 
 
