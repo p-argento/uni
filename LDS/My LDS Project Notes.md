@@ -140,5 +140,18 @@ Table vehicle_data {
 }
 ```
 
+Things we want to do within wednesday
+1.⁠ ⁠loop over record with a function to fill NA/UNKNOWN/(retrieved) the variables
+2.⁠ ⁠⁠join the 3 tables
+3.⁠ ⁠⁠sketch datamart
+
+*17//11*
+
+
+
+
+
+
+
 
 
