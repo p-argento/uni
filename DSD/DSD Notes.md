@@ -122,17 +122,28 @@ Observe that
 
 ## The 3 Models
 
+A data model is a set of abstraction mechanisms to describe abstract knowledge.
+
 3 Steps
-1. Dimensional Fact Model (DFM)
-	1. we see today
-2. Relation Data Model (RDM)
-	1. to describe a solution
-	2. we aim at simplicity rather than normality
-3. Multidimensional Model (called CUBE)
-	1. with the possibility to navigate the data
+1. conceptual data model
+	1. to analyse a problem, given the user requirements
+	2. the graphical conceptual model we use is the Dimensional Fact Model (DFM)
+	3. (we see it today)
+3. logical model
+	1. to design a solution independently of actual DBMS
+	2. as a logical model, we use
+		1. the Relation Data Model (RDM)
+			1. to describe a solution
+		2. the Multidimensional Model (called CUBE)
+			1. with the possibility to navigate the data
+	4. we aim at simplicity rather than normality
+5. physical model
+	1. to realize a project on a specific DBMS
 
 We assume to have business questions like this:
 ![[Pasted image 20240924092047.png]]
+
+## Data model for  Conceptual Design
 
 Typically arriving at this form requires an effort, because managers speak in natural language.
 Be sure that what is available is used and what is useful is available.
@@ -162,6 +173,10 @@ Business questions can be
 	1. WRONG, not useful
 2. "total revenue, by customer, by product"
 	1. useful
+	2. observe that
+		1. "total" is the metric (aggregated)
+		2. "revenue" is the measure
+		3. "by customer, by product" are the dimensions
 3. report
 	1. useful, but more difficult
 
@@ -289,6 +304,17 @@ Consider a relation scheme R:{T}
 
 > Since the relations are sets of tuples, they do not have duplicates
 
+
+# dsd07
+
+...
+
+## Types of Relational Model
+
+A DW is represented with a special kind of relational schema 
+1. star schema,
+2. snowflake schema or
+3. constellation schema
 
 
 
