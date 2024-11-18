@@ -251,11 +251,76 @@ Identify the dimensions to give fact measures their context.
 The Six Ws questions aim to identify the variables determining the measures and possible intervention levers:
 Who is it about? What happened? When did it take place?  Where did it take place? Why did it happen? How did it happen?
 
+> The suggested fact dimensions are
+> 1. date
+> 2. place
+> 3. vehicle
+> 4. crash
+> 5. person
+> 6. weather
+> 7. cause
 
 
 
 *Step 4. Identify Dimensional Attributes*
 The dimensional attributes are important for analysis and for reports.
+
+```
+'damage_id', 'PERSON_ID', 'PERSON_TYPE', 'RD_NO', 'VEHICLE_ID', 'CITY',
+       'STATE', 'SEX', 'AGE', 'SAFETY_EQUIPMENT', 'AIRBAG_DEPLOYED',
+       'EJECTION', 'INJURY_CLASSIFICATION', 'DRIVER_ACTION', 'DRIVER_VISION',
+       'PHYSICAL_CONDITION', 'BAC_RESULT', 'DAMAGE_CATEGORY', 'DAMAGE',
+       'POSTED_SPEED_LIMIT', 'TRAFFIC_CONTROL_DEVICE', 'DEVICE_CONDITION',
+       'WEATHER_CONDITION', 'LIGHTING_CONDITION', 'FIRST_CRASH_TYPE',
+       'TRAFFICWAY_TYPE', 'ALIGNMENT', 'ROADWAY_SURFACE_COND', 'ROAD_DEFECT',
+       'REPORT_TYPE', 'CRASH_TYPE', 'DATE_POLICE_NOTIFIED',
+       'PRIM_CONTRIBUTORY_CAUSE', 'SEC_CONTRIBUTORY_CAUSE', 'STREET_NO',
+       'STREET_DIRECTION', 'STREET_NAME', 'BEAT_OF_OCCURRENCE', 'NUM_UNITS',
+       'MOST_SEVERE_INJURY', 'INJURIES_TOTAL', 'INJURIES_FATAL',
+       'INJURIES_INCAPACITATING', 'INJURIES_NON_INCAPACITATING',
+       'INJURIES_REPORTED_NOT_EVIDENT', 'INJURIES_NO_INDICATION',
+       'INJURIES_UNKNOWN', 'CRASH_HOUR', 'CRASH_DAY_OF_WEEK', 'CRASH_MONTH',
+       'LATITUDE', 'LONGITUDE', 'LOCATION', 'UNIT_TYPE', 'MAKE', 'MODEL',
+       'LIC_PLATE_STATE', 'VEHICLE_YEAR', 'VEHICLE_DEFECT', 'VEHICLE_TYPE',
+       'VEHICLE_USE', 'TRAVEL_DIRECTION', 'MANEUVER', 'OCCUPANT_CNT',
+       'FIRST_CONTACT_POINT'
+```
+
+
+> Fact Table
+> 0. damage
+> 	1. 'DAMAGE_CATEGORY', 'DAMAGE',
+
+> Trying to match dimensional attributes based on features
+> 1. date
+> 	1. 'CRASH_HOUR', 'CRASH_DAY_OF_WEEK', 'CRASH_MONTH', 'DATE_POLICE_NOTIFIED',
+> 2. place
+> 	1. 'STREET_NO',
+       'STREET_DIRECTION', 'STREET_NAME', 'BEAT_OF_OCCURRENCE',  'LATITUDE', 'LONGITUDE', 'LOCATION', 
+> 3. vehicle
+> 	1. 'VEHICLE_ID' UNIT_TYPE', 'MAKE', 'MODEL',
+       'LIC_PLATE_STATE', 'VEHICLE_YEAR', 'VEHICLE_DEFECT', 'VEHICLE_TYPE',
+       'VEHICLE_USE', 'TRAVEL_DIRECTION', 'MANEUVER', 'OCCUPANT_CNT',
+       'FIRST_CONTACT_POINT'
+> 4. crash
+> 	1. 'RD_NO', 'CRASH_TYPE', 'REPORT_TYPE', 'NUM_UNITS', 'FIRST_CRASH_TYPE'
+> 5. person
+> 	1. 'PERSON_ID', 'PERSON_TYPE', 'CITY',
+       'STATE', 'SEX', 'AGE',
+> 6. weather
+> 	1.  'WEATHER_CONDITION', 'LIGHTING_CONDITION', 'ROADWAY_SURFACE_COND',
+> 7. cause
+> 	1. 'PRIM_CONTRIBUTORY_CAUSE', 'SEC_CONTRIBUTORY_CAUSE',
+> 8. injuries
+> 	1. 'MOST_SEVERE_INJURY', 'INJURIES_TOTAL', 'INJURIES_FATAL',       'INJURIES_INCAPACITATING', 'INJURIES_NON_INCAPACITATING',       'INJURIES_REPORTED_NOT_EVIDENT', 'INJURIES_NO_INDICATION',       'INJURIES_UNKNOWN', 'INJURY_CLASSIFICATION'     
+> 9. road_condition
+> 	1. 'POSTED_SPEED_LIMIT', 'TRAFFIC_CONTROL_DEVICE', 'DEVICE_CONDITION',  'ROAD_DEFECT',  'TRAFFICWAY_TYPE', 'ALIGNMENT'
+> 10. safety
+> 	1. 'SAFETY_EQUIPMENT', 'AIRBAG_DEPLOYED',
+	   'EJECTION', , 'DRIVER_ACTION', 'DRIVER_VISION',
+	   'PHYSICAL_CONDITION', 'BAC_RESULT', 
+   
+   
 
 
 
