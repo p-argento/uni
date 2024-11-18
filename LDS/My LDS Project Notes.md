@@ -321,13 +321,13 @@ The dimensional attributes are important for analysis and for reports.
 	   'PHYSICAL_CONDITION', 'BAC_RESULT', 
    
    
-
-
+> Updated the schema on [dbdiagram](https://dbdiagram.io/d/LDS_DW-673b86e6e9daa85acade542a)
 
 *Step 5. Identify the Dimensional Attribute Hierarchies*
 Attribute hierarchies is a natural way to support interactive exploration of facts.
 
 Users understand them intuitively, because they are used to look at a summarized report and then to decide to look at a more detailed one.
+
 
 
 
