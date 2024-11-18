@@ -33,6 +33,18 @@ A sparse vector is used to save space. Only non-zero positions are stored, the o
 
 ## Project Ideas
 
+There are 3 main tasks
+1. fraud detection
+2. customer segmentation
+3. geospatial analysis
+
+In Geospatial Analysis
+1. speed filtering
+	1. for offline transactions, see if the speed in the customer trajectory is reasonable
+2. outlier detection
+	1. using Isolation Forest or Local Outlier Factor (LOF), to understand the points that differ from usual behaviour
+3. segment customers who frequently transact in different regions (e.g., frequent travelers), based on home location
+
 
 
 
