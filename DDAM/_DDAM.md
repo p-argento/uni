@@ -31,6 +31,8 @@ Practically all the algos in spark work with numbers, so when you have strings y
 
 A sparse vector is used to save space. Only non-zero positions are stored, the other are zero by default. It is a dict od `{pos:value}`. The one-hot encoding is stored as a sparse vector.
 
+## Project Ideas
+
 
 
 
