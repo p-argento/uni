@@ -124,19 +124,32 @@ Observe that
 
 A data model is a set of abstraction mechanisms to describe abstract knowledge.
 
-3 Steps
+In Operational Database
+1. conceptual data model
+	1. to analyse a problem
+	2. use
+		1. Entity-Relationship model (ER)
+		2. Object Data Model (ODM)
+2. logical model
+	1. use
+		1. Relational Data Model
+3. physical model
+	1. to realize a project on a specific DBMS
+
+In Data Warehouse
 1. conceptual data model
 	1. to analyse a problem, given the user requirements
-	2. the graphical conceptual model we use is the Dimensional Fact Model (DFM)
+	2. use
+		1. Dimensional Fact Model (DFM)
 	3. (we see it today)
 3. logical model
 	1. to design a solution independently of actual DBMS
-	2. as a logical model, we use
-		1. the Relation Data Model (RDM)
+	2. we aim at simplicity rather than normality
+	3. as a logical model, we use
+		1. the Relation Data Model 
 			1. to describe a solution
 		2. the Multidimensional Model (called CUBE)
 			1. with the possibility to navigate the data
-	4. we aim at simplicity rather than normality
 5. physical model
 	1. to realize a project on a specific DBMS
 
