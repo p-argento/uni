@@ -1,10 +1,10 @@
 3 Steps
-1. Dimensional Fact Model
+1. Dimensional Fact Model (DFM)
 	1. we see today
-2. Relation Data Model
+2. Relation Data Model (RDM)
 	1. to describe a solution
 	2. we aim at simplicity rather than normality
-3. Multidimensional Model (called Cube)
+3. Multidimensional Model (called CUBE)
 	1. with the possibility to navigate the data
 
 We assume to have business questions like this:
