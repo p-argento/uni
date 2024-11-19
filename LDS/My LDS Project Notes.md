@@ -337,6 +337,8 @@ A feasible and interesting idea to integrate data from chicago data portal:
 3. add number of crimes (and type?) for each beat
 	1. maybe classify the beats as dangerous gives a threshold
 
+Also
+1. add holidays in date
 
 
 
