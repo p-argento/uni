@@ -30,7 +30,12 @@ Create table.
 
 Populate table.
 1. read customer_dim
-2. if not in the table, insert the new customer.
+	1. use lookup
+2. use "derived column" node
+	1. to set default values for non-null
+	2. you can use GETDATE() for the dates
+3. if not in the table, insert the new customer.
+
 
 
 
