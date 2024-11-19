@@ -19,7 +19,7 @@ set age =     // this is the update command
 where id = ?
 ```
 
-Steps
+Create table.
 1. create table "customer_dim"
 	1. using sql ms
 2. create surrogate key
@@ -27,7 +27,10 @@ Steps
 3. create customer_id
 	1. we need to create a surrogate key because the customer_id is not a primary key 
 	2. type 2 errors?
-4. 
+
+Populate table.
+1. read customer_dim
+2. if not in the table, insert the new customer.
 
 
 
