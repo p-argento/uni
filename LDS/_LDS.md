@@ -1,8 +1,43 @@
+
 [LDS Didawiki](http://didawiki.di.unipi.it/doku.php/mds/lbi/start)
 
 [[My LDS Project Notes]]
 
 ## Important Notes
+
+*19/11*
+
+...
+
+How to define the workflow to update the table?
+1. read flat file
+2. use OLEDB command.
+
+```
+update [dbo].[census_monreale]
+set age =     // this is the update command
+where id = ?
+```
+
+Steps
+1. create table "customer_dim"
+	1. using sql ms
+2. create surrogate key
+	1. remember how to set up server side
+3. create customer_id
+	1. we need to create a surrogate key because the customer_id is not a primary key 
+	2. type 2 errors?
+4. 
+
+
+
+
+
+
+
+
+
+
 *14/11*
 Open
 - SQL Server Management Studio
