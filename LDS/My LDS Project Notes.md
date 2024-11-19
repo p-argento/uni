@@ -329,6 +329,13 @@ Attribute hierarchies is a natural way to support interactive exploration of fac
 Users understand them intuitively, because they are used to look at a summarized report and then to decide to look at a more detailed one.
 
 
+## 19/11
+
+A feasible and interesting idea to integrate data from chicago data portal:
+1. import beat boundaries
+2. import [crimes](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/about_data) in the date range
+3. add number of crimes (and type?) for each beat
+	1. maybe classify the beats as dangerous gives a threshold
 
 
 
