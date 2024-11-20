@@ -5,6 +5,46 @@
 
 ## Important Notes
 
+*20/11*
+until now it is
+![[Pasted image 20241120164002.png|300]]
+
+exercise
+1. read the table
+2. if customer name is equal, do nothing because the customer already exists.
+3. if customer name is different (same customer id)
+	1. for example "rosi" > "rossi"
+	2. we do not need an update of type 2, but type 1 is enough
+How to change the workflow to address the change of the customer name?
+1. we use "conditional split" node
+	1. added after the lookup
+	2. it is an if condition
+> during the oral exam, I want to see the optimal solution in your workflow. Thing about different solution and show the optimal.
+
+The workflow now is
+1. read table
+2. add customer_name
+..
+4. in OLE DB Command, we need to add the connection to lbi, then in the tab "Component Properties" of the node, add the SQL Command.
+```
+update customer_dim
+set customer_name = ?
+where customer_id = ?
+```
+We need also to map the elements in the workflow with the question marks. The new value, that is the one coming from the derived column, not from the lookup
+We also need to update the date_start and date_end.
+data_start of the new record is get_data(), as well as date_end of the previous record that is get_data(). Remember that get_data() get today's date.
+So, we update with OLE DB Command the date.
+
+
+
+
+
+
+
+
+
+
 *19/11*
 
 ...

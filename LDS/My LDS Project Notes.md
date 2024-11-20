@@ -206,8 +206,6 @@ For example, the fact can be
 2. a complete order
 More detailed grain, often means more space required.
 
-![[Pasted image 20240924095720.png]]
-
 Fact types can be
 1. transaction
 	1. one fact per transaction, meaning an event that occurs at a specific point in time
@@ -341,6 +339,9 @@ Also
 1. add holidays in date
 
 
+## 20/11
+
+Crucial information from chatgpt.
 
 
 
