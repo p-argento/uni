@@ -247,6 +247,11 @@ In the new table > increment key (button somewhere).
 *6/11*
 WATCH LECTURE
 
+???
+![[Pasted image 20241120175504.png|400]]
+
+
+
 
 
 
