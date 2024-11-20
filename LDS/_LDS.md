@@ -33,8 +33,27 @@ where customer_id = ?
 ```
 We need also to map the elements in the workflow with the question marks. The new value, that is the one coming from the derived column, not from the lookup
 We also need to update the date_start and date_end.
-data_start of the new record is get_data(), as well as date_end of the previous record that is get_data(). Remember that get_data() get today's date.
+data_start of the new record is GETDATE(), as well as date_end of the previous record that is GETDATE(). Remember that GETDATE() get today's date.
 So, we update with OLE DB Command the date.
+
+Map "new_columns for customer_dim.date_start" with "Param 0" (?).
+...
+We add a new OLE DB Destination with appropriate mapping.
+
+What if we have a different name and a different address?
+
+> We update the database during the night so that in the following morning I can see an updated dashboard to take decisions (goal oriented). For this reason, it is important to prioritize the information needed for the analysis. (maybe the misspelling of the name is not that important and we can postpone that)
+
+So we prioritize type 2 changes.
+
+EXERCISE.
+Work on foodmart, from didawiki, exercise on dissimilarity index.
+
+
+
+
+
+
 
 
 
