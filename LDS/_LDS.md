@@ -5,6 +5,28 @@
 
 ## Important Notes
 
+*21/11*
+
+We see the solution of the dissimilarity index exercise.
+Remember that the join is the most costly operation we do.
+This is the reason why we try to filter out rows at the very beginning, in this case the year.
+So, first we look for the year in the other table (stores?) using vlookup, then conditional split to select `the_year==1998`.
+Now, we can search the gender in customer with vlookup, then conditional split the gender. We assume that there are only males and female, so we use the condition `gender==M` as condition. If there's other, then we need to add another condition with females.
+
+The goal is to have a derived column with all the variables we need for the final formula.
+
+
+
+
+
+
+
+
+
+
+
+
+
 *20/11*
 until now it is
 ![[Pasted image 20241120164002.png|300]]
