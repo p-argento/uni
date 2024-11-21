@@ -14,17 +14,89 @@ So, first we look for the year in the other table (stores?) using vlookup, then 
 Now, we can search the gender in customer with vlookup, then conditional split the gender. We assume that there are only males and female, so we use the condition `gender==M` as condition. If there's other, then we need to add another condition with females.
 
 The goal is to have a derived column with all the variables we need for the final formula.
+> see ssis
+
+Be aware of the stores that appear only in one branch or in no one of them.
+
+"Multicast" node is the opposite of the split.
+It means take an input and replicate as output.
+
+In order to perform the join, we need a proxy key for every record (fake key), with all 1s on left and right.(?)
+You still need to sort (?).
+
+...
+
+We reached the end of the exercise.
+
+Now, see the ex of yesterday.
+Every night, we check if the customer is new, etc..
+We are dealing with type ? errors.
+Our process is quite inefficient, because we need to read the entire customer table every time.
+We usually use agents, in the CDC Proceess.
+See SQL Server Agents in SQL Management Studio (on the left).
+The idea is that we can associate the agent to a table we want to monitor.
+
+First, we create the table and activate the agent.
+Then, say to the agent to monitor the table.
+```
+-- SQL Server agent must be running
+EXEC sys.sp_cdc_enable_table
+@source_schema = 
+...
+
+```
+
+When you activate the agent, in Tables>System Tables you can see the tables that are being listened.
+
+Every night, the agent need to understand if it is a type 1 or type 2 update.
+Note that sometimes the agent can have problems on the server side.
+
+If there is a change after the activation of the agent, it automatically generates two rows with the same id  ???
+
+Back in SSIS.
+In Control Flow, we add the node "CDC Control Task - Initial Load Start", then we link it to "CDC Control Task - Initial Load End".
+The idea is to connect the process to the table.
+Set variable "CDC_State" (?).
+Set table_to_store as "cdc_states", or just use the wizard if you do not do it.
+Set State Name as
+
+We learned how to populate and change the census.
+We need a node to populate everything in the initial loading.
+Set "CDC Control Operation" as "Mark initial load end".
+The message we give to the system is that we already finished the loading.
+
+After the initial loading, in order to capture tha changes, we need:
+1- CDC Control Task - 
+Data is already there, so we need to understand the changes after the initial load that we need to apply to the table.
+Set "CDC Control Operation" as "Get processing range".
+Where to store changes? In the same table as before "cdc_stores".
+
+2- Attività flusso di dati
+We need to capture the changes, so we move to the Data Flow Tab.
+Use the node "CDC Source".
+Set the CDC enabled table that you are monitoring.
+Set the variable containing the CDC_state.
+
+If you see the table CDC_state, you see that there are some automatically generated columns to identify the changes like `_$...`
+
+We need to understand if the change is an update, a new row, etc.
+We use the node "CDC Splitter". It works like a conditional split.
+The splits are
+1. UpdateOutput
+	1. to node "For update"
+2. InsertOutput
+	1. to node "For insert into"
+3. DeleteOutput
+	1. to node "For deletion"
+All the destination nodes are "flat files destination". ??
 
 
+3- CDC Control Task
+Set "CDC Control Operation" as "Mark Processed Range".
 
-
-
-
-
-
-
-
-
+With this lecture, the part on SSIS is finished.
+On tuesday we start with the OLAP Cube.
+You need to understand the main concepts.
 
 
 *20/11*
