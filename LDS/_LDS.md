@@ -148,16 +148,6 @@ Work on foodmart, from didawiki, exercise on dissimilarity index.
 
 
 
-
-
-
-
-
-
-
-
-
-
 *19/11*
 
 ...
