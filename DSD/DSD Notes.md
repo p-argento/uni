@@ -330,7 +330,11 @@ A DW is represented with a special kind of relational schema
 3. constellation schema
 
 
+# dsd09
 
+Queries on JRS.
+
+![[Pasted image 20241122161231.png]]
 
 
 
