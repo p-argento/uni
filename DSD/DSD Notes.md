@@ -329,12 +329,56 @@ A DW is represented with a special kind of relational schema
 2. snowflake schema or
 3. constellation schema
 
+# dsd08
+
+...
+
+
+
+
 
 # dsd09
 
-Queries on JRS.
+## Queries on JRS
 
 ![[Pasted image 20241122161231.png]]
+
+I installed JRS on the VM and it works.
+I tried only the first two queries, I should do all of them.
+...
+
+## Exercise: design of Logical Star Schema from DFM Schema
+
+[dsd07.assignments.pdf](file:///Users/pietro/_DS/DSD/exercises/dsd07.assignments.pdf)
+
+![[Pasted image 20241122224343.png]]
+
+Quite mechanically, it becomes
+
+![[Pasted image 20241122224550.png]]
+
+There is a surrogate key for each dimensional table.
+Observe that in the dimensional tables the hierarchical information is lost.
+
+How can we verify that the logical schema we designed can answer the business questions?
+For each of the business question, write an sql query on the logical schema.
+
+I noticed that he uses the condition of the join in the WHERE. It looks quite clean.
+
+There is actually an advantage in putting the IntitialTouristsFK in the fact table. It can be useful for some queries that would not need the join with Tourists.
+
+## Airlane Company Data Mart Design
+
+[dsd08.assignments.pdf](file:///Users/pietro/_DS/DSD/exercises/dsd08.assignments.pdf)
+
+Starting from business questions, we should do a preliminary analysis on the dimensions, measures, metrics. The goal is to design a DFM Schema.
+
+![[Pasted image 20241122225940.png]]
+
+
+
+
+
 
 
 
