@@ -384,9 +384,189 @@ Starting from business questions, we should do a preliminary analysis on the dim
 
 # dsd10
 
-..
+## Comparison of Design Approaches
+
+We have followed a mixed approach. Let's formalized.
+
+1. Analysis Driven (Kimball)
+	1. also bottom-up
+The idea is to start from separate data marts for each business process
 
 
+One problem is that interviewing the managers, they might not be able to describe the bq because they do not know OLAP analysis.
+
+2. Data Drive (Inmon)
+	1. also top-down or data-push
+It starts from available data.
+No need to get business questions.
+
+Risky to do a complex analysis and then maybe get a bad feedback from manager.
+
+3. Combination of both methods
+Mainly analysis driven.
+
+
+
+![[Pasted image 20241123152923.png]]
+
+We design a data mart at a time, like in the analysis driven approach.
+For each data mart:
+1. requirement analysis
+2. design of two conceptual designs
+	1. initial conceptual schema
+		1. (what will be useful for the manager)
+	2. candidate conceptual schema
+		1. (what can be delivered with data)
+	3. final conceptual design
+3. derive the logical design
+4. get the physical design 
+	1. given a specific DBMS
+	2. indexes, materialized views, etc
+6. population through ETL scripts
+	1. covered in LDS
+	2. largest effort
+
+## 1. Formalizing the Requirements Analysis
+
+The choice of the first data mart to be implemented is of fundamental importance.
+It should be the one that is most likely to be delivered on time, within budget, and to answer the most commercially important business questions.
+
+The easiast choice for the first data mart is usually the sales.
+
+The purpose of a data warehouse is not just to store data but rather to facilitate decision making. 
+
+Remember that to close the loop we validate the star schema designing sql queries of business questions on the final schema.
+
+Recall
+1. Requirements gathering
+	1. is a matter of understanding, interviewing the managers
+	2. to obtain business question, we interview 
+		1. business users
+			1. about inventory process and sales process
+		2. data source system experts
+			1. to understand source schema
+2. Requirements specification
+	1. means being able to write down the business questions in the correct form we use
+
+In Requirements Specification, we have
+1. Business process requirements
+2. Fact Description
+3. Dimensions
+4. Dimensional attributes
+
+First step. Business Process Requirements
+How to document the requirements in a large project?
+We need to formalize the various steps.
+We assign numbers to business questions and summarize in a table where we have the columns:
+`id, business question, dimensions, measures, metrics`
+
+![[Pasted image 20241123155108.png]]
+
+Second step. Fact Table.
+The event of interest, that is the fact description.
+Fill the table with
+`Grain description of fact type, preliminary dimensions, preliminary measures`
+
+Third. Dimensions.
+For each dimension, the table is 
+`Name, Description, Granularity`
+Granularity is the granularity of a tuple in the table.
+
+Fourth. Dimensional attributes.
+For each dimensional attributes, it might be worth a description in detail.
+> maybe also the way it was cleaned
+
+
+![[Pasted image 20241123155045.png]]
+
+Fifth. Dimensional Hierarchies.
+What is the structure of the hierarchy?
+
+
+Sixth. How to deal with changes with attributes.
+We will see it later.
+We need a table to understand how the changes are treated.
+
+![[Pasted image 20241123155633.png]]
+
+
+Now the MEASURES..
+
+
+
+Some measures can be calculated from other.
+We do not need to store them in the fact table.
+In the fact table we do not store the revenue, we will use a view for the that, computing the revenue on qty and price in the fact table.
+> The storage space is used only for features that are not easily calculated.
+
+Then, the Descriptive attributes of the fact.
+
+
+![[Pasted image 20241123155955.png]]
+
+This happens for every data mart.
+But when we have multiply data marts, we can add the following table to summarize which dimensions are shared.
+The goal is to know where to look for possible inconsistencies.
+
+![[Pasted image 20241123160200.png]]
+
+## 2. Initial Analysis-Driven Data Mart Conceptual Design
+
+Using the requirement analysis.
+We arrive at designing a possible data mart.
+
+![[Pasted image 20241123160354.png]]
+
+The granularity comes from the Sales data mart requirements, if it was only the inventory, we could have used only month. Be aware of shared dimensions like this.
+
+
+## 2. Candidate Data-Driven Conceptual Design
+
+Ignoring the business question, we can build a conceptual design starting completely from the data available.
+
+Start from the logical schema of the relational operational database. 
+What are the dimensions?
+
+1. we remove the tables that are not related to the project
+	1. (starting a project, we always know what is the process under analysis)
+2. (key step) look for
+	1. Transactional entities
+		1. they describe events that occur at a point in time and contain measurements (quantitative values)
+		2. for instance: orderLine in sales, 
+	2. Component entities
+		1. related to transaction entities via a one-to-many relationship
+		2. for instance: for each model there are many entries in the inventory
+		3. we usually look for arrows from the transaction to the component
+	3. Classification entities
+		1. related to component entities via a one-to-many relationship chain.
+		2. for instance: region is connected to manifactury via city
+		3. it means that we should follow the chain of arrows for external entities
+The idea is that starting from the transaction entity we can recognize the snowflake schema (see bottom left in the image below).
+
+![[Pasted image 20241123161851.png]]
+
+3. we get the candidate data mart conceptual design (obtained from the data)
+
+![[Pasted image 20241123162011.png]]
+
+## 3. Final data mart, obtained from combination
+
+The design of
+1. what will be useful
+2. what can be delivered
+
+![[Pasted image 20241123162125.png]]
+
+How to merge?
+The more structure, the better.
+If there is data, we can decide to offer the city even if the bq was the region.
+
+What if we want to add "raining day" in the data?
+If external data source allows it or it not to costly. It depends.
+
+## 4. Move from conceptual data model to logical design
+
+It is different from the Database course.
 
 
 
