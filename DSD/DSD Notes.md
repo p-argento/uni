@@ -510,7 +510,7 @@ The goal is to know where to look for possible inconsistencies.
 
 ![[Pasted image 20241123160200.png]]
 
-## 2. Initial Analysis-Driven Data Mart Conceptual Design
+## 2b. Initial Analysis-Driven Data Mart Conceptual Design
 
 Using the requirement analysis.
 We arrive at designing a possible data mart.
@@ -520,7 +520,7 @@ We arrive at designing a possible data mart.
 The granularity comes from the Sales data mart requirements, if it was only the inventory, we could have used only month. Be aware of shared dimensions like this.
 
 
-## 2. Candidate Data-Driven Conceptual Design
+## 2b. Candidate Data-Driven Conceptual Design
 
 Ignoring the business question, we can build a conceptual design starting completely from the data available.
 
@@ -549,7 +549,7 @@ The idea is that starting from the transaction entity we can recognize the snowf
 
 ![[Pasted image 20241123162011.png]]
 
-## 3. Final data mart, obtained from combination
+## 2c. Final data mart, obtained from combination
 
 The design of
 1. what will be useful
@@ -564,9 +564,61 @@ If there is data, we can decide to offer the city even if the bq was the region.
 What if we want to add "raining day" in the data?
 If external data source allows it or it not to costly. It depends.
 
-## 4. Move from conceptual data model to logical design
+## 3. Move from conceptual data model to logical design
 
 It is different from the Database course.
+![[Pasted image 20241123173406.png]]
+
+In DB, the priority is not to replicate information. using normalization.
+In DW, normalization is a wrong idea, most of the space is stored in the fact table, there is no need to create a complex snowflake. Also, a very simple schema is better to support queries by joining less.
+
+The main idea in the DW is to have the fact table with the foreign surrogate keys created for each dimension table.
+(In this and the following lecture we will explore more complex cases)
+
+![[Pasted image 20241123173654.png]]
+
+Once we get the star schema of each data mart, we put them together to obtain the constellation schema. So that for shared tables, we do not replicate them.
+
+![[Pasted image 20241123173846.png]]
+
+Observe that we loose the hierarchical information. In the theory of relational model, we specify the functional dependecies. In most DWMS, functional dependecies are not checked, because it would be too costly. 
+
+How to verify the presence of hierarchy `Month -> Year`?
+Write a query that returns an empty result set, iff the functional dependency is valid.
+![[Pasted image 20241123174645.png]]
+```sql
+SELECT Month
+FROM Date
+WHERE  SUM()
+GROUP BY Month
+HAVING COUNT(DISTINCT Year > 1)
+```
+
+This query can be also be written as follows, without using `COUNT(DISTINCT)`, but using the `WITH...AS` clause, that allows to give a name to a subquery.
+
+```sql
+WITH MonthYearSubquery AS
+	(SELECT DISTINCT Month, Year
+	 FROM Date)
+SELECT Month
+FROM MonthYearSubquery
+GROUP BY Month
+HAVING COUNT(*) > 1
+```
+
+It is like having a View, but the View is persistent, this subquery is not. The advantage is that the DISTINCT is moved to the subquery. This will be useful later on in the course.
+
+*About Degenerate Dimensions.* They are usually stored in the fact table, but not always. To save space, we could use a junk table (or junk dimension) that contains all possible combinations of values. It depends. We need to do the calculation each time. Or we can also use a mixed approach. But remember that we would need an additional join.
+
+![[Pasted image 20241123175620.png]]
+
+
+# dsd11
+
+Let's start with the changes in the dimensions.
+
+
+
 
 
 
