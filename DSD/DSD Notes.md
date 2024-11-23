@@ -349,6 +349,8 @@ I tried only the first two queries, I should do all of them.
 
 ## Exercise: design of Logical Star Schema from DFM Schema
 
+See also the notes on the kindle.
+
 [dsd07.assignments.pdf](file:///Users/pietro/_DS/DSD/exercises/dsd07.assignments.pdf)
 
 ![[Pasted image 20241122224343.png]]
@@ -375,12 +377,14 @@ Starting from business questions, we should do a preliminary analysis on the dim
 
 ![[Pasted image 20241122225940.png]]
 
+![[Pasted image 20241123001147.png]]
+
+![[Pasted image 20241123001720.png]]
 
 
+# dsd10
 
-
-
-
+..
 
 
 
