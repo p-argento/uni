@@ -28,6 +28,14 @@ And here's the instructions for [officers](https://idot.illinois.gov/content/dam
 This in particular, may be the reason for the duplicates in people.
 However, the column REPORT_TYPE in Crashes contains only ON SCENE and NOT ON SCENE (DESK REPORT), meaning that the amended have been removed. There is something strange here.
 
+Also additional data 
+
+https://data.cityofchicago.org/Public-Safety/PoliceBeatDec2012/n9it-hstw/about_data
+
+https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/about_data
+
+
+
 
 ## 16/11
 To do
