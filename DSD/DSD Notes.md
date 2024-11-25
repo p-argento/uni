@@ -619,6 +619,100 @@ Let's start with the changes in the dimensions.
 
 
 
+# dsd12
+
+...
+
+
+
+# dsd13
+Multidimensional Cube model: OLAP Operations. The extended cube and the lattice of cuboids. Pivot tables in Excel.
+
+We will see in a couple of lessons how to use advanced sql for reports.
+
+## OLAP Cube Operations
+
+Today we look at multidimensional analysis using an abstraction called OLAP System, also called data cube.
+
+![[Pasted image 20241125155614.png]]
+
+What is the benefit?
+A cube is a n-dimensional array where each dimension correspond to a dimension of analysis.
+For example, let's consider 3 degenrate dimensions. Every cell in the cube has precomputed values. This can speed up the calculations.
+
+![[Pasted image 20241125155742.png]]
+
+Every night, when the new data is loaded, we run the olap system to also update the cube.
+
+How to navigate the multidimensional cube?
+We assume additive and degenerate dimensions for now. The way to present the cube is actually a plot, but it is stored as a matrix.
+
+![[Pasted image 20241125160015.png]]
+
+Let's generalize.
+Consider where the number of dimensions is more than 2, say 3.
+There can be empty cells. Notice that when we increase the dimensions, most of the cells are empty (sparse). Efficient data structures can be used.
+
+What operations can we do?
+Restrict to a subcube, they do not imply calculations
+1. slicing
+	1. we are interested only in a subset of dimensions.
+2. dice
+	1. filter dimensions
+More
+3. pivot
+	1. reorient the cube
+	2. we just change the orientation of the axis
+Observe that we can compose operators.
+To aggregate
+4. roll-up
+	1. aggregates data by dimension reduction
+		1. or by going up in attribute hierarchy
+	2. decrease the granularity
+5. drill-down
+	1. reverse of roll-up
+	2. increase the granularity
+
+![[Pasted image 20241125160707.png]]
+
+A 0-dimensional cube is also called an Apex-cube. It is a total and we cannot analyse it further (if not drilling-down).
+
+6. drill through
+	1. it produces all the facts that satisfy a cell coordinate
+
+What is the benefit of precomputing the cube?
+Different users with different needs but only one cube with all the results already available.
+
+![[Pasted image 20241125161147.png]]
+
+Which tool implement this abstraction?
+For the OLAP system, we use
+1. SSAS
+2. PowerPivot
+
+For the multidimensional analysis, we use
+1. Excel
+	1. only for limited size
+2. PowerBI
+3. Microstrategy
+
+## Playing with Pivot Tables in Excel
+> Download excel data for pivot table on didawiki, to play with excel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
