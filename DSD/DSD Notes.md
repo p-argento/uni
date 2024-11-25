@@ -799,7 +799,7 @@ Recalls on: DBMS, from SQL to extended relational algebra.
 # dsd15
 OLAP systems. Data Analysis Using SQL. Simple reports. Examples. Moderately Difficult Reports. Solutions in SQL.
 
-
+> Maybe read https://en.wikipedia.org/wiki/Slowly_changing_dimension and https://en.wikipedia.org/wiki/Data_warehouse
 
 
 
