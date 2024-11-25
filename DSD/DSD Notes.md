@@ -277,6 +277,8 @@ Users understand them intuitively, because they are used to look at a summarized
 
 
 # dsd05
+The example of a data model for Master program exams. Presentation and discussion of the Hospital case study. [Exercises at home (Assignment III) for the lesson 07](https://didawiki.di.unipi.it/lib/exe/fetch.php/mds/dsd/dsd05.assignments.pdf "mds:dsd:dsd05.assignments.pdf (440.6 KB)").
+
 ## Case study: University Exams
 
 The ifelse() in sql is:
@@ -294,6 +296,7 @@ Everything that is available in the operational database should be added, even i
 
 
 # dsd06
+Recalls: the relational model and relational algebra. Exercises. [Exercises at home (Assignment IV) for the lesson 08](https://didawiki.di.unipi.it/lib/exe/fetch.php/mds/dsd/dsd06.assignments.pdf "mds:dsd:dsd06.assignments.pdf (55 KB)").
 
 ## The relational data model
 
@@ -319,6 +322,7 @@ Consider a relation scheme R:{T}
 
 
 # dsd07
+More about data mart conceptual design, changing dimensions and advanced data model features. From Conceptual design to relational logical design. Star model, snowflake, and constellation. Logical schema of the Hospital case study. [Exercises at home (Travel agency) for the lesson 09](https://didawiki.di.unipi.it/lib/exe/fetch.php/mds/dsd/dsd07.assignments.pdf "mds:dsd:dsd07.assignments.pdf (390 KB)").
 
 ...
 
@@ -330,22 +334,25 @@ A DW is represented with a special kind of relational schema
 3. constellation schema
 
 # dsd08
+Recalls: the relational model and relational algebra. Logical trees.
 
-...
 
 
 
 
 
 # dsd09
+Discussion of students' solutions of conceptual and logical design case studies.
 
 ## Queries on JRS
 
 ![[Pasted image 20241122161231.png]]
 
-I installed JRS on the VM and it works.
-I tried only the first two queries, I should do all of them.
-...
+> I installed JRS on the VM and it works.
+> I tried only the first two queries, I should do all of them.
+> Skipped this part of the lecture and went directly to the shema
+
+
 
 ## Exercise: design of Logical Star Schema from DFM Schema
 
@@ -383,6 +390,7 @@ Starting from business questions, we should do a preliminary analysis on the dim
 
 
 # dsd10
+Data Warehouse design approaches. Data mart logical design.
 
 ## Comparison of Design Approaches
 
@@ -614,12 +622,15 @@ It is like having a View, but the View is persistent, this subquery is not. The 
 
 
 # dsd11
+Slowly changing dimensions, fast changing dimensions, shared dimensions. Recursive hierarchies. Multivalued dimensions. [Exercises at home (Travel agency extended) for the lesson 12](https://didawiki.di.unipi.it/lib/exe/fetch.php/mds/dsd/dsd11.assignments.pdf "mds:dsd:dsd11.assignments.pdf (142.7 KB)").
 
 Let's start with the changes in the dimensions.
 
 
 
 # dsd12
+A DW to support Analytical CRM Analysis. Wrap up on DW design. [Exercises at home for the lesson 14](https://didawiki.di.unipi.it/lib/exe/fetch.php/mds/dsd/dsd12.assignments.pdf "mds:dsd:dsd12.assignments.pdf (157.6 KB)").
+
 
 ...
 
@@ -655,10 +666,14 @@ There can be empty cells. Notice that when we increase the dimensions, most of t
 
 What operations can we do?
 Restrict to a subcube, they do not imply calculations
-1. slicing
-	1. we are interested only in a subset of dimensions.
+1. slice
+	1. selecting a specific subset of data by fixing one dimension to a single value
+	2. this operation reduces the cube's dimensionality
+	3. for example `Time = 2024`
 2. dice
-	1. filter dimensions
+	1. selecting a subset of data by specifying a range or set of values for multiple dimensions
+	2. this operation does not necessarily reduce the dimensionality but narrows the data within the cube
+	3. for example selecting `Time = [2023, 2024]` and `Region = [North, South]`
 More
 3. pivot
 	1. reorient the cube
@@ -687,7 +702,7 @@ Different users with different needs but only one cube with all the results alre
 
 Which tool implement this abstraction?
 For the OLAP system, we use
-1. SSAS
+1. SSAS (SQL Server Analysis Server)
 2. PowerPivot
 
 For the multidimensional analysis, we use
@@ -699,7 +714,90 @@ For the multidimensional analysis, we use
 ## Playing with Pivot Tables in Excel
 > Download excel data for pivot table on didawiki, to play with excel
 
+Showing examples of pivot tables in excel.
+So, watching the settings on the right.
+1. filters
+	1. work as a slice or dice
+2. rows and columns
+	1. determine if we are rolling-up or drilling-down
+3. values
+	1. ..
+4. right click on cell
+	1. we can select drill-through
 
+Data can be also explored by charts.
+The chart is dynamic, based on the pivot table.
+
+Excel offer the possibility to explore data in the OLAP.
+We now connect the Foodmart DW to Excel (not to the OLAP, you will see that in the lab).
+There is a sales_fact table.
+
+![[Pasted image 20241125163801.png]]
+
+The more specific the connection, the faster will be the connection, compared to general connections. We use the OLEDB standard.
+Let's build the string.
+As a driver, choose `Microsoft OLE DB for SQL Server`.
+Follow the steps as usual.
+
+Next step is to *import* the table from the DW.
+We can select multiple tables.
+We also need to specify the foreign keys for the `Relationships`, look in the section of settings called `Data Tools`.
+
+We now proceed to `Insert` >  `Pivot Table` > `from Data Model` .
+
+The next morning, with `Refresh All` in `Queries and Connections`, we can reimport everything after the night load, without changing the structure of the pivot tables.
+
+Excel is not able to deal with hierarchies.
+
+## Textual Notation for Cube Operators
+
+![[Pasted image 20241125170015.png]]
+
+In roll-up, we use `*` to mean summarize (sum) data by all the dimension values.
+
+![[Pasted image 20241125170111.png]]
+
+For example
+1. we have the total quantity by store, only for product P1, independently of the date
+	1. `Sales(StoreId, 'P1', *)`
+
+We can read `*` as *any*.
+We can add these values to create the *extended cube*.
+In this extended cube, we can see all the roll-up values.
+
+![[Pasted image 20241125170438.png]]
+
+Consider now the *DW lattice* (reticolo).
+Read by lines.
+
+![[Pasted image 20241125170627.png]]
+
+How many subsets (or cuboids)?
+A cuboid is a cube with a subset of dimensions.
+The multidimensional cube is the union of these cuboids.
+In general, it is the product of the cardinality of the dimensions in the cuboid.
+Remember to add +1 in the extended cube.
+
+This number can be enormous, but most of the cells are usually empty, and this allows for efficient implementation of sparse matrices.
+
+![[Pasted image 20241125170942.png]]
+
+How to compute a cuboid given another one?
+We will discuss in the future what is precomputed and what is computed on the fly.
+
+Is it always possible to compute functions on the fly when rolling-up or drilling-down?
+In the case of distributeive aggregative functions, like sum or count, yes.
+For other functions, like the average, called algebraic, this is not possible directly. However, I can compute the average using the aggregate sum and count that are distributive.
+There are functions for which this is impossible, called Holistic. It  
+
+![[Pasted image 20241125171414.png]]
+
+# dsd14
+Recalls on: DBMS, from SQL to extended relational algebra.
+
+
+# dsd15
+OLAP systems. Data Analysis Using SQL. Simple reports. Examples. Moderately Difficult Reports. Solutions in SQL.
 
 
 
