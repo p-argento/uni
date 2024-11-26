@@ -10,6 +10,47 @@ Start of OLAP.
 
 Foodmart is a snowflake.
 
+Showing slides on dwandolap. Nothing interesting.
+Showing slides on ssas. Let's see.
+
+In Excel you can access the olap cube directly and exploit that.
+In microsoft, there are also reporting services, but PowerBI substituted it.
+
+We will need a structure for our code, 3 layers.
+1. ROLAP or MOLAP ??
+2. MDX, to exploit hierarchies
+3. DAX ?
+
+![[Pasted image 20241126095710.png]]
+
+IMPORTANT.
+We define the name of the project using the student_id.
+We construct the cube 
+There is no login and psswrd. We use the HTTP.
+The only way to avoid conflicts is to have a different name at server side.
+
+In SSMS.
+Select Analysis Services.
+There is a string you need to exploit, in order to access server side the cube.
+`http://lds.di.unipi.it/olap/msmdpump.dll`
+
+See many cubes. We will create a cube with the same structure.
+1. Data Cube
+	1. -> Food Mart
+2. Data Source View
+	1. I create a view on this data
+3. Cubes
+4. Dimensions
+	1. ...
+	2. ProductParentChild is a recurrence dimension that we will see.
+
+Create a new Analysis Services Project. USE THE NAME LIKE `Foodmart_cube_studentid_2024`
+
+
+
+
+
+
 
 
 
