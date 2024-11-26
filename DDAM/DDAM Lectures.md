@@ -459,7 +459,14 @@ Many different ways
 	2. the schema can be inferred or specified
 3. from iterables
 	1. using `pyspark.sql.SparkSession.createDataFrame(data,schema,samplingRatio,verifySchema)`
+	2. the iterables can be
+		1. list of tuples
+		2. list of dictionaries
+	3. the schema can be inferred or spcified
 4. from Spark Data Sources
+	1. from json file using spark.read.json(filepath)
+	2. from csv files using spark.read.csv(filepath)
+	3. from other file formats using spark.read.load(filepath, format): Parquet, ORC, Hive, other databases (using jdbc), Avro, Protobuf, and binary files...
 
 *1. Creating a DF from RDDs using .toDF()*
 See example of most frequent words
@@ -514,20 +521,37 @@ Once the schema has been defined, the DataFrame can be created passing the schem
 
 
 *3. Creating a DF from RDDs inferring the schema*
+...
+
 
 
 ## DataFrame basic operations tutorial
 
-1. select
-2. filter
-3. groupby
-4. aggregations (sum, avg, ...)
-5. sort
-6. alias
-7. distinct
-8. drop
-9. withcolumn
-10. join
+*1. SELECT*
+Choose specific columns, can add condition.
+`selectdf = df.select (df ['Name'], df['Age'] < 18)`
+Also, you can use `.when` to create conditional expressions.
+`filteredf = df.select ('Name', F.when (df['Age'] < 18, 'Underage').otherwise ('Adult'))`
+
+*2. FILTER*
+Apply conditions to filter rows.
+`.where()` is an alias for `filter()`
+
+*3. groupby*
+
+*4. aggregations (sum, avg, ...)*
+*5. sort*
+*6. ALIAS*
+Rename columns for better readability
+
+*7. distinct*
+*8. drop*
+*9. withcolumn*
+*10. join*
+
+
+
+
 
 
 ## Machine Learning with Spark
@@ -550,6 +574,9 @@ Clustering
 
 
 
+
+
+# Lesson 4 - Spark SQL and Machine Learning
 
 
 
