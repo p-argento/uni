@@ -5,6 +5,18 @@
 
 ## Important Notes
 
+*26/11*
+Start of OLAP.
+
+Foodmart is a snowflake.
+
+
+
+
+
+
+
+
 *21/11*
 
 We see the solution of the dissimilarity index exercise.
