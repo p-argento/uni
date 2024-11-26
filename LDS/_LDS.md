@@ -46,6 +46,17 @@ See many cubes. We will create a cube with the same structure.
 
 Create a new Analysis Services Project. USE THE NAME LIKE `Foodmart_cube_studentid_2024`
 
+After creating the connection to access foodmart.
+In "Impersonation Information", we will NOT use the windows account credentials, but the HTTP.
+Now the connection is ready, and we will create views.
+
+Clicking on the just created view, we can see al the tables.
+Right-click on one table and select "Explore Data".
+
+![[Pasted image 20241126103655.png]]
+
+To create a ssis-like derived column, right-click on the table and select "Create Named Calculation". For example, for creating the "customer_name" use `fname + ' ' + lname`.
+If you explore the table, you can see the new colum, but everything is at client side.
 
 
 
