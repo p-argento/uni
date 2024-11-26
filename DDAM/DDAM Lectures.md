@@ -13,7 +13,9 @@ First part:
 ❏ Lesson 12 - 27/10/2024: Machine learning on DFs
 ❏ Lesson 13 - 30/10/2024: laboratory on MLlib (DataFrames)
 
-# 1. Distributed Computing and Hadoop
+> I decided to use the slides and lectures on sobigdataacademy for revision
+
+# Lesson 1 - Distributed Computing and Hadoop
 25/09/24
 
 *outline*
@@ -189,7 +191,7 @@ Key benefits of Databricks and Apache Spark include
 3. unified platform
 
 
-# 2. Spark RDD Basics
+# Lesson 2 - Spark RDD Basics
 27/09/24
 
 Apache Spark is an open-source distributed computing system.
@@ -362,12 +364,8 @@ print(top_words)
 
 
 
-# 3. (LAB)
 
-
-
-
-# 4. Dataframes
+# Lesson 3 - Spark Dataframes & Machine Learning
 04/10/24
 
 This lesson is about
@@ -552,14 +550,6 @@ Clustering
 
 
 
-
-
-
-
-
-
-
-# 5. (LAB)
 
 
 
