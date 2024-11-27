@@ -41,6 +41,53 @@ Go in "time_by_day".
 If there is the attribute we need, create the relationship first.
 
 
+Crea calcolo denominato.
+```
+CASE the_day
+WHEN "Monday" THEN 1
+WHEN "..." THEN ...
+```
+Do it for all days of the week.
+Now, we move the new column in the Dimension Structure>Attributes.
+
+Of course, you need to create all the dimensions.
+> The professor will upload the cube.
+
+
+
+NOW WE CREATE A SPECIAL TYPE OF DIMENSION.
+Some dimensions are recursive. You can have recursive hierachies.
+We a tool to have this possibility.
+In FoodMart, we have `product_child_parent` table.
+We want to create a "New Relationship" from `sales_fact`.
+Select `product_id` as Origin Column and `child`.
+It is recursive because a parent has a child and a child has a parent (?).
+
+We can create a new dimension.
+
+...
+
+
+
+NOW WE CREATE THE CUBE.
+
+Check on Properties that the AggregateFunction is set to "Sum" or to "Count" in the specific table.
+
+> For tomorrow, import the cube that she uploads and we will do some exercises linking the cube to excel. Then we will start the MDX language.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
