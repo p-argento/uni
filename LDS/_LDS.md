@@ -5,6 +5,45 @@
 
 ## Important Notes
 
+*27/11*
+
+We create a new dimension. Right-click on Dimensions on the right.
+Any time you access the data, what is the finer granularity? The more detailed information that you have? Select "the_date".
+
+Now, on the right we have the "Date View", which is a smaller part of the bigger view. Here, we see the available attributes.
+If I drag-and-drop "the_month" to Attributes, then it is a flat hierarchy.
+But if I want a multi-level hierarchy?
+In the "time_id" the date is already there.
+
+You can click "Browser", to see...
+
+Now, we create the hierarchies in the window in the middle, using drag-and-drop.
+
+In "Attribute Relationship", we can see the functional dependencies.
+It looks like we do not have any fd.
+You can create a relationship.
+But be aware, that the design of the db allows that relationship.
+
+Remember that in Browser you can always see the flat hierarchy, for example using only the months.
+
+After selcting a dimension, for example "the_month". Set "AttributeHierachyVisible" to False to hide a dimension in the Properties windows bottom left. 
+
+
+You can set up an ordering.
+First create the realtionship.
+Then, in the properties window.
+Use OrderBy=
+And OrderBy="Month_of_the_year"
+Now, refresh and see the browser.
+
+Now, apply the same for "the_day".
+Go in "time_by_day".
+If there is the attribute we need, create the relationship first.
+
+
+
+
+
 
 
 
@@ -62,7 +101,7 @@ Right-click on one table and select "Explore Data".
 To create a ssis-like derived column, right-click on the table and select "Create Named Calculation". For example, for creating the "customer_name" use `fname + ' ' + lname`.
 If you explore the table, you can see the new colum, but everything is at client side.
 
-
+Remember to paste the string for the HTTP in the Properties window, in Destination>Server
 
 
 

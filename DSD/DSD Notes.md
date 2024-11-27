@@ -294,7 +294,6 @@ Everything that is available in the operational database should be added, even i
 
 
 
-
 # dsd06
 Recalls: the relational model and relational algebra. Exercises. [Exercises at home (Assignment IV) for the lesson 08](https://didawiki.di.unipi.it/lib/exe/fetch.php/mds/dsd/dsd06.assignments.pdf "mds:dsd:dsd06.assignments.pdf (55 KB)").
 
