@@ -11,6 +11,8 @@ Plan urban transport.
 Know information about competitors. How many people go to Coop?
 Advertising.
 
+USE PATTERN MINING IN CREDIT CARDS DATASET.
+
 
 
 
