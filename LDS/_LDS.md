@@ -5,6 +5,28 @@
 
 ## Important Notes
 
+*28/11*
+PRESENTATION OF THE PROJECT
+
+The dashboard should be interactive and able to access a db. Use PowerBI.
+
+For delivery, use the university email.
+
+You can choose only 4 of the assignments with `*`.
+Answer using MDX, kind of sql language.
+
+> In the project, if there are more rows in a table than the ones in the fact table, probably there is a error.
+
+
+
+
+
+
+
+
+
+
+
 *27/11*
 
 We create a new dimension. Right-click on Dimensions on the right.
