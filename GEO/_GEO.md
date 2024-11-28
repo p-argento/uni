@@ -5,6 +5,8 @@ Prof. Pappalardo
 
 [[Geo labs]]
 
+[[Riccardo Di Clemente]]
+
 ## News
 Try the compression exercise.
 
