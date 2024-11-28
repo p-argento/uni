@@ -19,6 +19,7 @@ Answer using MDX, kind of sql language.
 
 
 
+In SSAS, Cube>Calculations, you can create new 
 
 
 
