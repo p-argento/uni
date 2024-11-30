@@ -5,6 +5,9 @@ Prof. Salvatore Ruggieri
 
 [[DSD Notes]]
 
+[[DSD BOOK NOTES]]
+
+
 ## Material
 Study the book!
 
