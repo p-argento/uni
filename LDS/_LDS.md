@@ -29,6 +29,110 @@ OPEN SSMS.
 New query > MDX
 (DAX is for tables, not cubes)
 
+Query 1.
+```MDX
+-- total sales
+select [Measures].[Store Sales] on columns
+from [Sales]
+```
+
+Query 2.
+```MDX
+-- total sales per country in store
+select [Measures].[Store Sales] on columns,
+NONEMPTY([Store].[Geography].[Sales Country]) on rows
+from [Sales]
+```
+
+Query 3.
+```MDX
+-- total sales per south east california
+select [Measures].[Store Sales] on columns,
+[Store].[Geography].[Sales Country].&[USA].&[South West].&[CA] on rows
+from [Sales]
+```
+
+`&[USA]` specifies the value and NOT the level!
+
+Query 4.
+```MDX
+-- total store sales in 1998
+select [Measures].[Store Sales] on columns,
+[Time].[The Year].&[1998] on rows
+from [Sales]
+```
+
+This uses the flat hierarchy. But you can use also the DayMonthYear hierarchy.
+You should NOT use `WHERE [Time].[The Year].&[1998]` because you loose the labels for the rows.
+
+Query 5.
+```MDX
+-- total store sales after Jan 1998
+select [Measures].[Store Sales] on columns,
+[Time].[DayMonthYear].[The Year].&[1998].&[Q1].&[January].lead(1) on rows
+from [Sales]
+```
+
+Now, we cannot use the flat hierarchy anymore.
+Use DayMonthYear and the function `.lead(1)`.
+???
+
+
+Query 6.
+```MDX
+-- total sales USA for female customers
+select [Measures].[Store Sales] on columns,
+([Customer].[Geography].[Country].&[USA] , [Customer].[Gender].&[F]) on rows
+from [Sales]
+```
+
+Query 7.
+```MDX
+-- total sales and cost for each country and customer gender
+select {[Measures].[Store Sales], [Measures].[Store Sales]} on columns,
+([Customer].[Geography].[Country], [Customer].[Gender].[Gender]) on rows
+from [Sales]
+```
+
+With `{}` you create the set ??
+
+Query 8.
+```MDX
+-- sales and profit in USA and Mexico
+select {[Measures].[Store Sales], [Measures].[Profit]} on columns,
+{[Customer].[Geography].[Country].&[Mexico], [Customer].[Geography].[Country].&[USA]} on rows
+from [Sales]
+```
+
+With `{}` you create the set ??
+
+Query 9.
+```MDX
+-- sales and cost for each month (wrong)
+select {[Measures].[Store Sales], [Measures].[Profit]} on columns,
+([Time].[DayMonthYear].[The Year] , [Time].[DayMonthYear].[The Month]) on rows
+from [Sales]
+```
+
+The operation when we create a tuple is called crossjoin.
+You cannot use an hierarchy twice (?).
+You need to combine two different hierarchies
+
+```MDX
+-- sales and cost for each month (correct)
+select {[Measures].[Store Sales], [Measures].[Profit]} on columns,
+([Time].[The Year].[The Year] , [Time].[DayMonthYear].[The Month]) on rows
+from [Sales]
+```
+
+
+
+
+
+
+
+
+
 
 
 
