@@ -5,6 +5,36 @@
 
 ## Important Notes
 
+*3/12*
+We introduce MDX.
+
+In FROM the join is not necessary, because we use the cube and the cube should already incorporate the join.
+
+> ORAL EXAM QUESTION: differences between SQL and MDX
+
+In WHERE, we specify the conditions, 
+
+Remember that the entire set of elements defined in the cube is considered as hierarchies, some are flat soma are not flat. (?)
+
+There are a lot of functions that can exploit the tree of hierachies.
+Syntax: `[DimensionName].[HierarchyName].[LevelName].[MemberName] `Example: `[Store].[Time].[Quarter].&[Quarter 1]`
+Or equivalent.
+Syntax: `[DimensionName].[HierarchyName].[Path from root]`
+Example: `[Store].[Time]. [All].[2004].[Quarter 1]`
+
+Constructing members.
+For example applying a computation to obtain a metric.
+
+
+
+
+
+
+
+
+
+
+
 *28/11*
 PRESENTATION OF THE PROJECT
 
