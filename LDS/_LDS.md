@@ -25,8 +25,9 @@ Example: `[Store].[Time]. [All].[2004].[Quarter 1]`
 Constructing members.
 For example applying a computation to obtain a metric.
 
-
-
+OPEN SSMS.
+New query > MDX
+(DAX is for tables, not cubes)
 
 
 
