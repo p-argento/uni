@@ -5,6 +5,50 @@
 
 ## Important Notes
 
+*4/12*
+MDX Queries in SSMS.
+
+Query 10.
+```MDX
+-- sales and cost for each month (crossjoin)
+select {[Measures].[Store Sales], [Measures].[Profit]} on columns,
+crossjoin([Time].[The Year].[The Year] , [Time].[DayMonthYear].[The Month]) on rows
+from [Sales]
+```
+
+
+Query 11.
+..
+
+
+Query 12.
+```MDX
+-- return the ordered list of stores wrt the total sales
+select [Measures].[Store Sales] on columns,
+NONEMPTY(order([Store].[Store Id].[Store Id], [Measures].[Store Sales], desc)) on rows
+from [Sales]
+```
+
+Remeber that the first `[Store Id]` is the hierarchy and the second one is the member ??
+
+Query 13.
+
+
+
+In the left panel, there are two tabs: Metadata and Functions.
+See the Functions, they are useful.
+
+
+
+
+
+
+
+
+
+
+
+
 *3/12*
 We introduce MDX.
 
