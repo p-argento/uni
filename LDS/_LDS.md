@@ -38,7 +38,9 @@ Query 13.
 In the left panel, there are two tabs: Metadata and Functions.
 See the Functions, they are useful.
 
-
+TIPS
+1. ALWAYS START FROM THE QUESTION: WHAT DO I NEED ON COLUMNS AND ROWS?
+2. TEST THE QUERY STEP BY STEP.
 
 
 
