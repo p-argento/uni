@@ -3,6 +3,8 @@
 
 [[My LDS Project Notes]]
 
+> KNOW HOW TO IMPLEMENT A JOIN WITH DICTIONARIES
+
 ## Important Notes
 
 *4/12*
