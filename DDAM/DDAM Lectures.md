@@ -578,6 +578,45 @@ Clustering
 
 # Lesson 4 - Spark SQL and Machine Learning
 
+## SparKSQL
+
+
+## Machine Learning in PySpark
+
+There are 3 core concepts:
+1. Dataframe
+	1. ..
+2. Transformer
+	1. typically feature transformers or learning algorithms
+	2. using `transform()`
+	3. convert a df into a new one adding one or more columns
+3. Estimator
+	1. any algorithm that requires a training phase
+	2. using `fit()`
+	3. takes as input a df and returns the transformer (meaning the model)
+
+Transformers and Estimators are concatenated into Pipelines.
+
+## Machine Learning Pre-Processing
+
+*Data preparation*
+1. improving data quality
+2. handing different types of data
+3. transforming input data
+
+## Classification, Regression and clustering in pyspark
+
+*ML*
+1. classification
+2. regression
+3. clustering
+4. validation
+
+
+
+
+
+
 
 
 
