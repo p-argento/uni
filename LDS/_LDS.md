@@ -11,6 +11,8 @@
 
 (arriving 30 min later)
 
+If you need to display a ratio, is always better to show also the values to compute the ratio as columns.
+
 
 
 
