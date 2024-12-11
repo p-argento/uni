@@ -7,6 +7,25 @@
 
 ## Important Notes
 
+*11/12*
+
+(arriving 30 min later)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *4/12*
 MDX Queries in SSMS.
 
