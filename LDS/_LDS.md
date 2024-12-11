@@ -13,12 +13,31 @@
 
 If you need to display a ratio, is always better to show also the values to compute the ratio as columns.
 
+To retireve the previous mont, you can choose among
+1. lag, 
+2. prevmember
+3. parallelperios
 
+When you do not have any value, you can have null in the report, but we want to avoid null and actually display zero.
+You can use two strategies:
+1. case when
+2. ...
 
+How to shoe the row "All"?
+I can use `+ "a set"` to add
+Something like
+```DMX
+with member sales as
+case when [Measures].[Store Sales]=null then 0
+else [Measures].[Store Sales] end
+select
+nonempty(([Time].[The Year].[The Year],
+[Time].[DayMonthYear].[Quarter], sales)) on columns,
+nonempty(([Customer].[Geography].[City]) + {[Customer].[Geography].[All]}
+on rows
+from [Sales]
 
-
-
-
+```
 
 
 
