@@ -33,6 +33,14 @@ Use the famous string for SSAS and use "dynamic connection".
 On the right you have the representation of the data. Exactly like in SSAS to create the MDX queries with drag&drop.
 Typically the dashboard is a composition of plots.
 
+For any plot, you can use the arrows above the plots to drill-down. 
+
+Click Visualizza modello on the left sidebar to see the structure of the cube.
+
+Right-click and select ? to see the table with the values of the plot.
+
+To add a new plot, click outside the plot first, otherwise it is replaced.
+
 
 
 
