@@ -27,6 +27,11 @@ We present two alternatives
 1. connecting the application directly to the cube
 2. what happens if we do not find the aggregations in the DW?
 
+Opens Power BI.
+Use the famous string for SSAS and use "dynamic connection".
+
+On the right you have the representation of the data. Exactly like in SSAS to create the MDX queries with drag&drop.
+Typically the dashboard is a composition of plots.
 
 
 
