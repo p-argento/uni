@@ -64,7 +64,17 @@ FROM [Sales]
 WHERE
 ```
 
+2. for each month, how many products have been purchased in the month, by at least 10 distinct customers
+```MDX
+with memmber nproducts as
+	
+SELECT nproducts
+on columns,
+nonempty(([Time].[The Year].[The Year], [Time].[DayMonthYear].[The Monht])
+on rows
+FROM [Sales]
 
+```
 
 
 
