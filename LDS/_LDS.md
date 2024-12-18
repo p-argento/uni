@@ -9,6 +9,41 @@
 
 *12/12*
 
+Dashboards and power bi.
+
+Geographical representation of kpi, time series of changes of indicators, etc.
+The definition of the dashboard should be discussed with the domain expert.
+
+Different levels of aggregation you might be interested in.
+
+In the SQL Server Suite, there are two tools
+1. SSRS (deprecated)
+2. Power BI
+
+![[Pasted image 20241218111822.png]]
+
+Now we show a demo.
+We present two alternatives
+1. connecting the application directly to the cube
+2. what happens if we do not find the aggregations in the DW?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
