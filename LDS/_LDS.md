@@ -41,8 +41,28 @@ Right-click and select ? to see the table with the values of the plot.
 
 To add a new plot, click outside the plot first, otherwise it is replaced.
 
+Now, you can also open the db using lds.di.unipi.it
+If you open the db engine (no olap cube), you need to create views (see the folder in SSMS). Click design to see the details.
 
+The same computation in the OLAP.
 
+In some companies, you do not have the cube, but only the dw, so you need to create views.
+
+> You are free to use the tool that you want, for example Tableau.
+
+Let's do some queries. in MDX.
+
+1. for each month, how many products have been purchased in the month by at least 10 distinct customers.
+```MDX
+with memmber nproducts as
+	
+SELECT nproducts
+on columns,
+nonempty(([Time].[The Year].[The Year], [Time].[DayMonthYear].[The Monht])
+on rows
+FROM [Sales]
+WHERE
+```
 
 
 
