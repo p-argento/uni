@@ -25,11 +25,7 @@ New ideas
 
 *SSIS*
 
-Important
-1. need to set the auto increment of the key server side
-	1. for both the fact table and the dimensions?
-
-In the ETL.
+Recall the ETL.
 
 -> Extract:
 1. access data sources (Local, distributed, file format, connectivity standards)
@@ -61,7 +57,14 @@ Be careful with data types (see [data types documentation](https://learn.microso
 2. SSIS transformations works on SSIS types 
 3. SSIS types are mapped to destination data types
 
-
+Important
+1. check that all the data types are okay (use utf-8 or utf-8-sig)
+2. need to set the auto increment of the key server side
+	1. for both the fact table and the dimensions?
+3. check that in the population of tables in ssis is correct
+	1. dimensions first, fact later
+	2. does it take care of type 1 and type 2 errror? (see slide on SCD)
+4. 
 
 
 
