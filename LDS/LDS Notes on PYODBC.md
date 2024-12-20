@@ -1,4 +1,4 @@
-## 23/10/24
+## 23-10
 
 > Microsoft sucks
 
@@ -57,9 +57,7 @@ Test the query in the script "SELECT TOP 10 * FROM census" directly on sql query
 It is better to have a variable "query" and pass the variable to the function `cursor.execute()`.
 
 
-
-
-*24-10*
+## 24-10
 
 It is better to do most of the operations locally (even rounding numbers), because we do not know the power of the server. Just get the data from the server.
 
@@ -82,7 +80,8 @@ NEXT TIME YOU WILL DO A LOT OF EXERCISES.
 
 
 
-*29-10*
+## 29-10
+
 Remember, the sql tool is called "odbc origini dati 64bit".
 
 Pandas is allowed only for the first part of the project.
@@ -96,14 +95,11 @@ Remember that when you read a file everthing is a file, but we might need to con
 
 Remember that when working on data, you need to keep only the data you need, and use less loops as possible. But, before knowing the business questions, during cleaning and transformation, you keep all the data. 
 
-> EXAM QUESTION: Can you implement a join in python (using dictionaries)? 
-
 > Look at dictionary comprehehnsion
 
 REMEMBER WHEN WRITING CODE
 1. use functions for modularity
-2. think about exceptions
-	1. to avoid problem before production
+2. think about exceptions to avoid problem before production
 
 When scanning tables, use `break` if you find what you looked for, in order to speed up the code.
 
@@ -111,7 +107,8 @@ When scanning tables, use `break` if you find what you looked for, in order to s
 
 
 
-*30-10*
+## 30-10 (prima parte)
+
 Showing the solution of the stratified sampling.
 There are 2 solutions, but avoid the one server-side.
 
@@ -134,32 +131,6 @@ Use `FROM [FoodMart].[dbo].[customer]` to specify the complete path for the tabl
 
 In `Server Objects->Linked Server` there are linked servers, see slide 07.12; usually the folder is empty. This means that we can simulate a distributed query.
 
-
-
-In SSIS, open a new project and on the right go to "SSIS Packages" to build an ETL process. Is the .dtsx file, it is like a 
-Only one project containing different packages?
-Each .dtsx is a dataflow (?).
-> How many packages do we need to create for the project?
-
-If you open the file of the professor, you get an error because you cannot open it, but you can still read it. 
-...
-You can create nodes, and then use the toolbox on the left to add tools.
-Double click on the node if there is a problem, for example in OLEDB node you need to configure the connection.
-
-Use the blue arrow to link the nodes.
-
-Remember to change the path. NOT the computer, but the connection to the server. Use "English (USA)" local settings.
-
-Configurate both the connection manager and the mappings.
-Check that all the inputs are associated with an output.
-Drag&Drop if needed.
-
-> In the project.
-> In assignment 1, you can use pandas and whatever you want but you CANNOT modify the file.
-> From Assignment 2 on, you can modify the data, but you CANNOT use pandas.
-
-
-Use "encription: optional" in the login Management Studio.
 
 
 

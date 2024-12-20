@@ -1,18 +1,42 @@
+## 30-10 (seconda parte)
+
+In SSIS, open a new project and on the right go to "SSIS Packages" to build an ETL process. Is the .dtsx file, it is like a 
+Only one project containing different packages?
+Each .dtsx is a dataflow (?).
+> How many packages do we need to create for the project?
+
+If you open the file of the professor, you get an error because you cannot open it, but you can still read it. 
+
+You can create nodes, and then use the toolbox on the left to add tools.
+Double click on the node if there is a problem, for example in OLEDB node you need to configure the connection.
+
+Use the blue arrow to link the nodes.
+
+Remember to change the path. NOT the computer, but the connection to the server. Use "English (USA)" local settings.
+
+Configurate both the connection manager and the mappings.
+Check that all the inputs are associated with an output.
+Drag&Drop if needed.
+
+> In the project.
+> In assignment 1, you can use pandas and whatever you want but you CANNOT modify the file.
+> From Assignment 2 on, you can modify the data, but you CANNOT use pandas.
+
+
+Use "encription: optional" in the login Management Studio.
 
 
 
-
-
-*6/11*
+## 6/11
 WATCH LECTURE
 
-???
 ![[Pasted image 20241120175504.png|400]]
 
 
 
 
-*13/11*
+## 13/11
+
 If a question in the project gives a result that is empty or it is nonsense, it still may be correct. The process is what should be correct.
 For any question, look at the data and understand if you are really capturing what data is telling. Look at the data and the relations between data, if you miss something there, the problem may be incorrect.
 You can try with Pandas and simple SQL the queries you are doing with SSIS to verify if they are correct.

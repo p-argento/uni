@@ -5,6 +5,7 @@
 
 [[My LDS Project Notes]]
 
+[[LDS Project 2nd part]]
 ## Lecture Notes
 
 [[LDS Notes on PYODBC]]
@@ -13,7 +14,7 @@
 
 [[LDS Notes on Cube and MDX]]
 
-> KNOW HOW TO IMPLEMENT A JOIN WITH DICTIONARIES
+> EXAM QUESTION: Can you implement a join in python (using dictionaries)? 
 
 ## Exam
 Ruggieri first. Then Monreale. Write "DSS+LAB" in the notes on valutami.
