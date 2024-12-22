@@ -795,6 +795,8 @@ There are functions for which this is impossible, called Holistic. It
 Recalls on: DBMS, from SQL to extended relational algebra.
 
 
+
+
 # dsd15
 OLAP systems. Data Analysis Using SQL. Simple reports. Examples. Moderately Difficult Reports. Solutions in SQL.
 
