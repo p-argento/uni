@@ -1,6 +1,5 @@
+## 26/11
 
-
-*26/11*
 Start of OLAP.
 
 Foodmart is a snowflake.
@@ -12,9 +11,17 @@ In Excel you can access the olap cube directly and exploit that.
 In microsoft, there are also reporting services, but PowerBI substituted it.
 
 We will need a structure for our code, 3 layers.
-1. ROLAP or MOLAP ??
-2. MDX, to exploit hierarchies
-3. DAX ?
+1. Data Model
+	1. Multi-dimensional 
+	2. tabular
+2. Queries
+	1. MDX, to exploit hierarchies
+	2. DAX
+3. Data Access
+	1. ROLAP (Relational OLAP)
+		1. based on the traditional relational db
+	2. MOLAP (Multidimensional OLAP)
+		1. based on ad-hoc structures like the cube
 
 ![[Pasted image 20241126095710.png]]
 
@@ -56,7 +63,7 @@ If you explore the table, you can see the new colum, but everything is at client
 Remember to paste the string for the HTTP in the Properties window, in Destination>Server
 
 
-*27/11*
+## 27/11
 
 We create a new dimension. Right-click on Dimensions on the right.
 Any time you access the data, what is the finer granularity? The more detailed information that you have? Select "the_date".
@@ -130,7 +137,8 @@ Check on Properties that the AggregateFunction is set to "Sum" or to "Count" in 
 
 
 
-*28/11*
+## 28/11
+
 PRESENTATION OF THE PROJECT
 
 The dashboard should be interactive and able to access a db. Use PowerBI.
@@ -142,15 +150,10 @@ Answer using MDX, kind of sql language.
 
 > In the project, if there are more rows in a table than the ones in the fact table, probably there is a error.
 
-
-
 In SSAS, Cube>Calculations, you can create new 
 
 
-
-
-
-*3/12*
+## 3/12
 We introduce MDX.
 
 In FROM the join is not necessary, because we use the cube and the cube should already incorporate the join.
@@ -274,9 +277,8 @@ from [Sales]
 
 
 
+## 4/12
 
-
-*4/12*
 MDX Queries in SSMS.
 
 Query 10.
@@ -315,7 +317,7 @@ TIPS
 
 
 
-*11/12*
+## 11/12
 
 (arriving 30 min later)
 
@@ -348,7 +350,7 @@ from [Sales]
 ```
 
 
-*12/12*
+## 12/12
 
 Dashboards and power bi.
 
