@@ -794,6 +794,31 @@ There are functions for which this is impossible, called Holistic. It
 # dsd14
 Recalls on: DBMS, from SQL to extended relational algebra.
 
+DB is a collection of persistent data:
+1. schema (or meta-data)
+	1. time-invariant
+	2. abstract knowledge
+2. data
+	1. concrete knowledge
+DBMS
+1. is a centralized or distributed software system
+2. functions
+	1. DDL (Data Description Language)
+	2. DML (Data Manipulation Language)
+	3. DQL (Data Query Language)
+	4. DBA (Database Administrator)
+3. different levels
+	1. logical view
+		1. `CREATE VIEW ...`
+	2. logical level
+		1. `CREATE TABLE ...`
+	3. physical level
+		1. indexes and other data structures
+
+Let's start from DBA.
+There is a catalog
+![[Pasted image 20241223111506.png]]
+
 
 
 
