@@ -1,18 +1,12 @@
 
 [LDS Didawiki](http://didawiki.di.unipi.it/doku.php/mds/lbi/start)
-
 ## Project Notes
-
-[[My LDS Project Notes]]
-
+[[LDS Project 1st part]]
 [[LDS Project 2nd part]]
 ## Lecture Notes
-
-[[LDS Notes on PYODBC]]
-
-[[LDS Notes on SSIS]]
-
-[[LDS Notes on Cube and MDX]]
+[[LDS Lectures on PYODBC]]
+[[LDS Lectures on SSIS]]
+[[LDS Lectures on Cube and MDX]]
 
 > EXAM QUESTION: Can you implement a join in python (using dictionaries)? 
 

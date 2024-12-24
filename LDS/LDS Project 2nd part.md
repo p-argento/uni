@@ -1,3 +1,5 @@
+[Google Doc with Server Logs](https://docs.google.com/document/d/1jRtPixDMGV7qE6ob_1iVFkb5yuY8RICmUtpvUlNvrlA/edit?pli=1&tab=t.0)
+
 ## 20-12
 
 *PYODBC*
