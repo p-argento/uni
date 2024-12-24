@@ -630,20 +630,91 @@ Let's start with the changes in the dimensions.
 # dsd12
 A DW to support Analytical CRM Analysis. Wrap up on DW design. [Exercises at home for the lesson 14](https://didawiki.di.unipi.it/lib/exe/fetch.php/mds/dsd/dsd12.assignments.pdf "mds:dsd:dsd12.assignments.pdf (157.6 KB)").
 
+starting from 25:00
+
+We conclude the DW Design with a more complex DW that is CRM.
+
+The CRM is made of
+1. operational CRM
+2. analytical CRM
+
+![[Pasted image 20241224160247.png]]
+
+We can do 4 types of analysis.
+1. Sales and Marketing Analysis
+	1. Sales
+	2. Market
+	3. Channel
+	4. Promo Campaign
+2. Profitability Analysis
+	1. Customer
+	2. Product
+	3. Market
+	4. Campaign
+	5. Channel
+3. Service Quality Analysis
+	1. Product return
+	2. Order fulfillment
+4. Customer Analysis
+	1. Customer segmentation
+	2. Customer retention
+	3. Customer satisfaction
+	4. Customer attrition (or churn)
+
+## 1. Sales and Marketing Analysis
+
+This lines can be seen as dimensions of data marts.
+For example, we can think of a data mart with the fact table "*sales*" with dimensions such as "Product, Customer, Date, Channel, Order".
+
+![[Pasted image 20241224161004.png]]
+
+Another example is "*Marketing Analysis*".
+The new fact can be "contact".
+
+![[Pasted image 20241224161041.png]]
+
+What about sales and marketing analysis?
+Here we can see the customers that used the promotion.
+
+![[Pasted image 20241224161110.png]]
+
+## 2. Profitability Analysis
+
+Also *Profitability Analysis*.
+Note that
+1. Total Cost = Product Cost + Returns Cost + Promotion Cost 
+2. Margin = Revenue - Returns Value – Total Cost 
+3. Margin % = Margin / (Revenue - Returns Value)
+
+![[Pasted image 20241224161256.png]]
 
 
 
+## 3. Service Quality Analysis
+
+We explore *Return Analysis*.
+
+![[Pasted image 20241224161559.png]]
+
+Also *Order fullfillment analysis*
+
+![[Pasted image 20241224161818.png]]
+
+## 4. Customer Analysis
+
+How to categorize customers in a given month?
+1. New:  with at least an order last month and no order in the past
+2. Constant:  with at least two orders per month for three months in the last four months
+3. Occasional:  with at least one order in the last four months, but not as for typology Constant or New
+4. Inactive:   with no order in the last four months, and not Constant in the last 12 months
+5. Churn risk:  with no order in the last four months after being Constant at least once in the last 12 months.
+
+![[Pasted image 20241224161915.png]]
 
 
+## DW Example
 
-
-
-
-
-
-
-
-
+![[Pasted image 20241224162257.png]]
 
 
 
