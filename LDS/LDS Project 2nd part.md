@@ -73,6 +73,27 @@ Important
 
 ## 24-12
 
+Reading carefully the MDX Queries.
+
+**Q3**
+For each month, show the total damage costs for each location and the grand total with respect to the location.
+
+
+
+
+**Q4**
+
+
+Q4
+
+Q6
+
+Q7
+
+Q8a
+
+Q8b
+
 
 
 
