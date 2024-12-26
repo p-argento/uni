@@ -78,7 +78,21 @@ Reading carefully the MDX Queries.
 **Q3**
 For each month, show the total damage costs for each location and the grand total with respect to the location.
 
+|        |             | total damage cost |     |
+| ------ | ----------- | ----------------- | --- |
+| months | location    |                   |     |
+|        | GRAND TOTAL |                   |     |
 
+
+```MDX
+select
+
+on columns,
+
+on rows
+
+from [Damages]
+```
 
 
 **Q4**
