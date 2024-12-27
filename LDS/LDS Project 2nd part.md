@@ -247,8 +247,15 @@ from [Damages]
 
 
 ---DASHBOARD---
-****
+**A9**
+Create a dashboard that shows the geographical distribution of the total damage costs for each vehicle category.
 
+
+**A10**
+Create a plot/dashboard that you deem interesting w.r.t. the data available in your cube, focussing on data about the street.
+
+**A11**
+Create a plot/dashboard that you deem interesting w.r.t. the data available in your cube, focussing on data about the people involved in a crash
 
 
 

@@ -1,5 +1,6 @@
 
 [LDS Didawiki](http://didawiki.di.unipi.it/doku.php/mds/lbi/start)
+[Google Doc with Server Logs](https://docs.google.com/document/d/1jRtPixDMGV7qE6ob_1iVFkb5yuY8RICmUtpvUlNvrlA/edit?pli=1&tab=t.0)
 ## Project Notes
 [[LDS Project 1st part]]
 [[LDS Project 2nd part]]
