@@ -78,7 +78,8 @@ Remember that the syntax can be alternatively
 1. `[DimensionName].[HierarchyName].[LevelName].[MemberName] `
 2. `[DimensionName].[HierarchyName].[Path from root]`
 
-**Q3**
+
+**Q2**
 For each month, show the total damage costs for each location and the grand total with respect to the location.
 
 |        |             | total damage cost |     |
@@ -98,25 +99,155 @@ from [Damages]
 ```
 
 
+**Q3**
+Compute the average yearly damage costs as follows: for each crash, calculate the total damage to the user divided by the number of distinct people involved in the crash. Then, compute the average of these values across all crashes in a year.
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+|     |     |     |     |
+|     |     |     |     |
+
+
+```MDX
+select
+
+on columns,
+
+on rows
+
+from [Damages]
+```
+
+
 **Q4**
+For each location, show the damage costs increase or decrease, in percentage, with respect to the previous year.
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+|     |     |     |     |
+|     |     |     |     |
 
 
-Q4
+```MDX
+select
 
-Q6
+on columns,
 
-Q7
+on rows
 
-Q8a
-
-Q8b
-
-
+from [Damages]
+```
 
 
+**Q5**
+For each quarter, show all the locations where the number of vehicles involved exceeds the average number of vehicles involved in the corresponding quarter of the previous year. Also, report the increase as percentage.
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+|     |     |     |     |
+|     |     |     |     |
+
+
+```MDX
+select
+
+on columns,
+
+on rows
+
+from [Damages]
+```
+
+
+**Q6**
+For each vehicle type and each year, show the information and the (total) damage costs of the person with the highest reported damage.
+
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+|     |     |     |     |
+|     |     |     |     |
+
+
+```MDX
+select
+
+on columns,
+
+on rows
+
+from [Damages]
+```
+
+
+**Q7**
+Propose and solve a query showing some interesting and non-trivial facts you discover during the first part of the project.
+
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+|     |     |     |     |
+|     |     |     |     |
+
+
+```MDX
+select
+
+on columns,
+
+on rows
+
+from [Damages]
+```
+
+
+**Q8a**
+For each year, show the most frequent cause of crashes and the corresponding total damage costs. The primary crash contributing factor is given twice the weight of the secondary factor in the analysis. Additionally, show the overall most frequent crash cause across all years.
 
 
 
+|     |     |     |     |
+| --- | --- | --- | --- |
+|     |     |     |     |
+|     |     |     |     |
+
+
+```MDX
+select
+
+on columns,
+
+on rows
+
+from [Damages]
+```
+
+**Q8b**
+For each year, show the most risky crash type and its total damage costs. To measure how risky a crash type is, you should assign a weight to each type of injury you encounter in the data (for example, a fatal injury weighs 5 times an incapacitating one, which weighs twice a non-incapacitating injury).
+
+
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+|     |     |     |     |
+|     |     |     |     |
+
+
+```MDX
+select
+
+on columns,
+
+on rows
+
+from [Damages]
+```
+
+
+
+
+---DASHBOARD---
+****
 
 
 
