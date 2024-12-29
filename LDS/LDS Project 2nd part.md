@@ -143,10 +143,10 @@ from [Damages]
 **Q5**
 For each quarter, show all the locations where the number of vehicles involved exceeds the average number of vehicles involved in the corresponding quarter of the previous year. Also, report the increase as percentage.
 
-|     |     |     |     |
-| --- | --- | --- | --- |
-|     |     |     |     |
-|     |     |     |     |
+|           | quarter |     |     |
+| --------- | ------- | --- | --- |
+| locations |         |     |     |
+|           |         |     |     |
 
 
 ```MDX
