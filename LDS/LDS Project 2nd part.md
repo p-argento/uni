@@ -78,6 +78,7 @@ Remember that the syntax can be alternatively
 1. `[DimensionName].[HierarchyName].[LevelName].[MemberName] `
 2. `[DimensionName].[HierarchyName].[Path from root]`
 
+[[My Notes on MDX]]
 
 **Q2**
 For each month, show the total damage costs for each location and the grand total with respect to the location.
