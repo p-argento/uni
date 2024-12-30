@@ -185,6 +185,8 @@ from [Damages]
 Propose and solve a query showing some interesting and non-trivial facts you discover during the first part of the project.
 
 
+
+
 |     |     |     |     |
 | --- | --- | --- | --- |
 |     |     |     |     |
