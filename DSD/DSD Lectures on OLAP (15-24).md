@@ -33,7 +33,16 @@ Query 2.
 Largest invoice revenue by product.
 (for every product,  we want to know the total revenue of the invoice containing that product with the highest)
 
+```SQL
+WITH TotalByInvoice
+	(SELECT FkInvoiceNo AS Invoice, SUM(FkProduct * Qty) AS TotalInvoice
+	FROM InvoiceLines
+	GROUP BY FkInvoiceNo)
 
+FROM InvoiceLines, TotalByInvoice
+WHERE FkInvoiceNo=Invoice
+GROUP BY FkProduct;
+```
 
 
 
