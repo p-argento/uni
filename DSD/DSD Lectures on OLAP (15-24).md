@@ -12,7 +12,7 @@ OLAP systems. Data Analysis Using SQL. Simple reports. Examples. Moderately Diff
 OLAP refers to the technique of performing complex business  multidimensional analysis over the data warehouse.
 > We will see how report developers use SQL to write queries!
 
-## Solution to JRS exercise
+## JRS exercise
 
 **EXERCISE AT HOME**
 
@@ -73,7 +73,7 @@ WHERE a.FkCustomer=b.FkCustomer;
 
 This is a very complicated version of the query that can be simplified using the extended SQL that we see today.
 
-## REPORTING
+## Reporting Solutions
 UP TO NOW 
 Data Warehouse: Data Models and DW Design and Implementation.
 
@@ -121,34 +121,75 @@ How to add subtotals and the grand total?
 ![[Pasted image 20250107163750.png]]
 
 To avoid long UNION ALL, we use an extension of SQL called ROLLUP.
+The ROLLUP calculates the subtotal by removing each time the rightmost attribute.
+In general, if we have n attributes, it will generate n+1 subtotals.
 
+![[Pasted image 20250107172103.png]]
 
+How to produce the same report using ROLLUP?
+![[Pasted image 20250107172152.png]]
 
+*Cross-tabulation*
+It cannot be achieved with ROLLUP.
+It extends the ROLLUP.
+The keyword is CUBE.
 
+![[Pasted image 20250107172336.png]]
 
+![[Pasted image 20250107172400.png]]
 
+Here the order is not important, while it was important for the ROLLUP (?).
 
+*Partial Rollup and Cube*
+Rollup and Cube can be mixed to compute only some groupings.
 
+![[Pasted image 20250107172724.png]]
+![[Pasted image 20250107172736.png]]
 
+## Exercises with Foodmart
+> Download "Azure Data Studio"
+> Use the VPN
+> Add connection
+> Use SQL login
+> Right-click on foodmart -> new query
 
+Let's build a standard report.
 
+![[Pasted image 20250107173330.png]]
 
+Adding CUBE
 
+![[Pasted image 20250107173541.png]]
 
+Note that, unlike standard SQL, we do not have NULL LASTS (?).
 
+Adding CASE, with a trick to obtain the grand total.
 
+![[Pasted image 20250107173931.png]]
 
+Typically the order is done by the tool, do not be too worried.
 
+![[Pasted image 20250107174055.png]]
 
+*What if NULL is present in the data?*
+How to distinguish the actual NULLs from those introduced by the ROLLUP?
 
+Remember that with a trick in the DW design, there will not be any nulls.
+There will be for instance a fictional customer called UNKNOWN with UNKNOWN values in the attributes. So there will be a foreign key pointing to that row.
 
+We use GROUPING.
 
-
-
+![[Pasted image 20250107174638.png]]
 
 
 
 # dsd16 - Analytic SQL (2)
+
+## Moderately Difficult Reports
+With comparison across aggregation levels.
+
+
+
 
 
 # dsd17- Analytic SQL (3)
@@ -157,7 +198,7 @@ To avoid long UNION ALL, we use an extension of SQL called ROLLUP.
 # dsd18 - Query Plans
 
 
-# dsd 19 - DW Indexes
+# dsd19 - DW Indexes
 
 Start of lectures on "Relational DBMS Extensions for DW".
 The topics of the lectures from 19 to 23 are
@@ -170,5 +211,20 @@ The topics of the lectures from 19 to 23 are
 23 -> Query rewriting to use materialized views
 
 
+# dsd20
+
+
+
+
+# dsd21
+
+
+# dsd22
+
+
+# dsd23
+
+
+# dsd24
 
 
