@@ -333,6 +333,8 @@ A DW is represented with a special kind of relational schema
 3. constellation schema
 
 # dsd08
+
+## ...
 Recalls: the relational model and relational algebra. Logical trees.
 
 
@@ -623,6 +625,7 @@ It is like having a View, but the View is persistent, this subquery is not. The 
 # dsd11
 Slowly changing dimensions, fast changing dimensions, shared dimensions. Recursive hierarchies. Multivalued dimensions. [Exercises at home (Travel agency extended) for the lesson 12](https://didawiki.di.unipi.it/lib/exe/fetch.php/mds/dsd/dsd11.assignments.pdf "mds:dsd:dsd11.assignments.pdf (142.7 KB)").
 
+## ...
 Let's start with the changes in the dimensions.
 
 
