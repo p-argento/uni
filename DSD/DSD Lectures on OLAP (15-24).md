@@ -118,6 +118,10 @@ We write manually SQL Queries on the relational db.
 
 How to add subtotals and the grand total?
 
+![[Pasted image 20250107163750.png]]
+
+To avoid long UNION ALL, we use an extension of SQL called ROLLUP.
+
 
 
 
