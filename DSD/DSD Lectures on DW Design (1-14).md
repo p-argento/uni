@@ -1060,5 +1060,5 @@ The type of the result is a relation with integers and the value of the result i
 
 In JRS, Options > Show Logical Plan.
 
-
+See next lesson for the solution.
 

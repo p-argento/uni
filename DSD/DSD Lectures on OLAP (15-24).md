@@ -12,6 +12,29 @@ OLAP systems. Data Analysis Using SQL. Simple reports. Examples. Moderately Diff
 OLAP refers to the technique of performing complex business  multidimensional analysis over the data warehouse.
 > We will see how report developers use SQL to write queries!
 
+## Solution to JRS exercise
+
+**EXERCISE AT HOME**
+
+![[Pasted image 20250107120447.png]]
+
+In JRS, Options > Show Logical Plan.
+
+Query 1.
+Number of distinct customers by product.
+```SQL
+SELECT FkProduct, COUNT(DISTINCT(FkCustomer)) AS NCustomers
+FROM Invoices, InvoiceLines
+WHERE FkInvoiceNo=PkInvoiceNo
+GROUP BY FkProduct;
+```
+
+Query 2.
+Largest invoice revenue by product.
+(for every product,  we want to know the total revenue of the invoice containing that product with the highest)
+
+
+
 
 
 
