@@ -890,6 +890,8 @@ There are functions for which this is impossible, called Holistic. It
 # dsd14 - Relational Model
 Recalls on: DBMS, from SQL to extended relational algebra.
 
+## Functions of a DBMS
+
 DB is a collection of persistent data:
 1. schema (or meta-data)
 	1. time-invariant
@@ -911,30 +913,152 @@ DBMS
 	3. physical level
 		1. indexes and other data structures
 
-Let's start from DBA.
-There is a catalog
+Let's start from *DBA*.
+There is a catalog that is meant to query the DB
 ![[Pasted image 20241223111506.png]]
 
+Data Control.
+1. Access control
+	1. we can grant the permissions (or priviledges) to users
+	2. ![[Pasted image 20250107105136.png|300]]
+2. integrity control
+	1. foreign key control for instance
+3. concurrency control
+	1. to monitor real-time transactions
+4. data recovery
+
+## SQL Queries
+
+We explore the SQL standardised in 2003.
+1. in 1999 it was extended with ROLLUP CUBE
+2. in 2003 it was extended with analytical functions
+
+![[Pasted image 20250107105559.png]]
+
+A catalog consists of one or more schemas
+
+*DDL* -> Data Definition Language
+It means "Create / Alter / Drop -> Table / View"
+
+Keywords
+1. PRIMARY KEY
+2. UNIQUE
+3. CHECK
+4. ON DELETE ...
+
+![[Pasted image 20250107110536.png]]
 
 
+*DML* -> Data Manipulation Language
+It means "Insert / Update / Delete".
+
+Keywords
+1. INSERT INTO
+
+![[Pasted image 20250107110547.png]]
+
+*DQL* -> Data Query Language
+It means "Select... From... Where"
+
+If there is no ambiguity, we do not need ALIAS.
+UNION keeps duplicates.
+
+![[Pasted image 20250107110601.png]]
+
+## From SQL to Algebra
+
+In SQL, tables may contain duplicates, so we need to extend sets {T} to multisets {{T}}, also called bags, to keep duplicates.
+
+New operators
+1. multiset -> represented as $\pi^b$.
+2. inverse ->  $\delta(R)$ that is duplicate elimination 
+3. sort -> the result is a list $\tau$
+
+Other operators simply add the b to exp to convert to multisets
+1. multiset union
+2. multiset intersection
+3. multiset difference
+
+![[Pasted image 20250107111332.png]]
+
+*How to map sql queries into relational algebra?*
+
+![[Pasted image 20250107111437.png]]
+
+The way to read an SQL is this
+![[Pasted image 20250107111642.png]]
+
+*COUNT bug of SQL*: without GROUP BY vs GROUP BY ()
+What is the difference if R is empty?
+(if R is non-empty, it is the same)
+![[Pasted image 20250107112030.png]]
+
+In the query on the right.
+If we GROUP BY(), meaning the GROUP BY for an empty set, and then COUNT(\*).
+In GROUP BY, we should have one row for each grouping attribute, but since there are no attributes, we will get an empty relation.
+
+In the query on the left.
+If we COUNT(\*) an empty relation, we will get zero.
+
+*WITH Clause (subquery factoring)*
+To simplify complex queries, use temporary views/tables.
+
+![[Pasted image 20250107112445.png]]
+
+Some calculations, can be only done with views and not with simple queries.
+A single query cannot have to groupings (aggregates) one on top of the other. See the mapping above.
+
+Exercise:
+Write a SQL query that returns all constant  customers. Constant means with at least two orders per month for at least three months in the last four months.
+
+![[Pasted image 20250107113030.png]]
+
+Assume there is a functional dependency (FD) `Month -> Year`
+We need to transform the Month into contiguous values for all years, so that we do not care about the year.
+
+![[Pasted image 20250107114637.png]]
+
+What if the FD do not hold?
+We need to add also the Year in the GROUP BY.
+
+![[Pasted image 20250107114759.png]]
+
+*Nested Queries*
+
+Example:
+Student code and name who passed at least one exam with grade 'A'.
+
+![[Pasted image 20250107115027.png]]
+
+*NULLs*
+Missing or unknown values of attributes are modelled with the NULL value.
+
+Is NULL > 20? The result is UNKNOWN.
+Look at the truth table for 3-value logic.
+
+![[Pasted image 20250107115320.png]]
+
+There is a class of joins that generates NULLs.
+It is the LEFT OUTER JOIN.
+
+![[Pasted image 20250107115545.png]]
 
 
+*CASE*
+![[Pasted image 20250107115751.png]]
 
+  **EXAM EXAMPLE**
+  ![[Pasted image 20250107120127.png]]
 
+The type of the result is a relation with integers and the value of the result is simply the table with the result.
 
+![[Pasted image 20250107120340.png]]
 
+**EXERCISE AT HOME**
 
+![[Pasted image 20250107120447.png]]
 
-
-
-
-
-
-
-
-
-
-
+In JRS, Options > Show Logical Plan.
 
 
 
