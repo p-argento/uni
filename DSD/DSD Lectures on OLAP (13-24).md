@@ -528,6 +528,94 @@ With comparison across aggregation levels.
 
 ![[Pasted image 20250108101431.png]]
 
+In standard sql, it would require different unions.
+Complex and inefficient. That's why we introduce:
+
+*OVER* clause.
+
+The granularity do not change, we keep the one of the original data, there's no group by.
+We can think of OVER as a group by that do not change the aggregation, but only replicates the result of the group by over the rows.
+
+The PARTITION BY can also be absent. Meaning OVER()
+
+![[Pasted image 20250108103622.png]]
+
+Notice that first we compute the table with the grouping and then we use the OVER. 
+This will be important also later. First GROUP BY then aggregate.
+
+![[Pasted image 20250108103745.png]]
+![[Pasted image 20250108103827.png]]
+
+What is the position of OVER in the order of a query?
+The analytic functions are after HAVING.
+
+![[Pasted image 20250108103913.png]]
+
+And with comparison across aggregation levels?
+
+![[Pasted image 20250108103954.png]]
+
+Now that we are more confident, we can mix GROUP BY and OVER in the same query, instead of using a temp view. Always read GROUP BY first and OVER later.
+
+## Very difficult reports
+
+First without analytic sql.
+
+![[Pasted image 20250108104316.png]]
+
+*RANK*
+Without partitions
+
+Without specification, the ORDER BY is ascending.
+
+In the logical plan
+1. first we do the group by
+2. then OVER, global because no partition
+3. then ORDER BY, that is not connected to the analytical part
+
+![[Pasted image 20250108104633.png]]
+
+RANK with partitions.
+
+![[Pasted image 20250108105142.png]]
+
+*rows partitions*
+We could require for instance.
+- TOP5%
+- NEXT15%
+- MIDDLE30%
+- BOTTOM50%
+
+We need a variant of ranking with the relative position.
+These variations are
+
+RANK produce holes because the definition is:
+1+ the number of values that strictly precedes it.
+This can create ties.
+We introduce DENSE_RANK() and others.
+
+![[Pasted image 20250108105719.png]]
+
+We can use ROW_NUMBER() to obtain for instance the first 5 rows.
+
+With the OVER clause, we can use the standard aggregates like COUNT, SUM, AVG, MIN, MAX,..
+
+![[Pasted image 20250108110103.png]]
+
+## Exercise at home
+
+![[Pasted image 20250108110126.png]]
+
+The additional requirement is the subtotal.
+Mix the analytic functions to produce the percentage with the ROLLUP to produce subttotals.
+
+
+## Other analytical functions
+
+*LAG* and *LEAD*
+
+
+
 
 
 
