@@ -349,7 +349,7 @@ OLAP systems. Data Analysis Using SQL. Simple reports. Examples. Moderately Diff
 OLAP refers to the technique of performing complex business  multidimensional analysis over the data warehouse.
 > We will see how report developers use SQL to write queries!
 
-## JRS exercise
+## -> JRS exercise
 
 **EXERCISE AT HOME**
 
@@ -602,7 +602,7 @@ With the OVER clause, we can use the standard aggregates like COUNT, SUM, AVG, M
 
 ![[Pasted image 20250108110103.png]]
 
-## Exercise at home
+## -> Exercise at home 16.1
 
 ![[Pasted image 20250108110126.png]]
 
@@ -614,35 +614,65 @@ Mix the analytic functions to produce the percentage with the ROLLUP to produce 
 
 *LAG* and *LEAD*
 
+![[Pasted image 20250108112405.png]]
+
+Use these functions to create VARIANCE REPORTS.
+
+![[Pasted image 20250108112627.png]]
+
+We need a full outer join!
+There are 3 alternatives (same result).
+Use the second.
+
+![[Pasted image 20250108112954.png]]
+
+![[Pasted image 20250108113027.png]]
+
+## -> Exercise at home 16.2
+Try at home without any join, using LAG and LEAD.
 
 
+## Demo with Foodmart
 
+![[Pasted image 20250108113350.png]]
 
+In the beginning use subqueries, then, when you are confident, use a single query.
+In the following, notice that TotalSales is not yet available to be used and we need to use SUM(...)
 
+![[Pasted image 20250108113542.png]]
 
+Using RANK
 
+![[Pasted image 20250108113804.png]]
 
+Using ORDER BY Rk, we would get the order based on RANK
 
+Can we use RkCountry < 5? No, because it is not yet defined, the where is evaluate before. We need to use a subquery where we define it.
 
+![[Pasted image 20250108114150.png]]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Typically you see reports order by country and city, but remember that the calculation of delta with LEAD is ordered by RANK.
 
 # dsd17- Analytic SQL (3)
 
+## -> Solution of exercise at home 16.1
+
+
+
+
+
+
+
+
+
+
 
 # dsd18 - Query Plans
+
+
+
+
+
 
 
 # dsd19 - DW Indexes
