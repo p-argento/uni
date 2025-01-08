@@ -685,6 +685,8 @@ Typically you see reports order by country and city, but remember that the calcu
 
 We will do it on FoodMart considering Country and City.
 
+Be careful, if you use ROLLUP, you will sum also the ROLLUP for the GrandTotal. Doubling the result.
+How to avoid it? Use GROUPING.
 
 
 
