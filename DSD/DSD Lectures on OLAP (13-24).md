@@ -727,7 +727,34 @@ Moving averages are good at spotting trends.
 See Azure.
 
 
+## -> Exercises on SQL Extension
 
+![[Pasted image 20250108183918.png]]
+![[Pasted image 20250108183933.png]]
+
+Here's the text.
+
+1. number of customers who spent more than 50% of their total in the store by store
+
+2. number of customers who spent the largest amount of their total in the store by store
+
+3. number of customers with total sales in the store lower or equal than 100 by store
+
+4. number of customers with at least one day with total sales in the store greater or equal than 100 by store
+
+5. number of customers with no day with total sales in the store greater or equal than 100 (but with at least one sale in the store) by store
+
+6. all triples customer_id, the_year, month_of_the_year in which the customer bought something in that month but nothing in the next month.
+
+7. the ratio of total sales to a customer in a year-month over the total sales to the customer in that year, by customer and year-month
+
+8. the top spending day of week, by customer
+
+9. the 10 top spending customers and the ratio of their spending over the total sales of the store, by store_id
+
+10. add to the previous query also the running total of the top k customers, for k=1, …, 10
+
+11. add to the previous query also the delta between customer k and k+1, for k=1,…,9
 
 
 
