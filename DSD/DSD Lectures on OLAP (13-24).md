@@ -697,6 +697,9 @@ Try at home without any join, using LAG and LEAD.
 With LAG we get the previous year, with 0 if not present (we change it to null).
 WITH LEAD we can access the next year.
 
+> START SIMPLE then complicate.
+> Start with views then build a unique query.
+
 
 
 
