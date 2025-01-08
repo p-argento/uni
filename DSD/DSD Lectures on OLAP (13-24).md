@@ -607,7 +607,20 @@ With the OVER clause, we can use the standard aggregates like COUNT, SUM, AVG, M
 ![[Pasted image 20250108110126.png]]
 
 The additional requirement is the subtotal.
-Mix the analytic functions to produce the percentage with the ROLLUP to produce subttotals.
+Mix the analytic functions to produce the percentage with the ROLLUP to produce subtotals.
+
+> my solution
+
+```sql
+SELECT Brand, Product, SUM(Revenue) AS prodRevenue,
+	100*RATIO_TO_REPORT(SUM(Revenue))
+		OVER(PARTITION BY Brand) AS PctOverBrand,
+	100*RATIO_TO_REPORT(SUM(Revenue))
+		OVER() AS PctOverTot
+FROM sales
+GROUP BY Brand, Product, ROLLUP(Brand, Product)
+```
+
 
 
 ## Other analytical functions
@@ -630,6 +643,17 @@ Use the second.
 
 ## -> Exercise at home 16.2
 Try at home without any join, using LAG and LEAD.
+
+> my solution
+
+```sql
+SELECT LEAD(Revenue08, 1, 0) - Revenue08 / Revenue08 AS Delta
+FROM sales
+ORDER BY Brand, Product
+
+```
+
+
 
 
 ## Demo with Foodmart
@@ -657,6 +681,9 @@ Typically you see reports order by country and city, but remember that the calcu
 
 ## -> Solution of exercise at home 16.1
 
+![[Pasted image 20250108121612.png]]
+
+We will do it on FoodMart considering Country and City.
 
 
 
