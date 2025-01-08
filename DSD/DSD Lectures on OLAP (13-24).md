@@ -450,7 +450,8 @@ Many types
 Like Microstrategy.
 We write manually SQL Queries on the relational db.
 
-## Simple Reports with SQL
+## ROLLUP and CUBE
+Simple Reports with SQL
 
 ![[Pasted image 20250107162232.png]]
 
@@ -523,7 +524,8 @@ We use GROUPING.
 
 # dsd16 - Analytic SQL (2)
 
-## Moderately Difficult Reports
+## OVER
+Moderately Difficult Reports
 With comparison across aggregation levels.
 
 ![[Pasted image 20250108101431.png]]
@@ -557,7 +559,8 @@ And with comparison across aggregation levels?
 
 Now that we are more confident, we can mix GROUP BY and OVER in the same query, instead of using a temp view. Always read GROUP BY first and OVER later.
 
-## Very difficult reports
+## RANK
+*Very difficult reports*
 
 First without analytic sql.
 
@@ -623,9 +626,10 @@ GROUP BY Brand, Product, ROLLUP(Brand, Product)
 
 
 
-## Other analytical functions
+## LAG and LEAD
+Other analytical functions
 
-*LAG* and *LEAD*
+
 
 ![[Pasted image 20250108112405.png]]
 
@@ -699,6 +703,33 @@ WITH LEAD we can access the next year.
 
 > START SIMPLE then complicate.
 > Start with views then build a unique query.
+
+
+## ROWS or RANGE
+Running Totals (Windowing)
+
+![[Pasted image 20250108180841.png]]
+
+
+![[Pasted image 20250108180934.png]]
+
+![[Pasted image 20250108181158.png]]
+
+Another example.
+
+![[Pasted image 20250108181223.png]]
+
+Moving averages are good at spotting trends.
+
+![[Pasted image 20250108181255.png]]
+
+## -> Example 17.2
+See Azure.
+
+
+
+
+
 
 
 
