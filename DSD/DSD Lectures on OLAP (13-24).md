@@ -685,9 +685,17 @@ Typically you see reports order by country and city, but remember that the calcu
 
 We will do it on FoodMart considering Country and City.
 
-Be careful, if you use ROLLUP, you will sum also the ROLLUP for the GrandTotal. Doubling the result.
+Be careful, if you use ROLLUP, you will sum also the ROLLUP rows for the GrandTotal. Doubling the result.
 How to avoid it? Use GROUPING.
 
+## -> Solution 16.2
+
+![[Pasted image 20250108113027.png]]
+
+Try at home without any join, using LAG and LEAD.
+
+With LAG we get the previous year, with 0 if not present (we change it to null).
+WITH LEAD we can access the next year.
 
 
 
