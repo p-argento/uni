@@ -905,7 +905,7 @@ The topics of the lectures from 19 to 23 are
 22 -> Optimization techniques for star queries with grouping and aggregations
 23 -> Query rewriting to use materialized views
 
-## Further optimizations in DW
+*Further optimizations in DW*
 
 We assume "Non-volatile data" compared to operational db.
 We will see the following index structures for DW:
@@ -914,7 +914,7 @@ We will see the following index structures for DW:
 3. join indexes
 4. star indexes
 
-*1. inverted index*
+## 1. inverted index
 The index allow to map each value to its position.
 It is ordered to allow binary search.
 
@@ -927,7 +927,7 @@ It is the std solution in dw. Specifically with a high number of different value
 In particular for the primary key.
 The rows might have different colums.
 
-*2. Bitmap Indexes*
+## 2. Bitmap Index
 For each value, we assign a bitmap with 0 and 1, with one position for every read.
 The advantage is that every bitmap has the same size.
 It is more useful if we need to do comparisons like AND or OR. For example students from Pisa and born in 1972, we compare the two bitmap indexes with AND.
@@ -946,17 +946,30 @@ Special case with count.
 We might not need to access the table.
 For counting, the index might be enough.
 
-## (STAR) JOIN INDEX
+## 3. (STAR) JOIN INDEX
 
 How to speed up the join.
-
+The index relates a row in a dimension to a row in the fact table.
 Not used in operational DB due to high cost of updates.
 
 It can also be implemented with bitmap.
 
+## 4. Foreign column join index
+Joining and then slicing*
+One last index.
+
+It optimizes frequent queries.
+We store the mapping ...
 
 
-*Joining and then slicing*
+In a join index we keep the mapping between the RID in the dimension and the RID in the fact.
+In the foreign column join index, we keep the mapping between the values of an attribute and the RID in the fact.
+
+In the BMFCJoinIndex, we map the value in the dimension and the bitmap for the fact.
+
+with this data structure we can easily implement the *slice*.
+
+
 
 
 
