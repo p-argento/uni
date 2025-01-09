@@ -767,9 +767,129 @@ Here's the text.
 
 # dsd18 - Query Plans
 
+## Basics of Query Processing
+
+A DW designer must understand the principles.
+
+Depending on the actual storage, the implementation on the physical level may be different.
+
+We enter the black box of the DBMS.
+![[Pasted image 20250109111827.png]]
+
+Physical query plan contains physical operators, meaning actual forms that allows to speed up queries.
+Alternative implementations exists for each relational operator.
+
+Let's introduce the storage structures.
+
+*Heap File*
+A table is stored in a Heap File.
+This format is typically used in operational db.
+A file for each table, with tuples stored in the insertion order.
+A record is identified with a Record Identifier (RID), it identifies the disk address of the page containing the record (it is used by the machine, but unknown by the user).
+
+*Indexes*
+We can use indexes based on different attributes.
+
+![[Pasted image 20250109112441.png]]
+
+What is the advantage?
+Since the index is ordered, we can use a binary search that in logaritmic time can find the desired position.
+The index is much smaller than the table, meaning faster access.
+Typically they are stored as B-trees.
+
+In sql, there is a CREATE INDEX command.
+If the index is on keys, we add the UNIQUE keyword, it means that we cannot add a duplicate values.
+
+![[Pasted image 20250109112730.png]]
+
+*Query execution steps*
+
+![[Pasted image 20250109112947.png]]
+
+The query optimizer choose the implementations to use faster operators in the access plan.
+
+TableScan is materializing, it means computing the full result. But this is not very efficient. We do pipelining, where as soon as a row is executed by an operator, it will be passed to the next one (allow also parallelizing).
+
+![[Pasted image 20250109113550.png]]
+
+*Example of query execution*
+
+![[Pasted image 20250109113611.png]]
+
+*Possible implementations of physical operators*
+We will see
+1. Projection
+2. Selection
+3. Group By
+4. Join
+
+Operators for R
+1. TableScan(R)
+2. SortScan
+Also
+1. Sort
+
+Operators for $/delta$
+1. Project 
+	1. no duplicate elimination
+2. Distinct
+	1. to eliminate duplicated from sorted records
+3. HashDistint
+	1. to eliminate duplicated from records
+	2. it requires memory to store a hash data structure
+
+Operators for restriction
+1. Filter
+2. IndexFilter
+	1. specialized option where is required an index
+	2. composed by
+		1. RIDIndexFilter, which returns the RID to be read
+		2. TableAccess, using the RID obtained in the previous step
+
+Let's see an example of index filter.
+Assuming the index already exists.
+If the condition is not very selective, it is actually better to use TableScan. The query optimizer will decide.
+
+![[Pasted image 20250109141114.png]]
+
+## join
+
+More efficient algorithms.
+
+*First. Nested Loop.*
+Scan the first table and look in the right looking for all the matching rows.
+
+![[Pasted image 20250109141817.png]]
+
+*Index Nested Loop*
+We ask the index to find in logarithmic time the matching rows.
+From quadratic complexity to N x logM complexity, where M is the number of rows in S.
+
+It means that for every table scan, you call an IndexFilter.
+
+Exception.
+We might also have an additional filter not indexed by the index.
+
+*GroupBy*
+It requires the input already sorted.
+
+There is also a HashGroupBy.
 
 
+## JRS examples of physical plan
 
+In physical plan panle we can build the physical plan.
+
+In different DBMS,
+1. ORACLE
+	1. use `explain plan`
+2. SQL SERVER
+	1. use `estimated execution plan`
+	2. or ``
+3. Azure
+	1. show `Query Plan`
+
+We only need the operators in the book and in JRS.
 
 
 
@@ -784,6 +904,79 @@ The topics of the lectures from 19 to 23 are
 21 -> (functional dependencies and their usage in query optimization)
 22 -> Optimization techniques for star queries with grouping and aggregations
 23 -> Query rewriting to use materialized views
+
+## Further optimizations in DW
+
+We assume "Non-volatile data" compared to operational db.
+We will see the following index structures for DW:
+1. inverted indexes
+2. bitmap indexes
+3. join indexes
+4. star indexes
+
+*1. inverted index*
+The index allow to map each value to its position.
+It is ordered to allow binary search.
+
+During ETL, indexes are dropped and rebuilt from scratch.
+The updates are processed in batch.
+It is more efficient then updating indexes for each new row as in operational db.
+
+The values in the inverted index are unique. A binary search can be performed.
+It is the std solution in dw. Specifically with a high number of different values.
+In particular for the primary key.
+The rows might have different colums.
+
+*2. Bitmap Indexes*
+For each value, we assign a bitmap with 0 and 1, with one position for every read.
+The advantage is that every bitmap has the same size.
+It is more useful if we need to do comparisons like AND or OR. For example students from Pisa and born in 1972, we compare the two bitmap indexes with AND.
+It is created with `CREATE BITMAP INDEX ...`
+
+The utility is complementary to inverted index.
+Typically the bitmap is sparse and can be compressed.
+
+The Bitmap indexe is composed by
+1. BMIndexFilter + BMIndexFilter
+2. BMAnd
+3. BMToRid
+4. (TableAccess...)
+
+Special case with count.
+We might not need to access the table.
+For counting, the index might be enough.
+
+## (STAR) JOIN INDEX
+
+How to speed up the join.
+
+Not used in operational DB due to high cost of updates.
+
+It can also be implemented with bitmap.
+
+
+
+*Joining and then slicing*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # dsd20
