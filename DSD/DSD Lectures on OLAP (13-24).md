@@ -1096,6 +1096,19 @@ There exisists a greedy algorithm.
 
 
 
+Keep in mind the formula of the benefit.
+![[Pasted image 20250109183016.png]]
+The benefit of a current view v when M is materialized is given by considering the benefit of every subquery q of v in which we compute the maximum between the cost of currently rewriting the subquery q using m and instead the cost of using v.
+
+Now
+1. start with all the possible elements in the lattice
+2. compute the benefits for each of the queries in the sublattice
+3. compare with the best already materialized view
+	1. at the beginning is the full table
+
+The first choice is to materialize PD.
+Now we compute again the benefits.
+Be careful to compare only with ancestors, for example PS cannot be compared with PD but should be compared with PSD.
 
 
 
