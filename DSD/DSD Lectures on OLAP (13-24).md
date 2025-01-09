@@ -485,7 +485,7 @@ Rollup and Cube can be mixed to compute only some groupings.
 ![[Pasted image 20250107172724.png]]
 ![[Pasted image 20250107172736.png]]
 
-## Exercises with Foodmart
+## -> Exercises with Foodmart
 > Download "Azure Data Studio"
 > Use the VPN
 > Add connection
@@ -893,7 +893,7 @@ We only need the operators in the book and in JRS.
 
 
 
-# dsd19 - DW Indexes
+# dsd19 - Indexes and Partitioning
 
 Start of lectures on "Relational DBMS Extensions for DW".
 The topics of the lectures from 19 to 23 are
@@ -946,7 +946,7 @@ Special case with count.
 We might not need to access the table.
 For counting, the index might be enough.
 
-## 3. (STAR) JOIN INDEX
+## 3. (star) join index
 
 How to speed up the join.
 The index relates a row in a dimension to a row in the fact table.
@@ -967,7 +967,132 @@ In the foreign column join index, we keep the mapping between the values of an a
 
 In the BMFCJoinIndex, we map the value in the dimension and the bitmap for the fact.
 
-with this data structure we can easily implement the *slice*.
+with this data structure we can easily implement the slice.
+
+*example*
+
+
+
+*more*
+How do I know if the DBMS allows this indexes?
+1. read documentation
+2. test a join and  see the query plan
+
+
+
+How does the access plan change if we know the dw is a star join?
+
+..
+
+The optimizer will as much as possible to
+1. exploit indexes (this lesson)
+2. anticipate the grouping before the join (next lesson)
+
+## examples
+
+In the bottom part, we exploit the indexes without accessing the tables.
+Then from bitmap we move to RID (with BMToRid).
+
+![[Pasted image 20250109155015.png]]
+
+> lost the last 20 minutes
+> see also the lecture notes...
+
+
+
+*summary of star join optimization*
+
+![[Pasted image 20250109160948.png]]
+![[Pasted image 20250109161004.png]]
+
+
+## PARTITION
+
+Until now, we assumed the heap file.
+A full scan of the table is always required.
+We can use a horizontal partition of tables into multiple files.
+For example, we can store different tables one for each country. Meaning many different files.
+Use PARTITION.
+
+Partition can be based on 
+1. specific values
+2. range (for example dates)
+
+![[Pasted image 20250109161128.png]]
+
+How does the access plan change?
+We can use `PartitionedTableScan`.
+
+![[Pasted image 20250109161201.png]]
+![[Pasted image 20250109161212.png]]
+
+
+
+This is very useful if this types of queries are frequent.
+
+![[Pasted image 20250109160110.png|300]]
+
+There are several ways to split into files, depending also on DBMS.
+
+
+
+
+# dsd20 - Materialized Views
+
+![[Pasted image 20250109174709.png]]
+
+It helps with the maintenance.
+But there is not an advantage in terms of access plan (?).
+
+Materialized views are stored on disk.
+The advantage is that the content of the view is already available, meaning that the access plan will be shorter and faster.
+
+What are the most convenient views to be materialized? We need to choose based on workload and statistics of usage.
+
+Problems.
+1. how to select the views to be materialized?
+	1. given a query workload Q (type and frequency of queries)
+	2. see it now
+2. how the system rewrites a query to use materialized view?
+	1. see future lesson
+3. how to update materialized views if the database is update?
+	1. typically drop and rebuild
+
+## Selection of Views to materialize
+
+![[Pasted image 20250109175559.png]]
+
+This selection algo might run every night, changing the selected views every time.
+
+THe possible views are queries considering a subset.
+See the lattice.
+Mapping the lattice of subset into the lattice of views.
+The top ele
+g(v) means the grouping attributes in the view.
+
+![[Pasted image 20250109175832.png]]
+
+We estimate the size of the view.
+
+![[Pasted image 20250109175947.png]]
+
+
+![[Pasted image 20250109180053.png]]
+
+Sometimes, candidate views are not worth to be materialized. If the size is more or less the same of the full table, it makes no sense and we can store rows in storage.
+
+*Assumptions*
+
+The candidate views v are the possible DW lattice notes.
+
+![[Pasted image 20250109180409.png]]
+
+![[Pasted image 20250109180550.png]]
+
+We would like to choose the materialized view 
+
+The optimizaton problem is NP-complete.
+There exisists a greedy algorithm.
 
 
 
@@ -983,24 +1108,10 @@ with this data structure we can easily implement the *slice*.
 
 
 
+# dsd21 - Functional Dependencies
 
 
-
-
-
-
-
-
-
-# dsd20
-
-
-
-
-# dsd21
-
-
-# dsd22
+# dsd22 - Optimization with Grouping
 
 
 # dsd23
