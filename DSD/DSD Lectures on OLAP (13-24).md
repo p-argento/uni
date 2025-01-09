@@ -1110,10 +1110,51 @@ The first choice is to materialize PD.
 Now we compute again the benefits.
 Be careful to compare only with ancestors, for example PS cannot be compared with PD but should be compared with PSD.
 
+See the exercise.
+Typically $u_q$ is the ancestor with the lowest cost.
+
+In the second choice, we add S to the set M,
+that now is {M=PSD,PD,S}.
+And repeat for the third choice. 
+
+Let's summarize the algo.
+
+![[Pasted image 20250109185612.png]]
+
+HRU is an heuristic.
+In general it does not find the best subset.
+
+In general, the greedy algorithm not perform 0.63 times worst than the best algorithm.
+
+HRU has a time complexity O(km^2)
+where k is the number of views selected
+and m is the number of lattice views.
+
+We can also use a polynomial greedy algorithm with a more limited number of views.
+
+akgo3...
 
 
+*algo with dimensional attributes*
+Until now, we considered flat dimensions.
+By exploiting functional dependencies, we can run the HRU on a simpler lattice, without compromising the result.
+
+![[Pasted image 20250109190251.png]]
+
+*more complex queries*
+...
 
 
+*techniques*
+They can be statics or dynamics.
+
+![[Pasted image 20250109190548.png]]
+
+## -> exercise at home on HRU
+
+![[Pasted image 20250109190627.png]]
+
+apply the algo with the variable x, which we do not know.
 
 
 
