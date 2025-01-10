@@ -1164,6 +1164,53 @@ apply the algo with the variable x, which we do not know.
 
 # dsd21 - Functional Dependencies
 
+## -> exercise on materialized views
+
+> from 0:00 to 17:00
+
+
+## Functional Dependencies
+
+We consider now optimization techniques for star queries with grouping and aggregations.
+But today we recall notions of functional dependencies.
+
+Assumptions
+1. no null values
+2. primary keys (no duplicates)
+	1. no multisets problems
+3. simple queries with no analytical functions
+
+![[Pasted image 20250110111839.png]]
+
+![[Pasted image 20250110111939.png]]
+
+![[Pasted image 20250110112339.png]]
+
+We can extend now the definition of schema.
+
+![[Pasted image 20250110112422.png]]
+
+We could add the notion of hierarchies in the logical design, but actually only the FD of keys is used.
+
+*Inference Rules*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # dsd22 - Optimization with Grouping
 
