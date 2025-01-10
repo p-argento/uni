@@ -1234,14 +1234,84 @@ This algorithm works directly in sql.
 
 
 
-# dsd22 - Optimization with Grouping
+# dsd22 - Optimization with Grouping and Aggregation
 
 Today we consider how to anticipate the groupby before the join.
 Since the join is very expensive, reducing the number of rows with grouping can be very efficient.
 
+Basically we want to do *query rewriting optimization* exploiting grouping.
+In the next lesson, we will exploit the materialized views.
+
 ## FDs and Groupings
 
- 
+ ![[Pasted image 20250110164744.png]]
+
+If you consider the FD, the granularity do not change.
+
+Under which cases can we do the grouping before the join?
+
+![[Pasted image 20250110165131.png]]
+
+First option is to use the where.
+Not very general, because typically the condition of the having depends on the aggregation function.
+In this second option, we have two cases.
+
+![[Pasted image 20250110165309.png]]
+
+If there is an order with at least 10 qty...
+It's very specific.
+
+## The pre-grouping problem
+Consider the star schema.
+Under which condition can we rewrite the query so that the join is after the condition.
+
+![[Pasted image 20250110165856.png]]
+
+When does it work?
+When R has the invariant grouping property.
+
+![[Pasted image 20250110170015.png]]
+
+Grouping by X or by f produce the same granularity.
+
+If the forign key is not in the grouping it would not be possible (?).
+
+![[Pasted image 20250110171124.png]]
+
+ask two questions
+...
+
+Remember that we assume that all the aggregation functions are from the left.
+Then we will add the columns we need from the join coming from right.
+
+## 1. invariant grouping
+
+![[Pasted image 20250110171613.png]]
+
+We can demonstrate the invariant grouping using the closures because AName is a key (it is underlined).
+
+## 2. early partial aggregation
+
+If the function is decomposable, we can anticipate one part of the grouping before the join.
+
+If the invariant grouping is possible, it is the best option. However, if it is not possible because the granularity changes, we can still apply the double grouping rule if the aggregation function is decomposable.
+
+We have to check that
+1. the function is decomposable
+	1. because we need to aggregate differently in the fact table and after the join
+2. the attributes for the aggregation function must be from the fact table R
+
+## 3. grouping and counting
+
+There is a third case.
+If the two conditions of invariant and the two conditions of decomposition are not true.
+Not general, but requires some condition.
+
+It is called "the grouping and counting rule".
+
+
+
+## exercise
 
 
 
@@ -1253,9 +1323,29 @@ Since the join is very expensive, reducing the number of rows with grouping can 
 
 
 
-# dsd23
+
+# dsd23 - Query Rewriting to use materialized views
+
+This is known as the "query rewriting problem".
+It is not a problem of the user who writes queries, but rather for the query optiizer.
+
+Who write a query is NOT aware that exist materialized views.
+
+Approach 1.
+More algoriothmically, with well-established steps.
+![[Pasted image 20250110184122.png]]
+
+Approach 2.
+More about intuition.
+![[Pasted image 20250110184200.png]]
 
 
-# dsd24
+
+
+
+
+
+
+# dsd24 - 
 
 
