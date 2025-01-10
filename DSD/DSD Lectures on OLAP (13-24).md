@@ -1194,6 +1194,14 @@ We could add the notion of hierarchies in the logical design, but actually only 
 
 *Inference Rules*
 
+![[Pasted image 20250110113729.png]]
+The UNION can be derived using the axioms.
+![[Pasted image 20250110113903.png]]
+
+Instead of Armstrong axioms, we will actually use something else.
+
+![[Pasted image 20250110114319.png]]
+
 
 
 
