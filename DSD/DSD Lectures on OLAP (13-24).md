@@ -1241,7 +1241,7 @@ Since the join is very expensive, reducing the number of rows with grouping can 
 
 ## FDs and Groupings
 
-
+ 
 
 
 
