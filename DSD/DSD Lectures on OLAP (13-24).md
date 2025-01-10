@@ -1202,6 +1202,22 @@ Instead of Armstrong axioms, we will actually use something else.
 
 ![[Pasted image 20250110114319.png]]
 
+The closure of X is the set of attributes that is implied by X.
+
+![[Pasted image 20250110121305.png]]
+
+*slow closure*
+
+..
+
+
+## -> exercise at home
+
+![[Pasted image 20250110121803.png]]
+
+You can think of functional dependencies as generalizations of hierarchies.
+
+...
 
 
 
@@ -1209,18 +1225,32 @@ Instead of Armstrong axioms, we will actually use something else.
 
 
 
+![[Pasted image 20250110122737.png]]
 
-
-
-
-
-
+The FD hols in the output.
+This algorithm works directly in sql.
 
 
 
 
 
 # dsd22 - Optimization with Grouping
+
+Today we consider how to anticipate the groupby before the join.
+Since the join is very expensive, reducing the number of rows with grouping can be very efficient.
+
+## FDs and Groupings
+
+
+
+
+
+
+
+
+
+
+
 
 
 # dsd23
