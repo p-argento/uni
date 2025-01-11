@@ -1365,12 +1365,12 @@ Example.
 In general, if the view is more restrictive than the query we cannot generate the missing data. And this is also a reason why in materialized views we should not have restrictions.
 The would limit the usability.
 
-On top of the materialized view, we add the compesation. The optimizer will rewrite the query intoa new one using the materialized query.
+On top of the materialized view, we add the compesation. The optimizer will rewrite the query into a new one using the materialized query.
 
 
 $A_v$ is the root of the compensation tree.
 
-
+![[Pasted image 20250111174413.png]]
 
 
 
