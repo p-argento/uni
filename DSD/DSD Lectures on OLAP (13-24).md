@@ -1339,6 +1339,49 @@ Approach 2.
 More about intuition.
 ![[Pasted image 20250110184200.png]]
 
+## approach 1
+
+Recall that "determines" means that the attribute to the left produce finer granularity.
+
+The groups in the view produce finer granularity.
+
+Compare the query and the view.
+Start bottom-up and do an operator match.
+If there's a partial match, we need to do a compensation.
+
+1. matchiing
+	1. exact or patial
+2. compensation
+	1. float or not
+
+after the last comparison, 
+
+the optimizer should do this analysis for each materialized view and decide which to optimize.
+
+Example.
+..
+
+
+In general, if the view is more restrictive than the query we cannot generate the missing data. And this is also a reason why in materialized views we should not have restrictions.
+The would limit the usability.
+
+On top of the materialized view, we add the compesation. The optimizer will rewrite the query intoa new one using the materialized query.
+
+
+$A_v$ is the root of the compensation tree.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
