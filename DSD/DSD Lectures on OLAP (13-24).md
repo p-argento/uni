@@ -1373,6 +1373,17 @@ $A_v$ is the root of the compensation tree.
 ![[Pasted image 20250111174413.png]]
 
 
+## approach 2
+
+Transform the plan of the query finding an equivalent to the view logical plan.
+
+
+
+
+![[Pasted image 20250111175843.png]]
+
+The idea is to push down operators and try to find the plan for the view.
+The other approch is more algorithmically, trying to find steps for compensation and floating. It can be implemented more clearly.
 
 
 
