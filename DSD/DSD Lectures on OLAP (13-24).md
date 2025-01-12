@@ -1387,19 +1387,11 @@ The other approch is more algorithmically, trying to find steps for compensation
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # dsd24 - 
+
+....
+
+
+
 
 
