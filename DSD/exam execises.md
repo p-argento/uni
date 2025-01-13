@@ -26,7 +26,6 @@ on foodmart, with many join I guess
 
 
 
-
 ## 4. Materialized Views
 
 1. Given a lattice, select 2 views to materialize with the greedy algorithm HRU.
