@@ -245,6 +245,7 @@ UNION keeps duplicates.
 ## From SQL to Algebra
 
 In SQL, tables may contain duplicates, so we need to extend sets {T} to multisets {{T}}, also called bags, to keep duplicates.
+In other words, In SQL the tables of a database may be without keys and so they are not sets ( {T} )  but multisets (bags) ( {{T}} ).
 
 New operators
 1. multiset -> represented as $\pi^b$.
@@ -285,6 +286,7 @@ To simplify complex queries, use temporary views/tables.
 Some calculations, can be only done with views and not with simple queries.
 A single query cannot have to groupings (aggregates) one on top of the other. See the mapping above.
 
+## -> exercise with FD on MonthYear
 Exercise:
 Write a SQL query that returns all constant  customers. Constant means with at least two orders per month for at least three months in the last four months.
 
