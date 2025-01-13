@@ -26,7 +26,7 @@ Basic functions
 5. JOIN, LEFT OUTER JOIN, ...
 6. CASE WHEN... THEN... ELSE... END
 
-## 3. Analytical SQL for reporting
+## 3. Analytic SQL for reporting
 
 on foodmart, with many join I guess.
 Using ROLLUP and CUBE.
@@ -39,6 +39,11 @@ Analytical Functions for reporting
 5. COUNT(), SUM(), AVG(), MIN(), MAX()
 6. LAG(attribute, offset=1, default=NULL) and LEAD(attribute, offset=1, default =NULL)
 7. ROWS, RANGE
+
+Rollup eliminate the rightmost attribute each time.
+Over creates a column as it was a groupby but keeping all the rows, meaning that the rows that should have been grouped have the same value. Partition by is for the attribute to group by, if there isn't any, it means no groupby, and can be used for the total. 
+Rank can be used together with groupby within the over to display the rank order, also within the partition if specified.
+Lag and lead get the value of attribute in offset rows before or after.
 
 
 ## 4. Materialized Views
@@ -53,5 +58,6 @@ Analytical Functions for reporting
 
 
 
-
+???
+![[Pasted image 20250113123821.png]]
 

@@ -9,7 +9,7 @@ Prof. Salvatore Ruggieri
 
 [[DSD BOOK NOTES]]
 
-[[exam execises]]
+[[exam exercises]]
 
 ## Material
 Study the book!
