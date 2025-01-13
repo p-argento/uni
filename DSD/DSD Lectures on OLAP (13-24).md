@@ -818,8 +818,9 @@ TableScan is materializing, it means computing the full result. But this is not 
 
 ![[Pasted image 20250109113611.png]]
 
-*Possible implementations of physical operators*
-We will see
+## implementations of  relational operations
+
+we will see
 1. Projection
 2. Selection
 3. Group By
@@ -831,7 +832,9 @@ Operators for R
 Also
 1. Sort
 
-Operators for $/delta$
+## 1. implementation of projection
+
+Operators for projection
 1. Project 
 	1. no duplicate elimination
 2. Distinct
@@ -839,6 +842,8 @@ Operators for $/delta$
 3. HashDistint
 	1. to eliminate duplicated from records
 	2. it requires memory to store a hash data structure
+
+## 2. implementation for selection
 
 Operators for restriction
 1. Filter
@@ -854,7 +859,7 @@ If the condition is not very selective, it is actually better to use TableScan. 
 
 ![[Pasted image 20250109141114.png]]
 
-## join
+## 3. impementation of join
 
 More efficient algorithms.
 
@@ -872,8 +877,12 @@ It means that for every table scan, you call an IndexFilter.
 Exception.
 We might also have an additional filter not indexed by the index.
 
-*GroupBy*
+## 4. Implementation of GroupBy
 It requires the input already sorted.
+
+![[Pasted image 20250113213814.png]]
+
+![[Pasted image 20250113213847.png]]
 
 There is also a HashGroupBy.
 
@@ -907,14 +916,20 @@ The topics of the lectures from 19 to 23 are
 22 -> Optimization techniques for star queries with grouping and aggregations
 23 -> Query rewriting to use materialized views
 
-*Further optimizations in DW*
+Today
+![[Pasted image 20250113214139.png|300]]
+
+
+
+
+## Indexes
 
 We assume "Non-volatile data" compared to operational db.
 We will see the following index structures for DW:
 1. inverted indexes
 2. bitmap indexes
-3. join indexes
-4. star indexes
+3. join 
+4. foreign column join (FC join)
 
 ## 1. inverted index
 The index allow to map each value to its position.
@@ -948,7 +963,7 @@ Special case with count.
 We might not need to access the table.
 For counting, the index might be enough.
 
-## 3. (star) join index
+## 3. join index
 
 How to speed up the join.
 The index relates a row in a dimension to a row in the fact table.
@@ -1008,7 +1023,8 @@ Then from bitmap we move to RID (with BMToRid).
 ![[Pasted image 20250109161004.png]]
 
 
-## PARTITION
+## Storage structure
+## 1. PARTITION
 
 Until now, we assumed the heap file.
 A full scan of the table is always required.
