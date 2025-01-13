@@ -1,5 +1,5 @@
 Types
-## 1. dw schema
+## 1. DW schema
 
  1. analysis requirements
 	 1. fact granularity
@@ -9,7 +9,7 @@ Types
  4. update of dimensional attributes
 
 
-## 2. General Analytical SQL
+## 2. SQL Queries with indexes and trees
 
 1. analytical sql query
 2. query logical tree
@@ -18,12 +18,27 @@ Types
 	1. bitmap
 5. physical query plan
 
+Basic functions
+1. SELECT, FROM, WHERE
+2. GROUP BY, HAVING, ORDER BY... DESC
+3. WITH view AS ...
+4. IN (nested query)
+5. JOIN, LEFT OUTER JOIN, ...
+6. CASE WHEN... THEN... ELSE... END
 
-## 3. Star Analytical SQL
+## 3. Analytical SQL for reporting
 
-on foodmart, with many join I guess
+on foodmart, with many join I guess.
+Using ROLLUP and CUBE.
 
-
+Analytical Functions for reporting
+1. ROLLUP, CUBE, GROUPING
+2. OVER, PARTITION BY
+3. RANK, DENSE_RANK(), PERCENT_RANK()
+4. ROW_NUMBER(), CUME_DIST(), NTILE(3)
+5. COUNT(), SUM(), AVG(), MIN(), MAX()
+6. LAG(attribute, offset=1, default=NULL) and LEAD(attribute, offset=1, default =NULL)
+7. ROWS, RANGE
 
 
 ## 4. Materialized Views
