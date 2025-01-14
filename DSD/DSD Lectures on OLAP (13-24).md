@@ -1473,12 +1473,27 @@ If there's a partial match, we need to do a compensation.
 2. compensation
 	1. float or not
 
+![[Pasted image 20250114233551.png]]
+![[Pasted image 20250114233604.png]]
+
+
 after the last comparison, 
 
 the optimizer should do this analysis for each materialized view and decide which to optimize.
 
 Example.
-..
+![[Pasted image 20250114233622.png]]
+![[Pasted image 20250114233644.png]]
+
+![[Pasted image 20250114233658.png]]
+![[Pasted image 20250114233718.png]]
+
+![[Pasted image 20250114233737.png]]
+![[Pasted image 20250114233751.png]]
+
+![[Pasted image 20250114233816.png]]
+![[Pasted image 20250114233829.png]]
+
 
 
 In general, if the view is more restrictive than the query we cannot generate the missing data. And this is also a reason why in materialized views we should not have restrictions.
@@ -1498,7 +1513,7 @@ Transform the plan of the query finding an equivalent to the view logical plan.
 
 
 
-
+![[Pasted image 20250114233854.png]]
 ![[Pasted image 20250111175843.png]]
 
 The idea is to push down operators and try to find the plan for the view.
