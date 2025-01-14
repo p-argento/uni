@@ -1329,11 +1329,18 @@ In the next lesson, we will exploit the materialized views.
 
 ## FDs and Groupings
 
- ![[Pasted image 20250110164744.png]]
+![[Pasted image 20250114180733.png]]
 
 If you consider the FD, the granularity do not change.
-
 Under which cases can we do the grouping before the join?
+
+## Query Rewriting Optimization
+ ![[Pasted image 20250114180348.png]]
+
+
+
+## Anticipating HAVING
+Simple query rewriting.
 
 ![[Pasted image 20250110165131.png]]
 
@@ -1350,7 +1357,13 @@ It's very specific.
 Consider the star schema.
 Under which condition can we rewrite the query so that the join is after the condition.
 
-![[Pasted image 20250110165856.png]]
+![[Pasted image 20250114180827.png]]
+
+
+## 1. invariant grouping
+
+![[Pasted image 20250114181038.png]]
+![[Pasted image 20250114181021.png]]
 
 When does it work?
 When R has the invariant grouping property.
@@ -1369,22 +1382,41 @@ ask two questions
 Remember that we assume that all the aggregation functions are from the left.
 Then we will add the columns we need from the join coming from right.
 
-## 1. invariant grouping
+
 
 ![[Pasted image 20250110171613.png]]
 
 We can demonstrate the invariant grouping using the closures because AName is a key (it is underlined).
 
+![[Pasted image 20250114181115.png]]
+
 ## 2. early partial aggregation
 
+If the invariant grouping is possible, it is the best option. However, if it is not possible because the granularity changes, we can still apply the double grouping rule if the aggregation function is decomposable.
 If the function is decomposable, we can anticipate one part of the grouping before the join.
 
-If the invariant grouping is possible, it is the best option. However, if it is not possible because the granularity changes, we can still apply the double grouping rule if the aggregation function is decomposable.
+![[Pasted image 20250114181141.png]]
+
+![[Pasted image 20250114181202.png]]
 
 We have to check that
 1. the function is decomposable
 	1. because we need to aggregate differently in the fact table and after the join
 2. the attributes for the aggregation function must be from the fact table R
+
+![[Pasted image 20250114181238.png]]
+
+![[Pasted image 20250114181250.png]]
+
+![[Pasted image 20250114181302.png]]
+
+![[Pasted image 20250114181314.png]]
+
+![[Pasted image 20250114181325.png]]
+
+![[Pasted image 20250114181339.png]]
+
+
 
 ## 3. grouping and counting
 
@@ -1394,11 +1426,12 @@ Not general, but requires some condition.
 
 It is called "the grouping and counting rule".
 
+![[Pasted image 20250114181353.png]]
 
 
 ## exercise
 
-
+![[Pasted image 20250114181415.png]]
 
 
 
