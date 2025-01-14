@@ -1194,6 +1194,9 @@ Let's summarize the algo.
 
 ![[Pasted image 20250114152318.png]]
 
+M is the set of materialized views.
+N is the set of candidate views.
+
 
 HRU is an heuristic.
 In general it does not find the best subset.
