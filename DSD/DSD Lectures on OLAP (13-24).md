@@ -1433,6 +1433,7 @@ It is called "the grouping and counting rule".
 
 ![[Pasted image 20250114181415.png]]
 
+See kindle.
 
 
 
