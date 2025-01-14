@@ -1114,17 +1114,17 @@ Problems.
 3. how to update materialized views if the database is update?
 	1. typically drop and rebuild
 
-## Selection of Views to materialize
+## Lattice of Views to materialize
 
-![[Pasted image 20250109175559.png]]
+![[Pasted image 20250114151658.png]]
 
 This selection algo might run every night, changing the selected views every time.
 
 THe possible views are queries considering a subset.
-See the lattice.
 Mapping the lattice of subset into the lattice of views.
-The top ele
-g(v) means the grouping attributes in the view.
+
+The candidate views v are the possible DW lattice nodes, different from root F.
+Let g(v)=X be the grouping attributes in the view for the cuboid v.
 
 ![[Pasted image 20250109175832.png]]
 
@@ -1137,13 +1137,28 @@ We estimate the size of the view.
 
 Sometimes, candidate views are not worth to be materialized. If the size is more or less the same of the full table, it makes no sense and we can store rows in storage.
 
-*Assumptions*
+![[Pasted image 20250114151928.png]]
+
+
+
+## Assumptions
 
 The candidate views v are the possible DW lattice notes.
 
 ![[Pasted image 20250109180409.png]]
 
 ![[Pasted image 20250109180550.png]]
+
+
+## Benefit of a view
+
+![[Pasted image 20250114152054.png]]
+![[Pasted image 20250114152109.png]]
+![[Pasted image 20250114152119.png]]
+
+Example.
+![[Pasted image 20250114152141.png]]
+
 
 We would like to choose the materialized view 
 
@@ -1155,6 +1170,8 @@ There exisists a greedy algorithm.
 Keep in mind the formula of the benefit.
 ![[Pasted image 20250109183016.png]]
 The benefit of a current view v when M is materialized is given by considering the benefit of every subquery q of v in which we compute the maximum between the cost of currently rewriting the subquery q using m and instead the cost of using v.
+
+## HRU algorithm
 
 Now
 1. start with all the possible elements in the lattice
@@ -1175,7 +1192,8 @@ And repeat for the third choice.
 
 Let's summarize the algo.
 
-![[Pasted image 20250109185612.png]]
+![[Pasted image 20250114152318.png]]
+
 
 HRU is an heuristic.
 In general it does not find the best subset.
@@ -1188,18 +1206,26 @@ and m is the number of lattice views.
 
 We can also use a polynomial greedy algorithm with a more limited number of views.
 
-akgo3...
+![[Pasted image 20250114152339.png]]
+![[Pasted image 20250114152436.png]]
+
+## Other algorithms
+
+![[Pasted image 20250114152449.png]]
+![[Pasted image 20250114152502.png]]
 
 
-*algo with dimensional attributes*
+
+
+
+## algo with dimensional attributes
 Until now, we considered flat dimensions.
 By exploiting functional dependencies, we can run the HRU on a simpler lattice, without compromising the result.
 
 ![[Pasted image 20250109190251.png]]
 
 *more complex queries*
-...
-
+![[Pasted image 20250114152538.png]]
 
 *techniques*
 They can be statics or dynamics.
