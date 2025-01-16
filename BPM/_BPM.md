@@ -1,5 +1,15 @@
 > All models are wrong, but some are useful
 
+[[BMP Program]]
+
+
+
+
+
+
+
+
+
 # Orchestration vs Choreography
 *Orchestration* is about INTRA-organization process.
 No interaction with others.
