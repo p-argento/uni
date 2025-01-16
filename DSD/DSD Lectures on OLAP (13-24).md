@@ -1593,24 +1593,22 @@ Observe that here the join is needed for retrieving the attribute and not at a l
 
 *examples*
 
+![[Pasted image 20250116191020.png]]
+
 1. the rewriting will not be possible because the restriction in the view is too restrictive
 2. in the view, the group by empty set means that we should check if Market->0 that is trivial and 0->Market that is true only if Market is constant. We cannot rewrite because the granularity in the query is larger than the one in the view.
-3. 
+3. same (no rewriting)
 
+Let's try to rewrite this query with the first approch and then with the second.
+![[Pasted image 20250116191549.png]]
 
-
-
-
-
-
-
-
-
-
-
+Observe that we need the case WITH grouping because it is not true that Product->Product,Market but it is true that Product,Market->Product.
 
 
 ## approach 2
+
+How can we start from the plan of the query and pushing down operators find the plan for the view.
+The idea is to transform the plan of the query to recognize at some point the plan of the view.
 
 Transform the plan of the query finding an equivalent to the view logical plan.
 
