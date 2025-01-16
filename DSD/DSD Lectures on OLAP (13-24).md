@@ -1593,6 +1593,17 @@ Observe that here the join is needed for retrieving the attribute and not at a l
 
 *examples*
 
+1. the rewriting will not be possible because the restriction in the view is too restrictive
+2. in the view, the group by empty set means that we should check if Market->0 that is trivial and 0->Market that is true only if Market is constant. We cannot rewrite because the granularity in the query is larger than the one in the view.
+3. 
+
+
+
+
+
+
+
+
 
 
 
