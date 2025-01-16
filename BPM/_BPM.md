@@ -1,9 +1,11 @@
 > All models are wrong, but some are useful
 
+[BPM Didawiki](https://didawiki.di.unipi.it/doku.php/magistraleinformaticaeconomia/mpb/start)
 [[BMP Program]]
-
 [[BPM Book Exercises]]
 
+[[BPM Lectures 1-12]]
+[[BPM Lectures 13-24]]
 
 
 
