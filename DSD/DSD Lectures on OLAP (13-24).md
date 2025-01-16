@@ -1452,6 +1452,22 @@ It is not a problem of the user who writes queries, but rather for the query opt
 
 Who write a query is NOT aware that exist materialized views.
 
+Star Schema Assumptions.
+![[Pasted image 20250116171003.png]]
+
+Lossless means that being a fk every fact join one row in the dimension table.
+Non-duplicating means that every fact match exactly one row and no more.
+
+Query rewriting is complex.
+In the docs of DBMS you will find recommendations to use materialized views. They should be simple in structure to be used by systems to rewrite queries.
+
+
+We will see 2 approaches.
+1. try and built on top of an existing view some compensations to produce the query logical plan
+	1. we can call directly the materialized view
+2. we start from the query trying to move the operators in a way 
+	1. the logical plan of the query will have a bottom part equivalent to the view logical plan
+
 Approach 1.
 More algoriothmically, with well-established steps.
 ![[Pasted image 20250110184122.png]]
@@ -1460,34 +1476,96 @@ Approach 2.
 More about intuition.
 ![[Pasted image 20250110184200.png]]
 
-## approach 1
+## Simple cases
+What?
+1. g(Q) -> g(V)
+	1. the query has a finer granularity than the view
+	2. ?
+2. g(Q) -> g(V) and g(V) -> g(Q)
+	1. the query has the same granularity of the view
+	2. the 
+3. g(V) -> g(Q)
+	1. A,B->A
+	2. the view has more groups than the query
+	3. still rewritable
 
-Recall that "determines" means that the attribute to the left produce finer granularity.
+
+Recall that "determines" means that the attribute on the left produce finer granularity.
+
+The grouping by A,B and by B only are exactly the same.
+g(Q) means the grouping attribute in the query and
+g(V) means the grouping attribute in the View.
 
 The groups in the view produce finer granularity.
+
+## approach 1
 
 Compare the query and the view.
 Start bottom-up and do an operator match.
 If there's a partial match, we need to do a compensation.
 
-1. matchiing
-	1. exact or patial
+1. matching
+	1. exact or partial
 2. compensation
 	1. float or not
+
+A compensation is a tree floating on top of the view to match.
+Can the compensation float on top of the view?
+If the compensation cannot float, then the query is not rewritable.
+
 
 ![[Pasted image 20250114233551.png]]
 ![[Pasted image 20250114233604.png]]
 
-
-after the last comparison, 
-
-the optimizer should do this analysis for each materialized view and decide which to optimize.
+The optimizer should do this analysis for each materialized view and decide which to optimize.
 
 Example.
+1. start from the logical plan
+
+Let' check the join, there is a partial match. We need a partial compensation. Does this compensation float? If we move it on top of the view, will it work? Yes.
+
+Now the restriction, the partial match is simply adding the restriction on top of the compensation.
+If there is no possibility to restrict the view to get the query condition, we simply stop the rewriting. For this reason, we should not use restrictions because they limit the usability of the view.
+
+Now cosider the matching between the groupings.
+Even if there is an exact match, we need to project over different projects because after the join we get attributes that are not required in the query.
+
+The optimizer would rewrite the query using the materialized view.
+
 ![[Pasted image 20250114233622.png]]
+
+We assume obviously that the relations in the view are included in the relations of the query.
+
+*Rewriting algorithm.*
+1. JOIN
+	1. If the joins do not match, a compensation is added to the view
+	2. on top of the join of the view we also add the join at the root of the compensation tree
+	3. the compensation can float if g(V) contains the foreign keys for the tables  W, otherwise Q is not rewritable 
+2. RESTRICTION
+	1. if the selection do not match, but it is possible
+	2. we add it on top of the compensation tree
+	3. CONDITION: in order to float, the restriction attribute must be available in the grouping or after the join (using the fk in the groupings?)
+		1. otherwise, Q is not rewritable
+3. GROUPING
+	1. comparing the grouping of the view and the one of the query
+	2. in the lecture notes there are other example
+	3. we distinguish
+		1. case WITHOUT grouping
+			1. the rewriting is without groping when the groupings in Q and V partition data into the same number of groups
+			2. meaning that the granularity is the same  g(Q)->g(V) and g(V)->g(Q)
+			3. what we need is just a projection and the aggregation function if any, because the grouping is already computed
+		2. case WITH grouping
+			1. if query and view have different granularity
+			2. but the granularity of the view must still be larger, meaning g(V)->g(Q)
+			3. otherwise the query is not rewritable
+			4. we add another grouping and aggregate functions appropriatly
+
+
 ![[Pasted image 20250114233644.png]]
 
 ![[Pasted image 20250114233658.png]]
+
+
 ![[Pasted image 20250114233718.png]]
 
 ![[Pasted image 20250114233737.png]]
@@ -1507,6 +1585,18 @@ On top of the materialized view, we add the compesation. The optimizer will rewr
 $A_v$ is the root of the compensation tree.
 
 ![[Pasted image 20250111174413.png]]
+
+Formally, we should show that FDs are satisfied.
+In the example above, we need to show that Market,Year->MCity, because we need to group (case WITH grouping). Since Market->MCity, the grouping is fine and the query can be rewritten.
+However, we still need to add the attribute MCity joining the table and obtaining the MCity. 
+Observe that here the join is needed for retrieving the attribute and not at a lower level as usual in the algorithm.
+
+*examples*
+
+
+
+
+
 
 
 ## approach 2
