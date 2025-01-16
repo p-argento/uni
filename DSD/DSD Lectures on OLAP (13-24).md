@@ -1445,6 +1445,8 @@ See kindle.
 
 # dsd23 - Query Rewriting to use materialized views
 
+How to rewrite the query using materialized views if possible.
+
 This is known as the "query rewriting problem".
 It is not a problem of the user who writes queries, but rather for the query optiizer.
 
