@@ -15,12 +15,14 @@ The sections looks like
 	2. Business process optimization (1)
 	3. Business process optimization (2)
 	4. Process-orientation vs. function-orientation in organizations
+	   
 4. Evolution of Enterprise Systems Architectures
 	1. Software systems and business process management
 	2. Service-oriented architecture
 	3. Enterprise Application Integration
 	4. Process-oriented information systems
 	5. Robotic Process Automation
+	   
 5. Business Process Modelling Foundation
 	1. Horizontal and vertical abstractions
 	2. Event diagrams

@@ -22,6 +22,8 @@ _course objectives, textbooks, BPM aim and motivation, models and abstraction_
 
 
 
+
+
 # bpm2 - Business Processes
 Introduction to Business Processes:  
 _Taylorism, work units, processes, terminology, organizational structures, process orientation and reengineering, visual notations_
