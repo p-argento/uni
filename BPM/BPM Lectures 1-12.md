@@ -76,26 +76,185 @@ The most relevant forms of organizational structure are
 1. network structure
 2. hierarchical structure
 3. matrix structure
-4. 
+
+*1. network structure*
+Automomous actors collaborate to supply products or services.
+Characteristics
+1. non-hierarchical
+2. ad-hoc clustering
+3. outsourcing
+4. dynamic joining of team members
+
+![[Pasted image 20250117173120.png]]
+
+*2. hierarchical*
+Also called organization chart.
+Structured as a tree.
+
+Characteristics
+1. internal nodes are individual nodes/functions,
+2. leaves are staff or departments
+3. branches are authority relationships
+
+Recall that
+1. a tree is a graph such that any two vertices are connected by exactly one path (also called connected acyclic graph)
+2. a leaf is a vertex of degree 1
+3. a rooted tree is a tree with one distinguished vertex (the root)
+
+![[Pasted image 20250117173556.png]]
+
+*3. matrix structure*
+It add (dynamic) functional dimension.
+
+Characteristics
+1. one row for each project
+2. a project leader is a functional boss
+3. each person can have more project leaders
+
+![[Pasted image 20250117173912.png]]
 
 
+## Actors
 
+An actor can be
+1. a principal
+2. a contractor
+3. both roles at the same time
 
+*1. principal*
+A principal is an individual, department or firm that assign (or outsource) the work.
+We divide
+1. assignment ordered by boss
+2. work for customers
 
+*2. contractor*
+A contractor is a person (or a machine) who is a task.
 
+*-> contract*
+A contract exists between the principal and the contractor.
+It is about the deadline, the price, etc.
+A communication protocol can be established to exchange information.
 
-
+![[Pasted image 20250117174828.png]]
 
 
 ## Cases and Procedures
 
+*Case, procedures, tasks*
+
+Definitions
+1. case
+2. procedures
+3. tasks
+
+A case, also called work, job, product, service.
+1. a tangible thing produced or modified
+2. an intagible case like an insurance
+
+Characteristics
+1. typically discrete
+2. every case has a beginning and an end
+3. each case can be distinguished from any other case
+4. each case involves a procedure
+
+Additional definitions.
+1. a procedure (also process, project) is a collection of tasks to be carried out and the conditions that determine the order of the tasks.
+2. a task is a logical unit of work that is carried out as a single whole.
+
+Cases vs procedures. Economy of scale.
+The numbers of procedures in a company is generally finite, but the number of cases can be much bigger.
+The number of cases for each procedure should be as high as possible to reduce costs.
+
+*knowledge, resources, activities*
+
+Other definitions
+1. knowledge
+2. resources
+3. activities
+
+A resource is the generic name for a person, machine or group of people or machines that is responsible for the task.
+
+An activity is the performance of a task by a resource.
 
 
+## Process Orientation
 
 
+Keywords
+1. Hammer & Champy (1993)
+	1. collection, input, output
+2. Johansson et al. (1993)
+	1. recipient, linked 
+3. Davenport (1993)
+	1. structure, ordering, time, space, begin, end,  measurement, ownership
+4. Rummler & Brache (1995)
+	1. production, support and managerial processes
+
+*collection, input, output*
+
+Introduced by Hammer & Champy in "Reengineering the Corporation".
+
+A business process is a collection of activities that take one or more kinds of input and create an output that is of value to the customer.
+
+Shift of logic from product perspective to process perspective.
+
+Characteristics of processes
+1. definability
+	1. clearly defined boundaries, including input and output
+2. collection
+	1. wrap up a collection of tasks
+
+*recipient, linked*
+
+In "Business Process Reingeneering".
+
+A process is a set of linked activities that take an input and transform it to create an output.
+The output should be useful and effective to the recipient.
 
 
+*structure, ordering, time, space, begin, end,  measurement, ownership*
+Davenport in 1993 with "Process Innovation".
 
+A process is a specific ordering of work activities across time and space, with a beginning and an end.
+
+Additional important definitons
+1. measurement
+2. ownership
+
+Process that are clearly structured are amenable to measurement in a variety of dimensions, like cost, time, output quality, customer satisfaction.
+
+Ownership must be seen as an additional dimension. 
+It is crucial to define the responsible for design and execution.
+
+
+![[Pasted image 20250117182309.png]]
+
+*production, support and managerial processes*
+
+We distinguish
+1. production (or primary) processes
+2. support (or secondary) processes
+3. management (or tertiary) processes
+
+Production
+1. customer-oriented
+2. generate income for the company
+
+Support
+1. support primary processes
+2. for example maintenaince, financial admin
+
+Managerial
+1. fix objectives
+2. allocate resources
+
+![[Pasted image 20250117183047.png]]
+
+
+## Standardization
+
+Visual language offer an important communication mean.
+The natural choice is nodes and arrows, meaning oriented graphs.
 
 
 # bpm3 - Diagrams Types
@@ -106,8 +265,22 @@ Orchestration diagrams, collaboration diagrams, choreography diagrams
 
 ## (insurance claim example)
 
+Be careful with ambiguities.
+![[Pasted image 20250117183438.png|300]]
+
+We distinguish
+1. orchestration diagrams
+2. collaboration diagrams
+3. choreography diagrams
 
 ## 1. Orchestration Diagrams
+
+
+
+
+
+
+
 
 
 ## 2. Collaboration Diagrams
