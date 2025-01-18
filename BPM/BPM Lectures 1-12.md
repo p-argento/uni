@@ -359,11 +359,21 @@ We divide
 Modelling Levels
 
 Definitions
-1. a business process model consists of a set oof activity modeles and execution constraints between them
-	1. like a blueprints
-2. a business process instance represent a concrete case in the operational business of a company consisting of activity instances
+1. a business process meta-model (M2)
+1. a business process model (M1)
+	1. consists of a set oof activity modeles and execution constraints between them
+	2. like a blueprints
+3. a business process instance (M0)
+	1. represent a concrete case in the operational business of a company consisting of activity instances
 
 ![[Pasted image 20250118124805.png]]
+![[Pasted image 20250118154636.png]]
+
+![[Pasted image 20250118155539.png]]
+![[Pasted image 20250118155555.png]]
+![[Pasted image 20250118155621.png]]
+
+
 
 ![[Pasted image 20250118124839.png]]
 
@@ -372,23 +382,29 @@ Definitions
 ## 2. Aggregation abstraction
 Granularity levels
 
+It is related to functional decomposition.
+A single artefact at the higher level of granularity can be decomposed in multiple elements of a lower granularity level.
+In other words, a high-level business function can be decomposed into finer-grained functions.
 
 
+![[Pasted image 20250118154219.png]]
+
+![[Pasted image 20250118155725.png]]
 
 
 
 ## 3. Vertical abstraction
 separation of concerns (or subdomains)
 
+The guiding principle is the Separation of Concerns (SoC).
+It means to separate a system into distinct features that overlap in functionality as little as possible.
 
+> It is what I sometimes have called the separation  of concerns, which, even if not perfectly possible,  is yet the only available technique for effective  ordering of one's thoughts, that I know of.  It does not mean ignoring the other aspects,  it is just doing justice to the fact that from this  aspect's point of view, the other is irrelevant.
+> EWD447 ~ Dijstra
 
+![[Pasted image 20250118160330.png]]
 
-
-
-
-
-
-
+???
 
 
 
@@ -397,6 +413,77 @@ separation of concerns (or subdomains)
 Business Processes Lifecyle:  
 levels of business processes, business strategies, operational goals, organizational BP, operational BP, lifecycle, design and analysis phase, identification, modelling guidelines, validation, simulation, verification, configuration phase, platform selection, software architecture, individual enterprise applications, enterprise resource planning system, siloed enterprise applications, enterprise application integration, point-to-point integration, hub-and-spoke integration, enterprise service computing, system workflows, human interaction workflows, testing, enactment phase, event logs, logging, evaluation phase, activity monitoring, mining, administration phase, stakeholders
 
+Ch. 1, 2 of Business Process Management: Concepts, Languages, Architectures
+
+
+## Levels of business processes
+
+![[Pasted image 20250118161435.png]]
+
+
+
+
+
+
+## What is the BP Lifecycle
+
+Comparison of BP Lifecycle wrt
+1. waterfall
+	1. a sequential sw design process flowing downwards
+2. Extreme Programming (XP)
+	1. made of planning-feeback loops to be responsive wrt changing requirements
+3. Plan-Do-Check-Act (PDCA)
+	1. management method for control and continuous improvement of products
+
+![[Pasted image 20250118161838.png]]
+![[Pasted image 20250118161932.png]]
+![[Pasted image 20250118162125.png]]
+![[Pasted image 20250118162144.png]]
+
+
+
+
+## Steps of the BP Lifecycle
+
+![[Pasted image 20250118161838.png]]
+
+Steps
+1. design&analysis
+	1. design
+		1. bp identification
+		2. bp modelling
+	2. analysis
+		1. validation
+		2. simulation
+		3. verification
+2. configuration
+	1. system selection
+	2. implementation
+	3. test and deployment
+3. enactment
+	1. opeartion
+	2. logging
+	3. maintenance
+4. evaluation
+	1. process mining
+	2. business activity monitoring
+5. administration and stakeholders
+	1. administration
+	2. stakeholders
+
+## 1. Design and Analysis
+
+
+## 2. Configuration
+
+
+## 3. Enactment
+
+
+## 4. Evaluation
+
+
+## 5. Administration and Stakeholders
 
 
 # bpm6 - EPC
