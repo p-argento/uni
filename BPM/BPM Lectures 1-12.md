@@ -42,7 +42,7 @@ The topics are
 5. process orientation
 6. standardization
 
-## 1. Process Orientation
+## 1. Taylorism
 Products.
 Products are the outcome of some work.
 Products are supplied via markets.
@@ -69,7 +69,7 @@ The process perspective is instrumental to combine multiple units of work of sma
 
 
 
-## Organizational Structures
+## 2. Organizational Structures
 
 An organizational structure establish how the work, authorities and responsabilities are divided amongst its staff. Meaning roles and functions.
 
@@ -115,7 +115,7 @@ Characteristics
 ![[Pasted image 20250117173912.png]]
 
 
-## Actors
+## 3. Actors
 
 An actor can be
 1. a principal
@@ -322,8 +322,63 @@ vertical abstraction, separation of concerns, modelling domains, function models
 
 Ch. 3 of Business Process Management: Concepts, Languages, Architectures
 
+## Business Process Modelling
+A business process consists of a set of activities that are performed in coordination in an organizational and technical environment.
+
+Business Process Management includes concepts, methods, and techniques to support the design, administration, configuration, enactment and analysis of business processes.
+
+In modelling, a notation is needed to
+1. communicate efficiently
+2. refine processes
+3. improve processes
+
+How to represent processes
+1. visual representations (what we see)
+	1. diagrams and charts
+	2. for example informal, intuitive, BPMN, EPC, BPEL, ...
+2. languages (what machines see)
+	1. unambiguous machine syntax
+	2. for example process dialects, XML schemas
+3. models (what we analyse)
+	1. rigorous semantics for scientists
+	2. for example automata, Petri nets, workflow nets
+
+![[Pasted image 20250118124238.png]]
+
+A model is a simplification of reality
+Given a complex problem, we use abstraction to derive general rules and concepts.
+We divide
+1. horizontal abstraction
+	1. separation different modelling levels
+2. aggregation abstraction
+	1. separation at different granularity levels
+3. vertical abstraction
+	1. separation at different subdomains
+
+## 1. Horizontal abstraction
+Modelling Levels
+
+Definitions
+1. a business process model consists of a set oof activity modeles and execution constraints between them
+	1. like a blueprints
+2. a business process instance represent a concrete case in the operational business of a company consisting of activity instances
+
+![[Pasted image 20250118124805.png]]
+
+![[Pasted image 20250118124839.png]]
 
 
+
+## 2. Aggregation abstraction
+Granularity levels
+
+
+
+
+
+
+## 3. Vertical abstraction
+separation of concerns (or subdomains)
 
 
 
