@@ -510,11 +510,189 @@ They can be used for Process Mining to find better systems.
 EPC:  
 Event-driven Process Chain, events, functions, connectors, EPC diagrams, guidelines, diagram repair, function annotations, EPML, folder-passing semantics, candidate split, corresponding split, matching split, OR-join policies (wait-for-all, first-come, every-time), examples
 
+Ch.4.3 of Business Process Management: Concepts, Languages, Architectures
+
+![[Pasted image 20250118181732.png]]
+
+This chapter is an overview on the Event-Driven Process Chains (EPC) notation.
+
+Topics
+1. what is an EPC
+2. EPC Diagrams
+	1. ingredients
+	2. requirements
+	3. examples
+	4. guidelines
+3. EPC Semantics
+4. EPC Sample Diagrams
+
+## 1. EPC Definition
+
+Definition
+1. an event-driven process chain (EPC) is an ordered graph of events and functions
+2. it provides various connectors that allow alternative and parallel execution of processes
+	1. specified using logical operators such as OR, AND and XOR
+3. major strength
+	1. simplicity and easy-to-understand notation
+
+
+## 2. EPC Diagrams
+
+*1. Ingredients*
+
+Blocks
+1. event -> hexagon
+	1. passive element
+2. function -> rounded rectangles
+	1. active element to describe task or activities
+3. logical connectors -> logical symbols in circle
+	1. describe logical relationship between branches
+	2. can be splits or joins
+4. control flow -> dashed arrows
+	1. connecting events with functions expressing causal dependencies
+
+![[Pasted image 20250118183240.png]]
+
+*Requirements*
+
+The graph must be weakly connected (eg no isolated nodes)
+
+Furthermore
+1. events
+	1. have at most one incoming and one outgoing arch
+	2. have at least one incident arch
+	3. there must be at least one start event and one end event
+2. functions
+	1. have exactly one incoming and one outgoing arc
+3. connectors
+	1. have either one incoming arc and multiple outgoing arcs (or viceversa)
+
+Tools
+1. yED
+2. VisualParadigm Online
+3. ARIS Express
+4. EPC Markup Language (EPML)
+
+*Guidelines*
+
+Other contraints are sometimes imposed
+1. unique start/end event
+2. no direct flow between two events
+3. no direct flows between two functions
+4. no event is followed by a decision node
+
+It is safe to drop most constraints. Implicit dummy nodes might always be added later if needed to guarantee alternation.
+
+Other ingredients
+1. organization units -> ellipses with a vertical line
+	1. determines the person or the organization responsible for a specific function
+2. information, material, resource object -> rectangles linked to function boxes 
+	1. represent objects in the real worlds
+3. supporting system -> rectangles with vertical lines on its sides
+	1. technical support
+
+## 3. EPC Semantics
+
+Folder-passing semantics
+1. the current state of the process is determined by placing folders over the diagram.
+2. a transiction relation explains how to move one state to the next state
+	1. be careful with logical connectors
+
+![[Pasted image 20250118184838.png|300]]
+
+The behaviour for join connectors can be ambiguous.
+
+Designers can further annotate EPC diagrams, called decorated EPC. In particular
+1. corresponding split
+	1. which node separated the flows we are joining
+2. applicable policy
+	1. how to trigger outgoing flow
+
+Types of split (for a join node)
+1. candidate split
+	1. any split nodes whose outputs are connected to the inputs of the join
+2. corresponding split
+	1. chosen candidate split
+3. matching split
+	1. if corresponding is the same type as the join node
+
+OR-join policies (assume every join is tagged with a policy)
+1. wait-for-all (wfa)
+	1. if an or-join has a matching split, it should wait the completion of all activated path
+2. every-time (et)
+	1. trigger the outgoing path on each input
+3. first-come (fc)
+	1. wait for the first input and ignore the second
+
+OR-join assumption
+1. if it has a matching split
+	1. uses wfa
+2. if it has not a matching split
+	1. is decorated with a policy
+		1. wfa is okay with any corresponding split
+		2. et/fc are okay with corresponding XOR split
+
+XOR-join assumptions
+1. if it has a matching split
+	1. it blocks if both paths are activated and  it is triggered by a unique activated path
+	2. ANY POLICY WOULD CONTRADICT THE EXCLUSIVITY OF XOR
+	3. we assume always a matching split for the xor, even an implicit one
+
+
+## 4. EPC Sample Diagrams
+
+![[Pasted image 20250118185552.png]]
+
+...
+
+
+
+
 
 
 # bpm7 - BPMN (1)
 BPMN:  
 Notation, swimlanes, flow objects, artefacts, connecting objects, collaborations
+
+Ch.4.7, 5.7 of Business Process Management: Concepts, Languages, Architectures  Ch.3, 4 of Fundamental of Business Process Management. M. Dumas et al.
+
+![[Pasted image 20250118191552.png]]
+
+We overview the BPM Notation.
+
+The topics will be
+0. BPMN history
+1. BPMN basics
+2. BPMN key features
+3. More on BPMN
+4. BPMN semantics
+
+## 0. BPMN history
+
+The goal is to define a graphical notation that is readily understandable
+1. by business analysts (initial draft of processes)
+2. by technical developers (process implementation)
+3. by business people (process management)
+
+
+
+
+
+
+## 1. BPMN basics
+## 2. BPMN key features
+
+
+
+
+## 3. More on BPMN
+## 4. BPMN semantics
+
+
+
+
+
+
 
 
 
@@ -533,16 +711,129 @@ data objects, associations, groups, call acrivities, throwing and catching, chor
 
 
 
+
+
 # bpm9 - From automata to nets
 Slide 8.
 From automata to nets:  
 Inductive definitions, Kleene star, finite state automata, transition function, destination function, language accepted by an automaton, from automata to Petri nets, places, transitions, tokens_
 
+![[Pasted image 20250118192548.png]]
+
+This is an overview of the basic concepts of Petri Nets.
+
+Why Petri Nets in business process analysis
+1. validation -> test correctness
+2. verification -> proving correctness
+3. performance -> planning and optimization
+
+Definitions
+1. an automata (or transition system) is used for sequential protocols (or systems)
+	1. but do not capture concurrent behaviour directly
+2. a petri net is a mathematical model of a parallel and concurrent system
+
+Notation.
+![[Pasted image 20250118193133.png]]
+
+Topics
+1. Notation
+2. Finite automata examples
+3. DFA
+4. NFA
+5. Reshaping
+
+## Finite State Automata Examples
+
+Applications.
+Finite automata are widely used, e.g., in  protocol analysis,  text parsing,  video game character behavior,  security analysis,  CPU control units,  natural language processing,  speech recognition,  mechanical devices  (like elevators, vending machines, traffic lights)  and many more ...
+
+How to define an automaton?
+1. identify the admissible states of the system
+	1. mark the error states
+2. add transitions from one state to another
+	1. no transition to recover from error states
+3. set the initial state
+4. (optional) mark some states as final states
+
+![[Pasted image 20250118193817.png]]
+
+## DFA
+Deterministic Finite Automata
+
+It is important to understand
+1. definition of DFA
+	1. is a tuple $A=(Q,\sum,\delta,q_0,F)$
+2. transition function $\delta$
+	1. destination function defined recursively
+3. language of A, ie L(A)
+	1. for the string processing $w$
+4. transition diagram
+	1. graph to represent A
+5. transition table
+
+
+![[Pasted image 20250118194102.png]]
+
+
+![[Pasted image 20250118194125.png]]
+![[Pasted image 20250118194230.png]]
 
 
 
-# bpm10 - Petri Nets (1)
-Slide 9 (1).
+
+
+
+
+
+
+## NFA
+Non-deterministic Finite Automaton
+
+![[Pasted image 20250118195428.png]]
+
+![[Pasted image 20250118195635.png]]
+
+
+why??
+
+
+## Reshaping
+
+Steps
+1. get a token
+2. forget initial state decoration
+3. transitions as boxes
+4. forget final states
+5. allow for more tokens
+6. allow for more arcs
+
+Ingredients
+1. token
+2. Place
+3. Arc
+4. Transition
+
+![[Pasted image 20250118195859.png]]
+
+Some facts
+1. nets are bipartite graphs
+	1. arcs never connect two places
+	2. arcs never connect two transitions
+2. static structure for dynamic systems
+	1. places, transitions, arcs do not change
+		1. called passive components
+	2. tokens move around places
+		1. called active components
+
+
+
+
+
+# bpm10 - Petri Nets
+Slide 9
+
+-> lecture 10
+
 Exercises:  
 BPMN and FSA_  
   
@@ -551,10 +842,7 @@ multisets and markings, transition enabling and firing, firing sequences, reacha
   
 Woped basics
 
-
-
-# bpm11 - Petri Nets (2)
-slide 9(2)
+-> lecture11
 
 Exercises:  
 Petri nets_  
@@ -565,9 +853,50 @@ occurrence graph, modelling with Petri nets, examples and exercises_
 Woped basics
 
 
+![[Pasted image 20250118200404.png|300]]
 
-# bpm12 - Behavioural and Structural Properties
+Formalization of the basics concepts of Petri Nets.
+
+Topics
+1. Petri nets: basic definitions
+2. Petri nets: enabling and firing
+3. Petri nets: occurence graph
+
+
+## 1. Petri nets: basic definitions
+
+![[Pasted image 20250118200827.png]]
+
+
+
+## 2. Petri nets: enabling and firing
+
+
+
+
+
+
+
+
+
+## 3. Petri nets: occurence graph
+
+
+
+
+
+
+
+
+
+
+
+
+
+# bpm10 - Petri nets properties
 slide 10.
+
+-> lecture 12
 
 Exercises:  
 modelling with Petri nets_  
@@ -579,6 +908,20 @@ deadlock freedom, boundedness, safeness, home marking, cyclicity_
 
 Structural properties:  
 weak and strong connectedness, S-systems, T-systems, free-choice nets_
+
+
+
+## 1. Behavioural Properties
+
+
+
+
+
+## 2. Structural Properties
+
+
+
+
 
 
 
