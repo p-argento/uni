@@ -39,9 +39,10 @@ The topics are
 2. organizational structures
 3. actors
 4. cases and procedures
+5. process orientation
+6. standardization
 
-
-## Process Orientation
+## 1. Process Orientation
 Products.
 Products are the outcome of some work.
 Products are supplied via markets.
@@ -269,29 +270,46 @@ Be careful with ambiguities.
 ![[Pasted image 20250117183438.png|300]]
 
 We distinguish
-1. orchestration diagrams
-2. collaboration diagrams
-3. choreography diagrams
+1. orchestration diagrams(single-viewpoint)
+2. collaboration diagrams (multiple-viewpoints)
+3. choreography diagrams (global-viewpoint)
 
 ## 1. Orchestration Diagrams
 
+Orchestration is about describing and executing a single view point model. Like a conductor who centrally controls the musicians in an orchestra.
 
+Business process models are performed in a single organization by definition.
+The ordering of activities (performance of a task by a contractor) can be controlled by a business process management system as a centralized software component run by the organization.
 
+Example of reseller.
+Glimpse of BPMN-like syntax.
+1. a pool is a rectangle that encloses a business process
+	1. can be divided in lanes to distribute tasks to different actors
+2. dotted arcs represent the message flows
+	1. they are used for interacting processes that exchange information
 
-
-
-
-
+![[Pasted image 20250118115249.png]]
 
 ## 2. Collaboration Diagrams
 
+It about describing the interactions between autonomous business processes and they can influennce reciprocally.
+
+![[Pasted image 20250118115217.png]]
 
 
 ## 3. Choreography Diagrams
 
+Choreography is about describing a global model (multi-point view). Like dancers who behave autonomously but have their own part in the choreography.
 
+The process choreography represent the interactions of a set of business processes.
 
+Differences
+1. wrt orchestration
+	1. absence of a central  agent that control activities
+2. wrt collaboration
+	1. only contrains activities that are related to interactions between participants
 
+![[Pasted image 20250118115200.png]]
 
 
 # bpm4 - Models and abstraction
@@ -301,6 +319,20 @@ Travel agency ochestration, coffe break example, buyers and resellers collaborat
 Models and abstraction:  
 visual modelling, horizontal abstraction, modelling levels, models and instances, a generic process meta-model, aggregation abstraction, granularity levels, functional decomposition, vertical abstraction, separation of concerns, modelling domains, function models, information models, organization models, roles, IT landscape models, process models
 vertical abstraction, separation of concerns, modelling domains, function models, information models, organization models, roles, IT landscape models, process models
+
+Ch. 3 of Business Process Management: Concepts, Languages, Architectures
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
