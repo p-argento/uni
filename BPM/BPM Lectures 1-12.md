@@ -476,12 +476,32 @@ Steps
 
 ## 2. Configuration
 
+Different proposals
+1. ...
+
+In the 90s, a fixed a standard for Workflow (Wf) representation and execution, the Workflow Management Coalition (WfMC).
+
+Defintions
+1. a workflow 
+	1. is the automation of a business process in whole or in part
+	2. during which documents, information, or tasks are passed from one participaltn to another
+	3. according to a set of procedural rules
+2. a workflow management system
+	1. is a software system that defies, creates, and manages Wfs execution
+	2. we divide
+		1. single-application workflow
+		2. multiple-application workflow
+		3. system workflows
+		4. human-interaction workflows
+
 
 ## 3. Enactment
 
 
 ## 4. Evaluation
 
+Execution Logs are crucial.
+They can be used for Process Mining to find better systems.
 
 ## 5. Administration and Stakeholders
 
