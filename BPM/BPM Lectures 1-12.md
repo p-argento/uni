@@ -742,7 +742,8 @@ Topics
 4. NFA
 5. Reshaping
 
-## Finite State Automata Examples
+## FSA Examples
+Finite State Automata
 
 Applications.
 Finite automata are widely used, e.g., in  protocol analysis,  text parsing,  video game character behavior,  security analysis,  CPU control units,  natural language processing,  speech recognition,  mechanical devices  (like elevators, vending machines, traffic lights)  and many more ...
@@ -777,12 +778,6 @@ It is important to understand
 
 ![[Pasted image 20250118194125.png]]
 ![[Pasted image 20250118194230.png]]
-
-
-
-
-
-
 
 
 
@@ -857,6 +852,9 @@ Woped basics
 
 Formalization of the basics concepts of Petri Nets.
 
+Free Choice Nets (book, optional reading) 
+https://www7.in.tum.de/~esparza/bookfc.html
+
 Topics
 1. Petri nets: basic definitions
 2. Petri nets: enabling and firing
@@ -865,11 +863,125 @@ Topics
 
 ## 1. Petri nets: basic definitions
 
+Ingredients
+1. Places are sort of repositories where we can store something
+2. Transitions can be operations
+3. Tokens
+
+Multisets.
+We can assign a function S that returns 1 if the element is present and 0 otherwise.
+The order is not important.
+It can appear multiple times.
+We use the following notation.
+![[Pasted image 20250119180504.png]]
+
+
+Marking.
+A markin is a multiset of places.
+It represents the number of tokens in each place.
+Meaning 4a+2b is 4 tokens in plance a and 2 tokens in place b.
+The state of a petri net is represented with a marking of the tokens in each place.
+
 ![[Pasted image 20250118200827.png]]
 
+![[Pasted image 20250119181430.png]]
+
+Pre-set of an transition.
+It is the set of immediate predecessors.
+Consider a transition t, it is the set of incoming places.
+
+Post-set of a transition.
+It is the set of output places of t.
+
+Analogously with places.
+
+![[Pasted image 20250119182031.png]]
 
 
 ## 2. Petri nets: enabling and firing
+
+Topics
+1. enabling
+2. firing
+3. patterns (xor, and, or)
+4. firing sequence
+5. reachable markings
+6. infinite sequence
+7. more on sequences
+
+We say that a transition is enablet if the marking M  enables t.
+If M->t it means that there are enough tokens in M to enable t.
+Two possible notations can be used.
+
+![[Pasted image 20250119182241.png]]
+
+When we have enough tokens, we can fire the transition and the state changes.
+The following formula gives a relation between M and M'
+
+![[Pasted image 20250119182406.png]]
+
+Observe that multiple transitions can be executed. They are atomic. Think about it every time: are the enabled transition concurrent or exclusive?
+
+Observe that the number of tokens can change during the execution.
+
+What is the difference with the FSA?
+In the FSA the states are finite (finite state...) while  in petri nets the marking can be infinite because the tokens can be increased indefinitely.
+
+![[Pasted image 20250119183118.png]]
+The second is more reasonable because the flight and hotel can both be booked, while in the first net the token can go only in one of the states.
+
+Patterns.
+1. sequence
+	1. easy
+	2. ![[Pasted image 20250119183444.png]]
+2. XOR
+	1. ![[Pasted image 20250119183431.png|200]]
+	2. the first will be fired
+3. AND
+	1. ![[Pasted image 20250119183457.png|200]]
+	2. wait for both
+4. OR
+	1. combination of both
+	2. ![[Pasted image 20250119183514.png|300]]
+
+*Woped (tokengame)*
+
+![[Pasted image 20250119183954.png]]
+In this example, we created a deadlock.
+This happened because of the XOR first and the AND later.
+
+
+
+Remember the notation.
+that M is the multiset of cases.
+![[Pasted image 20250119184351.png]]
+
+![[Pasted image 20250119184420.png]]
+
+We use sigma to denote a sequence of transitions.
+![[Pasted image 20250119184643.png]]
+
+If we consider the set of all transitions, the reachable marking is a set of Markings that are 
+Remember that epsilon is the empty sequence.
+![[Pasted image 20250119184801.png]]
+
+Now, reasoning on petri nets is general more complicated than reasoning on automaton.
+
+![[Pasted image 20250119185349.png]]
+
+*types of sequences*
+1. firing sequence
+2. infinite sequence
+3. enabled sequence
+4. more
+	1. concatenation & prefix
+	2. enabledness
+	3. projection
+
+Infinte sequence.
+![[Pasted image 20250119185408.png]]
+
+
 
 
 
