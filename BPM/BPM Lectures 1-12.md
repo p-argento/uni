@@ -906,8 +906,12 @@ Topics
 3. patterns (xor, and, or)
 4. firing sequence
 5. reachable markings
-6. infinite sequence
 7. more on sequences
+	1.  infinite sequence
+	2. enabled sequence
+	3. prefix of sequences
+	4. enabled sequence
+	5. projection of sequence
 
 We say that a transition is enablet if the marking M  enables t.
 If M->t it means that there are enough tokens in M to enable t.
@@ -969,29 +973,43 @@ Now, reasoning on petri nets is general more complicated than reasoning on autom
 
 ![[Pasted image 20250119185349.png]]
 
-*types of sequences*
-1. firing sequence
-2. infinite sequence
-3. enabled sequence
-4. more
-	1. concatenation & prefix
-	2. enabledness
-	3. projection
+***more on sequences***
+1. infinite sequence
+2. enabled sequence
+3. prefix of sequences
+4. enabled sequence
+5. projection of sequence
 
-Infinte sequence.
+*Infinte sequence.*
+It means an unbounded sequence.
+For example, you might find a recurrent sequence.
 ![[Pasted image 20250119185408.png]]
 
+*Prefix of sequences.*
+Sometimes we want to decompose sequences.
+![[Pasted image 20250119192635.png]]
+![[Pasted image 20250119192822.png]]
+Observe that epsilon is always a prefix.
+And that the prefixes of an infinite sequence are finite.
+
+*Enabled sequence.*
+sigma can be used both for finite and not finite sequences.
+![[Pasted image 20250119192551.png]]
+![[Pasted image 20250119192938.png]]
+A sequence is enabled iff all the prefixes are enabled.
 
 
+*Projected sequence*
+We may want to project the sequence only on the transitions that are interesting to us.
+We can define a projection sigma over the set T' by removing from sigma all the transitions that are not in T'.
+![[Pasted image 20250119193423.png]]
 
-
-
-
-
-
+![[Pasted image 20250119193634.png]]
 
 
 ## 3. Petri nets: occurence graph
+aka reachability graph.
+
 
 
 
