@@ -1010,6 +1010,30 @@ We can define a projection sigma over the set T' by removing from sigma all the 
 ## 3. Petri nets: occurence graph
 aka reachability graph.
 
+![[Pasted image 20250120173414.png]]
+
+![[Pasted image 20250120174326.png]]
+
+A stands for Arcs.
+R is the set of reachable markings.
+More specifically.
+
+![[Pasted image 20250120174438.png]]
+
+Nodes is the set of visited nodes.
+See the example of traffic light.
+![[Pasted image 20250120180046.png]]
+
+How to avoid the two green? Add an additional token that is required to activate green.
+![[Pasted image 20250120174941.png]]
+How to alternate the nehaviour of the traffic lights?
+![[Pasted image 20250120175105.png]]
+
+*woped*
+Click the coverability graph.
+It is different because, if the occurence graph is infinite, it will be an approximation of it.
+
+
 
 
 
@@ -1039,9 +1063,18 @@ deadlock freedom, boundedness, safeness, home marking, cyclicity_
 Structural properties:  
 weak and strong connectedness, S-systems, T-systems, free-choice nets_
 
+We formalize some interesting properties for Petri nets.
+Later on in the course we will see how these properties are connected with the soundness of workflows.
+
 
 
 ## 1. Behavioural Properties
+
+
+
+
+
+
 
 
 
