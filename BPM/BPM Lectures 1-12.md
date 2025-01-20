@@ -1,5 +1,5 @@
 
-The topics are
+The lectures are
 1. bpm1 - Intro  
 2. bpm2 - Business Processes  
 3. bpm3 - Diagrams Types  
@@ -1066,9 +1066,62 @@ weak and strong connectedness, S-systems, T-systems, free-choice nets_
 We formalize some interesting properties for Petri nets.
 Later on in the course we will see how these properties are connected with the soundness of workflows.
 
+Free Choice Nets (book, optional reading)  https://www7.in.tum.de/~esparza/bookfc.html
+
+From now on, no isolated nodes.
+
+We study two properties
+1. behavioural (or dynamic)
+	1. how the markings will evolve during computation
+	2. depend on the initial marking and the firing rules
+2. structural
+	1. related to connections, ie the shape of the graph representing the net
+	2. less computationally expensive to verify
+	3. also provide some behavioural properties
+
+## -> A. Behavioural Properties
+
+We introduce some of the properties of Petri nets that can play an important role in the verificaition of business processes.
+
+Behavioural properties
+1. liveness
+2. deadlock-freedom
+3. boundness
+4. cyclicity also called reversibility
+Liveness and boundness are the most important
+
+Let's see some notation
+![[Pasted image 20250120185956.png]]
+We assume that M is reachable from M0
+
+## 1. Liveness
+
+Liveness can be referred to
+1. a single transition t
+2. the whole net
+
+A transition is live if, at any point of the computation, it is possible to fire t in the future (meaning that it cannot be excluded).
+A Petri net is live if all of its transitions are live.
 
 
-## 1. Behavioural Properties
+
+
+
+
+
+![[Pasted image 20250120191120.png]] 
+
+
+
+
+
+
+
+## 2. Deadlock-freedom
+
+## 3. Boundness
+
+## 4. Cyclicity (or reversibility)
 
 
 
@@ -1077,15 +1130,32 @@ Later on in the course we will see how these properties are connected with the s
 
 
 
+## -> B. Structural Properties
+
+The properties we study are
+1. connectedness
+2. s-nets
+3. t-nets
+4. free-choice nets
+
+Definition.
+1. net system
+	1. denotes a petri net WITH a given initial marking
+	2. we study behavioural properties of net system
+2. net
+	1. denotes a petri net WITHOUT specifying the initial marking
+	2. we study structural properties of nets
+
+Other definitions.
+1. path
+2. circuit
+3. undirected path
+
+## 1. Connectedness
 
 
 
-## 2. Structural Properties
-
-
-
-
-
+## 2. S-nets vs T-nets vs free-choice nets
 
 
 
