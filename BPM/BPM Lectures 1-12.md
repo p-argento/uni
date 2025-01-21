@@ -1140,6 +1140,7 @@ Remember that negating existential means universal.
 
 Example
 ![[Pasted image 20250121115249.png]]
+Because if we are in p2 and decide to fire t3, then t1 and t2 cannot be fired again in the future.
 
 *Liveness on the occurence graph.*
 The graph can grow very large, so it is not easy.
@@ -1178,9 +1179,22 @@ obvious facts
 3. If a place / transition is dead at M, then it remains dead  at any marking reachable from M  (the set of dead nodes can only increase during a run)
 
 true or false?
+1. Every transition in the pre- or post-set of a dead place  is also dead  (true)
+2. Every place in the pre- or post-set of a dead transition  is also dead (false
 
+Proposition. 
+Live systems are also place-live.
+![[Pasted image 20250121122526.png]]
 
+Place liveness on the  occurrence graph 
+1. A place p is live  iff  From any node of the occurrence graph we can reach a  node with a token in p  
+2. A place p is dead (at M0)  iff  All the nodes of the occurrence graph have no token in p
 
+Exercise
+![[Pasted image 20250121122823.png]]
+Because t need two tokens to be fired, but there is only one. So the net is live place-live because all the places can be visited, but not live because not all the transitions can be visited.
+
+(second part of the lecture 12 is about exercises)
 
 
 
