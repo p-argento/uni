@@ -1103,13 +1103,81 @@ Liveness can be referred to
 A transition is live if, at any point of the computation, it is possible to fire t in the future (meaning that it cannot be excluded).
 A Petri net is live if all of its transitions are live.
 
-
-
-
-
-
-
 ![[Pasted image 20250120191120.png]] 
+
+Liveness Illustrated.
+..
+
+Formally.
+To check that every transition is live, we want to check that every 
+The order of quantitifiers is important.
+
+![[Pasted image 20250121114341.png]]
+
+Examples.
+![[Pasted image 20250121114404.png]]
+
+How to check liveness?
+1. Write reachable markings
+2. for each transition, check that it can be reached from a reachable marking
+
+
+*dead transition*
+A transition is dead if it cannot be fired in the future
+![[Pasted image 20250121114638.png]]
+
+A transition can be non-live and non-dead.
+Do not confuse them.
+![[Pasted image 20250121114653.png]]
+
+Remember that negating existential means universal.
+![[Pasted image 20250121114746.png]]
+![[Pasted image 20250121114823.png]]
+![[Pasted image 20250121114847.png]]
+
+
+![[Pasted image 20250121114916.png]]
+
+Example
+![[Pasted image 20250121115249.png]]
+
+*Liveness on the occurence graph.*
+The graph can grow very large, so it is not easy.
+
+A transition t is live  iff  From any node of the occurrence graph we can reach a  node with an outgoing arc labelled by t
+
+A transition t is dead (at M0)  iff  There is no t-labelled arc in the occurrence graph
+
+![[Pasted image 20250121115423.png]]
+
+*place liveness*
+Move the concept of liveness to places.
+
+![[Pasted image 20250121115525.png]]
+
+![[Pasted image 20250121115548.png]]
+
+![[Pasted image 20250121115558.png]]
+
+![[Pasted image 20250121115629.png]]
+
+
+![[Pasted image 20250121115642.png]]
+
+
+![[Pasted image 20250121115654.png]]
+
+![[Pasted image 20250121115731.png]]
+
+
+
+*obvious facts*
+obvious facts
+1. a system is not live iff it has a transition that can  become dead at some reachable marking  
+2. a system is not place-live iff it has a place that can  become dead at some reachable marking 
+3. If a place / transition is dead at M, then it remains dead  at any marking reachable from M  (the set of dead nodes can only increase during a run)
+
+true or false?
 
 
 
