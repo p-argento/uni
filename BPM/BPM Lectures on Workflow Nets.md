@@ -1,26 +1,4 @@
 
-# bpm13 - Nets as Matrices
-slide 11
-
-Nets as matrices:  
-markings as vectors, incidence matrices, Parikh vectors, marking equation lemma, monotonicity lemma_
-
-
-
-
-# bpm14 - Invariants
-Exercises:  
-behavioural properties, structural properties_  
-  
-Nets as matrices:  
-monotonicity lemma 2 and a corollary, boundedness lemma, repetition lemma_  
-  
-Invariants:  
-S-invariants, fundamental property of S-invariants, alternative characterization of S-invariant, support, positive S-invariants_
-
-
-
-
 # bpm15 - Workflow Nets
 slide 13
 

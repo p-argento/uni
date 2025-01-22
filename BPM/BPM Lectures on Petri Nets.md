@@ -614,30 +614,68 @@ We want to avoid this kind of problems. So we study S-Nets.
 
 *S-Nets*
 
-A Petri net is called S-system if every transition has  one input place and one output place 
+A Petri net is called S-system if every transition has  one input place and one output place.
+
 (S comes from Stellen, the German word for place) 
-This way any synchronization is ruled out  The theory of S-systems is very simple
+
+This way any synchronization is ruled out 
+The theory of S-systems is very simple.
 
 
 *T-System*
 
-A Petri net is called T-system if every place has one  input transition and one output transition  This way all choices/conflicts are ruled out  T-systems are concurrent but essentially deterministic  T-systems have been studied extensively since the  early Seventies
+A Petri net is called T-system if every place has one  input transition and one output transition  This way all choices/conflicts are ruled out 
 
-There could be synchronization, but it is determininistic.
+T-systems are concurrent (meaning synchronization exists) but essentially deterministic.
+T-systems have been studied extensively since the  early Seventies.
+
 
 *Free-choice nets*
 
-The aim is to avoid that a choice between transitions  is influenced by the rest of the system 
+The aim is to avoid that a choice between transitions  is influenced by the rest of the system.
 
-Easiest way:  keep places with more than one output transition apart  from transitions with more than one input place  In other words, if (p,t) is an arc, then it means that  t is the only output transition of p (no conflict)  OR  p is the only input place of t (no synch)
+Easiest way:  keep places with more than one output transition apart  from transitions with more than one input place 
+In other words,
+1. if (p,t) is an arc, then it means that  t is the only output transition of p (no conflict) 
+2. OR  p is the only input place of t (no synch)
 
-But we can study a slightly more general class of nets by  requiring a weaker constraint 
+But we can study a slightly more general class of nets by  requiring a weaker constraint.
 
-A Petri net is free-choice if  for any pair of transitions  their pre-sets are either disjoint or equal  or, equivalently, if  for any pair of places  their post-sets are either disjoint or equal
-
+A Petri net is free-choice if  
+1. for any pair of transitions
+	1. their pre-sets are either disjoint or equal 
+2. or, equivalently, if  for any pair of places 
+	1. their post-sets are either disjoint or equal
 
 
 ![[Pasted image 20250122122836.png]]
+
+
+# 11 - Nets as Matrices
+Slide 11. Lecture 13.
+
+Nets as matrices:  
+markings as vectors, incidence matrices, Parikh vectors, marking equation lemma, monotonicity lemma_
+
+
+
+
+
+
+# 12 - Invariants
+Slide 12. Lecture 14?
+
+Exercises:  
+behavioural properties, structural properties_  
+  
+Nets as matrices:  
+monotonicity lemma 2 and a corollary, boundedness lemma, repetition lemma_  
+  
+Invariants:  
+S-invariants, fundamental property of S-invariants, alternative characterization of S-invariant, support, positive S-invariants_
+
+
+
 
 
 

@@ -6,7 +6,7 @@
 
 [[BPM Lectures on BP, EPC, BPMN]]
 [[BPM Lectures on Petri Nets]]
-[[BPM Lectures 13-24]]
+[[BPM Lectures on Workflow Nets]]
 
 
 # slides
