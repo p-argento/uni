@@ -657,9 +657,34 @@ Slide 11. Lecture 13.
 Nets as matrices:  
 markings as vectors, incidence matrices, Parikh vectors, marking equation lemma, monotonicity lemma_
 
+(in lecture 14)
+Nets as matrices:  
+monotonicity lemma 2 and a corollary, boundedness lemma, repetition lemma_  
+
+This is about a more convenient way to represent petri nets using linear algebra.
+
+Topics
+1. markings as vectors
+2. incidence matrices
+3. Parikh vectors
+4. marking equation lemma
+5. monotonicity lemma
+6. monotonicity lemma 2 and a corollary
+7. boundedness lemma
+8. repetition lemma
+
+## 1. markings as vectors
 
 
 
+
+## 2. incidence matrices
+## 3. Parikh vectors
+## 4. marking equation lemma
+## 5. monotonicity lemma
+## 6. monotonicity lemma 2 and a corollary
+## 7. boundedness lemma
+## 8. repetition lemma
 
 
 # 12 - Invariants
@@ -667,9 +692,6 @@ Slide 12. Lecture 14?
 
 Exercises:  
 behavioural properties, structural properties_  
-  
-Nets as matrices:  
-monotonicity lemma 2 and a corollary, boundedness lemma, repetition lemma_  
   
 Invariants:  
 S-invariants, fundamental property of S-invariants, alternative characterization of S-invariant, support, positive S-invariants_
