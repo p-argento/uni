@@ -4,7 +4,8 @@
 [[BMP Program]]
 [[BPM Book Exercises]]
 
-[[BPM Lectures 1-12]]
+[[BPM Lectures on BP, EPC, BPMN]]
+[[BPM Lectures on Petri Nets]]
 [[BPM Lectures 13-24]]
 
 
