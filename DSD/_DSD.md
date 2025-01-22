@@ -6,6 +6,8 @@ Prof. Salvatore Ruggieri
 [[DSD Lectures on DW Design (1-12)]]
 [[DSD Lectures on OLAP (13-24)]]
 
+[[dsd case studies from book]]
+
 [[DSD BOOK NOTES]]
 
 [[exam exercises]]
