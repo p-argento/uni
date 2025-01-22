@@ -328,7 +328,7 @@ It is different because, if the occurence graph is infinite, it will be an appro
 
 
 
-
+![[Pasted image 20250122112300.png]]
 
 
 
@@ -490,6 +490,16 @@ Because t need two tokens to be fired, but there is only one. So the net is live
 
 
 ## 2. Deadlock-freedom
+
+We want the system to be deadlock-free.
+The net has always an activity that can be done, meaning that from every reachable marking there is a transition that is enabled.
+
+Remember that `[M>` is the set of markings reachable from M0.
+
+
+
+
+
 
 ## 3. Boundness
 
