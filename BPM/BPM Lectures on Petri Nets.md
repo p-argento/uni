@@ -496,6 +496,13 @@ The net has always an activity that can be done, meaning that from every reachab
 
 Remember that `[M>` is the set of markings reachable from M0.
 
+Deadlock freedom on  the occurrence graph  61  A net is deadlock free  iff  Every node of the occurrence graph has an outgoing arc
+
+Questions
+1. Does liveness imply deadlock-freedom?  (Can you exhibit a live Petri net that is not deadlock-free?) 
+	1. 
+2. Does deadlock-freedom imply liveness?  (Can you exhibit a deadlock-free net that is not live?)
+
 
 
 
