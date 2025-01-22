@@ -491,6 +491,7 @@ Because t need two tokens to be fired, but there is only one. So the net is live
 
 ## 2. Deadlock-freedom
 
+*Deadlock-free*
 We want the system to be deadlock-free.
 The net has always an activity that can be done, meaning that from every reachable marking there is a transition that is enabled.
 
@@ -499,27 +500,72 @@ Remember that `[M>` is the set of markings reachable from M0.
 Deadlock freedom on  the occurrence graph  61  A net is deadlock free  iff  Every node of the occurrence graph has an outgoing arc
 
 Questions
-1. Does liveness imply deadlock-freedom?  (Can you exhibit a live Petri net that is not deadlock-free?) 
-	1. 
-2. Does deadlock-freedom imply liveness?  (Can you exhibit a deadlock-free net that is not live?)
+1. Does liveness imply deadlock-freedom? YES
+	1. Can you exhibit a live Petri net that is not deadlock-free?) NO
+3. Does deadlock-freedom imply liveness? NO
+	1. Can you exhibit a deadlock-free net that is not live?) YES
 
+We can also prove it by contradiction.
+![[Pasted image 20250122115451.png]]
 
-
-
+![[Pasted image 20250122115548.png]]
 
 
 ## 3. Boundness
 
+*k-boundedness*
+Let k be a natural number  
+A place p is k-bounded if no reachable marking has  more than k tokens in place p 
+
+For example if k=2, it means that the tokes in a place can be max 2.
+
+A net is k-bounded if all of its places are k-bounded  In other words, if a net is k-bounded, then k is a  capacity constraint that can be imposed over places  without any risk of causing “overflow”.
+
+*Safe nets*
+A place p is safe if it is 1-bounded  A net is safe if all of its places are safe  In other words, if the net is safe, then we know  that, in any reachable marking, each place  contains one token at most
+
+*Boundedness*
+A place p is bounded if it is k-bounded for some  natural number k  A net is bounded if all of its places are bounded  A net is unbounded if it is not bounded  (i.e., there is at least one place in which any  number of tokens can appear)
+
+If we do not know the number that bounds.
+
+![[Pasted image 20250122115841.png]]
+
+![[Pasted image 20250122120236.png]]
+
+
+Boundedness and the  reachability graph
+A system is bounded  iff  its reachability graph is finite
+
+![[Pasted image 20250122120256.png]]
+![[Pasted image 20250122120310.png]]
+
+
 ## 4. Cyclicity (or reversibility)
 
+*home marking*
+if it always possible to always go back there.
 
+A marking M is a home marking if it can be  reached from every reachable marking 
 
+*cyclic net*
+A net is cyclic (or reversible) if its initial marking  is a home marking
 
+*Orthogonal properties* 
+Liveness, boundedness and cyclicity are  independent of each other  In other words, you can find nets that satisfy any  arbitrary combination of the above three properties  (and not the others)
 
+![[Pasted image 20250122120533.png]]
 
+First system. (looks like producer and comsumer)
+P2 is not bounded. The others are bounded.  But the net is not safe.
+It is cyclic because it is always possible to go back to p1.
+It is deadlock-free because we can always do something.
+It is live.
 
 
 ## -> B. Structural Properties
+
+We do not include tokes anymore.
 
 The properties we study are
 1. connectedness
@@ -540,11 +586,59 @@ Other definitions.
 2. circuit
 3. undirected path
 
+![[Pasted image 20250122121227.png]]
+
 ## 1. Connectedness
+
+1. A net (P,T,F) is weakly connected
+	1. if there is an undirected path between any two distinct nodes
+	2. (meaning that) iff it cannot be splitted in separated components 
+2. A weakly connected net is strongly connected
+	1. there is a path between any two distinct nodes
+	2. (meaning that) iff  for every arc (x,y) there is a path from y to x
 
 
 
 ## 2. S-nets vs T-nets vs free-choice nets
+
+Definition
+1. conflict
+	1. if from a place we need to choose among different transitions
+2. synchronization
+	1. if a transition needs the tokens from different places to be enabled
+
+![[Pasted image 20250122122145.png]]
+How long should we wait for the token to enable t2? Should we just enable t1?
+
+We want to avoid this kind of problems. So we study S-Nets.
+
+*S-Nets*
+
+A Petri net is called S-system if every transition has  one input place and one output place 
+(S comes from Stellen, the German word for place) 
+This way any synchronization is ruled out  The theory of S-systems is very simple
+
+
+*T-System*
+
+A Petri net is called T-system if every place has one  input transition and one output transition  This way all choices/conflicts are ruled out  T-systems are concurrent but essentially deterministic  T-systems have been studied extensively since the  early Seventies
+
+There could be synchronization, but it is determininistic.
+
+*Free-choice nets*
+
+The aim is to avoid that a choice between transitions  is influenced by the rest of the system 
+
+Easiest way:  keep places with more than one output transition apart  from transitions with more than one input place  In other words, if (p,t) is an arc, then it means that  t is the only output transition of p (no conflict)  OR  p is the only input place of t (no synch)
+
+But we can study a slightly more general class of nets by  requiring a weaker constraint 
+
+A Petri net is free-choice if  for any pair of transitions  their pre-sets are either disjoint or equal  or, equivalently, if  for any pair of places  their post-sets are either disjoint or equal
+
+
+
+![[Pasted image 20250122122836.png]]
+
 
 
 
