@@ -10,6 +10,9 @@ Slide 8. Lecture 9.
 From automata to nets:  
 Inductive definitions, Kleene star, finite state automata, transition function, destination function, language accepted by an automaton, from automata to Petri nets, places, transitions, tokens_
 
+Exercises (lecture ?):  
+BPMN and FSA_  
+
 ![[Pasted image 20250118192548.png]]
 
 This is an overview of the basic concepts of Petri Nets.
@@ -120,9 +123,6 @@ Some facts
 Slide 9. Lecture 10.
 
 -> lecture 10
-
-Exercises:  
-BPMN and FSA_  
   
 Petri nets basics:  
 multisets and markings, transition enabling and firing, firing sequences, reachable markings_  
@@ -136,7 +136,10 @@ Petri nets_
   
 Petri nets basics:  
 occurrence graph, modelling with Petri nets, examples and exercises_  
-  
+
+Exercises:  
+modelling with Petri nets_  
+
 Woped basics
 
 
@@ -340,18 +343,15 @@ It is different because, if the occurence graph is infinite, it will be an appro
 
 
 # 10 - Petri nets properties
-slide 10. Lectures 12-13.
-
-Exercises:  
-modelling with Petri nets_  
+slide 10. 
   
-Behavioural properties:  
+Behavioural properties (lecture 12):  
 liveness, non live transitions, dead transitions, place liveness, non live places, dead places_
 (CONTINUES IN LECTURE 13)
 deadlock freedom, boundedness, safeness, home marking, cyclicity_  
 
-Structural properties:  
-weak and strong connectedness, S-systems, T-systems, free-choice nets_
+Structural properties (lecture 13):  
+weak and strong connectedness, S-systems, T-systems, free-choice nets
 
 We formalize some interesting properties for Petri nets.
 Later on in the course we will see how these properties are connected with the soundness of workflows.
@@ -369,7 +369,7 @@ We study two properties
 	2. less computationally expensive to verify
 	3. also provide some behavioural properties
 
-## -> A. Behavioural Properties
+## A. Behavioural Properties
 
 We introduce some of the properties of Petri nets that can play an important role in the verificaition of business processes.
 
@@ -655,14 +655,16 @@ A Petri net is free-choice if
 ![[Pasted image 20250123163823.png]]
 
 # 11 - Nets as Matrices
-Slide 11. Lecture 13.
+Slide 11.
 
-Nets as matrices:  
+Nets as matrices (lecture 13):  
 markings as vectors, incidence matrices, Parikh vectors, marking equation lemma, monotonicity lemma_
 
-(in lecture 14)
-Nets as matrices:  
-monotonicity lemma 2 and a corollary, boundedness lemma, repetition lemma_  
+Nets as matrices (lecture 14):  
+monotonicity lemma 2 and a corollary, boundedness lemma, repetition lemma
+
+Exercises (lecture 14):  
+behavioural properties, structural properties  
 
 This is about a more convenient way to represent petri nets using linear algebra.
 
@@ -677,6 +679,7 @@ Topics
 8. repetition lemma
 
 ## 1. markings as vectors
+
 ![[Pasted image 20250123110316.png]]
 ![[Pasted image 20250123110356.png]]
 
@@ -725,9 +728,8 @@ We can define the paroikh vector recursively.
 
 ## 4. marking equation lemma
 
-
 First fact.
-What if I multiply the incidence matrix to the parikh vector of a single transition. I get the column vecotr with the tokens in each place.
+What if I multiply the incidence matrix to the parikh vector of a single transition. I get the column vector with the tokens in each place.
 
 ![[Pasted image 20250123113205.png]]
 
@@ -743,7 +745,10 @@ Essentially with the parikh vector we are allow to add one by one the transition
 
 ![[Pasted image 20250123113640.png]]
 
-Marking equation  lemma: consequences  63  The marking reached by any occurrence  sequence only depends on the number of  occurrences of each transition  It does not depend on the order in which  transitions occur  Every fireable permutation of the same  transitions leads to the same marking
+Marking equation  lemma: consequences
+1. The marking reached by any occurrence  sequence only depends on the number of  occurrences of each transition 
+	1. It does not depend on the order in which  transitions occur 
+2. Every fireable permutation of the same  transitions leads to the same marking
 
 
 
@@ -762,8 +767,18 @@ Reminders
 1. infinite sequence
 2. enabledness
 
+If M enables sigma, then adding some prefix L will still enables sigma.
+
+The intuitition is that we can do something with more resources.
 
 
+
+
+*exercise*
+![[Pasted image 20250123190857.png]]
+
+![[Pasted image 20250123191016.png]]
+sigma prime can be fired infinitly many times.
 
 
 
@@ -773,16 +788,98 @@ Reminders
 
 
 # 12 - Invariants
-Slide 12. Lecture 14?
+Slide 12.
 
-Exercises:  
-behavioural properties, structural properties_  
-  
-Invariants:  
+Invariants (lecture 14):  
 S-invariants, fundamental property of S-invariants, alternative characterization of S-invariant, support, positive S-invariants_
 
+Invariants (lecture 15):  
+S-invariants and boundedness, S-invariants and liveness, S-invariants and reachability, T-invariants, fundamental property of T-invariants, alternative characterization of T-invariants, reproduction lemma, about liveness and boundedness, two connectedness theorems_  
+
+What is an invariant?
+An invariant is a property that remains the same at every step of the computation.
+
+![[Pasted image 20250123191459.png]]
+
+Liveness is an invariant!
+It is a property that remains for every reachable marking.
+![[Pasted image 20250123191640.png]]
+
+Also deadlock-free, boundedness and cyclicity are invariants.
+
+We study now other types of invariants.
+They depends only on the structure of the net (independlty of initial markings).
+They are
+1. S-invariants
+2. T-invariants
+
+You only truly understand a model if you think  about it in terms of invariants!
+
+## 1. S-invariants
+aka place-invariant (from Stellen)
+
+![[Pasted image 20250123192026.png]]
+
+It assigns the importance.
+
+How to find an S-invariant?
+1. take the invariance matrix of a net
+2. multiply it by a vector of variables
+3. solve the system of equations (for example by substitution)
+
+![[Pasted image 20250123192320.png]]
+It means that the tokens in p1, p2 have the same weights and the ones in p3, p4, p5 have the same weigth.
 
 
+
+
+
+## 2. fundamental property of S-invariants
+
+
+But what is an invariant?
+It is a vector I that multiplied by any reachable marking gives a constant.
+
+![[Pasted image 20250123192442.png]]
+
+![[Pasted image 20250123192509.png]]
+
+A place-invariant assigns a weight to each place such that  the weighted token sum remains constant during any  computation  
+
+For example, you can imagine that tokens are coins,  places are the different kinds of available coins,  the S-invariant assigns a value to each coin:  the value of a marking is the sum of the values of the  tokens/coins in it and it is not changed by firings
+
+
+
+## 3. alternative characterization of S-invariant,
+
+![[Pasted image 20250123192718.png]]
+
+Very useful in proving S-invariance!  The check is possible without constructing  the incidence matrix  It can also help to build S-invariants  directly over the picture
+
+
+
+
+## 4. support
+
+## 5. positive S-invariants
+
+## 6. S-invariants and boundedness
+
+## 7. S-invariants and liveness
+
+## 8. S-invariants and reachability
+
+## 9. T-invariants
+
+## 10. fundamental property of T-invariants
+
+## 11. alternative characterization of T-invariants
+
+## 12. reproduction lemma
+
+## 13. about liveness and boundedness
+
+## 14. two connectedness theorems
 
 
 

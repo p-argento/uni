@@ -1,9 +1,6 @@
 
 # bpm15 - Workflow Nets
 slide 13
-
-Invariants:  
-S-invariants and boundedness, S-invariants and liveness, S-invariants and reachability, T-invariants, fundamental property of T-invariants, alternative characterization of T-invariants, reproduction lemma, about liveness and boundedness, two connectedness theorems_  
   
 Exercises:  
 invariants_  
