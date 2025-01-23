@@ -755,6 +755,10 @@ Everything that can be done with less resources, can be done with more resources
 ## 6. monotonicity lemma 2 and a corollary
 (lecture 14)
 
+Reminders
+1. infinite sequence
+2. enabledness
+
 
 
 
