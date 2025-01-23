@@ -856,7 +856,7 @@ For example, you can imagine that tokens are coins,  places are the different ki
 
 Very useful in proving S-invariance!  The check is possible without constructing  the incidence matrix  It can also help to build S-invariants  directly over the picture
 
-
+![[Pasted image 20250123213757.png]]
 
 
 ## 4. support
