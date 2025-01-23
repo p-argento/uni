@@ -674,11 +674,20 @@ Topics
 8. repetition lemma
 
 ## 1. markings as vectors
+![[Pasted image 20250123110316.png]]
+![[Pasted image 20250123110356.png]]
 
 
 
 
 ## 2. incidence matrices
+
+
+It is entirely determined by the net.
+
+
+
+
 ## 3. Parikh vectors
 ## 4. marking equation lemma
 ## 5. monotonicity lemma
