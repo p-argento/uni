@@ -685,13 +685,82 @@ Topics
 
 It is entirely determined by the net.
 
+Instead of a graph, we use the matrix PxT
 
+-1 if consuming a token
++1 if producing one token
+
+![[Pasted image 20250123111823.png]]
+
+It will tell how many tokens are produced for each place, looking at rows.
+
+![[Pasted image 20250123111914.png]]
+
+*vending machine example*
+
+Think column-wise. Look at transition and fill the places in the rows with the number of tokens the produce or require when the transition is fired.
+
+![[Pasted image 20250123112103.png]]
+
+*firing*
+A sequence of firing is summing the column vectors of transitions to markings.
+
+![[Pasted image 20250123112245.png]]
 
 
 ## 3. Parikh vectors
+
+Can any firing sequence can be seen as a vector?
+
+![[Pasted image 20250123112355.png]]
+
+sigma assign the value corresponding to the number of times each transition is fired.
+
+We can define the paroikh vector recursively.
+
+![[Pasted image 20250123113028.png]]
+
 ## 4. marking equation lemma
+
+
+First fact.
+What if I multiply the incidence matrix to the parikh vector of a single transition. I get the column vecotr with the tokens in each place.
+
+![[Pasted image 20250123113205.png]]
+
+Second fact.
+![[Pasted image 20250123113244.png]]
+![[Pasted image 20250123113300.png]]
+
+
+
+![[Pasted image 20250123113329.png]]
+
+Essentially with the parikh vector we are allow to add one by one the transitions appearing in the sequence as many times as needed.
+
+![[Pasted image 20250123113640.png]]
+
+Marking equation  lemma: consequences  63  The marking reached by any occurrence  sequence only depends on the number of  occurrences of each transition  It does not depend on the order in which  transitions occur  Every fireable permutation of the same  transitions leads to the same marking
+
+
+
 ## 5. monotonicity lemma
+
+Everything that can be done with less resources, can be done with more resources. The extra resources are just presets (L).
+
+![[Pasted image 20250123113837.png]]
+
+![[Pasted image 20250123114035.png]]
+
 ## 6. monotonicity lemma 2 and a corollary
+(lecture 14)
+
+
+
+
+
+
+
 ## 7. boundedness lemma
 ## 8. repetition lemma
 
