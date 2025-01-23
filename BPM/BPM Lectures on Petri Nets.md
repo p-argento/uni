@@ -562,6 +562,8 @@ It is cyclic because it is always possible to go back to p1.
 It is deadlock-free because we can always do something.
 It is live.
 
+![[Pasted image 20250123163411.png]]
+
 
 ## -> B. Structural Properties
 
@@ -650,6 +652,7 @@ A Petri net is free-choice if
 
 ![[Pasted image 20250122122836.png]]
 
+![[Pasted image 20250123163823.png]]
 
 # 11 - Nets as Matrices
 Slide 11. Lecture 13.
