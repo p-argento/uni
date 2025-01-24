@@ -904,9 +904,38 @@ positive s-invariant means that we do not want to use 0.
 
 ## 7. S-invariants and liveness
 
+
+
+
 ## 8. S-invariants and reachability
 
+
+
+![[Pasted image 20250124155121.png]]
+![[Pasted image 20250124155135.png]]
+
+In the producer-consumer, we cannot bound and undounded place (ie the buffer), remember that the OG is infinite. This means that is not possible to find a positive S-invariant.
+
+
+
+
+
 ## 9. T-invariants
+
+Dual reasoning  101  x·N=0  The S-invariants of a net N are vectors satisfying  the equation  It seems natural to ask if we can find some  interesting properties also for the vectors  satisfying the equation  N·y = 0
+
+![[Pasted image 20250124155511.png]]
+
+![[Pasted image 20250124155522.png]]
+
+Transition-invariant,  intuitively
+A transition-invariant assigns a number of  occurrences to each transition such that any  occurrence sequence comprising exactly those  transitions leads to the same marking where it started  (independently from the order of execution)
+
+![[Pasted image 20250124155857.png]]
+Firing the transitions in the invariant those number of times, will the number of tokens change?
+
+
+
 
 ## 10. fundamental property of T-invariants
 
