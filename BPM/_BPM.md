@@ -8,6 +8,12 @@
 [[BPM Lectures on Petri Nets]]
 [[BPM Lectures on Workflow Nets]]
 
+Examples
+1. traffic lights (with german variation)
+2. vending machine
+3. dining philosophers
+4. producer and consumer
+5. persons-bikes-riders
 
 # slides
 Intro

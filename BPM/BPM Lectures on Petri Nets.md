@@ -871,7 +871,10 @@ We usually start with uniform invariants, meaning invariants with zero and one, 
 
 ![[Pasted image 20250124112351.png]]
 
-![[Pasted image 20250124112538.png]]
+
+
+
+
 
 ## 4. support
 
@@ -886,7 +889,13 @@ We usually start with uniform invariants, meaning invariants with zero and one, 
 
 Being positive means assign a postive weigth to each place. Can we have an unbounded place
 
+![[Pasted image 20250124124752.png]]
 
+![[Pasted image 20250124125140.png]]
+
+positive s-invariant means that we do not want to use 0.
+
+![[Pasted image 20250124125422.png]]
 
 
 
@@ -922,9 +931,17 @@ Being positive means assign a postive weigth to each place. Can we have an unbou
 The examples above are
 1.  dining philosophers
 2. producer and consumer
-3. ?
+3. vending machine
 Also remember
 1. traffic light (and german traffic light)
+
+
+![[Pasted image 20250124112538.png]]
+![[Pasted image 20250124123827.png]]
+
+![[Pasted image 20250124123859.png]]
+
+![[Pasted image 20250124124506.png]]
 
 
 
