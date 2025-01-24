@@ -1,50 +1,58 @@
 
-# bpm15 - Workflow Nets
-slide 13
+# 13 - Workflow Nets
+slide 13.
   
 Exercises:  
 invariants_  
   
-Workflow nets:  
-definition, syntax sugar, subprocesses, control flow aspects_
+Workflow nets (lecture 15):  
+definition, syntax sugar, subprocesses, control flow aspects
+
+Workflow nets (lecture 16):  
+triggers
+
+(START LECTURE 15 PART 2 MINUTE 27)
 
 
 
-# bpm16 - Analysis of workflow Nets
-slide 14
 
-Workflow nets:  
-triggers_  
+
+
+
+# 14 - Analysis of workflow Nets
+slide 14.
   
 Exercise:  
 modelling with workflow nets_  
   
-Analysis of workflow nets:  
+Analysis of workflow nets (lecture 16):  
 structural analysis, activity analysis, token analysis, net analysis, verification and validation, reachability analysis, bags, coverability graph, soundness, N*_
+  
+Analysis of workflow nets (lecture 17):  
+main soundness theorem, strong connectedness of N*
 
 
 
-# bpm17 - Safe Workflow Nets
+
+
+# 15 - Safe Workflow Nets
 slides 15
 
 Exercises:  
-_workflow nets and soundeness, soundness by construction_  
+workflow nets and soundeness, soundness by construction
   
-Analysis of workflow nets:  
-_main soundness theorem, strong connectedness of N*_  
-  
-Safe Workflow nets:  
-_soundness (and safeness) by construction_
+Safe Workflow nets (lecture 17):  
+soundness (and safeness) by construction
 
 
 
 # bpm18 - S-nets and T-nets
 slides16 and slides 17
 
-S-systems:  
+S-systems (lecture 18):  
 fundamental property of S-systems, S-invariants of S-nets, liveness theorem, reachability lemma, reachability theorem, boundedness theorem, workflow S-nets_  
   
-T-systems:  
+T-systems (lecture 18):  
 circuits and token count on a circuit, fundamental property of T-systems, T-invariants of T-nets, boundedness in strongly connected T-systems, liveness theorem for T-systems, workflow T-nets_  
   
 Decision problems and computational complexity (optional reading)  
@@ -54,8 +62,8 @@ S-nets properties, T-nets properties_
 
 
 
-# bpm19 - Free-choice Nets + EPCtoNets
-slides18 and slides19 (1)
+# 19 - Free-choice Nets + EPCtoNets
+slides18
 
 Free-choice nets:  
 Fundamental property of free-choice nets, place-liveness = liveness in f.c. nets, Commoner's theorem, Rank theorem, clusters, stable sets, siphons, proper siphons, fundamental property of siphons, siphons and liveness, traps, Commoner's theorem and its complexity issues, Rank theorem and its complexity issues_  
@@ -68,7 +76,7 @@ workflow net analysis with Woped, properties of free-choice nets, workflow syste
 
 
 
-# bpm20 - EPCtoNets + Workflow Systems
+# 20 - EPCtoNets + Workflow Systems
 sldes19(2) and slides 20
 
 Exercises:  

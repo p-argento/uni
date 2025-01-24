@@ -949,6 +949,12 @@ Firing the transitions in the invariant those number of times, will the number o
 
 
 
+*recap*
+
+![[Pasted image 20250124174825.png]]
+![[Pasted image 20250124174836.png]]
+
+
 *exercises*
 ![[Pasted image 20250124112906.png]]
 
