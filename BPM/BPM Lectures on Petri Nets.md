@@ -787,6 +787,9 @@ sigma prime can be fired infinitly many times.
 ## 8. repetition lemma
 
 
+
+
+
 # 12 - Invariants
 Slide 12.
 
@@ -858,12 +861,37 @@ Very useful in proving S-invariance!  The check is possible without constructing
 
 ![[Pasted image 20250123213757.png]]
 
+*traffic light example*
+
+Since we know that every linear combination of invariants is fine and that the trivial solution with all zero is fine (even if not interesting), we can find the invariant locally. First one traffic light with zeros on the other and vice versa.
+
+Follow the transitions and see that the post-set sum is the same as the pre-set.
+
+We usually start with uniform invariants, meaning invariants with zero and one, and then find a linear combination.
+
+![[Pasted image 20250124112351.png]]
+
+![[Pasted image 20250124112538.png]]
 
 ## 4. support
+
+
+
+
+
 
 ## 5. positive S-invariants
 
 ## 6. S-invariants and boundedness
+
+Being positive means assign a postive weigth to each place. Can we have an unbounded place
+
+
+
+
+
+
+
 
 ## 7. S-invariants and liveness
 
@@ -882,6 +910,15 @@ Very useful in proving S-invariance!  The check is possible without constructing
 ## 14. two connectedness theorems
 
 
+
+*exercises*
+![[Pasted image 20250124112906.png]]
+
+![[Pasted image 20250124113021.png]]
+
+![[Pasted image 20250124113242.png]]
+
+![[Pasted image 20250124113315.png]]
 
 
 
