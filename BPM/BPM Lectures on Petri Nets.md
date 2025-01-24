@@ -919,6 +919,13 @@ Being positive means assign a postive weigth to each place. Can we have an unbou
 ![[Pasted image 20250124113242.png]]
 
 ![[Pasted image 20250124113315.png]]
+The examples above are
+1.  dining philosophers
+2. producer and consumer
+3. ?
+Also remember
+1. traffic light (and german traffic light)
+
 
 
 
