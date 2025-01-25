@@ -16,3 +16,32 @@ MODULE 4: Applications
 1. Urban Segregation models
 2. Navigation Principles
 3. Estimating Pollution
+
+The slides of the second part are
+6 - Individual mobility laws and models
+7 - Human Mobility Model
+8 - Mobility Patterns
+9 - Location Prediction
+
+More in details.
+1. 6 - Individual mobility laws and models
+	1. distances (travel distancve, radius of gyration,...)
+	2. predictability (entropy,...)
+2. 7 - Human Mobility Models
+	1. Modelling individual Human Mobility
+		1. EPR
+	2. Collective Models
+		1. Gravity Model
+		2. Radiation
+		3. Intervening Opportunities
+		4. Deep gravity
+		5. Other models
+3. 8 - Mobility Patterns
+	1. Global patterns: clustering
+	2. Local Patterns
+4. 9 - Location Prediction
+	1. Mobility prediction: a taxonomy
+	2. Next location prediction
+
+
+
