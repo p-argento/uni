@@ -37,9 +37,9 @@ WF Nets
 Properties of nets
 16. s-systems
 17. t-systems
-18. aux-p-np
-19. free-choice
-Workflows modules
+18. free-choice nets
+Nets Analysis
+19. epc-analysis
 20. workflow-systems
 21. bpmn-analysis
 22. wfnets-diagnosis
