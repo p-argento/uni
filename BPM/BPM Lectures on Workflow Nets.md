@@ -13,6 +13,72 @@ triggers
 
 (START LECTURE 15 PART 2 MINUTE 27)
 
+Topics
+1. definition, 
+2. syntax sugar, 
+3. subprocesses, 
+4. control flow aspects
+5. triggers
+
+## 1. definition, 
+
+
+
+
+
+## 2. syntax sugar, 
+
+There are some decorations.
+In woped, you can add decorations for and-split and so on.
+
+
+![[Pasted image 20250125165054.png]]
+
+Just a professor note.
+Use only XOR join.
+
+![[Pasted image 20250125165150.png]]
+
+You can set a transition as a subprocess that is a wf net. It is a transition with double border.
+
+![[Pasted image 20250125165532.png]]
+
+
+
+
+
+
+## 3. subprocesses, 
+## 4. control flow aspects
+
+Some patterns.
+
+Sequencing 
+1. Parallelism (AND-split + AND-join) 
+2. Selection (XOR-split + XOR-join) 
+3. Iteration (XOR-join + XOR-split) 
+
+Capacity constraints:
+1. Feedback loop 
+2. Mutual exclusion 
+3. Alternating
+
+Explicit choice vs implicit.
+Like XOR vs even-based.
+
+
+
+
+
+## 5. triggers
+
+A decoration that you can add to the transition.
+
+![[Pasted image 20250125170416.png]]
+
+
+
+
 
 
 
@@ -30,6 +96,39 @@ structural analysis, activity analysis, token analysis, net analysis, verificati
   
 Analysis of workflow nets (lecture 17):  
 main soundness theorem, strong connectedness of N*
+
+How can we verify the correctness of a WF net?
+What does it mean for a wf net to be sound?
+We study suitable soundness properties of workflow nets.
+
+Topics
+1. structural analysis, activity analysis, token analysis, net analysis, verification and validation, reachability analysis, bags, coverability graph, soundness, N*
+2. main soundness theorem, strong connectedness of N*
+
+## 1. Types of analysis
+1. structural analysis, activity analysis, token analysis, net analysis, verification and validation, reachability analysis, bags, coverability graph
+
+## 2. soundness
+3. soundness, N*, main soundness theorem, strong connectedness of N*
+
+
+What kind of analysis can we do?
+1. structural notation
+2. behavioural analysis
+
+
+example of deadlock
+![[Pasted image 20250125171014.png]]
+
+
+
+
+
+
+
+
+
+
 
 
 
