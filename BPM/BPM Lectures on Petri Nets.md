@@ -914,6 +914,17 @@ positive s-invariant means that we do not want to use 0.
 ![[Pasted image 20250124155121.png]]
 ![[Pasted image 20250124155135.png]]
 
+Recap
+1. if we are able to find a positive s-invariant then the net is bounded for any initial marking
+	1. and viceversa, if we find that is unbounded, then there is no positive s-invariant
+2. to prove that a net is non-live, it is enough to find a semi-positive s-invariant such that the weighted sum of the resources in the initial marking is equal to zero
+	1. we have seen a theorem that, if the net is live, any initial marking multipied by the initial marking should be greater than zero
+3. 
+
+
+
+
+
 In the producer-consumer, we cannot bound and undounded place (ie the buffer), remember that the OG is infinite. This means that is not possible to find a positive S-invariant.
 
 
