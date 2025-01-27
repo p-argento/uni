@@ -919,7 +919,7 @@ Recap
 	1. and viceversa, if we find that is unbounded, then there is no positive s-invariant
 2. to prove that a net is non-live, it is enough to find a semi-positive s-invariant such that the weighted sum of the resources in the initial marking is equal to zero
 	1. we have seen a theorem that, if the net is live, any initial marking multipied by the initial marking should be greater than zero
-3. 
+3. we can also use invariants to check reachability, we can conclude that a marking is not reachable if the weighted product of the sum of resources for the initial marking and that marking is different
 
 
 
