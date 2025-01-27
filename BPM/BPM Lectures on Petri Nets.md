@@ -990,5 +990,6 @@ Also remember
 ![[Pasted image 20250124124506.png]]
 
 
-
+In the following net, we can find a t-invariant so the net is bounded. However, since there is no token, we cannot say that it is live. Remember that invariants are structural properties while liveness is a behavioural property.
+![[Pasted image 20250127122900.png]]
 
