@@ -351,6 +351,17 @@ OLAP systems. Data Analysis Using SQL. Simple reports. Examples. Moderately Diff
 OLAP refers to the technique of performing complex business  multidimensional analysis over the data warehouse.
 > We will see how report developers use SQL to write queries!
 
+Start of lectures on "Relational DBMS Extensions for DW".
+The topics of the lectures from 15 to 23 are
+
+15-17 -> SQL extensions (aka T-SQL)
+18 -> Query Plans
+19 -> Index and Storage Structures + Star Query Physical Plan
+20 -> Materialized Views
+21 -> (functional dependencies and their usage in query optimization)
+22 -> Optimization techniques for star queries with grouping and aggregations
+23 -> Query rewriting to use materialized views
+
 ## -> JRS exercise
 
 **EXERCISE AT HOME**
@@ -906,10 +917,11 @@ We only need the operators in the book and in JRS.
 
 # dsd19 - Indexes and Partitioning
 
-Start of lectures on "Relational DBMS Extensions for DW".
-The topics of the lectures from 19 to 23 are
-![[Pasted image 20241224104640.png]]
+Remember the lectures on "Relational DBMS Extensions for DW".
+The topics of the lectures from 15 to 23 are
 
+15-17 -> SQL extensions (aka T-SQL)
+18 -> Query Plans
 19 -> Index and Storage Structures + Star Query Physical Plan
 20 -> Materialized Views
 21 -> (functional dependencies and their usage in query optimization)
@@ -932,12 +944,16 @@ We will see the following index structures for DW:
 4. foreign column join (FC join)
 
 ## 1. inverted index
+for selective attributes (aka high cardinality)
+
 It is the solution in all relational DBMS.
 It is useful when the number of distinct values of an indexed attribute is high (called selective attribute).
 It the standard solution for primary key in DWMS.
 
 The index allow to map each value to its position.
 It is ordered to allow binary search.
+
+![[Pasted image 20250127165905.png]]
 
 During ETL, indexes are dropped and rebuilt from scratch.
 The updates are processed in batch.
@@ -949,6 +965,7 @@ In particular for the primary key.
 The rows might have different colums.
 
 ## 2. bitmap Index
+for non-selective attributes (aka non-selective attributes)
 
 Each value in the indexed attribute is associated to a bit vector (bitmaps).
 The length of the bitmap is the number of records in the base table.
