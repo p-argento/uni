@@ -58,6 +58,10 @@ Content
 
 ...
 
+
+
+## Point spatial patterns
+
 Actually chapter 4 is
 4. point spatial patterns and spatial correlation
 	1. density
@@ -65,7 +69,6 @@ Actually chapter 4 is
 	3. Moran's I
 	4. Geary's C
 
-## Point spatial patterns
 The general objective is understand how object are distributed in space.
 
 In spatial point pattern analysis, spatial distribution patterns are typically categorized into three types
