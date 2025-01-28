@@ -15,6 +15,7 @@ Prof. Salvatore Ruggieri
 
 *online resources*
 [sql reddit](https://www.reddit.com/r/SQL/comments/1i1ussg/sql_is_a_struggle/?share_id=0mxIAuElqAjpJ3NwPnK9h&utm_content=1&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=14)
+[[sql windowing]]
 
 ## Exam
 To do LDS, first you must pass DSD.
