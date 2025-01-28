@@ -64,6 +64,20 @@ It can be
 1. Show how to perform before the join the GROUP BY.
 2. Show how to rewrite the query Q using the view V
 
+Group by optimization in a nutshell
+0. draw logical schema
+1. check invariant grouping (granularity do not change)
+	1. grouping attribute -> foreign key of R (used for the join)
+	2. aggregate functions use attributes from R
+2. check early partial aggregation
+	1. aggregate functions are decomposable
+	2. aggregate functions use attributes from R
+3. counting and grouping
+	1. grouping attribute -> aggregate function's attribute
+
+
+
+
 ![[Pasted image 20250128171304.png]]
 ![[Pasted image 20250128171543.png]]
 ![[Pasted image 20250128171603.png]]
