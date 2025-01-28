@@ -68,7 +68,8 @@ It can be
 ![[Pasted image 20250128171543.png]]
 ![[Pasted image 20250128171603.png]]
 
-
+Remember that when computing the closure we need to keep in mind that
+![[Pasted image 20250128172740.png]]
 
 ## more
 
