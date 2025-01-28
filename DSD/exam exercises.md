@@ -64,7 +64,13 @@ It can be
 1. Show how to perform before the join the GROUP BY.
 2. Show how to rewrite the query Q using the view V
 
+![[Pasted image 20250128171304.png]]
+![[Pasted image 20250128171543.png]]
+![[Pasted image 20250128171603.png]]
 
+
+
+## more
 
 ???
 ![[Pasted image 20250113123821.png]]
