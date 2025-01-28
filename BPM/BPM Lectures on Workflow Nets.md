@@ -140,7 +140,23 @@ The proof is divided in 3 parts.
 ![[Pasted image 20250125192508.png]]
 
 Let's move to the proof of the main theorem.
+Generally the wf net N is not live.
+The proof is made of 3 steps.
+1. if N* is live and bounded -> N is sound
+2. if N is sound -> N* is bounded
+3. if N is sound -> N* is live
 
+see the proof in lecture 17 part 1.
+...
+
+
+
+![[Pasted image 20250128115402.png]]
+->* is not a firing sequence, it just means a connected path.
+Since N* is strongly connected, it is live and bounded.
+
+We analyze the wf net using woped.
+If it is a wf, woped automatically add an invisible reset?
 
 
 
@@ -196,8 +212,54 @@ slides 15
 Exercises:  
 workflow nets and soundeness, soundness by construction
   
-Safe Workflow nets (lecture 17):  
+Safe Workflow nets (lecture 17p2):  
 soundness (and safeness) by construction
+
+This set of slides is about
+1. building a net that is sound by construction
+2. we show a technique to build sound wf nets
+
+THe idea is to find building blocks.
+They 
+![[Pasted image 20250128120437.png]]
+
+We can replace a transition with a whole new net.
+If N and N' are safe and sound, then the result is safe and sound.
+
+![[Pasted image 20250128120637.png]]
+![[Pasted image 20250128120705.png]]
+...
+
+You can take any net that is safe and sound and reuse it as a block.
+Even if the net looks complicated, we know that is safe and sound if the smaller blocks are.
+
+
+![[Pasted image 20250128120958.png]]
+We can replace some blocks with single transitions.
+
+*exercise*
+![[Pasted image 20250128121310.png]]
+
+When we have two parallel branches they may create a state explosion.
+
+We replace
+1. a xor block
+2. a nested iteration (careful with the direction)
+
+Sometimes it is helpful to desugarize (remove decorations like xor).
+
+![[Pasted image 20250128121744.png]]
+
+![[Pasted image 20250128121756.png]]
+
+![[Pasted image 20250128122336.png]]
+
+
+
+
+
+
+
 
 
 
