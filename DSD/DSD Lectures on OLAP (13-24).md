@@ -1429,12 +1429,6 @@ We have to check that
 
 ![[Pasted image 20250114181314.png]]
 
-![[Pasted image 20250114181325.png]]
-
-![[Pasted image 20250114181339.png]]
-
-
-
 ## 3. grouping and counting
 
 There is a third case.
@@ -1442,6 +1436,14 @@ If the two conditions of invariant and the two conditions of decomposition are n
 Not general, but requires some condition.
 
 It is called "the grouping and counting rule".
+
+
+![[Pasted image 20250114181325.png]]
+
+![[Pasted image 20250114181339.png]]
+
+
+
 
 ![[Pasted image 20250114181353.png]]
 
