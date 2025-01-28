@@ -1467,7 +1467,7 @@ See kindle.
 How to rewrite the query using materialized views if possible.
 
 This is known as the "query rewriting problem".
-It is not a problem of the user who writes queries, but rather for the query optiizer.
+It is not a problem of the user who writes queries, but rather for the query optimizer.
 
 Who write a query is NOT aware that exist materialized views.
 
