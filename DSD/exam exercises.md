@@ -1,15 +1,8 @@
 Types
-## 1. DW schema
-
- 1. analysis requirements
-	 1. fact granularity
-	 2. additive measures
- 2. conceptual schema
- 3. logical schema
- 4. update of dimensional attributes
 
 
-## 2. SQL Queries with indexes and trees
+
+## 1. SQL Queries with indexes
 
 1. analytical sql query
 2. query logical tree
@@ -26,7 +19,7 @@ Basic functions
 5. JOIN, LEFT OUTER JOIN, ...
 6. CASE WHEN... THEN... ELSE... END
 
-## 3. Analytic SQL for reporting
+## 2. Analytic SQL for reporting
 
 on foodmart, with many join I guess.
 Using ROLLUP and CUBE.
@@ -45,11 +38,26 @@ Over creates a column as it was a groupby but keeping all the rows, meaning that
 Rank can be used together with groupby within the over to display the rank order, also within the partition if specified.
 Lag and lead get the value of attribute in offset rows before or after.
 
+## 3. DW schema
+
+ 1. analysis requirements
+	 1. fact granularity
+	 2. additive measures
+ 2. conceptual schema
+ 3. logical schema
+ 4. update of dimensional attributes
+
 
 ## 4. Materialized Views
 
 1. Given a lattice, select 2 views to materialize with the greedy algorithm HRU.
 
+It can be
+1. knowing all rows of the views
+2. with unknown number of rows for one view
+
+![[Pasted image 20250128165031.png]]
+![[Pasted image 20250128165455.png]]
 
 ## 5. Query optimization
 
