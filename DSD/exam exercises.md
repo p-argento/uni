@@ -71,6 +71,10 @@ It can be
 Remember that when computing the closure we need to keep in mind that
 ![[Pasted image 20250128172740.png]]
 
+Properties
+![[Pasted image 20250128174840.png]]
+
+
 ## more
 
 ???
