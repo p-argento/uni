@@ -139,6 +139,11 @@ MAIN THEOREM.
 The proof is divided in 3 parts.
 ![[Pasted image 20250125192508.png]]
 
+Let's move to the proof of the main theorem.
+
+
+
+
 
 
 
@@ -153,6 +158,29 @@ How to use wf net to represent an orchestration scenario.
 ![[Pasted image 20250125193008.png]]
 
 The AND-split and AND-join are redundant and not required.
+
+
+![[Pasted image 20250128111302.png]]
+What is the language of a net?
+L(N) is the set of firing sequences that lead us from the start to the end.
+Sometimes to find all the sets it is enough to change the order of transitions or take alternative paths in xor.
+If we cannot reach the end, the L(N) is empty.
+
+*exercises on behavioural properties*
+Recall.
+![[Pasted image 20250128112048.png]]
+
+![[Pasted image 20250128112246.png]]
+If we take the path above, there is no proper condition because there is a left token in p7 below.
+![[Pasted image 20250128112946.png]]
+A solution would be to always send the letter.
+
+
+
+
+
+
+
 
 
 
@@ -196,76 +224,6 @@ Fundamental property of free-choice nets, place-liveness = liveness in f.c. nets
 
 
 
-# 19 - EPC Analysis
-slides 19
-
-EPC:  
-soundness analysis, from EPC to wf nets, net fragments, dummy style, fusion style, unique start, unique end, three transformations_  
-
-EPC:  
-semantics ambiguities, relaxed sound nets, relaxed sound EPC diagrams, from restricted EPC diagrams to f.c. nets, problems with (X)OR joins, OR join policies (wfa, fc, et), from decorated EPC diagrams to nets_  
-
-Exercises:  
-workflow net analysis with Woped, properties of free-choice nets, workflow systems_
-
-
-
-# 20 - Workflow Systems
-slides 20
-
-Exercises:  
-free-choice nets, clusters, siphons, traps, SAT encoding_  
-  
-
-  
-Workflow systems:  
-I/O interfaces, workflow modules, stuctural compatibility, workflow system, weak soundness_
-
-
-
-# 21 - BPMN Analysis
-
-
-
-
-Exercises:  
-workflow systems_  
-  
-BPMN:  
-from BPMN diagrams to nets_  
-  
-
-
-
-# 22 - Diagnosis of Workflow Nets
-
-Diagnosis of Workflow nets:  
-Woped, S-components, S-cover, sound f.c wf nets are safe, TP-handles, PT-handles, well-handled nets, well-structured wf nets, Woflan, ProM, error sequences, non-live sequences, unbounded sequences_
-
-
-
-
-# 23 - Process Mining
-slides 23
-
-Exercises:  
-EPC analysis_  
-  
-Process mining:  
-intro, Event logs, discovery, conformance, enhancement, perspectives, play-in, play-out, replay, overfitting, underfitting, alpha-algorithm, footprint matrix, naive fitness, improved fitness, comparing footprints_
-
-
-
-# 24 - Quantitative Analysis
-slides 24
-
-Exercises:  
-_process discovery, peformance analysis_  
-  
-Quantitative analysis (lecture 23):  
-_Performance dimensions and objectives, KPI, cyle time analysis, Little's law, cost analysis_  
-  
-A final note (with project instructions)
 
 
 
