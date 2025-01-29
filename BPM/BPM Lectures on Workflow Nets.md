@@ -259,7 +259,12 @@ Sometimes it is helpful to desugarize (remove decorations like xor).
 
 
 
-![[Pasted image 20250128124534.png]]
+![[Pasted image 20250129113134.png]]
+The reset transition is there, even if not visible.
+THe 
+
+
+
 
 
 
