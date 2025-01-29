@@ -1,7 +1,7 @@
 # 19 - EPC Analysis
 slides 19
 
-EPC:  
+EPC (lecture19p2):  
 soundness analysis, from EPC to wf nets, net fragments, dummy style, fusion style, unique start, unique end, three transformations_  
 
 EPC:  

@@ -372,13 +372,159 @@ Decision problems and computational complexity (optional reading)
 Exercises:  
 S-nets properties, T-nets properties_
 
+
+## circuits and token count on a circuit, 
+T-systems are less frequent than S-sytem
+
+![[Pasted image 20250129145730.png]]
+
+The computation is deterministic in a T-Net !!
+This means that the firing of a transition t in M cannot disable another transition t' enabled at M.
+However, concurrent is possible.
+
+![[Pasted image 20250129150652.png]]
+A wf net will never be a T-net.
+Once we add the reset transition, it can be a T-net.
+
+![[Pasted image 20250129151100.png]]
+
+![[Pasted image 20250129151122.png]]
+
+
+
+
+## fundamental property of T-systems, 
+
+![[Pasted image 20250129151152.png]]
+
+
+Some markings are not reachable just because the number of tokens is different for some markings.
+
+
+
+
+
+
+
+## T-invariants of T-nets, 
+
+![[Pasted image 20250129151619.png]]
+
+By firing the same number of times ....
+
+
+## boundedness in strongly connected T-systems, 
+
+![[Pasted image 20250129151651.png]]
+
+![[Pasted image 20250129151701.png]]
+
+![[Pasted image 20250129151825.png]]
+
+![[Pasted image 20250129151927.png]]
+
+## liveness theorem for T-systems, 
+
+![[Pasted image 20250129151940.png]]
+
+![[Pasted image 20250129152126.png]]
+
+![[Pasted image 20250129152150.png]]
+
+
+## workflow T-nets
+
+![[Pasted image 20250129152344.png]]
+
+*exercises*
+
+![[Pasted image 20250129152539.png]]
+
+![[Pasted image 20250129152645.png]]
+We have a characterization that 
+
+
+
+
+
+
+
+
+
+# 18bis - P and NP problems
+
+Complexity classes.
+
+A problem is a family of related questions.
+A problem instance is a specific question.
+A decision problem requires just a boolean answer.
+
+Computational complexity theory.
+
+## Complexity class P
+
+![[Pasted image 20250129152859.png]]
+
+For example, the eulerian circuit is simple.
+It can be checked in linear time.
+
+## Complexity class NP
+
+![[Pasted image 20250129153006.png]]
+
+So
+1. in P the problems can be checked and solved effectively
+2. in NP the problems can be only checked effectively
+This means that a P problem is also NP.
+
+Example of Hamiltonian circuit.
+
+
+![[Pasted image 20250129153236.png]]
+
+How do we know?
+
+## Complexity class NP-complete
+
+Inside the class of NP, there is another class of problems.
+
+![[Pasted image 20250129153336.png]]
+
+If once we find the solution for a problem, every other problem can be solved with any other NP problem.
+
+We will explore the Satisfiability decision problem.
+
+![[Pasted image 20250129153501.png]]
+
+
+*example*
+![[Pasted image 20250129153628.png]]
+
+
+
+
+
+
+
+
+
 # 18 - Free-Choice
 
-Free-choice nets:  
-Fundamental property of free-choice nets, place-liveness = liveness in f.c. nets, Commoner's theorem, Rank theorem, clusters, stable sets, siphons, proper siphons, fundamental property of siphons, siphons and liveness, traps, Commoner's theorem and its complexity issues, Rank theorem and its complexity issues_  
+Free-choice nets (lecture19):  
+Fundamental property of free-choice nets, place-liveness = liveness in f.c. nets, Commoner's theorem, Rank theorem, clusters, stable sets, siphons, proper siphons, fundamental property of siphons, siphons and liveness, traps, Commoner's theorem and its complexity issues, Rank theorem and its complexity issues
 
 
+## Fundamental property of free-choice nets, 
+## place-liveness = liveness in f.c. nets, 
+## Commoner's theorem, 
+## Rank theorem, 
+## clusters, stable sets, 
 
+## siphons, proper siphons, fundamental property of siphons, siphons and liveness, traps,
+
+## Commoner's theorem and its complexity issues, 
+
+## Rank theorem and its complexity issues
 
 
 
