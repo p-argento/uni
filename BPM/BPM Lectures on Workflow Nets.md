@@ -273,13 +273,10 @@ Look at an optimal situation.
 ## -> project-like exercise (try it)
 ![[Pasted image 20250129114815.png]]
 
+![[Pasted image 20250129120407.png]]
 
-
-
-
-
-
-
+In the next lectures we will learn what does it mean
+![[Pasted image 20250129120423.png]]
 
 
 
@@ -289,6 +286,81 @@ slides16
 
 S-systems (lecture 18):  
 fundamental property of S-systems, S-invariants of S-nets, liveness theorem, reachability lemma, reachability theorem, boundedness theorem, workflow S-nets_  
+
+
+![[Pasted image 20250129120513.png]]
+
+![[Pasted image 20250129120818.png]]
+
+## fundamental property of S-systems,
+aka fundamental invariant
+
+The number of tokens is always the same.
+
+
+New notation.
+![[Pasted image 20250129120940.png]]
+
+![[Pasted image 20250129121038.png]]
+
+To answer if a marking is reachable, first count the sum of tokens if it is the same.
+
+![[Pasted image 20250129121235.png]]
+
+
+
+## S-invariants of S-nets, 
+
+Assignings weights to places.
+
+![[Pasted image 20250129121301.png]]
+
+![[Pasted image 20250129121343.png]]
+
+
+
+## liveness theorem, 
+
+![[Pasted image 20250129121407.png]]
+
+strongly means that we can reach every node from any other node.
+
+
+
+
+## reachability lemma, 
+
+![[Pasted image 20250129121655.png]]
+
+
+## reachability theorem, 
+
+![[Pasted image 20250129121753.png]]
+
+![[Pasted image 20250129121805.png]]
+
+
+## boundedness theorem, 
+## workflow S-nets_  
+
+![[Pasted image 20250129121841.png]]
+
+![[Pasted image 20250129121850.png]]
+
+We can also strengthen the theorem.
+
+![[Pasted image 20250129121931.png]]
+
+*exercises*
+
+
+
+
+
+
+
+
+
 
 # 17 - T-nets
 
