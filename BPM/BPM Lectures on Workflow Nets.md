@@ -219,6 +219,8 @@ This set of slides is about
 1. building a net that is sound by construction
 2. we show a technique to build sound wf nets
 
+## The idea of building blocks
+
 THe idea is to find building blocks.
 They 
 ![[Pasted image 20250128120437.png]]
@@ -261,7 +263,21 @@ Sometimes it is helpful to desugarize (remove decorations like xor).
 
 ![[Pasted image 20250129113134.png]]
 The reset transition is there, even if not visible.
-THe 
+
+> For the project, I expect you to have all the soundness checks green in woped. It doesn't matter if the ones of the structural analysis are not okay, it can happen.
+> You will have to design the diagram in bpmn, translate it in wf-net and analyse it.
+
+![[Pasted image 20250129114541.png]]
+Look at an optimal situation.
+
+## -> project-like exercise (try it)
+![[Pasted image 20250129114815.png]]
+
+
+
+
+
+
 
 
 
