@@ -570,18 +570,80 @@ A cluster is the smallest set
 
 
 
+So, in the Commoner's theorem, 
+The rank, ie the number of independent rows, should be equal to the number of clusters minus 1.
+
+Stable set of markings is a convenient concept.
+
+![[Pasted image 20250130120007.png]]
+If M is bold, it means that is a set of markings.
+
+![[Pasted image 20250130120039.png]]
+Once we are in the stable set, we cannot escape
+
+![[Pasted image 20250130120105.png]]
+
+Examples...
+
+
+
+
+
 
 
 ## siphons, proper siphons, fundamental property of siphons, siphons and liveness,
+
+![[Pasted image 20250130120432.png]]
+
+In order to produce a token in R, we need to retrieve a token from R.
+
+![[Pasted image 20250130120513.png]]
+If the siphon is empty, it will remain empty.
+
+![[Pasted image 20250130120744.png]]
+Once the tokens get into the trap, it cannot escape. It will be the dual.
+
+
+![[Pasted image 20250130120922.png]]
+If the syphon is empty, the transition attached to it will never be fired.
+![[Pasted image 20250130120957.png]]
+
+This explains the third condition of the siphons and rank theorem, ie M0 marks every proper siphon.
+Because if this was not true, the net cannot be live
 
 
 
 ##  traps,
 
+It is the converse of a trap.
+The inclusion is  reversed.
+The preset of the trap includes
+All the transitions that can consume tokens from the set will necessary produce tokens in the set.
+Anytime we try to stole tokens from the trap, new tokens will be produced and it will never remain empty.
+
+![[Pasted image 20250130121356.png]]
+
+![[Pasted image 20250130121409.png]]
+
+
+Examples
+![[Pasted image 20250130121434.png]]
+
+![[Pasted image 20250130121622.png]]
+
 
 
 ## Commoner's theorem and its complexity issues, 
 Is it hard to show that a free-choice net is live?
+
+(the proof is not part of the course)
+
+![[Pasted image 20250130121657.png]]
+It is not unsolvable, but it is very difficult.
+
+
+
+
 
 
 
