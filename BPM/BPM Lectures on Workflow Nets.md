@@ -7,7 +7,7 @@ invariants_
   
 Workflow nets (lecture 15):  
 definition, syntax sugar, subprocesses, control flow aspects
-
+ 
 Workflow nets (lecture 16):  
 triggers
 
