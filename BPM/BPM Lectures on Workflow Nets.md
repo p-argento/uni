@@ -514,18 +514,79 @@ Free-choice nets (lecture19):
 Fundamental property of free-choice nets, place-liveness = liveness in f.c. nets, Commoner's theorem, Rank theorem, clusters, stable sets, siphons, proper siphons, fundamental property of siphons, siphons and liveness, traps, Commoner's theorem and its complexity issues, Rank theorem and its complexity issues
 
 
-## Fundamental property of free-choice nets, 
-## place-liveness = liveness in f.c. nets, 
-## Commoner's theorem, 
-## Rank theorem, 
-## clusters, stable sets, 
+Today we finish the overview of structural properties that guarantee behavioural ones. Then we will discuss how to encode epc and bpmn into petri nets for analysis. Then process mining and quantititative analysis.
 
-## siphons, proper siphons, fundamental property of siphons, siphons and liveness, traps,
+## Recap on Free-choice net
+
+![[Pasted image 20250130105625.png]]
+
+There are many equivalent definitions. The one prof prefer is 
+![[Pasted image 20250130105658.png]]
+
+To understand if the net is free-choice, it makes sense to look only at transitions that have a preset place in common. If they share it, it is ok.
+
+![[Pasted image 20250130105956.png]]
+
+## Fundamental property of free-choice nets, 
+
+The choice can be done without excluding any alternative.
+
+![[Pasted image 20250130110115.png]]
+
+When t is enabled, we are free to choose any other transition that will be enabled.
+
+![[Pasted image 20250130110156.png]]
+
+
+
+## place-liveness = liveness in f.c. nets, 
+
+![[Pasted image 20250130110216.png]]
+
+It works only the other way round.
+
+
+
+
+
+## Commoner's theorem, 
+for liveness
+
+![[Pasted image 20250130110606.png]]
+## Rank theorem, 
+for liveness and boundedness
+
+it consists of 6 properties to be checked.
+![[Pasted image 20250130110650.png]]
+
+The first two are greyed out because our nets always respect them.
+
+So now we need to show
+![[Pasted image 20250130110808.png]]
+
+## clusters, stable sets,
+
+A cluster is the smallest set
+
+
+
+
+
+## siphons, proper siphons, fundamental property of siphons, siphons and liveness,
+
+
+
+##  traps,
+
+
 
 ## Commoner's theorem and its complexity issues, 
+Is it hard to show that a free-choice net is live?
+
+
 
 ## Rank theorem and its complexity issues
-
+Is it hard to show that a free-choice net is live and bounded?
 
 
 
