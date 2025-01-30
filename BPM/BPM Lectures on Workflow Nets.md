@@ -490,6 +490,9 @@ Inside the class of NP, there is another class of problems.
 
 ![[Pasted image 20250129153336.png]]
 
+![[Pasted image 20250130171620.png]]
+Nice explanation on [stackoverflow](https://stackoverflow.com/questions/1857244/what-are-the-differences-between-np-np-complete-and-np-hard)
+
 If once we find the solution for a problem, every other problem can be solved with any other NP problem.
 
 We will explore the Satisfiability decision problem.
