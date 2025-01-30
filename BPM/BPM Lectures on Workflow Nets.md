@@ -641,6 +641,48 @@ Is it hard to show that a free-choice net is live?
 ![[Pasted image 20250130121657.png]]
 It is not unsolvable, but it is very difficult.
 
+![[Pasted image 20250130125850.png]]
+
+The union of traps is a trap.
+
+![[Pasted image 20250130125926.png]]
+
+
+![[Pasted image 20250130125950.png]]
+
+If we had an oracle, it would be polynomial time to check.
+
+Let us see the polinomial algo for finding a trap, if R is a siphon.
+![[Pasted image 20250130130054.png]]
+
+Q will be guaranteed to be a trap.
+![[Pasted image 20250130130209.png]]
+so the non-liveness problem for free-choice systems is in NP.
+
+![[Pasted image 20250130130312.png]]
+
+![[Pasted image 20250130130346.png]]
+Remember the satisfiablity problem (SAT).
+
+![[Pasted image 20250130130421.png]]
+
+How do we reduce the free-choice net of a formula?
+![[Pasted image 20250130130456.png]]
+
+
+Instead of looking at the formula, it is more convenient to look at the negation.
+
+![[Pasted image 20250130130542.png]]
+
+
+Let us start with the sample formula and derive the corresponding free-choice net.
+
+?????
+
+![[Pasted image 20250130130835.png]]
+
+![[Pasted image 20250130130859.png]]
+
 
 
 
@@ -649,6 +691,18 @@ It is not unsolvable, but it is very difficult.
 
 ## Rank theorem and its complexity issues
 Is it hard to show that a free-choice net is live and bounded?
+
+![[Pasted image 20250130131030.png]]
+
+![[Pasted image 20250130131148.png]]
+
+![[Pasted image 20250130131202.png]]
+
+
+*xercises*
+
+
+
 
 
 
