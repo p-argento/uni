@@ -1407,7 +1407,8 @@ We can demonstrate the invariant grouping using the closures because AName is a 
 
 ![[Pasted image 20250114181115.png]]
 
-## 2. early partial aggregation
+## 2. double grouping
+aka early partial aggregation
 
 If the invariant grouping is possible, it is the best option. However, if it is not possible because the granularity changes, we can still apply the double grouping rule if the aggregation function is decomposable.
 If the function is decomposable, we can anticipate one part of the grouping before the join.
