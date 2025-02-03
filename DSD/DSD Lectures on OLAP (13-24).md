@@ -957,10 +957,10 @@ Today
 
 We assume "Non-volatile data" compared to operational db.
 We will see the following index structures for DW:
-9. inverted indexes
-10. bitmap indexes
-11. join 
-12. foreign column join (FC join)
+1. inverted indexes
+2. bitmap indexes
+3. join 
+4. foreign column join (FC join)
 
 ## 1. inverted index
 for selective attributes (aka high cardinality)
@@ -1006,11 +1006,13 @@ Typically the bitmap is sparse and can be compressed.
 
 ![[Pasted image 20250114115106.png]]
 
-The Bitmap indexe is composed by
-13. BMIndexFilter + BMIndexFilter
-14. BMAnd
-15. BMToRid
-16. (TableAccess...)
+![[Pasted image 20250203214422.png]]
+
+The Bitmap index is composed by
+1. BMIndexFilter + BMIndexFilter
+2. BMAnd
+3. BMToRid
+4. (TableAccess...)
 
 Example of access plan.
 ![[Pasted image 20250114115629.png]]
@@ -1022,7 +1024,8 @@ For counting, the index might be enough.
 
 ![[Pasted image 20250114115645.png]]
 
-Example of star schema with Inverted Index and BMIndex.
+*Example of star schema with Inverted Index and BMIndex.*
+
 ![[Pasted image 20250114115945.png]]
 ![[Pasted image 20250114115955.png]]
 ![[Pasted image 20250114120005.png]]
