@@ -837,12 +837,16 @@ we will see
 3. Group By
 4. Join
 
-Operators for R
+## 0. operators for R
 1. TableScan(R)
 2. SortScan
+![[Pasted image 20250203211020.png]]
 Also
 1. Sort
+![[Pasted image 20250203211033.png]]
 
+Example
+![[Pasted image 20250203211056.png]]
 ## 1. implementation of projection
 
 Operators for projection
@@ -850,25 +854,35 @@ Operators for projection
 	1. no duplicate elimination
 2. Distinct
 	1. to eliminate duplicated from sorted records
+	2. REMEMBER TO USE SORT FIRST
 3. HashDistint
 	1. to eliminate duplicated from records
 	2. it requires memory to store a hash data structure
 
+![[Pasted image 20250203211144.png]]
+
+![[Pasted image 20250203211215.png]]
+
 ## 2. implementation for selection
 
 Operators for restriction
-1. Filter
-2. IndexFilter
+4. Filter
+5. IndexFilter
 	1. specialized option where is required an index
 	2. composed by
 		1. RIDIndexFilter, which returns the RID to be read
 		2. TableAccess, using the RID obtained in the previous step
 
+![[Pasted image 20250203211349.png]]
+
+First an example without an index filter
+![[Pasted image 20250203211604.png]]
+
 Let's see an example of index filter.
 Assuming the index already exists.
 If the condition is not very selective, it is actually better to use TableScan. The query optimizer will decide.
 
-![[Pasted image 20250109141114.png]]
+![[Pasted image 20250203211617.png]]
 
 ## 3. impementation of join
 
@@ -877,13 +891,18 @@ More efficient algorithms.
 *First. Nested Loop.*
 Scan the first table and look in the right looking for all the matching rows.
 
-![[Pasted image 20250109141817.png]]
+![[Pasted image 20250109141817.png|300]]
+
+![[Pasted image 20250203211921.png]]
 
 *Index Nested Loop*
 We ask the index to find in logarithmic time the matching rows.
 From quadratic complexity to N x logM complexity, where M is the number of rows in S.
-
 It means that for every table scan, you call an IndexFilter.
+
+![[Pasted image 20250203212038.png]]
+![[Pasted image 20250203212149.png]]
+![[Pasted image 20250203212050.png]]
 
 Exception.
 We might also have an additional filter not indexed by the index.
@@ -903,12 +922,12 @@ There is also a HashGroupBy.
 In physical plan panle we can build the physical plan.
 
 In different DBMS,
-1. ORACLE
+6. ORACLE
 	1. use `explain plan`
-2. SQL SERVER
+7. SQL SERVER
 	1. use `estimated execution plan`
 	2. or ``
-3. Azure
+8. Azure
 	1. show `Query Plan`
 
 We only need the operators in the book and in JRS.
@@ -938,10 +957,10 @@ Today
 
 We assume "Non-volatile data" compared to operational db.
 We will see the following index structures for DW:
-1. inverted indexes
-2. bitmap indexes
-3. join 
-4. foreign column join (FC join)
+9. inverted indexes
+10. bitmap indexes
+11. join 
+12. foreign column join (FC join)
 
 ## 1. inverted index
 for selective attributes (aka high cardinality)
@@ -988,10 +1007,10 @@ Typically the bitmap is sparse and can be compressed.
 ![[Pasted image 20250114115106.png]]
 
 The Bitmap indexe is composed by
-1. BMIndexFilter + BMIndexFilter
-2. BMAnd
-3. BMToRid
-4. (TableAccess...)
+13. BMIndexFilter + BMIndexFilter
+14. BMAnd
+15. BMToRid
+16. (TableAccess...)
 
 Example of access plan.
 ![[Pasted image 20250114115629.png]]
@@ -1025,13 +1044,13 @@ Not used in operational DB due to high cost of updates.
 It is used to optimizes frequent queries.
 
 Types
-1. basic join index
+17. basic join index
 	1. join index we keep the mapping between the RID in the dimension and the RID in the fact.
-2. bitmapped join index (BMJ)
+18. bitmapped join index (BMJ)
 	1. ..
-3. Foreign Column Join Index (FCJ)
+19. Foreign Column Join Index (FCJ)
 	1. we keep the mapping between the values of an attribute and the RID in the fact.
-4. Bitmapped Foreign Column Join Indexes (BMFCJ)
+20. Bitmapped Foreign Column Join Indexes (BMFCJ)
 	1. we map the value in the dimension and the bitmap for the fact
 
 An example of JoinIndex and BMJIndex.
@@ -1063,15 +1082,15 @@ A star join index (on a star schema) is a multi-attribute join index between the
 
 *more*
 How do I know if the DBMS allows this indexes?
-1. read documentation
-2. test a join and  see the query plan
+21. read documentation
+22. test a join and  see the query plan
 
 How does the access plan change if we know the dw is a star join?
-1. ...
+23. ...
 
 The optimizer will as much as possible to
-1. exploit indexes (this lesson)
-2. anticipate the grouping before the join (next lesson)
+24. exploit indexes (this lesson)
+25. anticipate the grouping before the join (next lesson)
 
 ## Storage structure
 
@@ -1088,8 +1107,8 @@ For example, we can store different tables one for each country. Meaning many di
 Use PARTITION.
 
 Partition can be based on 
-1. specific values
-2. range (for example dates)
+26. specific values
+27. range (for example dates)
 
 ![[Pasted image 20250109161128.png]]
 
@@ -1123,12 +1142,12 @@ The advantage is that the content of the view is already available, meaning that
 What are the most convenient views to be materialized? We need to choose based on workload and statistics of usage.
 
 Problems.
-1. how to select the views to be materialized?
+28. how to select the views to be materialized?
 	1. given a query workload Q (type and frequency of queries)
 	2. see it now
-2. how the system rewrites a query to use materialized view?
+29. how the system rewrites a query to use materialized view?
 	1. see future lesson
-3. how to update materialized views if the database is update?
+30. how to update materialized views if the database is update?
 	1. typically drop and rebuild
 
 ## Lattice of Views to materialize
@@ -1191,9 +1210,9 @@ The benefit of a current view v when M is materialized is given by considering t
 ## HRU algorithm
 
 Now
-1. start with all the possible elements in the lattice
-2. compute the benefits for each of the queries in the sublattice
-3. compare with the best already materialized view
+31. start with all the possible elements in the lattice
+32. compute the benefits for each of the queries in the sublattice
+33. compare with the best already materialized view
 	1. at the beginning is the full table
 
 The first choice is to materialize PD.
@@ -1277,10 +1296,10 @@ We consider now optimization techniques for star queries with grouping and aggre
 But today we recall notions of functional dependencies.
 
 Assumptions
-1. no null values
-2. primary keys (no duplicates)
+34. no null values
+35. primary keys (no duplicates)
 	1. no multisets problems
-3. simple queries with no analytical functions
+36. simple queries with no analytical functions
 
 ![[Pasted image 20250110111839.png]]
 
@@ -1418,9 +1437,9 @@ If the function is decomposable, we can anticipate one part of the grouping befo
 ![[Pasted image 20250114181202.png]]
 
 We have to check that
-1. the function is decomposable
+37. the function is decomposable
 	1. because we need to aggregate differently in the fact table and after the join
-2. the attributes for the aggregation function must be from the fact table R
+38. the attributes for the aggregation function must be from the fact table R
 
 ![[Pasted image 20250114181238.png]]
 
@@ -1483,9 +1502,9 @@ In the docs of DBMS you will find recommendations to use materialized views. The
 
 
 We will see 2 approaches.
-1. try and built on top of an existing view some compensations to produce the query logical plan
+39. try and built on top of an existing view some compensations to produce the query logical plan
 	1. we can call directly the materialized view
-2. we start from the query trying to move the operators in a way 
+40. we start from the query trying to move the operators in a way 
 	1. the logical plan of the query will have a bottom part equivalent to the view logical plan
 
 Approach 1.
@@ -1498,13 +1517,13 @@ More about intuition.
 
 ## Simple cases
 What?
-1. g(Q) -> g(V)
+41. g(Q) -> g(V)
 	1. the query has a finer granularity than the view
 	2. ?
-2. g(Q) -> g(V) and g(V) -> g(Q)
+42. g(Q) -> g(V) and g(V) -> g(Q)
 	1. the query has the same granularity of the view
 	2. the 
-3. g(V) -> g(Q)
+43. g(V) -> g(Q)
 	1. A,B->A
 	2. the view has more groups than the query
 	3. still rewritable
@@ -1524,9 +1543,9 @@ Compare the query and the view.
 Start bottom-up and do an operator match.
 If there's a partial match, we need to do a compensation.
 
-1. matching
+44. matching
 	1. exact or partial
-2. compensation
+45. compensation
 	1. float or not
 
 A compensation is a tree floating on top of the view to match.
@@ -1540,7 +1559,7 @@ If the compensation cannot float, then the query is not rewritable.
 The optimizer should do this analysis for each materialized view and decide which to optimize.
 
 Example.
-1. start from the logical plan
+46. start from the logical plan
 
 Let' check the join, there is a partial match. We need a partial compensation. Does this compensation float? If we move it on top of the view, will it work? Yes.
 
@@ -1557,16 +1576,16 @@ The optimizer would rewrite the query using the materialized view.
 We assume obviously that the relations in the view are included in the relations of the query.
 
 *Rewriting algorithm.*
-1. JOIN
+47. JOIN
 	1. If the joins do not match, a compensation is added to the view
 	2. on top of the join of the view we also add the join at the root of the compensation tree
 	3. the compensation can float if g(V) contains the foreign keys for the tables  W, otherwise Q is not rewritable 
-2. RESTRICTION
+48. RESTRICTION
 	1. if the selection do not match, but it is possible
 	2. we add it on top of the compensation tree
 	3. CONDITION: in order to float, the restriction attribute must be available in the grouping or after the join (using the fk in the groupings?)
 		1. otherwise, Q is not rewritable
-3. GROUPING
+49. GROUPING
 	1. comparing the grouping of the view and the one of the query
 	2. in the lecture notes there are other example
 	3. we distinguish
@@ -1615,9 +1634,9 @@ Observe that here the join is needed for retrieving the attribute and not at a l
 
 ![[Pasted image 20250116191020.png]]
 
-1. the rewriting will not be possible because the restriction in the view is too restrictive
-2. in the view, the group by empty set means that we should check if Market->0 that is trivial and 0->Market that is true only if Market is constant. We cannot rewrite because the granularity in the query is larger than the one in the view.
-3. same (no rewriting)
+50. the rewriting will not be possible because the restriction in the view is too restrictive
+51. in the view, the group by empty set means that we should check if Market->0 that is trivial and 0->Market that is true only if Market is constant. We cannot rewrite because the granularity in the query is larger than the one in the view.
+52. same (no rewriting)
 
 Let's try to rewrite this query with the first approch and then with the second.
 ![[Pasted image 20250116191549.png]]
