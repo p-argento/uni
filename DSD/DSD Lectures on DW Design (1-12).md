@@ -630,6 +630,27 @@ Let's start with the changes in the dimensions.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # dsd12
 A DW to support Analytical CRM Analysis. Wrap up on DW design. [Exercises at home for the lesson 14](https://didawiki.di.unipi.it/lib/exe/fetch.php/mds/dsd/dsd12.assignments.pdf "mds:dsd:dsd12.assignments.pdf (157.6 KB)").
 
