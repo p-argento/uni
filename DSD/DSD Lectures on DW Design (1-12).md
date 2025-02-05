@@ -695,7 +695,7 @@ It is better to use a separate table, very similar to the junk table used for de
 We add a row for every possible combination of attributes that change fast.
 By constructing this "mini-table".
 Changing means changing the foreign key in the fact table to link it to the new row in the mini-table with the new attributes updated.
-Meaning that me move the changes from the dimension to a different table.
+Meaning that we move the changes from the dimension to a different table.
 The number of rows in the mini-table is given by the product of cardinality of the attributes to be changed.
 
 ![[Pasted image 20250205212638.png]]
