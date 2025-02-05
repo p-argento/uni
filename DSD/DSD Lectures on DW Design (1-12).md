@@ -633,7 +633,7 @@ An example of fast change is the year of the customer.
 
 Type 1 is obvious, because we just overwrite the value.
 
-## Type 2
+## Type 2. Preserving history
 
 Let's analyse the type. 2.
 When we want to preserve the full history of cases.
@@ -666,7 +666,7 @@ Having an attribute in the fact table is space consuming, if we consider the lar
 Note that we will need the inital surrogate key in the staging area to assign it to the customer
 
 
-## Type 3
+## Type 3. Preserving more versions
 
 Type 3. Do not use it.
 Add a column with old_zip.
@@ -676,7 +676,7 @@ And we can keep only a smaller portion of older values.
 ![[Pasted image 20250205211137.png]]
 
 
-## Type 4
+## Type 4. For fast changing
 Fast changing dimensions.
 
 Think about the years of service for each guide.
