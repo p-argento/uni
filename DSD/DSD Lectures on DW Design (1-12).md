@@ -631,20 +631,27 @@ Let's start with the changes in the dimensions.
 ![[Pasted image 20250205161544.png]]
 An example of fast change is the year of the customer. 
 
+## Type 1. Overwriting history
+Overwrite the value.
+
 Type 1 is obvious, because we just overwrite the value.
 
 ## Type 2. Preserving history
+Add a dimension row.
 
 Let's analyse the type. 2.
 When we want to preserve the full history of cases.
-We have 2 cases.
+We have 3 cases.
+1. there is a natural key identifier
+2. using InitialSurrogateKey in the dimension table
+3. using InitialSurrogateKey in the fact table
 
 *Case 1. Both the surrogate key and a natural key identifier.*
-1. for instance for people we may have the SSN (Social Security Number), 
-2. we may track the same person with different addresses, because these rows will have the same SSN
-3. if one customer change the zip code, we just create a new row with the same SSN and a different zip
-4. This means that we need to COUNT(DISTINCT SSN), not count(\*)
-5. we can also add two more columns with DateStart and DateEnd
+4. for instance for people we may have the SSN (Social Security Number), 
+5. we may track the same person with different addresses, because these rows will have the same SSN
+6. if one customer change the zip code, we just create a new row with the same SSN and a different zip
+7. This means that we need to COUNT(DISTINCT SSN), not count(\*)
+8. we can also add two more columns with DateStart and DateEnd
 	1. where all date start with the beginning of the dw and NULL as end, then if needed we add a DateEnd in the older and set the next day for the new start.
 
 ![[Pasted image 20250205183444.png]]
@@ -667,17 +674,18 @@ Note that we will need the inital surrogate key in the staging area to assign it
 
 
 ## Type 3. Preserving more versions
+Add new attributes.
 
 Type 3. Do not use it.
 Add a column with old_zip.
-This complicates a lot the ueries.
+This complicates a lot the queries.
 And we can keep only a smaller portion of older values.
 
 ![[Pasted image 20250205211137.png]]
 
 
-## Type 4. For fast changing
-Fast changing dimensions.
+## Type 4. Fast changing
+Add a new dimension (called mini or profile).
 
 Think about the years of service for each guide.
 We may decide to use type 2, but it is not a good idea because we will have too many and frequent changes.
@@ -697,6 +705,10 @@ For small dimensions, type 2 is still recommended.
 In type 4, the advantage is that we do not need to add new rows in the dimension as for type 2. Only a change in the foreign key is needed.
 However, the disadvantage of type 4 is an additional column in the (large) fact table.
 
+Now there are 3 more advanced topics.
+1. shared dimensions
+2. recursive hierarchies
+3. multivalued dimensions
 
 ## Shared dimensions.
 
@@ -746,7 +758,7 @@ What if we want to admit more agents?
 There are several options.
 
 *Solution 1. Change the granularity*
-1. change the granularity of the fact
+4. change the granularity of the fact
 	1. instead of having a single row per order, we split based on the contribution of agent
 	2. it requires to rethink all the dw design
 
@@ -803,27 +815,27 @@ starting from 25:00
 We conclude the DW Design with a more complex DW that is CRM.
 
 The CRM is made of
-2. operational CRM
-3. analytical CRM
+5. operational CRM
+6. analytical CRM
 
 ![[Pasted image 20241224160247.png]]
 
 We can do 4 types of analysis.
-4. Sales and Marketing Analysis
+7. Sales and Marketing Analysis
 	1. Sales
 	2. Market
 	3. Channel
 	4. Promo Campaign
-5. Profitability Analysis
+8. Profitability Analysis
 	1. Customer
 	2. Product
 	3. Market
 	4. Campaign
 	5. Channel
-6. Service Quality Analysis
+9. Service Quality Analysis
 	1. Product return
 	2. Order fulfillment
-7. Customer Analysis
+10. Customer Analysis
 	1. Customer segmentation
 	2. Customer retention
 	3. Customer satisfaction
@@ -850,9 +862,9 @@ Here we can see the customers that used the promotion.
 
 Also *Profitability Analysis*.
 Note that
-8. Total Cost = Product Cost + Returns Cost + Promotion Cost 
-9. Margin = Revenue - Returns Value – Total Cost 
-10. Margin % = Margin / (Revenue - Returns Value)
+11. Total Cost = Product Cost + Returns Cost + Promotion Cost 
+12. Margin = Revenue - Returns Value – Total Cost 
+13. Margin % = Margin / (Revenue - Returns Value)
 
 ![[Pasted image 20241224161256.png]]
 
@@ -871,11 +883,11 @@ Also *Order fullfillment analysis*
 ## 4. Customer Analysis
 
 How to categorize customers in a given month?
-11. New:  with at least an order last month and no order in the past
-12. Constant:  with at least two orders per month for three months in the last four months
-13. Occasional:  with at least one order in the last four months, but not as for typology Constant or New
-14. Inactive:   with no order in the last four months, and not Constant in the last 12 months
-15. Churn risk:  with no order in the last four months after being Constant at least once in the last 12 months.
+14. New:  with at least an order last month and no order in the past
+15. Constant:  with at least two orders per month for three months in the last four months
+16. Occasional:  with at least one order in the last four months, but not as for typology Constant or New
+17. Inactive:   with no order in the last four months, and not Constant in the last 12 months
+18. Churn risk:  with no order in the last four months after being Constant at least once in the last 12 months.
 
 ![[Pasted image 20241224161915.png]]
 
