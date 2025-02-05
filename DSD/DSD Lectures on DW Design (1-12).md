@@ -635,12 +635,44 @@ Type 1 is obvious, because we just overwrite the value.
 
 Let's analyse the type. 2.
 When we want to preserve the full history of cases.
-We have 2 cases
-1. we have both the surrogate key and a natural key identifier
-	1. for instance for people we may have the SSN (Social Security Number)
-	2. we may track the same person with different addresses, because these rows will have the same SSN
-	3. if one customer change the zip code, we just create a new row with the same SSN and a different zip
-	4. 
+We have 2 cases.
+
+*Case 1. Both the surrogate key and a natural key identifier.*
+1. for instance for people we may have the SSN (Social Security Number), 
+2. we may track the same person with different addresses, because these rows will have the same SSN
+3. if one customer change the zip code, we just create a new row with the same SSN and a different zip
+4. This means that we need to COUNT(DISTINCT SSN), not count(\*)
+5. we can also add two more columns with DateStart and DateEnd
+	1. where all date start with the beginning of the dw and NULL as end, then if needed we add a DateEnd in the older and set the next day for the new start.
+
+![[Pasted image 20250205183444.png]]
+
+*Case 2. Surrogate Key only.*
+
+We create a new surrogate kay, but the InitialCustomerPK is the same.
+
+![[Pasted image 20250205183923.png]]
+
+*Case 3. Surrogate key only, with FIRST surrogate key in the fact table*
+There is a variant.
+We keep the InitalCustomerPK as a degenerate dimension in the fact table.
+
+![[Pasted image 20250205184221.png]]
+
+Having an attribute in the fact table is space consuming, if we consider the large number of rows in the fact table.
+
+Note that we will need the inital surrogate key in the staging area to assign it to the customer
+
+
+
+Type 3.
+Do not use it.
+
+
+
+
+
+
 
 
 
@@ -672,27 +704,27 @@ starting from 25:00
 We conclude the DW Design with a more complex DW that is CRM.
 
 The CRM is made of
-2. operational CRM
-3. analytical CRM
+7. operational CRM
+8. analytical CRM
 
 ![[Pasted image 20241224160247.png]]
 
 We can do 4 types of analysis.
-4. Sales and Marketing Analysis
+9. Sales and Marketing Analysis
 	1. Sales
 	2. Market
 	3. Channel
 	4. Promo Campaign
-5. Profitability Analysis
+10. Profitability Analysis
 	1. Customer
 	2. Product
 	3. Market
 	4. Campaign
 	5. Channel
-6. Service Quality Analysis
+11. Service Quality Analysis
 	1. Product return
 	2. Order fulfillment
-7. Customer Analysis
+12. Customer Analysis
 	1. Customer segmentation
 	2. Customer retention
 	3. Customer satisfaction
@@ -719,9 +751,9 @@ Here we can see the customers that used the promotion.
 
 Also *Profitability Analysis*.
 Note that
-8. Total Cost = Product Cost + Returns Cost + Promotion Cost 
-9. Margin = Revenue - Returns Value – Total Cost 
-10. Margin % = Margin / (Revenue - Returns Value)
+13. Total Cost = Product Cost + Returns Cost + Promotion Cost 
+14. Margin = Revenue - Returns Value – Total Cost 
+15. Margin % = Margin / (Revenue - Returns Value)
 
 ![[Pasted image 20241224161256.png]]
 
@@ -740,11 +772,11 @@ Also *Order fullfillment analysis*
 ## 4. Customer Analysis
 
 How to categorize customers in a given month?
-11. New:  with at least an order last month and no order in the past
-12. Constant:  with at least two orders per month for three months in the last four months
-13. Occasional:  with at least one order in the last four months, but not as for typology Constant or New
-14. Inactive:   with no order in the last four months, and not Constant in the last 12 months
-15. Churn risk:  with no order in the last four months after being Constant at least once in the last 12 months.
+16. New:  with at least an order last month and no order in the past
+17. Constant:  with at least two orders per month for three months in the last four months
+18. Occasional:  with at least one order in the last four months, but not as for typology Constant or New
+19. Inactive:   with no order in the last four months, and not Constant in the last 12 months
+20. Churn risk:  with no order in the last four months after being Constant at least once in the last 12 months.
 
 ![[Pasted image 20241224161915.png]]
 
