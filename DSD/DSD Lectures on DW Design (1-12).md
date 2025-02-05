@@ -762,7 +762,7 @@ There are several options.
 	1. instead of having a single row per order, we split based on the contribution of agent
 	2. it requires to rethink all the dw design
 
-*Solution 2. *
+*Solution 2. Auxiliary table*
 
 Instead of a fk to the agent, we may have a fk to the group of agents in the order.
 
@@ -772,20 +772,26 @@ There is a problem.
 So far, every reference to the fact table is towards a single row. Not anymore with this solution (?).
 It may break for optimization of star join queries.
 
-*Solution 3.*
+chatgpt-> queries joining Order and GroupMembers may produce multiple rows per fact, leading to incorrect aggregations if not handled carefully.
+
+
+*Solution 3. Traditional many-to-many*
 
 A table AgentOrder, typical many-to-many intermediate table.
 However, this is very problematic for the idea behind the star join.
 
 ![[Pasted image 20250205215402.png]]
 
-*Solution 4.*
+*Solution 4. Bridge table (star join safe) *
 
 Similar to recursive hierarchies.
 With a bridge table.
 
 Group is a dimension, which allows for the star join.
 The non-standard part of the query consists of obtaining the agents from the group of agents.
+
+In the previous design (solution 2 with auxiliary table), joining Order and GroupMembers created multiple rows per fact, which could lead to incorrect aggregations.
+Here, the Order table remains one row per fact, and the allocation logic is handled separately in AgentGroup.
 
 ![[Pasted image 20250205215658.png]]
 
