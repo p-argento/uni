@@ -633,6 +633,8 @@ An example of fast change is the year of the customer.
 
 Type 1 is obvious, because we just overwrite the value.
 
+## Type 2
+
 Let's analyse the type. 2.
 When we want to preserve the full history of cases.
 We have 2 cases.
@@ -664,21 +666,118 @@ Having an attribute in the fact table is space consuming, if we consider the lar
 Note that we will need the inital surrogate key in the staging area to assign it to the customer
 
 
+## Type 3
 
-Type 3.
-Do not use it.
+Type 3. Do not use it.
+Add a column with old_zip.
+This complicates a lot the ueries.
+And we can keep only a smaller portion of older values.
 
-
-
-
-
-
-
+![[Pasted image 20250205211137.png]]
 
 
+## Type 4
+Fast changing dimensions.
+
+Think about the years of service for each guide.
+We may decide to use type 2, but it is not a good idea because we will have too many and frequent changes.
+
+It is better to use a separate table, very similar to the junk table used for degenerate dimensions.
+
+We add a row for every possible combination of attributes that change fast.
+By constructing this "mini-table".
+Changing means changing the foreign key in the fact table to link it to the new row in the mini-table with the new attributes updated.
+Meaning that me move the changes from the dimension to a different table.
+The number of rows in the mini-table is given by the product of cardinality of the attributes to be changed.
+
+![[Pasted image 20250205212638.png]]
+
+For small dimensions, type 2 is still recommended.
+
+In type 4, the advantage is that we do not need to add new rows in the dimension as for type 2. Only a change in the foreign key is needed.
+However, the disadvantage of type 4 is an additional column in the (large) fact table.
 
 
+## Shared dimensions.
 
+![[Pasted image 20250205213211.png]]
+
+## Recursive hierarchies
+
+Each agent has a boss, which is an agent, except the boss.
+
+*Solution 1. Without a bridge table*
+
+The supervisor of the agent will be a foreign key SupervisorFK to an agentPK. This fk will be absent for the boss, ie NULL.
+
+![[Pasted image 20250205213442.png]]
+
+![[Pasted image 20250205213530.png]]
+
+There are some problems with this solution.
+How can we find the total revenue for the subordinates?
+We want all the subordinates.
+It will require many joins, but how many? There is an extension of SQL called Recursive SQL, but these queries are slow.
+Not a good solution.
+
+![[Pasted image 20250205213820.png]]
+
+*Solution 2. With ForTheHierarchies table*
+
+Build a table "ForTheHierarchy", where we have one row for each ascendent and discendent.
+Not only for father-child, but for all possible descendants of father1.
+We precompute all possible pairs, also with some informations like the NoLevels, also whether the agent is a leaf in the hierarchy.
+The key point is that we precompute this table.
+
+![[Pasted image 20250205214125.png]]
+
+How to use this table?
+Starting from order, we will join with the rows where the supervisor is agent 2, and they will match with all the subordinates.
+With a single query.
+
+![[Pasted image 20250205214318.png]]
+
+## Multivalued dimensions
+One last complicated transformation.
+
+When an order is done by possaibly more than one agent.
+In the fact table we admit only one agent.
+What if we want to admit more agents?
+There are several options.
+
+*Solution 1. Change the granularity*
+1. change the granularity of the fact
+	1. instead of having a single row per order, we split based on the contribution of agent
+	2. it requires to rethink all the dw design
+
+*Solution 2. *
+
+Instead of a fk to the agent, we may have a fk to the group of agents in the order.
+
+![[Pasted image 20250205215032.png]]
+
+There is a problem.
+So far, every reference to the fact table is towards a single row. Not anymore with this solution (?).
+It may break for optimization of star join queries.
+
+*Solution 3.*
+
+A table AgentOrder, typical many-to-many intermediate table.
+However, this is very problematic for the idea behind the star join.
+
+![[Pasted image 20250205215402.png]]
+
+*Solution 4.*
+
+Similar to recursive hierarchies.
+With a bridge table.
+
+Group is a dimension, which allows for the star join.
+The non-standard part of the query consists of obtaining the agents from the group of agents.
+
+![[Pasted image 20250205215658.png]]
+
+![[Pasted image 20250205215856.png]]
 
 
 
@@ -704,27 +803,27 @@ starting from 25:00
 We conclude the DW Design with a more complex DW that is CRM.
 
 The CRM is made of
-7. operational CRM
-8. analytical CRM
+2. operational CRM
+3. analytical CRM
 
 ![[Pasted image 20241224160247.png]]
 
 We can do 4 types of analysis.
-9. Sales and Marketing Analysis
+4. Sales and Marketing Analysis
 	1. Sales
 	2. Market
 	3. Channel
 	4. Promo Campaign
-10. Profitability Analysis
+5. Profitability Analysis
 	1. Customer
 	2. Product
 	3. Market
 	4. Campaign
 	5. Channel
-11. Service Quality Analysis
+6. Service Quality Analysis
 	1. Product return
 	2. Order fulfillment
-12. Customer Analysis
+7. Customer Analysis
 	1. Customer segmentation
 	2. Customer retention
 	3. Customer satisfaction
@@ -751,9 +850,9 @@ Here we can see the customers that used the promotion.
 
 Also *Profitability Analysis*.
 Note that
-13. Total Cost = Product Cost + Returns Cost + Promotion Cost 
-14. Margin = Revenue - Returns Value – Total Cost 
-15. Margin % = Margin / (Revenue - Returns Value)
+8. Total Cost = Product Cost + Returns Cost + Promotion Cost 
+9. Margin = Revenue - Returns Value – Total Cost 
+10. Margin % = Margin / (Revenue - Returns Value)
 
 ![[Pasted image 20241224161256.png]]
 
@@ -772,11 +871,11 @@ Also *Order fullfillment analysis*
 ## 4. Customer Analysis
 
 How to categorize customers in a given month?
-16. New:  with at least an order last month and no order in the past
-17. Constant:  with at least two orders per month for three months in the last four months
-18. Occasional:  with at least one order in the last four months, but not as for typology Constant or New
-19. Inactive:   with no order in the last four months, and not Constant in the last 12 months
-20. Churn risk:  with no order in the last four months after being Constant at least once in the last 12 months.
+11. New:  with at least an order last month and no order in the past
+12. Constant:  with at least two orders per month for three months in the last four months
+13. Occasional:  with at least one order in the last four months, but not as for typology Constant or New
+14. Inactive:   with no order in the last four months, and not Constant in the last 12 months
+15. Churn risk:  with no order in the last four months after being Constant at least once in the last 12 months.
 
 ![[Pasted image 20241224161915.png]]
 
