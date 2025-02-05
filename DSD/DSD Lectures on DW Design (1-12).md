@@ -625,9 +625,22 @@ It is like having a View, but the View is persistent, this subquery is not. The 
 # dsd11
 Slowly changing dimensions, fast changing dimensions, shared dimensions. Recursive hierarchies. Multivalued dimensions. [Exercises at home (Travel agency extended) for the lesson 12](https://didawiki.di.unipi.it/lib/exe/fetch.php/mds/dsd/dsd11.assignments.pdf "mds:dsd:dsd11.assignments.pdf (142.7 KB)").
 
-## ...
+## Changing dimensions
 Let's start with the changes in the dimensions.
 
+![[Pasted image 20250205161544.png]]
+An example of fast change is the year of the customer. 
+
+Type 1 is obvious, because we just overwrite the value.
+
+Let's analyse the type. 2.
+When we want to preserve the full history of cases.
+We have 2 cases
+1. we have both the surrogate key and a natural key identifier
+	1. for instance for people we may have the SSN (Social Security Number)
+	2. we may track the same person with different addresses, because these rows will have the same SSN
+	3. if one customer change the zip code, we just create a new row with the same SSN and a different zip
+	4. 
 
 
 
@@ -659,27 +672,27 @@ starting from 25:00
 We conclude the DW Design with a more complex DW that is CRM.
 
 The CRM is made of
-1. operational CRM
-2. analytical CRM
+2. operational CRM
+3. analytical CRM
 
 ![[Pasted image 20241224160247.png]]
 
 We can do 4 types of analysis.
-1. Sales and Marketing Analysis
+4. Sales and Marketing Analysis
 	1. Sales
 	2. Market
 	3. Channel
 	4. Promo Campaign
-2. Profitability Analysis
+5. Profitability Analysis
 	1. Customer
 	2. Product
 	3. Market
 	4. Campaign
 	5. Channel
-3. Service Quality Analysis
+6. Service Quality Analysis
 	1. Product return
 	2. Order fulfillment
-4. Customer Analysis
+7. Customer Analysis
 	1. Customer segmentation
 	2. Customer retention
 	3. Customer satisfaction
@@ -706,9 +719,9 @@ Here we can see the customers that used the promotion.
 
 Also *Profitability Analysis*.
 Note that
-1. Total Cost = Product Cost + Returns Cost + Promotion Cost 
-2. Margin = Revenue - Returns Value – Total Cost 
-3. Margin % = Margin / (Revenue - Returns Value)
+8. Total Cost = Product Cost + Returns Cost + Promotion Cost 
+9. Margin = Revenue - Returns Value – Total Cost 
+10. Margin % = Margin / (Revenue - Returns Value)
 
 ![[Pasted image 20241224161256.png]]
 
@@ -727,11 +740,11 @@ Also *Order fullfillment analysis*
 ## 4. Customer Analysis
 
 How to categorize customers in a given month?
-1. New:  with at least an order last month and no order in the past
-2. Constant:  with at least two orders per month for three months in the last four months
-3. Occasional:  with at least one order in the last four months, but not as for typology Constant or New
-4. Inactive:   with no order in the last four months, and not Constant in the last 12 months
-5. Churn risk:  with no order in the last four months after being Constant at least once in the last 12 months.
+11. New:  with at least an order last month and no order in the past
+12. Constant:  with at least two orders per month for three months in the last four months
+13. Occasional:  with at least one order in the last four months, but not as for typology Constant or New
+14. Inactive:   with no order in the last four months, and not Constant in the last 12 months
+15. Churn risk:  with no order in the last four months after being Constant at least once in the last 12 months.
 
 ![[Pasted image 20241224161915.png]]
 
