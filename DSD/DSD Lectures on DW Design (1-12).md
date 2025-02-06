@@ -790,7 +790,7 @@ With a bridge table.
 Group is a dimension, which allows for the star join.
 The non-standard part of the query consists of obtaining the agents from the group of agents.
 
-In the previous design (solution 2 with auxiliary table), joining Order and GroupMembers created multiple rows per fact, which could lead to incorrect aggregations.
+In the previous design (solution 2 with auxiliary ta), joining Order and GroupMembers created multiple rows per fact, which could lead to incorrect aggregations.
 Here, the Order table remains one row per fact, and the allocation logic is handled separately in AgentGroup.
 
 ![[Pasted image 20250205215658.png]]
