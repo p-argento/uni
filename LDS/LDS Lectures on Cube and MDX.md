@@ -288,7 +288,7 @@ select {[Measures].[Store Sales], [Measures].[Profit]} on columns,
 crossjoin([Time].[The Year].[The Year] , [Time].[DayMonthYear].[The Month]) on rows
 from [Sales]
 ```
-
+You cannot use the hierarchy twice.
 
 Query 11.
 ..
