@@ -48,7 +48,7 @@ Context dependent, means that the way we connect an element depends on the other
 
 
 
-## semantics ambiguities, relaxed sound nets, relaxed sound EPC diagrams, 
+## semantics ambiguities
 
 ![[Pasted image 20250210115726.png]]
 
@@ -64,6 +64,39 @@ One single node is translated into 6 nodes.
 Once we have done the translation of all the arcs, we need to take into account the
 
 ![[Pasted image 20250210120222.png]]
+
+Example.
+![[Pasted image 20250210121517.png]]
+Observe that there are two arcs between two places, which is not allowed. So we apply the fusion style.
+Then we fix the two different end places.
+
+![[Pasted image 20250210121708.png]]
+
+Now we move to woped and discover that is not sound.
+There are 4 unbounded places.
+
+![[Pasted image 20250210121736.png]]
+
+We look at the coverability graph.
+We colour in green succesful nodes and in red the failures.
+(together with predecessors), the others where we can choose we color in orange.
+
+![[Pasted image 20250210122002.png]]
+
+It means that after following an oragne path, the decision will then impact what happens in the future.
+
+![[Pasted image 20250210122107.png]]
+
+Can we repair the model?
+Instead of having an OR join, we use an END.
+Now the model is bounded but not live anymore, meaning that we risk a deadlock.
+> always remember that there is the deadlock node.
+
+We might try to fix the petri net, but what about the original epc?
+
+## relaxed sound nets, relaxed sound EPC diagrams, 
+
+
 
 
 
