@@ -268,6 +268,50 @@ Remember that we need a ? gateway if we need to wait a decision from the other p
 
 Now to analyze these diagrams we follow the same strategy we used for EPC.
 
+## BPMN semantics
+
+![[Pasted image 20250211144600.png]]
+
+There are many formal semantics, but use petri nets.
+There is the same problem with OR-join that was in EPC.
+
+![[Pasted image 20250211144716.png]]
+If the wf net is sound, then the bpmn diagram is sound.
+
+## Translation from BPMN to Petri
+
+![[Pasted image 20250211144755.png]]
+
+![[Pasted image 20250211144817.png]]
+
+The bpmn that we translate are simplified.
+
+![[Pasted image 20250211144903.png]]
+![[Pasted image 20250211144955.png]]
+
+![[Pasted image 20250211145024.png]]
+Before the translation, it is useful to translate into these.
+Be careful in particular with the event-based gate.
+
+![[Pasted image 20250211145138.png]]
+Prof suggested not to use some of them.
+
+![[Pasted image 20250211145209.png]]
+
+How to translate?
+
+![[Pasted image 20250211145232.png]]
+
+![[Pasted image 20250211145245.png]]
+
+![[Pasted image 20250211145337.png]]
+The intermediate step is a hybrid diagram with elements of a petrin net.
+
+![[Pasted image 20250211145410.png]]
+
+![[Pasted image 20250211145447.png]]
+
+
 
 
 
