@@ -50,7 +50,7 @@ Nets Analysis
 23. process-mining
 24. quantitative-analysis
 
-
+![[Pasted image 20250211160103.png]]
 
 
 

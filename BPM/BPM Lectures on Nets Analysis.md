@@ -326,6 +326,8 @@ The intermediate step is a hybrid diagram with elements of a petrin net.
 Diagnosis of Workflow nets:  
 Woped, S-components, S-cover, sound f.c wf nets are safe, TP-handles, PT-handles, well-handled nets, well-structured wf nets, Woflan, ProM, error sequences, non-live sequences, unbounded sequences_
 
+![[Pasted image 20250211155844.png]]
+
 
 
 
