@@ -18,7 +18,12 @@ We exploit petri nets to analyze epc diagrams.
 ![[Pasted image 20250210114428.png|300]]
 
 
-## from EPC to wf nets, net fragments, dummy style, fusion style, unique start, unique end, three transformations
+We explore 3 different approaches
+
+![[Pasted image 20250210115252.png]]
+
+
+## (1) FROM EPC TO WF NETS, net fragments, dummy style, fusion style, unique start, unique end, three transformations
 
 How to assign smeantics?
 We transform epc diagrams into nets to use woped.
@@ -96,6 +101,55 @@ We might try to fix the petri net, but what about the original epc?
 
 ## relaxed sound nets, relaxed sound EPC diagrams, 
 
+![[Pasted image 20250211122521.png]]
+
+![[Pasted image 20250211122529.png]]
+
+![[Pasted image 20250211122554.png]]
+ If for every transition of the net, there exists an execution in the language of the net (with one token in i and one in o), such that the transition t is used in that execution.
+ Meaning that the transition can participate to a sound execution.
+
+![[Pasted image 20250211122800.png]]
+There is a transition (O1B) that cannot participate to a sound execution. This net is not relaxed sound then.
+
+However, from the point of view of the EPC.
+The EPC diagram is relaxed sound, because the transition of the OR join is translated into many nodes. And at least one of these nodes participate in sound executions.
+Therefopre the OR node itself can be part of sound execution.
+The underlying petri net however is NOT sound.
+
+The problem is that there is no theroem for relaxed soundness.
+![[Pasted image 20250211123135.png]]
+
+
+
+
+
+## (2) FROM RESTRICTED EPC TO FC NETS, problems with (X)OR joins, OR join policies (wfa, fc, et),
+
+Second attempt.
+We consider diagrams with NO OR connectors.
+
+We insert dummy transitions in a preliminary step (step 0).
+The we follow the usual 3 steps.
+
+
+...
+
+
+![[Pasted image 20250211123536.png]]
+
+The good point is that we can obtain free choice nets using this approach.
+
+
+
+
+## (3) FROM DECORATED EPC TO NETS
+
+![[Pasted image 20250211123943.png]]
+
+![[Pasted image 20250211124358.png]]
+
+...
 
 
 
@@ -104,23 +158,7 @@ We might try to fix the petri net, but what about the original epc?
 
 
 
-
-## from restricted EPC diagrams to f.c. nets, problems with (X)OR joins, OR join policies (wfa, fc, et),
-
-
-
-
-## from decorated EPC diagrams to nets_  
-
-
-
-
-
-
-
-
-
-
+> for the project, do not use epc diagrams because there will be collaborations.
 
 
 # 20 - Workflow Systems
@@ -129,24 +167,113 @@ slides 20
 Exercises:  
 free-choice nets, clusters, siphons, traps, SAT encoding_  
   
-
-  
 Workflow systems:  
-I/O interfaces, workflow modules, stuctural compatibility, workflow system, weak soundness_
+I/O interfaces, workflow modules, structural compatibility, workflow system, weak soundness_
 
+![[Pasted image 20250211124719.png]]
+
+![[Pasted image 20250211124736.png]]
+
+![[Pasted image 20250211124746.png]]
+
+![[Pasted image 20250211124812.png]]
+
+Note the different between blue places that are input places because they have only outgoing arcs, and they are in the presets of transitions in the net.
+
+![[Pasted image 20250211124929.png]]
+
+After validation of soundness, you can add places in the interface, but it is no longer a workflow net, it becomes a workflow module.
+
+![[Pasted image 20250211125041.png]]
+
+It is not a wf net anymore because there are many initial places and final places.
+
+We can compose modules.
+
+![[Pasted image 20250211125139.png]]
+
+![[Pasted image 20250211125150.png]]
+
+the output places in one side matches the input places in the other side.
+
+![[Pasted image 20250211125239.png]]
+
+![[Pasted image 20250211125303.png]]
+
+The idea is to transform this set of wf modules into a wf net.
+We must enforce a unique initial and final places.
+
+![[Pasted image 20250211125440.png]]
+
+![[Pasted image 20250211125528.png]]
+![[Pasted image 20250211125643.png]]
+
+We can change the behavior of the auctioning service.
+
+![[Pasted image 20250211125926.png]]
+![[Pasted image 20250211125939.png]]
+
+Typically collaborations are not free choice.
+Because they wait for others.
+
+
+*weak soundness*
+
+![[Pasted image 20250211130126.png]]
+
+![[Pasted image 20250211130136.png]]
+
+![[Pasted image 20250211130312.png]]
+
+This is weak sound.
 
 
 # 21 - BPMN Analysis
-
-
-
 
 Exercises:  
 workflow systems_  
   
 BPMN:  
-from BPMN diagrams to nets_  
+from BPMN diagrams to nets
   
+![[Pasted image 20250211130655.png]]
+
+Collaboration between 2 or more partners.
+BPMN is the best notation because it allows collaboration.
+
+![[Pasted image 20250211130836.png]]
+
+Elements
+1. Pools and lanes to assign resposanbilities for the execution of tasks.
+2. flow objects
+	1. events
+	2. tasks
+	3. gateways
+3. connecting objects
+	1. flow relation
+	2. message passing relations
+4. artifacts
+	1. (you can remove them before starting the analysis)
+
+![[Pasted image 20250211131301.png]]
+
+![[Pasted image 20250211131316.png]]
+
+Patient and doctor.
+
+![[Pasted image 20250211131337.png]]
+
+![[Pasted image 20250211131352.png]]
+Remember that we need a ? gateway if we need to wait a decision from the other partner.
+
+Now to analyze these diagrams we follow the same strategy we used for EPC.
+
+
+
+
+
+
+
 
 
 
@@ -154,6 +281,14 @@ from BPMN diagrams to nets_
 
 Diagnosis of Workflow nets:  
 Woped, S-components, S-cover, sound f.c wf nets are safe, TP-handles, PT-handles, well-handled nets, well-structured wf nets, Woflan, ProM, error sequences, non-live sequences, unbounded sequences_
+
+
+
+
+
+
+
+
 
 
 
