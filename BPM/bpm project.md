@@ -12,7 +12,7 @@ Prof suggestions.
 1. analyze separately the soundness of swimlanes
 	1. then put them together and analyze the collaboration.
 
-Subprocesses is a good idea
+Subprocesses is a good idea.
 
 ![[Pasted image 20250211150921.png]]
 
