@@ -230,7 +230,8 @@ If N and N' are safe and sound, then the result is safe and sound.
 
 ![[Pasted image 20250128120637.png]]
 ![[Pasted image 20250128120705.png]]
-...
+![[Pasted image 20250215171455.png]]
+![[Pasted image 20250215171547.png]]
 
 You can take any net that is safe and sound and reuse it as a block.
 Even if the net looks complicated, we know that is safe and sound if the smaller blocks are.
