@@ -6,6 +6,7 @@ Prof. Pappalardo
 [[Geo labs]]
 
 [[Riccardo Di Clemente]]
+[geo conference](https://www.datastories.org/bmda24/BMDA24Accepted.html)
 
 ## News
 Try the compression exercise.
