@@ -298,18 +298,28 @@ Prof suggested not to use some of them.
 
 ![[Pasted image 20250211145209.png]]
 
-How to translate?
+	How to translate?
 
 ![[Pasted image 20250211145232.png]]
 
 ![[Pasted image 20250211145245.png]]
 
-![[Pasted image 20250211145337.png]]
+![[Pasted image 20250215165146.png]]
+
+![[Pasted image 20250215165205.png]]
+
+
 The intermediate step is a hybrid diagram with elements of a petrin net.
 
 ![[Pasted image 20250211145410.png]]
 
 ![[Pasted image 20250211145447.png]]
+
+![[Pasted image 20250215164844.png]]
+
+![[Pasted image 20250215164854.png]]
+
+*example of order process*
 
 
 
