@@ -289,9 +289,17 @@ The bpmn that we translate are simplified.
 ![[Pasted image 20250211144903.png]]
 ![[Pasted image 20250211144955.png]]
 
+1. an end event has just one incoming flow
+2. all activities and intermediate events have exactly one incoming flow and one outgoing flow?
+3. all gateways have either one incoming flow (and multiple outgoing) or one outgoing (and multiple incoming)
+Decompose and add components if necessary.
+
 ![[Pasted image 20250211145024.png]]
+
 Before the translation, it is useful to translate into these.
-Be careful in particular with the event-based gate.
+Be careful in particular with the event-based gate. Remember that when in one partner we have a xor-split representing a decision, in the other we expect an event-based split.
+
+
 
 ![[Pasted image 20250211145138.png]]
 Prof suggested not to use some of them.
@@ -321,6 +329,46 @@ The intermediate step is a hybrid diagram with elements of a petrin net.
 
 *example of order process*
 
+It's up to you to use the sugarized or desugarized version (in particular for xor-split), woped will analyze in the same way.
+
+Analyze the coverability graph to see if there are some end notes with more than one token. Go back in the graph to find the bad decision.
+
+Analyze first each lane separately (forget about the partner).
+Then add the collaboration.
+
+If every transition has one incoming and one outgoing arc, it is an s-net. Even without analysis, it will be safe and sound.
+
+Free-choice violations will always be there if there are event-based gateways because the transitions after the split depend on different presets (different incoming messages but common split).
+This means that the analysis will require a lot of time.
+
+*buyer and seller example*
+
+...
+
+
+
+
+*importnat things*
+
+We can use activity looping in the full diagram. For example
+
+![[Pasted image 20250218120345.png]]
+
+![[Pasted image 20250218120357.png]]
+
+![[Pasted image 20250218120420.png]]
+
+Replace subprocesses.
+Think about soundness by construction.
+
+In woped there where problems with subprocesses, so my suggestion is to flatten the analysis.
+
+
+*For the variation*
+
+![[Pasted image 20250218120642.png]]
+
+
 
 
 
@@ -337,6 +385,47 @@ Diagnosis of Workflow nets:
 Woped, S-components, S-cover, sound f.c wf nets are safe, TP-handles, PT-handles, well-handled nets, well-structured wf nets, Woflan, ProM, error sequences, non-live sequences, unbounded sequences_
 
 ![[Pasted image 20250211155844.png]]
+
+## S-components, S-cover
+S-coverability
+
+Recall the rank theorem.
+We needed S-invariants.
+
+![[Pasted image 20250218121009.png]]
+
+![[Pasted image 20250218120944.png]]
+
+![[Pasted image 20250218121102.png]]
+
+An S-component is a particular subnet that satisfies some constraints.
+
+![[Pasted image 20250218121154.png]]
+
+![[Pasted image 20250218121300.png]]
+
+Be careful because only some path are s-net.
+![[Pasted image 20250218121446.png]]
+
+![[Pasted image 20250218121458.png]]
+
+
+
+
+
+
+## sound f.c wf nets are safe
+
+
+## TP-handles, PT-handles, well-handled nets, well-structured wf nets
+
+## Woflan, ProM, 
+
+
+## error sequences, non-live sequences, unbounded sequences
+
+
+
 
 
 
