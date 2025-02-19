@@ -437,6 +437,16 @@ We can compose free-choice sound wf net.
 
 The second structural element that we consider in woped is called wellstructuredness.
 
+TP stands for TransitionPlace.
+It is a block.
+It's better NOT to have TP handles.
+
+![[Pasted image 20250219162145.png]]
+
+it starts with a transition and ends with a place.
+
+*PT-handle*
+
 
 
 
@@ -451,6 +461,29 @@ The second structural element that we consider in woped is called wellstructured
 
 
 ## error sequences, non-live sequences, unbounded sequences
+
+
+Error sequences are not detected by woped, but by woflan.
+
+In woflan, you cannot draw the net, only analyze. From woped, export into tpn format.
+Woflan is windows-only but you can use the prom plugin.
+
+promtools.org
+
+Behavioral error sequences.
+
+Related to the violation of
+1. option to complete
+2. proper completion
+
+Let's analyze non-live sequences first.
+
+They are dangerouse sequences to be executed.
+
+...
+
+Now Unbounded sequences.
+Such that proper completion is no longer possible.
 
 
 
