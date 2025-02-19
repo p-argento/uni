@@ -409,15 +409,43 @@ Be careful because only some path are s-net.
 
 ![[Pasted image 20250218121458.png]]
 
+How can we derive a positive s-invariant?
+We simply start from an s-component assigning 1 to the places of the s-component and 0 to the other. This automatically creates an s-invariant.
 
+Then remember that the linear combination of s-invariant creates an s-invariant, so we simply combine I1=I2.
 
+![[Pasted image 20250219154111.png]]
 
+![[Pasted image 20250219154312.png]]
 
+![[Pasted image 20250219154336.png]]
+
+![[Pasted image 20250219154422.png]]
+
+note the unbounded place c8 that is not covered by the S-place.
+
+> remember that the reset transition is implicit in woped and it shows s-components for N*
 
 ## sound f.c wf nets are safe
 
+![[Pasted image 20250219154557.png]]
+
+We can compose free-choice sound wf net.
+
 
 ## TP-handles, PT-handles, well-handled nets, well-structured wf nets
+
+The second structural element that we consider in woped is called wellstructuredness.
+
+
+
+
+
+
+
+
+
+
 
 ## Woflan, ProM, 
 
