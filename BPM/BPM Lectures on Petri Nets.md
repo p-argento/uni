@@ -8,12 +8,14 @@ Petri Nets
 Slide 8. Lecture 9.
 
 From automata to nets:  
-Inductive definitions, Kleene star, finite state automata, transition function, destination function, language accepted by an automaton, from automata to Petri nets, places, transitions, tokens_
+Inductive definitions, Kleene star, finite state automata, transition function, destination function, language accepted by an automaton, from automata to Petri nets, places, transitions, tokens
+
+![[Pasted image 20250220114624.png|300]]
 
 Exercises (lecture ?):  
 BPMN and FSA_  
 
-![[Pasted image 20250118192548.png]]
+## Inductive definitions, 
 
 This is an overview of the basic concepts of Petri Nets.
 
@@ -24,55 +26,86 @@ Why Petri Nets in business process analysis
 
 Definitions
 1. an automata (or transition system) is used for sequential protocols (or systems)
-	1. but do not capture concurrent behaviour directly
+	1. it is mathematical model of a sequential model
+	2. but do not capture concurrent behaviour directly
 2. a petri net is a mathematical model of a parallel and concurrent system
+
+## Kleene star, 
+
+![[Pasted image 20250220115413.png]]
 
 Notation.
 ![[Pasted image 20250118193133.png]]
 
 Topics
-1. Notation
-2. Finite automata examples
-3. DFA
-4. NFA
-5. Reshaping
+3. Notation
+4. Finite automata examples
+5. DFA
+6. NFA
+7. Reshaping
 
-## FSA Examples
+## finite state automata, transition function, destination function, language accepted by an automaton, 
+
+*FSA Examples*
 Finite State Automata
 
 Applications.
 Finite automata are widely used, e.g., in  protocol analysis,  text parsing,  video game character behavior,  security analysis,  CPU control units,  natural language processing,  speech recognition,  mechanical devices  (like elevators, vending machines, traffic lights)  and many more ...
 
+![[Pasted image 20250220115511.png]]
+
 How to define an automaton?
-1. identify the admissible states of the system
+8. identify the admissible states of the system
 	1. mark the error states
-2. add transitions from one state to another
+9. add transitions from one state to another
 	1. no transition to recover from error states
-3. set the initial state
-4. (optional) mark some states as final states
+10. set the initial state
+11. (optional) mark some states as final states
 
 ![[Pasted image 20250118193817.png]]
+
+In pacman, there are
+1. states -> characters behaviour
+2. transitions -> events that cause change in behaviour
 
 ## DFA
 Deterministic Finite Automata
 
 It is important to understand
-1. definition of DFA
+3. definition of DFA
 	1. is a tuple $A=(Q,\sum,\delta,q_0,F)$
-2. transition function $\delta$
+4. transition function $\delta$
 	1. destination function defined recursively
-3. language of A, ie L(A)
+5. language of A, ie L(A)
 	1. for the string processing $w$
-4. transition diagram
+6. transition diagram
 	1. graph to represent A
-5. transition table
+7. transition table
+8. destination function
 
 
 ![[Pasted image 20250118194102.png]]
 
 
 ![[Pasted image 20250118194125.png]]
-![[Pasted image 20250118194230.png]]
+
+![[Pasted image 20250220115858.png]]
+
+![[Pasted image 20250220120103.png]]
+
+![[Pasted image 20250220120156.png]]
+
+![[Pasted image 20250220120211.png]]
+
+![[Pasted image 20250220120243.png]]
+
+![[Pasted image 20250220120313.png]]
+
+![[Pasted image 20250220120329.png]]
+
+
+
+
 
 
 
@@ -87,7 +120,9 @@ Non-deterministic Finite Automaton
 why??
 
 
-## Reshaping
+## from automata to Petri nets, places, transitions, tokens
+
+Reshaping
 
 Steps
 1. get a token
@@ -106,10 +141,10 @@ Ingredients
 ![[Pasted image 20250118195859.png]]
 
 Some facts
-1. nets are bipartite graphs
+19. nets are bipartite graphs
 	1. arcs never connect two places
 	2. arcs never connect two transitions
-2. static structure for dynamic systems
+20. static structure for dynamic systems
 	1. places, transitions, arcs do not change
 		1. called passive components
 	2. tokens move around places
@@ -142,26 +177,23 @@ modelling with Petri nets_
 
 Woped basics
 
-
-![[Pasted image 20250118200404.png|300]]
-
-Formalization of the basics concepts of Petri Nets.
+![[Pasted image 20250220120644.png|300]]
 
 Free Choice Nets (book, optional reading) 
 https://www7.in.tum.de/~esparza/bookfc.html
 
 Topics
-1. Petri nets: basic definitions
-2. Petri nets: enabling and firing
-3. Petri nets: occurence graph
+21. Petri nets: basic definitions
+22. Petri nets: enabling and firing
+23. Petri nets: occurence graph
 
 
 ## 1. Petri nets: basic definitions
 
 Ingredients
-1. Places are sort of repositories where we can store something
-2. Transitions can be operations
-3. Tokens
+24. Places are sort of repositories where we can store something
+25. Transitions can be operations
+26. Tokens
 
 Multisets.
 We can assign a function S that returns 1 if the element is present and 0 otherwise.
@@ -196,12 +228,12 @@ Analogously with places.
 ## 2. Petri nets: enabling and firing
 
 Topics
-1. enabling
-2. firing
-3. patterns (xor, and, or)
-4. firing sequence
-5. reachable markings
-7. more on sequences
+27. enabling
+28. firing
+29. patterns (xor, and, or)
+30. firing sequence
+31. reachable markings
+32. more on sequences
 	1.  infinite sequence
 	2. enabled sequence
 	3. prefix of sequences
@@ -230,16 +262,16 @@ In the FSA the states are finite (finite state...) while  in petri nets the mark
 The second is more reasonable because the flight and hotel can both be booked, while in the first net the token can go only in one of the states.
 
 Patterns.
-1. sequence
+33. sequence
 	1. easy
 	2. ![[Pasted image 20250119183444.png]]
-2. XOR
+34. XOR
 	1. ![[Pasted image 20250119183431.png|200]]
 	2. the first will be fired
-3. AND
+35. AND
 	1. ![[Pasted image 20250119183457.png|200]]
 	2. wait for both
-4. OR
+36. OR
 	1. combination of both
 	2. ![[Pasted image 20250119183514.png|300]]
 
@@ -269,11 +301,11 @@ Now, reasoning on petri nets is general more complicated than reasoning on autom
 ![[Pasted image 20250119185349.png]]
 
 ***more on sequences***
-1. infinite sequence
-2. enabled sequence
-3. prefix of sequences
-4. enabled sequence
-5. projection of sequence
+37. infinite sequence
+38. enabled sequence
+39. prefix of sequences
+40. enabled sequence
+41. projection of sequence
 
 *Infinte sequence.*
 It means an unbounded sequence.
@@ -361,10 +393,10 @@ Free Choice Nets (book, optional reading)  https://www7.in.tum.de/~esparza/bookf
 From now on, no isolated nodes.
 
 We study two properties
-1. behavioural (or dynamic)
+42. behavioural (or dynamic)
 	1. how the markings will evolve during computation
 	2. depend on the initial marking and the firing rules
-2. structural
+43. structural
 	1. related to connections, ie the shape of the graph representing the net
 	2. less computationally expensive to verify
 	3. also provide some behavioural properties
@@ -374,10 +406,10 @@ We study two properties
 We introduce some of the properties of Petri nets that can play an important role in the verificaition of business processes.
 
 Behavioural properties
-1. liveness
-2. deadlock-freedom
-3. boundness
-4. cyclicity also called reversibility
+44. liveness
+45. deadlock-freedom
+46. boundness
+47. cyclicity also called reversibility
 Liveness and boundness are the most important
 
 Let's see some notation
@@ -387,8 +419,8 @@ We assume that M is reachable from M0
 ## 1. Liveness
 
 Liveness can be referred to
-1. a single transition t
-2. the whole net
+48. a single transition t
+49. the whole net
 
 A transition is live if, at any point of the computation, it is possible to fire t in the future (meaning that it cannot be excluded).
 A Petri net is live if all of its transitions are live.
@@ -408,8 +440,8 @@ Examples.
 ![[Pasted image 20250121114404.png]]
 
 How to check liveness?
-1. Write reachable markings
-2. for each transition, check that it can be reached from a reachable marking
+50. Write reachable markings
+51. for each transition, check that it can be reached from a reachable marking
 
 
 *dead transition*
@@ -464,21 +496,21 @@ Move the concept of liveness to places.
 
 *obvious facts*
 obvious facts
-1. a system is not live iff it has a transition that can  become dead at some reachable marking  
-2. a system is not place-live iff it has a place that can  become dead at some reachable marking 
-3. If a place / transition is dead at M, then it remains dead  at any marking reachable from M  (the set of dead nodes can only increase during a run)
+52. a system is not live iff it has a transition that can  become dead at some reachable marking  
+53. a system is not place-live iff it has a place that can  become dead at some reachable marking 
+54. If a place / transition is dead at M, then it remains dead  at any marking reachable from M  (the set of dead nodes can only increase during a run)
 
 true or false?
-1. Every transition in the pre- or post-set of a dead place  is also dead  (true)
-2. Every place in the pre- or post-set of a dead transition  is also dead (false
+55. Every transition in the pre- or post-set of a dead place  is also dead  (true)
+56. Every place in the pre- or post-set of a dead transition  is also dead (false
 
 Proposition. 
 Live systems are also place-live.
 ![[Pasted image 20250121122526.png]]
 
 Place liveness on the  occurrence graph 
-1. A place p is live  iff  From any node of the occurrence graph we can reach a  node with a token in p  
-2. A place p is dead (at M0)  iff  All the nodes of the occurrence graph have no token in p
+57. A place p is live  iff  From any node of the occurrence graph we can reach a  node with a token in p  
+58. A place p is dead (at M0)  iff  All the nodes of the occurrence graph have no token in p
 
 Exercise
 ![[Pasted image 20250121122823.png]]
@@ -500,9 +532,9 @@ Remember that `[M>` is the set of markings reachable from M0.
 Deadlock freedom on  the occurrence graph  61  A net is deadlock free  iff  Every node of the occurrence graph has an outgoing arc
 
 Questions
-1. Does liveness imply deadlock-freedom? YES
+59. Does liveness imply deadlock-freedom? YES
 	1. Can you exhibit a live Petri net that is not deadlock-free?) NO
-3. Does deadlock-freedom imply liveness? NO
+60. Does deadlock-freedom imply liveness? NO
 	1. Can you exhibit a deadlock-free net that is not live?) YES
 
 We can also prove it by contradiction.
@@ -570,32 +602,32 @@ It is live.
 We do not include tokes anymore.
 
 The properties we study are
-1. connectedness
-2. s-nets
-3. t-nets
-4. free-choice nets
+61. connectedness
+62. s-nets
+63. t-nets
+64. free-choice nets
 
 Definition.
-1. net system
+65. net system
 	1. denotes a petri net WITH a given initial marking
 	2. we study behavioural properties of net system
-2. net
+66. net
 	1. denotes a petri net WITHOUT specifying the initial marking
 	2. we study structural properties of nets
 
 Other definitions.
-1. path
-2. circuit
-3. undirected path
+67. path
+68. circuit
+69. undirected path
 
 ![[Pasted image 20250122121227.png]]
 
 ## 1. Connectedness
 
-1. A net (P,T,F) is weakly connected
+70. A net (P,T,F) is weakly connected
 	1. if there is an undirected path between any two distinct nodes
 	2. (meaning that) iff it cannot be splitted in separated components 
-2. A weakly connected net is strongly connected
+71. A weakly connected net is strongly connected
 	1. there is a path between any two distinct nodes
 	2. (meaning that) iff  for every arc (x,y) there is a path from y to x
 
@@ -604,9 +636,9 @@ Other definitions.
 ## 2. S-nets vs T-nets vs free-choice nets
 
 Definition
-1. conflict
+72. conflict
 	1. if from a place we need to choose among different transitions
-2. synchronization
+73. synchronization
 	1. if a transition needs the tokens from different places to be enabled
 
 ![[Pasted image 20250122122145.png]]
@@ -638,15 +670,15 @@ The aim is to avoid that a choice between transitions  is influenced by the rest
 
 Easiest way:  keep places with more than one output transition apart  from transitions with more than one input place 
 In other words,
-1. if (p,t) is an arc, then it means that  t is the only output transition of p (no conflict) 
-2. OR  p is the only input place of t (no synch)
+74. if (p,t) is an arc, then it means that  t is the only output transition of p (no conflict) 
+75. OR  p is the only input place of t (no synch)
 
 But we can study a slightly more general class of nets by  requiring a weaker constraint.
 
 A Petri net is free-choice if  
-1. for any pair of transitions
+76. for any pair of transitions
 	1. their pre-sets are either disjoint or equal 
-2. or, equivalently, if  for any pair of places 
+77. or, equivalently, if  for any pair of places 
 	1. their post-sets are either disjoint or equal
 
 
@@ -669,14 +701,14 @@ behavioural properties, structural properties
 This is about a more convenient way to represent petri nets using linear algebra.
 
 Topics
-1. markings as vectors
-2. incidence matrices
-3. Parikh vectors
-4. marking equation lemma
-5. monotonicity lemma
-6. monotonicity lemma 2 and a corollary
-7. boundedness lemma
-8. repetition lemma
+78. markings as vectors
+79. incidence matrices
+80. Parikh vectors
+81. marking equation lemma
+82. monotonicity lemma
+83. monotonicity lemma 2 and a corollary
+84. boundedness lemma
+85. repetition lemma
 
 ## 1. markings as vectors
 
@@ -746,9 +778,9 @@ Essentially with the parikh vector we are allow to add one by one the transition
 ![[Pasted image 20250123113640.png]]
 
 Marking equation  lemma: consequences
-1. The marking reached by any occurrence  sequence only depends on the number of  occurrences of each transition 
+86. The marking reached by any occurrence  sequence only depends on the number of  occurrences of each transition 
 	1. It does not depend on the order in which  transitions occur 
-2. Every fireable permutation of the same  transitions leads to the same marking
+87. Every fireable permutation of the same  transitions leads to the same marking
 
 
 
@@ -764,8 +796,8 @@ Everything that can be done with less resources, can be done with more resources
 (lecture 14)
 
 Reminders
-1. infinite sequence
-2. enabledness
+88. infinite sequence
+89. enabledness
 
 If M enables sigma, then adding some prefix L will still enables sigma.
 
@@ -813,8 +845,8 @@ Also deadlock-free, boundedness and cyclicity are invariants.
 We study now other types of invariants.
 They depends only on the structure of the net (independlty of initial markings).
 They are
-1. S-invariants
-2. T-invariants
+90. S-invariants
+91. T-invariants
 
 You only truly understand a model if you think  about it in terms of invariants!
 
@@ -826,9 +858,9 @@ aka place-invariant (from Stellen)
 It assigns the importance.
 
 How to find an S-invariant?
-1. take the invariance matrix of a net
-2. multiply it by a vector of variables
-3. solve the system of equations (for example by substitution)
+92. take the invariance matrix of a net
+93. multiply it by a vector of variables
+94. solve the system of equations (for example by substitution)
 
 ![[Pasted image 20250123192320.png]]
 It means that the tokens in p1, p2 have the same weights and the ones in p3, p4, p5 have the same weigth.
@@ -915,11 +947,11 @@ positive s-invariant means that we do not want to use 0.
 ![[Pasted image 20250124155135.png]]
 
 Recap
-1. if we are able to find a positive s-invariant then the net is bounded for any initial marking
+95. if we are able to find a positive s-invariant then the net is bounded for any initial marking
 	1. and viceversa, if we find that is unbounded, then there is no positive s-invariant
-2. to prove that a net is non-live, it is enough to find a semi-positive s-invariant such that the weighted sum of the resources in the initial marking is equal to zero
+96. to prove that a net is non-live, it is enough to find a semi-positive s-invariant such that the weighted sum of the resources in the initial marking is equal to zero
 	1. we have seen a theorem that, if the net is live, any initial marking multipied by the initial marking should be greater than zero
-3. we can also use invariants to check reachability, we can conclude that a marking is not reachable if the weighted product of the sum of resources for the initial marking and that marking is different
+97. we can also use invariants to check reachability, we can conclude that a marking is not reachable if the weighted product of the sum of resources for the initial marking and that marking is different
 
 
 
@@ -975,11 +1007,11 @@ Firing the transitions in the invariant those number of times, will the number o
 
 ![[Pasted image 20250124113315.png]]
 The examples above are
-1.  dining philosophers
-2. producer and consumer
-3. vending machine
+98.  dining philosophers
+99. producer and consumer
+100. vending machine
 Also remember
-1. traffic light (and german traffic light)
+101. traffic light (and german traffic light)
 
 
 ![[Pasted image 20250124112538.png]]

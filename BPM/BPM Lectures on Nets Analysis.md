@@ -152,12 +152,6 @@ The good point is that we can obtain free choice nets using this approach.
 ...
 
 
-
-
-
-
-
-
 > for the project, do not use epc diagrams because there will be collaborations.
 
 
@@ -168,7 +162,7 @@ Exercises:
 free-choice nets, clusters, siphons, traps, SAT encoding_  
   
 Workflow systems:  
-I/O interfaces, workflow modules, structural compatibility, workflow system, weak soundness_
+## I/O interfaces, workflow modules, structural compatibility, workflow system, weak soundness_
 
 ![[Pasted image 20250211124719.png]]
 

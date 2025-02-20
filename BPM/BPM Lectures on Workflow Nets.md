@@ -13,6 +13,8 @@ triggers
 
 (START LECTURE 15 PART 2 MINUTE 27)
 
+![[Pasted image 20250220114249.png]]
+
 Topics
 1. definition, 
 2. syntax sugar, 
