@@ -388,7 +388,8 @@ weak and strong connectedness, S-systems, T-systems, free-choice nets
 We formalize some interesting properties for Petri nets.
 Later on in the course we will see how these properties are connected with the soundness of workflows.
 
-Free Choice Nets (book, optional reading)  https://www7.in.tum.de/~esparza/bookfc.html
+Free Choice Nets (book, optional reading) 
+https://www7.in.tum.de/~esparza/bookfc.html
 
 From now on, no isolated nodes.
 
