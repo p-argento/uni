@@ -240,7 +240,7 @@ Topics
 	4. enabled sequence
 	5. projection of sequence
 
-We say that a transition is enablet if the marking M  enables t.
+We say that a transition is enabled if the marking M  enables t.
 If M->t it means that there are enough tokens in M to enable t.
 Two possible notations can be used.
 
