@@ -859,9 +859,9 @@ aka place-invariant (from Stellen)
 It assigns the importance.
 
 How to find an S-invariant?
-92. take the invariance matrix of a net
-93. multiply it by a vector of variables
-94. solve the system of equations (for example by substitution)
+1. take the incidence matrix of a net
+2. multiply it by a vector of variables
+3. solve the system of equations (for example by substitution)
 
 ![[Pasted image 20250123192320.png]]
 It means that the tokens in p1, p2 have the same weights and the ones in p3, p4, p5 have the same weigth.
@@ -948,11 +948,11 @@ positive s-invariant means that we do not want to use 0.
 ![[Pasted image 20250124155135.png]]
 
 Recap
-95. if we are able to find a positive s-invariant then the net is bounded for any initial marking
+4. if we are able to find a positive s-invariant then the net is bounded for any initial marking
 	1. and viceversa, if we find that is unbounded, then there is no positive s-invariant
-96. to prove that a net is non-live, it is enough to find a semi-positive s-invariant such that the weighted sum of the resources in the initial marking is equal to zero
+5. to prove that a net is non-live, it is enough to find a semi-positive s-invariant such that the weighted sum of the resources in the initial marking is equal to zero
 	1. we have seen a theorem that, if the net is live, any initial marking multipied by the initial marking should be greater than zero
-97. we can also use invariants to check reachability, we can conclude that a marking is not reachable if the weighted product of the sum of resources for the initial marking and that marking is different
+6. we can also use invariants to check reachability, we can conclude that a marking is not reachable if the weighted product of the sum of resources for the initial marking and that marking is different
 
 
 
@@ -1008,11 +1008,11 @@ Firing the transitions in the invariant those number of times, will the number o
 
 ![[Pasted image 20250124113315.png]]
 The examples above are
-98.  dining philosophers
-99. producer and consumer
-100. vending machine
+7.  dining philosophers
+8. producer and consumer
+9. vending machine
 Also remember
-101. traffic light (and german traffic light)
+10. traffic light (and german traffic light)
 
 
 ![[Pasted image 20250124112538.png]]
