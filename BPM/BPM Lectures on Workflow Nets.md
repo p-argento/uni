@@ -108,10 +108,8 @@ What kind of analysis can we do?
 2. behavioural analysis (soundness)
 
 ## 1. Types of analysis
-1. structural analysis, activity analysis, token analysis, net analysis, verification and validation, reachability analysis, bags, coverability graph
+1. structural analysis, activity analysis, token analysis, net analysis, verification and validation, reachability analysis, 
 
-## 2. soundness
-3. soundness, N*, main soundness theorem, strong connectedness of N*
 
 
 
@@ -121,9 +119,15 @@ example of deadlock
 ![[Pasted image 20250125171014.png]]
 
 
+## bags, coverability graph
+
 The coverability graph, compared to occurence graph, allow to represent the graph of infinite nets.
 
 Extended bag is like a marking, but for the coverability graph.
+
+## 2. soundness
+2. soundness, N*, main soundness theorem, strong connectedness of N*
+
 
 ![[Pasted image 20250125191702.png]]
 
@@ -144,9 +148,9 @@ The proof is divided in 3 parts.
 Let's move to the proof of the main theorem.
 Generally the wf net N is not live.
 The proof is made of 3 steps.
-1. if N* is live and bounded -> N is sound
-2. if N is sound -> N* is bounded
-3. if N is sound -> N* is live
+3. if N* is live and bounded -> N is sound
+4. if N is sound -> N* is bounded
+5. if N is sound -> N* is live
 
 see the proof in lecture 17 part 1.
 ...
@@ -218,8 +222,8 @@ Safe Workflow nets (lecture 17p2):
 soundness (and safeness) by construction
 
 This set of slides is about
-1. building a net that is sound by construction
-2. we show a technique to build sound wf nets
+6. building a net that is sound by construction
+7. we show a technique to build sound wf nets
 
 ## The idea of building blocks
 
@@ -248,8 +252,8 @@ We can replace some blocks with single transitions.
 When we have two parallel branches they may create a state explosion.
 
 We replace
-1. a xor block
-2. a nested iteration (careful with the direction)
+8. a xor block
+9. a nested iteration (careful with the direction)
 
 Sometimes it is helpful to desugarize (remove decorations like xor).
 
@@ -476,8 +480,8 @@ It can be checked in linear time.
 ![[Pasted image 20250129153006.png]]
 
 So
-1. in P the problems can be checked and solved effectively
-2. in NP the problems can be only checked effectively
+10. in P the problems can be checked and solved effectively
+11. in NP the problems can be only checked effectively
 This means that a P problem is also NP.
 
 Example of Hamiltonian circuit.
