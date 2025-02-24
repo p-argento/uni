@@ -429,6 +429,8 @@ We can compose free-choice sound wf net.
 
 ## TP-handles, PT-handles, well-handled nets, well-structured wf nets
 
+![[Pasted image 20250224220602.png]]
+
 The second structural element that we consider in woped is called wellstructuredness.
 
 TP stands for TransitionPlace.
