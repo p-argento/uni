@@ -202,16 +202,6 @@ A solution would be to always send the letter.
 
 
 
-
-
-
-
-
-
-
-
-
-
 # 15 - Safe Workflow Nets
 slides 15
 
