@@ -138,7 +138,7 @@ The second one is similar to liveness.
 Boundedness and liveness will not be checked directly on the wf net, but on a variant of it, called N*.
 We add one transition to reset the net and repeat any number of times. Note that is not a wf net anymore.
 
-MAIN THEOREM.
+## main soundness theorem, strong connectedness of N*
 
 ![[Pasted image 20250125192350.png]]
 
