@@ -125,8 +125,7 @@ The coverability graph, compared to occurence graph, allow to represent the grap
 
 Extended bag is like a marking, but for the coverability graph.
 
-## 2. soundness
-2. soundness, N*, main soundness theorem, strong connectedness of N*
+## 2. soundness, N*
 
 
 ![[Pasted image 20250125191702.png]]
@@ -138,7 +137,7 @@ The second one is similar to liveness.
 Boundedness and liveness will not be checked directly on the wf net, but on a variant of it, called N*.
 We add one transition to reset the net and repeat any number of times. Note that is not a wf net anymore.
 
-## main soundness theorem, strong connectedness of N*
+## main soundness theorem,
 
 ![[Pasted image 20250125192350.png]]
 
@@ -155,7 +154,7 @@ The proof is made of 3 steps.
 see the proof in lecture 17 part 1.
 ...
 
-
+## strong connectedness of N*
 
 ![[Pasted image 20250128115402.png]]
 ->* is not a firing sequence, it just means a connected path.
