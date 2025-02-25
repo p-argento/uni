@@ -519,6 +519,8 @@ Today we finish the overview of structural properties that guarantee behavioural
 
 ![[Pasted image 20250130105625.png]]
 
+![[Pasted image 20250225204901.png]]
+
 There are many equivalent definitions. The one prof prefer is 
 ![[Pasted image 20250130105658.png]]
 
