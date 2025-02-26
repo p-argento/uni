@@ -337,6 +337,9 @@ strongly means that we can reach every node from any other node.
 
 
 ## boundedness theorem, 
+any S sistem is bounded.
+It is a corollary of the fundamental property.
+
 ## workflow S-nets_  
 
 ![[Pasted image 20250129121841.png]]
