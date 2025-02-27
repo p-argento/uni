@@ -142,9 +142,83 @@ The alpha-algorithm uses the play-in strategy  to scan the event log for particu
 Any two logs with the same matrix will derive the same model.
 
 How are the ordering relations derived?
+There are log-based ordering relations
 
+1. a is immediately followed by b
+	1. a >L b
+![[Pasted image 20250227143630.png]]
 
+Then there are 3 possibilities
+![[Pasted image 20250227143706.png]]
 
+Given any two pairs of events, there are 4 casas
+1. concurrent
+2. mutual exclusive
+3. a precedes b
+4. b precedes a
+
+First, we get all the immediate precedences.
+Second, we look for other precedence, mutual exclusion and concurrence.
+
+![[Pasted image 20250227144222.png]]
+
+*footprint matrix*
+Now we want to use this information to build the footprint matrix (which is symmetric).
+
+![[Pasted image 20250227144342.png]]
+
+Which are the patterns we look at?
+1. a sequence pattern
+	1. with sequence pattern
+2. xor-split and xor-join
+	1. with mutual exclusive pattern
+3. and-split and and-join
+	1. with parallel pattern
+
+![[Pasted image 20250227144528.png]]
+
+The first 3 steps define the transitions of interest.
+The first transitions are those that appear in the beginning of some trace (equivalently for end).
+
+The 4th step is important to get the dependencies among events.
+There are decision points.
+Intuitively, given two set of transitions A and B, there will be a place s.t. its preset is A and its postset is B.
+
+![[Pasted image 20250227145008.png]]
+
+Step 5. max decision points
+We only care about the largest pairs.
+I throw away all the pairs that are dominated by others.
+This is called maximal decision points.
+For example a,b is dominated by a,be.
+In the set of decision points, we keep only those that are not dominated by others.
+
+Step 6. places
+One place for each pair of maximal decision point.
+Starting from maximal decision points,
+
+Step 7. arcs
+The place ab will have a as preset and b as postset.
+
+Step 8. net
+Obtain the net.
+
+![[Pasted image 20250227145820.png]]
+
+Try the following exercise given the log, check the footprint matrix and the model extracted.
+![[Pasted image 20250227145857.png]]
+
+![[Pasted image 20250227145939.png]]
+
+This algorithm is not perfect. It can be redundant.
+One particular issue is the short loop, meaning transitions with the same name, the alpha algo cannot detect them.
+However, the designer can detect it because there will be a disconnected node.
+
+![[Pasted image 20250227150052.png]]
+
+Another limitation is noise.
+Noise is a behaviour that is rare.
+Maybe we just want a model that generalize.
 
 
 
@@ -161,8 +235,36 @@ Conformance checking: fitness measures.
 
 
 
+
+
+
+
+
+
 # 24 - Quantitative Analysis
 slides 24
 
 Quantitative analysis (lecture 23):  
 Performance dimensions and objectives, KPI, cyle time analysis, Little's law, cost analysis
+
+
+## performance dimensions and objectives, KPI, 
+
+
+
+
+## cyle time analysis, 
+
+
+## Little's law, 
+
+
+## cost analysis
+
+
+
+
+
+
+
+
