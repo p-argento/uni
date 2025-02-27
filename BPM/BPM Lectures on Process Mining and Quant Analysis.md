@@ -121,6 +121,28 @@ Be careful with inserting splits and joins, if they are not in the trace, it mea
 ## alpha-algorithm, footprint matrix,
 Process Discovery: $\alpha$-algorithm
 
+A process discovery algorithm is a function that maps an event log L onto a process model M.
+
+![[Pasted image 20250227123209.png]]
+
+For the alpha algo, multiplicity is mot important.
+
+![[Pasted image 20250227123305.png]]
+
+![[Pasted image 20250227123411.png]]
+
+How to measure the fitness? We will describe it next time.
+
+*alpha-algo*
+
+It was one the first algorithms and it still has some limitations.
+
+The alpha-algorithm uses the play-in strategy  to scan the event log for particular patterns,  called log-based ordering relations,  to create a footprint matrix of the log.
+
+Any two logs with the same matrix will derive the same model.
+
+How are the ordering relations derived?
+
 
 
 
