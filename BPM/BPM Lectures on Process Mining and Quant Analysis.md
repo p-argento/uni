@@ -8,7 +8,30 @@ Exercises:
 process discovery, performance analysis
 
 
-## intro, Event logs, discovery, conformance, enhancement, perspectives, play-in, play-out, replay, overfitting, underfitting, alpha-algorithm, footprint matrix, naive fitness, improved fitness, comparing footprints
+## intro, Event logs, 
+
+
+## discovery, conformance, enhancement, perspectives, 
+
+
+
+## play-in, play-out, replay, 
+There are 3 strategies.
+
+
+## overfitting, underfitting, 
+Discovery and conformance: an example.
+
+
+
+## alpha-algorithm, footprint matrix,
+Process Discovery: $\alpha$-algorithm
+
+
+
+
+## naive fitness, improved fitness, comparing footprints
+Conformance checking: fitness measures.
 
 
 
