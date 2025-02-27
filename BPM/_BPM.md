@@ -12,6 +12,7 @@
 [[BPM Lectures on Petri Nets]]
 [[BPM Lectures on Workflow Nets]]
 [[BPM Lectures on Nets Analysis]]
+[[BPM Lectures on Process Mining and Quant Analysis]]
 
 Examples
 1. traffic lights (with german variation)

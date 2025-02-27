@@ -495,24 +495,3 @@ Such that proper completion is no longer possible.
 
 
 
-# 23 - Process Mining
-slides 23
-
-Exercises:  
-EPC analysis_  
-  
-Process mining:  
-intro, Event logs, discovery, conformance, enhancement, perspectives, play-in, play-out, replay, overfitting, underfitting, alpha-algorithm, footprint matrix, naive fitness, improved fitness, comparing footprints_
-
-
-
-# 24 - Quantitative Analysis
-slides 24
-
-Exercises:  
-_process discovery, peformance analysis_  
-  
-Quantitative analysis (lecture 23):  
-_Performance dimensions and objectives, KPI, cyle time analysis, Little's law, cost analysis_  
-  
-A final note (with project instructions)

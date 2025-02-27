@@ -1,0 +1,27 @@
+# 23 - Process Mining
+slides 23
+  
+Process mining:  
+intro, Event logs, discovery, conformance, enhancement, perspectives, play-in, play-out, replay, overfitting, underfitting, alpha-algorithm, footprint matrix, naive fitness, improved fitness, comparing footprints
+
+Exercises:  
+process discovery, performance analysis
+
+
+## intro, Event logs, discovery, conformance, enhancement, perspectives, play-in, play-out, replay, overfitting, underfitting, alpha-algorithm, footprint matrix, naive fitness, improved fitness, comparing footprints
+
+
+
+
+
+
+
+
+
+
+
+# 24 - Quantitative Analysis
+slides 24
+
+Quantitative analysis (lecture 23):  
+Performance dimensions and objectives, KPI, cyle time analysis, Little's law, cost analysis
