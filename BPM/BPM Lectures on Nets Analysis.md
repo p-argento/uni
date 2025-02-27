@@ -443,11 +443,11 @@ it starts with a transition and ends with a place.
 
 *PT-handle*
 
+...
 
 
 
-
-
+![[Pasted image 20250227191550.png]]
 
 
 
