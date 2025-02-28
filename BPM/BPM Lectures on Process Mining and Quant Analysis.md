@@ -225,19 +225,64 @@ Maybe we just want a model that generalize.
 ## naive fitness, improved fitness, comparing footprints
 Conformance checking: fitness measures.
 
+Some numerical measures about conformance of model with reality.
 
 
+![[Pasted image 20250228120657.png]]
+
+Fitness is a numerical measure of the proportion of behaviour in the event log possible according to the model.
+Fitness is the closest to conformance.
+
+This corresponds to check if a trace fit in the model.
+Note that missing a trace that is very frequent is more dangerous than missing a rare one.
+We multiply each trace for each multiplicity.
+Of course you cannot get a fitness more than 1.
+
+Almost fitting traces.
+Instead of the naive fitness, we use a new measure.
+We count all missing tokens.
+
+![[Pasted image 20250228121217.png]]
+
+m/c should be zero.
+The more missing tokens we have in the end, the more this is okay.
+Ideally there should be no remaining tokens.
+
+Let's see an example.
+While replaying the trace over the net, keep track of
+1. p=produced tokens
+2. c=consumed tokens
+In the end
+1. m=missing tokens
+2. r=remaining tokens
+If we are not able to complete the net, we increment the missing tokens counter and add it out of nowhere to continue (like a debit).
+In the end, count also the remaining.
+
+![[Pasted image 20250228121921.png]]
+
+This was for one trace, but for a log we use the multiplicity of a trace to obtain the fitness of a log with respect to a net N.
+
+![[Pasted image 20250228122208.png]]
+
+*drill-down*
+
+We can extract a model from non-fitting traces.
+...
 
 
+*compare footprints*
+This is a technique to compare models using the footprint.
+Use the play-out to extract traces from the model built.
 
+It is local complete when we can rebuild the footprint matrix again from the model obtained. Meaning it is representative for the model.
 
+How do the measure to compare work?
+We count how many cells have different relations.
+When they are identical, the conformance measure is 1.
 
+![[Pasted image 20250228122654.png]]
 
-
-
-
-
-
+![[Pasted image 20250228122740.png]]
 
 
 
@@ -247,19 +292,135 @@ slides 24
 Quantitative analysis (lecture 23):  
 Performance dimensions and objectives, KPI, cyle time analysis, Little's law, cost analysis
 
+We overview some techniques for the quantitative analysis of business processes.
 
 ## performance dimensions and objectives, KPI, 
 
+Remember the difference between
+1. validation (model and reality)
+2. verification (quality of model)
 
+In performance analysis, we focus on quantitative questions.
+There are 3 main dimensions
+1. faster (time)
+2. cheaper (finance)
+3. better (quality)
+For each of them, we study different KPIs.
+
+For time, we study
+1. cycle time
+	1. time needed to handle one case from start to end
+2. processing time (also service time)
+	1. subset of time of the resources handling the case (?)
+3. waiting time
+	1. difference
+
+Typical objectives for time
+1. reduce average cycle time,
+2. ...
+
+*finance*
+reducing the cost or increasing revenue.
+There are several types of costs, so we need aggregation functions.
+Cost types
+1. fixed cost
+2. variable cost
+3. operational cost
+	1. typically labour cost
+
+*quality*
+Much more difficult to measure.
+Distinguish
+1. external quality (perceived)
+2. internal quality (from viewpoint of process participant)
+
+Usually quality is correlated with time.
+
+![[Pasted image 20250228124512.png]]
+
+We will see
+1. flow analysis
+	1. to calculate min/max/avg cycle time of a process
+	2. to calculate avg cost of a process
+	3. to calculate error rate of a process
+2. ...
 
 
 ## cyle time analysis, 
 
+![[Pasted image 20250228124703.png]]
+
+![[Pasted image 20250228124804.png]]
+
+![[Pasted image 20250228124819.png]]
+
+![[Pasted image 20250228124912.png]]
+
+If there are alternative paths, we should use the branching probability of each branch (or assume equal probability).
+
+![[Pasted image 20250228125052.png]]
+
+We take the weighted sum of avg ct.
+
+![[Pasted image 20250228125208.png]]
+
+What about concurrent branches?
+Instead of the sum, we wait for the slowest taking the max.
+
+![[Pasted image 20250228125304.png]]
+
+What if a loop is involved?
+Imagine to expand the loop, the probability of having more and more activities will decrease.
+We call r the rework probability, meaning the probability to iterate the task (and 1-r the opposite).
+
+![[Pasted image 20250228125617.png]]
+
+![[Pasted image 20250228125648.png]]
+
+This value is larger than CTp as expended.
+This was called a loop 1 or more times.
+What about 0 or more times?
+The difference is just one occurence.
+The value will be smaller.
+
+![[Pasted image 20250228125951.png]]
+
+Example.
+
+![[Pasted image 20250228130053.png]]
+
+Exercise.
+
+![[Pasted image 20250228130145.png]]
+
+Waiting time vs processing time.
+Sometimes we want the theoretical time efficiency.
+And then the Cycle time efficientcy to understand if there is space to improve.
+
+## cost analysis
+
+We can redo the same difference.
+However, for the AND-block we need to take the sum instead of the max.
+
+![[Pasted image 20250228130446.png]]
+
+![[Pasted image 20250228130512.png]]
+
 
 ## Little's law, 
 
+It relates the cycle time to other important measures
+1. arrival rate
+2. work-in-process (WIP)
 
-## cost analysis
+![[Pasted image 20250228130619.png]]
+
+![[Pasted image 20250228130633.png]]
+
+Now we can use the inverse formula to calculate the CT.
+
+
+
 
 
 
