@@ -987,6 +987,11 @@ Firing the transitions in the invariant those number of times, will the number o
 
 ## 12. reproduction lemma
 
+!!!!!!!!
+
+
+
+
 ## 13. about liveness and boundedness
 
 ## 14. two connectedness theorems
