@@ -1,7 +1,7 @@
 > All models are wrong, but some are useful
 
 [[bpm project]]
-
+[[bpm exam review]]
 ## resources
 [BPM Didawiki](https://didawiki.di.unipi.it/doku.php/magistraleinformaticaeconomia/mpb/start)
 [[BMP Program]]
