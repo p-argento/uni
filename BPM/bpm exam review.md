@@ -6,7 +6,8 @@ Answering on paper the questions from telegram.
 2. 3 types of abstraction
 3. little's law
 4. stable sets
-5. 
+5. s-invariants properties
+6. 
 
 
 
