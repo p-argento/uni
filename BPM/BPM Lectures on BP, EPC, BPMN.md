@@ -308,7 +308,7 @@ Differences
 ![[Pasted image 20250118115200.png]]
 
 
-# bpm4 - Models and abstraction
+	# bpm4 - Models and abstraction
 Examples and Exercises:  
 Travel agency ochestration, coffe break example, buyers and resellers collaborations
 

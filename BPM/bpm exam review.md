@@ -4,10 +4,9 @@ Answering on paper the questions from telegram.
 *to be reviewed*
 1. bpmn vs epc
 2. 3 types of abstraction
-3. little's law
-4. stable sets
-5. s-invariants properties
-6. 
+3. stable sets
+4. s-invariants properties
+5. 
 
 
 
