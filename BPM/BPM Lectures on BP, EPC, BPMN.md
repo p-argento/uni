@@ -125,7 +125,7 @@ We divide
 2. work for customers
 
 *2. contractor*
-A contractor is a person (or a machine) who is a task.
+A contractor is a person (or a machine) who is assigned a task.
 
 *-> contract*
 A contract exists between the principal and the contractor.
