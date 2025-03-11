@@ -4,9 +4,61 @@ Answering on paper the questions from telegram.
 *to be reviewed*
 1. stable sets
 2. s-invariants properties
-3. 
 
-11-03-25
+*PETRI NETS*
+1. Introduction
+	1. marking equation lemma PROOF
+	2. monotonicity lemma PROOF
+2. Invariants
+	1. define S-invariants and fundamental property
+	2. s-invariants boundedness theorem PROOF and example
+	3. s-invariants liveness theorem PROOF
+	4. reproduction lemma of T-invariants PROOF and its relevance in process analysis
+3. soundness
+	1. workflow net definition
+	2. formally express the soundness requirements
+	3. draw a net that satisfies no dead tasks, option to complete but fails to satisfy proper completion
+	4. main theorem (3 PROOFS)
+4. S-systems and T-systems
+	1. S-systems: cosa sono, cos'è x e N, proprietà fondamentale,  boundness e liveness con dimostrazione.
+5. free-choice nets
+	1. what is the Rank Theorem
+	2. algorithm to find max unmarked siphon
+	3. siphons (definition, properties and algorithm to find max unmarked siphon)
+6. diagnosis
+	1. TP-handles and PT-handles and discuss potential issues associated with them about soundness
+	2. s coverable e s component
+
+
+*OTHER TOPICS*
+1. business process
+	1. process lifecycle in business process from design to validation
+	2. actors of the business process
+2. abstraction
+	1. describe the different types of abstraction (vertical, horizontal, aggregated) in process modeling
+3. EPC
+	1. Compare and contrast EPC and BPMN.
+	2. What strategies can be used to translate an EPC into a Petri net?
+	3. How are OR join policies handled in EPC?
+4. cycle time (quantitative analysis)
+	1. How do you conduct a quantitative analysis (cycle time and cost analysis) in business process models?
+	2. How is cycle time calculated in different process structures (sequential, parallel, XOR, loops)?
+	3. What is Little’s Law and what is the assumption?
+5. cost analyisis
+	1. How can cost analysis be approached, considering factors
+	2. rework probability?
+	3. Cost analysis (sequenza, parallel, xor, rework con formule)
+6. process mining
+	1. alpha-algorithm (describe the role of process mining and explain how the alpha algorithm uses the footprint matrix)
+	2. footprint matrix (4 types of relations)
+
+
+
+
+
+
+
+*11-03-25*
 Collecting questions from telegram
 
 - spiega il progetto
