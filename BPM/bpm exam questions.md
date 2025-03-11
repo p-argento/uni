@@ -21,6 +21,9 @@ Answering on paper the questions from telegram.
 	4. main theorem (3 PROOFS)
 4. S-systems and T-systems
 	1. S-systems: cosa sono, cos'è x e N, proprietà fondamentale,  boundness e liveness con dimostrazione.
+	2. s net e boundedness, trasposte in WF net e soundness nelle s net
+	3. - S-net: cos’è e cosa ci dice su invarianti, boundedness, liveness, soundness
+	4.  T-system: definizione e proprietà fondamentale
 5. free-choice nets
 	1. what is the Rank Theorem
 	2. algorithm to find max unmarked siphon
@@ -34,6 +37,7 @@ Answering on paper the questions from telegram.
 1. business process
 	1. process lifecycle in business process from design to validation
 	2. actors of the business process
+	3. business process life cycle validazione, simulazione verifica e ruoli relativi
 2. abstraction
 	1. describe the different types of abstraction (vertical, horizontal, aggregated) in process modeling
 3. EPC
