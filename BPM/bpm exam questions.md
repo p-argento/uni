@@ -8,29 +8,29 @@ Answering on paper the questions from telegram.
 *PETRI NETS*
 1. Introduction
 	1. marking equation lemma PROOF
-	2. monotonicity lemma PROOF
+	2. monotonicity lemma PROOF (bravo, perche ragiona bene)
 2. Invariants
 	1. define S-invariants and fundamental property
-	2. s-invariants boundedness theorem PROOF and example
+	2. s-invariants boundedness theorem PROOF and example (bene)
 	3. s-invariants liveness theorem PROOF
-	4. reproduction lemma of T-invariants PROOF and its relevance in process analysis
+	4. reproduction lemma of T-invariants PROOF and its relevance in process analysis (bravo)
 3. soundness
-	1. workflow net definition
-	2. formally express the soundness requirements
-	3. draw a net that satisfies no dead tasks, option to complete but fails to satisfy proper completion
-	4. main theorem (3 PROOFS)
+	1. workflow net definition (ok) 
+	2. formally express the soundness requirements (scritti perfetti )
+	3. draw a net that satisfies no dead tasks, option to complete but fails to satisfy proper completion ()
+	4. main theorem (3 PROOFS) (bravo) 
 4. S-systems and T-systems
 	1. S-systems: cosa sono, cos'è x e N, proprietà fondamentale,  boundness e liveness con dimostrazione.
 	2. s net e boundedness, trasposte in WF net e soundness nelle s net
 	3. - S-net: cos’è e cosa ci dice su invarianti, boundedness, liveness, soundness
 	4.  T-system: definizione e proprietà fondamentale
 5. free-choice nets
-	1. what is the Rank Theorem
-	2. algorithm to find max unmarked siphon
-	3. siphons (definition, properties and algorithm to find max unmarked siphon)
+	1. what is the Rank Theorem (ok)
+	2. algorithm to find max unmarked siphon ( ok)
+	3. siphons (definition, properties and algorithm to find max unmarked siphon) ()
 6. diagnosis
-	1. TP-handles and PT-handles and discuss potential issues associated with them about soundness
-	2. s coverable e s component
+	1. TP-handles and PT-handles and discuss potential issues associated with them about soundness (bravo)
+	2. s coverable e s component (riguarda)
 
 
 *OTHER TOPICS*
@@ -41,7 +41,7 @@ Answering on paper the questions from telegram.
 2. abstraction
 	1. describe the different types of abstraction (vertical, horizontal, aggregated) in process modeling
 3. EPC
-	1. Compare and contrast EPC and BPMN.
+	1. Compare and contrast EPC and BPMN (ok )
 	2. What strategies can be used to translate an EPC into a Petri net?
 	3. How are OR join policies handled in EPC?
 4. cycle time (quantitative analysis)
