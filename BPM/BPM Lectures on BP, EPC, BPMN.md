@@ -422,12 +422,16 @@ Ch. 1, 2 of Business Process Management: Concepts, Languages, Architectures
 
 ## What is the BP Lifecycle
 
-Comparison of BP Lifecycle wrt
-1. waterfall
+Comparison between
+1. BP Lifecycle
+	1. 5 phases
+2. waterfall
 	1. a sequential sw design process flowing downwards
-2. Extreme Programming (XP)
-	1. made of planning-feeback loops to be responsive wrt changing requirements
-3. Plan-Do-Check-Act (PDCA)
+	2. no concurrency wrt BP
+3. Extreme Programming (XP)
+	1. made of planning-feeback loops to be responsive with frequent releases wrt changing requirements
+	2. Bp is better organized
+4. Plan-Do-Check-Act (PDCA)
 	1. management method for control and continuous improvement of products
 
 ![[Pasted image 20250118161838.png]]
