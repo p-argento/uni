@@ -47,7 +47,7 @@ People are organized in specialized work units.
 There might be relatively autonomous divisions.
 
 Process orientation is based on a critical analysis of a concept to organize work units. 
-Originally introduced by Frederick Taylor. (!856-1915).
+Originally introduced by Frederick Taylor. (1856-1915).
 The aim of Taylorism is to improve industrial efficiency.
 The management formulates detailed plans and communicate it to the workers.
 Taylorism uses functional breakdown of complex work to small granularities.
@@ -308,7 +308,7 @@ Differences
 ![[Pasted image 20250118115200.png]]
 
 
-	# bpm4 - Models and abstraction
+# bpm4 - Models and abstraction
 Examples and Exercises:  
 Travel agency ochestration, coffe break example, buyers and resellers collaborations
 
@@ -357,7 +357,7 @@ Modelling Levels
 Definitions
 1. a business process meta-model (M2)
 1. a business process model (M1)
-	1. consists of a set oof activity modeles and execution constraints between them
+	1. consists of a set of activity modeles and execution constraints between them
 	2. like a blueprints
 3. a business process instance (M0)
 	1. represent a concrete case in the operational business of a company consisting of activity instances
@@ -400,7 +400,6 @@ It means to separate a system into distinct features that overlap in functionali
 
 ![[Pasted image 20250118160330.png]]
 
-???
 
 
 
