@@ -1,37 +1,30 @@
-01-03-25
-Answering on paper the questions from telegram.
 
-*to be reviewed*
-1. stable sets
-2. s-invariants properties
+# Popular questions
 
 *PETRI NETS*
 1. Introduction
 	1. marking equation lemma PROOF
-	2. monotonicity lemma PROOF (bravo, perche ragiona bene)
+	2. monotonicity lemma PROOF
 2. Invariants
 	1. define S-invariants and fundamental property
-	2. s-invariants boundedness theorem PROOF and example (bene)
+	2. s-invariants boundedness theorem PROOF and example
 	3. s-invariants liveness theorem PROOF
-	4. reproduction lemma of T-invariants PROOF and its relevance in process analysis (bravo)
+	4. reproduction lemma of T-invariants PROOF and its relevance in process analysis
 3. soundness
-	1. workflow net definition (ok) 
-	2. formally express the soundness requirements (scritti perfetti )
-	3. draw a net that satisfies no dead tasks, option to complete but fails to satisfy proper completion ()
-	4. main theorem (3 PROOFS) (bravo) 
+	1. workflow net definition
+	2. formally express the soundness requirements
+	3. draw a net that satisfies no dead tasks, option to complete but fails to satisfy proper completion
+	4. main theorem (3 PROOFS)
 4. S-systems and T-systems
-	1. S-systems: cosa sono, cos'è x e N, proprietà fondamentale,  boundness e liveness con dimostrazione.
-	2. s net e boundedness, trasposte in WF net e soundness nelle s net
-	3. - S-net: cos’è e cosa ci dice su invarianti, boundedness, liveness, soundness
-	4.  T-system: definizione e proprietà fondamentale
+	1. S-systems: fundamental property, invariant, boundedness e liveness PROOF
+	2.  T-system: definitionion and fundamental property
 5. free-choice nets
-	1. what is the Rank Theorem (ok)
-	2. algorithm to find max unmarked siphon ( ok)
-	3. siphons (definition, properties and algorithm to find max unmarked siphon) ()
+	1. what is the Rank Theorem
+	2. algorithm to find max unmarked siphon
+	3. siphons (definition, properties and algorithm to find max unmarked siphon)
 6. diagnosis
-	1. TP-handles and PT-handles and discuss potential issues associated with them about soundness (bravo)
-	2. s coverable e s component (riguarda)
-
+	1. TP-handles and PT-handles and discuss potential issues associated with them about soundness
+	2. s coverable e s component
 
 *OTHER TOPICS*
 1. business process
@@ -41,7 +34,7 @@ Answering on paper the questions from telegram.
 2. abstraction
 	1. describe the different types of abstraction (vertical, horizontal, aggregated) in process modeling
 3. EPC
-	1. Compare and contrast EPC and BPMN (ok )
+	1. Compare and contrast EPC and BPMN
 	2. What strategies can be used to translate an EPC into a Petri net?
 	3. How are OR join policies handled in EPC?
 4. cycle time (quantitative analysis)
@@ -56,14 +49,7 @@ Answering on paper the questions from telegram.
 	1. alpha-algorithm (describe the role of process mining and explain how the alpha algorithm uses the footprint matrix)
 	2. footprint matrix (4 types of relations)
 
-
-
-
-
-
-
-*11-03-25*
-Collecting questions from telegram
+# All questions from telegram
 
 - spiega il progetto
 - nel progetto è importante che ogni pool abbia un inizio ed una fine, teoricamente ogni pool potrebbe esser svolto indipendentemente dal resto, la traduzione e l'analisi sound va fatta su ogni pool e non solo sul flusso complessivo.
@@ -115,31 +101,30 @@ Collecting questions from telegram
 - Soundness 
 - Process analysis (tempi e costi)
 
-Spiegazione progetto e domandina riguardo ad una implementazione differente rispetto a quello che era stato fatto
-1) analisi quantitativa e cycle time, come si computa il costo al variare dei blocchi(sequenze, and, or split, loop)
-2) main theorem con prova solo della terza fase
-3) traduzione EPC in petri, strategie e stili
+- Spiegazione progetto e domandina riguardo ad una implementazione differente rispetto a quello che era stato fatto
+- analisi quantitativa e cycle time, come si computa il costo al variare dei blocchi(sequenze, and, or split, loop)
+- main theorem con prova solo della terza fase
+- traduzione EPC in petri, strategie e stili
 
-Explanation of the project starting from petrinet and semantic analysis of the final workflow net
-Oral Exam:
-1) Quantitative Analysis(Average Activity cost calculation of both alternation and Parallel loops)
-2) Little's law assumption
-3) 3 important properties of Soundness 
-4) To draw a petri net which holds no dead task, option to complete but doesn't  hold proper completion
-5)difference between EPC & BPMN
-6)Elements of EPC
+- Explanation of the project starting from petrinet and semantic analysis of the final workflow net
+- Quantitative Analysis(Average Activity cost calculation of both alternation and Parallel loops)
+- Little's law assumption
+- 3 important properties of Soundness 
+- To draw a petri net which holds no dead task, option to complete but doesn't  hold proper completion
+- difference between EPC & BPMN
+- Elements of EPC
 
--performance analysis (dimensions)
--cycle time analysis (all paths)
--cost analysis 
--little's law
--horizontal abstraction
--soundness
--draw petri net with no proper completion
+- performance analysis (dimensions)
+- cycle time analysis (all paths)
+- cost analysis 
+- little's law
+- horizontal abstraction
+- soundness
+- draw petri net with no proper completion
 - epc, elements
--difference epc and bpmn
--marking equation lemma 
--liveness in s-nets
+- difference epc and bpmn
+- marking equation lemma 
+- liveness in s-nets
 
 regarding project:
  - description of BPMN diagram;
@@ -161,7 +146,7 @@ about theory:
 - how is Woflan and if woflan is faster than woped
 - if we made bpmn graph immediately or we thought a bit more 
 
--s-invariant + fundamentals property 
+- s-invariant + fundamentals property 
 - s-invariant boundness theorem + proof
 - s-invariant liveness theorem + proof
 - what is the type of the s-invariant? Positive s-invariant
@@ -268,13 +253,13 @@ about theory:
 - È opportuno assegnare dei ruoli di responsabilità per le varie attività?
 - Tipi di astrazione + dettagli astrazione verticale
 
--Main Theorem con dimostrazione di parte 2 e 3
--Condizioni di Soundess
--CTE e TCT e come calcolare costi
--process Mining (a grandi linee)
--S-net, definizione e dire per quali condizioni è bounded e live
--S-Invariants, definizioni e dire quando è bounded e live 
--astrazione aggregata e orizzontale
+- Main Theorem con dimostrazione di parte 2 e 3
+- Condizioni di Soundess
+- CTE e TCT e come calcolare costi
+- process Mining (a grandi linee)
+- S-net, definizione e dire per quali condizioni è bounded e live
+- S-Invariants, definizioni e dire quando è bounded e live 
+- astrazione aggregata e orizzontale
 
 - definizione di soundness
 - disegnare un processo che non rispetta la proper completion
