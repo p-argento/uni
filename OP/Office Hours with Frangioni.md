@@ -14,6 +14,9 @@
 	5. exploit the box-constrained IPBCQP
 
 
+another office hour
+1. look code first, then lecture on svm
+2. 
 
 
 
