@@ -3,6 +3,8 @@
 
 - 11/11: trying to find a direction [[Basics of Numerical Linear Algebra]]
 
+- 19/03 working on frangioni's code on IP
+
 # Outline
 ---
 
