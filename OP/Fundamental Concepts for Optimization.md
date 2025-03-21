@@ -3,7 +3,7 @@ I will use this document as a reference for the crucial aspects that must be cle
 The final goal is to have a cheatsheet on paper (or latex).
 ChatGPT is so good I think I will use it to produce a book for the course from the slides.
 
-# PD vs PSD Matrix
+# PD vs PSD vs SPD Matrix
 
 Yes! Let's go step by step through the properties of QQ in quadratic programming (QP) and their implications for optimization algorithms.
 
@@ -81,7 +81,39 @@ xTQx≥0∀x∈Rn.x^T Q x \geq 0 \quad \forall x \in \mathbb{R}^n.
 
 Would you like me to expand on a specific QP algorithm or clarify anything further? 🚀
 
+Yes, **SPD** stands for **Symmetric Positive Definite**. It's indeed **different** from **PSD**, which stands for **Positive Semi-Definite**. Here's the distinction:
 
+### **1. Symmetric Positive Definite (SPD)**
+
+- **Symmetric**: The matrix is equal to its transpose, i.e., A=ATA = A^T.
+- **Positive Definite (PD)**: All the **eigenvalues** of the matrix are **positive** (λi>0\lambda_i > 0 for all ii).
+    - This means that for any non-zero vector xx, xTAx>0x^T A x > 0.
+- **SPD matrices** are a special case of symmetric matrices where the eigenvalues are strictly positive.
+
+### **2. Positive Semi-Definite (PSD)**
+
+- **Symmetric**: Like SPD, the matrix is equal to its transpose (A=ATA = A^T).
+- **Positive Semi-Definite (PSD)**: The eigenvalues of the matrix are **non-negative** (λi≥0\lambda_i \geq 0 for all ii).
+    - This means that for any non-zero vector xx, xTAx≥0x^T A x \geq 0, but it's allowed for some eigenvalues to be zero.
+
+### **Key Differences**:
+
+- **SPD**: All eigenvalues are **strictly positive** (i.e., greater than 0).
+- **PSD**: Eigenvalues are **non-negative** (i.e., greater than or equal to 0), meaning that some eigenvalues can be zero.
+
+### Why Conjugate Gradient (CG) Works Well for SPD Matrices:
+
+- The **Conjugate Gradient (CG)** method is most effective when the matrix QQ is **Symmetric Positive Definite (SPD)** because:
+    - SPD matrices have **unique solutions** and guarantee **positive eigenvalues**, ensuring that the solution process won't get stuck or experience instability.
+    - The method is **guaranteed to converge** in at most nn iterations, where nn is the dimension of the matrix, when used with SPD matrices.
+
+For **Positive Semi-Definite (PSD)** matrices, the CG method can still work, but:
+
+- The matrix might have **zero eigenvalues**, and the system might not have a unique solution (or it might have infinitely many solutions), so special care is needed.
+
+In optimization problems like Quadratic Programming (QP), having **SPD matrices** guarantees that the problem is well-posed and stable for algorithms like CG.
+
+Let me know if you'd like to dive deeper into how SPD and PSD matrices affect optimization methods!
 
 
 
@@ -195,8 +227,59 @@ When QQ is very ill-conditioned, solutions are unstable. Some common fixes:
 
 Would you like a more detailed breakdown of one of these methods? 🚀
 
+When we say "this is big" or "this is small" in the context of optimization (or numerical analysis in general), we are often referring to the **relative scale of numbers** in relation to **machine precision** and the **floating-point representation** used in the computer.
 
+### Key Points:
 
+1. **Floating-Point Representation**:
+    
+    - In computers, numbers are represented using **floating-point arithmetic**, which can introduce small errors due to limited precision.
+    - Most modern computers use **64-bit double-precision** floating-point numbers (IEEE 754 standard). These have a **machine epsilon** ϵ\epsilon of approximately: ϵ≈10−16\epsilon \approx 10^{-16} This means that the smallest relative difference between two numbers that can be represented is roughly 10−1610^{-16} times the larger of the two numbers.
+2. **Condition Number and Its Relation to Floating Point Precision**:
+    
+    - When your professor says that the condition number κ(Q)\kappa(Q) is **"big"** (e.g., κ(Q)≫106\kappa(Q) \gg 10^6), they're pointing out that the matrix QQ is **ill-conditioned**, meaning small numerical errors can significantly affect the solution.
+    - A **large condition number** κ(Q)\kappa(Q) (e.g., κ(Q)>106\kappa(Q) > 10^6) means that the matrix is **very ill-conditioned**, and **small errors** in data or calculations will lead to **large errors** in the solution.
+
+### How to Define "Big" and "Small" in Practice:
+
+To understand when a number is considered "big" or "small," let's break it down:
+
+1. **Small Numbers**:
+    
+    - **Small numbers** are typically those that are **close to the machine epsilon** ϵ≈10−16\epsilon \approx 10^{-16} in magnitude.
+    - For instance, if the magnitude of a number is smaller than 10−1610^{-16}, it may not be represented accurately in the floating-point system and could be considered **too small** for reliable calculations.
+2. **Big Numbers**:
+    
+    - **Big numbers** are those that are **much larger** than typical machine precision. If the number exceeds around **10610^6 or more**, it may be considered large in the context of optimization, especially when referring to ill-conditioning.
+    - In numerical analysis, **κ(Q)\kappa(Q) around 10610^6 or larger** often indicates an ill-conditioned problem, and when numbers are much larger than the machine's precision range, they can become **unstable** in computations.
+3. **Typical Ranges**:
+    
+    - **Condition number** κ(Q)≈101\kappa(Q) \approx 10^1 to 10310^3: These are typically **well-conditioned** problems and are stable to solve with most numerical methods.
+    - **Condition number** κ(Q)≈106\kappa(Q) \approx 10^6 to 10910^9: These are **moderately ill-conditioned**, meaning algorithms might converge slower or require more iterations.
+    - **Condition number** κ(Q)≫109\kappa(Q) \gg 10^9: These are **highly ill-conditioned**, where even small computational errors can lead to large errors in the solution, and special techniques like **preconditioning** or **regularization** are necessary.
+
+### **Practical Guidelines**:
+
+1. **Condition Number and Floating Point Precision**:
+    
+    - If κ(Q)\kappa(Q) is greater than 10610^6, the problem is likely **ill-conditioned** relative to the precision of the computer.
+    - For numbers greater than 10910^9, **numerical instability** is a serious concern, and you may need to use **regularization** or **preconditioning**.
+2. **Big vs Small Relative to Epsilon**:
+    
+    - If a matrix or vector element is smaller than 10−1610^{-16} in absolute value, it is considered **too small** for reliable computation (could be treated as zero).
+    - If an element or condition number is significantly larger than 10610^6, it's considered **"big"**, meaning the system is potentially **ill-conditioned**.
+
+### **When Your Professor Says "Big" or "Small"**:
+
+- A good rule of thumb is that **numbers smaller than machine epsilon** (10−16)(10^{-16}) are **small**, and **numbers larger than 10610^6 or 10910^9** in the context of condition numbers are considered **large** (ill-conditioned).
+- If your professor points to a number and says it’s **big**, they are likely referring to it being **much larger** than the typical precision (e.g., κ(Q)>106\kappa(Q) > 10^6), suggesting potential numerical instability or that the problem might be challenging for optimization algorithms.
+
+### Summary of How to Identify "Big" and "Small":
+
+- **Small**: Numbers below 10−1610^{-16}, or condition numbers less than 10310^3.
+- **Big**: Condition numbers above 10610^6, or numbers greater than 10910^9 indicating ill-conditioning.
+
+Does that make sense for interpreting your professor's references to big or small numbers in optimization? Would you like to dive deeper into any of these concepts?
 
 
 
