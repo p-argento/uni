@@ -5,6 +5,8 @@
 
 [[OP/OPTIMIZATION Survival Kit]]
 
+[[Fundamental Concepts for Optimization]]
+
 __________________________
 
 ## Outline
