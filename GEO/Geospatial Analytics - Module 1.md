@@ -246,6 +246,20 @@ Data representation model
 	1. stores geometries and attributes together
 
 
+## Spatial Operations
+
+> 1. intersection, union, difference
+> 2. buffering
+> 3. spatial join
+
+
+HERE
+
+
+
+
+
+
 
 
 ## Point spatial patterns
