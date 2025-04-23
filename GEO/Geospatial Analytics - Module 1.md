@@ -198,6 +198,54 @@ Content
 
 ...
 
+## Raster Layers
+Pixelized version of Earth.
+
+Usually the map is made of both raster and vector layers together.
+
+## Vector Data Model
+Purely geometrical description (NO raster NO vectorial).
+
+It is more practical for data analysis.
+It uses discrete geometrical objects to represent spatial features.
+1. data types
+	1. using points, lines and polygons on an empty space
+2. data properties
+	1. structuring the properties and spatial relationships of these geometric objects
+3. data format
+	1. coding and storing vector data in digital data files
+
+Vector Data types and properties
+1. point (0-dimension)
+2. line (1-dimension)
+3. polygon (2-dimensions)
+
+Data format (see “Data Format Examples” ([pdf](zotero://open-pdf/library/items/REJBJS4Y?page=15)))
+1. google KML
+2. GeoJSON
+3. Shapely (Python Library)
+
+![[Pasted image 20250423191948.png]]
+
+Terminology (alert!)
+1. (spatial) features (better call them *geometries*)
+	1. are objects (points, polygons, etc) in a layer
+	2. they are "features" of space, but the term can be confusing
+2. (non-spatial) *attributes*
+	1. are other variables
+	2. eg. the temperature
+	3. DO NOT call them features
+
+
+Data representation model
+(representing geometric object on computer):
+1. geo-relational data model
+	1. stores geometries and attributes separately (different tables)
+	2. associating attributes to objects may require joins
+2. object-relational data model
+	1. stores geometries and attributes together
+
+
 
 
 ## Point spatial patterns
