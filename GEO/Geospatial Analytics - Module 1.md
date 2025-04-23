@@ -76,6 +76,45 @@ It is based on 2 angles
 Meridians
 
 
+
+## Distance on the Earth
+
+Straight lines are replaced by *geodesics (great-circles)*.
+However, the Earth is only nearly spherical, meaning that great-circle distance are correct to within 0.5%, still this is the formula we use.
+Between two points we find the shortest arc on the great-circles which connects them. If they are not antipodal, this great-circle is unique.
+
+To compute the distance between two pointsWe can use
+1. spherical law of cosines
+2. haversine formula
+
+*1. spherical law of cosines*
+![[Pasted image 20250423181407.png]]
+where
+1. d is the angular distance (central angle) between points A and B
+
+To obtain the actual linear distance measure on Earth
+1. compute d from the arccos of the result
+2. then multiply it by the Earth's radius $r=111.32\text{ km}$
+	1. ie. length of 1 degree at the equator
+
+*2. haversine formula*
+An approximation because the Earth is not a perfect sphere.
+Generally preferred for computational purposes (especially for small distances) because it's numerically more stable.
+It is obtained from the spherical law of cosines.
+
+The haversine function is
+$$\operatorname{hav} (\theta) =\sin ^{2}\left({\frac {\theta }{2}}\right)={\frac {1-\cos(\theta )}{2}}$$
+And its inverse
+$$\operatorname {archav} (\operatorname {hav} \theta )=2r\arcsin \left({\sqrt {\operatorname {hav} \theta }}\right)$$
+And the law of haversines is
+$$\operatorname{hav} \left(\theta \right)=\operatorname {hav} \left(\Delta \varphi \right)+\cos \left(\varphi _{1}\right)\cos \left(\varphi _{2}\right)\operatorname {hav} \left(\Delta \lambda \right)$$
+
+An example from wikipedia
+![[Pasted image 20250423182858.png]]
+
+
+
+
 ## Trajectory
 sequence of points that describe people's movements.
 
@@ -83,34 +122,60 @@ sequence of points that describe people's movements.
 > 1. definition of trajectory
 > 2. definition of point
 
+![[Pasted image 20250423183112.png]]
 
+It is crucial to observe that there is a third dimension that is time!
+It is a TIME-ORDERED sequence of points.
 
 ## Spatial Tessellation
 division of space into non-overlapping tiles.
 
 > 1. definition of spatial tessellation
 > 2. characteristics of tessellation
-> 3. types of tessellations (H3, voronoi, ...)
+> 3. examples of tessellations (H3, voronoi, ...)
 
+![[Pasted image 20250423183225.png]]
+
+It is a division of space into geometric subspaces.
+
+A tesselation can be
+1. regular (equilateral triangular, squared, hexagonal, ...)
+2. irregular (buildings, administrative units, ...)
+A spatial join can be used to associate a point with the (one and only) tile that contains it.
+
+Some examples of tessellation are
+1. Uber H3
+	1. recursively creates high precision hexagons
+	2. each cell is splitted into 7 children
+2. S2 Geometry
+	1. decompose into a hierarchy of cells ??
+3. Voronoi tessellations
+	1. for any object there is a corresponding region called Voronoi cell, consisting of all points of the plance closer to that seed than to any other
+	2. if I take a point in a cell, its closest central point is the one representing the cell
+	3. eg. in mobile phone cells
+
+![[Pasted image 20250423183548.png]]
+
+![[Pasted image 20250423184026.png]]
 
 ## Flows
 movements of groups of people between places.
 
 > 1. definition of flow
 
+![[Pasted image 20250423184153.png]]
+
+The result of a flow will be a graph where each vertex is a tile and each edge will be labelled with the number of objects moving on that trajectory.
+
+Can trajectories be obtained from flows? NO.
+This is why it is better to have a dataset of trajectories, even though they are rare because they are more sensitive to privacy.
+
+
+
+
 
 ## -> homeworks and material
-
-
-
-
-
-
-
-
-
-
-
+“Homework 2.1” ([“02 - fundamental concepts_24_25”, p. 48](zotero://select/library/items/KBMVVBJK)) ([pdf](zotero://open-pdf/library/items/LPT3QCTM?page=48))
 
 
 
@@ -214,7 +279,11 @@ Content
 	3. Kriging
 2. Spatial Regression
 3. Spatial Associations: co-location patterns
-4. Spatial Trends
+4. Spatial Trends Detection
+
+
+
+
 
 
 
