@@ -17,11 +17,34 @@ This is about Module 1
 
 
 # 1. Introduction
-...
+
+Interesting concepts.
+
+Digital footprints of human activity.
+![[Pasted image 20250423171425.png]]
+
+Big data properties
+1. volume
+2. velocity
+3. variety
+4. veracity
+5. value
+
+> Material  
+>● [book] Introduction to geographic information systems, Kang-Tsung Chang, McGraw-Hill ○ Chapter 1  
+>● [paper] Human Mobility: Models and Applications, Barbosa et al., Physics Reports  ○ Section 1 (Introduction)
+
+
+
 
 # 2. Fundamental Concepts
 
-Concepts
+## Definitions
+
+Geographic Information System (GIS).
+1. it is a computer system for capturing, storing, querying, analyzing and displaying geospatial data.
+
+Fundamental Concepts.
 1. Geographic Coordinate System (GCS)
 	1. reference system for locating points on the Earth's surface
 2. Vector Data Model
@@ -32,6 +55,55 @@ Concepts
 	1. division of space into non-overlapping tiles
 5. Flows
 	1. movements of groups of people between places
+
+
+## Geographic Coordinate System (GCS)
+reference system for locating points on Earth's surface.
+
+> key concepts
+> 1. gcs
+> 2. geodetic datum
+> 3. wgs84
+> 4. nill points
+> 5. distance with haversine
+
+It is based on 2 angles
+1. longitude (long)
+	1. angle E/W from the Prime Meridian (PM)
+2. latitude (lat)
+	1. angle N/S of the equatorial plane
+
+Meridians
+
+
+## Trajectory
+sequence of points that describe people's movements.
+
+> key concepts
+> 1. definition of trajectory
+> 2. definition of point
+
+
+
+## Spatial Tessellation
+division of space into non-overlapping tiles.
+
+> 1. definition of spatial tessellation
+> 2. characteristics of tessellation
+> 3. types of tessellations (H3, voronoi, ...)
+
+
+## Flows
+movements of groups of people between places.
+
+> 1. definition of flow
+
+
+## -> homeworks and material
+
+
+
+
 
 
 
@@ -45,9 +117,12 @@ Concepts
 # 3a. Spatial Data Analysis (1)
 
 Content
-1. terminology
+1. basic terms and concepts from GIS worlds
+	1. raster layers
+	2. vector data model (and data representation)
+	3. data representation model
 2. basic spatial data types
-	1. raster vs vectorial
+	2. raster vs vectorial
 3. basic spatial operations
 	1. intersection, union, difference
 	2. buffering
