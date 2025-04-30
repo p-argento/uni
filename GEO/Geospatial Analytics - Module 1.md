@@ -247,20 +247,19 @@ Data representation model
 
 
 ## Spatial Operations
-
 > 1. intersection, union, difference
 > 2. buffering
 > 3. spatial join
 
-
-Overlay operations (from set theory).
-1. intersection $A\cap B$
-2. union $A \cup B$
-	1. Warning: some tools (e.g. QGIS) return a multipolygon. Here union just added a polygon. Solution (if it is a problem): “dissolve” operation
-3. difference $A-B$ or $A/ B$
-
 Operations more oriented to manipulate geometries or manage the non-spatial attributes.
-1. creating buffers
+1. overlays
+	1. from set theory
+	2. operations
+		1. intersection $A\cap B$
+		2. union $A \cup B$
+			1. Warning: some tools (e.g. QGIS) return a multipolygon. Here union just added a polygon. Solution (if it is a problem): “dissolve” operation
+		3. difference $A-B$ or $A/ B$
+2. buffers
 	1. expanding the shape by a given amount
 	2. equivalent to replace each point in the geometry by a circle
 	3. eg. buffer of 10 km
@@ -269,13 +268,6 @@ Operations more oriented to manipulate geometries or manage the non-spatial attr
 	2. merging the information of two objects if they match
 		1. ie. intersect, contains, equals, touches
 	3. can be inner or outer join
-3. overlays
-
-
-
-
-
-
 
 
 
@@ -299,19 +291,27 @@ In spatial point pattern analysis, spatial distribution patterns are typically c
 ![[Pasted image 20241017114922.png]]
 
 As in statistics, we can define
-1. a center around which all objects are distributed
-2. various dispersion indexes to measure how much they are dispersed around
+1. mean center
+	1. a center around which all objects are distributed
+2. various dispersion indexes
+	1. to measure how much they are dispersed around
+	2. eg
+		1. standard distance
+		2. standard deviational ellipse
 
 ![[Pasted image 20241017115059.png]]
 
 ## 1. Density estimation
+> 1. global/local density
+> 2. kernel/weighted-kernel density
+
 How many points (or objects) are in the same place?
 Based on the different interpretation of "place", we distinguish
 1. global density
 	1. computed over all geographical area
 	2. eg. number of restaurants per m2
 2. local density
-	1. computed over all the geographical area
+	1. computed separately over the small cells of a tessellation
 	2. eg. number of restaurants per m2 for each municipality
 3. kernel density
 	1. density of one cell is computed considering its neighborhood
@@ -334,18 +334,39 @@ The points in the neighborhood have a weight dependent on the distance from C's 
 
 ## 2. (NNs) Random vs Pattern
 
-Two types of analysis
+Two alternative types of analysis
 1. Average Nearest Neighbor (ANN)
-2. L function (aka standardized Ripley's K-function)
+2. L-function (aka standardized Ripley's K-function)
+
+Sometimes one approach is better than the other, best to use both.
+
+1 - Average Nearest Neighbor (ANN)
+1. associate each point to its nearest neighbor distance $d_i$
+2. compute average $d_i$ values called $d_{obs}$
+3. normalize wrt expected $d_{obs}$ over random points $d_{exp}$ meaning $$R=\frac{d_{ops}}{d_{exp}}$$
+![[Pasted image 20250430113455.png]]
+
+2 - L-function (aka standardized Ripley's K-function)
+1. given N points in an aerea of size $A$ and a distance parameter $d$
+2. compute all $N(N-1)$ distances between each pair of points
+3. compute the fraction $\phi$ of distances that are $<d$
+4. compute $L(d)=\sqrt{\frac{A}{\pi}\phi}$
+
+Then see
+1. $L(d)=d$ for random points
+2. exploring $L(d)$ for various d values allows understanding patters at different spatial granularities
+
+![[Pasted image 20250430114147.png|350]]
 
 ## 3. Spatial Autocorrelation
 
-Autocorrelations is the correlation between values of the same variable (eg temperature) measured in different times or places.
+Autocorrelations is the correlation between values of the same variable (eg. temperature) measured in different times or places.
 We distinguish
 1. different times -> time series -> temporal autocorrelation
 2. different places -> geospatial data -> spatial autocorrelation
 
 Tobler's first law of geography.
+"everything is related to everything else, but near things are more related than distant things."
 
 ...
 

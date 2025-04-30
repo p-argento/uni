@@ -8,6 +8,7 @@ Prof. Pappalardo
 [[Geo Labs Notes]]
 [Github Geo](https://github.com/jonpappalord/geospatial_analytics)
 
+[[geo ideas]]
 ## Interesting links
 
 [Didawiki Geo](http://didawiki.di.unipi.it/doku.php/geospatialanalytics/gsa/start)
