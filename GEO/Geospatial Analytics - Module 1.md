@@ -277,14 +277,16 @@ Operations more oriented to manipulate geometries or manage the non-spatial attr
 
 
 
-## Point spatial patterns
+## Spatial point patterns
+> 0. utilities
+> 1. density-based
+> 2. location-based
 
 Actually chapter 4 is
 4. point spatial patterns and spatial correlation
-	1. density
+	1. density estimation
 	2. Nearest Neighbors (NN)
-	3. Moran's I
-	4. Geary's C
+	3. spatial autocorrelation measures
 
 The general objective is understand how object are distributed in space.
 
@@ -306,7 +308,8 @@ As in statistics, we can define
 
 ![[Pasted image 20241017115059.png]]
 
-## 1. Density estimation
+*1- Density-based Pattern Analysis*
+using density estimation
 > 1. global/local density
 > 2. kernel/weighted-kernel density
 
@@ -337,11 +340,12 @@ The points in the neighborhood have a weight dependent on the distance from C's 
 
 ![[Pasted image 20241017115845.png]]
 
-## 2. (NNs) Random vs Pattern
-> 1. Average Nearest Neighbor (ANN)
-> 2. L-function (aka standardized Ripley's K-function)
+**2-Location-based Pattern Analysis**
+Random vs Regular Pattern using Nearest Neighbors
+1. . Average Nearest Neighbor (ANN)
+2. . L-function (aka standardized Ripley's K-function)
 
-Two alternative types of analysis
+Two alternative types of spatial point pattern aalysis
 1. Average Nearest Neighbor (ANN)
 2. L-function (aka standardized Ripley's K-function)
 
@@ -365,7 +369,7 @@ Then see
 
 ![[Pasted image 20250430114147.png|350]]
 
-## 3. Spatial Autocorrelation
+## Spatial Autocorrelation
 > 1. definition of spatial autocorrelation
 > 2. moran's I
 > 3. Geary's C
@@ -436,8 +440,16 @@ Content
 > 4. Kriging
 
 
+## 2. Spatial Regression
+> 1. difference with interpolation
+> 2. spatially lagged exogenous regressors
 
+## 3. Spatial Associations
+>1. co-location patterns
+>2. pattern quality measures
 
+## 4. Spatial Trends Detection
+>1. spatial trend definition and examples
 
 
 
