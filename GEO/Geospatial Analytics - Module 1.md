@@ -99,7 +99,7 @@ where
 
 To obtain the actual linear distance measure on Earth
 1. compute d from the arccos of the result
-2. then multiply it by the Earth's radius $r=111.32\text{ km}$
+2. then multiply it by the Earth's radius
 	1. ie. length of 1 degree at the equator
 
 *2. haversine formula*
