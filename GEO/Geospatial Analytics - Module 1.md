@@ -375,12 +375,33 @@ We distinguish
 Tobler's first law of geography.
 "everything is related to everything else, but near things are more related than distant things."
 
-...
+*1. Moran's I*
+"I" stands for index; it is the measure of autocorrelation;  
+for each point we look at its neighbours, for each pair we compute the displacement and the displacement of the other point ;  
+the formula is similar to the standard formula of autocorrelation.
+
+![[Pasted image 20250430153450.png]]
+
+It is the autocorrealtions between values of each point againsta all other points in its neighborhood.
+when the two displacements are both positive or both negative the sum will be higher;
+the highest is I, the more correlated are nearby values.
+
+An alternative reading of Moran's Index is to see it as the average of several "Local Moran's Indexes".
+We can explore Local's I values in a "spatial lag plot", similar to lag plots in time series ("lag" means average value around the reference point).
+
+*Geary's C*
+Alternative for Moran's I.
+The interpretation is the opposite, low C means low correlation (ie. higher C, more different are nearby values).
+
+![[Pasted image 20250430154052.png]]
+
+Geary's C is less sensitive to linear associations.
+Also here a Local C can be explored.
+
+![[Pasted image 20250430154234.png]]
 
 
-
-
-
+![[Pasted image 20250430154311.png]]
 
 
 
@@ -388,14 +409,26 @@ Tobler's first law of geography.
 
 Content
 1. Spatial Interpolation
-	1. Thiessen polygons
-	2. IDW
-	3. Kriging
+	1. Thiessen polygons (or proximity interpolation)
+	2. Inverse Distance Weighted (IDW) interpolation
+	3. Surface Interpolation
+	4. Kriging
 2. Spatial Regression
+	1. difference with interpolation
+	2. spatially lagged exogenous regressors
 3. Spatial Associations: co-location patterns
+	1. co-location patterns
+	2. pattern quality measures
 4. Spatial Trends Detection
+	1. spatial trend definition and examples
 
 
+## 1. Spatial Interpolation
+> 0. spatial interpolation definition 
+> 1. Thiessen polygons (or proximity interpolation)
+> 2. Inverse Distance Weighted (IDW) interpolation
+> 3. Surface Interpolation
+> 4. Kriging
 
 
 
