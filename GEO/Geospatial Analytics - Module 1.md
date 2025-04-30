@@ -47,7 +47,8 @@ Geographic Information System (GIS).
 Fundamental Concepts.
 1. Geographic Coordinate System (GCS)
 	1. reference system for locating points on the Earth's surface
-2. Vector Data Model
+	2. distances on earth
+2. Vector Data Model (see NEXT LESSON)
 	1. representation of spatial features in GIS
 3. Trajectory
 	1. sequence of points that describe an individual movements
@@ -73,7 +74,11 @@ It is based on 2 angles
 2. latitude (lat)
 	1. angle N/S of the equatorial plane
 
-Meridians
+![[Pasted image 20250430162547.png]]
+
+![[Pasted image 20250430162600.png]]
+
+
 
 
 
