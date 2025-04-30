@@ -253,7 +253,25 @@ Data representation model
 > 3. spatial join
 
 
-HERE
+Overlay operations (from set theory).
+1. intersection $A\cap B$
+2. union $A \cup B$
+	1. Warning: some tools (e.g. QGIS) return a multipolygon. Here union just added a polygon. Solution (if it is a problem): “dissolve” operation
+3. difference $A-B$ or $A/ B$
+
+Operations more oriented to manipulate geometries or manage the non-spatial attributes.
+1. creating buffers
+	1. expanding the shape by a given amount
+	2. equivalent to replace each point in the geometry by a circle
+	3. eg. buffer of 10 km
+2. spatial join
+	1. joining attributes of geometries
+	2. merging the information of two objects if they match
+		1. ie. intersect, contains, equals, touches
+	3. can be inner or outer join
+3. overlays
+
+
 
 
 
