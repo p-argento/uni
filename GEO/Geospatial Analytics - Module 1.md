@@ -333,6 +333,8 @@ The points in the neighborhood have a weight dependent on the distance from C's 
 ![[Pasted image 20241017115845.png]]
 
 ## 2. (NNs) Random vs Pattern
+> 1. Average Nearest Neighbor (ANN)
+> 2. L-function (aka standardized Ripley's K-function)
 
 Two alternative types of analysis
 1. Average Nearest Neighbor (ANN)
@@ -340,13 +342,13 @@ Two alternative types of analysis
 
 Sometimes one approach is better than the other, best to use both.
 
-1 - Average Nearest Neighbor (ANN)
+*1 - Average Nearest Neighbor (ANN)*
 1. associate each point to its nearest neighbor distance $d_i$
 2. compute average $d_i$ values called $d_{obs}$
 3. normalize wrt expected $d_{obs}$ over random points $d_{exp}$ meaning $$R=\frac{d_{ops}}{d_{exp}}$$
 ![[Pasted image 20250430113455.png]]
 
-2 - L-function (aka standardized Ripley's K-function)
+*2 - L-function (aka standardized Ripley's K-function)*
 1. given N points in an aerea of size $A$ and a distance parameter $d$
 2. compute all $N(N-1)$ distances between each pair of points
 3. compute the fraction $\phi$ of distances that are $<d$
@@ -359,8 +361,13 @@ Then see
 ![[Pasted image 20250430114147.png|350]]
 
 ## 3. Spatial Autocorrelation
+> 1. definition of spatial autocorrelation
+> 2. moran's I
+> 3. Geary's C
 
 Autocorrelations is the correlation between values of the same variable (eg. temperature) measured in different times or places.
+(eg. how much is temperature in one place influenced by temperature around it?)
+
 We distinguish
 1. different times -> time series -> temporal autocorrelation
 2. different places -> geospatial data -> spatial autocorrelation
@@ -369,6 +376,12 @@ Tobler's first law of geography.
 "everything is related to everything else, but near things are more related than distant things."
 
 ...
+
+
+
+
+
+
 
 
 # 3b. Spatial Data Analysis (2)
