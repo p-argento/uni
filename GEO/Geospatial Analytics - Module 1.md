@@ -440,6 +440,10 @@ Content
 > 4. Kriging
 
 
+
+
+
+
 ## 2. Spatial Regression
 > 1. difference with interpolation
 > 2. spatially lagged exogenous regressors
@@ -455,14 +459,88 @@ Content
 
 
 # 4. Spatial and mobility data
+Main sources to describe mobility data
 
-Sources of mobility data
-1. GPS
-2. Mobile Phone Records
-3. Location-based social networks (LBS)
-4. Road Networks and POIs
+Content
+1. Sources of mobility data
+	1. GPS
+	2. Mobile Phone Records
+	3. Location-based social networks (LBS) (aka Checkins)
+2. Road Networks and POIs
+	1. data format of road networks
+	2. data format of POIs
 
 ![[Pasted image 20241017153457.png]]
+## 1. GPS data
+> 1. GPS segments
+> 2. Trilateration (how GPS works)
+> 3. GPS traces format
+
+Global Positioning System (GPS) is the most famous Global Navigation Satellite System (GNSS). The complete name is actually NAVTEC GPS, it is a US owned utility providing users with positioning, navigation and timing (PNT) services.
+
+*1. GPS segments*
+
+The system is made of 3 main components
+1. space segment
+2. control segment
+3. user segment
+
+1 - space segment
+More than 24 satellites, each orbiting at 20k km.
+Circling earth twice a day in 6 equally-spaced orbits (4 satellites each)
+Broadcasting a gps radio signal, given that a user view at least 4 satellites from any point.
+
+2 - control segment (on earth)
+The current Operational Control Segment (OCS) includes
+1. a master control station
+2. an alternate master control station
+3. 11 command and control antennas
+4. 16 monitoring sites
+The high performance of these satellites constellation is thanks to the team Blackjack.
+
+![[Pasted image 20250505165715.png]]
+
+3 - user segment
+GPS is everywhere: cell-phones, wristwatches, bulldozers, shipping containers, ATM's, sports bras, ...
+
+![[Pasted image 20250505165758.png]]
+
+
+*2. Trilateration (how GPS work)*
+Steps for trilaterations.
+
+![[Pasted image 20250505171459.png]]
+
+
+
+*3. GPS traces format and precision*
+The sampling rate depends on the device, usually from few seconds to 1-2 minutes. However, we often find aggregated data.
+
+![[Pasted image 20250505170241.png|300]]
+
+The spatial precision can be 10m.
+
+![[Pasted image 20250505170408.png]]
+
+Remember that there are are GNSS, not only GPS.
+It is a matter of politics.
+
+![[Pasted image 20250505170503.png]]
+
+## 2. Mobile Phone records
+> 1. mobile network system
+> 2. types of mobile phone records
+
+
+
+## 3.  Checkins data
+aka Location-based social networks (LBS data).
+
+
+## 4. Road Networks and POIs data format
+
+
+
 
 
 
