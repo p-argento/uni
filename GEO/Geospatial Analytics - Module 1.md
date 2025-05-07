@@ -550,14 +550,15 @@ aka Location-based social networks (LBS data).
 
 *Content*
 Preprocessing trajectories
-1. trajectory filtering
-2. point map matching
-3. route reconstruction
-4. trajectory compression
-5. semantic enrichment
+1. trajectory operations
+	1. trajectory filtering
+	2. point map matching
+	3. route reconstruction
+	4. trajectory compression
+2. semantic enrichment
 	1. stop detection / trajectory segmentation
 	2. home location detection (GPS & MobPhones)
-	3. activity recognition (POI-based)
+	3. activity labelling / recognition (POI-based)
 
 ## 1. Trajectory Filtering
 Different types

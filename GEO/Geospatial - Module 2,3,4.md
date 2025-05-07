@@ -1,47 +1,54 @@
-MODULE 2: Patterns and Laws
-1. spatial analysis
-	1. point patterns, spatial autocorrelation, GWR
-2. individual mobility patterns
-3. collective mobility patterns
-4. (practice) analyze mobility data with scikit-mobility
-
-MODULE 3: Predictive and Generative Models
-1. prediction
-	1. next-location prediction, crowd-flow prediction, spatial interpolation
-2. generation
-	1. trajectory generation, flow generation
-3. (practice) mobility prediction and generation in python
-
-MODULE 4: Applications
-1. Urban Segregation models
-2. Navigation Principles
-3. Estimating Pollution
-
+*slides*
 The slides of the second part are
-6 - Individual mobility laws and models
-7 - Human Mobility Model
-8 - Mobility Patterns
-9 - Location Prediction
+6 - Individual Mobility laws and models (aka individual models)
+7 - Human Mobility Model (aka mobility models)
+8 - Mobility Patterns (aka mobility patterns)
+9 - Location Prediction (aka location prediction)
 
-More in details.
-1. 6 - Individual mobility laws and models
-	1. distances (travel distancve, radius of gyration,...)
-	2. predictability (entropy,...)
-2. 7 - Human Mobility Models
-	1. Modelling individual Human Mobility
-		1. EPR
-	2. Collective Models
-		1. Gravity Model
-		2. Radiation
-		3. Intervening Opportunities
-		4. Deep gravity
-		5. Other models
-3. 8 - Mobility Patterns
-	1. Global patterns: clustering
-	2. Local Patterns
-4. 9 - Location Prediction
-	1. Mobility prediction: a taxonomy
-	2. Next location prediction
+*modules*
+Module 2: Mobility Patterns and Laws
+- individual mobility laws/patterns
+- collective mobility laws/patterns
+- Practice: analyze mobility data with Python
+
+Module 3: Predictive and Generative Models
+- Prediction
+    - Next-location prediction
+    - Crowd flow prediction
+    - Spatial interpolation
+- Generation
+    - Trajectory generation
+    - Flow generation
+- Practice: mobility prediction and generation in Python    
+
+Module 4: Applications
+- Urban segregation models
+- Routing and navigation apps
+- Traffic simulation with SUMO
 
 
+## 6 - Individual Mobility laws and models
+(aka individual models)
+> 1. distances (travel distance, radius of gyration,...)
+> 2. . predictability (entropy,...)
 
+## 7 - Human Mobility Model
+(aka mobility models)
+>1. Modelling individual Human Mobility
+	1. EPR
+>2. Collective Models
+	1. Gravity Model
+	2. Radiation
+	3. Intervening Opportunities
+	4. Deep gravity
+	5. Other models
+
+## 8 - Mobility Patterns
+(aka mobility patterns)
+> 1. Global patterns: clustering
+>2. Local Patterns
+
+## 9 - Location Prediction
+(aka location prediction)
+> 1. Mobility prediction: a taxonomy
+> 2. Next location prediction
