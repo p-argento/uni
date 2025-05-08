@@ -66,7 +66,7 @@ Also the distribution of inter-time is a power law. It is the time between one v
 Looking at CDR, it is not possible to distinguish real data from synthetic one.
 
 Any model can reproduce a limited number of patterns, but not all of them. This means that the ERP model is realistic but not perfect.
-For example, regarding time, the ERP do not capture the routines we have, it only camptures that I rest.
+For example, regarding time, the ERP do not capture the routines we have, it only captures that I rest.
 
 > EPR is the only trajectory model you need to know for the exam (?)
 
