@@ -29,6 +29,7 @@ Module 4: Applications
 
 ## 6 - Individual Mobility laws and models
 (aka individual models)
+maybe call it mobility laws
 > 1. distances (travel distance, radius of gyration,...)
 > 2. predictability (entropy,...)
 
