@@ -30,7 +30,15 @@ Module 4: Applications
 ## 6 - Individual Mobility laws and models
 (aka individual models)
 > 1. distances (travel distance, radius of gyration,...)
-> 2. . predictability (entropy,...)
+> 2. predictability (entropy,...)
+
+"while computer scientists are interested in making algorithms; network scientist are more interested in extrapolating universal laws in human mobility"
+
+
+
+
+
+
 
 ## 7 - Human Mobility Model
 (aka mobility models)
