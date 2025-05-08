@@ -45,11 +45,13 @@ Module 4: Applications
 >1. Modelling individual Human Mobility
 	1. EPR
 >2. Collective Models
-	1. Gravity Model
-	2. Radiation
-	3. Intervening Opportunities
-	4. Deep gravity
-	5. Other models
+	1. definition of Spatial Flows
+	2. Gravity Model (G)
+	3. Intervening Opportunities (IO)
+	4. Radiation Model (modified IO)
+	5. Other collective models (Deep gravity)
+>3. Input data
+	1. 
 
 ## 8 - Mobility Patterns
 (aka mobility patterns)
