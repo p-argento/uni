@@ -54,6 +54,11 @@ maybe call it mobility laws
 >3. Input data
 	1. 
 
+
+[ERP](https://www.nature.com/articles/nphys1760#Fig2)
+
+
+
 ## 8 - Mobility Patterns
 (aka mobility patterns)
 > 1. Global patterns: clustering
