@@ -565,19 +565,27 @@ Different types
 1. context-based filtering
 2. movement-based filtering
 
-## 2. Point Map Matching
+## 2. Point Map-Matching
 
 
 
 ## 3. Route Reconstruction
-
+for trajectory map-matching
 
 
 ## 4. Trajectory Compression
 
 
 
+## 5. stop detection / trajectory segmentation
+semantic entrichment 1/3
 
+
+## 6. home location detection (GPS & MobPhones)
+semantic enrichment 2/3
+
+## 7. activity labelling / recognition (POI-based)
+semantic enrichment 3/3
 
 
 
