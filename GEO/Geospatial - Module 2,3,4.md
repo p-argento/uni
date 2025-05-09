@@ -64,6 +64,25 @@ maybe call it mobility laws
 > 1. Global patterns: clustering
 >2. Local Patterns
 
+Trajectory Clustering (ie. global trajectory patterns)
+1. Trajectory distances
+	1. single-point approaches (reduce trajectory to single-points )
+	2. hausdorff distance (trajectory as set of points)
+	3. frechet distance (trajectory as sequence of points)
+	4. ED, DTW (time-series distances)
+	5. avg ED (trajectory as time-stamped sequence of points)
+2. Trajectory clustering algorithms (density-based)
+
+Trajectory frequent pattern (ie. local trajectory patterns)
+3. Flocks, Convoys & Swarms 
+4. Moving clusters  
+5. T-Patterns
+
+Quick peek into Deep Learning
+6. DETECT algorithm
+
+
+
 ## 9 - Location Prediction
 (aka location prediction)
 > 1. Mobility prediction: a taxonomy
