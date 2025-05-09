@@ -28,7 +28,7 @@ Module 4: Applications
 
 
 ## 6 - Individual Mobility laws and models
-(aka individual models)
+(aka mobility laws)
 maybe call it mobility laws
 > 1. distances (travel distance, radius of gyration,...)
 > 2. predictability (entropy,...)
@@ -84,9 +84,17 @@ Quick peek into Deep Learning
 
 
 ## 9 - Location Prediction
-(aka location prediction)
+(aka mobility prediction)
 > 1. Mobility prediction: a taxonomy
 > 2. Next location prediction
+
+Mobility prediction
+1. taxonomy of mobility prediction
+Prediction approaches
+2. (Hidden) Markov Model-based 
+3. (Frequent) Pattern-based
+4. Deep Learning-based (RNN, CNN, GAN)
+
 
 
 
