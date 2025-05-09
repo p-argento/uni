@@ -87,3 +87,11 @@ Quick peek into Deep Learning
 (aka location prediction)
 > 1. Mobility prediction: a taxonomy
 > 2. Next location prediction
+
+
+
+
+
+
+
+
