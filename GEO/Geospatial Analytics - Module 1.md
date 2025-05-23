@@ -88,7 +88,7 @@ Straight lines are replaced by *geodesics (great-circles)*.
 However, the Earth is only nearly spherical, meaning that great-circle distance are correct to within 0.5%, still this is the formula we use.
 Between two points we find the shortest arc on the great-circles which connects them. If they are not antipodal, this great-circle is unique.
 
-To compute the distance between two pointsWe can use
+To compute the distance between two points, we can use
 1. spherical law of cosines
 2. haversine formula
 
