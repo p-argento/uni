@@ -10,3 +10,11 @@ Business
 
 Mobilità
 
+ 
+Strava-related links.
+Global Heatmap
+https://www.strava.com/maps/global-heatmap
+Strava Metro (partnership per Strava Dataset)
+https://metro.strava.com/
+Case studies
+https://metro.strava.com/case-studies
