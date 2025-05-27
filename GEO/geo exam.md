@@ -1,7 +1,14 @@
 ---
 
 ---
+## doubts
+1. check matplotlib
+2. predicates for sjoin
+3. 
 
+
+
+## oral questions
 ---
 
 Overview of preprocessing techniques for trajectories
