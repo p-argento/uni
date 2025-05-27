@@ -277,7 +277,7 @@ Operations more oriented to manipulate geometries or manage the non-spatial attr
 
 
 
-## Spatial point patterns
+## Spatial point patterns (density-based)
 > 0. utilities
 > 1. density-based
 > 2. location-based
@@ -340,7 +340,9 @@ The points in the neighborhood have a weight dependent on the distance from C's 
 
 ![[Pasted image 20241017115845.png]]
 
-**2-Location-based Pattern Analysis**
+
+## Spatial point patterns (location-based)
+Location-based Pattern Analysis.
 Random vs Regular Pattern using Nearest Neighbors
 1. . Average Nearest Neighbor (ANN)
 2. . L-function (aka standardized Ripley's K-function)
