@@ -374,7 +374,7 @@ Then see
 
 ![[Pasted image 20250430114147.png|350]]
 
-## Spatial Autocorrelation
+			## Spatial Autocorrelation
 > 1. definition of spatial autocorrelation
 > 2. moran's I
 > 3. Geary's C
