@@ -208,6 +208,9 @@ Pixelized version of Earth.
 
 Usually the map is made of both raster and vector layers together.
 
+RASTER VS VECTOR
+
+
 ## Vector Data Model
 Purely geometrical description (NO raster NO vectorial).
 
