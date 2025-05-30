@@ -7,6 +7,12 @@
 3. 
 
 
+## sources of data
+land
+[geodatasets](https://geodatasets.readthedocs.io/en/latest/introduction.html)
+[geojson.xyz](https://geojson.xyz/)
+[natural earth data](https://www.naturalearthdata.com/downloads/110m-cultural-vectors/)
+
 
 ## oral questions
 ---
