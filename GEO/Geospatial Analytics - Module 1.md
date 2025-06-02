@@ -444,7 +444,7 @@ Content
 > 0. spatial interpolation definition 
 > 1. Thiessen polygons (or proximity interpolation)
 > 2. Inverse Distance Weighted (IDW) interpolation
-> 3. Surface Interpolation
+> 3. Surface Trend
 > 4. Kriging
 
 
