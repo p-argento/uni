@@ -374,7 +374,7 @@ Then see
 
 ![[Pasted image 20250430114147.png|350]]
 
-			## Spatial Autocorrelation
+## Spatial Autocorrelation
 > 1. definition of spatial autocorrelation
 > 2. moran's I
 > 3. Geary's C
@@ -393,6 +393,9 @@ Tobler's first law of geography.
 "I" stands for index; it is the measure of autocorrelation;  
 for each point we look at its neighbours, for each pair we compute the displacement and the displacement of the other point ;  
 the formula is similar to the standard formula of autocorrelation.
+
+The Moran’s _I_ statistic is the correlation coefficient for the relationship between a variable (like income) and its neighboring values.
+How to define neighbors? Can be contiguous polygons (eg. regions), radius or k-NN.
 
 ![[Pasted image 20250430153450.png]]
 
