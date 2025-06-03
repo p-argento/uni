@@ -35,7 +35,7 @@ Both professors and both assistants were present, each of them asks about 2 ques
 - Definition of trajectory, what measures can be defined on them (jump length, radius of gyration etc), what distribution they follow, what we conclude based on this observation
 - Point pattern analysis, overview of methods to identify the type of point distribution (random/clustered/uniform)
 - Pattern-based trajectory prediction
-- EPR model, how it works in general; how does the algorithm choose between the two phases? (randomly, we externally set some parameter that controls how likely it is to choose one or the other). Is it possible that an exploration phase chooses to explore a location that was actually already visited before? (yes but the probability is so low it's basically impossible)
+- EPR model, how it works in general; how does the algorithm choose between the two phases? (randomly, we externally set some parameter that controls how likely it is to choose one or the other). Is it possible that an exploration phase chooses to explore a location that was actually already visited before?(yes but the probability is so low it's basically impossible)
 - Models to predict flows, describe the main differences
 - Write main equation of the Gravity model; after this, I was asked to reason on how the free parameters would be set if the model were trained on three different types of datasets (daily mobility, relocation, airplane trajectories).
 
@@ -78,7 +78,7 @@ Want an estimation of the matrix of flows in city B using the data of city A
 given answer:
 gravitation model 
 
-estimate car autonomy (number of km) based on the usual geographical area he goes around in.
+estimate car autonomy (number of km) based on the usual geographical area he goes around in. 
 answer:
 POI on the petrol station
 we have the trajectories of the car and we can find the stops at the petrol stations
