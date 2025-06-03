@@ -49,7 +49,7 @@ what is spatial tessellation (rivedi terza regola)
 what is a raster layer, and rasterization
 what is vectorization
 moran's ()
-spatial interpolation
+spatial interpolation 
 Voronoi tessellation (definizione ) - bravo 
 Interpolation methods
 gps traces and formats
