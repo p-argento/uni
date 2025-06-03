@@ -44,20 +44,20 @@ Both professors and both assistants were present, each of them asks about 2 ques
 ---
 
 geographic information system
-what is a trajectory
-what is spatial tessellation
+what is a trajectory (good ) 
+what is spatial tessellation (rivedi terza regola) 
 what is a raster layer, and rasterization
 what is vectorization
 moran's I
 spatial interpolation
-Voronoi tessellation
+Voronoi tessellation (definizione ) - bravo 
 Interpolation methods
 gps traces and formats
 mobile network systems
 types of mobile phone records
 trajectories filtering
 route reconstruction
-trajectories compression
+trajectories compression ()
 ramer-douglas-peucker
 driemel
 individual mobility network
