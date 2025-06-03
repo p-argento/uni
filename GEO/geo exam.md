@@ -48,7 +48,7 @@ what is a trajectory (good )
 what is spatial tessellation (rivedi terza regola) 
 what is a raster layer, and rasterization
 what is vectorization
-moran's I
+moran's ()
 spatial interpolation
 Voronoi tessellation (definizione ) - bravo 
 Interpolation methods
