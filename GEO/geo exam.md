@@ -57,13 +57,13 @@ mobile network systems
 types of mobile phone records
 trajectories filtering
 route reconstruction
-trajectories compression ()
+trajectories compression (bene)
 ramer-douglas-peucker
 driemel
 individual mobility network
 gyration
 epr
-spatial flows (definition)
+spatial flows (definition) 
 generating spatial flows
 local trajectory patterns
 Markov models
@@ -76,7 +76,7 @@ transfer learning, models from another context
 suppose you have 2 cities, 1 (A) with a lot of gps data and another (B) where you don't have data other then opestreetmap, gps, etc (but no trajectories).
 Want an estimation of the matrix of flows in city B using the data of city A
 given answer:
-gravitation model
+gravitation model 
 
 estimate car autonomy (number of km) based on the usual geographical area he goes around in.
 answer:
