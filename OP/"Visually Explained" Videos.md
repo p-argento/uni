@@ -1,4 +1,5 @@
-Some notes about Convex Optimization from [this playlist on youtube](https://www.youtube.com/playlist?list=PLqwozWPBo-FuPu4d9pFOobsCF1vDGdY_I) of Visually Explained.
+Notes on Constrained Convex Optimization.
+From [this playlist on youtube](https://www.youtube.com/playlist?list=PLqwozWPBo-FuPu4d9pFOobsCF1vDGdY_I) by Visually Explained.
 
 Outline
 1. What is Mathematical Optimization

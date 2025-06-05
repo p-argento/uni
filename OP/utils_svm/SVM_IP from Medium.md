@@ -70,7 +70,7 @@ The goal is to minimize the vector of $(\omega,\gamma,\xi)$.
 > What about the lagrange multipliers $\alpha,\lambda$? 
 
 Now, we apply the KKT conditions, which are first-order derivative tests. And since the problem is convex, the conditions are not only necessary, but also sufficient for finding the optimum.
-See [[Constrained Convex Optimization### What is a dual problem in general?]]
+See [["Visually Explained" Videos### What is a dual problem in general?]]
 
 KKT conditions can be divided in
 1. Stationarity Conditions

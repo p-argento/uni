@@ -30,7 +30,7 @@ The book:
 - "J. Nocedal, S.J. Wright, Numerical Optimization"
 	- [[Nocedal, Wright - My Notes]]
 
-In [[Constrained Convex Optimization]] some theory.
+In [["Visually Explained" Videos]] some theory.
 
 In [[SVM_MATH from ritvikmat]], find key steps in the theory from youtube.
 

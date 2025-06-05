@@ -37,7 +37,7 @@ Have a look at the [[Guidelines_4_Projects_ODS23.pdf]]
 
 ## Relevant Notes
 [[Nocedal, Wright - My Notes]]
-[[Constrained Convex Optimization]]
+[["Visually Explained" Videos]]
 
 
 
