@@ -12,7 +12,7 @@
 
 # Books
 ---
-[THIS IS DEFINITELY THE BEST BOOK OF THE COURSE](https://www.math.uci.edu/~qnie/Publications/NumericalOptimization.pdf) "J. Nocedal, S.J. Wright, Numerical Optimization". It is often cited by the professor in the slides. It is very clear. And the topics are the same of the lectures.
+[Very good book](https://www.math.uci.edu/~qnie/Publications/NumericalOptimization.pdf) "J. Nocedal, S.J. Wright, Numerical Optimization". It is often cited by the professor in the slides. It is very clear. And the topics are the same of the lectures.
 
 [Book on github](https://indrag49.github.io/Numerical-Optimization/) It looks like a summary of "J. Nocedal, S.J. Wright, Numerical Optimization".
 
