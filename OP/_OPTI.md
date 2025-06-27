@@ -1,5 +1,6 @@
 [[Optimization Final Review]]
 [[Optimization Exam Questions]]
+[[Frangioni Lectures]]
 
 ---
 [[Office Hours with Frangioni]]
