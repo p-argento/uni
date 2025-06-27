@@ -1,10 +1,9 @@
+[[Optimization Final Review]]
 
+---
 [[Office Hours with Frangioni]]
-
 [[SVM]]
-
 [[OP/OPTIMIZATION Survival Kit]]
-
 [[Fundamental Concepts for Optimization]]
 
 __________________________
