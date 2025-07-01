@@ -19,11 +19,10 @@ Quadratic Problems (slides 1)
 
 Unconstrained Smooth
 1. Gradient methods (general, fixed stepsize, inexact line searc)
-2. Twisted Gradient methods
-3. Newton-like methods
-4. Deflected Gradient Methods
-5. Nonlinear Conjugate Gradient Methods
-6. Heavy Ball gradient method
+2. Newton-like methods
+3. Quasi-Newton (eg BFGS)
+4. Nonlinear Conjugate Gradient Methods
+5. Heavy Ball gradient method
 
 Unconstrained Non-Smooth
 1. Subgradient methods
