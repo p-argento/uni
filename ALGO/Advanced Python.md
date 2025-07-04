@@ -22,6 +22,20 @@ for task in pipeline:
 ```
 
 It is very professional to use it combination with tqdm.
+
+## tqdm
+It is an external library.
+If we are processing a very long loop, how do we know everything is working fine and the loop is not stuck?
+The first solution is the print, say every 100 iterations.
+The second solution is tqdm, which looks very professional.
+
+```python
+from tqdm import tqdm
+l = list(range(100000))
+for _ in tqdm(range(10000)):
+	l.sort()
+```
+
 ## Function attributes
 They are `__attribute__`.
 The `__name__` for example can be used to show which task are executed during a pipelline, maybe in combination with tqdm. It looks very professional.

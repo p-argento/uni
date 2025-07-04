@@ -50,11 +50,10 @@ print(rest)
 ## Text of strings
 Create a text of strings.
 Be aware of the difference in terms of efficiency between two methods.
-First, the append way is quadratic because it
-Second, the join way is linear because first sele
+First, the append way is quadratic.
+Second, the join way is linear.
 
 ```python
-
 text = "\n".join(strings)
 ```
 
