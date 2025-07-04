@@ -6,7 +6,7 @@ To visualize how each attributes contributes.
 Normalizing axis is recommended.
 Be aware of the order of axis to discover interesting correlations.
 Downside: over-cluttered. Apply "brushing" to highlight a selected line or collection of lines, fading out the others.
-![[Pasted image 20231109114435.png|400]]
+![[Pasted image 20231109114435.png|600]]
 [source](https://towardsdatascience.com/parallel-coordinates-plots-6fcfa066dcb3)
 
 

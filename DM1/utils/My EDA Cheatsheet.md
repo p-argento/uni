@@ -40,10 +40,6 @@ df.corr() #method : {‘pearson’, ‘kendall’, ‘spearman’}
 
 
 
-
-
-
-
 # from sklearn
 From sklearn doc
 - [6.3. Preprocessing data](https://scikit-learn.org/stable/modules/preprocessing.html#)
