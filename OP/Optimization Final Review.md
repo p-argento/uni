@@ -39,5 +39,6 @@ Constrained Problems
 4. Dual methods
 5. Barrier methods
 
-
+## Other notes to be organized
+[[Conjugate Gradient Method]]
 
