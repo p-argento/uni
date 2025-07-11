@@ -42,6 +42,8 @@ With different starting point you get different results.
 We need $n^2$ memory units just to store the Hessian.
 We need ~$n^3$ operations to compute the inverse of the Hessian.
 With 10 variables is fine. But what about 10k?
+Consider that a single-thread CPU performs 1e10 flops (floating point operations) per second, and a GPU 1e12.
+
 Quasi-Newton Methods avoid to compute the Hessian and its matrix.
 
 
@@ -69,3 +71,5 @@ Basically, at every step we approximate the function with a parabola, then find 
 
 ![[Pasted image 20240318144712.png]]
 
+Also
+![[Nocedal, Wright - My Notes#2. Newton direction]]

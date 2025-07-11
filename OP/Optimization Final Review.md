@@ -40,5 +40,9 @@ Constrained Problems
 5. Barrier methods
 
 ## Other notes to be organized
+[[Fundamental Gradient Methods]]
 [[Conjugate Gradient Method]]
+[[Newton and Quasi-Newton Methods]]
+
+[[Constrained Algorithms]]
 

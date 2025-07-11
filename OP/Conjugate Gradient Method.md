@@ -66,7 +66,19 @@ If we set $M=I$ , we obtain the standard practical CG. Here the main difference,
 
 We have seen that CG can be viewed as a minimization algorithm for the convex quadratic functions. However, it can be expanded to general nonlinear functions.
 
+First, in place of the formula for the step length $\alpha_k$ (which minimizes φ along the search direction pk), we need to perform a line search that identifies an approximate minimum of the nonlinear function f along $p_k$.
+
+Second, the residual r , which is simply the gradient of φ in Algorithm 5.2 must be replaced by the gradient of the nonlinear objective f .
+
 ![[Pasted image 20250711182823.png]]
+
+There are many variants of FR, one of the most popular is Polak-Ribiere, where we replace $\beta$ with 
+![[Pasted image 20250711184719.png]]
+When f is a strongly convex quadratic function and the line search is exact, It is identical to Algorithm FR, since the gradients are mutually orthogonal, and so the betas are the same. When applied to general nonlinear functions with inexact line searches, however, the behavior of the two algorithms differs markedly. Numerical experience indicates that Algorithm PR tends to be the more robust and efficient of the two.
+
+A surprising fact about Algorithm PR is that the strong Wolfe conditions (5.43) do not guarantee that pk is always a descent direction. If we define the β parameter as  $$\beta_{k+1}^{+}=\max \left\{\beta_{k+1}^{\mathrm{PR}}, 0\right\}$$giving rise to an algorithm we call Algorithm PR+, then a simple adaptation of the strong Wolfe conditions ensures that the descent property holds.
+
+Consider that it has been show that on strongly convex problems not only do the Fletcher–Reeves and Polak–Ribiere methods fail to attain the optimal bound, but they may also be slower than the steepest descent method.
 
 
 
