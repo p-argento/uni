@@ -30,9 +30,9 @@ These requirements are
 2. secant condition
 3. closeness to $B_{k-1}$ (this is where the methods differ)
 
-What is the secant condition?
+What is the secant equation?
 The gradient of $m_{k+1}$ should match the gradient of $f$ at the latest two iterates
-1. $x_k$ which requires special attention
+1. $x_k$ which requires the secant equation to be satisfied
 2. $x_{k+1}$ satisfied automatically because $\nabla m_{k+1}=\nabla f_{k+1}$ 
-The first condition can be written as
+The first condition (aka secant equation) can be written as
 $$$$
