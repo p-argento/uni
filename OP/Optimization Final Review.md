@@ -43,6 +43,6 @@ Constrained Problems
 [[Fundamental Gradient Methods]]
 [[Conjugate Gradient Method]]
 [[Newton and Quasi-Newton Methods]]
-
+[[Constrained Optimization Theory]]
 [[Constrained Algorithms]]
 
