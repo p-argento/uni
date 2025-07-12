@@ -71,5 +71,4 @@ Basically, at every step we approximate the function with a parabola, then find 
 
 ![[Pasted image 20240318144712.png]]
 
-Also
-![[Nocedal, Wright - My Notes#2. Newton direction]]
+

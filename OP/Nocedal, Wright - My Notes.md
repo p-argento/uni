@@ -186,7 +186,7 @@ The direction of most rapid decrease is $$\min_p p^T\nabla f_k$$ which is $p_k=-
 Note that other descent directions can be used. And it is guaranteed to produce a decrease in f provided that the step length is sufficiently small.
 
 ### 2. Newton direction
-The most important one.
+The most important one, called Line Search Newton method.
 It is derived from the second-order Taylor series approximation to $f(x_k+p)$.
 $$f(x_k+p)\approx f_k+p^T\nabla f_k+\frac 1 2p^T\nabla^2 f_k p = m_k(p)$$
 Assuming $\nabla^2 f_k$ positive definite, we simply set the derivative of $m_k$ to zero (which is the model approximating the function).
